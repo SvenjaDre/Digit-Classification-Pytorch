@@ -81,14 +81,13 @@ loss_fn = nn.CrossEntropyLoss()
 for epoch in range(100):
     classifier.train()
     for images, labels in train_loader:
-        images, labels = images.to(device), torch.tensor(labels).to(device)
+        images, labels = images.to(device), labels.to(device)  #torch.tensor(labels).to(device)
         optimizer.zero_grad()
         outputs = classifier(images)
         loss = loss_fn(outputs, labels)
         loss.backward()
         optimizer.step()
-    print(f"Epoch {epoch+1}, Loss: {loss.item():.4f}")  # Anzahl an Nachkomma stelllen anpassen
-#validierungs loss 
+    print(f"Epoch {epoch+1}, Loss: {loss.item():.9f}")  
 
 
 # Save the trained model
@@ -105,14 +104,14 @@ class_names = test_dataset.classes
 
 # Evaluate on test data
 correct = 0
-notcorrect = 0
+Incorrect = 0
 total = 0
 
 classifier.eval()
 with torch.no_grad():
     for idx, (images, labels) in enumerate(test_loader):
         images = images.to(device)
-        labels = torch.tensor(labels).to(device)
+        labels = labels.to(device)  #torch.tensor(labels).to(device)
 
         outputs = classifier(images)
         predicted_index = torch.argmax(outputs, dim=1).item()
@@ -125,10 +124,11 @@ with torch.no_grad():
             correct += 1
             total += 1
         else:
-            notcorrect += 1
+            Incorrect += 1
             total += 1
 
-        print('Correct predicted: ', correct)
-        print('not correct predicted: ', notcorrect)
-        print('Toatl Number of tested pictures:', total)
         #print(f"[{idx+1}] Predicted: {predicted_label} | True: {true_label}")
+print('Correct predicted: ', correct)
+print('not correct predicted: ', Incorrect)
+print('Toatl Number of tested pictures:', total)
+        
