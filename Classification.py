@@ -9,9 +9,8 @@ import os
 # Manual transform
 def preprocess_image(image_path):
     image = Image.open(image_path).convert('L')  # Convert to grayscale
-    image = image.resize((128, 128))  # Resize
+    image = image.resize((224, 224))  # Resize
     image = np.array(image, dtype=np.float32) / 255.0  # Normalize to [0, 1]
-    #image = (image - 0.5) / 0.5  # Normalize to [-1, 1]
     image = np.expand_dims(image, axis=0)  # Add channel dimension
     return torch.tensor(image, dtype=torch.float32)
 
@@ -105,6 +104,10 @@ test_loader = DataLoader(test_dataset, batch_size=1, shuffle=False)
 class_names = test_dataset.classes
 
 # Evaluate on test data
+correct = 0
+notcorrect = 0
+total = 0
+
 classifier.eval()
 with torch.no_grad():
     for idx, (images, labels) in enumerate(test_loader):
@@ -118,6 +121,14 @@ with torch.no_grad():
         predicted_label = class_names[predicted_index]
         true_label = class_names[true_index]
 
+        if predicted_label == true_label:
+            correct += 1
+            total += 1
+        else:
+            notcorrect += 1
+            total += 1
 
-
-        print(f"[{idx+1}] Predicted: {predicted_label} | True: {true_label}")
+        print('Correct predicted: ', correct)
+        print('not correct predicted: ', notcorrect)
+        print('Toatl Number of tested pictures:', total)
+        #print(f"[{idx+1}] Predicted: {predicted_label} | True: {true_label}")
