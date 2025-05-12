@@ -88,7 +88,7 @@ for epoch in range(100):
         loss = loss_fn(outputs, labels)
         loss.backward()
         optimizer.step()
-    print(f"Epoch {epoch+1}, Loss: {loss.item():.4f}")
+    print(f"Epoch {epoch+1}, Loss: {loss.item():.4f}")  # Anzahl an Nachkomma stelllen anpassen
 #validierungs loss 
 
 
@@ -117,5 +117,7 @@ with torch.no_grad():
 
         predicted_label = class_names[predicted_index]
         true_label = class_names[true_index]
+
+
 
         print(f"[{idx+1}] Predicted: {predicted_label} | True: {true_label}")
