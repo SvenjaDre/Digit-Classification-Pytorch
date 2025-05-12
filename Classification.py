@@ -11,7 +11,7 @@ def preprocess_image(image_path):
     image = Image.open(image_path).convert('L')  # Convert to grayscale
     image = image.resize((128, 128))  # Resize
     image = np.array(image, dtype=np.float32) / 255.0  # Normalize to [0, 1]
-    image = (image - 0.5) / 0.5  # Normalize to [-1, 1]
+    #image = (image - 0.5) / 0.5  # Normalize to [-1, 1]
     image = np.expand_dims(image, axis=0)  # Add channel dimension
     return torch.tensor(image, dtype=torch.float32)
 
@@ -89,6 +89,8 @@ for epoch in range(100):
         loss.backward()
         optimizer.step()
     print(f"Epoch {epoch+1}, Loss: {loss.item():.4f}")
+#validierungs loss 
+
 
 # Save the trained model
 torch.save(classifier.state_dict(), 'model_state.pt')
