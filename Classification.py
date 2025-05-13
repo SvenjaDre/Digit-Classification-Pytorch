@@ -5,6 +5,7 @@ from torch.optim import Adam
 from torch.utils.data import DataLoader, Dataset
 import numpy as np
 import os
+from torch.utils.data import random_split
 
 # Manual transform
 def preprocess_image(image_path):
@@ -38,9 +39,17 @@ class CustomImageDataset(Dataset):
         label = self.labels[idx]
         return image_tensor, label
 
-# Load training data
-train_dataset = CustomImageDataset(root_dir="archive/Training")
+#Load full dataset
+full_dataset = CustomImageDataset(root_dir="archive/Training")
+
+#Split dataset in 80% Training und 20% Validation
+train_size = int(0.8 * len(full_dataset))
+val_size = len(full_dataset) - train_size
+train_dataset, val_dataset = random_split(full_dataset, [train_size, val_size])
+
+# Load training data und validation data
 train_loader = DataLoader(train_dataset, batch_size=32, shuffle=True)
+val_loader = DataLoader(val_dataset, batch_size=32, shuffle=False)
 
 # Define the image classifier model
 class ImageClassifier(nn.Module):
@@ -79,15 +88,35 @@ loss_fn = nn.CrossEntropyLoss()
 
 # Train the model
 for epoch in range(100):
+    # Training 
     classifier.train()
+    running_loss = 0.0
     for images, labels in train_loader:
-        images, labels = images.to(device), torch.tensor(labels).to(device)
+        images, labels = images.to(device), labels.to(device)            #torch.tensor(labels).to(device)
         optimizer.zero_grad()
         outputs = classifier(images)
         loss = loss_fn(outputs, labels)
         loss.backward()
         optimizer.step()
-    print(f"Epoch {epoch+1}, Loss: {loss.item():.9f}")  
+        running_loss += loss.item()
+    
+    avg_train_loss = running_loss / len(train_loader)       #Durchnittlicher Loss der Epoche
+    #print(f"Epoch {epoch+1}, Loss: {loss.item():.9f}")  
+
+    # Validation 
+    classifier.eval()
+    val_loss = 0.0
+    with torch.no_grad():
+            for val_images, val_labels in val_loader:
+                val_images = val_images.to(device)
+                val_labels = val_labels.to(device)          #torch.tensor(val_labels).to(device)
+                val_outputs = classifier(val_images)
+                loss = loss_fn(val_outputs, val_labels)
+                val_loss += loss.item()
+                preds = torch.argmax(val_outputs, dim=1)
+
+    avg_val_loss = val_loss / len(val_loader)
+    print(f"Epoch {epoch+1} | Train Loss: {avg_train_loss:.8f} | Val Loss: {avg_val_loss:.8f}")
 
 
 # Save the trained model
@@ -111,7 +140,7 @@ classifier.eval()
 with torch.no_grad():
     for idx, (images, labels) in enumerate(test_loader):
         images = images.to(device)
-        labels = torch.tensor(labels).to(device)
+        labels = labels.to(device)           #torch.tensor(labels).to(device)
 
         outputs = classifier(images)
         predicted_index = torch.argmax(outputs, dim=1).item()
@@ -128,7 +157,9 @@ with torch.no_grad():
             total += 1
 
         #print(f"[{idx+1}] Predicted: {predicted_label} | True: {true_label}")
+
 print('Correct predicted: ', correct)
 print('not correct predicted: ', Incorrect)
 print('Toatl Number of tested pictures:', total)
+print(f"Accuracy: {correct / total * 100:.2f}%") 
         
