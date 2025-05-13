@@ -94,6 +94,9 @@ optimizer = Adam(classifier.parameters(), lr=0.001)
 loss_fn = nn.CrossEntropyLoss()
 
 # Train the model
+train_losses = []
+val_losses = []
+
 for epoch in range(100):
     # Training 
     classifier.train()
@@ -107,7 +110,8 @@ for epoch in range(100):
         optimizer.step()
         running_loss += loss.item()
     
-    avg_train_loss = running_loss / len(train_loader)       #Durchnittlicher Loss der Epoche
+    avg_train_loss = running_loss  / len(train_loader) 
+    train_losses.append(avg_train_loss)      #Durchnittlicher Loss der Epoche
     #print(f"Epoch {epoch+1}, Loss: {loss.item():.9f}")  
 
     # Validation 
@@ -123,15 +127,17 @@ for epoch in range(100):
                 preds = torch.argmax(val_outputs, dim=1)
 
     avg_val_loss = val_loss / len(val_loader)
+    val_losses.append(avg_val_loss)
     print(f"Epoch {epoch+1} | Train Loss: {avg_train_loss:.8f} | Val Loss: {avg_val_loss:.8f}")
 
-plt.plot(avg_train_loss, label='Train Loss', color='blue')
-plt.plot(avg_val_loss, label='Validation Loss', color='orange')
+plt.plot(train_losses, label='Train Loss', color='blue')
+plt.plot(val_losses, label='Validation Loss', color='orange')
 plt.xlabel('Epoch')
 plt.ylabel('Loss')
 plt.legend()
 plt.grid(True)
 plt.show()
+plt.savefig('Training and Validation Loss.pdf')
 # Save the trained model
 torch.save(classifier.state_dict(), 'model_state.pt')
 
