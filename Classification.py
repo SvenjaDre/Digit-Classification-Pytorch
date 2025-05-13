@@ -9,7 +9,7 @@ import os
 # Manual transform
 def preprocess_image(image_path):
     image = Image.open(image_path).convert('L')  # Convert to grayscale
-    image = image.resize((224, 224))  # Resize
+    image = image.resize((224, 224))  # Resize -> anpassen bei nn.Linear
     image = np.array(image, dtype=np.float32) / 255.0  # Normalize to [0, 1]
     image = np.expand_dims(image, axis=0)  # Add channel dimension
     return torch.tensor(image, dtype=torch.float32)
@@ -60,7 +60,7 @@ class ImageClassifier(nn.Module):
 
         self.fc_layers = nn.Sequential(
             nn.Flatten(),
-            nn.Linear(64 * 14 * 14, 3)
+            nn.Linear(64 * 26 * 26, 3)
         )
 
     def forward(self, x):
@@ -81,7 +81,7 @@ loss_fn = nn.CrossEntropyLoss()
 for epoch in range(100):
     classifier.train()
     for images, labels in train_loader:
-        images, labels = images.to(device), labels.to(device)  #torch.tensor(labels).to(device)
+        images, labels = images.to(device), torch.tensor(labels).to(device)
         optimizer.zero_grad()
         outputs = classifier(images)
         loss = loss_fn(outputs, labels)
@@ -111,7 +111,7 @@ classifier.eval()
 with torch.no_grad():
     for idx, (images, labels) in enumerate(test_loader):
         images = images.to(device)
-        labels = labels.to(device)  #torch.tensor(labels).to(device)
+        labels = torch.tensor(labels).to(device)
 
         outputs = classifier(images)
         predicted_index = torch.argmax(outputs, dim=1).item()
