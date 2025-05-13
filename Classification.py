@@ -112,7 +112,7 @@ for epoch in range(100):
 
     # Validation 
     classifier.eval()
-    #val_loss = 0.0
+    val_loss = 0.0
     with torch.no_grad():
             for val_images, val_labels in val_loader:
                 val_images = val_images.to(device)
@@ -123,7 +123,7 @@ for epoch in range(100):
                 preds = torch.argmax(val_outputs, dim=1)
 
     avg_val_loss = val_loss / len(val_loader)
-    print(f"Epoch {epoch+1} | Train Loss: {avg_train_loss:.8f} | Val Loss: {avg_val_loss.item():.8f}")
+    print(f"Epoch {epoch+1} | Train Loss: {avg_train_loss:.8f} | Val Loss: {avg_val_loss:.8f}")
 
 plt.plot(avg_train_loss, label='Train Loss', color='blue')
 plt.plot(avg_val_loss, label='Validation Loss', color='orange')
