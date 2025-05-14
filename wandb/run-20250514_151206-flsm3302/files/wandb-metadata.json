@@ -1,0 +1,31 @@
+{
+  "os": "Linux-5.14.0-503.31.1.el9_5.x86_64-x86_64-with-glibc2.34",
+  "python": "CPython 3.9.18",
+  "startedAt": "2025-05-14T13:12:06.748783Z",
+  "program": "/nfs/homes/sdreyer/Digit-Classification-Pytorch/ClassSweep.py",
+  "codePath": "ClassSweep.py",
+  "git": {
+    "remote": "https://github.com/SvenjaDre/Digit-Classification-Pytorch.git",
+    "commit": "6d357f0d28e1f41404a6ec4bba9a8151524999d2"
+  },
+  "email": "svenja.dreyer@tu-dortmund.de",
+  "root": "/nfs/homes/sdreyer/Digit-Classification-Pytorch",
+  "host": "arcalis.e4.physik.tu-dortmund.de",
+  "executable": "/usr/bin/python",
+  "codePathLocal": "ClassSweep.py",
+  "cpu_count": 14,
+  "cpu_count_logical": 20,
+  "disk": {
+    "/": {
+      "total": "75125227520",
+      "used": "21487517696"
+    }
+  },
+  "memory": {
+    "total": "66828738560"
+  },
+  "cpu": {
+    "count": 14,
+    "countLogical": 20
+  }
+}
