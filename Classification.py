@@ -76,6 +76,7 @@ class ImageClassifier(nn.Module):
 
         self.fc_layers = nn.Sequential(
             nn.Flatten(),
+            nn.Dropout(0.2),
             nn.Linear(128 * 12 * 12, 3)
         )
 
@@ -128,6 +129,7 @@ for epoch in range(100):
 
     avg_val_loss = val_loss / len(val_loader)
     val_losses.append(avg_val_loss)
+
     print(f"Epoch {epoch+1} | Train Loss: {avg_train_loss:.8f} | Val Loss: {avg_val_loss:.8f}")
 
 plt.plot(train_losses, label='Train Loss', color='blue')
@@ -136,8 +138,9 @@ plt.xlabel('Epoch')
 plt.ylabel('Loss')
 plt.legend()
 plt.grid(True)
-plt.show()
 plt.savefig('Training and Validation Loss.pdf')
+plt.show()
+
 # Save the trained model
 torch.save(classifier.state_dict(), 'model_state.pt')
 
@@ -152,7 +155,7 @@ class_names = test_dataset.classes
 
 # Evaluate on test data
 correct = 0
-Incorrect = 0
+incorrect = 0
 total = 0
 
 classifier.eval()
@@ -172,13 +175,13 @@ with torch.no_grad():
             correct += 1
             total += 1
         else:
-            Incorrect += 1
+            incorrect += 1
             total += 1
 
         #print(f"[{idx+1}] Predicted: {predicted_label} | True: {true_label}")
 
 print('Correct predicted: ', correct)
-print('not correct predicted: ', Incorrect)
+print('not correct predicted: ', incorrect)
 print('Toatl Number of tested pictures:', total)
 print(f"Accuracy: {correct / total * 100:.2f}%") 
         
