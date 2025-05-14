@@ -1,0 +1,11 @@
+# sweep.yaml
+method: grid
+parameters:
+  epochs:
+    values: [5]
+  batch_size:
+    values: [16, 32]
+  learning_rate:
+    values: [0.001, 0.0001]
+  optimizer:
+    values: ["Adam"]

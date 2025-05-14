@@ -1,0 +1,11 @@
+Using device: cpu
+Epoch 1 | Train Loss: 0.69800688 | Val Loss: 0.59242194
+Epoch 2 | Train Loss: 0.49817355 | Val Loss: 0.49025705
+Epoch 3 | Train Loss: 0.38293079 | Val Loss: 0.46663457
+Epoch 4 | Train Loss: 0.32832348 | Val Loss: 0.49127975
+Epoch 5 | Train Loss: 0.29112198 | Val Loss: 0.33308215
+Epoch 6 | Train Loss: 0.20423038 | Val Loss: 0.30649575
+Epoch 7 | Train Loss: 0.16439794 | Val Loss: 0.36725887
+Epoch 8 | Train Loss: 0.13598042 | Val Loss: 0.27394217
+Epoch 9 | Train Loss: 0.09690650 | Val Loss: 0.31919442
+Epoch 10 | Train Loss: 0.07613409 | Val Loss: 0.39930020
