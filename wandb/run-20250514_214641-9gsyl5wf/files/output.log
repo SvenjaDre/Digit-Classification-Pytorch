@@ -1,0 +1,13 @@
+Epoch 1 | Train Loss: 0.6925 | Val Loss: 0.5083
+Epoch 2 | Train Loss: 0.4782 | Val Loss: 0.4121
+Epoch 3 | Train Loss: 0.3762 | Val Loss: 0.3989
+Epoch 4 | Train Loss: 0.3182 | Val Loss: 0.3135
+Epoch 5 | Train Loss: 0.2520 | Val Loss: 0.2714
+
+🔍 Testing on separate test set...
+/nfs/homes/sdreyer/Digit-Classification-Pytorch/ClassSweep.py:143: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  classifier.load_state_dict(torch.load(model_path, map_location=device))
+✅ Correct predictions:  886
+❌ Incorrect predictions:  125
+🧮 Total tested images: 1011
+🎯 Accuracy: 87.63600395647873%
