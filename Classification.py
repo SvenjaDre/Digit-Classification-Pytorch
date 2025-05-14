@@ -138,7 +138,7 @@ plt.xlabel('Epoch')
 plt.ylabel('Loss')
 plt.legend()
 plt.grid(True)
-plt.savefig('Training and Validation Loss.pdf')
+plt.savefig('Training and Validation Loss + dropout.pdf')
 plt.show()
 
 # Save the trained model
