@@ -52,14 +52,14 @@ class ImageClassifier(nn.Module):
     def __init__(self):
         super(ImageClassifier, self).__init__()
         self.conv_layers = nn.Sequential(
-            nn.Conv2d(1, 32, kernel_size=3), nn.ReLU(), nn.MaxPool2d(2),
-            nn.Conv2d(32, 64, kernel_size=3), nn.ReLU(), nn.MaxPool2d(2),
-            nn.Conv2d(64, 64, kernel_size=3), nn.ReLU(), nn.MaxPool2d(2),
-            nn.Conv2d(64, 128, kernel_size=3), nn.ReLU(), nn.MaxPool2d(2)
+            nn.Conv2d(1, 32, kernel_size=3, padding=1), nn.ReLU(), nn.MaxPool2d(2),
+            nn.Conv2d(32, 64, kernel_size=3, padding=1), nn.ReLU(), nn.MaxPool2d(2),
+            nn.Conv2d(64, 64, kernel_size=3, padding=1), nn.ReLU(), nn.MaxPool2d(2),
+            nn.Conv2d(64, 128, kernel_size=3, padding=1), nn.ReLU(), nn.MaxPool2d(2)
         )
         self.fc_layers = nn.Sequential(
             nn.Flatten(),
-            nn.Dropout(0.2),
+            nn.Dropout(0.25),
             nn.Linear(128 * 12 * 12, 3)
         )
 
@@ -74,7 +74,7 @@ TEST_DIR = "archive/Testing"
 
 # Trainingsfunktion für Sweep
 def train():
-    wandb.init(project="image-classifier")
+    wandb.init(project="Classifier")
     config = wandb.config
 
     full_dataset = CustomImageDataset(root_dir=TRAIN_DIR)
@@ -170,8 +170,8 @@ def evaluate_on_test_data(model_path="model_state.pt"):
 
     print("✅ Correct predictions: ", correct)
     print("❌ Incorrect predictions: ", incorrect)
-    print("🧮 Total tested images:", total)
-    print(f"🎯 Accuracy: {accuracy}%")
+    print(" Total tested images:", total)
+    print(f" Accuracy: {accuracy}%")
 
     wandb.log({
         "test_accuracy": accuracy,
@@ -183,7 +183,7 @@ def evaluate_on_test_data(model_path="model_state.pt"):
 # Hauptfunktion
 if __name__ == "__main__":
     sweep_config = load_sweep_config()
-    sweep_id = wandb.sweep(sweep_config, project="image-classifier")
+    sweep_id = wandb.sweep(sweep_config, project="Classifier")
     wandb.agent(sweep_id, function=train)
 
     # Modell nach Sweep testen

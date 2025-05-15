@@ -1,0 +1,5 @@
+Epoch 1 | Train Loss: 0.6858 | Val Loss: 0.5579
+Epoch 2 | Train Loss: 0.4752 | Val Loss: 0.3715
+Epoch 3 | Train Loss: 0.4055 | Val Loss: 0.3416
+Epoch 4 | Train Loss: 0.2965 | Val Loss: 0.3344
+[34m[1mwandb[0m: Ctrl + C detected. Stopping sweep.
