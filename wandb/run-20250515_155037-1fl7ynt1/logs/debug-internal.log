@@ -1,0 +1,16 @@
+{"time":"2025-05-15T15:50:37.455137689+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250515_155037-1fl7ynt1/logs/debug-core.log"}
+{"time":"2025-05-15T15:50:37.730327912+02:00","level":"INFO","msg":"created new stream","id":"1fl7ynt1"}
+{"time":"2025-05-15T15:50:37.730537022+02:00","level":"INFO","msg":"stream: started","id":"1fl7ynt1"}
+{"time":"2025-05-15T15:50:37.730577833+02:00","level":"INFO","msg":"handler: started","stream_id":"1fl7ynt1"}
+{"time":"2025-05-15T15:50:37.7306356+02:00","level":"INFO","msg":"sender: started","stream_id":"1fl7ynt1"}
+{"time":"2025-05-15T15:50:37.730663763+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"1fl7ynt1"}
+{"time":"2025-05-15T15:50:37.958583646+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-15T16:01:44.963198353+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-15T16:01:44.963558636+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-15T16:01:45.964212494+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.609883523,"progress":"263B/263B"},{"desc":"uploading config.yaml","runtime_seconds":0.45393707,"progress":"594B/594B"}],"total_operations":2}}
+{"time":"2025-05-15T16:01:46.045172159+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-15T16:01:46.233346351+02:00","level":"INFO","msg":"stream: closing","id":"1fl7ynt1"}
+{"time":"2025-05-15T16:01:46.233569994+02:00","level":"INFO","msg":"handler: closed","stream_id":"1fl7ynt1"}
+{"time":"2025-05-15T16:01:46.233628739+02:00","level":"INFO","msg":"sender: closed","stream_id":"1fl7ynt1"}
+{"time":"2025-05-15T16:01:46.233620177+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"1fl7ynt1"}
+{"time":"2025-05-15T16:01:46.234403839+02:00","level":"INFO","msg":"stream: closed","id":"1fl7ynt1"}

@@ -1,0 +1,17 @@
+{"time":"2025-05-15T16:01:47.746127125+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250515_160147-2vlwwavo/logs/debug-core.log"}
+{"time":"2025-05-15T16:01:49.316420485+02:00","level":"INFO","msg":"created new stream","id":"2vlwwavo"}
+{"time":"2025-05-15T16:01:49.316639897+02:00","level":"INFO","msg":"stream: started","id":"2vlwwavo"}
+{"time":"2025-05-15T16:01:49.316745024+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"2vlwwavo"}
+{"time":"2025-05-15T16:01:49.316745019+02:00","level":"INFO","msg":"handler: started","stream_id":"2vlwwavo"}
+{"time":"2025-05-15T16:01:49.316763112+02:00","level":"INFO","msg":"sender: started","stream_id":"2vlwwavo"}
+{"time":"2025-05-15T16:01:49.585108508+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-15T16:04:43.216559232+02:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/svenja-dreyer-tu-dortmund/Classifier-Test/2vlwwavo/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2025-05-15T16:12:53.75402859+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-15T16:12:53.754422734+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-15T16:12:54.717311162+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.106923372,"progress":"595B/595B"}],"total_operations":1}}
+{"time":"2025-05-15T16:12:54.853972347+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-15T16:12:55.044928476+02:00","level":"INFO","msg":"stream: closing","id":"2vlwwavo"}
+{"time":"2025-05-15T16:12:55.04514969+02:00","level":"INFO","msg":"handler: closed","stream_id":"2vlwwavo"}
+{"time":"2025-05-15T16:12:55.045201775+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"2vlwwavo"}
+{"time":"2025-05-15T16:12:55.045238255+02:00","level":"INFO","msg":"sender: closed","stream_id":"2vlwwavo"}
+{"time":"2025-05-15T16:12:55.045868466+02:00","level":"INFO","msg":"stream: closed","id":"2vlwwavo"}

@@ -1,0 +1,17 @@
+{"time":"2025-05-15T18:28:51.427758653+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250515_182851-ja1ml93d/logs/debug-core.log"}
+{"time":"2025-05-15T18:28:53.24073992+02:00","level":"INFO","msg":"created new stream","id":"ja1ml93d"}
+{"time":"2025-05-15T18:28:53.2409422+02:00","level":"INFO","msg":"stream: started","id":"ja1ml93d"}
+{"time":"2025-05-15T18:28:53.240976119+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"ja1ml93d"}
+{"time":"2025-05-15T18:28:53.241015765+02:00","level":"INFO","msg":"handler: started","stream_id":"ja1ml93d"}
+{"time":"2025-05-15T18:28:53.241014798+02:00","level":"INFO","msg":"sender: started","stream_id":"ja1ml93d"}
+{"time":"2025-05-15T18:28:53.446938481+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-15T18:39:24.102377156+02:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/svenja-dreyer-tu-dortmund/Classifier-Test/ja1ml93d/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-05-15T18:40:05.008044455+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-15T18:40:05.008578939+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-15T18:40:05.774066136+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-15T18:40:05.971469916+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 50-50, summary, console lines 54-57","runtime_seconds":0.197049596}],"total_operations":1}}
+{"time":"2025-05-15T18:40:06.010635838+02:00","level":"INFO","msg":"stream: closing","id":"ja1ml93d"}
+{"time":"2025-05-15T18:40:06.010897112+02:00","level":"INFO","msg":"handler: closed","stream_id":"ja1ml93d"}
+{"time":"2025-05-15T18:40:06.010910927+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ja1ml93d"}
+{"time":"2025-05-15T18:40:06.010920623+02:00","level":"INFO","msg":"sender: closed","stream_id":"ja1ml93d"}
+{"time":"2025-05-15T18:40:06.01179427+02:00","level":"INFO","msg":"stream: closed","id":"ja1ml93d"}
