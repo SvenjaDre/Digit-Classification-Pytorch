@@ -1,0 +1,16 @@
+{"time":"2025-05-15T13:25:19.474802935+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250515_132519-h8krm7ua/logs/debug-core.log"}
+{"time":"2025-05-15T13:25:19.745207849+02:00","level":"INFO","msg":"created new stream","id":"h8krm7ua"}
+{"time":"2025-05-15T13:25:19.745462497+02:00","level":"INFO","msg":"stream: started","id":"h8krm7ua"}
+{"time":"2025-05-15T13:25:19.745521526+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"h8krm7ua"}
+{"time":"2025-05-15T13:25:19.745558852+02:00","level":"INFO","msg":"handler: started","stream_id":"h8krm7ua"}
+{"time":"2025-05-15T13:25:19.745564775+02:00","level":"INFO","msg":"sender: started","stream_id":"h8krm7ua"}
+{"time":"2025-05-15T13:25:19.932063523+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-15T13:28:55.206934416+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-15T13:28:55.207290372+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-15T13:28:56.213262426+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.63412272,"progress":"260B/260B"},{"desc":"uploading config.yaml","runtime_seconds":0.468719025,"progress":"594B/594B"}],"total_operations":2}}
+{"time":"2025-05-15T13:28:56.284749776+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-15T13:28:56.477965875+02:00","level":"INFO","msg":"stream: closing","id":"h8krm7ua"}
+{"time":"2025-05-15T13:28:56.478244332+02:00","level":"INFO","msg":"handler: closed","stream_id":"h8krm7ua"}
+{"time":"2025-05-15T13:28:56.478292364+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"h8krm7ua"}
+{"time":"2025-05-15T13:28:56.478310138+02:00","level":"INFO","msg":"sender: closed","stream_id":"h8krm7ua"}
+{"time":"2025-05-15T13:28:56.479199137+02:00","level":"INFO","msg":"stream: closed","id":"h8krm7ua"}

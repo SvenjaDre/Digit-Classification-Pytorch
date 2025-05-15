@@ -51,6 +51,7 @@ class CustomImageDataset(Dataset):
 class ImageClassifier(nn.Module):
     def __init__(self):
         super(ImageClassifier, self).__init__()
+        config = wandb.config
         self.conv_layers = nn.Sequential(
             nn.Conv2d(1, 32, kernel_size=3, padding=1), nn.ReLU(), nn.MaxPool2d(2),
             nn.Conv2d(32, 64, kernel_size=3, padding=1), nn.ReLU(), nn.MaxPool2d(2),
@@ -59,8 +60,8 @@ class ImageClassifier(nn.Module):
         )
         self.fc_layers = nn.Sequential(
             nn.Flatten(),
-            nn.Dropout(0.25),
-            nn.Linear(128 * 12 * 12, 3)
+            nn.Dropout(config.dropout),
+            nn.Linear(128 * 14 * 14, 3)
         )
 
     def forward(self, x):
@@ -74,7 +75,7 @@ TEST_DIR = "archive/Testing"
 
 # Trainingsfunktion für Sweep
 def train():
-    wandb.init(project="Classifier")
+    wandb.init(project="Classifier-Test")
     config = wandb.config
 
     full_dataset = CustomImageDataset(root_dir=TRAIN_DIR)
@@ -183,7 +184,7 @@ def evaluate_on_test_data(model_path="model_state.pt"):
 # Hauptfunktion
 if __name__ == "__main__":
     sweep_config = load_sweep_config()
-    sweep_id = wandb.sweep(sweep_config, project="Classifier")
+    sweep_id = wandb.sweep(sweep_config, project="Classifier-Test")
     wandb.agent(sweep_id, function=train)
 
     # Modell nach Sweep testen

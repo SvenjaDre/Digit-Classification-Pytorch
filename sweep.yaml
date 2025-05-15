@@ -2,10 +2,13 @@
 method: grid
 parameters:
   epochs:
-    values: [100]
+    values: [50]
   batch_size:
-    values: [32, 64]
+    values: [32, 64, 128]
   learning_rate:
-    values: [0.001, 0.0001]
+    values: [0.001, 0.0001, 0.01]
   optimizer:
     values: ["Adam"]
+  dropout:
+    values: [0.2, 0.3, 0.5]
+ 
