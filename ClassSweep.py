@@ -75,7 +75,7 @@ TEST_DIR = "archive/Testing"
 
 # Trainingsfunktion für Sweep
 def train():
-    wandb.init(project="Classifier-Test")
+    wandb.init(project="Classifier-2")
     config = wandb.config
 
     full_dataset = CustomImageDataset(root_dir=TRAIN_DIR)
@@ -184,7 +184,7 @@ def evaluate_on_test_data(model_path="model_state.pt"):
 # Hauptfunktion
 if __name__ == "__main__":
     sweep_config = load_sweep_config()
-    sweep_id = wandb.sweep(sweep_config, project="Classifier-Test")
+    sweep_id = wandb.sweep(sweep_config, project="Classifier-2")
     wandb.agent(sweep_id, function=train)
 
     # Modell nach Sweep testen

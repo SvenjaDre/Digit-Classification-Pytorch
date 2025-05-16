@@ -1,0 +1,24 @@
+Epoch 1 | Train Loss: 3.4990 | Val Loss: 1.1220
+Epoch 2 | Train Loss: 1.0970 | Val Loss: 1.0968
+Epoch 3 | Train Loss: 1.0947 | Val Loss: 1.0967
+Epoch 4 | Train Loss: 1.0949 | Val Loss: 1.0950
+Epoch 5 | Train Loss: 1.0953 | Val Loss: 1.0957
+Epoch 6 | Train Loss: 1.0954 | Val Loss: 1.0956
+Epoch 7 | Train Loss: 1.0956 | Val Loss: 1.0962
+Epoch 8 | Train Loss: 1.0955 | Val Loss: 1.0960
+Epoch 9 | Train Loss: 1.0947 | Val Loss: 1.0969
+Epoch 10 | Train Loss: 1.0960 | Val Loss: 1.0965
+Epoch 11 | Train Loss: 1.0944 | Val Loss: 1.0964
+Epoch 12 | Train Loss: 1.0947 | Val Loss: 1.0959
+Epoch 13 | Train Loss: 1.0948 | Val Loss: 1.0962
+Epoch 14 | Train Loss: 1.0949 | Val Loss: 1.0959
+Epoch 15 | Train Loss: 1.0948 | Val Loss: 1.0959
+Epoch 16 | Train Loss: 1.0948 | Val Loss: 1.0961
+Epoch 17 | Train Loss: 1.0948 | Val Loss: 1.0956
+Epoch 18 | Train Loss: 1.0946 | Val Loss: 1.0954
+Epoch 19 | Train Loss: 1.0943 | Val Loss: 1.0966
+Epoch 20 | Train Loss: 1.0949 | Val Loss: 1.0964
+Epoch 21 | Train Loss: 1.0944 | Val Loss: 1.0960
+Epoch 22 | Train Loss: 1.0944 | Val Loss: 1.0957
+Epoch 23 | Train Loss: 1.0945 | Val Loss: 1.0968
+[34m[1mwandb[0m: Ctrl + C detected. Stopping sweep.
