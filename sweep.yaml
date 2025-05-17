@@ -4,9 +4,9 @@ parameters:
   epochs:
     values: [100]
   batch_size:
-    values: [32]
+    values: [64]
   learning_rate:
-    values: [0.01]
+    values: [0.01, 0.0001]
   optimizer:
     values: ["Adam"]
   dropout:

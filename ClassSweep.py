@@ -8,9 +8,8 @@ import numpy as np
 import os
 import wandb
 
-
+# WandB Login
 wandb.login(key="4c9968476bcc046f6d8b7204ae7a2ca803e0e0a9")
-
 
 # Gerät wählen
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -69,15 +68,21 @@ class ImageClassifier(nn.Module):
         x = self.fc_layers(x)
         return x
 
-# Daten vorbereiten (einmal laden)
+# Trainings- und Testdatenverzeichnis
 TRAIN_DIR = "archive/Training"
 TEST_DIR = "archive/Testing"
 
 # Trainingsfunktion für Sweep
 def train():
-    wandb.init(project="Classifier-2")
+    wandb.init(project="Classifier-3")
     config = wandb.config
+    run_name = wandb.run.name  # z. B. "brave-dust-7"
 
+    # Checkpoint-Verzeichnis vorbereiten
+    checkpoint_dir = "Checkpoints"
+    os.makedirs(checkpoint_dir, exist_ok=True)
+
+    # Dataset und Loader
     full_dataset = CustomImageDataset(root_dir=TRAIN_DIR)
     train_size = int(0.8 * len(full_dataset))
     val_size = len(full_dataset) - train_size
@@ -86,6 +91,7 @@ def train():
     train_loader = DataLoader(train_dataset, batch_size=config.batch_size, shuffle=True)
     val_loader = DataLoader(val_dataset, batch_size=config.batch_size, shuffle=False)
 
+    # Modell, Optimierer, Loss
     classifier = ImageClassifier().to(device)
     optimizer = Adam(classifier.parameters(), lr=config.learning_rate)
     loss_fn = nn.CrossEntropyLoss()
@@ -103,7 +109,8 @@ def train():
             running_loss += loss.item()
 
         avg_train_loss = running_loss / len(train_loader)
-        #Validierung
+
+        # Validierung
         classifier.eval()
         val_loss = 0.0
         with torch.no_grad():
@@ -122,8 +129,17 @@ def train():
             "val_loss": avg_val_loss
         })
 
-    torch.save(classifier.state_dict(), 'model_state.pt')
-    evaluate_on_test_data("model_state.pt")
+        # ✅ Checkpoint speichern alle 10 Epochen
+        if (epoch + 1) % 10 == 0:
+            checkpoint_path = os.path.join(checkpoint_dir, f"{run_name}_epoch{epoch+1}.pt")
+            torch.save(classifier.state_dict(), checkpoint_path)
+            print(f"💾 Checkpoint saved: {checkpoint_path}")
+            wandb.save(checkpoint_path)
+
+    # Finales Modell speichern und auf Testdaten evaluieren
+    final_model_path = "model_state.pt"
+    torch.save(classifier.state_dict(), final_model_path)
+    evaluate_on_test_data(final_model_path)
 
     wandb.finish()
 
@@ -162,17 +178,16 @@ def evaluate_on_test_data(model_path="model_state.pt"):
 
             if predicted_label == true_label:
                 correct += 1
-                total +=1
             else:
                 incorrect += 1
-                total += 1
+            total += 1
 
-    accuracy = (correct/total) * 100
+    accuracy = (correct / total) * 100
 
     print("✅ Correct predictions: ", correct)
     print("❌ Incorrect predictions: ", incorrect)
     print(" Total tested images:", total)
-    print(f" Accuracy: {accuracy}%")
+    print(f" Accuracy: {accuracy:.2f}%")
 
     wandb.log({
         "test_accuracy": accuracy,
@@ -180,12 +195,9 @@ def evaluate_on_test_data(model_path="model_state.pt"):
         "test_incorrect": incorrect,
         "test_total": total
     })
-    
+
 # Hauptfunktion
 if __name__ == "__main__":
     sweep_config = load_sweep_config()
-    sweep_id = wandb.sweep(sweep_config, project="Classifier-2")
+    sweep_id = wandb.sweep(sweep_config, project="Classifier-3")
     wandb.agent(sweep_id, function=train)
-
-    # Modell nach Sweep testen
-    #evaluate_on_test_data()
