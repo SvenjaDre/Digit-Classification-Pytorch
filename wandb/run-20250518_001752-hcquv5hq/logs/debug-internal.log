@@ -1,0 +1,17 @@
+{"time":"2025-05-18T00:17:52.809102202+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250518_001752-hcquv5hq/logs/debug-core.log"}
+{"time":"2025-05-18T00:17:54.618409918+02:00","level":"INFO","msg":"created new stream","id":"hcquv5hq"}
+{"time":"2025-05-18T00:17:54.618648595+02:00","level":"INFO","msg":"stream: started","id":"hcquv5hq"}
+{"time":"2025-05-18T00:17:54.618672626+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"hcquv5hq"}
+{"time":"2025-05-18T00:17:54.618705369+02:00","level":"INFO","msg":"sender: started","stream_id":"hcquv5hq"}
+{"time":"2025-05-18T00:17:54.618768177+02:00","level":"INFO","msg":"handler: started","stream_id":"hcquv5hq"}
+{"time":"2025-05-18T00:17:54.857145623+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-18T01:02:20.343284584+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/svenja-dreyer-tu-dortmund/Classifier-3/hcquv5hq/file_stream\": dial tcp: lookup api.wandb.ai on 129.217.129.42:53: read udp 129.217.167.98:42563->129.217.129.42:53: i/o timeout"}
+{"time":"2025-05-18T04:06:24.9661548+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-18T04:06:24.966541455+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-18T04:06:25.967527264+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading Checkpoints/trim-sweep-4_epoch920.pt","runtime_seconds":0.165594965,"progress":"64.0KB/804.6KB"},{"desc":"uploading Checkpoints/trim-sweep-4_epoch790.pt","runtime_seconds":0.165570595,"progress":"804.6KB/804.6KB"},{"desc":"uploading Checkpoints/trim-sweep-4_epoch30.pt","runtime_seconds":0.165568428,"progress":"64.0KB/804.6KB"},{"desc":"uploading Checkpoints/trim-sweep-4_epoch380.pt","runtime_seconds":0.165566067,"progress":"64.0KB/804.6KB"},{"desc":"uploading Checkpoints/trim-sweep-4_epoch760.pt","runtime_seconds":0.165564214,"progress":"48.0KB/804.6KB"},{"desc":"uploading Checkpoints/trim-sweep-4_epoch180.pt","runtime_seconds":0.165562372,"progress":"32.0KB/804.6KB"},{"desc":"uploading Checkpoints/trim-sweep-4_epoch840.pt","runtime_seconds":0.165559416,"progress":"32.0KB/804.6KB"},{"desc":"uploading Checkpoints/trim-sweep-4_epoch980.pt","runtime_seconds":0.165557386,"progress":"48.0KB/804.6KB"},{"desc":"uploading Checkpoints/trim-sweep-4_epoch360.pt","runtime_seconds":0.165538148,"progress":"48.0KB/804.6KB"},{"desc":"uploading Checkpoints/trim-sweep-4_epoch960.pt","runtime_seconds":0.165535469,"progress":"32.0KB/804.6KB"}],"total_operations":100}}
+{"time":"2025-05-18T04:06:27.479123645+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-18T04:06:27.677137018+02:00","level":"INFO","msg":"stream: closing","id":"hcquv5hq"}
+{"time":"2025-05-18T04:06:27.677392117+02:00","level":"INFO","msg":"handler: closed","stream_id":"hcquv5hq"}
+{"time":"2025-05-18T04:06:27.677455131+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"hcquv5hq"}
+{"time":"2025-05-18T04:06:27.677476685+02:00","level":"INFO","msg":"sender: closed","stream_id":"hcquv5hq"}
+{"time":"2025-05-18T04:06:27.678472571+02:00","level":"INFO","msg":"stream: closed","id":"hcquv5hq"}

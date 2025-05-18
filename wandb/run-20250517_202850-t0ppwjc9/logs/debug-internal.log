@@ -1,0 +1,16 @@
+{"time":"2025-05-17T20:28:50.063090377+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250517_202850-t0ppwjc9/logs/debug-core.log"}
+{"time":"2025-05-17T20:28:53.137460434+02:00","level":"INFO","msg":"created new stream","id":"t0ppwjc9"}
+{"time":"2025-05-17T20:28:53.137945028+02:00","level":"INFO","msg":"stream: started","id":"t0ppwjc9"}
+{"time":"2025-05-17T20:28:53.137979518+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"t0ppwjc9"}
+{"time":"2025-05-17T20:28:53.138032506+02:00","level":"INFO","msg":"sender: started","stream_id":"t0ppwjc9"}
+{"time":"2025-05-17T20:28:53.13803994+02:00","level":"INFO","msg":"handler: started","stream_id":"t0ppwjc9"}
+{"time":"2025-05-17T20:28:53.378496617+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-18T00:17:46.520002194+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-18T00:17:46.520407716+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-18T00:17:47.483395589+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading Checkpoints/valiant-sweep-3_epoch700.pt","runtime_seconds":0.086040109,"progress":"640.0KB/804.7KB"},{"desc":"uploading Checkpoints/valiant-sweep-3_epoch160.pt","runtime_seconds":0.086014387,"progress":"64.0KB/804.7KB"},{"desc":"uploading Checkpoints/valiant-sweep-3_epoch840.pt","runtime_seconds":0.08601112,"progress":"32.0KB/804.7KB"},{"desc":"uploading Checkpoints/valiant-sweep-3_epoch850.pt","runtime_seconds":0.086009044,"progress":"48.0KB/804.7KB"},{"desc":"uploading Checkpoints/valiant-sweep-3_epoch180.pt","runtime_seconds":0.086006348,"progress":"80.0KB/804.7KB"},{"desc":"uploading Checkpoints/valiant-sweep-3_epoch270.pt","runtime_seconds":0.086004379,"progress":"32.0KB/804.7KB"},{"desc":"uploading Checkpoints/valiant-sweep-3_epoch400.pt","runtime_seconds":0.086001545,"progress":"112.0KB/804.7KB"},{"desc":"uploading Checkpoints/valiant-sweep-3_epoch170.pt","runtime_seconds":0.085999396,"progress":"32.0KB/804.7KB"},{"desc":"uploading Checkpoints/valiant-sweep-3_epoch360.pt","runtime_seconds":0.085980176,"progress":"32.0KB/804.7KB"},{"desc":"uploading Checkpoints/valiant-sweep-3_epoch340.pt","runtime_seconds":0.085977974,"progress":"32.0KB/804.7KB"}],"total_operations":100}}
+{"time":"2025-05-18T00:17:49.051053647+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-18T00:17:49.26238539+02:00","level":"INFO","msg":"stream: closing","id":"t0ppwjc9"}
+{"time":"2025-05-18T00:17:49.262590592+02:00","level":"INFO","msg":"handler: closed","stream_id":"t0ppwjc9"}
+{"time":"2025-05-18T00:17:49.262648629+02:00","level":"INFO","msg":"sender: closed","stream_id":"t0ppwjc9"}
+{"time":"2025-05-18T00:17:49.262645444+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"t0ppwjc9"}
+{"time":"2025-05-18T00:17:49.2635497+02:00","level":"INFO","msg":"stream: closed","id":"t0ppwjc9"}
