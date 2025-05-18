@@ -1,0 +1,1 @@
+{"checkpoint_path":"Checkpoints/Classifier-2.1/solar-sweep-1/checkpoint_epoch_100.pt","test_accuracy":93.57072205736894,"test_incorrect":65,"test_total":1011,"_step":105,"train_loss":0.019574995290259238,"_runtime":1330.109722888,"_timestamp":1.7475694966047952e+09,"epoch":100,"_wandb":{"runtime":1330},"test_correct":946,"val_loss":0.4696318087625076}

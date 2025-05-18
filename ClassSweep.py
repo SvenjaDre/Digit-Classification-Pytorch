@@ -130,7 +130,7 @@ def train():
         })
 
         # ✅ Alle 10 Epochen Checkpoint speichern
-        if (epoch + 1) % 10 == 0:
+        if (epoch + 1) % 20 == 0:
             checkpoint_path = os.path.join(checkpoint_dir, f"checkpoint_epoch_{epoch+1:03}.pt")
             torch.save(classifier.state_dict(), checkpoint_path)
             print(f"💾 Checkpoint saved: {checkpoint_path}")

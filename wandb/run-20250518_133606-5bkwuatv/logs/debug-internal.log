@@ -1,0 +1,16 @@
+{"time":"2025-05-18T13:36:06.497056218+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250518_133606-5bkwuatv/logs/debug-core.log"}
+{"time":"2025-05-18T13:36:06.766197376+02:00","level":"INFO","msg":"created new stream","id":"5bkwuatv"}
+{"time":"2025-05-18T13:36:06.766441647+02:00","level":"INFO","msg":"stream: started","id":"5bkwuatv"}
+{"time":"2025-05-18T13:36:06.766516937+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"5bkwuatv"}
+{"time":"2025-05-18T13:36:06.76656812+02:00","level":"INFO","msg":"sender: started","stream_id":"5bkwuatv"}
+{"time":"2025-05-18T13:36:06.766566462+02:00","level":"INFO","msg":"handler: started","stream_id":"5bkwuatv"}
+{"time":"2025-05-18T13:36:07.168891554+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-18T13:58:16.606774683+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-18T13:58:16.607124097+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-18T13:58:17.614739931+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading Checkpoints/Classifier-2.1/solar-sweep-1/checkpoint_epoch_020.pt","runtime_seconds":0.432909433,"progress":"544.0KB/804.6KB"},{"desc":"uploading Checkpoints/Classifier-2.1/solar-sweep-1/checkpoint_epoch_040.pt","runtime_seconds":0.432902019,"progress":"448.0KB/804.6KB"},{"desc":"uploading Checkpoints/Classifier-2.1/solar-sweep-1/checkpoint_epoch_060.pt","runtime_seconds":0.432899704,"progress":"544.0KB/804.6KB"},{"desc":"uploading Checkpoints/Classifier-2.1/solar-sweep-1/checkpoint_epoch_080.pt","runtime_seconds":0.432898063,"progress":"480.0KB/804.6KB"},{"desc":"uploading Checkpoints/Classifier-2.1/solar-sweep-1/checkpoint_epoch_100.pt","runtime_seconds":0.432895015,"progress":"528.0KB/804.6KB"}],"total_operations":5}}
+{"time":"2025-05-18T13:58:18.142075856+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-18T13:58:18.385180662+02:00","level":"INFO","msg":"stream: closing","id":"5bkwuatv"}
+{"time":"2025-05-18T13:58:18.385438911+02:00","level":"INFO","msg":"handler: closed","stream_id":"5bkwuatv"}
+{"time":"2025-05-18T13:58:18.385491691+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"5bkwuatv"}
+{"time":"2025-05-18T13:58:18.385502875+02:00","level":"INFO","msg":"sender: closed","stream_id":"5bkwuatv"}
+{"time":"2025-05-18T13:58:18.386321123+02:00","level":"INFO","msg":"stream: closed","id":"5bkwuatv"}
