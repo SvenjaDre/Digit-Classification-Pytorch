@@ -68,18 +68,19 @@ class ImageClassifier(nn.Module):
         x = self.fc_layers(x)
         return x
 
-# Trainings- und Testdatenverzeichnis
+# Verzeichnisse
 TRAIN_DIR = "archive/Training"
 TEST_DIR = "archive/Testing"
 
 # Trainingsfunktion für Sweep
 def train():
-    wandb.init(project="Classifier-3")
+    wandb.init(project="Classifier-2.1")
     config = wandb.config
-    run_name = wandb.run.name  # z. B. "brave-dust-7"
+    run_name = wandb.run.name
+    project_name = wandb.run.project
 
-    # Checkpoint-Verzeichnis vorbereiten
-    checkpoint_dir = "Checkpoints"
+    # Checkpoint-Verzeichnisstruktur anlegen
+    checkpoint_dir = os.path.join("Checkpoints", project_name, run_name)
     os.makedirs(checkpoint_dir, exist_ok=True)
 
     # Dataset und Loader
@@ -91,7 +92,6 @@ def train():
     train_loader = DataLoader(train_dataset, batch_size=config.batch_size, shuffle=True)
     val_loader = DataLoader(val_dataset, batch_size=config.batch_size, shuffle=False)
 
-    # Modell, Optimierer, Loss
     classifier = ImageClassifier().to(device)
     optimizer = Adam(classifier.parameters(), lr=config.learning_rate)
     loss_fn = nn.CrossEntropyLoss()
@@ -129,16 +129,18 @@ def train():
             "val_loss": avg_val_loss
         })
 
-        # ✅ Checkpoint speichern alle 10 Epochen
+        # ✅ Alle 10 Epochen Checkpoint speichern
         if (epoch + 1) % 10 == 0:
-            checkpoint_path = os.path.join(checkpoint_dir, f"{run_name}_epoch{epoch+1}.pt")
+            checkpoint_path = os.path.join(checkpoint_dir, f"checkpoint_epoch_{epoch+1:03}.pt")
             torch.save(classifier.state_dict(), checkpoint_path)
             print(f"💾 Checkpoint saved: {checkpoint_path}")
             wandb.save(checkpoint_path)
+            wandb.log({"checkpoint_path": checkpoint_path})
 
-    # Finales Modell speichern und auf Testdaten evaluieren
-    final_model_path = "model_state.pt"
+    # Finales Modell speichern
+    final_model_path = os.path.join(checkpoint_dir, "final_model.pt")
     torch.save(classifier.state_dict(), final_model_path)
+    print(f"✅ Final model saved: {final_model_path}")
     evaluate_on_test_data(final_model_path)
 
     wandb.finish()
@@ -165,7 +167,7 @@ def evaluate_on_test_data(model_path="model_state.pt"):
     total = 0
 
     with torch.no_grad():
-        for idx, (images, labels) in enumerate(test_loader):
+        for images, labels in test_loader:
             images = images.to(device)
             labels = labels.to(device)
 
@@ -183,7 +185,6 @@ def evaluate_on_test_data(model_path="model_state.pt"):
             total += 1
 
     accuracy = (correct / total) * 100
-
     print("✅ Correct predictions: ", correct)
     print("❌ Incorrect predictions: ", incorrect)
     print(" Total tested images:", total)
@@ -199,5 +200,5 @@ def evaluate_on_test_data(model_path="model_state.pt"):
 # Hauptfunktion
 if __name__ == "__main__":
     sweep_config = load_sweep_config()
-    sweep_id = wandb.sweep(sweep_config, project="Classifier-3")
+    sweep_id = wandb.sweep(sweep_config, project="Classifier-2.1")
     wandb.agent(sweep_id, function=train)

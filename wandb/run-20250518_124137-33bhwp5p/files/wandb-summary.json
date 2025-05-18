@@ -1,0 +1,1 @@
+{"val_loss":0.4861835831403301,"test_correct":923,"test_incorrect":88,"test_accuracy":91.29574678536103,"_wandb":{"runtime":342},"checkpoint_path":"Checkpoints/Classifier-2.1/azure-sweep-2/checkpoint_epoch_020.pt","_runtime":342.133148028,"_timestamp":1.7475652399338849e+09,"test_total":1011,"train_loss":0.044847578812934934,"_step":27,"epoch":25}

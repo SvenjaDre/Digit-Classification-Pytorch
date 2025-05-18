@@ -1,0 +1,1 @@
+{"epoch":25,"_step":27,"test_total":1011,"val_loss":0.30839396152360776,"test_correct":945,"_wandb":{"runtime":335},"test_incorrect":66,"train_loss":0.031249374120349737,"checkpoint_path":"Checkpoints/Classifier-2.1/laced-sweep-3/checkpoint_epoch_020.pt","test_accuracy":93.47181008902076,"_timestamp":1.747565578294559e+09,"_runtime":335.108173182}

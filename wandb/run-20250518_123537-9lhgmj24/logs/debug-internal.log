@@ -1,0 +1,16 @@
+{"time":"2025-05-18T12:35:37.428950115+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250518_123537-9lhgmj24/logs/debug-core.log"}
+{"time":"2025-05-18T12:35:37.713460161+02:00","level":"INFO","msg":"created new stream","id":"9lhgmj24"}
+{"time":"2025-05-18T12:35:37.713659938+02:00","level":"INFO","msg":"stream: started","id":"9lhgmj24"}
+{"time":"2025-05-18T12:35:37.713728936+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"9lhgmj24"}
+{"time":"2025-05-18T12:35:37.713739059+02:00","level":"INFO","msg":"sender: started","stream_id":"9lhgmj24"}
+{"time":"2025-05-18T12:35:37.713779448+02:00","level":"INFO","msg":"handler: started","stream_id":"9lhgmj24"}
+{"time":"2025-05-18T12:35:37.883599661+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-18T12:41:32.270051669+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-18T12:41:32.270738831+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-18T12:41:33.237709385+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading Checkpoints/Classifier-2.1/deft-sweep-1/checkpoint_epoch_010.pt","runtime_seconds":0.041392396,"progress":"576.0KB/804.6KB"},{"desc":"uploading Checkpoints/Classifier-2.1/deft-sweep-1/checkpoint_epoch_020.pt","runtime_seconds":0.041366141,"progress":"608.0KB/804.6KB"}],"total_operations":2}}
+{"time":"2025-05-18T12:41:34.123393687+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-18T12:41:34.321362869+02:00","level":"INFO","msg":"stream: closing","id":"9lhgmj24"}
+{"time":"2025-05-18T12:41:34.321602411+02:00","level":"INFO","msg":"handler: closed","stream_id":"9lhgmj24"}
+{"time":"2025-05-18T12:41:34.321628335+02:00","level":"INFO","msg":"sender: closed","stream_id":"9lhgmj24"}
+{"time":"2025-05-18T12:41:34.321621093+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"9lhgmj24"}
+{"time":"2025-05-18T12:41:34.322339355+02:00","level":"INFO","msg":"stream: closed","id":"9lhgmj24"}

@@ -1,0 +1,16 @@
+{"time":"2025-05-18T12:47:23.18856165+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250518_124723-dy0sdtxf/logs/debug-core.log"}
+{"time":"2025-05-18T12:47:23.743760888+02:00","level":"INFO","msg":"created new stream","id":"dy0sdtxf"}
+{"time":"2025-05-18T12:47:23.744056191+02:00","level":"INFO","msg":"stream: started","id":"dy0sdtxf"}
+{"time":"2025-05-18T12:47:23.744089142+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"dy0sdtxf"}
+{"time":"2025-05-18T12:47:23.744110143+02:00","level":"INFO","msg":"sender: started","stream_id":"dy0sdtxf"}
+{"time":"2025-05-18T12:47:23.744144336+02:00","level":"INFO","msg":"handler: started","stream_id":"dy0sdtxf"}
+{"time":"2025-05-18T12:47:23.931650162+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-18T12:52:58.29653433+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-18T12:52:58.296932989+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-18T12:52:59.297615141+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading Checkpoints/Classifier-2.1/laced-sweep-3/checkpoint_epoch_010.pt","runtime_seconds":0.266925772,"progress":"576.0KB/804.6KB"},{"desc":"uploading Checkpoints/Classifier-2.1/laced-sweep-3/checkpoint_epoch_020.pt","runtime_seconds":0.266920183,"progress":"672.0KB/804.6KB"}],"total_operations":2}}
+{"time":"2025-05-18T12:52:59.965981417+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-18T12:53:00.242761278+02:00","level":"INFO","msg":"stream: closing","id":"dy0sdtxf"}
+{"time":"2025-05-18T12:53:00.24302019+02:00","level":"INFO","msg":"handler: closed","stream_id":"dy0sdtxf"}
+{"time":"2025-05-18T12:53:00.243073712+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"dy0sdtxf"}
+{"time":"2025-05-18T12:53:00.243084092+02:00","level":"INFO","msg":"sender: closed","stream_id":"dy0sdtxf"}
+{"time":"2025-05-18T12:53:00.243728074+02:00","level":"INFO","msg":"stream: closed","id":"dy0sdtxf"}

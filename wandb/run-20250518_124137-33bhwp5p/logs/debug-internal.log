@@ -1,0 +1,16 @@
+{"time":"2025-05-18T12:41:37.842749183+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250518_124137-33bhwp5p/logs/debug-core.log"}
+{"time":"2025-05-18T12:41:38.967001901+02:00","level":"INFO","msg":"created new stream","id":"33bhwp5p"}
+{"time":"2025-05-18T12:41:38.967298061+02:00","level":"INFO","msg":"stream: started","id":"33bhwp5p"}
+{"time":"2025-05-18T12:41:38.967330002+02:00","level":"INFO","msg":"handler: started","stream_id":"33bhwp5p"}
+{"time":"2025-05-18T12:41:38.967382568+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"33bhwp5p"}
+{"time":"2025-05-18T12:41:38.967372966+02:00","level":"INFO","msg":"sender: started","stream_id":"33bhwp5p"}
+{"time":"2025-05-18T12:41:39.148407136+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-18T12:47:19.974002462+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-18T12:47:19.974511226+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-18T12:47:20.937298671+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading Checkpoints/Classifier-2.1/azure-sweep-2/checkpoint_epoch_010.pt","runtime_seconds":0.441041615,"progress":"804.6KB/804.6KB"},{"desc":"uploading Checkpoints/Classifier-2.1/azure-sweep-2/checkpoint_epoch_020.pt","runtime_seconds":0.441034809,"progress":"800.0KB/804.6KB"}],"total_operations":2}}
+{"time":"2025-05-18T12:47:21.459991806+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-18T12:47:21.665605781+02:00","level":"INFO","msg":"stream: closing","id":"33bhwp5p"}
+{"time":"2025-05-18T12:47:21.665867498+02:00","level":"INFO","msg":"handler: closed","stream_id":"33bhwp5p"}
+{"time":"2025-05-18T12:47:21.665901801+02:00","level":"INFO","msg":"sender: closed","stream_id":"33bhwp5p"}
+{"time":"2025-05-18T12:47:21.665892918+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"33bhwp5p"}
+{"time":"2025-05-18T12:47:21.666649376+02:00","level":"INFO","msg":"stream: closed","id":"33bhwp5p"}

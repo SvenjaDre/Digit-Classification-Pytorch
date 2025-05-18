@@ -1,0 +1,1 @@
+{"val_loss":0.4796406882642596,"_runtime":340.040892155,"train_loss":5.9727303871844685e-05,"test_correct":950,"epoch":25,"_timestamp":1.7475662625483756e+09,"checkpoint_path":"Checkpoints/Classifier-2.1/wise-sweep-5/checkpoint_epoch_020.pt","test_accuracy":93.96636993076162,"test_incorrect":61,"_wandb":{"runtime":340},"_step":27,"test_total":1011}

@@ -1,0 +1,36 @@
+Epoch 1 | Train Loss: 0.7683 | Val Loss: 0.5770
+Epoch 2 | Train Loss: 0.5445 | Val Loss: 0.5013
+Epoch 3 | Train Loss: 0.4901 | Val Loss: 0.4646
+Epoch 4 | Train Loss: 0.4412 | Val Loss: 0.4255
+Epoch 5 | Train Loss: 0.4226 | Val Loss: 0.4437
+Epoch 6 | Train Loss: 0.3928 | Val Loss: 0.3833
+Epoch 7 | Train Loss: 0.3574 | Val Loss: 0.3785
+Epoch 8 | Train Loss: 0.3313 | Val Loss: 0.3411
+Epoch 9 | Train Loss: 0.3029 | Val Loss: 0.3934
+Epoch 10 | Train Loss: 0.2910 | Val Loss: 0.3250
+💾 Checkpoint saved: Checkpoints/Classifier-2.1/elated-sweep-4/checkpoint_epoch_010.pt
+Epoch 11 | Train Loss: 0.2675 | Val Loss: 0.3346
+Epoch 12 | Train Loss: 0.2571 | Val Loss: 0.2811
+Epoch 13 | Train Loss: 0.2435 | Val Loss: 0.2725
+Epoch 14 | Train Loss: 0.2266 | Val Loss: 0.2732
+Epoch 15 | Train Loss: 0.2159 | Val Loss: 0.2409
+Epoch 16 | Train Loss: 0.1953 | Val Loss: 0.2421
+Epoch 17 | Train Loss: 0.1801 | Val Loss: 0.2308
+Epoch 18 | Train Loss: 0.1759 | Val Loss: 0.2152
+Epoch 19 | Train Loss: 0.1626 | Val Loss: 0.2449
+Epoch 20 | Train Loss: 0.1438 | Val Loss: 0.2125
+💾 Checkpoint saved: Checkpoints/Classifier-2.1/elated-sweep-4/checkpoint_epoch_020.pt
+Epoch 21 | Train Loss: 0.1355 | Val Loss: 0.2141
+Epoch 22 | Train Loss: 0.1301 | Val Loss: 0.2120
+Epoch 23 | Train Loss: 0.1223 | Val Loss: 0.2334
+Epoch 24 | Train Loss: 0.1163 | Val Loss: 0.2365
+Epoch 25 | Train Loss: 0.1019 | Val Loss: 0.2172
+✅ Final model saved: Checkpoints/Classifier-2.1/elated-sweep-4/final_model.pt
+
+🔍 Testing on separate test set...
+/nfs/homes/sdreyer/Digit-Classification-Pytorch/ClassSweep.py:162: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  classifier.load_state_dict(torch.load(model_path, map_location=device))
+✅ Correct predictions:  931
+❌ Incorrect predictions:  80
+ Total tested images: 1011
+ Accuracy: 92.09%
