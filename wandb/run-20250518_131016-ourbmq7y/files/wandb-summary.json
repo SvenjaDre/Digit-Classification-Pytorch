@@ -1,0 +1,1 @@
+{"_timestamp":1.7475669542674139e+09,"test_incorrect":63,"epoch":25,"train_loss":0.0430106522192282,"val_loss":0.3198077079874498,"_wandb":{"runtime":338},"_runtime":338.089706117,"checkpoint_path":"Checkpoints/Classifier-2.1/crisp-sweep-7/checkpoint_epoch_020.pt","test_correct":948,"_step":27,"test_accuracy":93.76854599406528,"test_total":1011}

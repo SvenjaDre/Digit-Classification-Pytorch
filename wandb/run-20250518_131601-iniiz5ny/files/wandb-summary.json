@@ -1,0 +1,1 @@
+{"test_incorrect":99,"_step":27,"_wandb":{"runtime":341},"epoch":25,"checkpoint_path":"Checkpoints/Classifier-2.1/leafy-sweep-8/checkpoint_epoch_020.pt","train_loss":0.1589553432069092,"val_loss":0.306496223365819,"_timestamp":1.7475673028019009e+09,"test_accuracy":90.20771513353115,"test_correct":912,"test_total":1011,"_runtime":341.026852576}

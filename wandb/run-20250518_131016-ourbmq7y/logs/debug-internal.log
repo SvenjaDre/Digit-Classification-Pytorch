@@ -1,0 +1,16 @@
+{"time":"2025-05-18T13:10:16.179990911+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250518_131016-ourbmq7y/logs/debug-core.log"}
+{"time":"2025-05-18T13:10:16.711017029+02:00","level":"INFO","msg":"created new stream","id":"ourbmq7y"}
+{"time":"2025-05-18T13:10:16.711262764+02:00","level":"INFO","msg":"stream: started","id":"ourbmq7y"}
+{"time":"2025-05-18T13:10:16.711285714+02:00","level":"INFO","msg":"handler: started","stream_id":"ourbmq7y"}
+{"time":"2025-05-18T13:10:16.71128399+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"ourbmq7y"}
+{"time":"2025-05-18T13:10:16.711315789+02:00","level":"INFO","msg":"sender: started","stream_id":"ourbmq7y"}
+{"time":"2025-05-18T13:10:16.868285334+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-18T13:15:54.269391191+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-18T13:15:54.269759107+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-18T13:15:55.270352425+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading Checkpoints/Classifier-2.1/crisp-sweep-7/checkpoint_epoch_010.pt","runtime_seconds":0.199082008,"progress":"624.0KB/804.6KB"},{"desc":"uploading Checkpoints/Classifier-2.1/crisp-sweep-7/checkpoint_epoch_020.pt","runtime_seconds":0.199075141,"progress":"592.0KB/804.6KB"}],"total_operations":2}}
+{"time":"2025-05-18T13:15:55.998794453+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-18T13:15:56.287290028+02:00","level":"INFO","msg":"stream: closing","id":"ourbmq7y"}
+{"time":"2025-05-18T13:15:56.287524072+02:00","level":"INFO","msg":"handler: closed","stream_id":"ourbmq7y"}
+{"time":"2025-05-18T13:15:56.287593609+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ourbmq7y"}
+{"time":"2025-05-18T13:15:56.287620073+02:00","level":"INFO","msg":"sender: closed","stream_id":"ourbmq7y"}
+{"time":"2025-05-18T13:15:56.288333354+02:00","level":"INFO","msg":"stream: closed","id":"ourbmq7y"}

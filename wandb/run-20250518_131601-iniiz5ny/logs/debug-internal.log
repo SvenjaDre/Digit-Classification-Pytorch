@@ -1,0 +1,16 @@
+{"time":"2025-05-18T13:16:01.816705279+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250518_131601-iniiz5ny/logs/debug-core.log"}
+{"time":"2025-05-18T13:16:02.085145432+02:00","level":"INFO","msg":"created new stream","id":"iniiz5ny"}
+{"time":"2025-05-18T13:16:02.085394397+02:00","level":"INFO","msg":"stream: started","id":"iniiz5ny"}
+{"time":"2025-05-18T13:16:02.085473483+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"iniiz5ny"}
+{"time":"2025-05-18T13:16:02.085479046+02:00","level":"INFO","msg":"handler: started","stream_id":"iniiz5ny"}
+{"time":"2025-05-18T13:16:02.085503331+02:00","level":"INFO","msg":"sender: started","stream_id":"iniiz5ny"}
+{"time":"2025-05-18T13:16:02.261285266+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-18T13:21:42.842009812+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-18T13:21:42.842506653+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-18T13:21:43.804863259+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading Checkpoints/Classifier-2.1/leafy-sweep-8/checkpoint_epoch_020.pt","runtime_seconds":0.058950501,"progress":"592.0KB/804.6KB"},{"desc":"uploading Checkpoints/Classifier-2.1/leafy-sweep-8/checkpoint_epoch_010.pt","runtime_seconds":0.058943439,"progress":"576.0KB/804.6KB"}],"total_operations":2}}
+{"time":"2025-05-18T13:21:44.695871338+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-18T13:21:44.876072452+02:00","level":"INFO","msg":"stream: closing","id":"iniiz5ny"}
+{"time":"2025-05-18T13:21:44.876267871+02:00","level":"INFO","msg":"handler: closed","stream_id":"iniiz5ny"}
+{"time":"2025-05-18T13:21:44.876346889+02:00","level":"INFO","msg":"sender: closed","stream_id":"iniiz5ny"}
+{"time":"2025-05-18T13:21:44.876339151+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"iniiz5ny"}
+{"time":"2025-05-18T13:21:44.877139428+02:00","level":"INFO","msg":"stream: closed","id":"iniiz5ny"}
