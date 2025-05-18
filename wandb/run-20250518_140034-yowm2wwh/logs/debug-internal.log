@@ -1,0 +1,16 @@
+{"time":"2025-05-18T14:00:34.289411391+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250518_140034-yowm2wwh/logs/debug-core.log"}
+{"time":"2025-05-18T14:00:34.556875758+02:00","level":"INFO","msg":"created new stream","id":"yowm2wwh"}
+{"time":"2025-05-18T14:00:34.557120725+02:00","level":"INFO","msg":"stream: started","id":"yowm2wwh"}
+{"time":"2025-05-18T14:00:34.557184035+02:00","level":"INFO","msg":"handler: started","stream_id":"yowm2wwh"}
+{"time":"2025-05-18T14:00:34.557193152+02:00","level":"INFO","msg":"sender: started","stream_id":"yowm2wwh"}
+{"time":"2025-05-18T14:00:34.557186056+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"yowm2wwh"}
+{"time":"2025-05-18T14:00:34.761520776+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-18T14:23:13.166057556+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-18T14:23:13.166494819+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-18T14:23:14.171495205+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading Checkpoints/Classifier-2.1/robust-sweep-1/checkpoint_epoch_060.pt","runtime_seconds":0.155464164,"progress":"336.0KB/804.6KB"},{"desc":"uploading Checkpoints/Classifier-2.1/robust-sweep-1/checkpoint_epoch_080.pt","runtime_seconds":0.15545722,"progress":"240.0KB/804.6KB"},{"desc":"uploading Checkpoints/Classifier-2.1/robust-sweep-1/checkpoint_epoch_100.pt","runtime_seconds":0.155454948,"progress":"320.0KB/804.6KB"},{"desc":"uploading Checkpoints/Classifier-2.1/robust-sweep-1/checkpoint_epoch_020.pt","runtime_seconds":0.155452944,"progress":"288.0KB/804.6KB"},{"desc":"uploading Checkpoints/Classifier-2.1/robust-sweep-1/checkpoint_epoch_040.pt","runtime_seconds":0.15545087,"progress":"288.0KB/804.6KB"}],"total_operations":5}}
+{"time":"2025-05-18T14:23:15.072429917+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-18T14:23:15.26133143+02:00","level":"INFO","msg":"stream: closing","id":"yowm2wwh"}
+{"time":"2025-05-18T14:23:15.26160547+02:00","level":"INFO","msg":"handler: closed","stream_id":"yowm2wwh"}
+{"time":"2025-05-18T14:23:15.26167441+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"yowm2wwh"}
+{"time":"2025-05-18T14:23:15.261703431+02:00","level":"INFO","msg":"sender: closed","stream_id":"yowm2wwh"}
+{"time":"2025-05-18T14:23:15.262558844+02:00","level":"INFO","msg":"stream: closed","id":"yowm2wwh"}

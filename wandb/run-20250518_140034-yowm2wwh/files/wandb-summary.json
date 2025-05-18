@@ -1,0 +1,1 @@
+{"train_loss":7.91285303581888e-05,"test_correct":948,"_timestamp":1.747570993164114e+09,"_step":105,"val_loss":0.9657092390375005,"test_accuracy":93.76854599406528,"epoch":100,"checkpoint_path":"Checkpoints/Classifier-2.1/robust-sweep-1/checkpoint_epoch_100.pt","_wandb":{"runtime":1358},"_runtime":1358.876750032,"test_total":1011,"test_incorrect":63}
