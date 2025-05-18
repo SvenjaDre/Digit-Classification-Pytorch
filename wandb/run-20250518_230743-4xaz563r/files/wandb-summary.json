@@ -1,0 +1,1 @@
+{"test_correct":943,"test_accuracy":93.27398615232443,"epoch":100,"test_total":1011,"train_loss":0.005269785490790442,"val_loss":0.44484787716323304,"_runtime":1352.893708649,"checkpoint_path":"Checkpoints/Classifier-2.1/amber-sweep-4/checkpoint_epoch_100.pt","_wandb":{"runtime":1352},"_timestamp":1.7476038163861742e+09,"_step":105,"test_incorrect":68}

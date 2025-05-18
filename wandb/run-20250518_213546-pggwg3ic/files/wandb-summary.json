@@ -1,0 +1,1 @@
+{"test_incorrect":71,"train_loss":0.06532592775940703,"_step":26,"checkpoint_path":"Checkpoints/Classifier-2.1/apricot-sweep-1/checkpoint_epoch_020.pt","test_accuracy":92.97725024727993,"_runtime":352.214286551,"test_correct":940,"test_total":1011,"val_loss":0.3801722036269321,"_timestamp":1.7475972986484303e+09,"epoch":25,"_wandb":{"runtime":352}}

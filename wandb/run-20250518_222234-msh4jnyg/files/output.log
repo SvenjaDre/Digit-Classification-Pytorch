@@ -1,0 +1,114 @@
+Epoch 1 | Train Loss: 0.6551 | Val Loss: 0.6826
+Epoch 2 | Train Loss: 0.4228 | Val Loss: 0.5352
+Epoch 3 | Train Loss: 0.3084 | Val Loss: 0.5648
+Epoch 4 | Train Loss: 0.2426 | Val Loss: 0.3653
+Epoch 5 | Train Loss: 0.1942 | Val Loss: 0.3960
+Epoch 6 | Train Loss: 0.1502 | Val Loss: 0.3717
+Epoch 7 | Train Loss: 0.1005 | Val Loss: 0.3449
+Epoch 8 | Train Loss: 0.0917 | Val Loss: 0.3142
+Epoch 9 | Train Loss: 0.0909 | Val Loss: 0.3277
+Epoch 10 | Train Loss: 0.0551 | Val Loss: 0.3757
+Epoch 11 | Train Loss: 0.0572 | Val Loss: 0.3499
+Epoch 12 | Train Loss: 0.0380 | Val Loss: 0.4203
+Epoch 13 | Train Loss: 0.0189 | Val Loss: 0.5126
+Epoch 14 | Train Loss: 0.0851 | Val Loss: 0.3445
+Epoch 15 | Train Loss: 0.0253 | Val Loss: 0.3541
+Epoch 16 | Train Loss: 0.0251 | Val Loss: 0.4297
+Epoch 17 | Train Loss: 0.0205 | Val Loss: 0.4480
+Epoch 18 | Train Loss: 0.0460 | Val Loss: 0.4253
+Epoch 19 | Train Loss: 0.0398 | Val Loss: 0.4442
+Epoch 20 | Train Loss: 0.0312 | Val Loss: 0.4642
+💾 Checkpoint saved: Checkpoints/Classifier-2.1/dry-sweep-2/checkpoint_epoch_020.pt
+Epoch 21 | Train Loss: 0.0265 | Val Loss: 0.4110
+Epoch 22 | Train Loss: 0.0128 | Val Loss: 0.4714
+Epoch 23 | Train Loss: 0.0070 | Val Loss: 0.5476
+Epoch 24 | Train Loss: 0.0229 | Val Loss: 0.4644
+Epoch 25 | Train Loss: 0.0550 | Val Loss: 0.3985
+Epoch 26 | Train Loss: 0.0398 | Val Loss: 0.4381
+Epoch 27 | Train Loss: 0.0072 | Val Loss: 0.4775
+Epoch 28 | Train Loss: 0.0037 | Val Loss: 0.4966
+Epoch 29 | Train Loss: 0.0054 | Val Loss: 0.5769
+Epoch 30 | Train Loss: 0.0219 | Val Loss: 0.4358
+Epoch 31 | Train Loss: 0.0268 | Val Loss: 0.6577
+Epoch 32 | Train Loss: 0.0236 | Val Loss: 0.6817
+Epoch 33 | Train Loss: 0.0301 | Val Loss: 0.5542
+Epoch 34 | Train Loss: 0.0354 | Val Loss: 0.4614
+Epoch 35 | Train Loss: 0.0133 | Val Loss: 0.4956
+Epoch 36 | Train Loss: 0.0068 | Val Loss: 0.5052
+Epoch 37 | Train Loss: 0.0026 | Val Loss: 0.5223
+Epoch 38 | Train Loss: 0.0012 | Val Loss: 0.5641
+Epoch 39 | Train Loss: 0.0058 | Val Loss: 0.6775
+Epoch 40 | Train Loss: 0.0484 | Val Loss: 0.5119
+💾 Checkpoint saved: Checkpoints/Classifier-2.1/dry-sweep-2/checkpoint_epoch_040.pt
+Epoch 41 | Train Loss: 0.0324 | Val Loss: 0.5606
+Epoch 42 | Train Loss: 0.0172 | Val Loss: 0.5423
+Epoch 43 | Train Loss: 0.0098 | Val Loss: 0.5128
+Epoch 44 | Train Loss: 0.0110 | Val Loss: 0.5510
+Epoch 45 | Train Loss: 0.0210 | Val Loss: 0.4935
+Epoch 46 | Train Loss: 0.0187 | Val Loss: 0.4747
+Epoch 47 | Train Loss: 0.0107 | Val Loss: 0.6699
+Epoch 48 | Train Loss: 0.0195 | Val Loss: 0.4712
+Epoch 49 | Train Loss: 0.0126 | Val Loss: 0.4988
+Epoch 50 | Train Loss: 0.0082 | Val Loss: 0.5023
+Epoch 51 | Train Loss: 0.0147 | Val Loss: 0.5519
+Epoch 52 | Train Loss: 0.0321 | Val Loss: 0.6418
+Epoch 53 | Train Loss: 0.0318 | Val Loss: 0.5310
+Epoch 54 | Train Loss: 0.0071 | Val Loss: 0.4859
+Epoch 55 | Train Loss: 0.0056 | Val Loss: 0.5464
+Epoch 56 | Train Loss: 0.0009 | Val Loss: 0.5861
+Epoch 57 | Train Loss: 0.0024 | Val Loss: 0.5540
+Epoch 58 | Train Loss: 0.0193 | Val Loss: 0.5396
+Epoch 59 | Train Loss: 0.0186 | Val Loss: 0.4269
+Epoch 60 | Train Loss: 0.0089 | Val Loss: 0.5827
+💾 Checkpoint saved: Checkpoints/Classifier-2.1/dry-sweep-2/checkpoint_epoch_060.pt
+Epoch 61 | Train Loss: 0.0021 | Val Loss: 0.6292
+Epoch 62 | Train Loss: 0.0094 | Val Loss: 0.6227
+Epoch 63 | Train Loss: 0.0374 | Val Loss: 0.4639
+Epoch 64 | Train Loss: 0.0189 | Val Loss: 0.5305
+Epoch 65 | Train Loss: 0.0047 | Val Loss: 0.5572
+Epoch 66 | Train Loss: 0.0146 | Val Loss: 0.5989
+Epoch 67 | Train Loss: 0.0143 | Val Loss: 0.6160
+Epoch 68 | Train Loss: 0.0237 | Val Loss: 0.5326
+Epoch 69 | Train Loss: 0.0013 | Val Loss: 0.5165
+Epoch 70 | Train Loss: 0.0011 | Val Loss: 0.6103
+Epoch 71 | Train Loss: 0.0205 | Val Loss: 0.5587
+Epoch 72 | Train Loss: 0.0135 | Val Loss: 0.5297
+Epoch 73 | Train Loss: 0.0262 | Val Loss: 0.6515
+Epoch 74 | Train Loss: 0.0177 | Val Loss: 0.6349
+Epoch 75 | Train Loss: 0.0160 | Val Loss: 0.5851
+Epoch 76 | Train Loss: 0.0055 | Val Loss: 0.5631
+Epoch 77 | Train Loss: 0.0064 | Val Loss: 0.6961
+Epoch 78 | Train Loss: 0.0157 | Val Loss: 0.6874
+Epoch 79 | Train Loss: 0.0127 | Val Loss: 0.5747
+Epoch 80 | Train Loss: 0.0173 | Val Loss: 0.6920
+💾 Checkpoint saved: Checkpoints/Classifier-2.1/dry-sweep-2/checkpoint_epoch_080.pt
+Epoch 81 | Train Loss: 0.0088 | Val Loss: 0.5863
+Epoch 82 | Train Loss: 0.0310 | Val Loss: 0.7097
+Epoch 83 | Train Loss: 0.0080 | Val Loss: 0.5975
+Epoch 84 | Train Loss: 0.0067 | Val Loss: 0.6742
+Epoch 85 | Train Loss: 0.0084 | Val Loss: 0.6153
+Epoch 86 | Train Loss: 0.0007 | Val Loss: 0.6405
+Epoch 87 | Train Loss: 0.0003 | Val Loss: 0.6491
+Epoch 88 | Train Loss: 0.0036 | Val Loss: 0.7956
+Epoch 89 | Train Loss: 0.0166 | Val Loss: 0.6830
+Epoch 90 | Train Loss: 0.0153 | Val Loss: 0.8060
+Epoch 91 | Train Loss: 0.0234 | Val Loss: 0.4921
+Epoch 92 | Train Loss: 0.0126 | Val Loss: 0.6811
+Epoch 93 | Train Loss: 0.0137 | Val Loss: 0.6099
+Epoch 94 | Train Loss: 0.0104 | Val Loss: 0.6095
+Epoch 95 | Train Loss: 0.0124 | Val Loss: 0.6445
+Epoch 96 | Train Loss: 0.0067 | Val Loss: 0.5739
+Epoch 97 | Train Loss: 0.0249 | Val Loss: 0.6001
+Epoch 98 | Train Loss: 0.0136 | Val Loss: 0.6184
+Epoch 99 | Train Loss: 0.0019 | Val Loss: 0.5544
+Epoch 100 | Train Loss: 0.0029 | Val Loss: 0.5842
+💾 Checkpoint saved: Checkpoints/Classifier-2.1/dry-sweep-2/checkpoint_epoch_100.pt
+✅ Final model saved: Checkpoints/Classifier-2.1/dry-sweep-2/final_model.pt
+
+🔍 Testing on separate test set...
+/nfs/homes/sdreyer/Digit-Classification-Pytorch/ClassSweep.py:162: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  classifier.load_state_dict(torch.load(model_path, map_location=device))
+✅ Correct predictions:  956
+❌ Incorrect predictions:  55
+ Total tested images: 1011
+ Accuracy: 94.56%

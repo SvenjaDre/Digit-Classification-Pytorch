@@ -1,0 +1,1 @@
+{"_wandb":{"runtime":349},"_step":26,"epoch":25,"_runtime":349.04414037,"checkpoint_path":"Checkpoints/Classifier-2.1/gentle-sweep-1/checkpoint_epoch_020.pt","_timestamp":1.747598294854445e+09,"test_correct":943,"test_total":1011,"val_loss":0.2724464637813745,"test_incorrect":68,"test_accuracy":93.27398615232443,"train_loss":0.037025117938966436}

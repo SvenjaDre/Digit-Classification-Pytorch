@@ -1,0 +1,1 @@
+{"val_loss":0.3649710638543453,"_step":105,"test_incorrect":57,"test_correct":954,"checkpoint_path":"Checkpoints/Classifier-2.1/magic-sweep-1/checkpoint_epoch_100.pt","_wandb":{"runtime":1345},"epoch":100,"_timestamp":1.7475997477353983e+09,"test_accuracy":94.3620178041543,"test_total":1011,"train_loss":5.3976999103922885e-05,"_runtime":1345.726459433}

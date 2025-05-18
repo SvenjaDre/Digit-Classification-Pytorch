@@ -1,0 +1,1 @@
+{"_timestamp":1.7475977721152134e+09,"test_incorrect":83,"epoch":25,"checkpoint_path":"Checkpoints/Classifier-2.1/zany-sweep-1/checkpoint_epoch_020.pt","_wandb":{"runtime":348},"_step":26,"test_total":1011,"val_loss":0.32068281355141487,"_runtime":348.002130058,"test_accuracy":91.79030662710188,"test_correct":928,"train_loss":0.11647796068130664}

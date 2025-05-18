@@ -1,0 +1,1 @@
+{"test_total":1011,"_timestamp":1.7476010996414294e+09,"test_correct":956,"epoch":100,"test_accuracy":94.55984174085064,"train_loss":0.0029261801374875587,"_runtime":1345.384373942,"test_incorrect":55,"_wandb":{"runtime":1345},"_step":105,"checkpoint_path":"Checkpoints/Classifier-2.1/dry-sweep-2/checkpoint_epoch_100.pt","val_loss":0.5842116850521792}

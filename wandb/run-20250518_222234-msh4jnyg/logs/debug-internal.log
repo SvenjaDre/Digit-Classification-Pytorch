@@ -1,0 +1,16 @@
+{"time":"2025-05-18T22:22:34.29958633+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250518_222234-msh4jnyg/logs/debug-core.log"}
+{"time":"2025-05-18T22:22:35.594009776+02:00","level":"INFO","msg":"created new stream","id":"msh4jnyg"}
+{"time":"2025-05-18T22:22:35.594252795+02:00","level":"INFO","msg":"stream: started","id":"msh4jnyg"}
+{"time":"2025-05-18T22:22:35.594318813+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"msh4jnyg"}
+{"time":"2025-05-18T22:22:35.594363705+02:00","level":"INFO","msg":"sender: started","stream_id":"msh4jnyg"}
+{"time":"2025-05-18T22:22:35.594363992+02:00","level":"INFO","msg":"handler: started","stream_id":"msh4jnyg"}
+{"time":"2025-05-18T22:22:35.765817096+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-18T22:44:59.682021179+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-18T22:44:59.682501323+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-18T22:45:00.644400778+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading Checkpoints/Classifier-2.1/dry-sweep-2/checkpoint_epoch_060.pt","runtime_seconds":0.01444614,"progress":"304.0KB/804.7KB"},{"desc":"uploading Checkpoints/Classifier-2.1/dry-sweep-2/checkpoint_epoch_080.pt","runtime_seconds":0.014432192,"progress":"160.0KB/804.7KB"},{"desc":"uploading Checkpoints/Classifier-2.1/dry-sweep-2/checkpoint_epoch_100.pt","runtime_seconds":0.014429567,"progress":"176.0KB/804.7KB"},{"desc":"uploading Checkpoints/Classifier-2.1/dry-sweep-2/checkpoint_epoch_020.pt","runtime_seconds":0.01442718,"progress":"160.0KB/804.7KB"},{"desc":"uploading Checkpoints/Classifier-2.1/dry-sweep-2/checkpoint_epoch_040.pt","runtime_seconds":0.014425017,"progress":"160.0KB/804.7KB"}],"total_operations":5}}
+{"time":"2025-05-18T22:45:01.798333136+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-18T22:45:02.02272784+02:00","level":"INFO","msg":"stream: closing","id":"msh4jnyg"}
+{"time":"2025-05-18T22:45:02.023000131+02:00","level":"INFO","msg":"handler: closed","stream_id":"msh4jnyg"}
+{"time":"2025-05-18T22:45:02.023035544+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"msh4jnyg"}
+{"time":"2025-05-18T22:45:02.023081535+02:00","level":"INFO","msg":"sender: closed","stream_id":"msh4jnyg"}
+{"time":"2025-05-18T22:45:02.023950059+02:00","level":"INFO","msg":"stream: closed","id":"msh4jnyg"}
