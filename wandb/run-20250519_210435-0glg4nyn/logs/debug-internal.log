@@ -1,0 +1,16 @@
+{"time":"2025-05-19T21:04:35.539242524+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250519_210435-0glg4nyn/logs/debug-core.log"}
+{"time":"2025-05-19T21:04:35.822569312+02:00","level":"INFO","msg":"created new stream","id":"0glg4nyn"}
+{"time":"2025-05-19T21:04:35.822768727+02:00","level":"INFO","msg":"stream: started","id":"0glg4nyn"}
+{"time":"2025-05-19T21:04:35.822800616+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"0glg4nyn"}
+{"time":"2025-05-19T21:04:35.822841491+02:00","level":"INFO","msg":"sender: started","stream_id":"0glg4nyn"}
+{"time":"2025-05-19T21:04:35.822843701+02:00","level":"INFO","msg":"handler: started","stream_id":"0glg4nyn"}
+{"time":"2025-05-19T21:04:36.021754828+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-19T21:28:59.671050278+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-19T21:28:59.671408199+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-19T21:29:00.64060236+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading Checkpoints/Classifier-2.1/noble-sweep-1/checkpoint_epoch_020.pt","runtime_seconds":0.4123148,"progress":"480.0KB/804.6KB"},{"desc":"uploading Checkpoints/Classifier-2.1/noble-sweep-1/checkpoint_epoch_040.pt","runtime_seconds":0.41231024,"progress":"512.0KB/804.6KB"},{"desc":"uploading Checkpoints/Classifier-2.1/noble-sweep-1/checkpoint_epoch_060.pt","runtime_seconds":0.412308082,"progress":"512.0KB/804.6KB"},{"desc":"uploading Checkpoints/Classifier-2.1/noble-sweep-1/checkpoint_epoch_080.pt","runtime_seconds":0.412305781,"progress":"544.0KB/804.6KB"},{"desc":"uploading Checkpoints/Classifier-2.1/noble-sweep-1/checkpoint_epoch_100.pt","runtime_seconds":0.412303765,"progress":"528.0KB/804.6KB"}],"total_operations":5}}
+{"time":"2025-05-19T21:29:01.197934574+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-19T21:29:01.457911095+02:00","level":"INFO","msg":"stream: closing","id":"0glg4nyn"}
+{"time":"2025-05-19T21:29:01.458174586+02:00","level":"INFO","msg":"handler: closed","stream_id":"0glg4nyn"}
+{"time":"2025-05-19T21:29:01.458193173+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"0glg4nyn"}
+{"time":"2025-05-19T21:29:01.458202503+02:00","level":"INFO","msg":"sender: closed","stream_id":"0glg4nyn"}
+{"time":"2025-05-19T21:29:01.458860167+02:00","level":"INFO","msg":"stream: closed","id":"0glg4nyn"}

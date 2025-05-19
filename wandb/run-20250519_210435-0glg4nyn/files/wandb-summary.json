@@ -1,0 +1,1 @@
+{"val_loss":0.5339519284303201,"test_total":1011,"train_loss":0.013567940663696251,"epoch":100,"_wandb":{"runtime":1464},"_runtime":1464.135952059,"test_accuracy":93.96636993076162,"_step":105,"checkpoint_path":"Checkpoints/Classifier-2.1/noble-sweep-1/checkpoint_epoch_100.pt","test_incorrect":61,"test_correct":950,"_timestamp":1.7476829396312442e+09}

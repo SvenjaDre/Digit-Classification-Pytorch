@@ -1,0 +1,1 @@
+{"checkpoint_path":"Checkpoints/Classifier-2.1/dulcet-sweep-2/checkpoint_epoch_100.pt","test_correct":950,"_wandb":{"runtime":1791},"train_loss":0.0072362434043753065,"epoch":100,"_step":105,"test_incorrect":61,"test_total":1011,"val_loss":0.4272387638964035,"_timestamp":1.7476847345434167e+09,"test_accuracy":93.96636993076162,"_runtime":1791.598500646}

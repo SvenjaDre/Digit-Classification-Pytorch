@@ -1,0 +1,16 @@
+{"time":"2025-05-19T21:29:02.9857932+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250519_212902-onvvuczf/logs/debug-core.log"}
+{"time":"2025-05-19T21:29:03.257896742+02:00","level":"INFO","msg":"created new stream","id":"onvvuczf"}
+{"time":"2025-05-19T21:29:03.25811388+02:00","level":"INFO","msg":"stream: started","id":"onvvuczf"}
+{"time":"2025-05-19T21:29:03.258149985+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"onvvuczf"}
+{"time":"2025-05-19T21:29:03.258200011+02:00","level":"INFO","msg":"sender: started","stream_id":"onvvuczf"}
+{"time":"2025-05-19T21:29:03.258199185+02:00","level":"INFO","msg":"handler: started","stream_id":"onvvuczf"}
+{"time":"2025-05-19T21:29:03.519912079+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-19T21:58:54.583019961+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-19T21:58:54.583564951+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-19T21:58:55.547111525+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading Checkpoints/Classifier-2.1/dulcet-sweep-2/checkpoint_epoch_060.pt","runtime_seconds":0.222324372,"progress":"240.0KB/804.6KB"},{"desc":"uploading Checkpoints/Classifier-2.1/dulcet-sweep-2/checkpoint_epoch_080.pt","runtime_seconds":0.222313408,"progress":"256.0KB/804.6KB"},{"desc":"uploading Checkpoints/Classifier-2.1/dulcet-sweep-2/checkpoint_epoch_100.pt","runtime_seconds":0.22230975,"progress":"272.0KB/804.6KB"},{"desc":"uploading Checkpoints/Classifier-2.1/dulcet-sweep-2/checkpoint_epoch_020.pt","runtime_seconds":0.222307359,"progress":"304.0KB/804.6KB"},{"desc":"uploading Checkpoints/Classifier-2.1/dulcet-sweep-2/checkpoint_epoch_040.pt","runtime_seconds":0.222304641,"progress":"368.0KB/804.6KB"}],"total_operations":5}}
+{"time":"2025-05-19T21:58:56.679394598+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-19T21:58:56.887550917+02:00","level":"INFO","msg":"stream: closing","id":"onvvuczf"}
+{"time":"2025-05-19T21:58:56.888763251+02:00","level":"INFO","msg":"handler: closed","stream_id":"onvvuczf"}
+{"time":"2025-05-19T21:58:56.888776821+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"onvvuczf"}
+{"time":"2025-05-19T21:58:56.888788933+02:00","level":"INFO","msg":"sender: closed","stream_id":"onvvuczf"}
+{"time":"2025-05-19T21:58:56.889544014+02:00","level":"INFO","msg":"stream: closed","id":"onvvuczf"}
