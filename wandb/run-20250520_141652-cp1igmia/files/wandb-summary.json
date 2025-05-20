@@ -1,0 +1,1 @@
+{"val_loss":0.28019615688494276,"test_correct":907,"_step":52,"checkpoint_path":"Checkpoints/Classifier-2.1/icy-sweep-1/checkpoint_epoch_040.pt","_timestamp":1.7477441027521815e+09,"test_incorrect":104,"test_accuracy":89.7131552917903,"_wandb":{"runtime":690},"test_total":1011,"_runtime":690.090883067,"epoch":50,"train_loss":0.1971079603665405}

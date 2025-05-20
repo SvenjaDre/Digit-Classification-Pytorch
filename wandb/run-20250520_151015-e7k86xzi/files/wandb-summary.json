@@ -1,0 +1,1 @@
+{"train_loss":0.07165664497383491,"test_accuracy":92.58160237388724,"_timestamp":1.7477479820832443e+09,"test_correct":936,"val_loss":0.22654152342251369,"checkpoint_path":"Checkpoints/Classifier-2.1/stilted-sweep-1/checkpoint_epoch_100.pt","_wandb":{"runtime":1366},"epoch":100,"_runtime":1366.669753621,"_step":105,"test_total":1011,"test_incorrect":75}

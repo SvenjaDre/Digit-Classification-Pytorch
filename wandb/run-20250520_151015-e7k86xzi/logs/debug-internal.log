@@ -1,0 +1,16 @@
+{"time":"2025-05-20T15:10:15.415307444+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250520_151015-e7k86xzi/logs/debug-core.log"}
+{"time":"2025-05-20T15:10:15.6830345+02:00","level":"INFO","msg":"created new stream","id":"e7k86xzi"}
+{"time":"2025-05-20T15:10:15.683237796+02:00","level":"INFO","msg":"stream: started","id":"e7k86xzi"}
+{"time":"2025-05-20T15:10:15.683309831+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"e7k86xzi"}
+{"time":"2025-05-20T15:10:15.68333803+02:00","level":"INFO","msg":"sender: started","stream_id":"e7k86xzi"}
+{"time":"2025-05-20T15:10:15.683337316+02:00","level":"INFO","msg":"handler: started","stream_id":"e7k86xzi"}
+{"time":"2025-05-20T15:10:15.887730337+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-20T15:33:02.085161431+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-20T15:33:02.085493723+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-20T15:33:03.090802997+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading Checkpoints/Classifier-2.1/stilted-sweep-1/checkpoint_epoch_040.pt","runtime_seconds":0.382877781,"progress":"464.0KB/804.6KB"},{"desc":"uploading Checkpoints/Classifier-2.1/stilted-sweep-1/checkpoint_epoch_060.pt","runtime_seconds":0.382871533,"progress":"512.0KB/804.6KB"},{"desc":"uploading Checkpoints/Classifier-2.1/stilted-sweep-1/checkpoint_epoch_080.pt","runtime_seconds":0.382866851,"progress":"416.0KB/804.6KB"},{"desc":"uploading Checkpoints/Classifier-2.1/stilted-sweep-1/checkpoint_epoch_100.pt","runtime_seconds":0.382864978,"progress":"464.0KB/804.6KB"},{"desc":"uploading Checkpoints/Classifier-2.1/stilted-sweep-1/checkpoint_epoch_020.pt","runtime_seconds":0.382859291,"progress":"512.0KB/804.6KB"}],"total_operations":5}}
+{"time":"2025-05-20T15:33:03.701491991+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-20T15:33:03.935738545+02:00","level":"INFO","msg":"stream: closing","id":"e7k86xzi"}
+{"time":"2025-05-20T15:33:03.935965192+02:00","level":"INFO","msg":"handler: closed","stream_id":"e7k86xzi"}
+{"time":"2025-05-20T15:33:03.935981547+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"e7k86xzi"}
+{"time":"2025-05-20T15:33:03.936001123+02:00","level":"INFO","msg":"sender: closed","stream_id":"e7k86xzi"}
+{"time":"2025-05-20T15:33:03.936882776+02:00","level":"INFO","msg":"stream: closed","id":"e7k86xzi"}

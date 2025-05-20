@@ -1,0 +1,16 @@
+{"time":"2025-05-20T14:16:52.663380532+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250520_141652-cp1igmia/logs/debug-core.log"}
+{"time":"2025-05-20T14:16:52.955890304+02:00","level":"INFO","msg":"created new stream","id":"cp1igmia"}
+{"time":"2025-05-20T14:16:52.956082996+02:00","level":"INFO","msg":"stream: started","id":"cp1igmia"}
+{"time":"2025-05-20T14:16:52.95615346+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"cp1igmia"}
+{"time":"2025-05-20T14:16:52.956169019+02:00","level":"INFO","msg":"sender: started","stream_id":"cp1igmia"}
+{"time":"2025-05-20T14:16:52.956227327+02:00","level":"INFO","msg":"handler: started","stream_id":"cp1igmia"}
+{"time":"2025-05-20T14:16:53.22210253+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-20T14:28:22.754105763+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-20T14:28:22.754516205+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-20T14:28:23.760636806+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading Checkpoints/Classifier-2.1/icy-sweep-1/checkpoint_epoch_020.pt","runtime_seconds":0.350476632,"progress":"752.0KB/804.6KB"},{"desc":"uploading Checkpoints/Classifier-2.1/icy-sweep-1/checkpoint_epoch_040.pt","runtime_seconds":0.350469488,"progress":"720.0KB/804.6KB"},{"desc":"uploading history steps 51-52, summary, console lines 51-60","runtime_seconds":0.096566315}],"total_operations":3}}
+{"time":"2025-05-20T14:28:24.345072454+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-20T14:28:24.552050363+02:00","level":"INFO","msg":"stream: closing","id":"cp1igmia"}
+{"time":"2025-05-20T14:28:24.552320938+02:00","level":"INFO","msg":"handler: closed","stream_id":"cp1igmia"}
+{"time":"2025-05-20T14:28:24.552353638+02:00","level":"INFO","msg":"sender: closed","stream_id":"cp1igmia"}
+{"time":"2025-05-20T14:28:24.552345884+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"cp1igmia"}
+{"time":"2025-05-20T14:28:24.553163848+02:00","level":"INFO","msg":"stream: closed","id":"cp1igmia"}
