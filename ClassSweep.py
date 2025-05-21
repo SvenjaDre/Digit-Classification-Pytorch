@@ -7,6 +7,7 @@ from torch.utils.data import DataLoader, Dataset, random_split
 import numpy as np
 import os
 import wandb
+import random
 
 # WandB Login
 wandb.login(key="4c9968476bcc046f6d8b7204ae7a2ca803e0e0a9")
@@ -83,13 +84,38 @@ def train():
     checkpoint_dir = os.path.join("Checkpoints", project_name, run_name)
     os.makedirs(checkpoint_dir, exist_ok=True)
 
-    # Dataset und Loader
-    full_dataset = CustomImageDataset(root_dir=TRAIN_DIR)
-    train_size = int(0.8 * len(full_dataset))
-    val_size = len(full_dataset) - train_size
-    train_dataset, val_dataset = random_split(full_dataset, [train_size, val_size])
+    # Seed setzen für reproduzierbare Ergebnisse
+    seed = 42
+    torch.manual_seed(seed)
+    np.random.seed(seed)
+    random.seed(seed)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed_all(seed)
 
-    train_loader = DataLoader(train_dataset, batch_size=config.batch_size, shuffle=True)
+    # Dataset laden
+    full_dataset = CustomImageDataset(root_dir=TRAIN_DIR)
+    total_size = len(full_dataset)
+    val_size = int(0.2 * total_size)
+    base_train_size = total_size - val_size
+
+    # Fixe Aufteilung in Training und Validierung
+    base_train_dataset, val_dataset = random_split(
+        full_dataset,
+        [base_train_size, val_size],
+        generator=torch.Generator().manual_seed(seed)
+    )
+
+    # Trainingsdaten auf gewünschte Anzahl reduzieren
+    target_train_samples = min(config.train_samples, len(base_train_dataset))
+    reduced_train_dataset, _ = random_split(
+        base_train_dataset,
+        [target_train_samples, len(base_train_dataset) - target_train_samples],
+        generator=torch.Generator().manual_seed(seed)
+    )
+
+    print(f"📊 Using {target_train_samples} training samples and {len(val_dataset)} validation samples.")
+
+    train_loader = DataLoader(reduced_train_dataset, batch_size=config.batch_size, shuffle=True)
     val_loader = DataLoader(val_dataset, batch_size=config.batch_size, shuffle=False)
 
     classifier = ImageClassifier().to(device)
@@ -126,10 +152,11 @@ def train():
         wandb.log({
             "epoch": epoch + 1,
             "train_loss": avg_train_loss,
-            "val_loss": avg_val_loss
+            "val_loss": avg_val_loss,
+            "train_samples_used": target_train_samples
         })
 
-        # ✅ Alle 10 Epochen Checkpoint speichern
+        # Alle 20 Epochen Checkpoint speichern
         if (epoch + 1) % 20 == 0:
             checkpoint_path = os.path.join(checkpoint_dir, f"checkpoint_epoch_{epoch+1:03}.pt")
             torch.save(classifier.state_dict(), checkpoint_path)

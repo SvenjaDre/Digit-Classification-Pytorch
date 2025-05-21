@@ -11,4 +11,6 @@ parameters:
     values: ["Adam"]
   dropout:
     values: [0.5]
+  train_samples:
+    values: []
  
