@@ -12,5 +12,5 @@ parameters:
   dropout:
     values: [0.5]
   train_samples:
-    values: []
+    values: [3404]
  

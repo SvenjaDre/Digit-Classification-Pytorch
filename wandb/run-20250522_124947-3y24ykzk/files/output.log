@@ -1,0 +1,20 @@
+Epoch 1 | Train Loss: 0.9808 | Val Loss: 0.8157 | Val Acc: 68.04% | ✅ Correct: 579 | ❌ Incorrect: 272 | 📦 Total: 851
+Epoch 2 | Train Loss: 0.6808 | Val Loss: 0.6293 | Val Acc: 73.56% | ✅ Correct: 626 | ❌ Incorrect: 225 | 📦 Total: 851
+Epoch 3 | Train Loss: 0.5833 | Val Loss: 0.5581 | Val Acc: 74.50% | ✅ Correct: 634 | ❌ Incorrect: 217 | 📦 Total: 851
+Epoch 4 | Train Loss: 0.5411 | Val Loss: 0.5299 | Val Acc: 79.32% | ✅ Correct: 675 | ❌ Incorrect: 176 | 📦 Total: 851
+Epoch 5 | Train Loss: 0.5130 | Val Loss: 0.5376 | Val Acc: 79.67% | ✅ Correct: 678 | ❌ Incorrect: 173 | 📦 Total: 851
+Epoch 6 | Train Loss: 0.4880 | Val Loss: 0.5000 | Val Acc: 80.02% | ✅ Correct: 681 | ❌ Incorrect: 170 | 📦 Total: 851
+Epoch 7 | Train Loss: 0.4673 | Val Loss: 0.4716 | Val Acc: 81.20% | ✅ Correct: 691 | ❌ Incorrect: 160 | 📦 Total: 851
+Epoch 8 | Train Loss: 0.4407 | Val Loss: 0.4424 | Val Acc: 80.96% | ✅ Correct: 689 | ❌ Incorrect: 162 | 📦 Total: 851
+Epoch 9 | Train Loss: 0.4207 | Val Loss: 0.4244 | Val Acc: 79.67% | ✅ Correct: 678 | ❌ Incorrect: 173 | 📦 Total: 851
+Epoch 10 | Train Loss: 0.4040 | Val Loss: 0.4175 | Val Acc: 83.90% | ✅ Correct: 714 | ❌ Incorrect: 137 | 📦 Total: 851
+Epoch 11 | Train Loss: 0.4037 | Val Loss: 0.3904 | Val Acc: 83.67% | ✅ Correct: 712 | ❌ Incorrect: 139 | 📦 Total: 851
+Epoch 12 | Train Loss: 0.3797 | Val Loss: 0.3824 | Val Acc: 82.61% | ✅ Correct: 703 | ❌ Incorrect: 148 | 📦 Total: 851
+Epoch 13 | Train Loss: 0.3648 | Val Loss: 0.4124 | Val Acc: 82.37% | ✅ Correct: 701 | ❌ Incorrect: 150 | 📦 Total: 851
+Epoch 14 | Train Loss: 0.3639 | Val Loss: 0.3795 | Val Acc: 84.96% | ✅ Correct: 723 | ❌ Incorrect: 128 | 📦 Total: 851
+Epoch 15 | Train Loss: 0.3496 | Val Loss: 0.3866 | Val Acc: 84.37% | ✅ Correct: 718 | ❌ Incorrect: 133 | 📦 Total: 851
+✅ Final model saved: Checkpoints/Classifier-2.1/honest-sweep-1/final_model.pt
+
+🔍 Testing on separate test set...
+/nfs/homes/sdreyer/Digit-Classification-Pytorch/ClassSweep.py:216: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  classifier.load_state_dict(torch.load(model_path, map_location=device))

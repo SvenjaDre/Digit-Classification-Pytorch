@@ -45,7 +45,7 @@ class CustomImageDataset(Dataset):
     def __getitem__(self, idx):
         image_tensor = preprocess_image(self.image_paths[idx])
         label = self.labels[idx]
-        return image_tensor, label
+        return image_tensor, label, self.image_paths[idx]
 
 # CNN Modell
 class ImageClassifier(nn.Module):
@@ -75,7 +75,7 @@ TEST_DIR = "archive/Testing"
 
 # Trainingsfunktion für Sweep
 def train():
-    wandb.init(project="Classifier-2.1")
+    wandb.init(project="Classifier-4")
     config = wandb.config
     run_name = wandb.run.name
     project_name = wandb.run.project
@@ -113,7 +113,7 @@ def train():
         generator=torch.Generator().manual_seed(seed)
     )
 
-    print(f"📊 Using {target_train_samples} training samples and {len(val_dataset)} validation samples.")
+    #print(f"📊 Using {target_train_samples} training samples and {len(val_dataset)} validation samples.")
 
     train_loader = DataLoader(reduced_train_dataset, batch_size=config.batch_size, shuffle=True)
     val_loader = DataLoader(val_dataset, batch_size=config.batch_size, shuffle=False)
@@ -125,7 +125,7 @@ def train():
     for epoch in range(config.epochs):
         classifier.train()
         running_loss = 0.0
-        for images, labels in train_loader:
+        for images, labels, _ in train_loader:
             images, labels = images.to(device), labels.to(device)
             optimizer.zero_grad()
             outputs = classifier(images)
@@ -139,22 +139,49 @@ def train():
         # Validierung
         classifier.eval()
         val_loss = 0.0
+        val_correct = 0
+        val_incorrect = 0
+        val_total = 0
         with torch.no_grad():
-            for val_images, val_labels in val_loader:
-                val_images, val_labels = val_images.to(device), val_labels.to(device)
-                val_outputs = classifier(val_images)
-                loss = loss_fn(val_outputs, val_labels)
-                val_loss += loss.item()
+               for val_images, val_labels, _ in val_loader:
+                   val_images = val_images.to(device)
+                   val_labels = val_labels.to(device)
+
+                   outputs = classifier(val_images)
+                   loss = loss_fn(outputs, val_labels)
+                   val_loss += loss.item()
+
+                   predictions = torch.argmax(outputs, dim=1)
+                   val_correct += (predictions == val_labels).sum().item()
+                   val_incorrect += (predictions != val_labels).sum().item()
+                   val_total += val_labels.size(0)
 
         avg_val_loss = val_loss / len(val_loader)
+        val_accuracy = (val_correct / val_total) * 100
 
-        print(f"Epoch {epoch+1} | Train Loss: {avg_train_loss:.4f} | Val Loss: {avg_val_loss:.4f}")
+        # 🖨️ Ausgabe
+        print(
+            f"Epoch {epoch+1} | "
+            f"Train Loss: {avg_train_loss:.4f} | "
+            f"Val Loss: {avg_val_loss:.4f} | "
+            f"Val Acc: {val_accuracy:.2f}% | "
+            f"✅ Correct: {val_correct} | "
+            f"❌ Incorrect: {val_incorrect} | "
+            f"📦 Total: {val_total}"
+        )
+
+        # 📊 Logging
         wandb.log({
             "epoch": epoch + 1,
             "train_loss": avg_train_loss,
             "val_loss": avg_val_loss,
+            "val_accuracy": val_accuracy,
+            "val_correct": val_correct,
+            "val_incorrect": val_incorrect,
+            "val_total": val_total,
             "train_samples_used": target_train_samples
         })
+
 
         # Alle 20 Epochen Checkpoint speichern
         if (epoch + 1) % 20 == 0:
@@ -194,7 +221,7 @@ def evaluate_on_test_data(model_path="model_state.pt"):
     total = 0
 
     with torch.no_grad():
-        for images, labels in test_loader:
+        for images, labels, _ in test_loader:
             images = images.to(device)
             labels = labels.to(device)
 
@@ -227,5 +254,5 @@ def evaluate_on_test_data(model_path="model_state.pt"):
 # Hauptfunktion
 if __name__ == "__main__":
     sweep_config = load_sweep_config()
-    sweep_id = wandb.sweep(sweep_config, project="Classifier-2.1")
+    sweep_id = wandb.sweep(sweep_config, project="Classifier-4")
     wandb.agent(sweep_id, function=train)
