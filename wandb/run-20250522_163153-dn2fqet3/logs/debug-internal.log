@@ -1,0 +1,16 @@
+{"time":"2025-05-22T16:31:53.042321705+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250522_163153-dn2fqet3/logs/debug-core.log"}
+{"time":"2025-05-22T16:31:53.306120616+02:00","level":"INFO","msg":"created new stream","id":"dn2fqet3"}
+{"time":"2025-05-22T16:31:53.306327683+02:00","level":"INFO","msg":"stream: started","id":"dn2fqet3"}
+{"time":"2025-05-22T16:31:53.306364666+02:00","level":"INFO","msg":"handler: started","stream_id":"dn2fqet3"}
+{"time":"2025-05-22T16:31:53.306408152+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"dn2fqet3"}
+{"time":"2025-05-22T16:31:53.306408372+02:00","level":"INFO","msg":"sender: started","stream_id":"dn2fqet3"}
+{"time":"2025-05-22T16:31:53.475108221+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-22T16:59:41.833254805+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-22T16:59:41.833647851+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-22T16:59:42.840428055+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading Checkpoints/Classifier-4/legendary-sweep-1/checkpoint_epoch_080.pt","runtime_seconds":0.168325052,"progress":"336.0KB/804.6KB"},{"desc":"uploading Checkpoints/Classifier-4/legendary-sweep-1/checkpoint_epoch_100.pt","runtime_seconds":0.168316084,"progress":"288.0KB/804.6KB"},{"desc":"uploading Checkpoints/Classifier-4/legendary-sweep-1/checkpoint_epoch_020.pt","runtime_seconds":0.168313838,"progress":"304.0KB/804.6KB"},{"desc":"uploading Checkpoints/Classifier-4/legendary-sweep-1/checkpoint_epoch_040.pt","runtime_seconds":0.168311902,"progress":"240.0KB/804.6KB"},{"desc":"uploading Checkpoints/Classifier-4/legendary-sweep-1/checkpoint_epoch_060.pt","runtime_seconds":0.168309954,"progress":"272.0KB/804.6KB"}],"total_operations":5}}
+{"time":"2025-05-22T16:59:43.668570762+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-22T16:59:43.895581145+02:00","level":"INFO","msg":"stream: closing","id":"dn2fqet3"}
+{"time":"2025-05-22T16:59:43.895800401+02:00","level":"INFO","msg":"handler: closed","stream_id":"dn2fqet3"}
+{"time":"2025-05-22T16:59:43.895813925+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"dn2fqet3"}
+{"time":"2025-05-22T16:59:43.89585465+02:00","level":"INFO","msg":"sender: closed","stream_id":"dn2fqet3"}
+{"time":"2025-05-22T16:59:43.896649763+02:00","level":"INFO","msg":"stream: closed","id":"dn2fqet3"}

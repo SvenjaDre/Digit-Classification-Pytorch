@@ -1,0 +1,114 @@
+Epoch 1 | Train Loss: 0.9910 | Val Loss: 0.8442 | Val Acc: 60.40% | ✅ Correct: 514 | ❌ Incorrect: 337 | 📦 Total: 851
+Epoch 2 | Train Loss: 0.7000 | Val Loss: 0.6309 | Val Acc: 72.39% | ✅ Correct: 616 | ❌ Incorrect: 235 | 📦 Total: 851
+Epoch 3 | Train Loss: 0.5791 | Val Loss: 0.5652 | Val Acc: 75.09% | ✅ Correct: 639 | ❌ Incorrect: 212 | 📦 Total: 851
+Epoch 4 | Train Loss: 0.5367 | Val Loss: 0.5237 | Val Acc: 76.26% | ✅ Correct: 649 | ❌ Incorrect: 202 | 📦 Total: 851
+Epoch 5 | Train Loss: 0.5176 | Val Loss: 0.5070 | Val Acc: 76.26% | ✅ Correct: 649 | ❌ Incorrect: 202 | 📦 Total: 851
+Epoch 6 | Train Loss: 0.4850 | Val Loss: 0.4893 | Val Acc: 79.32% | ✅ Correct: 675 | ❌ Incorrect: 176 | 📦 Total: 851
+Epoch 7 | Train Loss: 0.4803 | Val Loss: 0.4946 | Val Acc: 78.85% | ✅ Correct: 671 | ❌ Incorrect: 180 | 📦 Total: 851
+Epoch 8 | Train Loss: 0.4483 | Val Loss: 0.4550 | Val Acc: 78.97% | ✅ Correct: 672 | ❌ Incorrect: 179 | 📦 Total: 851
+Epoch 9 | Train Loss: 0.4310 | Val Loss: 0.4330 | Val Acc: 80.61% | ✅ Correct: 686 | ❌ Incorrect: 165 | 📦 Total: 851
+Epoch 10 | Train Loss: 0.4153 | Val Loss: 0.4341 | Val Acc: 82.26% | ✅ Correct: 700 | ❌ Incorrect: 151 | 📦 Total: 851
+Epoch 11 | Train Loss: 0.3958 | Val Loss: 0.4135 | Val Acc: 82.84% | ✅ Correct: 705 | ❌ Incorrect: 146 | 📦 Total: 851
+Epoch 12 | Train Loss: 0.3808 | Val Loss: 0.4154 | Val Acc: 82.96% | ✅ Correct: 706 | ❌ Incorrect: 145 | 📦 Total: 851
+Epoch 13 | Train Loss: 0.3672 | Val Loss: 0.3910 | Val Acc: 82.61% | ✅ Correct: 703 | ❌ Incorrect: 148 | 📦 Total: 851
+Epoch 14 | Train Loss: 0.3541 | Val Loss: 0.3864 | Val Acc: 84.14% | ✅ Correct: 716 | ❌ Incorrect: 135 | 📦 Total: 851
+Epoch 15 | Train Loss: 0.3402 | Val Loss: 0.3630 | Val Acc: 84.96% | ✅ Correct: 723 | ❌ Incorrect: 128 | 📦 Total: 851
+Epoch 16 | Train Loss: 0.3255 | Val Loss: 0.3670 | Val Acc: 83.55% | ✅ Correct: 711 | ❌ Incorrect: 140 | 📦 Total: 851
+Epoch 17 | Train Loss: 0.3275 | Val Loss: 0.3502 | Val Acc: 85.19% | ✅ Correct: 725 | ❌ Incorrect: 126 | 📦 Total: 851
+Epoch 18 | Train Loss: 0.3161 | Val Loss: 0.3600 | Val Acc: 83.78% | ✅ Correct: 713 | ❌ Incorrect: 138 | 📦 Total: 851
+Epoch 19 | Train Loss: 0.3087 | Val Loss: 0.3365 | Val Acc: 85.78% | ✅ Correct: 730 | ❌ Incorrect: 121 | 📦 Total: 851
+Epoch 20 | Train Loss: 0.3095 | Val Loss: 0.3452 | Val Acc: 84.96% | ✅ Correct: 723 | ❌ Incorrect: 128 | 📦 Total: 851
+💾 Checkpoint saved: Checkpoints/Classifier-4/legendary-sweep-1/checkpoint_epoch_020.pt
+Epoch 21 | Train Loss: 0.2904 | Val Loss: 0.3401 | Val Acc: 86.60% | ✅ Correct: 737 | ❌ Incorrect: 114 | 📦 Total: 851
+Epoch 22 | Train Loss: 0.2911 | Val Loss: 0.3296 | Val Acc: 85.31% | ✅ Correct: 726 | ❌ Incorrect: 125 | 📦 Total: 851
+Epoch 23 | Train Loss: 0.2786 | Val Loss: 0.3337 | Val Acc: 86.84% | ✅ Correct: 739 | ❌ Incorrect: 112 | 📦 Total: 851
+Epoch 24 | Train Loss: 0.2797 | Val Loss: 0.3186 | Val Acc: 87.54% | ✅ Correct: 745 | ❌ Incorrect: 106 | 📦 Total: 851
+Epoch 25 | Train Loss: 0.2621 | Val Loss: 0.3379 | Val Acc: 86.72% | ✅ Correct: 738 | ❌ Incorrect: 113 | 📦 Total: 851
+Epoch 26 | Train Loss: 0.2615 | Val Loss: 0.3165 | Val Acc: 87.78% | ✅ Correct: 747 | ❌ Incorrect: 104 | 📦 Total: 851
+Epoch 27 | Train Loss: 0.2453 | Val Loss: 0.3696 | Val Acc: 86.84% | ✅ Correct: 739 | ❌ Incorrect: 112 | 📦 Total: 851
+Epoch 28 | Train Loss: 0.2471 | Val Loss: 0.3094 | Val Acc: 87.43% | ✅ Correct: 744 | ❌ Incorrect: 107 | 📦 Total: 851
+Epoch 29 | Train Loss: 0.2506 | Val Loss: 0.3516 | Val Acc: 84.96% | ✅ Correct: 723 | ❌ Incorrect: 128 | 📦 Total: 851
+Epoch 30 | Train Loss: 0.2316 | Val Loss: 0.2968 | Val Acc: 87.66% | ✅ Correct: 746 | ❌ Incorrect: 105 | 📦 Total: 851
+Epoch 31 | Train Loss: 0.2190 | Val Loss: 0.3011 | Val Acc: 87.54% | ✅ Correct: 745 | ❌ Incorrect: 106 | 📦 Total: 851
+Epoch 32 | Train Loss: 0.2318 | Val Loss: 0.2953 | Val Acc: 88.01% | ✅ Correct: 749 | ❌ Incorrect: 102 | 📦 Total: 851
+Epoch 33 | Train Loss: 0.2192 | Val Loss: 0.3143 | Val Acc: 87.43% | ✅ Correct: 744 | ❌ Incorrect: 107 | 📦 Total: 851
+Epoch 34 | Train Loss: 0.2118 | Val Loss: 0.2862 | Val Acc: 88.48% | ✅ Correct: 753 | ❌ Incorrect: 98 | 📦 Total: 851
+Epoch 35 | Train Loss: 0.2063 | Val Loss: 0.3000 | Val Acc: 88.13% | ✅ Correct: 750 | ❌ Incorrect: 101 | 📦 Total: 851
+Epoch 36 | Train Loss: 0.2055 | Val Loss: 0.2856 | Val Acc: 88.60% | ✅ Correct: 754 | ❌ Incorrect: 97 | 📦 Total: 851
+Epoch 37 | Train Loss: 0.2070 | Val Loss: 0.2851 | Val Acc: 88.37% | ✅ Correct: 752 | ❌ Incorrect: 99 | 📦 Total: 851
+Epoch 38 | Train Loss: 0.1887 | Val Loss: 0.2786 | Val Acc: 89.07% | ✅ Correct: 758 | ❌ Incorrect: 93 | 📦 Total: 851
+Epoch 39 | Train Loss: 0.2004 | Val Loss: 0.2768 | Val Acc: 89.42% | ✅ Correct: 761 | ❌ Incorrect: 90 | 📦 Total: 851
+Epoch 40 | Train Loss: 0.1872 | Val Loss: 0.2904 | Val Acc: 89.66% | ✅ Correct: 763 | ❌ Incorrect: 88 | 📦 Total: 851
+💾 Checkpoint saved: Checkpoints/Classifier-4/legendary-sweep-1/checkpoint_epoch_040.pt
+Epoch 41 | Train Loss: 0.1804 | Val Loss: 0.2772 | Val Acc: 88.37% | ✅ Correct: 752 | ❌ Incorrect: 99 | 📦 Total: 851
+Epoch 42 | Train Loss: 0.1925 | Val Loss: 0.3026 | Val Acc: 89.31% | ✅ Correct: 760 | ❌ Incorrect: 91 | 📦 Total: 851
+Epoch 43 | Train Loss: 0.1805 | Val Loss: 0.2680 | Val Acc: 90.01% | ✅ Correct: 766 | ❌ Incorrect: 85 | 📦 Total: 851
+Epoch 44 | Train Loss: 0.1669 | Val Loss: 0.2789 | Val Acc: 89.78% | ✅ Correct: 764 | ❌ Incorrect: 87 | 📦 Total: 851
+Epoch 45 | Train Loss: 0.1600 | Val Loss: 0.2645 | Val Acc: 89.89% | ✅ Correct: 765 | ❌ Incorrect: 86 | 📦 Total: 851
+Epoch 46 | Train Loss: 0.1607 | Val Loss: 0.2891 | Val Acc: 89.66% | ✅ Correct: 763 | ❌ Incorrect: 88 | 📦 Total: 851
+Epoch 47 | Train Loss: 0.1441 | Val Loss: 0.3079 | Val Acc: 89.07% | ✅ Correct: 758 | ❌ Incorrect: 93 | 📦 Total: 851
+Epoch 48 | Train Loss: 0.1604 | Val Loss: 0.2736 | Val Acc: 89.54% | ✅ Correct: 762 | ❌ Incorrect: 89 | 📦 Total: 851
+Epoch 49 | Train Loss: 0.1487 | Val Loss: 0.2779 | Val Acc: 90.13% | ✅ Correct: 767 | ❌ Incorrect: 84 | 📦 Total: 851
+Epoch 50 | Train Loss: 0.1363 | Val Loss: 0.2876 | Val Acc: 90.60% | ✅ Correct: 771 | ❌ Incorrect: 80 | 📦 Total: 851
+Epoch 51 | Train Loss: 0.1466 | Val Loss: 0.2816 | Val Acc: 88.84% | ✅ Correct: 756 | ❌ Incorrect: 95 | 📦 Total: 851
+Epoch 52 | Train Loss: 0.1503 | Val Loss: 0.2892 | Val Acc: 90.13% | ✅ Correct: 767 | ❌ Incorrect: 84 | 📦 Total: 851
+Epoch 53 | Train Loss: 0.1403 | Val Loss: 0.2651 | Val Acc: 91.19% | ✅ Correct: 776 | ❌ Incorrect: 75 | 📦 Total: 851
+Epoch 54 | Train Loss: 0.1291 | Val Loss: 0.2582 | Val Acc: 91.42% | ✅ Correct: 778 | ❌ Incorrect: 73 | 📦 Total: 851
+Epoch 55 | Train Loss: 0.1267 | Val Loss: 0.2853 | Val Acc: 89.07% | ✅ Correct: 758 | ❌ Incorrect: 93 | 📦 Total: 851
+Epoch 56 | Train Loss: 0.1194 | Val Loss: 0.2671 | Val Acc: 91.07% | ✅ Correct: 775 | ❌ Incorrect: 76 | 📦 Total: 851
+Epoch 57 | Train Loss: 0.1256 | Val Loss: 0.2696 | Val Acc: 90.72% | ✅ Correct: 772 | ❌ Incorrect: 79 | 📦 Total: 851
+Epoch 58 | Train Loss: 0.1243 | Val Loss: 0.2708 | Val Acc: 90.60% | ✅ Correct: 771 | ❌ Incorrect: 80 | 📦 Total: 851
+Epoch 59 | Train Loss: 0.1160 | Val Loss: 0.2620 | Val Acc: 90.72% | ✅ Correct: 772 | ❌ Incorrect: 79 | 📦 Total: 851
+Epoch 60 | Train Loss: 0.1068 | Val Loss: 0.2784 | Val Acc: 89.78% | ✅ Correct: 764 | ❌ Incorrect: 87 | 📦 Total: 851
+💾 Checkpoint saved: Checkpoints/Classifier-4/legendary-sweep-1/checkpoint_epoch_060.pt
+Epoch 61 | Train Loss: 0.1199 | Val Loss: 0.2751 | Val Acc: 91.54% | ✅ Correct: 779 | ❌ Incorrect: 72 | 📦 Total: 851
+Epoch 62 | Train Loss: 0.1090 | Val Loss: 0.2663 | Val Acc: 91.54% | ✅ Correct: 779 | ❌ Incorrect: 72 | 📦 Total: 851
+Epoch 63 | Train Loss: 0.1129 | Val Loss: 0.2499 | Val Acc: 91.54% | ✅ Correct: 779 | ❌ Incorrect: 72 | 📦 Total: 851
+Epoch 64 | Train Loss: 0.1043 | Val Loss: 0.2889 | Val Acc: 92.13% | ✅ Correct: 784 | ❌ Incorrect: 67 | 📦 Total: 851
+Epoch 65 | Train Loss: 0.0944 | Val Loss: 0.2690 | Val Acc: 91.66% | ✅ Correct: 780 | ❌ Incorrect: 71 | 📦 Total: 851
+Epoch 66 | Train Loss: 0.0971 | Val Loss: 0.2502 | Val Acc: 91.30% | ✅ Correct: 777 | ❌ Incorrect: 74 | 📦 Total: 851
+Epoch 67 | Train Loss: 0.0928 | Val Loss: 0.2668 | Val Acc: 91.77% | ✅ Correct: 781 | ❌ Incorrect: 70 | 📦 Total: 851
+Epoch 68 | Train Loss: 0.0895 | Val Loss: 0.2699 | Val Acc: 92.01% | ✅ Correct: 783 | ❌ Incorrect: 68 | 📦 Total: 851
+Epoch 69 | Train Loss: 0.0996 | Val Loss: 0.2638 | Val Acc: 90.72% | ✅ Correct: 772 | ❌ Incorrect: 79 | 📦 Total: 851
+Epoch 70 | Train Loss: 0.0850 | Val Loss: 0.2639 | Val Acc: 91.66% | ✅ Correct: 780 | ❌ Incorrect: 71 | 📦 Total: 851
+Epoch 71 | Train Loss: 0.0894 | Val Loss: 0.2620 | Val Acc: 90.60% | ✅ Correct: 771 | ❌ Incorrect: 80 | 📦 Total: 851
+Epoch 72 | Train Loss: 0.0877 | Val Loss: 0.2539 | Val Acc: 92.24% | ✅ Correct: 785 | ❌ Incorrect: 66 | 📦 Total: 851
+Epoch 73 | Train Loss: 0.0836 | Val Loss: 0.2636 | Val Acc: 91.54% | ✅ Correct: 779 | ❌ Incorrect: 72 | 📦 Total: 851
+Epoch 74 | Train Loss: 0.0851 | Val Loss: 0.2713 | Val Acc: 91.77% | ✅ Correct: 781 | ❌ Incorrect: 70 | 📦 Total: 851
+Epoch 75 | Train Loss: 0.0764 | Val Loss: 0.2596 | Val Acc: 91.89% | ✅ Correct: 782 | ❌ Incorrect: 69 | 📦 Total: 851
+Epoch 76 | Train Loss: 0.0825 | Val Loss: 0.2675 | Val Acc: 90.60% | ✅ Correct: 771 | ❌ Incorrect: 80 | 📦 Total: 851
+Epoch 77 | Train Loss: 0.0831 | Val Loss: 0.2631 | Val Acc: 90.83% | ✅ Correct: 773 | ❌ Incorrect: 78 | 📦 Total: 851
+Epoch 78 | Train Loss: 0.0793 | Val Loss: 0.2572 | Val Acc: 91.54% | ✅ Correct: 779 | ❌ Incorrect: 72 | 📦 Total: 851
+Epoch 79 | Train Loss: 0.0785 | Val Loss: 0.2997 | Val Acc: 91.42% | ✅ Correct: 778 | ❌ Incorrect: 73 | 📦 Total: 851
+Epoch 80 | Train Loss: 0.0705 | Val Loss: 0.2522 | Val Acc: 91.77% | ✅ Correct: 781 | ❌ Incorrect: 70 | 📦 Total: 851
+💾 Checkpoint saved: Checkpoints/Classifier-4/legendary-sweep-1/checkpoint_epoch_080.pt
+Epoch 81 | Train Loss: 0.0719 | Val Loss: 0.2601 | Val Acc: 91.19% | ✅ Correct: 776 | ❌ Incorrect: 75 | 📦 Total: 851
+Epoch 82 | Train Loss: 0.0772 | Val Loss: 0.2756 | Val Acc: 90.83% | ✅ Correct: 773 | ❌ Incorrect: 78 | 📦 Total: 851
+Epoch 83 | Train Loss: 0.0777 | Val Loss: 0.2837 | Val Acc: 92.24% | ✅ Correct: 785 | ❌ Incorrect: 66 | 📦 Total: 851
+Epoch 84 | Train Loss: 0.0674 | Val Loss: 0.2652 | Val Acc: 91.19% | ✅ Correct: 776 | ❌ Incorrect: 75 | 📦 Total: 851
+Epoch 85 | Train Loss: 0.0666 | Val Loss: 0.2685 | Val Acc: 92.24% | ✅ Correct: 785 | ❌ Incorrect: 66 | 📦 Total: 851
+Epoch 86 | Train Loss: 0.0728 | Val Loss: 0.2788 | Val Acc: 91.30% | ✅ Correct: 777 | ❌ Incorrect: 74 | 📦 Total: 851
+Epoch 87 | Train Loss: 0.0645 | Val Loss: 0.2461 | Val Acc: 92.13% | ✅ Correct: 784 | ❌ Incorrect: 67 | 📦 Total: 851
+Epoch 88 | Train Loss: 0.0604 | Val Loss: 0.2767 | Val Acc: 90.95% | ✅ Correct: 774 | ❌ Incorrect: 77 | 📦 Total: 851
+Epoch 89 | Train Loss: 0.0572 | Val Loss: 0.3001 | Val Acc: 91.66% | ✅ Correct: 780 | ❌ Incorrect: 71 | 📦 Total: 851
+Epoch 90 | Train Loss: 0.0702 | Val Loss: 0.2942 | Val Acc: 92.83% | ✅ Correct: 790 | ❌ Incorrect: 61 | 📦 Total: 851
+Epoch 91 | Train Loss: 0.0604 | Val Loss: 0.2776 | Val Acc: 91.66% | ✅ Correct: 780 | ❌ Incorrect: 71 | 📦 Total: 851
+Epoch 92 | Train Loss: 0.0545 | Val Loss: 0.3078 | Val Acc: 91.89% | ✅ Correct: 782 | ❌ Incorrect: 69 | 📦 Total: 851
+Epoch 93 | Train Loss: 0.0511 | Val Loss: 0.2614 | Val Acc: 92.36% | ✅ Correct: 786 | ❌ Incorrect: 65 | 📦 Total: 851
+Epoch 94 | Train Loss: 0.0522 | Val Loss: 0.2678 | Val Acc: 92.36% | ✅ Correct: 786 | ❌ Incorrect: 65 | 📦 Total: 851
+Epoch 95 | Train Loss: 0.0559 | Val Loss: 0.2820 | Val Acc: 92.36% | ✅ Correct: 786 | ❌ Incorrect: 65 | 📦 Total: 851
+Epoch 96 | Train Loss: 0.0497 | Val Loss: 0.2685 | Val Acc: 92.36% | ✅ Correct: 786 | ❌ Incorrect: 65 | 📦 Total: 851
+Epoch 97 | Train Loss: 0.0525 | Val Loss: 0.2892 | Val Acc: 91.42% | ✅ Correct: 778 | ❌ Incorrect: 73 | 📦 Total: 851
+Epoch 98 | Train Loss: 0.0574 | Val Loss: 0.2873 | Val Acc: 91.66% | ✅ Correct: 780 | ❌ Incorrect: 71 | 📦 Total: 851
+Epoch 99 | Train Loss: 0.0514 | Val Loss: 0.2806 | Val Acc: 92.48% | ✅ Correct: 787 | ❌ Incorrect: 64 | 📦 Total: 851
+Epoch 100 | Train Loss: 0.0529 | Val Loss: 0.2892 | Val Acc: 92.95% | ✅ Correct: 791 | ❌ Incorrect: 60 | 📦 Total: 851
+💾 Checkpoint saved: Checkpoints/Classifier-4/legendary-sweep-1/checkpoint_epoch_100.pt
+✅ Final model saved: Checkpoints/Classifier-4/legendary-sweep-1/final_model.pt
+
+🔍 Testing on separate test set...
+/nfs/homes/sdreyer/Digit-Classification-Pytorch/ClassSweep.py:216: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  classifier.load_state_dict(torch.load(model_path, map_location=device))
+✅ Correct predictions:  932
+❌ Incorrect predictions:  79
+ Total tested images: 1011
+ Accuracy: 92.19%
