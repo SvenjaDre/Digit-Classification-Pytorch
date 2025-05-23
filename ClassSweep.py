@@ -24,20 +24,50 @@ def preprocess_image(image_path):
     image = np.expand_dims(image, axis=0)
     return torch.tensor(image, dtype=torch.float32)
 
-# Eigenes Dataset
+# Eigenes Dataset  
+# Unterscheidung in Glioma, Menigiom und no Tumor
+#class CustomImageDataset(Dataset):
+#    def __init__(self, root_dir):
+#        self.image_paths = []
+#        self.labels = []
+#        self.class_to_idx = {}
+#        self.classes = sorted(os.listdir(root_dir))
+#        for idx, class_name in enumerate(self.classes):
+#            self.class_to_idx[class_name] = idx
+#            class_folder = os.path.join(root_dir, class_name)
+#            for fname in os.listdir(class_folder):
+#                if fname.lower().endswith(('.png', '.jpg', '.jpeg')):
+#                    self.image_paths.append(os.path.join(class_folder, fname))
+#                    self.labels.append(idx)
+#
+#    def __len__(self):
+#        return len(self.image_paths)
+#
+#    def __getitem__(self, idx):
+#        image_tensor = preprocess_image(self.image_paths[idx])
+#        label = self.labels[idx]
+#        return image_tensor, label, self.image_paths[idx]
+
+
+# Dataset, unterscheidugn Tumor und noTumor
 class CustomImageDataset(Dataset):
     def __init__(self, root_dir):
         self.image_paths = []
         self.labels = []
-        self.class_to_idx = {}
-        self.classes = sorted(os.listdir(root_dir))
-        for idx, class_name in enumerate(self.classes):
-            self.class_to_idx[class_name] = idx
+        self.classes = ['no_tumor', 'tumor']  # Neue Klassennamen
+
+        for class_name in os.listdir(root_dir):
             class_folder = os.path.join(root_dir, class_name)
+            if not os.path.isdir(class_folder):
+                continue
+
+            # Tumor = 1, No Tumor = 0
+            label = 1 if class_name.lower() in ['glioma', 'meningioma'] else 0
+
             for fname in os.listdir(class_folder):
                 if fname.lower().endswith(('.png', '.jpg', '.jpeg')):
                     self.image_paths.append(os.path.join(class_folder, fname))
-                    self.labels.append(idx)
+                    self.labels.append(label)
 
     def __len__(self):
         return len(self.image_paths)
@@ -46,6 +76,7 @@ class CustomImageDataset(Dataset):
         image_tensor = preprocess_image(self.image_paths[idx])
         label = self.labels[idx]
         return image_tensor, label, self.image_paths[idx]
+
 
 # CNN Modell
 class ImageClassifier(nn.Module):
@@ -61,7 +92,7 @@ class ImageClassifier(nn.Module):
         self.fc_layers = nn.Sequential(
             nn.Flatten(),
             nn.Dropout(config.dropout),
-            nn.Linear(128 * 14 * 14, 3)
+            nn.Linear(128 * 14 * 14, 2)
         )
 
     def forward(self, x):
@@ -138,6 +169,7 @@ def train():
 
         # Validierung
         classifier.eval()
+        
         val_loss = 0.0
         val_correct = 0
         val_incorrect = 0
@@ -195,7 +227,7 @@ def train():
     final_model_path = os.path.join(checkpoint_dir, "final_model.pt")
     torch.save(classifier.state_dict(), final_model_path)
     print(f"✅ Final model saved: {final_model_path}")
-    evaluate_on_test_data(final_model_path)
+    #evaluate_on_test_data(final_model_path)   ------------------- Kommentar rückgängig machen um test wieder reinzubringen
 
     wandb.finish()
 
