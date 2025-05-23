@@ -8,6 +8,7 @@ import numpy as np
 import os
 import wandb
 import random
+from sklearn.metrics import roc_auc_score, confusion_matrix
 
 # WandB Login
 wandb.login(key="4c9968476bcc046f6d8b7204ae7a2ca803e0e0a9")
@@ -169,39 +170,59 @@ def train():
 
         # Validierung
         classifier.eval()
-        
+
         val_loss = 0.0
         val_correct = 0
         val_incorrect = 0
         val_total = 0
+        
+        all_probs = []
+        all_preds = []
+        all_labels = []
+        
         with torch.no_grad():
-               for val_images, val_labels, _ in val_loader:
-                   val_images = val_images.to(device)
-                   val_labels = val_labels.to(device)
-
-                   outputs = classifier(val_images)
-                   loss = loss_fn(outputs, val_labels)
-                   val_loss += loss.item()
-
-                   predictions = torch.argmax(outputs, dim=1)
-                   val_correct += (predictions == val_labels).sum().item()
-                   val_incorrect += (predictions != val_labels).sum().item()
-                   val_total += val_labels.size(0)
-
+            for val_images, val_labels, _ in val_loader:
+                val_images = val_images.to(device)
+                val_labels = val_labels.to(device)
+        
+                outputs = classifier(val_images)
+                loss = loss_fn(outputs, val_labels)
+                val_loss += loss.item()
+        
+                probs = torch.softmax(outputs, dim=1)[:, 1]  # Wahrscheinlichkeit für Klasse "tumor"
+                predictions = torch.argmax(outputs, dim=1)
+        
+                val_correct += (predictions == val_labels).sum().item()
+                val_incorrect += (predictions != val_labels).sum().item()
+                val_total += val_labels.size(0)
+        
+                all_probs.extend(probs.cpu().numpy())
+                all_preds.extend(predictions.cpu().numpy())
+                all_labels.extend(val_labels.cpu().numpy())
+        
         avg_val_loss = val_loss / len(val_loader)
         val_accuracy = (val_correct / val_total) * 100
-
+        
+        # 🎯 Sensitivität, Spezifität, AUC berechnen
+        tn, fp, fn, tp = confusion_matrix(all_labels, all_preds).ravel()
+        sensitivity = tp / (tp + fn + 1e-8)  # Recall für Tumor
+        specificity = tn / (tn + fp + 1e-8)  # Recall für No Tumor
+        auc_score = roc_auc_score(all_labels, all_probs)
+        
         # 🖨️ Ausgabe
         print(
             f"Epoch {epoch+1} | "
             f"Train Loss: {avg_train_loss:.4f} | "
             f"Val Loss: {avg_val_loss:.4f} | "
             f"Val Acc: {val_accuracy:.2f}% | "
+            f"Sens: {sensitivity:.2f} | "
+            f"Spec: {specificity:.2f} | "
+            f"AUC: {auc_score:.2f} | "
             f"✅ Correct: {val_correct} | "
             f"❌ Incorrect: {val_incorrect} | "
             f"📦 Total: {val_total}"
         )
-
+        
         # 📊 Logging
         wandb.log({
             "epoch": epoch + 1,
@@ -211,9 +232,12 @@ def train():
             "val_correct": val_correct,
             "val_incorrect": val_incorrect,
             "val_total": val_total,
-            "train_samples_used": target_train_samples
+            "sensitivity": sensitivity,
+            "specificity": specificity,
+            "auc": auc_score,
+            "train_samples_used": target_train_samples,
+            "val_probs_labels": wandb.Table(data=list(zip(all_probs, all_labels)), columns=["prob", "label"])
         })
-
 
         # Alle 20 Epochen Checkpoint speichern
         if (epoch + 1) % 20 == 0:
