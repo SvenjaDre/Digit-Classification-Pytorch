@@ -1,0 +1,30 @@
+2025-05-24 16:17:46,062 INFO    Thread-64 (_run_job):1301335 [wandb_setup.py:_flush():70] Current SDK version is 0.19.11
+2025-05-24 16:17:46,062 INFO    Thread-64 (_run_job):1301335 [wandb_setup.py:_flush():70] Configure stats pid to 1301335
+2025-05-24 16:17:46,063 INFO    Thread-64 (_run_job):1301335 [wandb_setup.py:_flush():70] Loading settings from /nfs/homes/sdreyer/.config/wandb/settings
+2025-05-24 16:17:46,063 INFO    Thread-64 (_run_job):1301335 [wandb_setup.py:_flush():70] Loading settings from /nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/settings
+2025-05-24 16:17:46,063 INFO    Thread-64 (_run_job):1301335 [wandb_setup.py:_flush():70] Loading settings from environment variables
+2025-05-24 16:17:46,063 INFO    Thread-64 (_run_job):1301335 [wandb_init.py:setup_run_log_directory():724] Logging user logs to /nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250524_161746-kbg3iqwr/logs/debug.log
+2025-05-24 16:17:46,064 INFO    Thread-64 (_run_job):1301335 [wandb_init.py:setup_run_log_directory():725] Logging internal logs to /nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250524_161746-kbg3iqwr/logs/debug-internal.log
+2025-05-24 16:17:46,064 INFO    Thread-64 (_run_job):1301335 [wandb_init.py:init():852] calling init triggers
+2025-05-24 16:17:46,064 INFO    Thread-64 (_run_job):1301335 [wandb_init.py:init():857] wandb.init called with sweep_config: {'batch_size': 128, 'dropout': 0.2, 'epochs': 1000, 'learning_rate': 0.0005, 'optimizer': 'Adam', 'train_samples': 3404}
+config: {'_wandb': {}}
+2025-05-24 16:17:46,065 INFO    Thread-64 (_run_job):1301335 [wandb_init.py:init():893] starting backend
+2025-05-24 16:17:46,065 INFO    Thread-64 (_run_job):1301335 [wandb_init.py:init():897] sending inform_init request
+2025-05-24 16:17:46,066 INFO    Thread-64 (_run_job):1301335 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-05-24 16:17:46,066 INFO    Thread-64 (_run_job):1301335 [wandb_init.py:init():907] backend started and connected
+2025-05-24 16:17:46,067 INFO    Thread-64 (_run_job):1301335 [wandb_run.py:_config_callback():1436] config_cb None None {'batch_size': 128, 'dropout': 0.2, 'epochs': 1000, 'learning_rate': 0.0005, 'optimizer': 'Adam', 'train_samples': 3404}
+2025-05-24 16:17:46,068 INFO    Thread-64 (_run_job):1301335 [wandb_init.py:init():1005] updated telemetry
+2025-05-24 16:17:46,078 INFO    Thread-64 (_run_job):1301335 [wandb_init.py:init():1029] communicating run to backend with 90.0 second timeout
+2025-05-24 16:17:58,671 INFO    Thread-64 (_run_job):1301335 [wandb_init.py:init():1104] starting run threads in backend
+2025-05-24 16:17:58,885 INFO    Thread-64 (_run_job):1301335 [wandb_run.py:_console_start():2573] atexit reg
+2025-05-24 16:17:58,885 INFO    Thread-64 (_run_job):1301335 [wandb_run.py:_redirect():2421] redirect: wrap_raw
+2025-05-24 16:17:58,885 INFO    Thread-64 (_run_job):1301335 [wandb_run.py:_redirect():2490] Wrapping output streams.
+2025-05-24 16:17:58,886 INFO    Thread-64 (_run_job):1301335 [wandb_run.py:_redirect():2513] Redirects installed.
+2025-05-24 16:17:58,886 INFO    Thread-64 (_run_job):1301335 [wandb_init.py:init():1150] run started, returning control to user process
+2025-05-24 16:26:07,026 INFO    Thread-64 (_run_job):1301335 [wandb_run.py:_finish():2321] finishing run svenja-dreyer-tu-dortmund/Hyperparametersuch-noTu-T/kbg3iqwr
+2025-05-24 16:26:07,027 INFO    Thread-64 (_run_job):1301335 [wandb_run.py:_atexit_cleanup():2538] got exitcode: 0
+2025-05-24 16:26:07,027 INFO    Thread-64 (_run_job):1301335 [wandb_run.py:_restore():2520] restore
+2025-05-24 16:26:07,027 INFO    Thread-64 (_run_job):1301335 [wandb_run.py:_restore():2526] restore done
+2025-05-24 16:26:10,206 INFO    Thread-64 (_run_job):1301335 [wandb_run.py:_footer_history_summary_info():4188] rendering history
+2025-05-24 16:26:10,207 INFO    Thread-64 (_run_job):1301335 [wandb_run.py:_footer_history_summary_info():4220] rendering summary
+2025-05-24 16:26:10,207 INFO    Thread-64 (_run_job):1301335 [wandb_run.py:_footer_sync_info():4149] logging synced files

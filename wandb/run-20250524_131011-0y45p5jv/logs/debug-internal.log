@@ -1,0 +1,16 @@
+{"time":"2025-05-24T13:10:11.476108711+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250524_131011-0y45p5jv/logs/debug-core.log"}
+{"time":"2025-05-24T13:10:12.996346443+02:00","level":"INFO","msg":"created new stream","id":"0y45p5jv"}
+{"time":"2025-05-24T13:10:12.996551839+02:00","level":"INFO","msg":"stream: started","id":"0y45p5jv"}
+{"time":"2025-05-24T13:10:12.996602191+02:00","level":"INFO","msg":"handler: started","stream_id":"0y45p5jv"}
+{"time":"2025-05-24T13:10:12.996594318+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"0y45p5jv"}
+{"time":"2025-05-24T13:10:12.996609705+02:00","level":"INFO","msg":"sender: started","stream_id":"0y45p5jv"}
+{"time":"2025-05-24T13:10:13.241161865+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-24T13:19:42.125243126+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-24T13:19:42.125668476+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-24T13:19:43.126286336+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-0y45p5jv-val_probs_labels","runtime_seconds":14.450335946},{"desc":"uploading artifact run-0y45p5jv-val_probs_labels","runtime_seconds":1.032546517}],"total_operations":2}}
+{"time":"2025-05-24T13:19:47.955594571+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-24T13:19:48.140410785+02:00","level":"INFO","msg":"stream: closing","id":"0y45p5jv"}
+{"time":"2025-05-24T13:19:48.140634968+02:00","level":"INFO","msg":"handler: closed","stream_id":"0y45p5jv"}
+{"time":"2025-05-24T13:19:48.14073+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"0y45p5jv"}
+{"time":"2025-05-24T13:19:48.140751597+02:00","level":"INFO","msg":"sender: closed","stream_id":"0y45p5jv"}
+{"time":"2025-05-24T13:19:48.141616683+02:00","level":"INFO","msg":"stream: closed","id":"0y45p5jv"}

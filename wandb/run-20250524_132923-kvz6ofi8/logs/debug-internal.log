@@ -1,0 +1,16 @@
+{"time":"2025-05-24T13:29:23.57280589+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250524_132923-kvz6ofi8/logs/debug-core.log"}
+{"time":"2025-05-24T13:29:35.796780592+02:00","level":"INFO","msg":"created new stream","id":"kvz6ofi8"}
+{"time":"2025-05-24T13:29:35.797150199+02:00","level":"INFO","msg":"stream: started","id":"kvz6ofi8"}
+{"time":"2025-05-24T13:29:35.797219796+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"kvz6ofi8"}
+{"time":"2025-05-24T13:29:35.797242513+02:00","level":"INFO","msg":"sender: started","stream_id":"kvz6ofi8"}
+{"time":"2025-05-24T13:29:35.797246118+02:00","level":"INFO","msg":"handler: started","stream_id":"kvz6ofi8"}
+{"time":"2025-05-24T13:29:36.030871837+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-24T13:42:15.269371807+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-24T13:42:15.269760055+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-24T13:42:16.270551091+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-kvz6ofi8-val_probs_labels","runtime_seconds":1.032606413},{"desc":"uploading config.yaml","runtime_seconds":0.511891058,"progress":"729B/729B"}],"total_operations":2}}
+{"time":"2025-05-24T13:42:18.856344707+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-24T13:42:19.065647594+02:00","level":"INFO","msg":"stream: closing","id":"kvz6ofi8"}
+{"time":"2025-05-24T13:42:19.065867222+02:00","level":"INFO","msg":"handler: closed","stream_id":"kvz6ofi8"}
+{"time":"2025-05-24T13:42:19.065946028+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"kvz6ofi8"}
+{"time":"2025-05-24T13:42:19.065960305+02:00","level":"INFO","msg":"sender: closed","stream_id":"kvz6ofi8"}
+{"time":"2025-05-24T13:42:19.066724848+02:00","level":"INFO","msg":"stream: closed","id":"kvz6ofi8"}

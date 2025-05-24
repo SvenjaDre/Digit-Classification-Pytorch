@@ -1,0 +1,16 @@
+{"time":"2025-05-24T13:03:14.213593013+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250524_130314-yh3kcm83/logs/debug-core.log"}
+{"time":"2025-05-24T13:03:14.48648782+02:00","level":"INFO","msg":"created new stream","id":"yh3kcm83"}
+{"time":"2025-05-24T13:03:14.48673703+02:00","level":"INFO","msg":"stream: started","id":"yh3kcm83"}
+{"time":"2025-05-24T13:03:14.486771569+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"yh3kcm83"}
+{"time":"2025-05-24T13:03:14.48680147+02:00","level":"INFO","msg":"handler: started","stream_id":"yh3kcm83"}
+{"time":"2025-05-24T13:03:14.486802525+02:00","level":"INFO","msg":"sender: started","stream_id":"yh3kcm83"}
+{"time":"2025-05-24T13:03:14.651363432+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-24T13:10:04.81710843+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-24T13:10:04.817520415+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-24T13:10:05.823760058+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-yh3kcm83-val_probs_labels","runtime_seconds":1.0381116910000001,"subtasks":[{"desc":"val_probs_labels.table.json","runtime_seconds":0.271819261,"progress":"20.3KB/20.3KB"}]}],"total_operations":1}}
+{"time":"2025-05-24T13:10:07.768526352+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-24T13:10:07.95732977+02:00","level":"INFO","msg":"stream: closing","id":"yh3kcm83"}
+{"time":"2025-05-24T13:10:07.957610328+02:00","level":"INFO","msg":"handler: closed","stream_id":"yh3kcm83"}
+{"time":"2025-05-24T13:10:07.95766125+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"yh3kcm83"}
+{"time":"2025-05-24T13:10:07.957675095+02:00","level":"INFO","msg":"sender: closed","stream_id":"yh3kcm83"}
+{"time":"2025-05-24T13:10:07.958538042+02:00","level":"INFO","msg":"stream: closed","id":"yh3kcm83"}

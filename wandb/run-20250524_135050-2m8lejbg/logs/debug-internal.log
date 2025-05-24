@@ -1,0 +1,16 @@
+{"time":"2025-05-24T13:50:50.461535384+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250524_135050-2m8lejbg/logs/debug-core.log"}
+{"time":"2025-05-24T13:50:51.457955539+02:00","level":"INFO","msg":"created new stream","id":"2m8lejbg"}
+{"time":"2025-05-24T13:50:51.458191349+02:00","level":"INFO","msg":"stream: started","id":"2m8lejbg"}
+{"time":"2025-05-24T13:50:51.458218979+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"2m8lejbg"}
+{"time":"2025-05-24T13:50:51.458230148+02:00","level":"INFO","msg":"handler: started","stream_id":"2m8lejbg"}
+{"time":"2025-05-24T13:50:51.458250696+02:00","level":"INFO","msg":"sender: started","stream_id":"2m8lejbg"}
+{"time":"2025-05-24T13:50:51.81100505+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-24T13:54:55.439828637+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-24T13:54:55.440372154+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-24T13:54:56.440738341+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-2m8lejbg-val_probs_labels","runtime_seconds":1.032965519,"subtasks":[{"desc":"val_probs_labels.table.json","runtime_seconds":0.33793182,"progress":"22.0KB/22.0KB"}]},{"desc":"uploading config.yaml","runtime_seconds":0.508955944,"progress":"730B/730B"}],"total_operations":2}}
+{"time":"2025-05-24T13:54:58.217991511+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-24T13:54:58.4195771+02:00","level":"INFO","msg":"stream: closing","id":"2m8lejbg"}
+{"time":"2025-05-24T13:54:58.419846962+02:00","level":"INFO","msg":"handler: closed","stream_id":"2m8lejbg"}
+{"time":"2025-05-24T13:54:58.419863816+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"2m8lejbg"}
+{"time":"2025-05-24T13:54:58.419874999+02:00","level":"INFO","msg":"sender: closed","stream_id":"2m8lejbg"}
+{"time":"2025-05-24T13:54:58.420641623+02:00","level":"INFO","msg":"stream: closed","id":"2m8lejbg"}
