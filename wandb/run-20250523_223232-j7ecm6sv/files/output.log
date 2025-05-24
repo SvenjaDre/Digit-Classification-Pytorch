@@ -1,0 +1,15 @@
+Epoch 1 | Train Loss: 0.8570 | Val Loss: 0.6649 | Val Acc: 63.57% | Sens: 1.00 | Spec: 0.00 | AUC: 0.50 | ✅ Correct: 541 | ❌ Incorrect: 310 | 📦 Total: 851
+Epoch 2 | Train Loss: 0.6639 | Val Loss: 0.6557 | Val Acc: 63.57% | Sens: 1.00 | Spec: 0.00 | AUC: 0.50 | ✅ Correct: 541 | ❌ Incorrect: 310 | 📦 Total: 851
+Epoch 3 | Train Loss: 0.6635 | Val Loss: 0.6561 | Val Acc: 63.57% | Sens: 1.00 | Spec: 0.00 | AUC: 0.50 | ✅ Correct: 541 | ❌ Incorrect: 310 | 📦 Total: 851
+Epoch 4 | Train Loss: 0.6634 | Val Loss: 0.6556 | Val Acc: 63.57% | Sens: 1.00 | Spec: 0.00 | AUC: 0.50 | ✅ Correct: 541 | ❌ Incorrect: 310 | 📦 Total: 851
+Epoch 5 | Train Loss: 0.6628 | Val Loss: 0.6572 | Val Acc: 63.57% | Sens: 1.00 | Spec: 0.00 | AUC: 0.50 | ✅ Correct: 541 | ❌ Incorrect: 310 | 📦 Total: 851
+Epoch 6 | Train Loss: 0.6637 | Val Loss: 0.6556 | Val Acc: 63.57% | Sens: 1.00 | Spec: 0.00 | AUC: 0.50 | ✅ Correct: 541 | ❌ Incorrect: 310 | 📦 Total: 851
+Epoch 7 | Train Loss: 0.6631 | Val Loss: 0.6584 | Val Acc: 63.57% | Sens: 1.00 | Spec: 0.00 | AUC: 0.50 | ✅ Correct: 541 | ❌ Incorrect: 310 | 📦 Total: 851
+Epoch 8 | Train Loss: 0.6635 | Val Loss: 0.6556 | Val Acc: 63.57% | Sens: 1.00 | Spec: 0.00 | AUC: 0.50 | ✅ Correct: 541 | ❌ Incorrect: 310 | 📦 Total: 851
+Epoch 9 | Train Loss: 0.6638 | Val Loss: 0.6567 | Val Acc: 63.57% | Sens: 1.00 | Spec: 0.00 | AUC: 0.50 | ✅ Correct: 541 | ❌ Incorrect: 310 | 📦 Total: 851
+Epoch 10 | Train Loss: 0.6631 | Val Loss: 0.6556 | Val Acc: 63.57% | Sens: 1.00 | Spec: 0.00 | AUC: 0.50 | ✅ Correct: 541 | ❌ Incorrect: 310 | 📦 Total: 851
+💾 Checkpoint saved: Checkpoints/Hyperparametersuch-noTu-T/swept-sweep-3/checkpoint_epoch_010.pt
+Epoch 11 | Train Loss: 0.6639 | Val Loss: 0.6557 | Val Acc: 63.57% | Sens: 1.00 | Spec: 0.00 | AUC: 0.50 | ✅ Correct: 541 | ❌ Incorrect: 310 | 📦 Total: 851
+Epoch 12 | Train Loss: 0.6637 | Val Loss: 0.6569 | Val Acc: 63.57% | Sens: 1.00 | Spec: 0.00 | AUC: 0.50 | ✅ Correct: 541 | ❌ Incorrect: 310 | 📦 Total: 851
+🚨 Early stopping triggered after 12 epochs with no improvement in val_loss.
+✅ Final model saved: Checkpoints/Hyperparametersuch-noTu-T/swept-sweep-3/final_model.pt

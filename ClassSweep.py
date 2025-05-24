@@ -25,32 +25,8 @@ def preprocess_image(image_path):
     image = np.expand_dims(image, axis=0)
     return torch.tensor(image, dtype=torch.float32)
 
-# Eigenes Dataset  
-# Unterscheidung in Glioma, Menigiom und no Tumor
-#class CustomImageDataset(Dataset):
-#    def __init__(self, root_dir):
-#        self.image_paths = []
-#        self.labels = []
-#        self.class_to_idx = {}
-#        self.classes = sorted(os.listdir(root_dir))
-#        for idx, class_name in enumerate(self.classes):
-#            self.class_to_idx[class_name] = idx
-#            class_folder = os.path.join(root_dir, class_name)
-#            for fname in os.listdir(class_folder):
-#                if fname.lower().endswith(('.png', '.jpg', '.jpeg')):
-#                    self.image_paths.append(os.path.join(class_folder, fname))
-#                    self.labels.append(idx)
-#
-#    def __len__(self):
-#        return len(self.image_paths)
-#
-#    def __getitem__(self, idx):
-#        image_tensor = preprocess_image(self.image_paths[idx])
-#        label = self.labels[idx]
-#        return image_tensor, label, self.image_paths[idx]
 
-
-# Dataset, unterscheidugn Tumor und noTumor
+# Eigenes Dataset, Unterscheidung Tumor und noTumor
 class CustomImageDataset(Dataset):
     def __init__(self, root_dir):
         self.image_paths = []
@@ -107,7 +83,7 @@ TEST_DIR = "archive/Testing"
 
 # Trainingsfunktion für Sweep
 def train():
-    wandb.init(project="Classifier-4")
+    wandb.init(project="Hyperparametersuch-noTu-T")
     config = wandb.config
     run_name = wandb.run.name
     project_name = wandb.run.project
@@ -145,14 +121,16 @@ def train():
         generator=torch.Generator().manual_seed(seed)
     )
 
-    #print(f"📊 Using {target_train_samples} training samples and {len(val_dataset)} validation samples.")
-
     train_loader = DataLoader(reduced_train_dataset, batch_size=config.batch_size, shuffle=True)
     val_loader = DataLoader(val_dataset, batch_size=config.batch_size, shuffle=False)
 
     classifier = ImageClassifier().to(device)
     optimizer = Adam(classifier.parameters(), lr=config.learning_rate)
     loss_fn = nn.CrossEntropyLoss()
+
+    best_val_loss = float('inf')
+    epochs_no_improve = 0
+    patience = 10  # Feste Patience für Early Stopping (kann hier angepasst werden)
 
     for epoch in range(config.epochs):
         classifier.train()
@@ -168,48 +146,44 @@ def train():
 
         avg_train_loss = running_loss / len(train_loader)
 
-        # Validierung
         classifier.eval()
-
         val_loss = 0.0
         val_correct = 0
         val_incorrect = 0
         val_total = 0
-        
+
         all_probs = []
         all_preds = []
         all_labels = []
-        
+
         with torch.no_grad():
             for val_images, val_labels, _ in val_loader:
                 val_images = val_images.to(device)
                 val_labels = val_labels.to(device)
-        
+
                 outputs = classifier(val_images)
                 loss = loss_fn(outputs, val_labels)
                 val_loss += loss.item()
-        
-                probs = torch.softmax(outputs, dim=1)[:, 1]  # Wahrscheinlichkeit für Klasse "tumor"
+
+                probs = torch.softmax(outputs, dim=1)[:, 1]
                 predictions = torch.argmax(outputs, dim=1)
-        
+
                 val_correct += (predictions == val_labels).sum().item()
                 val_incorrect += (predictions != val_labels).sum().item()
                 val_total += val_labels.size(0)
-        
+
                 all_probs.extend(probs.cpu().numpy())
                 all_preds.extend(predictions.cpu().numpy())
                 all_labels.extend(val_labels.cpu().numpy())
-        
+
         avg_val_loss = val_loss / len(val_loader)
         val_accuracy = (val_correct / val_total) * 100
-        
-        # 🎯 Sensitivität, Spezifität, AUC berechnen
+
         tn, fp, fn, tp = confusion_matrix(all_labels, all_preds).ravel()
-        sensitivity = tp / (tp + fn + 1e-8)  # Recall für Tumor
-        specificity = tn / (tn + fp + 1e-8)  # Recall für No Tumor
+        sensitivity = tp / (tp + fn + 1e-8)
+        specificity = tn / (tn + fp + 1e-8)
         auc_score = roc_auc_score(all_labels, all_probs)
-        
-        # 🖨️ Ausgabe
+
         print(
             f"Epoch {epoch+1} | "
             f"Train Loss: {avg_train_loss:.4f} | "
@@ -222,8 +196,7 @@ def train():
             f"❌ Incorrect: {val_incorrect} | "
             f"📦 Total: {val_total}"
         )
-        
-        # 📊 Logging
+
         wandb.log({
             "epoch": epoch + 1,
             "train_loss": avg_train_loss,
@@ -239,21 +212,30 @@ def train():
             "val_probs_labels": wandb.Table(data=list(zip(all_probs, all_labels)), columns=["prob", "label"])
         })
 
-        # Alle 20 Epochen Checkpoint speichern
-        if (epoch + 1) % 20 == 0:
+        # Early Stopping Check
+        if avg_val_loss < best_val_loss - 1e-4:  # kleine Toleranz für Verbesserung
+            best_val_loss = avg_val_loss
+            epochs_no_improve = 0
+        else:
+            epochs_no_improve += 1
+
+        if epochs_no_improve >= patience:
+            print(f"🚨 Early stopping triggered after {epoch+1} epochs with no improvement in val_loss.")
+            break
+
+        if (epoch + 1) % 10 == 0:
             checkpoint_path = os.path.join(checkpoint_dir, f"checkpoint_epoch_{epoch+1:03}.pt")
             torch.save(classifier.state_dict(), checkpoint_path)
             print(f"💾 Checkpoint saved: {checkpoint_path}")
             wandb.save(checkpoint_path)
             wandb.log({"checkpoint_path": checkpoint_path})
 
-    # Finales Modell speichern
     final_model_path = os.path.join(checkpoint_dir, "final_model.pt")
     torch.save(classifier.state_dict(), final_model_path)
     print(f"✅ Final model saved: {final_model_path}")
-    #evaluate_on_test_data(final_model_path)   ------------------- Kommentar rückgängig machen um test wieder reinzubringen
 
     wandb.finish()
+
 
 # Sweep-Konfiguration laden
 def load_sweep_config(path="sweep.yaml"):
@@ -310,5 +292,5 @@ def evaluate_on_test_data(model_path="model_state.pt"):
 # Hauptfunktion
 if __name__ == "__main__":
     sweep_config = load_sweep_config()
-    sweep_id = wandb.sweep(sweep_config, project="Classifier-4")
+    sweep_id = wandb.sweep(sweep_config, project="Hyperparametersuch-noTu-T")
     wandb.agent(sweep_id, function=train)

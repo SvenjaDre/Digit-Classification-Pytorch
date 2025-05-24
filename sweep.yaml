@@ -2,15 +2,15 @@
 method: grid
 parameters:
   epochs:
-    values: [100]
+    values: [1000]
   batch_size:
-    values: [64]
+    values: [16, 32, 64, 128]
   learning_rate:
-    values: [0.0001]
+    values: [0.0001, 0.001, 0.01, 0.0005, 0.005]
   optimizer:
     values: ["Adam"]
   dropout:
-    values: [0.5]
+    values: [0.5, 0.55, 0.4, 0.2, 0.3]
   train_samples:
-    values: [3000]
+    values: [3404]
  
