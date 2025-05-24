@@ -1,0 +1,16 @@
+{"time":"2025-05-24T02:16:24.090733656+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250524_021624-hy2zytvp/logs/debug-core.log"}
+{"time":"2025-05-24T02:16:25.475344627+02:00","level":"INFO","msg":"created new stream","id":"hy2zytvp"}
+{"time":"2025-05-24T02:16:25.475530797+02:00","level":"INFO","msg":"stream: started","id":"hy2zytvp"}
+{"time":"2025-05-24T02:16:25.475580059+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"hy2zytvp"}
+{"time":"2025-05-24T02:16:25.475607132+02:00","level":"INFO","msg":"handler: started","stream_id":"hy2zytvp"}
+{"time":"2025-05-24T02:16:25.475629675+02:00","level":"INFO","msg":"sender: started","stream_id":"hy2zytvp"}
+{"time":"2025-05-24T02:16:25.705880008+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-24T02:20:20.324891633+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-24T02:20:20.325301562+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-24T02:20:21.326353638+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-hy2zytvp-val_probs_labels","runtime_seconds":1.033830664},{"desc":"uploading config.yaml","runtime_seconds":0.453936363,"progress":"729B/729B"}],"total_operations":2}}
+{"time":"2025-05-24T02:20:23.491989252+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-24T02:20:23.690556821+02:00","level":"INFO","msg":"stream: closing","id":"hy2zytvp"}
+{"time":"2025-05-24T02:20:23.690766241+02:00","level":"INFO","msg":"handler: closed","stream_id":"hy2zytvp"}
+{"time":"2025-05-24T02:20:23.690788475+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"hy2zytvp"}
+{"time":"2025-05-24T02:20:23.690827172+02:00","level":"INFO","msg":"sender: closed","stream_id":"hy2zytvp"}
+{"time":"2025-05-24T02:20:23.691410817+02:00","level":"INFO","msg":"stream: closed","id":"hy2zytvp"}

@@ -21,3 +21,10 @@ config: {'_wandb': {}}
 2025-05-23 22:35:24,048 INFO    Thread-13 (_run_job):1287535 [wandb_run.py:_redirect():2490] Wrapping output streams.
 2025-05-23 22:35:24,049 INFO    Thread-13 (_run_job):1287535 [wandb_run.py:_redirect():2513] Redirects installed.
 2025-05-23 22:35:24,049 INFO    Thread-13 (_run_job):1287535 [wandb_init.py:init():1150] run started, returning control to user process
+2025-05-23 22:39:11,744 INFO    Thread-13 (_run_job):1287535 [wandb_run.py:_finish():2321] finishing run svenja-dreyer-tu-dortmund/Hyperparametersuch-noTu-T/37sx9jn3
+2025-05-23 22:39:11,745 INFO    Thread-13 (_run_job):1287535 [wandb_run.py:_atexit_cleanup():2538] got exitcode: 0
+2025-05-23 22:39:11,745 INFO    Thread-13 (_run_job):1287535 [wandb_run.py:_restore():2520] restore
+2025-05-23 22:39:11,745 INFO    Thread-13 (_run_job):1287535 [wandb_run.py:_restore():2526] restore done
+2025-05-23 22:39:15,279 INFO    Thread-13 (_run_job):1287535 [wandb_run.py:_footer_history_summary_info():4188] rendering history
+2025-05-23 22:39:15,280 INFO    Thread-13 (_run_job):1287535 [wandb_run.py:_footer_history_summary_info():4220] rendering summary
+2025-05-23 22:39:15,281 INFO    Thread-13 (_run_job):1287535 [wandb_run.py:_footer_sync_info():4149] logging synced files

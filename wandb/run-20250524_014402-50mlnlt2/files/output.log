@@ -1,0 +1,22 @@
+Epoch 1 | Train Loss: 0.3342 | Val Loss: 0.3636 | Val Acc: 83.67% | Sens: 0.99 | Spec: 0.57 | AUC: 0.97 | ✅ Correct: 712 | ❌ Incorrect: 139 | 📦 Total: 851
+Epoch 2 | Train Loss: 0.2127 | Val Loss: 0.2131 | Val Acc: 93.18% | Sens: 0.92 | Spec: 0.95 | AUC: 0.98 | ✅ Correct: 793 | ❌ Incorrect: 58 | 📦 Total: 851
+Epoch 3 | Train Loss: 0.1536 | Val Loss: 0.1637 | Val Acc: 93.77% | Sens: 0.98 | Spec: 0.87 | AUC: 0.99 | ✅ Correct: 798 | ❌ Incorrect: 53 | 📦 Total: 851
+Epoch 4 | Train Loss: 0.1196 | Val Loss: 0.1269 | Val Acc: 95.18% | Sens: 0.97 | Spec: 0.91 | AUC: 0.99 | ✅ Correct: 810 | ❌ Incorrect: 41 | 📦 Total: 851
+Epoch 5 | Train Loss: 0.0991 | Val Loss: 0.1094 | Val Acc: 95.42% | Sens: 0.97 | Spec: 0.93 | AUC: 0.99 | ✅ Correct: 812 | ❌ Incorrect: 39 | 📦 Total: 851
+Epoch 6 | Train Loss: 0.0891 | Val Loss: 0.1210 | Val Acc: 95.89% | Sens: 0.96 | Spec: 0.96 | AUC: 0.99 | ✅ Correct: 816 | ❌ Incorrect: 35 | 📦 Total: 851
+Epoch 7 | Train Loss: 0.0683 | Val Loss: 0.1117 | Val Acc: 95.89% | Sens: 0.97 | Spec: 0.93 | AUC: 0.99 | ✅ Correct: 816 | ❌ Incorrect: 35 | 📦 Total: 851
+Epoch 8 | Train Loss: 0.0545 | Val Loss: 0.1178 | Val Acc: 96.00% | Sens: 0.96 | Spec: 0.97 | AUC: 0.99 | ✅ Correct: 817 | ❌ Incorrect: 34 | 📦 Total: 851
+Epoch 9 | Train Loss: 0.0441 | Val Loss: 0.0951 | Val Acc: 96.36% | Sens: 0.98 | Spec: 0.94 | AUC: 1.00 | ✅ Correct: 820 | ❌ Incorrect: 31 | 📦 Total: 851
+Epoch 10 | Train Loss: 0.0325 | Val Loss: 0.1675 | Val Acc: 95.89% | Sens: 0.99 | Spec: 0.91 | AUC: 0.99 | ✅ Correct: 816 | ❌ Incorrect: 35 | 📦 Total: 851
+💾 Checkpoint saved: Checkpoints/Hyperparametersuch-noTu-T/pretty-sweep-39/checkpoint_epoch_010.pt
+Epoch 11 | Train Loss: 0.0352 | Val Loss: 0.1219 | Val Acc: 96.12% | Sens: 0.96 | Spec: 0.97 | AUC: 0.99 | ✅ Correct: 818 | ❌ Incorrect: 33 | 📦 Total: 851
+Epoch 12 | Train Loss: 0.0354 | Val Loss: 0.1033 | Val Acc: 96.24% | Sens: 0.97 | Spec: 0.95 | AUC: 1.00 | ✅ Correct: 819 | ❌ Incorrect: 32 | 📦 Total: 851
+Epoch 13 | Train Loss: 0.0265 | Val Loss: 0.1026 | Val Acc: 97.30% | Sens: 0.97 | Spec: 0.97 | AUC: 1.00 | ✅ Correct: 828 | ❌ Incorrect: 23 | 📦 Total: 851
+Epoch 14 | Train Loss: 0.0237 | Val Loss: 0.1236 | Val Acc: 95.89% | Sens: 0.95 | Spec: 0.97 | AUC: 0.99 | ✅ Correct: 816 | ❌ Incorrect: 35 | 📦 Total: 851
+Epoch 15 | Train Loss: 0.0184 | Val Loss: 0.1131 | Val Acc: 97.06% | Sens: 0.97 | Spec: 0.97 | AUC: 1.00 | ✅ Correct: 826 | ❌ Incorrect: 25 | 📦 Total: 851
+Epoch 16 | Train Loss: 0.0137 | Val Loss: 0.1183 | Val Acc: 96.83% | Sens: 0.97 | Spec: 0.96 | AUC: 0.99 | ✅ Correct: 824 | ❌ Incorrect: 27 | 📦 Total: 851
+Epoch 17 | Train Loss: 0.0076 | Val Loss: 0.1382 | Val Acc: 96.94% | Sens: 0.96 | Spec: 0.99 | AUC: 1.00 | ✅ Correct: 825 | ❌ Incorrect: 26 | 📦 Total: 851
+Epoch 18 | Train Loss: 0.0053 | Val Loss: 0.1204 | Val Acc: 96.94% | Sens: 0.97 | Spec: 0.97 | AUC: 0.99 | ✅ Correct: 825 | ❌ Incorrect: 26 | 📦 Total: 851
+Epoch 19 | Train Loss: 0.0064 | Val Loss: 0.1177 | Val Acc: 97.65% | Sens: 0.97 | Spec: 0.98 | AUC: 1.00 | ✅ Correct: 831 | ❌ Incorrect: 20 | 📦 Total: 851
+🚨 Early stopping triggered after 19 epochs with no improvement in val_loss.
+✅ Final model saved: Checkpoints/Hyperparametersuch-noTu-T/pretty-sweep-39/final_model.pt

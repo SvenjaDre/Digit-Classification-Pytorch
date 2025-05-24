@@ -15,3 +15,6 @@ Epoch 13 | Train Loss: 0.0250 | Val Loss: 0.1382 | Val Acc: 96.71% | Sens: 0.96 
 Epoch 14 | Train Loss: 0.0243 | Val Loss: 0.1467 | Val Acc: 96.12% | Sens: 0.98 | Spec: 0.93 | AUC: 0.99 | ✅ Correct: 818 | ❌ Incorrect: 33 | 📦 Total: 851
 Epoch 15 | Train Loss: 0.0170 | Val Loss: 0.1089 | Val Acc: 97.53% | Sens: 0.97 | Spec: 0.98 | AUC: 1.00 | ✅ Correct: 830 | ❌ Incorrect: 21 | 📦 Total: 851
 Epoch 16 | Train Loss: 0.0229 | Val Loss: 0.1266 | Val Acc: 97.41% | Sens: 0.97 | Spec: 0.98 | AUC: 0.99 | ✅ Correct: 829 | ❌ Incorrect: 22 | 📦 Total: 851
+Epoch 17 | Train Loss: 0.0176 | Val Loss: 0.1355 | Val Acc: 97.18% | Sens: 0.97 | Spec: 0.98 | AUC: 0.99 | ✅ Correct: 827 | ❌ Incorrect: 24 | 📦 Total: 851
+🚨 Early stopping triggered after 17 epochs with no improvement in val_loss.
+✅ Final model saved: Checkpoints/Hyperparametersuch-noTu-T/splendid-sweep-4/final_model.pt

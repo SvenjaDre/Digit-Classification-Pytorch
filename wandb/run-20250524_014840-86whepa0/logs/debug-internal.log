@@ -1,0 +1,16 @@
+{"time":"2025-05-24T01:48:40.810652454+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250524_014840-86whepa0/logs/debug-core.log"}
+{"time":"2025-05-24T01:48:41.133864661+02:00","level":"INFO","msg":"created new stream","id":"86whepa0"}
+{"time":"2025-05-24T01:48:41.134136294+02:00","level":"INFO","msg":"stream: started","id":"86whepa0"}
+{"time":"2025-05-24T01:48:41.134204463+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"86whepa0"}
+{"time":"2025-05-24T01:48:41.134256199+02:00","level":"INFO","msg":"handler: started","stream_id":"86whepa0"}
+{"time":"2025-05-24T01:48:41.134244053+02:00","level":"INFO","msg":"sender: started","stream_id":"86whepa0"}
+{"time":"2025-05-24T01:48:41.324399333+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-24T01:52:22.108384827+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-24T01:52:22.108779016+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-24T01:52:23.109404057+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-86whepa0-val_probs_labels","runtime_seconds":1.032836737},{"desc":"uploading config.yaml","runtime_seconds":0.46362925,"progress":"729B/729B"}],"total_operations":2}}
+{"time":"2025-05-24T01:52:25.211098171+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-24T01:52:25.425042391+02:00","level":"INFO","msg":"stream: closing","id":"86whepa0"}
+{"time":"2025-05-24T01:52:25.425290094+02:00","level":"INFO","msg":"handler: closed","stream_id":"86whepa0"}
+{"time":"2025-05-24T01:52:25.425327261+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"86whepa0"}
+{"time":"2025-05-24T01:52:25.425350375+02:00","level":"INFO","msg":"sender: closed","stream_id":"86whepa0"}
+{"time":"2025-05-24T01:52:25.426221835+02:00","level":"INFO","msg":"stream: closed","id":"86whepa0"}

@@ -1,0 +1,28 @@
+Epoch 1 | Train Loss: 0.3741 | Val Loss: 0.3630 | Val Acc: 84.61% | Sens: 0.98 | Spec: 0.61 | AUC: 0.96 | ✅ Correct: 720 | ❌ Incorrect: 131 | 📦 Total: 851
+Epoch 2 | Train Loss: 0.2459 | Val Loss: 0.2000 | Val Acc: 92.01% | Sens: 0.93 | Spec: 0.90 | AUC: 0.98 | ✅ Correct: 783 | ❌ Incorrect: 68 | 📦 Total: 851
+Epoch 3 | Train Loss: 0.1926 | Val Loss: 0.1824 | Val Acc: 91.30% | Sens: 0.96 | Spec: 0.84 | AUC: 0.98 | ✅ Correct: 777 | ❌ Incorrect: 74 | 📦 Total: 851
+Epoch 4 | Train Loss: 0.1509 | Val Loss: 0.1442 | Val Acc: 94.83% | Sens: 0.96 | Spec: 0.93 | AUC: 0.99 | ✅ Correct: 807 | ❌ Incorrect: 44 | 📦 Total: 851
+Epoch 5 | Train Loss: 0.1356 | Val Loss: 0.1263 | Val Acc: 95.65% | Sens: 0.96 | Spec: 0.95 | AUC: 0.99 | ✅ Correct: 814 | ❌ Incorrect: 37 | 📦 Total: 851
+Epoch 6 | Train Loss: 0.1049 | Val Loss: 0.1219 | Val Acc: 95.89% | Sens: 0.97 | Spec: 0.94 | AUC: 0.99 | ✅ Correct: 816 | ❌ Incorrect: 35 | 📦 Total: 851
+Epoch 7 | Train Loss: 0.0981 | Val Loss: 0.1322 | Val Acc: 95.18% | Sens: 0.98 | Spec: 0.90 | AUC: 0.99 | ✅ Correct: 810 | ❌ Incorrect: 41 | 📦 Total: 851
+Epoch 8 | Train Loss: 0.0805 | Val Loss: 0.1398 | Val Acc: 95.65% | Sens: 0.95 | Spec: 0.96 | AUC: 0.99 | ✅ Correct: 814 | ❌ Incorrect: 37 | 📦 Total: 851
+Epoch 9 | Train Loss: 0.0680 | Val Loss: 0.1111 | Val Acc: 96.24% | Sens: 0.98 | Spec: 0.94 | AUC: 0.99 | ✅ Correct: 819 | ❌ Incorrect: 32 | 📦 Total: 851
+Epoch 10 | Train Loss: 0.0616 | Val Loss: 0.1320 | Val Acc: 95.18% | Sens: 0.98 | Spec: 0.90 | AUC: 0.99 | ✅ Correct: 810 | ❌ Incorrect: 41 | 📦 Total: 851
+💾 Checkpoint saved: Checkpoints/Hyperparametersuch-noTu-T/magic-sweep-74/checkpoint_epoch_010.pt
+Epoch 11 | Train Loss: 0.0601 | Val Loss: 0.0996 | Val Acc: 96.71% | Sens: 0.97 | Spec: 0.96 | AUC: 0.99 | ✅ Correct: 823 | ❌ Incorrect: 28 | 📦 Total: 851
+Epoch 12 | Train Loss: 0.0560 | Val Loss: 0.1518 | Val Acc: 96.00% | Sens: 0.94 | Spec: 0.99 | AUC: 0.99 | ✅ Correct: 817 | ❌ Incorrect: 34 | 📦 Total: 851
+Epoch 13 | Train Loss: 0.0531 | Val Loss: 0.1097 | Val Acc: 96.94% | Sens: 0.97 | Spec: 0.96 | AUC: 0.99 | ✅ Correct: 825 | ❌ Incorrect: 26 | 📦 Total: 851
+Epoch 14 | Train Loss: 0.0352 | Val Loss: 0.0972 | Val Acc: 96.94% | Sens: 0.98 | Spec: 0.95 | AUC: 0.99 | ✅ Correct: 825 | ❌ Incorrect: 26 | 📦 Total: 851
+Epoch 15 | Train Loss: 0.0261 | Val Loss: 0.1173 | Val Acc: 96.71% | Sens: 0.97 | Spec: 0.96 | AUC: 0.99 | ✅ Correct: 823 | ❌ Incorrect: 28 | 📦 Total: 851
+Epoch 16 | Train Loss: 0.0209 | Val Loss: 0.1193 | Val Acc: 97.18% | Sens: 0.97 | Spec: 0.98 | AUC: 0.99 | ✅ Correct: 827 | ❌ Incorrect: 24 | 📦 Total: 851
+Epoch 17 | Train Loss: 0.0195 | Val Loss: 0.1180 | Val Acc: 97.30% | Sens: 0.97 | Spec: 0.97 | AUC: 1.00 | ✅ Correct: 828 | ❌ Incorrect: 23 | 📦 Total: 851
+Epoch 18 | Train Loss: 0.0172 | Val Loss: 0.2332 | Val Acc: 94.83% | Sens: 0.92 | Spec: 1.00 | AUC: 1.00 | ✅ Correct: 807 | ❌ Incorrect: 44 | 📦 Total: 851
+Epoch 19 | Train Loss: 0.0315 | Val Loss: 0.1079 | Val Acc: 97.41% | Sens: 0.98 | Spec: 0.96 | AUC: 0.99 | ✅ Correct: 829 | ❌ Incorrect: 22 | 📦 Total: 851
+Epoch 20 | Train Loss: 0.0114 | Val Loss: 0.1291 | Val Acc: 97.41% | Sens: 0.98 | Spec: 0.96 | AUC: 0.99 | ✅ Correct: 829 | ❌ Incorrect: 22 | 📦 Total: 851
+💾 Checkpoint saved: Checkpoints/Hyperparametersuch-noTu-T/magic-sweep-74/checkpoint_epoch_020.pt
+Epoch 21 | Train Loss: 0.0079 | Val Loss: 0.1211 | Val Acc: 96.94% | Sens: 0.98 | Spec: 0.96 | AUC: 1.00 | ✅ Correct: 825 | ❌ Incorrect: 26 | 📦 Total: 851
+Epoch 22 | Train Loss: 0.0116 | Val Loss: 0.1245 | Val Acc: 96.94% | Sens: 0.98 | Spec: 0.95 | AUC: 0.99 | ✅ Correct: 825 | ❌ Incorrect: 26 | 📦 Total: 851
+Epoch 23 | Train Loss: 0.0080 | Val Loss: 0.1393 | Val Acc: 97.06% | Sens: 0.97 | Spec: 0.96 | AUC: 0.99 | ✅ Correct: 826 | ❌ Incorrect: 25 | 📦 Total: 851
+Epoch 24 | Train Loss: 0.0035 | Val Loss: 0.1300 | Val Acc: 97.41% | Sens: 0.98 | Spec: 0.97 | AUC: 1.00 | ✅ Correct: 829 | ❌ Incorrect: 22 | 📦 Total: 851
+🚨 Early stopping triggered after 24 epochs with no improvement in val_loss.
+✅ Final model saved: Checkpoints/Hyperparametersuch-noTu-T/magic-sweep-74/final_model.pt

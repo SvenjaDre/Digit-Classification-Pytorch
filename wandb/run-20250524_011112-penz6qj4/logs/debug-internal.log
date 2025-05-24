@@ -1,0 +1,16 @@
+{"time":"2025-05-24T01:11:12.926890273+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250524_011112-penz6qj4/logs/debug-core.log"}
+{"time":"2025-05-24T01:11:13.192484505+02:00","level":"INFO","msg":"created new stream","id":"penz6qj4"}
+{"time":"2025-05-24T01:11:13.192747007+02:00","level":"INFO","msg":"stream: started","id":"penz6qj4"}
+{"time":"2025-05-24T01:11:13.192770181+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"penz6qj4"}
+{"time":"2025-05-24T01:11:13.192798399+02:00","level":"INFO","msg":"sender: started","stream_id":"penz6qj4"}
+{"time":"2025-05-24T01:11:13.192824642+02:00","level":"INFO","msg":"handler: started","stream_id":"penz6qj4"}
+{"time":"2025-05-24T01:11:13.401217626+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-24T01:16:18.711844641+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-24T01:16:18.712245862+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-24T01:16:19.713016948+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-penz6qj4-val_probs_labels","runtime_seconds":1.032035976,"subtasks":[{"desc":"val_probs_labels.table.json","runtime_seconds":0.198176008,"progress":"19.6KB/19.6KB"}]},{"desc":"uploading wandb-summary.json","runtime_seconds":0.649585977,"progress":"1.1KB/1.1KB"},{"desc":"uploading config.yaml","runtime_seconds":0.472091218,"progress":"731B/731B"}],"total_operations":3}}
+{"time":"2025-05-24T01:16:22.182347323+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-24T01:16:22.380487421+02:00","level":"INFO","msg":"stream: closing","id":"penz6qj4"}
+{"time":"2025-05-24T01:16:22.380719751+02:00","level":"INFO","msg":"handler: closed","stream_id":"penz6qj4"}
+{"time":"2025-05-24T01:16:22.380738285+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"penz6qj4"}
+{"time":"2025-05-24T01:16:22.380752414+02:00","level":"INFO","msg":"sender: closed","stream_id":"penz6qj4"}
+{"time":"2025-05-24T01:16:22.381533253+02:00","level":"INFO","msg":"stream: closed","id":"penz6qj4"}

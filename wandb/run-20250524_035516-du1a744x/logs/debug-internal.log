@@ -1,0 +1,16 @@
+{"time":"2025-05-24T03:55:16.946061417+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250524_035516-du1a744x/logs/debug-core.log"}
+{"time":"2025-05-24T03:55:17.231890978+02:00","level":"INFO","msg":"created new stream","id":"du1a744x"}
+{"time":"2025-05-24T03:55:17.232115937+02:00","level":"INFO","msg":"stream: started","id":"du1a744x"}
+{"time":"2025-05-24T03:55:17.232140948+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"du1a744x"}
+{"time":"2025-05-24T03:55:17.232164483+02:00","level":"INFO","msg":"sender: started","stream_id":"du1a744x"}
+{"time":"2025-05-24T03:55:17.232225602+02:00","level":"INFO","msg":"handler: started","stream_id":"du1a744x"}
+{"time":"2025-05-24T03:55:17.633657528+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-24T04:08:18.931833538+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-24T04:08:18.932204109+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-24T04:08:19.93283733+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-du1a744x-val_probs_labels","runtime_seconds":1.032718476,"subtasks":[{"desc":"val_probs_labels.table.json","runtime_seconds":0.336311224,"progress":"21.6KB/21.6KB"}]}],"total_operations":1}}
+{"time":"2025-05-24T04:08:22.329561448+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-24T04:08:22.512765368+02:00","level":"INFO","msg":"stream: closing","id":"du1a744x"}
+{"time":"2025-05-24T04:08:22.513028136+02:00","level":"INFO","msg":"handler: closed","stream_id":"du1a744x"}
+{"time":"2025-05-24T04:08:22.513060906+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"du1a744x"}
+{"time":"2025-05-24T04:08:22.513085314+02:00","level":"INFO","msg":"sender: closed","stream_id":"du1a744x"}
+{"time":"2025-05-24T04:08:22.513906882+02:00","level":"INFO","msg":"stream: closed","id":"du1a744x"}

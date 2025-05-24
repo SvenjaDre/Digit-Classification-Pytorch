@@ -1,0 +1,1 @@
+Epoch 1 | Train Loss: 0.4660 | Val Loss: 0.3331 | Val Acc: 90.01% | Sens: 0.92 | Spec: 0.86 | AUC: 0.95 | ✅ Correct: 766 | ❌ Incorrect: 85 | 📦 Total: 851

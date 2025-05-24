@@ -1,0 +1,16 @@
+{"time":"2025-05-24T05:18:18.468138225+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250524_051818-arfkeuwa/logs/debug-core.log"}
+{"time":"2025-05-24T05:18:19.53775415+02:00","level":"INFO","msg":"created new stream","id":"arfkeuwa"}
+{"time":"2025-05-24T05:18:19.537972329+02:00","level":"INFO","msg":"stream: started","id":"arfkeuwa"}
+{"time":"2025-05-24T05:18:19.538061326+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"arfkeuwa"}
+{"time":"2025-05-24T05:18:19.538095831+02:00","level":"INFO","msg":"sender: started","stream_id":"arfkeuwa"}
+{"time":"2025-05-24T05:18:19.538116574+02:00","level":"INFO","msg":"handler: started","stream_id":"arfkeuwa"}
+{"time":"2025-05-24T05:18:19.724878714+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-24T05:23:44.870983363+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-24T05:23:44.871387563+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-24T05:23:45.872213837+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-arfkeuwa-val_probs_labels","runtime_seconds":1.032670928,"subtasks":[{"desc":"val_probs_labels.table.json","runtime_seconds":0.234816355,"progress":"19.7KB/19.7KB"}]}],"total_operations":1}}
+{"time":"2025-05-24T05:23:47.845143917+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-24T05:23:48.053809866+02:00","level":"INFO","msg":"stream: closing","id":"arfkeuwa"}
+{"time":"2025-05-24T05:23:48.054057094+02:00","level":"INFO","msg":"handler: closed","stream_id":"arfkeuwa"}
+{"time":"2025-05-24T05:23:48.054095383+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"arfkeuwa"}
+{"time":"2025-05-24T05:23:48.054122067+02:00","level":"INFO","msg":"sender: closed","stream_id":"arfkeuwa"}
+{"time":"2025-05-24T05:23:48.054996009+02:00","level":"INFO","msg":"stream: closed","id":"arfkeuwa"}

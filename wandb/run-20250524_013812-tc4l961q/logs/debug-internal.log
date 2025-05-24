@@ -1,0 +1,16 @@
+{"time":"2025-05-24T01:38:12.843863338+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250524_013812-tc4l961q/logs/debug-core.log"}
+{"time":"2025-05-24T01:38:13.110013108+02:00","level":"INFO","msg":"created new stream","id":"tc4l961q"}
+{"time":"2025-05-24T01:38:13.110381753+02:00","level":"INFO","msg":"stream: started","id":"tc4l961q"}
+{"time":"2025-05-24T01:38:13.110406166+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"tc4l961q"}
+{"time":"2025-05-24T01:38:13.110412471+02:00","level":"INFO","msg":"handler: started","stream_id":"tc4l961q"}
+{"time":"2025-05-24T01:38:13.110439779+02:00","level":"INFO","msg":"sender: started","stream_id":"tc4l961q"}
+{"time":"2025-05-24T01:38:13.353091828+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-24T01:43:58.020694114+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-24T01:43:58.021099197+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-24T01:43:59.021854872+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-tc4l961q-val_probs_labels","runtime_seconds":1.033728009,"subtasks":[{"desc":"val_probs_labels.table.json","runtime_seconds":0.195881914,"progress":"21.8KB/21.8KB"}]}],"total_operations":1}}
+{"time":"2025-05-24T01:44:01.212761225+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-24T01:44:01.481113486+02:00","level":"INFO","msg":"stream: closing","id":"tc4l961q"}
+{"time":"2025-05-24T01:44:01.481414722+02:00","level":"INFO","msg":"handler: closed","stream_id":"tc4l961q"}
+{"time":"2025-05-24T01:44:01.481465091+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"tc4l961q"}
+{"time":"2025-05-24T01:44:01.481481604+02:00","level":"INFO","msg":"sender: closed","stream_id":"tc4l961q"}
+{"time":"2025-05-24T01:44:01.482387316+02:00","level":"INFO","msg":"stream: closed","id":"tc4l961q"}

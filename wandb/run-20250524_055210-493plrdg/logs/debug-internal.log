@@ -1,0 +1,7 @@
+{"time":"2025-05-24T05:52:10.316634132+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250524_055210-493plrdg/logs/debug-core.log"}
+{"time":"2025-05-24T05:52:12.111853061+02:00","level":"INFO","msg":"created new stream","id":"493plrdg"}
+{"time":"2025-05-24T05:52:12.112065721+02:00","level":"INFO","msg":"stream: started","id":"493plrdg"}
+{"time":"2025-05-24T05:52:12.112129815+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"493plrdg"}
+{"time":"2025-05-24T05:52:12.112167326+02:00","level":"INFO","msg":"sender: started","stream_id":"493plrdg"}
+{"time":"2025-05-24T05:52:12.112171948+02:00","level":"INFO","msg":"handler: started","stream_id":"493plrdg"}
+{"time":"2025-05-24T05:52:12.32793774+02:00","level":"INFO","msg":"Starting system monitor"}

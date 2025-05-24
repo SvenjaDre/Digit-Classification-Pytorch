@@ -1,0 +1,16 @@
+{"time":"2025-05-24T03:51:46.890481951+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250524_035146-pr3b1aip/logs/debug-core.log"}
+{"time":"2025-05-24T03:51:47.379087258+02:00","level":"INFO","msg":"created new stream","id":"pr3b1aip"}
+{"time":"2025-05-24T03:51:47.379297327+02:00","level":"INFO","msg":"stream: started","id":"pr3b1aip"}
+{"time":"2025-05-24T03:51:47.379367413+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"pr3b1aip"}
+{"time":"2025-05-24T03:51:47.379393137+02:00","level":"INFO","msg":"handler: started","stream_id":"pr3b1aip"}
+{"time":"2025-05-24T03:51:47.379396354+02:00","level":"INFO","msg":"sender: started","stream_id":"pr3b1aip"}
+{"time":"2025-05-24T03:51:47.604585777+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-24T03:55:02.824979255+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-24T03:55:02.825340474+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-24T03:55:03.826084141+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-pr3b1aip-val_probs_labels","runtime_seconds":0.786706555},{"desc":"uploading config.yaml","runtime_seconds":0.242116989,"progress":"730B/730B"}],"total_operations":2}}
+{"time":"2025-05-24T03:55:06.253994467+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-24T03:55:06.422719239+02:00","level":"INFO","msg":"stream: closing","id":"pr3b1aip"}
+{"time":"2025-05-24T03:55:06.423004605+02:00","level":"INFO","msg":"handler: closed","stream_id":"pr3b1aip"}
+{"time":"2025-05-24T03:55:06.423055083+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"pr3b1aip"}
+{"time":"2025-05-24T03:55:06.423069577+02:00","level":"INFO","msg":"sender: closed","stream_id":"pr3b1aip"}
+{"time":"2025-05-24T03:55:06.423893971+02:00","level":"INFO","msg":"stream: closed","id":"pr3b1aip"}
