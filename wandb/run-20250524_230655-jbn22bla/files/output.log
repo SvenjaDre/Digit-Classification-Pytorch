@@ -1,0 +1,28 @@
+Epoch 1 | Train Loss: 0.6017 | Val Loss: 0.6340 | Val Acc: 62.41% | Sens: 0.28 | Spec: 0.96 | AUC: 0.84 | ✅ Correct: 332 | ❌ Incorrect: 200 | 📦 Total: 532
+Epoch 2 | Train Loss: 0.4776 | Val Loss: 0.4992 | Val Acc: 72.93% | Sens: 0.49 | Spec: 0.96 | AUC: 0.90 | ✅ Correct: 388 | ❌ Incorrect: 144 | 📦 Total: 532
+Epoch 3 | Train Loss: 0.4324 | Val Loss: 0.3941 | Val Acc: 83.46% | Sens: 0.87 | Spec: 0.80 | AUC: 0.91 | ✅ Correct: 444 | ❌ Incorrect: 88 | 📦 Total: 532
+Epoch 4 | Train Loss: 0.3837 | Val Loss: 0.3715 | Val Acc: 84.21% | Sens: 0.87 | Spec: 0.82 | AUC: 0.92 | ✅ Correct: 448 | ❌ Incorrect: 84 | 📦 Total: 532
+Epoch 5 | Train Loss: 0.3443 | Val Loss: 0.3452 | Val Acc: 85.53% | Sens: 0.87 | Spec: 0.85 | AUC: 0.93 | ✅ Correct: 455 | ❌ Incorrect: 77 | 📦 Total: 532
+Epoch 6 | Train Loss: 0.3122 | Val Loss: 0.3261 | Val Acc: 86.09% | Sens: 0.85 | Spec: 0.87 | AUC: 0.94 | ✅ Correct: 458 | ❌ Incorrect: 74 | 📦 Total: 532
+Epoch 7 | Train Loss: 0.2788 | Val Loss: 0.3400 | Val Acc: 87.97% | Sens: 0.94 | Spec: 0.82 | AUC: 0.95 | ✅ Correct: 468 | ❌ Incorrect: 64 | 📦 Total: 532
+Epoch 8 | Train Loss: 0.2530 | Val Loss: 0.3265 | Val Acc: 86.65% | Sens: 0.82 | Spec: 0.92 | AUC: 0.95 | ✅ Correct: 461 | ❌ Incorrect: 71 | 📦 Total: 532
+Epoch 9 | Train Loss: 0.2312 | Val Loss: 0.2888 | Val Acc: 87.41% | Sens: 0.87 | Spec: 0.88 | AUC: 0.95 | ✅ Correct: 465 | ❌ Incorrect: 67 | 📦 Total: 532
+Epoch 10 | Train Loss: 0.1824 | Val Loss: 0.2891 | Val Acc: 89.66% | Sens: 0.92 | Spec: 0.87 | AUC: 0.96 | ✅ Correct: 477 | ❌ Incorrect: 55 | 📦 Total: 532
+💾 Checkpoint saved: Checkpoints/Hyperparametersuch-Gli-Men/classic-sweep-67/checkpoint_epoch_010.pt
+Epoch 11 | Train Loss: 0.1615 | Val Loss: 0.7600 | Val Acc: 72.56% | Sens: 0.45 | Spec: 0.99 | AUC: 0.95 | ✅ Correct: 386 | ❌ Incorrect: 146 | 📦 Total: 532
+Epoch 12 | Train Loss: 0.2007 | Val Loss: 0.3270 | Val Acc: 87.59% | Sens: 0.80 | Spec: 0.95 | AUC: 0.96 | ✅ Correct: 466 | ❌ Incorrect: 66 | 📦 Total: 532
+Epoch 13 | Train Loss: 0.1328 | Val Loss: 0.3814 | Val Acc: 89.29% | Sens: 0.98 | Spec: 0.81 | AUC: 0.96 | ✅ Correct: 475 | ❌ Incorrect: 57 | 📦 Total: 532
+Epoch 14 | Train Loss: 0.1355 | Val Loss: 0.2381 | Val Acc: 92.11% | Sens: 0.94 | Spec: 0.90 | AUC: 0.97 | ✅ Correct: 490 | ❌ Incorrect: 42 | 📦 Total: 532
+Epoch 15 | Train Loss: 0.0976 | Val Loss: 0.2625 | Val Acc: 89.29% | Sens: 0.84 | Spec: 0.94 | AUC: 0.97 | ✅ Correct: 475 | ❌ Incorrect: 57 | 📦 Total: 532
+Epoch 16 | Train Loss: 0.0876 | Val Loss: 0.2876 | Val Acc: 89.47% | Sens: 0.85 | Spec: 0.94 | AUC: 0.97 | ✅ Correct: 476 | ❌ Incorrect: 56 | 📦 Total: 532
+Epoch 17 | Train Loss: 0.0817 | Val Loss: 0.3314 | Val Acc: 90.23% | Sens: 0.94 | Spec: 0.86 | AUC: 0.96 | ✅ Correct: 480 | ❌ Incorrect: 52 | 📦 Total: 532
+Epoch 18 | Train Loss: 0.0649 | Val Loss: 0.3147 | Val Acc: 91.73% | Sens: 0.95 | Spec: 0.89 | AUC: 0.97 | ✅ Correct: 488 | ❌ Incorrect: 44 | 📦 Total: 532
+Epoch 19 | Train Loss: 0.0707 | Val Loss: 0.3950 | Val Acc: 89.85% | Sens: 0.97 | Spec: 0.83 | AUC: 0.97 | ✅ Correct: 478 | ❌ Incorrect: 54 | 📦 Total: 532
+Epoch 20 | Train Loss: 0.0651 | Val Loss: 0.3257 | Val Acc: 91.73% | Sens: 0.97 | Spec: 0.86 | AUC: 0.97 | ✅ Correct: 488 | ❌ Incorrect: 44 | 📦 Total: 532
+💾 Checkpoint saved: Checkpoints/Hyperparametersuch-Gli-Men/classic-sweep-67/checkpoint_epoch_020.pt
+Epoch 21 | Train Loss: 0.0450 | Val Loss: 0.2955 | Val Acc: 93.23% | Sens: 0.95 | Spec: 0.91 | AUC: 0.98 | ✅ Correct: 496 | ❌ Incorrect: 36 | 📦 Total: 532
+Epoch 22 | Train Loss: 0.0392 | Val Loss: 0.3768 | Val Acc: 90.60% | Sens: 0.95 | Spec: 0.86 | AUC: 0.97 | ✅ Correct: 482 | ❌ Incorrect: 50 | 📦 Total: 532
+Epoch 23 | Train Loss: 0.0293 | Val Loss: 0.3226 | Val Acc: 92.29% | Sens: 0.95 | Spec: 0.90 | AUC: 0.97 | ✅ Correct: 491 | ❌ Incorrect: 41 | 📦 Total: 532
+Epoch 24 | Train Loss: 0.0254 | Val Loss: 0.3072 | Val Acc: 92.11% | Sens: 0.92 | Spec: 0.93 | AUC: 0.97 | ✅ Correct: 490 | ❌ Incorrect: 42 | 📦 Total: 532
+🚨 Early stopping triggered after 24 epochs with no improvement in val_loss.
+✅ Final model saved: Checkpoints/Hyperparametersuch-Gli-Men/classic-sweep-67/final_model.pt

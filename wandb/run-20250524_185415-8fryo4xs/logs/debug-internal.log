@@ -1,0 +1,17 @@
+{"time":"2025-05-24T18:54:15.628081887+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250524_185415-8fryo4xs/logs/debug-core.log"}
+{"time":"2025-05-24T18:54:15.894869569+02:00","level":"INFO","msg":"created new stream","id":"8fryo4xs"}
+{"time":"2025-05-24T18:54:15.895086611+02:00","level":"INFO","msg":"stream: started","id":"8fryo4xs"}
+{"time":"2025-05-24T18:54:15.895132858+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"8fryo4xs"}
+{"time":"2025-05-24T18:54:15.895139245+02:00","level":"INFO","msg":"handler: started","stream_id":"8fryo4xs"}
+{"time":"2025-05-24T18:54:15.895178871+02:00","level":"INFO","msg":"sender: started","stream_id":"8fryo4xs"}
+{"time":"2025-05-24T18:54:16.057473707+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-24T18:54:55.643549448+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-05-24T18:58:26.336147946+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-24T18:58:26.336572668+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-24T18:58:27.321637573+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-8fryo4xs-val_probs_labels","runtime_seconds":1.026539898,"subtasks":[{"desc":"val_probs_labels.table.json","runtime_seconds":0.217369127,"progress":"13.2KB/13.2KB"}]}],"total_operations":1}}
+{"time":"2025-05-24T18:58:29.527879668+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-24T18:58:29.723406519+02:00","level":"INFO","msg":"stream: closing","id":"8fryo4xs"}
+{"time":"2025-05-24T18:58:29.723669182+02:00","level":"INFO","msg":"handler: closed","stream_id":"8fryo4xs"}
+{"time":"2025-05-24T18:58:29.723740961+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"8fryo4xs"}
+{"time":"2025-05-24T18:58:29.723757888+02:00","level":"INFO","msg":"sender: closed","stream_id":"8fryo4xs"}
+{"time":"2025-05-24T18:58:29.724658531+02:00","level":"INFO","msg":"stream: closed","id":"8fryo4xs"}

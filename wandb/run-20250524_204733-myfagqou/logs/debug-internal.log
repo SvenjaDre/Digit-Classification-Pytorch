@@ -1,0 +1,16 @@
+{"time":"2025-05-24T20:47:33.766783638+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250524_204733-myfagqou/logs/debug-core.log"}
+{"time":"2025-05-24T20:47:34.032556017+02:00","level":"INFO","msg":"created new stream","id":"myfagqou"}
+{"time":"2025-05-24T20:47:34.032775851+02:00","level":"INFO","msg":"stream: started","id":"myfagqou"}
+{"time":"2025-05-24T20:47:34.032801215+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"myfagqou"}
+{"time":"2025-05-24T20:47:34.032816183+02:00","level":"INFO","msg":"handler: started","stream_id":"myfagqou"}
+{"time":"2025-05-24T20:47:34.032817813+02:00","level":"INFO","msg":"sender: started","stream_id":"myfagqou"}
+{"time":"2025-05-24T20:47:34.202200259+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-24T20:51:03.009398171+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-24T20:51:03.009717753+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-24T20:51:04.01040566+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-myfagqou-val_probs_labels","runtime_seconds":1.02750821}],"total_operations":1}}
+{"time":"2025-05-24T20:51:05.820676286+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-24T20:51:06.013364799+02:00","level":"INFO","msg":"stream: closing","id":"myfagqou"}
+{"time":"2025-05-24T20:51:06.013597569+02:00","level":"INFO","msg":"handler: closed","stream_id":"myfagqou"}
+{"time":"2025-05-24T20:51:06.013647695+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"myfagqou"}
+{"time":"2025-05-24T20:51:06.013701265+02:00","level":"INFO","msg":"sender: closed","stream_id":"myfagqou"}
+{"time":"2025-05-24T20:51:06.014391635+02:00","level":"INFO","msg":"stream: closed","id":"myfagqou"}

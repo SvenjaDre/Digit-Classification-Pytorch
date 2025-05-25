@@ -1,0 +1,16 @@
+{"time":"2025-05-24T19:42:32.472452491+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250524_194232-dcxr5t6h/logs/debug-core.log"}
+{"time":"2025-05-24T19:42:33.599526813+02:00","level":"INFO","msg":"created new stream","id":"dcxr5t6h"}
+{"time":"2025-05-24T19:42:33.599757416+02:00","level":"INFO","msg":"stream: started","id":"dcxr5t6h"}
+{"time":"2025-05-24T19:42:33.599811184+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"dcxr5t6h"}
+{"time":"2025-05-24T19:42:33.599816023+02:00","level":"INFO","msg":"handler: started","stream_id":"dcxr5t6h"}
+{"time":"2025-05-24T19:42:33.59982452+02:00","level":"INFO","msg":"sender: started","stream_id":"dcxr5t6h"}
+{"time":"2025-05-24T19:42:33.85511576+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-24T19:47:49.793895645+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-24T19:47:49.794345349+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-24T19:47:50.795066384+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-dcxr5t6h-val_probs_labels","runtime_seconds":1.027099969},{"desc":"uploading config.yaml","runtime_seconds":0.462899668,"progress":"730B/730B"}],"total_operations":2}}
+{"time":"2025-05-24T19:47:52.961045752+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-24T19:47:53.205738731+02:00","level":"INFO","msg":"stream: closing","id":"dcxr5t6h"}
+{"time":"2025-05-24T19:47:53.205947948+02:00","level":"INFO","msg":"handler: closed","stream_id":"dcxr5t6h"}
+{"time":"2025-05-24T19:47:53.205990992+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"dcxr5t6h"}
+{"time":"2025-05-24T19:47:53.206038327+02:00","level":"INFO","msg":"sender: closed","stream_id":"dcxr5t6h"}
+{"time":"2025-05-24T19:47:53.206882458+02:00","level":"INFO","msg":"stream: closed","id":"dcxr5t6h"}

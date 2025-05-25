@@ -1,0 +1,17 @@
+{"time":"2025-05-24T22:07:03.097949201+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250524_220703-ujtp1tnk/logs/debug-core.log"}
+{"time":"2025-05-24T22:07:03.365752768+02:00","level":"INFO","msg":"created new stream","id":"ujtp1tnk"}
+{"time":"2025-05-24T22:07:03.365978263+02:00","level":"INFO","msg":"stream: started","id":"ujtp1tnk"}
+{"time":"2025-05-24T22:07:03.366067456+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"ujtp1tnk"}
+{"time":"2025-05-24T22:07:03.366115413+02:00","level":"INFO","msg":"sender: started","stream_id":"ujtp1tnk"}
+{"time":"2025-05-24T22:07:03.366117461+02:00","level":"INFO","msg":"handler: started","stream_id":"ujtp1tnk"}
+{"time":"2025-05-24T22:07:03.525309133+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-24T22:12:37.193780011+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-05-24T22:13:43.239003262+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-24T22:13:43.239410464+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-24T22:13:44.239971371+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-ujtp1tnk-val_probs_labels","runtime_seconds":1.02920757}],"total_operations":1}}
+{"time":"2025-05-24T22:13:46.011228754+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-24T22:13:46.223306398+02:00","level":"INFO","msg":"stream: closing","id":"ujtp1tnk"}
+{"time":"2025-05-24T22:13:46.223530692+02:00","level":"INFO","msg":"handler: closed","stream_id":"ujtp1tnk"}
+{"time":"2025-05-24T22:13:46.223580533+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ujtp1tnk"}
+{"time":"2025-05-24T22:13:46.223610648+02:00","level":"INFO","msg":"sender: closed","stream_id":"ujtp1tnk"}
+{"time":"2025-05-24T22:13:46.224395959+02:00","level":"INFO","msg":"stream: closed","id":"ujtp1tnk"}

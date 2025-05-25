@@ -1,0 +1,16 @@
+{"time":"2025-05-24T19:34:14.132522911+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250524_193414-3ny6h959/logs/debug-core.log"}
+{"time":"2025-05-24T19:34:16.093040373+02:00","level":"INFO","msg":"created new stream","id":"3ny6h959"}
+{"time":"2025-05-24T19:34:16.093352365+02:00","level":"INFO","msg":"stream: started","id":"3ny6h959"}
+{"time":"2025-05-24T19:34:16.093398139+02:00","level":"INFO","msg":"handler: started","stream_id":"3ny6h959"}
+{"time":"2025-05-24T19:34:16.093417345+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"3ny6h959"}
+{"time":"2025-05-24T19:34:16.093418122+02:00","level":"INFO","msg":"sender: started","stream_id":"3ny6h959"}
+{"time":"2025-05-24T19:34:16.314032907+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-24T19:42:27.52531357+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-24T19:42:27.525677337+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-24T19:42:28.526549972+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-3ny6h959-val_probs_labels","runtime_seconds":1.031581626,"subtasks":[{"desc":"val_probs_labels.table.json","runtime_seconds":0.206025569,"progress":"13.6KB/13.6KB"}]}],"total_operations":1}}
+{"time":"2025-05-24T19:42:30.669689287+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-24T19:42:30.951051614+02:00","level":"INFO","msg":"stream: closing","id":"3ny6h959"}
+{"time":"2025-05-24T19:42:30.951249926+02:00","level":"INFO","msg":"handler: closed","stream_id":"3ny6h959"}
+{"time":"2025-05-24T19:42:30.951314087+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"3ny6h959"}
+{"time":"2025-05-24T19:42:30.951339929+02:00","level":"INFO","msg":"sender: closed","stream_id":"3ny6h959"}
+{"time":"2025-05-24T19:42:30.952166193+02:00","level":"INFO","msg":"stream: closed","id":"3ny6h959"}

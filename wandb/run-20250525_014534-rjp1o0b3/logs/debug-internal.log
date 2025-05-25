@@ -1,0 +1,16 @@
+{"time":"2025-05-25T01:45:34.850084885+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250525_014534-rjp1o0b3/logs/debug-core.log"}
+{"time":"2025-05-25T01:45:36.764268509+02:00","level":"INFO","msg":"created new stream","id":"rjp1o0b3"}
+{"time":"2025-05-25T01:45:36.764503666+02:00","level":"INFO","msg":"stream: started","id":"rjp1o0b3"}
+{"time":"2025-05-25T01:45:36.764520521+02:00","level":"INFO","msg":"sender: started","stream_id":"rjp1o0b3"}
+{"time":"2025-05-25T01:45:36.764523894+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"rjp1o0b3"}
+{"time":"2025-05-25T01:45:36.764541698+02:00","level":"INFO","msg":"handler: started","stream_id":"rjp1o0b3"}
+{"time":"2025-05-25T01:45:36.968115944+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-25T01:50:41.388184786+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-25T01:50:41.388583546+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-25T01:50:42.389360281+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-rjp1o0b3-val_probs_labels","runtime_seconds":10.489724521,"subtasks":[{"desc":"val_probs_labels.table.json","runtime_seconds":9.78422627,"progress":"13.5KB/13.5KB"}]},{"desc":"uploading media/table/val_probs_labels_33_9d808ef03c6d1501e13d.table.json","runtime_seconds":10.295204072,"progress":"13.1KB/13.1KB"},{"desc":"uploading artifact run-rjp1o0b3-val_probs_labels","runtime_seconds":1.027512334},{"desc":"uploading media/table/val_probs_labels_34_361797af93b02690afea.table.json","runtime_seconds":0.827732183,"progress":"13.3KB/13.3KB"},{"desc":"uploading output.log","runtime_seconds":0.627477831,"progress":"5.5KB/5.5KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.627471542,"progress":"1.1KB/1.1KB"},{"desc":"uploading config.yaml","runtime_seconds":0.471921479,"progress":"730B/730B"}],"total_operations":7}}
+{"time":"2025-05-25T01:51:29.732465114+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-25T01:51:29.922409858+02:00","level":"INFO","msg":"stream: closing","id":"rjp1o0b3"}
+{"time":"2025-05-25T01:51:29.922627226+02:00","level":"INFO","msg":"handler: closed","stream_id":"rjp1o0b3"}
+{"time":"2025-05-25T01:51:29.922671051+02:00","level":"INFO","msg":"sender: closed","stream_id":"rjp1o0b3"}
+{"time":"2025-05-25T01:51:29.922667724+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"rjp1o0b3"}
+{"time":"2025-05-25T01:51:29.923471681+02:00","level":"INFO","msg":"stream: closed","id":"rjp1o0b3"}

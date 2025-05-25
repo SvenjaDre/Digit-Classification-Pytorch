@@ -1,0 +1,28 @@
+Epoch 1 | Train Loss: 0.6147 | Val Loss: 0.5754 | Val Acc: 65.60% | Sens: 0.34 | Spec: 0.96 | AUC: 0.86 | ✅ Correct: 349 | ❌ Incorrect: 183 | 📦 Total: 532
+Epoch 2 | Train Loss: 0.4606 | Val Loss: 0.4512 | Val Acc: 77.82% | Sens: 0.60 | Spec: 0.95 | AUC: 0.91 | ✅ Correct: 414 | ❌ Incorrect: 118 | 📦 Total: 532
+Epoch 3 | Train Loss: 0.4188 | Val Loss: 0.3851 | Val Acc: 83.27% | Sens: 0.91 | Spec: 0.76 | AUC: 0.92 | ✅ Correct: 443 | ❌ Incorrect: 89 | 📦 Total: 532
+Epoch 4 | Train Loss: 0.3967 | Val Loss: 0.3867 | Val Acc: 82.89% | Sens: 0.73 | Spec: 0.93 | AUC: 0.92 | ✅ Correct: 441 | ❌ Incorrect: 91 | 📦 Total: 532
+Epoch 5 | Train Loss: 0.3514 | Val Loss: 0.3446 | Val Acc: 84.96% | Sens: 0.90 | Spec: 0.80 | AUC: 0.94 | ✅ Correct: 452 | ❌ Incorrect: 80 | 📦 Total: 532
+Epoch 6 | Train Loss: 0.3153 | Val Loss: 0.3042 | Val Acc: 87.59% | Sens: 0.86 | Spec: 0.89 | AUC: 0.95 | ✅ Correct: 466 | ❌ Incorrect: 66 | 📦 Total: 532
+Epoch 7 | Train Loss: 0.2986 | Val Loss: 0.3194 | Val Acc: 87.41% | Sens: 0.93 | Spec: 0.82 | AUC: 0.95 | ✅ Correct: 465 | ❌ Incorrect: 67 | 📦 Total: 532
+Epoch 8 | Train Loss: 0.2589 | Val Loss: 0.3161 | Val Acc: 86.84% | Sens: 0.79 | Spec: 0.94 | AUC: 0.95 | ✅ Correct: 462 | ❌ Incorrect: 70 | 📦 Total: 532
+Epoch 9 | Train Loss: 0.2137 | Val Loss: 0.2631 | Val Acc: 90.60% | Sens: 0.90 | Spec: 0.91 | AUC: 0.96 | ✅ Correct: 482 | ❌ Incorrect: 50 | 📦 Total: 532
+Epoch 10 | Train Loss: 0.2036 | Val Loss: 0.2813 | Val Acc: 88.16% | Sens: 0.93 | Spec: 0.83 | AUC: 0.96 | ✅ Correct: 469 | ❌ Incorrect: 63 | 📦 Total: 532
+💾 Checkpoint saved: Checkpoints/Hyperparametersuch-Gli-Men/efficient-sweep-27/checkpoint_epoch_010.pt
+Epoch 11 | Train Loss: 0.1709 | Val Loss: 0.2739 | Val Acc: 89.47% | Sens: 0.84 | Spec: 0.94 | AUC: 0.97 | ✅ Correct: 476 | ❌ Incorrect: 56 | 📦 Total: 532
+Epoch 12 | Train Loss: 0.1633 | Val Loss: 0.3797 | Val Acc: 84.96% | Sens: 0.72 | Spec: 0.97 | AUC: 0.97 | ✅ Correct: 452 | ❌ Incorrect: 80 | 📦 Total: 532
+Epoch 13 | Train Loss: 0.1370 | Val Loss: 0.2643 | Val Acc: 89.66% | Sens: 0.95 | Spec: 0.85 | AUC: 0.97 | ✅ Correct: 477 | ❌ Incorrect: 55 | 📦 Total: 532
+Epoch 14 | Train Loss: 0.1176 | Val Loss: 0.2328 | Val Acc: 91.73% | Sens: 0.93 | Spec: 0.90 | AUC: 0.97 | ✅ Correct: 488 | ❌ Incorrect: 44 | 📦 Total: 532
+Epoch 15 | Train Loss: 0.1054 | Val Loss: 0.2835 | Val Acc: 90.23% | Sens: 0.92 | Spec: 0.88 | AUC: 0.96 | ✅ Correct: 480 | ❌ Incorrect: 52 | 📦 Total: 532
+Epoch 16 | Train Loss: 0.1010 | Val Loss: 0.3250 | Val Acc: 89.85% | Sens: 0.84 | Spec: 0.95 | AUC: 0.97 | ✅ Correct: 478 | ❌ Incorrect: 54 | 📦 Total: 532
+Epoch 17 | Train Loss: 0.1035 | Val Loss: 0.2922 | Val Acc: 91.35% | Sens: 0.97 | Spec: 0.86 | AUC: 0.98 | ✅ Correct: 486 | ❌ Incorrect: 46 | 📦 Total: 532
+Epoch 18 | Train Loss: 0.0819 | Val Loss: 0.2791 | Val Acc: 90.98% | Sens: 0.93 | Spec: 0.89 | AUC: 0.97 | ✅ Correct: 484 | ❌ Incorrect: 48 | 📦 Total: 532
+Epoch 19 | Train Loss: 0.1120 | Val Loss: 0.3217 | Val Acc: 89.29% | Sens: 0.98 | Spec: 0.81 | AUC: 0.98 | ✅ Correct: 475 | ❌ Incorrect: 57 | 📦 Total: 532
+Epoch 20 | Train Loss: 0.0717 | Val Loss: 0.2567 | Val Acc: 91.73% | Sens: 0.92 | Spec: 0.91 | AUC: 0.98 | ✅ Correct: 488 | ❌ Incorrect: 44 | 📦 Total: 532
+💾 Checkpoint saved: Checkpoints/Hyperparametersuch-Gli-Men/efficient-sweep-27/checkpoint_epoch_020.pt
+Epoch 21 | Train Loss: 0.0625 | Val Loss: 0.2850 | Val Acc: 90.98% | Sens: 0.86 | Spec: 0.96 | AUC: 0.98 | ✅ Correct: 484 | ❌ Incorrect: 48 | 📦 Total: 532
+Epoch 22 | Train Loss: 0.0816 | Val Loss: 0.2477 | Val Acc: 93.05% | Sens: 0.91 | Spec: 0.95 | AUC: 0.98 | ✅ Correct: 495 | ❌ Incorrect: 37 | 📦 Total: 532
+Epoch 23 | Train Loss: 0.0563 | Val Loss: 0.2666 | Val Acc: 92.11% | Sens: 0.93 | Spec: 0.92 | AUC: 0.97 | ✅ Correct: 490 | ❌ Incorrect: 42 | 📦 Total: 532
+Epoch 24 | Train Loss: 0.0542 | Val Loss: 0.2669 | Val Acc: 91.92% | Sens: 0.93 | Spec: 0.91 | AUC: 0.98 | ✅ Correct: 489 | ❌ Incorrect: 43 | 📦 Total: 532
+🚨 Early stopping triggered after 24 epochs with no improvement in val_loss.
+✅ Final model saved: Checkpoints/Hyperparametersuch-Gli-Men/efficient-sweep-27/final_model.pt

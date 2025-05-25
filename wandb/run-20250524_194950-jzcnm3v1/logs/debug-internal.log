@@ -1,0 +1,16 @@
+{"time":"2025-05-24T19:49:50.430090722+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250524_194950-jzcnm3v1/logs/debug-core.log"}
+{"time":"2025-05-24T19:49:50.696345534+02:00","level":"INFO","msg":"created new stream","id":"jzcnm3v1"}
+{"time":"2025-05-24T19:49:50.696591779+02:00","level":"INFO","msg":"stream: started","id":"jzcnm3v1"}
+{"time":"2025-05-24T19:49:50.696648606+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"jzcnm3v1"}
+{"time":"2025-05-24T19:49:50.696652316+02:00","level":"INFO","msg":"sender: started","stream_id":"jzcnm3v1"}
+{"time":"2025-05-24T19:49:50.696721239+02:00","level":"INFO","msg":"handler: started","stream_id":"jzcnm3v1"}
+{"time":"2025-05-24T19:49:51.014162794+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-24T19:53:57.065493578+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-24T19:53:57.065830608+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-24T19:53:58.066712701+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-jzcnm3v1-val_probs_labels","runtime_seconds":1.027415513},{"desc":"uploading config.yaml","runtime_seconds":0.469692253,"progress":"731B/731B"}],"total_operations":2}}
+{"time":"2025-05-24T19:54:00.134062781+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-24T19:54:00.361630762+02:00","level":"INFO","msg":"stream: closing","id":"jzcnm3v1"}
+{"time":"2025-05-24T19:54:00.361845802+02:00","level":"INFO","msg":"handler: closed","stream_id":"jzcnm3v1"}
+{"time":"2025-05-24T19:54:00.361897794+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"jzcnm3v1"}
+{"time":"2025-05-24T19:54:00.361909087+02:00","level":"INFO","msg":"sender: closed","stream_id":"jzcnm3v1"}
+{"time":"2025-05-24T19:54:00.36280024+02:00","level":"INFO","msg":"stream: closed","id":"jzcnm3v1"}

@@ -1,0 +1,28 @@
+Epoch 1 | Train Loss: 0.6176 | Val Loss: 0.5310 | Val Acc: 70.86% | Sens: 0.48 | Spec: 0.93 | AUC: 0.86 | ✅ Correct: 377 | ❌ Incorrect: 155 | 📦 Total: 532
+Epoch 2 | Train Loss: 0.4516 | Val Loss: 0.4373 | Val Acc: 78.76% | Sens: 0.63 | Spec: 0.94 | AUC: 0.91 | ✅ Correct: 419 | ❌ Incorrect: 113 | 📦 Total: 532
+Epoch 3 | Train Loss: 0.4281 | Val Loss: 0.4018 | Val Acc: 83.46% | Sens: 0.73 | Spec: 0.93 | AUC: 0.92 | ✅ Correct: 444 | ❌ Incorrect: 88 | 📦 Total: 532
+Epoch 4 | Train Loss: 0.3885 | Val Loss: 0.3848 | Val Acc: 83.08% | Sens: 0.72 | Spec: 0.94 | AUC: 0.93 | ✅ Correct: 442 | ❌ Incorrect: 90 | 📦 Total: 532
+Epoch 5 | Train Loss: 0.3400 | Val Loss: 0.3290 | Val Acc: 85.90% | Sens: 0.90 | Spec: 0.82 | AUC: 0.94 | ✅ Correct: 457 | ❌ Incorrect: 75 | 📦 Total: 532
+Epoch 6 | Train Loss: 0.3107 | Val Loss: 0.3269 | Val Acc: 86.65% | Sens: 0.80 | Spec: 0.93 | AUC: 0.94 | ✅ Correct: 461 | ❌ Incorrect: 71 | 📦 Total: 532
+Epoch 7 | Train Loss: 0.3115 | Val Loss: 0.3322 | Val Acc: 87.78% | Sens: 0.95 | Spec: 0.80 | AUC: 0.95 | ✅ Correct: 467 | ❌ Incorrect: 65 | 📦 Total: 532
+Epoch 8 | Train Loss: 0.2576 | Val Loss: 0.2831 | Val Acc: 88.53% | Sens: 0.91 | Spec: 0.86 | AUC: 0.96 | ✅ Correct: 471 | ❌ Incorrect: 61 | 📦 Total: 532
+Epoch 9 | Train Loss: 0.2328 | Val Loss: 0.3155 | Val Acc: 89.29% | Sens: 0.97 | Spec: 0.82 | AUC: 0.96 | ✅ Correct: 475 | ❌ Incorrect: 57 | 📦 Total: 532
+Epoch 10 | Train Loss: 0.2075 | Val Loss: 0.3004 | Val Acc: 90.41% | Sens: 0.98 | Spec: 0.83 | AUC: 0.97 | ✅ Correct: 481 | ❌ Incorrect: 51 | 📦 Total: 532
+💾 Checkpoint saved: Checkpoints/Hyperparametersuch-Gli-Men/mild-sweep-37/checkpoint_epoch_010.pt
+Epoch 11 | Train Loss: 0.1796 | Val Loss: 0.3702 | Val Acc: 86.47% | Sens: 0.75 | Spec: 0.97 | AUC: 0.96 | ✅ Correct: 460 | ❌ Incorrect: 72 | 📦 Total: 532
+Epoch 12 | Train Loss: 0.1726 | Val Loss: 0.3344 | Val Acc: 87.22% | Sens: 0.79 | Spec: 0.96 | AUC: 0.97 | ✅ Correct: 464 | ❌ Incorrect: 68 | 📦 Total: 532
+Epoch 13 | Train Loss: 0.1535 | Val Loss: 0.2652 | Val Acc: 89.85% | Sens: 0.97 | Spec: 0.83 | AUC: 0.97 | ✅ Correct: 478 | ❌ Incorrect: 54 | 📦 Total: 532
+Epoch 14 | Train Loss: 0.1382 | Val Loss: 0.2373 | Val Acc: 91.17% | Sens: 0.95 | Spec: 0.87 | AUC: 0.97 | ✅ Correct: 485 | ❌ Incorrect: 47 | 📦 Total: 532
+Epoch 15 | Train Loss: 0.1240 | Val Loss: 0.2455 | Val Acc: 91.54% | Sens: 0.91 | Spec: 0.92 | AUC: 0.97 | ✅ Correct: 487 | ❌ Incorrect: 45 | 📦 Total: 532
+Epoch 16 | Train Loss: 0.1089 | Val Loss: 0.2892 | Val Acc: 90.98% | Sens: 0.97 | Spec: 0.85 | AUC: 0.97 | ✅ Correct: 484 | ❌ Incorrect: 48 | 📦 Total: 532
+Epoch 17 | Train Loss: 0.0915 | Val Loss: 0.3056 | Val Acc: 90.79% | Sens: 0.95 | Spec: 0.87 | AUC: 0.97 | ✅ Correct: 483 | ❌ Incorrect: 49 | 📦 Total: 532
+Epoch 18 | Train Loss: 0.1041 | Val Loss: 0.2910 | Val Acc: 91.35% | Sens: 0.97 | Spec: 0.86 | AUC: 0.97 | ✅ Correct: 486 | ❌ Incorrect: 46 | 📦 Total: 532
+Epoch 19 | Train Loss: 0.0884 | Val Loss: 0.2465 | Val Acc: 91.92% | Sens: 0.96 | Spec: 0.88 | AUC: 0.97 | ✅ Correct: 489 | ❌ Incorrect: 43 | 📦 Total: 532
+Epoch 20 | Train Loss: 0.0758 | Val Loss: 0.2679 | Val Acc: 92.11% | Sens: 0.94 | Spec: 0.90 | AUC: 0.97 | ✅ Correct: 490 | ❌ Incorrect: 42 | 📦 Total: 532
+💾 Checkpoint saved: Checkpoints/Hyperparametersuch-Gli-Men/mild-sweep-37/checkpoint_epoch_020.pt
+Epoch 21 | Train Loss: 0.0593 | Val Loss: 0.2557 | Val Acc: 91.54% | Sens: 0.93 | Spec: 0.90 | AUC: 0.98 | ✅ Correct: 487 | ❌ Incorrect: 45 | 📦 Total: 532
+Epoch 22 | Train Loss: 0.0538 | Val Loss: 0.2749 | Val Acc: 92.48% | Sens: 0.91 | Spec: 0.94 | AUC: 0.97 | ✅ Correct: 492 | ❌ Incorrect: 40 | 📦 Total: 532
+Epoch 23 | Train Loss: 0.0791 | Val Loss: 0.2762 | Val Acc: 91.17% | Sens: 0.89 | Spec: 0.93 | AUC: 0.97 | ✅ Correct: 485 | ❌ Incorrect: 47 | 📦 Total: 532
+Epoch 24 | Train Loss: 0.0483 | Val Loss: 0.2727 | Val Acc: 92.67% | Sens: 0.93 | Spec: 0.93 | AUC: 0.97 | ✅ Correct: 493 | ❌ Incorrect: 39 | 📦 Total: 532
+🚨 Early stopping triggered after 24 epochs with no improvement in val_loss.
+✅ Final model saved: Checkpoints/Hyperparametersuch-Gli-Men/mild-sweep-37/final_model.pt

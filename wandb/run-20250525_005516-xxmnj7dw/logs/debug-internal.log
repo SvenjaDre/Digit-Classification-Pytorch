@@ -1,0 +1,17 @@
+{"time":"2025-05-25T00:55:16.14510527+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250525_005516-xxmnj7dw/logs/debug-core.log"}
+{"time":"2025-05-25T00:55:16.411728389+02:00","level":"INFO","msg":"created new stream","id":"xxmnj7dw"}
+{"time":"2025-05-25T00:55:16.411926227+02:00","level":"INFO","msg":"stream: started","id":"xxmnj7dw"}
+{"time":"2025-05-25T00:55:16.411966787+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"xxmnj7dw"}
+{"time":"2025-05-25T00:55:16.412002422+02:00","level":"INFO","msg":"sender: started","stream_id":"xxmnj7dw"}
+{"time":"2025-05-25T00:55:16.412007997+02:00","level":"INFO","msg":"handler: started","stream_id":"xxmnj7dw"}
+{"time":"2025-05-25T00:55:16.603335851+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-25T01:03:12.047535351+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/svenja-dreyer-tu-dortmund/Hyperparametersuch-Gli-Men/xxmnj7dw/file_stream\": dial tcp: lookup api.wandb.ai on 129.217.129.42:53: read udp 129.217.167.98:56951->129.217.129.42:53: i/o timeout"}
+{"time":"2025-05-25T01:11:55.070283972+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-25T01:11:55.070721414+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-25T01:11:56.071367258+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-xxmnj7dw-val_probs_labels","runtime_seconds":1.029700594}],"total_operations":1}}
+{"time":"2025-05-25T01:11:58.210004673+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-25T01:11:58.411394738+02:00","level":"INFO","msg":"stream: closing","id":"xxmnj7dw"}
+{"time":"2025-05-25T01:11:58.411627589+02:00","level":"INFO","msg":"handler: closed","stream_id":"xxmnj7dw"}
+{"time":"2025-05-25T01:11:58.411689123+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"xxmnj7dw"}
+{"time":"2025-05-25T01:11:58.411717548+02:00","level":"INFO","msg":"sender: closed","stream_id":"xxmnj7dw"}
+{"time":"2025-05-25T01:11:58.412569843+02:00","level":"INFO","msg":"stream: closed","id":"xxmnj7dw"}

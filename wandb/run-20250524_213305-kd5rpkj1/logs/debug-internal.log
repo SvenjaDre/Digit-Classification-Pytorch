@@ -1,0 +1,16 @@
+{"time":"2025-05-24T21:33:05.661846257+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250524_213305-kd5rpkj1/logs/debug-core.log"}
+{"time":"2025-05-24T21:33:05.927874794+02:00","level":"INFO","msg":"created new stream","id":"kd5rpkj1"}
+{"time":"2025-05-24T21:33:05.92811417+02:00","level":"INFO","msg":"stream: started","id":"kd5rpkj1"}
+{"time":"2025-05-24T21:33:05.928187819+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"kd5rpkj1"}
+{"time":"2025-05-24T21:33:05.928196589+02:00","level":"INFO","msg":"handler: started","stream_id":"kd5rpkj1"}
+{"time":"2025-05-24T21:33:05.928241138+02:00","level":"INFO","msg":"sender: started","stream_id":"kd5rpkj1"}
+{"time":"2025-05-24T21:33:06.084240748+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-24T21:34:50.649237203+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-24T21:34:50.649563638+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-24T21:34:51.650224124+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-kd5rpkj1-val_probs_labels","runtime_seconds":1.02836776},{"desc":"uploading history steps 9-11, summary, console lines 9-13","runtime_seconds":0.08855373}],"total_operations":2}}
+{"time":"2025-05-24T21:34:53.575109137+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-24T21:34:53.780957012+02:00","level":"INFO","msg":"stream: closing","id":"kd5rpkj1"}
+{"time":"2025-05-24T21:34:53.781222933+02:00","level":"INFO","msg":"handler: closed","stream_id":"kd5rpkj1"}
+{"time":"2025-05-24T21:34:53.781247124+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"kd5rpkj1"}
+{"time":"2025-05-24T21:34:53.781282599+02:00","level":"INFO","msg":"sender: closed","stream_id":"kd5rpkj1"}
+{"time":"2025-05-24T21:34:53.781979964+02:00","level":"INFO","msg":"stream: closed","id":"kd5rpkj1"}

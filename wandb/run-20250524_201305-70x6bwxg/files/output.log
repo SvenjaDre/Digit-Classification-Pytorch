@@ -1,0 +1,29 @@
+Epoch 1 | Train Loss: 1.0485 | Val Loss: 0.6531 | Val Acc: 50.00% | Sens: 1.00 | Spec: 0.02 | AUC: 0.81 | ✅ Correct: 266 | ❌ Incorrect: 266 | 📦 Total: 532
+Epoch 2 | Train Loss: 0.6537 | Val Loss: 0.6945 | Val Acc: 49.06% | Sens: 1.00 | Spec: 0.00 | AUC: 0.67 | ✅ Correct: 261 | ❌ Incorrect: 271 | 📦 Total: 532
+Epoch 3 | Train Loss: 0.6467 | Val Loss: 0.5353 | Val Acc: 77.63% | Sens: 0.92 | Spec: 0.64 | AUC: 0.88 | ✅ Correct: 413 | ❌ Incorrect: 119 | 📦 Total: 532
+Epoch 4 | Train Loss: 0.5465 | Val Loss: 0.5426 | Val Acc: 73.68% | Sens: 0.52 | Spec: 0.94 | AUC: 0.86 | ✅ Correct: 392 | ❌ Incorrect: 140 | 📦 Total: 532
+Epoch 5 | Train Loss: 0.5453 | Val Loss: 0.4674 | Val Acc: 79.51% | Sens: 0.84 | Spec: 0.75 | AUC: 0.89 | ✅ Correct: 423 | ❌ Incorrect: 109 | 📦 Total: 532
+Epoch 6 | Train Loss: 0.5323 | Val Loss: 0.4792 | Val Acc: 78.01% | Sens: 0.64 | Spec: 0.92 | AUC: 0.88 | ✅ Correct: 415 | ❌ Incorrect: 117 | 📦 Total: 532
+Epoch 7 | Train Loss: 0.5549 | Val Loss: 0.4940 | Val Acc: 79.14% | Sens: 0.91 | Spec: 0.68 | AUC: 0.89 | ✅ Correct: 421 | ❌ Incorrect: 111 | 📦 Total: 532
+Epoch 8 | Train Loss: 0.5262 | Val Loss: 0.4650 | Val Acc: 80.64% | Sens: 0.77 | Spec: 0.84 | AUC: 0.89 | ✅ Correct: 429 | ❌ Incorrect: 103 | 📦 Total: 532
+Epoch 9 | Train Loss: 0.4989 | Val Loss: 0.5161 | Val Acc: 79.51% | Sens: 0.92 | Spec: 0.68 | AUC: 0.90 | ✅ Correct: 423 | ❌ Incorrect: 109 | 📦 Total: 532
+Epoch 10 | Train Loss: 0.5370 | Val Loss: 0.4939 | Val Acc: 78.57% | Sens: 0.92 | Spec: 0.65 | AUC: 0.90 | ✅ Correct: 418 | ❌ Incorrect: 114 | 📦 Total: 532
+💾 Checkpoint saved: Checkpoints/Hyperparametersuch-Gli-Men/lemon-sweep-38/checkpoint_epoch_010.pt
+Epoch 11 | Train Loss: 0.5020 | Val Loss: 0.5754 | Val Acc: 66.35% | Sens: 0.33 | Spec: 0.99 | AUC: 0.88 | ✅ Correct: 353 | ❌ Incorrect: 179 | 📦 Total: 532
+Epoch 12 | Train Loss: 0.4895 | Val Loss: 0.5068 | Val Acc: 74.06% | Sens: 0.52 | Spec: 0.96 | AUC: 0.90 | ✅ Correct: 394 | ❌ Incorrect: 138 | 📦 Total: 532
+Epoch 13 | Train Loss: 0.4493 | Val Loss: 0.4044 | Val Acc: 81.77% | Sens: 0.76 | Spec: 0.87 | AUC: 0.91 | ✅ Correct: 435 | ❌ Incorrect: 97 | 📦 Total: 532
+Epoch 14 | Train Loss: 0.4574 | Val Loss: 0.4774 | Val Acc: 75.94% | Sens: 0.57 | Spec: 0.94 | AUC: 0.90 | ✅ Correct: 404 | ❌ Incorrect: 128 | 📦 Total: 532
+Epoch 15 | Train Loss: 0.4746 | Val Loss: 0.3923 | Val Acc: 83.27% | Sens: 0.83 | Spec: 0.83 | AUC: 0.91 | ✅ Correct: 443 | ❌ Incorrect: 89 | 📦 Total: 532
+Epoch 16 | Train Loss: 0.4568 | Val Loss: 0.4437 | Val Acc: 81.58% | Sens: 0.91 | Spec: 0.72 | AUC: 0.90 | ✅ Correct: 434 | ❌ Incorrect: 98 | 📦 Total: 532
+Epoch 17 | Train Loss: 0.4444 | Val Loss: 0.4268 | Val Acc: 80.45% | Sens: 0.68 | Spec: 0.93 | AUC: 0.91 | ✅ Correct: 428 | ❌ Incorrect: 104 | 📦 Total: 532
+Epoch 18 | Train Loss: 0.5427 | Val Loss: 0.4894 | Val Acc: 78.76% | Sens: 0.75 | Spec: 0.82 | AUC: 0.88 | ✅ Correct: 419 | ❌ Incorrect: 113 | 📦 Total: 532
+Epoch 19 | Train Loss: 0.4607 | Val Loss: 0.4467 | Val Acc: 80.08% | Sens: 0.85 | Spec: 0.75 | AUC: 0.88 | ✅ Correct: 426 | ❌ Incorrect: 106 | 📦 Total: 532
+Epoch 20 | Train Loss: 0.4550 | Val Loss: 0.3959 | Val Acc: 82.71% | Sens: 0.87 | Spec: 0.79 | AUC: 0.90 | ✅ Correct: 440 | ❌ Incorrect: 92 | 📦 Total: 532
+💾 Checkpoint saved: Checkpoints/Hyperparametersuch-Gli-Men/lemon-sweep-38/checkpoint_epoch_020.pt
+Epoch 21 | Train Loss: 0.4514 | Val Loss: 0.3983 | Val Acc: 82.33% | Sens: 0.79 | Spec: 0.85 | AUC: 0.91 | ✅ Correct: 438 | ❌ Incorrect: 94 | 📦 Total: 532
+Epoch 22 | Train Loss: 0.4252 | Val Loss: 0.4103 | Val Acc: 80.45% | Sens: 0.71 | Spec: 0.89 | AUC: 0.91 | ✅ Correct: 428 | ❌ Incorrect: 104 | 📦 Total: 532
+Epoch 23 | Train Loss: 0.4292 | Val Loss: 0.4303 | Val Acc: 79.32% | Sens: 0.90 | Spec: 0.69 | AUC: 0.90 | ✅ Correct: 422 | ❌ Incorrect: 110 | 📦 Total: 532
+Epoch 24 | Train Loss: 0.4283 | Val Loss: 0.3924 | Val Acc: 84.40% | Sens: 0.85 | Spec: 0.84 | AUC: 0.91 | ✅ Correct: 449 | ❌ Incorrect: 83 | 📦 Total: 532
+Epoch 25 | Train Loss: 0.4133 | Val Loss: 0.3950 | Val Acc: 82.52% | Sens: 0.89 | Spec: 0.77 | AUC: 0.91 | ✅ Correct: 439 | ❌ Incorrect: 93 | 📦 Total: 532
+🚨 Early stopping triggered after 25 epochs with no improvement in val_loss.
+✅ Final model saved: Checkpoints/Hyperparametersuch-Gli-Men/lemon-sweep-38/final_model.pt

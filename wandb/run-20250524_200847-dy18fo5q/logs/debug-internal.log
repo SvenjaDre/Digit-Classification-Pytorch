@@ -1,0 +1,16 @@
+{"time":"2025-05-24T20:08:47.134910972+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250524_200847-dy18fo5q/logs/debug-core.log"}
+{"time":"2025-05-24T20:08:48.580767443+02:00","level":"INFO","msg":"created new stream","id":"dy18fo5q"}
+{"time":"2025-05-24T20:08:48.580986763+02:00","level":"INFO","msg":"stream: started","id":"dy18fo5q"}
+{"time":"2025-05-24T20:08:48.581064514+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"dy18fo5q"}
+{"time":"2025-05-24T20:08:48.581085341+02:00","level":"INFO","msg":"sender: started","stream_id":"dy18fo5q"}
+{"time":"2025-05-24T20:08:48.581101398+02:00","level":"INFO","msg":"handler: started","stream_id":"dy18fo5q"}
+{"time":"2025-05-24T20:08:48.803647084+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-24T20:12:36.290601091+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-24T20:12:36.290992924+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-24T20:12:37.291755347+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-dy18fo5q-val_probs_labels","runtime_seconds":38.695277038,"subtasks":[{"desc":"val_probs_labels.table.json","runtime_seconds":37.925517652,"progress":"13.6KB/13.6KB"}]},{"desc":"uploading media/table/val_probs_labels_20_1df65b945c16c5af16e9.table.json","runtime_seconds":38.502714695,"progress":"13.3KB/13.3KB"},{"desc":"uploading Checkpoints/Hyperparametersuch-Gli-Men/mild-sweep-37/checkpoint_epoch_020.pt","runtime_seconds":38.502702871,"progress":"706.6KB/706.6KB"},{"desc":"uploading artifact run-dy18fo5q-val_probs_labels","runtime_seconds":29.25813594},{"desc":"uploading media/table/val_probs_labels_22_ad85d2138d4e600f1af5.table.json","runtime_seconds":29.043538284,"progress":"13.5KB/13.5KB"},{"desc":"uploading artifact run-dy18fo5q-val_probs_labels","runtime_seconds":19.843997246},{"desc":"uploading media/table/val_probs_labels_23_2614191a8cb1a9452d63.table.json","runtime_seconds":19.642931195,"progress":"13.4KB/13.4KB"},{"desc":"uploading artifact run-dy18fo5q-val_probs_labels","runtime_seconds":10.447335004},{"desc":"uploading media/table/val_probs_labels_24_e7198a558ca4bceb4275.table.json","runtime_seconds":10.234031315,"progress":"13.6KB/13.6KB"},{"desc":"uploading artifact run-dy18fo5q-val_probs_labels","runtime_seconds":1.027271678}],"total_operations":14}}
+{"time":"2025-05-24T20:13:01.377825752+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-24T20:13:01.557127712+02:00","level":"INFO","msg":"stream: closing","id":"dy18fo5q"}
+{"time":"2025-05-24T20:13:01.557367573+02:00","level":"INFO","msg":"handler: closed","stream_id":"dy18fo5q"}
+{"time":"2025-05-24T20:13:01.55739339+02:00","level":"INFO","msg":"sender: closed","stream_id":"dy18fo5q"}
+{"time":"2025-05-24T20:13:01.55738459+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"dy18fo5q"}
+{"time":"2025-05-24T20:13:01.558190861+02:00","level":"INFO","msg":"stream: closed","id":"dy18fo5q"}

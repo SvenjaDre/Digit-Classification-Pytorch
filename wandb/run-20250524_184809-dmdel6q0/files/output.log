@@ -1,0 +1,28 @@
+Epoch 1 | Train Loss: 0.6074 | Val Loss: 0.5223 | Val Acc: 71.99% | Sens: 0.46 | Spec: 0.97 | AUC: 0.88 | ✅ Correct: 383 | ❌ Incorrect: 149 | 📦 Total: 532
+Epoch 2 | Train Loss: 0.4423 | Val Loss: 0.4054 | Val Acc: 83.83% | Sens: 0.78 | Spec: 0.89 | AUC: 0.92 | ✅ Correct: 446 | ❌ Incorrect: 86 | 📦 Total: 532
+Epoch 3 | Train Loss: 0.3828 | Val Loss: 0.3375 | Val Acc: 86.28% | Sens: 0.86 | Spec: 0.86 | AUC: 0.93 | ✅ Correct: 459 | ❌ Incorrect: 73 | 📦 Total: 532
+Epoch 4 | Train Loss: 0.3212 | Val Loss: 0.3971 | Val Acc: 84.02% | Sens: 0.96 | Spec: 0.73 | AUC: 0.94 | ✅ Correct: 447 | ❌ Incorrect: 85 | 📦 Total: 532
+Epoch 5 | Train Loss: 0.2817 | Val Loss: 0.3662 | Val Acc: 86.28% | Sens: 0.96 | Spec: 0.77 | AUC: 0.95 | ✅ Correct: 459 | ❌ Incorrect: 73 | 📦 Total: 532
+Epoch 6 | Train Loss: 0.2526 | Val Loss: 0.3526 | Val Acc: 84.77% | Sens: 0.76 | Spec: 0.93 | AUC: 0.94 | ✅ Correct: 451 | ❌ Incorrect: 81 | 📦 Total: 532
+Epoch 7 | Train Loss: 0.2171 | Val Loss: 0.3426 | Val Acc: 88.16% | Sens: 0.98 | Spec: 0.79 | AUC: 0.96 | ✅ Correct: 469 | ❌ Incorrect: 63 | 📦 Total: 532
+Epoch 8 | Train Loss: 0.1919 | Val Loss: 0.2784 | Val Acc: 89.85% | Sens: 0.96 | Spec: 0.84 | AUC: 0.97 | ✅ Correct: 478 | ❌ Incorrect: 54 | 📦 Total: 532
+Epoch 9 | Train Loss: 0.1669 | Val Loss: 0.2489 | Val Acc: 90.79% | Sens: 0.96 | Spec: 0.86 | AUC: 0.97 | ✅ Correct: 483 | ❌ Incorrect: 49 | 📦 Total: 532
+Epoch 10 | Train Loss: 0.1356 | Val Loss: 0.2399 | Val Acc: 92.48% | Sens: 0.95 | Spec: 0.90 | AUC: 0.97 | ✅ Correct: 492 | ❌ Incorrect: 40 | 📦 Total: 532
+💾 Checkpoint saved: Checkpoints/Hyperparametersuch-Gli-Men/copper-sweep-22/checkpoint_epoch_010.pt
+Epoch 11 | Train Loss: 0.1186 | Val Loss: 0.2608 | Val Acc: 90.98% | Sens: 0.92 | Spec: 0.90 | AUC: 0.97 | ✅ Correct: 484 | ❌ Incorrect: 48 | 📦 Total: 532
+Epoch 12 | Train Loss: 0.1258 | Val Loss: 0.2577 | Val Acc: 91.54% | Sens: 0.89 | Spec: 0.94 | AUC: 0.97 | ✅ Correct: 487 | ❌ Incorrect: 45 | 📦 Total: 532
+Epoch 13 | Train Loss: 0.0854 | Val Loss: 0.2668 | Val Acc: 92.29% | Sens: 0.96 | Spec: 0.89 | AUC: 0.98 | ✅ Correct: 491 | ❌ Incorrect: 41 | 📦 Total: 532
+Epoch 14 | Train Loss: 0.0760 | Val Loss: 0.2227 | Val Acc: 93.23% | Sens: 0.90 | Spec: 0.96 | AUC: 0.98 | ✅ Correct: 496 | ❌ Incorrect: 36 | 📦 Total: 532
+Epoch 15 | Train Loss: 0.0849 | Val Loss: 0.2572 | Val Acc: 92.29% | Sens: 0.95 | Spec: 0.90 | AUC: 0.97 | ✅ Correct: 491 | ❌ Incorrect: 41 | 📦 Total: 532
+Epoch 16 | Train Loss: 0.0536 | Val Loss: 0.2723 | Val Acc: 91.54% | Sens: 0.90 | Spec: 0.93 | AUC: 0.97 | ✅ Correct: 487 | ❌ Incorrect: 45 | 📦 Total: 532
+Epoch 17 | Train Loss: 0.0693 | Val Loss: 0.3263 | Val Acc: 92.11% | Sens: 0.97 | Spec: 0.87 | AUC: 0.97 | ✅ Correct: 490 | ❌ Incorrect: 42 | 📦 Total: 532
+Epoch 18 | Train Loss: 0.0629 | Val Loss: 0.2773 | Val Acc: 92.48% | Sens: 0.92 | Spec: 0.93 | AUC: 0.98 | ✅ Correct: 492 | ❌ Incorrect: 40 | 📦 Total: 532
+Epoch 19 | Train Loss: 0.0436 | Val Loss: 0.2696 | Val Acc: 92.67% | Sens: 0.92 | Spec: 0.94 | AUC: 0.98 | ✅ Correct: 493 | ❌ Incorrect: 39 | 📦 Total: 532
+Epoch 20 | Train Loss: 0.0344 | Val Loss: 0.3494 | Val Acc: 91.92% | Sens: 0.94 | Spec: 0.90 | AUC: 0.97 | ✅ Correct: 489 | ❌ Incorrect: 43 | 📦 Total: 532
+💾 Checkpoint saved: Checkpoints/Hyperparametersuch-Gli-Men/copper-sweep-22/checkpoint_epoch_020.pt
+Epoch 21 | Train Loss: 0.0725 | Val Loss: 0.3024 | Val Acc: 91.92% | Sens: 0.93 | Spec: 0.90 | AUC: 0.97 | ✅ Correct: 489 | ❌ Incorrect: 43 | 📦 Total: 532
+Epoch 22 | Train Loss: 0.0290 | Val Loss: 0.3055 | Val Acc: 92.67% | Sens: 0.89 | Spec: 0.96 | AUC: 0.98 | ✅ Correct: 493 | ❌ Incorrect: 39 | 📦 Total: 532
+Epoch 23 | Train Loss: 0.0443 | Val Loss: 0.2694 | Val Acc: 93.61% | Sens: 0.93 | Spec: 0.94 | AUC: 0.98 | ✅ Correct: 498 | ❌ Incorrect: 34 | 📦 Total: 532
+Epoch 24 | Train Loss: 0.0309 | Val Loss: 0.3383 | Val Acc: 92.86% | Sens: 0.96 | Spec: 0.90 | AUC: 0.98 | ✅ Correct: 494 | ❌ Incorrect: 38 | 📦 Total: 532
+🚨 Early stopping triggered after 24 epochs with no improvement in val_loss.
+✅ Final model saved: Checkpoints/Hyperparametersuch-Gli-Men/copper-sweep-22/final_model.pt

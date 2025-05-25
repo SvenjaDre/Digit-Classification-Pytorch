@@ -1,0 +1,25 @@
+Epoch 1 | Train Loss: 0.5668 | Val Loss: 0.5123 | Val Acc: 71.43% | Sens: 0.46 | Spec: 0.96 | AUC: 0.88 | ✅ Correct: 380 | ❌ Incorrect: 152 | 📦 Total: 532
+Epoch 2 | Train Loss: 0.4373 | Val Loss: 0.3986 | Val Acc: 82.33% | Sens: 0.74 | Spec: 0.91 | AUC: 0.92 | ✅ Correct: 438 | ❌ Incorrect: 94 | 📦 Total: 532
+Epoch 3 | Train Loss: 0.3843 | Val Loss: 0.3456 | Val Acc: 85.53% | Sens: 0.87 | Spec: 0.84 | AUC: 0.93 | ✅ Correct: 455 | ❌ Incorrect: 77 | 📦 Total: 532
+Epoch 4 | Train Loss: 0.3303 | Val Loss: 0.3672 | Val Acc: 84.02% | Sens: 0.92 | Spec: 0.76 | AUC: 0.94 | ✅ Correct: 447 | ❌ Incorrect: 85 | 📦 Total: 532
+Epoch 5 | Train Loss: 0.2846 | Val Loss: 0.3857 | Val Acc: 86.28% | Sens: 0.97 | Spec: 0.76 | AUC: 0.95 | ✅ Correct: 459 | ❌ Incorrect: 73 | 📦 Total: 532
+Epoch 6 | Train Loss: 0.2532 | Val Loss: 0.3329 | Val Acc: 85.53% | Sens: 0.79 | Spec: 0.92 | AUC: 0.94 | ✅ Correct: 455 | ❌ Incorrect: 77 | 📦 Total: 532
+Epoch 7 | Train Loss: 0.2238 | Val Loss: 0.2751 | Val Acc: 89.66% | Sens: 0.93 | Spec: 0.87 | AUC: 0.96 | ✅ Correct: 477 | ❌ Incorrect: 55 | 📦 Total: 532
+Epoch 8 | Train Loss: 0.2016 | Val Loss: 0.2904 | Val Acc: 90.04% | Sens: 0.97 | Spec: 0.83 | AUC: 0.96 | ✅ Correct: 479 | ❌ Incorrect: 53 | 📦 Total: 532
+Epoch 9 | Train Loss: 0.1714 | Val Loss: 0.2559 | Val Acc: 90.98% | Sens: 0.95 | Spec: 0.87 | AUC: 0.97 | ✅ Correct: 484 | ❌ Incorrect: 48 | 📦 Total: 532
+Epoch 10 | Train Loss: 0.1442 | Val Loss: 0.2659 | Val Acc: 90.98% | Sens: 0.95 | Spec: 0.87 | AUC: 0.97 | ✅ Correct: 484 | ❌ Incorrect: 48 | 📦 Total: 532
+💾 Checkpoint saved: Checkpoints/Hyperparametersuch-Gli-Men/chocolate-sweep-14/checkpoint_epoch_010.pt
+Epoch 11 | Train Loss: 0.1437 | Val Loss: 0.2195 | Val Acc: 91.92% | Sens: 0.94 | Spec: 0.90 | AUC: 0.97 | ✅ Correct: 489 | ❌ Incorrect: 43 | 📦 Total: 532
+Epoch 12 | Train Loss: 0.1388 | Val Loss: 0.2444 | Val Acc: 90.04% | Sens: 0.86 | Spec: 0.94 | AUC: 0.97 | ✅ Correct: 479 | ❌ Incorrect: 53 | 📦 Total: 532
+Epoch 13 | Train Loss: 0.0982 | Val Loss: 0.2771 | Val Acc: 92.86% | Sens: 0.94 | Spec: 0.92 | AUC: 0.97 | ✅ Correct: 494 | ❌ Incorrect: 38 | 📦 Total: 532
+Epoch 14 | Train Loss: 0.1008 | Val Loss: 0.2506 | Val Acc: 90.04% | Sens: 0.84 | Spec: 0.96 | AUC: 0.98 | ✅ Correct: 479 | ❌ Incorrect: 53 | 📦 Total: 532
+Epoch 15 | Train Loss: 0.0882 | Val Loss: 0.2626 | Val Acc: 92.86% | Sens: 0.97 | Spec: 0.89 | AUC: 0.98 | ✅ Correct: 494 | ❌ Incorrect: 38 | 📦 Total: 532
+Epoch 16 | Train Loss: 0.0849 | Val Loss: 0.2349 | Val Acc: 91.73% | Sens: 0.89 | Spec: 0.94 | AUC: 0.97 | ✅ Correct: 488 | ❌ Incorrect: 44 | 📦 Total: 532
+Epoch 17 | Train Loss: 0.0681 | Val Loss: 0.2337 | Val Acc: 94.17% | Sens: 0.95 | Spec: 0.93 | AUC: 0.97 | ✅ Correct: 501 | ❌ Incorrect: 31 | 📦 Total: 532
+Epoch 18 | Train Loss: 0.0680 | Val Loss: 0.2505 | Val Acc: 92.29% | Sens: 0.95 | Spec: 0.89 | AUC: 0.98 | ✅ Correct: 491 | ❌ Incorrect: 41 | 📦 Total: 532
+Epoch 19 | Train Loss: 0.0529 | Val Loss: 0.2537 | Val Acc: 92.86% | Sens: 0.93 | Spec: 0.93 | AUC: 0.98 | ✅ Correct: 494 | ❌ Incorrect: 38 | 📦 Total: 532
+Epoch 20 | Train Loss: 0.0652 | Val Loss: 0.3814 | Val Acc: 91.92% | Sens: 0.99 | Spec: 0.85 | AUC: 0.98 | ✅ Correct: 489 | ❌ Incorrect: 43 | 📦 Total: 532
+💾 Checkpoint saved: Checkpoints/Hyperparametersuch-Gli-Men/chocolate-sweep-14/checkpoint_epoch_020.pt
+Epoch 21 | Train Loss: 0.0520 | Val Loss: 0.3430 | Val Acc: 89.29% | Sens: 0.81 | Spec: 0.97 | AUC: 0.98 | ✅ Correct: 475 | ❌ Incorrect: 57 | 📦 Total: 532
+🚨 Early stopping triggered after 21 epochs with no improvement in val_loss.
+✅ Final model saved: Checkpoints/Hyperparametersuch-Gli-Men/chocolate-sweep-14/final_model.pt

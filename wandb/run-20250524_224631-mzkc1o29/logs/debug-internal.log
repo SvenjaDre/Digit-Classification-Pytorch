@@ -1,0 +1,16 @@
+{"time":"2025-05-24T22:46:31.414233167+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250524_224631-mzkc1o29/logs/debug-core.log"}
+{"time":"2025-05-24T22:46:31.686488547+02:00","level":"INFO","msg":"created new stream","id":"mzkc1o29"}
+{"time":"2025-05-24T22:46:31.686726129+02:00","level":"INFO","msg":"stream: started","id":"mzkc1o29"}
+{"time":"2025-05-24T22:46:31.686800186+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"mzkc1o29"}
+{"time":"2025-05-24T22:46:31.686823358+02:00","level":"INFO","msg":"sender: started","stream_id":"mzkc1o29"}
+{"time":"2025-05-24T22:46:31.686839711+02:00","level":"INFO","msg":"handler: started","stream_id":"mzkc1o29"}
+{"time":"2025-05-24T22:46:31.887566774+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-24T22:56:05.340083533+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-24T22:56:05.340407582+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-24T22:56:06.341204148+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-mzkc1o29-val_probs_labels","runtime_seconds":1.027956937,"subtasks":[{"desc":"val_probs_labels.table.json","runtime_seconds":0.147665278,"progress":"13.4KB/13.4KB"}]}],"total_operations":1}}
+{"time":"2025-05-24T22:56:08.766889882+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-24T22:56:08.959219333+02:00","level":"INFO","msg":"stream: closing","id":"mzkc1o29"}
+{"time":"2025-05-24T22:56:08.959512679+02:00","level":"INFO","msg":"handler: closed","stream_id":"mzkc1o29"}
+{"time":"2025-05-24T22:56:08.959552251+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"mzkc1o29"}
+{"time":"2025-05-24T22:56:08.959577589+02:00","level":"INFO","msg":"sender: closed","stream_id":"mzkc1o29"}
+{"time":"2025-05-24T22:56:08.960406117+02:00","level":"INFO","msg":"stream: closed","id":"mzkc1o29"}

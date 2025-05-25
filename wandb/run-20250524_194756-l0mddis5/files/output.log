@@ -1,0 +1,14 @@
+Epoch 1 | Train Loss: 0.9977 | Val Loss: 0.6745 | Val Acc: 61.28% | Sens: 0.25 | Spec: 0.96 | AUC: 0.81 | ✅ Correct: 326 | ❌ Incorrect: 206 | 📦 Total: 532
+Epoch 2 | Train Loss: 0.6544 | Val Loss: 0.7007 | Val Acc: 50.94% | Sens: 0.00 | Spec: 1.00 | AUC: 0.50 | ✅ Correct: 271 | ❌ Incorrect: 261 | 📦 Total: 532
+Epoch 3 | Train Loss: 0.6959 | Val Loss: 0.6933 | Val Acc: 49.06% | Sens: 1.00 | Spec: 0.00 | AUC: 0.50 | ✅ Correct: 261 | ❌ Incorrect: 271 | 📦 Total: 532
+Epoch 4 | Train Loss: 0.6933 | Val Loss: 0.6942 | Val Acc: 49.06% | Sens: 1.00 | Spec: 0.00 | AUC: 0.50 | ✅ Correct: 261 | ❌ Incorrect: 271 | 📦 Total: 532
+Epoch 5 | Train Loss: 0.6936 | Val Loss: 0.6931 | Val Acc: 50.94% | Sens: 0.00 | Spec: 1.00 | AUC: 0.50 | ✅ Correct: 271 | ❌ Incorrect: 261 | 📦 Total: 532
+Epoch 6 | Train Loss: 0.6937 | Val Loss: 0.6935 | Val Acc: 49.06% | Sens: 1.00 | Spec: 0.00 | AUC: 0.50 | ✅ Correct: 261 | ❌ Incorrect: 271 | 📦 Total: 532
+Epoch 7 | Train Loss: 0.6934 | Val Loss: 0.6936 | Val Acc: 49.06% | Sens: 1.00 | Spec: 0.00 | AUC: 0.50 | ✅ Correct: 261 | ❌ Incorrect: 271 | 📦 Total: 532
+Epoch 8 | Train Loss: 0.6938 | Val Loss: 0.6931 | Val Acc: 50.94% | Sens: 0.00 | Spec: 1.00 | AUC: 0.50 | ✅ Correct: 271 | ❌ Incorrect: 261 | 📦 Total: 532
+Epoch 9 | Train Loss: 0.6933 | Val Loss: 0.6942 | Val Acc: 49.06% | Sens: 1.00 | Spec: 0.00 | AUC: 0.50 | ✅ Correct: 261 | ❌ Incorrect: 271 | 📦 Total: 532
+Epoch 10 | Train Loss: 0.6938 | Val Loss: 0.6937 | Val Acc: 49.06% | Sens: 1.00 | Spec: 0.00 | AUC: 0.50 | ✅ Correct: 261 | ❌ Incorrect: 271 | 📦 Total: 532
+💾 Checkpoint saved: Checkpoints/Hyperparametersuch-Gli-Men/dulcet-sweep-33/checkpoint_epoch_010.pt
+Epoch 11 | Train Loss: 0.6937 | Val Loss: 0.6940 | Val Acc: 49.06% | Sens: 1.00 | Spec: 0.00 | AUC: 0.50 | ✅ Correct: 261 | ❌ Incorrect: 271 | 📦 Total: 532
+🚨 Early stopping triggered after 11 epochs with no improvement in val_loss.
+✅ Final model saved: Checkpoints/Hyperparametersuch-Gli-Men/dulcet-sweep-33/final_model.pt

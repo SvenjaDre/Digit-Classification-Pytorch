@@ -1,0 +1,33 @@
+Epoch 1 | Train Loss: 0.8736 | Val Loss: 0.6857 | Val Acc: 56.39% | Sens: 0.13 | Spec: 0.99 | AUC: 0.80 | ✅ Correct: 300 | ❌ Incorrect: 232 | 📦 Total: 532
+Epoch 2 | Train Loss: 0.5550 | Val Loss: 0.6048 | Val Acc: 64.47% | Sens: 0.28 | Spec: 1.00 | AUC: 0.86 | ✅ Correct: 343 | ❌ Incorrect: 189 | 📦 Total: 532
+Epoch 3 | Train Loss: 0.4981 | Val Loss: 0.4556 | Val Acc: 79.70% | Sens: 0.66 | Spec: 0.93 | AUC: 0.91 | ✅ Correct: 424 | ❌ Incorrect: 108 | 📦 Total: 532
+Epoch 4 | Train Loss: 0.4185 | Val Loss: 0.3761 | Val Acc: 84.02% | Sens: 0.83 | Spec: 0.85 | AUC: 0.91 | ✅ Correct: 447 | ❌ Incorrect: 85 | 📦 Total: 532
+Epoch 5 | Train Loss: 0.4273 | Val Loss: 0.3887 | Val Acc: 83.08% | Sens: 0.75 | Spec: 0.90 | AUC: 0.92 | ✅ Correct: 442 | ❌ Incorrect: 90 | 📦 Total: 532
+Epoch 6 | Train Loss: 0.4189 | Val Loss: 0.3947 | Val Acc: 82.33% | Sens: 0.70 | Spec: 0.94 | AUC: 0.93 | ✅ Correct: 438 | ❌ Incorrect: 94 | 📦 Total: 532
+Epoch 7 | Train Loss: 0.3624 | Val Loss: 0.3316 | Val Acc: 86.47% | Sens: 0.83 | Spec: 0.90 | AUC: 0.94 | ✅ Correct: 460 | ❌ Incorrect: 72 | 📦 Total: 532
+Epoch 8 | Train Loss: 0.3215 | Val Loss: 0.3037 | Val Acc: 87.97% | Sens: 0.90 | Spec: 0.86 | AUC: 0.95 | ✅ Correct: 468 | ❌ Incorrect: 64 | 📦 Total: 532
+Epoch 9 | Train Loss: 0.3025 | Val Loss: 0.3013 | Val Acc: 87.97% | Sens: 0.93 | Spec: 0.83 | AUC: 0.95 | ✅ Correct: 468 | ❌ Incorrect: 64 | 📦 Total: 532
+Epoch 10 | Train Loss: 0.2732 | Val Loss: 0.3576 | Val Acc: 87.59% | Sens: 0.97 | Spec: 0.79 | AUC: 0.96 | ✅ Correct: 466 | ❌ Incorrect: 66 | 📦 Total: 532
+💾 Checkpoint saved: Checkpoints/Hyperparametersuch-Gli-Men/swift-sweep-75/checkpoint_epoch_010.pt
+Epoch 11 | Train Loss: 0.2546 | Val Loss: 0.3062 | Val Acc: 87.03% | Sens: 0.80 | Spec: 0.93 | AUC: 0.96 | ✅ Correct: 463 | ❌ Incorrect: 69 | 📦 Total: 532
+Epoch 12 | Train Loss: 0.2726 | Val Loss: 0.3058 | Val Acc: 86.65% | Sens: 0.77 | Spec: 0.96 | AUC: 0.96 | ✅ Correct: 461 | ❌ Incorrect: 71 | 📦 Total: 532
+Epoch 13 | Train Loss: 0.2270 | Val Loss: 0.2296 | Val Acc: 92.67% | Sens: 0.93 | Spec: 0.92 | AUC: 0.97 | ✅ Correct: 493 | ❌ Incorrect: 39 | 📦 Total: 532
+Epoch 14 | Train Loss: 0.2011 | Val Loss: 0.2497 | Val Acc: 91.54% | Sens: 0.95 | Spec: 0.88 | AUC: 0.97 | ✅ Correct: 487 | ❌ Incorrect: 45 | 📦 Total: 532
+Epoch 15 | Train Loss: 0.2069 | Val Loss: 0.2476 | Val Acc: 91.54% | Sens: 0.95 | Spec: 0.88 | AUC: 0.97 | ✅ Correct: 487 | ❌ Incorrect: 45 | 📦 Total: 532
+Epoch 16 | Train Loss: 0.2008 | Val Loss: 0.2422 | Val Acc: 92.11% | Sens: 0.92 | Spec: 0.92 | AUC: 0.97 | ✅ Correct: 490 | ❌ Incorrect: 42 | 📦 Total: 532
+Epoch 17 | Train Loss: 0.1922 | Val Loss: 0.2695 | Val Acc: 91.17% | Sens: 0.96 | Spec: 0.86 | AUC: 0.97 | ✅ Correct: 485 | ❌ Incorrect: 47 | 📦 Total: 532
+Epoch 18 | Train Loss: 0.1797 | Val Loss: 0.2453 | Val Acc: 92.48% | Sens: 0.97 | Spec: 0.88 | AUC: 0.97 | ✅ Correct: 492 | ❌ Incorrect: 40 | 📦 Total: 532
+Epoch 19 | Train Loss: 0.1613 | Val Loss: 0.2119 | Val Acc: 93.80% | Sens: 0.95 | Spec: 0.93 | AUC: 0.97 | ✅ Correct: 499 | ❌ Incorrect: 33 | 📦 Total: 532
+Epoch 20 | Train Loss: 0.1444 | Val Loss: 0.2689 | Val Acc: 91.73% | Sens: 0.98 | Spec: 0.86 | AUC: 0.97 | ✅ Correct: 488 | ❌ Incorrect: 44 | 📦 Total: 532
+💾 Checkpoint saved: Checkpoints/Hyperparametersuch-Gli-Men/swift-sweep-75/checkpoint_epoch_020.pt
+Epoch 21 | Train Loss: 0.1593 | Val Loss: 0.2224 | Val Acc: 92.48% | Sens: 0.96 | Spec: 0.89 | AUC: 0.97 | ✅ Correct: 492 | ❌ Incorrect: 40 | 📦 Total: 532
+Epoch 22 | Train Loss: 0.1605 | Val Loss: 0.2235 | Val Acc: 90.60% | Sens: 0.92 | Spec: 0.89 | AUC: 0.97 | ✅ Correct: 482 | ❌ Incorrect: 50 | 📦 Total: 532
+Epoch 23 | Train Loss: 0.1650 | Val Loss: 0.2222 | Val Acc: 92.48% | Sens: 0.90 | Spec: 0.95 | AUC: 0.97 | ✅ Correct: 492 | ❌ Incorrect: 40 | 📦 Total: 532
+Epoch 24 | Train Loss: 0.1611 | Val Loss: 0.2189 | Val Acc: 92.48% | Sens: 0.95 | Spec: 0.90 | AUC: 0.97 | ✅ Correct: 492 | ❌ Incorrect: 40 | 📦 Total: 532
+Epoch 25 | Train Loss: 0.1376 | Val Loss: 0.2195 | Val Acc: 92.67% | Sens: 0.93 | Spec: 0.92 | AUC: 0.98 | ✅ Correct: 493 | ❌ Incorrect: 39 | 📦 Total: 532
+Epoch 26 | Train Loss: 0.1193 | Val Loss: 0.2149 | Val Acc: 93.05% | Sens: 0.95 | Spec: 0.91 | AUC: 0.98 | ✅ Correct: 495 | ❌ Incorrect: 37 | 📦 Total: 532
+Epoch 27 | Train Loss: 0.1190 | Val Loss: 0.2133 | Val Acc: 94.36% | Sens: 0.97 | Spec: 0.92 | AUC: 0.98 | ✅ Correct: 502 | ❌ Incorrect: 30 | 📦 Total: 532
+Epoch 28 | Train Loss: 0.1291 | Val Loss: 0.2120 | Val Acc: 92.86% | Sens: 0.94 | Spec: 0.92 | AUC: 0.98 | ✅ Correct: 494 | ❌ Incorrect: 38 | 📦 Total: 532
+Epoch 29 | Train Loss: 0.1336 | Val Loss: 0.2250 | Val Acc: 93.23% | Sens: 0.97 | Spec: 0.90 | AUC: 0.98 | ✅ Correct: 496 | ❌ Incorrect: 36 | 📦 Total: 532
+🚨 Early stopping triggered after 29 epochs with no improvement in val_loss.
+✅ Final model saved: Checkpoints/Hyperparametersuch-Gli-Men/swift-sweep-75/final_model.pt
