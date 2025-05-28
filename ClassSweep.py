@@ -83,9 +83,12 @@ TEST_DIR = "archive/Testing"
 
 # Trainingsfunktion für Sweep
 def train():
-    wandb.init(project="Hyperparametersuch-Gli-Men")
+    wandb.init(project="Messung-Gli-Men")
     config = wandb.config
-    run_name = wandb.run.name
+    #run_name = wandb.run.name
+    run_name = f"trainsample_{config.train_samples}"
+    wandb.run.name = run_name
+
     project_name = wandb.run.project
 
     # Checkpoint-Verzeichnisstruktur anlegen
@@ -216,6 +219,14 @@ def train():
         if avg_val_loss < best_val_loss - 1e-4:  # kleine Toleranz für Verbesserung
             best_val_loss = avg_val_loss
             epochs_no_improve = 0
+
+            # Bestes Modell speichern
+            best_model_path = os.path.join(checkpoint_dir, "best_model.pt")
+            torch.save(classifier.state_dict(), best_model_path)
+            print(f"🏅 Best model saved: {best_model_path}")
+            wandb.save(best_model_path)
+            wandb.log({"best_model_path": best_model_path})
+
         else:
             epochs_no_improve += 1
 
