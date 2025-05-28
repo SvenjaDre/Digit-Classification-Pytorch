@@ -1,0 +1,16 @@
+{"time":"2025-05-28T21:43:00.860584215+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250528_214300-tk36ulyi/logs/debug-core.log"}
+{"time":"2025-05-28T21:43:01.166591124+02:00","level":"INFO","msg":"created new stream","id":"tk36ulyi"}
+{"time":"2025-05-28T21:43:01.166825897+02:00","level":"INFO","msg":"stream: started","id":"tk36ulyi"}
+{"time":"2025-05-28T21:43:01.166898676+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"tk36ulyi"}
+{"time":"2025-05-28T21:43:01.16693307+02:00","level":"INFO","msg":"handler: started","stream_id":"tk36ulyi"}
+{"time":"2025-05-28T21:43:01.166938983+02:00","level":"INFO","msg":"sender: started","stream_id":"tk36ulyi"}
+{"time":"2025-05-28T21:43:01.393409112+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-28T21:44:38.130862416+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-28T21:44:38.131229851+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-28T21:44:39.131988111+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-tk36ulyi-val_probs_labels","runtime_seconds":1.027236061}],"total_operations":1}}
+{"time":"2025-05-28T21:44:41.169057462+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-28T21:44:41.368222585+02:00","level":"INFO","msg":"stream: closing","id":"tk36ulyi"}
+{"time":"2025-05-28T21:44:41.368503373+02:00","level":"INFO","msg":"handler: closed","stream_id":"tk36ulyi"}
+{"time":"2025-05-28T21:44:41.368592236+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"tk36ulyi"}
+{"time":"2025-05-28T21:44:41.368603739+02:00","level":"INFO","msg":"sender: closed","stream_id":"tk36ulyi"}
+{"time":"2025-05-28T21:44:41.369411509+02:00","level":"INFO","msg":"stream: closed","id":"tk36ulyi"}

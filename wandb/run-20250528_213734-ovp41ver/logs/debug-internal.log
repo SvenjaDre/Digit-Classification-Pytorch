@@ -1,0 +1,17 @@
+{"time":"2025-05-28T21:37:34.202176891+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250528_213734-ovp41ver/logs/debug-core.log"}
+{"time":"2025-05-28T21:37:34.490723451+02:00","level":"INFO","msg":"created new stream","id":"ovp41ver"}
+{"time":"2025-05-28T21:37:34.491020814+02:00","level":"INFO","msg":"stream: started","id":"ovp41ver"}
+{"time":"2025-05-28T21:37:34.491076532+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"ovp41ver"}
+{"time":"2025-05-28T21:37:34.491087831+02:00","level":"INFO","msg":"handler: started","stream_id":"ovp41ver"}
+{"time":"2025-05-28T21:37:34.491125699+02:00","level":"INFO","msg":"sender: started","stream_id":"ovp41ver"}
+{"time":"2025-05-28T21:37:34.684716832+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-28T21:39:47.679436668+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 129.217.167.98:53398->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-05-28T21:40:19.37158738+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-28T21:40:19.37195768+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-28T21:40:20.372671812+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-ovp41ver-val_probs_labels","runtime_seconds":1.027462129}],"total_operations":1}}
+{"time":"2025-05-28T21:40:22.63242482+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-28T21:40:22.868228163+02:00","level":"INFO","msg":"stream: closing","id":"ovp41ver"}
+{"time":"2025-05-28T21:40:22.86845226+02:00","level":"INFO","msg":"handler: closed","stream_id":"ovp41ver"}
+{"time":"2025-05-28T21:40:22.868531948+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ovp41ver"}
+{"time":"2025-05-28T21:40:22.868549196+02:00","level":"INFO","msg":"sender: closed","stream_id":"ovp41ver"}
+{"time":"2025-05-28T21:40:22.869345507+02:00","level":"INFO","msg":"stream: closed","id":"ovp41ver"}

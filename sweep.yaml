@@ -4,13 +4,13 @@ parameters:
   epochs:
     values: [1000]
   batch_size:
-    values: [16, 32, 64, 128]
+    values: [16]
   learning_rate:
-    values: [0.0001, 0.001, 0.01, 0.0005, 0.005]
+    values: [0.0005]
   optimizer:
     values: ["Adam"]
   dropout:
-    values: [0.5, 0.55, 0.4, 0.2, 0.3]
+    values: [0.55]
   train_samples:
-    values: [3404]
+    values: [2128, 1915, 1702, 1490, 1277, 1064, 851, 683, 426, 231]
  
