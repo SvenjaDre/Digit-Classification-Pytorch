@@ -69,8 +69,10 @@ class CustomImageDataset(Dataset):
                 if fname.lower().endswith(('.png', '.jpg', '.jpeg')):
                     self.image_paths.append(os.path.join(class_folder, fname))
                     self.labels.append(label)
+
     def __len__(self):
         return len(self.image_paths)
+    
     def __getitem__(self, idx):
         image_tensor = preprocess_image(self.image_paths[idx])
         label = self.labels[idx]
@@ -105,7 +107,7 @@ TEST_DIR = "archive/Testing"
 
 # Trainingsfunktion für Sweep
 def train():
-    wandb.init(project="Messung-Gli-Men")
+    wandb.init(project="Messung-noTu-Tu")
     config = wandb.config
     #run_name = wandb.run.name
     run_name = f"trainsample_{config.train_samples}"
@@ -325,6 +327,6 @@ def evaluate_on_test_data(model_path="model_state.pt"):
 # Hauptfunktion
 if __name__ == "__main__":
     sweep_config = load_sweep_config()
-    sweep_id = wandb.sweep(sweep_config, project="Messung-Gli-Men")
+    sweep_id = wandb.sweep(sweep_config, project="Messung-noTu-Tu")
     wandb.agent(sweep_id, function=train)
 
