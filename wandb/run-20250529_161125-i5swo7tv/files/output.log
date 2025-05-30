@@ -1,0 +1,13 @@
+Epoch 1 | Train Loss: 1.2106 | Val Loss: 0.4642 | Val Acc: 82.37% | Sens: 0.92 | Spec: 0.66 | AUC: 0.82 | ✅ Correct: 701 | ❌ Incorrect: 150 | 📦 Total: 851
+🏅 Best model saved: Checkpoints/Messung-noTu-Tu/trainsample_3404/best_model.pt
+Epoch 2 | Train Loss: 0.4511 | Val Loss: 0.4358 | Val Acc: 82.26% | Sens: 0.87 | Spec: 0.74 | AUC: 0.85 | ✅ Correct: 700 | ❌ Incorrect: 151 | 📦 Total: 851
+🏅 Best model saved: Checkpoints/Messung-noTu-Tu/trainsample_3404/best_model.pt
+Epoch 3 | Train Loss: 0.3846 | Val Loss: 0.3863 | Val Acc: 85.19% | Sens: 0.94 | Spec: 0.70 | AUC: 0.89 | ✅ Correct: 725 | ❌ Incorrect: 126 | 📦 Total: 851
+🏅 Best model saved: Checkpoints/Messung-noTu-Tu/trainsample_3404/best_model.pt
+Epoch 4 | Train Loss: 0.3353 | Val Loss: 0.3094 | Val Acc: 86.96% | Sens: 0.95 | Spec: 0.73 | AUC: 0.95 | ✅ Correct: 740 | ❌ Incorrect: 111 | 📦 Total: 851
+🏅 Best model saved: Checkpoints/Messung-noTu-Tu/trainsample_3404/best_model.pt
+Epoch 5 | Train Loss: 0.2614 | Val Loss: 0.2759 | Val Acc: 90.60% | Sens: 0.88 | Spec: 0.95 | AUC: 0.96 | ✅ Correct: 771 | ❌ Incorrect: 80 | 📦 Total: 851
+🏅 Best model saved: Checkpoints/Messung-noTu-Tu/trainsample_3404/best_model.pt
+Epoch 6 | Train Loss: 0.2259 | Val Loss: 0.1973 | Val Acc: 93.65% | Sens: 0.94 | Spec: 0.93 | AUC: 0.97 | ✅ Correct: 797 | ❌ Incorrect: 54 | 📦 Total: 851
+🏅 Best model saved: Checkpoints/Messung-noTu-Tu/trainsample_3404/best_model.pt
+[34m[1mwandb[0m: Ctrl + C detected. Stopping sweep.

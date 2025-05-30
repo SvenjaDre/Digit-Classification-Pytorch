@@ -1,0 +1,17 @@
+{"time":"2025-05-30T00:55:20.884152946+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250530_005520-1s5naf3v/logs/debug-core.log"}
+{"time":"2025-05-30T00:55:21.15442022+02:00","level":"INFO","msg":"created new stream","id":"1s5naf3v"}
+{"time":"2025-05-30T00:55:21.154617284+02:00","level":"INFO","msg":"stream: started","id":"1s5naf3v"}
+{"time":"2025-05-30T00:55:21.15465129+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"1s5naf3v"}
+{"time":"2025-05-30T00:55:21.154683475+02:00","level":"INFO","msg":"handler: started","stream_id":"1s5naf3v"}
+{"time":"2025-05-30T00:55:21.154686697+02:00","level":"INFO","msg":"sender: started","stream_id":"1s5naf3v"}
+{"time":"2025-05-30T00:55:21.347395437+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-30T00:58:11.236429419+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-05-30T00:59:52.511398899+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-30T00:59:52.511762824+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-30T00:59:53.512461597+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-1s5naf3v-val_probs_labels","runtime_seconds":1.032629162}],"total_operations":1}}
+{"time":"2025-05-30T00:59:55.425613987+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-30T00:59:55.65094985+02:00","level":"INFO","msg":"stream: closing","id":"1s5naf3v"}
+{"time":"2025-05-30T00:59:55.651224697+02:00","level":"INFO","msg":"handler: closed","stream_id":"1s5naf3v"}
+{"time":"2025-05-30T00:59:55.651292168+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"1s5naf3v"}
+{"time":"2025-05-30T00:59:55.651319115+02:00","level":"INFO","msg":"sender: closed","stream_id":"1s5naf3v"}
+{"time":"2025-05-30T00:59:55.652196568+02:00","level":"INFO","msg":"stream: closed","id":"1s5naf3v"}

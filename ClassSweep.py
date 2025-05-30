@@ -107,11 +107,12 @@ TEST_DIR = "archive/Testing"
 
 # Trainingsfunktion für Sweep
 def train():
-    wandb.init(project="Messung-noTu-Tu")
+    wandb.init(project="Messungen-noTu-Tu")
     config = wandb.config
-    #run_name = wandb.run.name
+
     run_name = f"trainsample_{config.train_samples}"
     wandb.run.name = run_name
+    wandb.run.tags = [f"samples_{config.train_samples}"]
 
     project_name = wandb.run.project
 
@@ -327,6 +328,6 @@ def evaluate_on_test_data(model_path="model_state.pt"):
 # Hauptfunktion
 if __name__ == "__main__":
     sweep_config = load_sweep_config()
-    sweep_id = wandb.sweep(sweep_config, project="Messung-noTu-Tu")
+    sweep_id = wandb.sweep(sweep_config, project="Messungen-noTu-Tu")
     wandb.agent(sweep_id, function=train)
 

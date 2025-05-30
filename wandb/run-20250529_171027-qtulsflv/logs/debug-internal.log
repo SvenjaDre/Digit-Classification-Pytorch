@@ -1,0 +1,16 @@
+{"time":"2025-05-29T17:10:27.932231831+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250529_171027-qtulsflv/logs/debug-core.log"}
+{"time":"2025-05-29T17:10:28.197121291+02:00","level":"INFO","msg":"created new stream","id":"qtulsflv"}
+{"time":"2025-05-29T17:10:28.197441263+02:00","level":"INFO","msg":"stream: started","id":"qtulsflv"}
+{"time":"2025-05-29T17:10:28.197563702+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"qtulsflv"}
+{"time":"2025-05-29T17:10:28.197593782+02:00","level":"INFO","msg":"handler: started","stream_id":"qtulsflv"}
+{"time":"2025-05-29T17:10:28.197597803+02:00","level":"INFO","msg":"sender: started","stream_id":"qtulsflv"}
+{"time":"2025-05-29T17:10:28.358898479+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-29T17:12:50.634814026+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-29T17:12:50.635222494+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-29T17:12:51.635826571+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-qtulsflv-val_probs_labels","runtime_seconds":1.031977792}],"total_operations":1}}
+{"time":"2025-05-29T17:12:53.665594942+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-29T17:12:53.917694568+02:00","level":"INFO","msg":"stream: closing","id":"qtulsflv"}
+{"time":"2025-05-29T17:12:53.917955146+02:00","level":"INFO","msg":"handler: closed","stream_id":"qtulsflv"}
+{"time":"2025-05-29T17:12:53.918024295+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"qtulsflv"}
+{"time":"2025-05-29T17:12:53.918051097+02:00","level":"INFO","msg":"sender: closed","stream_id":"qtulsflv"}
+{"time":"2025-05-29T17:12:53.918969402+02:00","level":"INFO","msg":"stream: closed","id":"qtulsflv"}

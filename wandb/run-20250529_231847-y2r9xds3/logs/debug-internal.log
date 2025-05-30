@@ -1,0 +1,18 @@
+{"time":"2025-05-29T23:18:47.095852896+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250529_231847-y2r9xds3/logs/debug-core.log"}
+{"time":"2025-05-29T23:18:47.360628617+02:00","level":"INFO","msg":"created new stream","id":"y2r9xds3"}
+{"time":"2025-05-29T23:18:47.360886216+02:00","level":"INFO","msg":"stream: started","id":"y2r9xds3"}
+{"time":"2025-05-29T23:18:47.360961908+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"y2r9xds3"}
+{"time":"2025-05-29T23:18:47.361010888+02:00","level":"INFO","msg":"handler: started","stream_id":"y2r9xds3"}
+{"time":"2025-05-29T23:18:47.361012745+02:00","level":"INFO","msg":"sender: started","stream_id":"y2r9xds3"}
+{"time":"2025-05-29T23:18:47.698418482+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-29T23:19:38.682767355+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-05-29T23:20:03.322835239+02:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/svenja-dreyer-tu-dortmund/Messungen-noTu-Tu/y2r9xds3/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-05-29T23:21:46.137774415+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-29T23:21:46.138257489+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-29T23:21:47.138810333+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-y2r9xds3-val_probs_labels","runtime_seconds":1.033117661}],"total_operations":1}}
+{"time":"2025-05-29T23:21:49.271268122+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-29T23:21:49.510468481+02:00","level":"INFO","msg":"stream: closing","id":"y2r9xds3"}
+{"time":"2025-05-29T23:21:49.510688837+02:00","level":"INFO","msg":"handler: closed","stream_id":"y2r9xds3"}
+{"time":"2025-05-29T23:21:49.510739102+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"y2r9xds3"}
+{"time":"2025-05-29T23:21:49.510773015+02:00","level":"INFO","msg":"sender: closed","stream_id":"y2r9xds3"}
+{"time":"2025-05-29T23:21:49.511550458+02:00","level":"INFO","msg":"stream: closed","id":"y2r9xds3"}

@@ -1,0 +1,16 @@
+{"time":"2025-05-29T23:34:03.663093952+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250529_233403-2tzeefc2/logs/debug-core.log"}
+{"time":"2025-05-29T23:34:04.367586901+02:00","level":"INFO","msg":"created new stream","id":"2tzeefc2"}
+{"time":"2025-05-29T23:34:04.367805771+02:00","level":"INFO","msg":"stream: started","id":"2tzeefc2"}
+{"time":"2025-05-29T23:34:04.367889383+02:00","level":"INFO","msg":"sender: started","stream_id":"2tzeefc2"}
+{"time":"2025-05-29T23:34:04.367884534+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"2tzeefc2"}
+{"time":"2025-05-29T23:34:04.367928518+02:00","level":"INFO","msg":"handler: started","stream_id":"2tzeefc2"}
+{"time":"2025-05-29T23:34:04.541713579+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-29T23:40:05.512895889+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-29T23:40:05.513287812+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-29T23:40:06.514262001+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-2tzeefc2-val_probs_labels","runtime_seconds":1.033114255},{"desc":"uploading config.yaml","runtime_seconds":0.498675309,"progress":"773B/773B"}],"total_operations":2}}
+{"time":"2025-05-29T23:40:08.970070217+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-29T23:40:09.220143738+02:00","level":"INFO","msg":"stream: closing","id":"2tzeefc2"}
+{"time":"2025-05-29T23:40:09.220424217+02:00","level":"INFO","msg":"handler: closed","stream_id":"2tzeefc2"}
+{"time":"2025-05-29T23:40:09.220503539+02:00","level":"INFO","msg":"sender: closed","stream_id":"2tzeefc2"}
+{"time":"2025-05-29T23:40:09.220494651+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"2tzeefc2"}
+{"time":"2025-05-29T23:40:09.221396724+02:00","level":"INFO","msg":"stream: closed","id":"2tzeefc2"}

@@ -1,0 +1,18 @@
+{"time":"2025-05-29T23:06:28.58166135+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250529_230628-clvtg0qv/logs/debug-core.log"}
+{"time":"2025-05-29T23:06:28.85082167+02:00","level":"INFO","msg":"created new stream","id":"clvtg0qv"}
+{"time":"2025-05-29T23:06:28.851030998+02:00","level":"INFO","msg":"stream: started","id":"clvtg0qv"}
+{"time":"2025-05-29T23:06:28.851077446+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"clvtg0qv"}
+{"time":"2025-05-29T23:06:28.851145972+02:00","level":"INFO","msg":"sender: started","stream_id":"clvtg0qv"}
+{"time":"2025-05-29T23:06:28.851159302+02:00","level":"INFO","msg":"handler: started","stream_id":"clvtg0qv"}
+{"time":"2025-05-29T23:06:29.032188854+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-29T23:08:49.64730443+02:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/svenja-dreyer-tu-dortmund/Messungen-noTu-Tu/clvtg0qv/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2025-05-29T23:09:14.197449827+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-05-29T23:11:35.799619737+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-29T23:11:35.799973613+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-29T23:11:36.800582376+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-clvtg0qv-val_probs_labels","runtime_seconds":1.032274306}],"total_operations":1}}
+{"time":"2025-05-29T23:11:39.047658088+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-29T23:11:39.231447508+02:00","level":"INFO","msg":"stream: closing","id":"clvtg0qv"}
+{"time":"2025-05-29T23:11:39.231680219+02:00","level":"INFO","msg":"handler: closed","stream_id":"clvtg0qv"}
+{"time":"2025-05-29T23:11:39.231736947+02:00","level":"INFO","msg":"sender: closed","stream_id":"clvtg0qv"}
+{"time":"2025-05-29T23:11:39.231726339+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"clvtg0qv"}
+{"time":"2025-05-29T23:11:39.232533397+02:00","level":"INFO","msg":"stream: closed","id":"clvtg0qv"}

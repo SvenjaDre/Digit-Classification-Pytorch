@@ -1,0 +1,16 @@
+{"time":"2025-05-30T00:08:22.493939841+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250530_000822-yxd122js/logs/debug-core.log"}
+{"time":"2025-05-30T00:08:22.768988464+02:00","level":"INFO","msg":"created new stream","id":"yxd122js"}
+{"time":"2025-05-30T00:08:22.769216857+02:00","level":"INFO","msg":"stream: started","id":"yxd122js"}
+{"time":"2025-05-30T00:08:22.76929335+02:00","level":"INFO","msg":"handler: started","stream_id":"yxd122js"}
+{"time":"2025-05-30T00:08:22.769290912+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"yxd122js"}
+{"time":"2025-05-30T00:08:22.769335836+02:00","level":"INFO","msg":"sender: started","stream_id":"yxd122js"}
+{"time":"2025-05-30T00:08:23.096737861+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-30T00:10:30.900771779+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-30T00:10:30.901160639+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-30T00:10:31.901983773+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-yxd122js-val_probs_labels","runtime_seconds":1.033213689},{"desc":"uploading config.yaml","runtime_seconds":0.479330591,"progress":"772B/772B"}],"total_operations":2}}
+{"time":"2025-05-30T00:10:34.108759118+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-30T00:10:34.320888194+02:00","level":"INFO","msg":"stream: closing","id":"yxd122js"}
+{"time":"2025-05-30T00:10:34.321085269+02:00","level":"INFO","msg":"handler: closed","stream_id":"yxd122js"}
+{"time":"2025-05-30T00:10:34.321119338+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"yxd122js"}
+{"time":"2025-05-30T00:10:34.321142146+02:00","level":"INFO","msg":"sender: closed","stream_id":"yxd122js"}
+{"time":"2025-05-30T00:10:34.321935567+02:00","level":"INFO","msg":"stream: closed","id":"yxd122js"}
