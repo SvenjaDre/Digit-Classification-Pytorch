@@ -107,16 +107,27 @@ TEST_DIR = "archive/Testing"
 
 # Trainingsfunktion für Sweep
 def train():
-    wandb.init(project="Messungen-Gli-Men")
+    wandb.init(project="2-Messungen-Gli-Men")
     config = wandb.config
 
-    run_name = f"trainsample_{config.train_samples}"
-    wandb.run.name = run_name
-    wandb.run.tags = [f"samples_{config.train_samples}"]
-
-    checkpoint_dir = os.path.join("Checkpoints", wandb.run.project, run_name)
+    # 🔢 Automatische Run-ID finden (für Checkpoint-Ordner und eindeutige Benennung)
+    base_checkpoint_dir = os.path.join("Checkpoints", wandb.run.project, f"trainsample_{config.train_samples}")
+    run_id = 1
+    checkpoint_dir = os.path.join(base_checkpoint_dir, f"run_{run_id}")
+    while os.path.exists(checkpoint_dir):
+        run_id += 1
+        checkpoint_dir = os.path.join(base_checkpoint_dir, f"run_{run_id}")
     os.makedirs(checkpoint_dir, exist_ok=True)
 
+    # 🏷️ WandB Run eindeutig benennen
+    run_name = f"trainsample_{config.train_samples}_run_{run_id}"
+    wandb.run.name = run_name
+    wandb.run.tags = [f"samples_{config.train_samples}", f"run_{run_id}"]
+    wandb.config.run_id = run_id  # Für spätere Auswertung in wandb
+
+    print(f"🚀 Starting run: {run_name}")
+
+    # 📌 Seed setzen
     seed = 42
     torch.manual_seed(seed)
     np.random.seed(seed)
@@ -124,6 +135,7 @@ def train():
     if torch.cuda.is_available():
         torch.cuda.manual_seed_all(seed)
 
+    # 📊 Datensätze laden
     full_dataset = CustomImageDataset(root_dir=TRAIN_DIR)
     total_size = len(full_dataset)
     val_size = int(0.2 * total_size)
@@ -223,6 +235,7 @@ def train():
             "val_probs_labels": wandb.Table(data=list(zip(all_probs, all_labels)), columns=["prob", "label"])
         })
 
+        # ⬇️ Speichern bei Verbesserung
         if avg_val_loss < best_val_loss - 1e-4:
             best_val_loss = avg_val_loss
             epochs_no_improve = 0
@@ -252,6 +265,7 @@ def train():
         evaluate_on_test_data(model_path=final_model_path)
 
     wandb.finish()
+
   
 
 # Sweep-Konfiguration laden
@@ -316,13 +330,14 @@ def evaluate_on_test_data(model_path):
             preds=all_preds,
             class_names=class_names
         ),
-        "test_probs_labels": wandb.Table(data=list(zip(all_probs, all_labels)), columns=["prob", "label"])
+        "test_probs_labels": wandb.Table(data=list(zip(all_probs, all_labels)), columns=["prob", "label"]),
+        "train_samples_used": wandb.config.train_samples 
     })
 
 
 # Hauptfunktion
 if __name__ == "__main__":
     sweep_config = load_sweep_config()
-    sweep_id = wandb.sweep(sweep_config, project="Messungen-Gli-Men")
+    sweep_id = wandb.sweep(sweep_config, project="2-Messungen-Gli-Men")
     wandb.agent(sweep_id, function=train)
 

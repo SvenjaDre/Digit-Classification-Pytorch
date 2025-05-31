@@ -1,0 +1,16 @@
+{"time":"2025-06-01T00:28:13.179269643+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250601_002813-n9io0dfv/logs/debug-core.log"}
+{"time":"2025-06-01T00:28:13.444932551+02:00","level":"INFO","msg":"created new stream","id":"n9io0dfv"}
+{"time":"2025-06-01T00:28:13.445148556+02:00","level":"INFO","msg":"stream: started","id":"n9io0dfv"}
+{"time":"2025-06-01T00:28:13.44522477+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"n9io0dfv"}
+{"time":"2025-06-01T00:28:13.445257424+02:00","level":"INFO","msg":"handler: started","stream_id":"n9io0dfv"}
+{"time":"2025-06-01T00:28:13.445261837+02:00","level":"INFO","msg":"sender: started","stream_id":"n9io0dfv"}
+{"time":"2025-06-01T00:28:13.649545183+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T00:31:39.610889765+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T00:31:39.61133477+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T00:31:40.612084481+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-n9io0dfv-test_probs_labels","runtime_seconds":1.173054822},{"desc":"uploading artifact run-n9io0dfv-test_confusion_matrix_table","runtime_seconds":1.007273684}],"total_operations":2}}
+{"time":"2025-06-01T00:31:42.620104215+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T00:31:42.833138999+02:00","level":"INFO","msg":"stream: closing","id":"n9io0dfv"}
+{"time":"2025-06-01T00:31:42.833415061+02:00","level":"INFO","msg":"handler: closed","stream_id":"n9io0dfv"}
+{"time":"2025-06-01T00:31:42.83345054+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"n9io0dfv"}
+{"time":"2025-06-01T00:31:42.833478+02:00","level":"INFO","msg":"sender: closed","stream_id":"n9io0dfv"}
+{"time":"2025-06-01T00:31:42.834397908+02:00","level":"INFO","msg":"stream: closed","id":"n9io0dfv"}

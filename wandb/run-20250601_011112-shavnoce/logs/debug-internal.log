@@ -1,0 +1,16 @@
+{"time":"2025-06-01T01:11:12.604910127+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250601_011112-shavnoce/logs/debug-core.log"}
+{"time":"2025-06-01T01:11:13.997797948+02:00","level":"INFO","msg":"created new stream","id":"shavnoce"}
+{"time":"2025-06-01T01:11:13.998025973+02:00","level":"INFO","msg":"stream: started","id":"shavnoce"}
+{"time":"2025-06-01T01:11:13.998082632+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"shavnoce"}
+{"time":"2025-06-01T01:11:13.998110678+02:00","level":"INFO","msg":"handler: started","stream_id":"shavnoce"}
+{"time":"2025-06-01T01:11:13.998132035+02:00","level":"INFO","msg":"sender: started","stream_id":"shavnoce"}
+{"time":"2025-06-01T01:11:14.215921829+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T01:15:15.193807507+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T01:15:15.194219445+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T01:15:16.19479321+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-shavnoce-test_probs_labels","runtime_seconds":1.045967942},{"desc":"uploading artifact run-shavnoce-test_confusion_matrix_table","runtime_seconds":1.006360877,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.410387341,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-01T01:15:18.717364906+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T01:15:18.922951841+02:00","level":"INFO","msg":"stream: closing","id":"shavnoce"}
+{"time":"2025-06-01T01:15:18.923173061+02:00","level":"INFO","msg":"handler: closed","stream_id":"shavnoce"}
+{"time":"2025-06-01T01:15:18.923243695+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"shavnoce"}
+{"time":"2025-06-01T01:15:18.923286043+02:00","level":"INFO","msg":"sender: closed","stream_id":"shavnoce"}
+{"time":"2025-06-01T01:15:18.924115352+02:00","level":"INFO","msg":"stream: closed","id":"shavnoce"}

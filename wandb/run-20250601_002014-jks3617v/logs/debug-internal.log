@@ -1,0 +1,16 @@
+{"time":"2025-06-01T00:20:14.322260705+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250601_002014-jks3617v/logs/debug-core.log"}
+{"time":"2025-06-01T00:20:15.144592951+02:00","level":"INFO","msg":"created new stream","id":"jks3617v"}
+{"time":"2025-06-01T00:20:15.144773773+02:00","level":"INFO","msg":"stream: started","id":"jks3617v"}
+{"time":"2025-06-01T00:20:15.144861097+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"jks3617v"}
+{"time":"2025-06-01T00:20:15.144907541+02:00","level":"INFO","msg":"handler: started","stream_id":"jks3617v"}
+{"time":"2025-06-01T00:20:15.144915934+02:00","level":"INFO","msg":"sender: started","stream_id":"jks3617v"}
+{"time":"2025-06-01T00:20:15.327908073+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T00:24:21.239780358+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T00:24:21.240190755+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T00:24:22.241206794+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-jks3617v-test_probs_labels","runtime_seconds":1.092845745},{"desc":"uploading artifact run-jks3617v-test_confusion_matrix_table","runtime_seconds":1.008155473}],"total_operations":2}}
+{"time":"2025-06-01T00:24:24.206541031+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T00:24:24.413099176+02:00","level":"INFO","msg":"stream: closing","id":"jks3617v"}
+{"time":"2025-06-01T00:24:24.41333471+02:00","level":"INFO","msg":"handler: closed","stream_id":"jks3617v"}
+{"time":"2025-06-01T00:24:24.413373534+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"jks3617v"}
+{"time":"2025-06-01T00:24:24.413398115+02:00","level":"INFO","msg":"sender: closed","stream_id":"jks3617v"}
+{"time":"2025-06-01T00:24:24.414221602+02:00","level":"INFO","msg":"stream: closed","id":"jks3617v"}

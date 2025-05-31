@@ -1,0 +1,16 @@
+{"time":"2025-06-01T00:09:02.162434708+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250601_000902-uvvdhs3a/logs/debug-core.log"}
+{"time":"2025-06-01T00:09:04.098172042+02:00","level":"INFO","msg":"created new stream","id":"uvvdhs3a"}
+{"time":"2025-06-01T00:09:04.098446889+02:00","level":"INFO","msg":"stream: started","id":"uvvdhs3a"}
+{"time":"2025-06-01T00:09:04.098484285+02:00","level":"INFO","msg":"handler: started","stream_id":"uvvdhs3a"}
+{"time":"2025-06-01T00:09:04.098509642+02:00","level":"INFO","msg":"sender: started","stream_id":"uvvdhs3a"}
+{"time":"2025-06-01T00:09:04.098546229+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"uvvdhs3a"}
+{"time":"2025-06-01T00:09:04.317883078+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T00:13:08.779729575+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T00:13:08.780206219+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T00:13:09.780783668+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-uvvdhs3a-test_probs_labels","runtime_seconds":1.190030754,"subtasks":[{"desc":"test_probs_labels.table.json","runtime_seconds":0.560806914,"progress":"15.0KB/15.0KB"}]},{"desc":"uploading artifact run-uvvdhs3a-test_confusion_matrix_table","runtime_seconds":1.006676113,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.404875243,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-01T00:13:12.123179679+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T00:13:12.311482209+02:00","level":"INFO","msg":"stream: closing","id":"uvvdhs3a"}
+{"time":"2025-06-01T00:13:12.311724923+02:00","level":"INFO","msg":"handler: closed","stream_id":"uvvdhs3a"}
+{"time":"2025-06-01T00:13:12.311760723+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"uvvdhs3a"}
+{"time":"2025-06-01T00:13:12.311788704+02:00","level":"INFO","msg":"sender: closed","stream_id":"uvvdhs3a"}
+{"time":"2025-06-01T00:13:12.3127299+02:00","level":"INFO","msg":"stream: closed","id":"uvvdhs3a"}

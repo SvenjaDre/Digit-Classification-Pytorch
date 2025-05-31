@@ -1,0 +1,16 @@
+{"time":"2025-05-31T23:37:39.449001976+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250531_233739-rzi675g7/logs/debug-core.log"}
+{"time":"2025-05-31T23:37:39.713839291+02:00","level":"INFO","msg":"created new stream","id":"rzi675g7"}
+{"time":"2025-05-31T23:37:39.714051419+02:00","level":"INFO","msg":"stream: started","id":"rzi675g7"}
+{"time":"2025-05-31T23:37:39.714077168+02:00","level":"INFO","msg":"sender: started","stream_id":"rzi675g7"}
+{"time":"2025-05-31T23:37:39.714079885+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"rzi675g7"}
+{"time":"2025-05-31T23:37:39.714090191+02:00","level":"INFO","msg":"handler: started","stream_id":"rzi675g7"}
+{"time":"2025-05-31T23:37:39.896181681+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-31T23:39:25.394546041+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-31T23:39:25.395001269+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-31T23:39:26.395688342+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-rzi675g7-test_probs_labels","runtime_seconds":0.968171073,"subtasks":[{"desc":"test_probs_labels.table.json","runtime_seconds":0.330326481,"progress":"15.3KB/15.3KB"}]},{"desc":"uploading artifact run-rzi675g7-test_confusion_matrix_table","runtime_seconds":0.968132703}],"total_operations":2}}
+{"time":"2025-05-31T23:39:28.598965025+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-31T23:39:28.807376947+02:00","level":"INFO","msg":"stream: closing","id":"rzi675g7"}
+{"time":"2025-05-31T23:39:28.807603021+02:00","level":"INFO","msg":"handler: closed","stream_id":"rzi675g7"}
+{"time":"2025-05-31T23:39:28.807640896+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"rzi675g7"}
+{"time":"2025-05-31T23:39:28.807668143+02:00","level":"INFO","msg":"sender: closed","stream_id":"rzi675g7"}
+{"time":"2025-05-31T23:39:28.808445741+02:00","level":"INFO","msg":"stream: closed","id":"rzi675g7"}

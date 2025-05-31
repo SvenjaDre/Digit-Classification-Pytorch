@@ -21,7 +21,8 @@ df.to_csv(csv_path, index=False)
 
 # --- Teil 2: CSV laden ---
 df = pd.read_csv(csv_path)
-
+# Spaltennamen anzeigen, um zu prüfen welche Metriken vorhanden sind
+print(df.columns.tolist())
 # Ordner für Plots erstellen, falls nicht vorhanden
 os.makedirs("plots", exist_ok=True)
 
@@ -52,6 +53,8 @@ def plot_metric(metric_name, ylabel, filename):
     plt.show()
 
 # --- Teil 3: Drei Plots erzeugen ---
-plot_metric("val_accuracy", "Validation Accuracy / %", "Accuracy_mean.pdf")
-plot_metric("val_sensitivity", "Validation Sensitivity ", "Sensitivity_mean.pdf")
-plot_metric("val_specificity", "Validation Specificity ", "Specificity_mean.pdf")
+
+plot_metric("test_accuracy", "Test Accuracy / %", "Test_Accuracy_mean.pdf")
+plot_metric("test_sensitivity", "Test Sensitivity", "Test_Sensitivity_mean.pdf")
+plot_metric("test_specificity", "Test Specificity", "Test_Specificity_mean.pdf")
+
