@@ -1,0 +1,16 @@
+{"time":"2025-05-31T11:20:58.24153303+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250531_112058-a7i8x4tk/logs/debug-core.log"}
+{"time":"2025-05-31T11:20:58.505249107+02:00","level":"INFO","msg":"created new stream","id":"a7i8x4tk"}
+{"time":"2025-05-31T11:20:58.505482796+02:00","level":"INFO","msg":"stream: started","id":"a7i8x4tk"}
+{"time":"2025-05-31T11:20:58.505502491+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"a7i8x4tk"}
+{"time":"2025-05-31T11:20:58.50550994+02:00","level":"INFO","msg":"sender: started","stream_id":"a7i8x4tk"}
+{"time":"2025-05-31T11:20:58.505583397+02:00","level":"INFO","msg":"handler: started","stream_id":"a7i8x4tk"}
+{"time":"2025-05-31T11:20:58.677730104+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-31T11:26:28.41331692+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-31T11:26:28.413679905+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-31T11:26:29.414444643+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-a7i8x4tk-val_probs_labels","runtime_seconds":1.028110485}],"total_operations":1}}
+{"time":"2025-05-31T11:26:31.542362181+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-31T11:26:31.723916675+02:00","level":"INFO","msg":"stream: closing","id":"a7i8x4tk"}
+{"time":"2025-05-31T11:26:31.724152636+02:00","level":"INFO","msg":"handler: closed","stream_id":"a7i8x4tk"}
+{"time":"2025-05-31T11:26:31.724167732+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"a7i8x4tk"}
+{"time":"2025-05-31T11:26:31.724182396+02:00","level":"INFO","msg":"sender: closed","stream_id":"a7i8x4tk"}
+{"time":"2025-05-31T11:26:31.724928367+02:00","level":"INFO","msg":"stream: closed","id":"a7i8x4tk"}

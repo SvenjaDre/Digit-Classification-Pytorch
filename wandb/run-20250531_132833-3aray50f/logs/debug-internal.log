@@ -1,0 +1,16 @@
+{"time":"2025-05-31T13:28:33.198698001+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250531_132833-3aray50f/logs/debug-core.log"}
+{"time":"2025-05-31T13:28:33.464208478+02:00","level":"INFO","msg":"created new stream","id":"3aray50f"}
+{"time":"2025-05-31T13:28:33.464422854+02:00","level":"INFO","msg":"stream: started","id":"3aray50f"}
+{"time":"2025-05-31T13:28:33.464458594+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"3aray50f"}
+{"time":"2025-05-31T13:28:33.464501399+02:00","level":"INFO","msg":"handler: started","stream_id":"3aray50f"}
+{"time":"2025-05-31T13:28:33.464499234+02:00","level":"INFO","msg":"sender: started","stream_id":"3aray50f"}
+{"time":"2025-05-31T13:28:33.672180593+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-31T13:38:35.361727626+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-31T13:38:35.362113927+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-31T13:38:36.368049997+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-3aray50f-val_probs_labels","runtime_seconds":1.033602866}],"total_operations":1}}
+{"time":"2025-05-31T13:38:38.388195015+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-31T13:38:38.591637109+02:00","level":"INFO","msg":"stream: closing","id":"3aray50f"}
+{"time":"2025-05-31T13:38:38.591821566+02:00","level":"INFO","msg":"handler: closed","stream_id":"3aray50f"}
+{"time":"2025-05-31T13:38:38.591892179+02:00","level":"INFO","msg":"sender: closed","stream_id":"3aray50f"}
+{"time":"2025-05-31T13:38:38.591889248+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"3aray50f"}
+{"time":"2025-05-31T13:38:38.592715904+02:00","level":"INFO","msg":"stream: closed","id":"3aray50f"}

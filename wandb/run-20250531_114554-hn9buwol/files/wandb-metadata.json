@@ -1,0 +1,48 @@
+{
+  "os": "Linux-5.14.0-503.22.1.el9_5.x86_64-x86_64-with-glibc2.34",
+  "python": "CPython 3.12.6",
+  "startedAt": "2025-05-31T09:45:54.293067Z",
+  "program": "/nfs/homes/sdreyer/Digit-Classification-Pytorch/ClassSweep.py",
+  "codePath": "ClassSweep.py",
+  "git": {
+    "remote": "https://github.com/SvenjaDre/Digit-Classification-Pytorch.git",
+    "commit": "8576a1f82472ad2e19a5edd555bf2890a5c4efc9"
+  },
+  "email": "svenja.dreyer@tu-dortmund.de",
+  "root": "/nfs/homes/sdreyer/Digit-Classification-Pytorch",
+  "host": "gpu01.e4.physik.tu-dortmund.de",
+  "executable": "/nfs/sw/micromamba/envs/pytorch_gpu/bin/python",
+  "codePathLocal": "ClassSweep.py",
+  "cpu_count": 10,
+  "cpu_count_logical": 20,
+  "gpu": "NVIDIA RTX 6000 Ada Generation",
+  "gpu_count": 2,
+  "disk": {
+    "/": {
+      "total": "75125227520",
+      "used": "7677845504"
+    }
+  },
+  "memory": {
+    "total": "66768728064"
+  },
+  "cpu": {
+    "count": 10,
+    "countLogical": 20
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA RTX 6000 Ada Generation",
+      "memoryTotal": "51527024640",
+      "cudaCores": 18176,
+      "architecture": "Ada"
+    },
+    {
+      "name": "NVIDIA GeForce GTX 1080 Ti",
+      "memoryTotal": "11811160064",
+      "cudaCores": 3584,
+      "architecture": "Pascal"
+    }
+  ],
+  "cudaVersion": "12.4"
+}

@@ -1,0 +1,16 @@
+{"time":"2025-05-31T12:01:15.498324774+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250531_120115-jchimmdh/logs/debug-core.log"}
+{"time":"2025-05-31T12:01:28.143057011+02:00","level":"INFO","msg":"created new stream","id":"jchimmdh"}
+{"time":"2025-05-31T12:01:28.143432342+02:00","level":"INFO","msg":"stream: started","id":"jchimmdh"}
+{"time":"2025-05-31T12:01:28.143457479+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"jchimmdh"}
+{"time":"2025-05-31T12:01:28.143490324+02:00","level":"INFO","msg":"sender: started","stream_id":"jchimmdh"}
+{"time":"2025-05-31T12:01:28.143498463+02:00","level":"INFO","msg":"handler: started","stream_id":"jchimmdh"}
+{"time":"2025-05-31T12:01:28.378775983+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-31T12:09:00.403410337+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-31T12:09:00.403784058+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-31T12:09:01.404475288+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-jchimmdh-val_probs_labels","runtime_seconds":1.027459429}],"total_operations":1}}
+{"time":"2025-05-31T12:09:03.285042434+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-31T12:09:03.477751871+02:00","level":"INFO","msg":"stream: closing","id":"jchimmdh"}
+{"time":"2025-05-31T12:09:03.478023066+02:00","level":"INFO","msg":"handler: closed","stream_id":"jchimmdh"}
+{"time":"2025-05-31T12:09:03.478089307+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"jchimmdh"}
+{"time":"2025-05-31T12:09:03.478114068+02:00","level":"INFO","msg":"sender: closed","stream_id":"jchimmdh"}
+{"time":"2025-05-31T12:09:03.47892636+02:00","level":"INFO","msg":"stream: closed","id":"jchimmdh"}

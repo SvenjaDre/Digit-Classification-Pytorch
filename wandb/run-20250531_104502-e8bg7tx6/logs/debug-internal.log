@@ -1,0 +1,16 @@
+{"time":"2025-05-31T10:45:02.074961849+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250531_104502-e8bg7tx6/logs/debug-core.log"}
+{"time":"2025-05-31T10:45:02.343806868+02:00","level":"INFO","msg":"created new stream","id":"e8bg7tx6"}
+{"time":"2025-05-31T10:45:02.344051135+02:00","level":"INFO","msg":"stream: started","id":"e8bg7tx6"}
+{"time":"2025-05-31T10:45:02.344081906+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"e8bg7tx6"}
+{"time":"2025-05-31T10:45:02.344104505+02:00","level":"INFO","msg":"sender: started","stream_id":"e8bg7tx6"}
+{"time":"2025-05-31T10:45:02.34414586+02:00","level":"INFO","msg":"handler: started","stream_id":"e8bg7tx6"}
+{"time":"2025-05-31T10:45:02.655460401+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-31T10:49:33.023760034+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-31T10:49:33.024593743+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-31T10:49:33.989585333+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-e8bg7tx6-val_probs_labels","runtime_seconds":1.006201397,"subtasks":[{"desc":"val_probs_labels.table.json","runtime_seconds":0.337213006,"progress":"13.7KB/13.7KB"}]}],"total_operations":1}}
+{"time":"2025-05-31T10:49:36.259568896+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-31T10:49:36.428168479+02:00","level":"INFO","msg":"stream: closing","id":"e8bg7tx6"}
+{"time":"2025-05-31T10:49:36.428422705+02:00","level":"INFO","msg":"handler: closed","stream_id":"e8bg7tx6"}
+{"time":"2025-05-31T10:49:36.428491556+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"e8bg7tx6"}
+{"time":"2025-05-31T10:49:36.428544563+02:00","level":"INFO","msg":"sender: closed","stream_id":"e8bg7tx6"}
+{"time":"2025-05-31T10:49:36.429214949+02:00","level":"INFO","msg":"stream: closed","id":"e8bg7tx6"}

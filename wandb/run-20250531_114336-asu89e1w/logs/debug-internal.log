@@ -1,0 +1,16 @@
+{"time":"2025-05-31T11:43:36.191676162+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250531_114336-asu89e1w/logs/debug-core.log"}
+{"time":"2025-05-31T11:43:36.457709105+02:00","level":"INFO","msg":"created new stream","id":"asu89e1w"}
+{"time":"2025-05-31T11:43:36.457921848+02:00","level":"INFO","msg":"stream: started","id":"asu89e1w"}
+{"time":"2025-05-31T11:43:36.457965006+02:00","level":"INFO","msg":"sender: started","stream_id":"asu89e1w"}
+{"time":"2025-05-31T11:43:36.457968276+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"asu89e1w"}
+{"time":"2025-05-31T11:43:36.458024592+02:00","level":"INFO","msg":"handler: started","stream_id":"asu89e1w"}
+{"time":"2025-05-31T11:43:36.634768836+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-31T11:45:27.015915354+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-31T11:45:27.01627027+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-31T11:45:28.017003904+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-asu89e1w-val_probs_labels","runtime_seconds":1.028045696},{"desc":"uploading config.yaml","runtime_seconds":0.497644822,"progress":"772B/772B"}],"total_operations":2}}
+{"time":"2025-05-31T11:45:30.371726022+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-31T11:45:30.581068713+02:00","level":"INFO","msg":"stream: closing","id":"asu89e1w"}
+{"time":"2025-05-31T11:45:30.581280934+02:00","level":"INFO","msg":"handler: closed","stream_id":"asu89e1w"}
+{"time":"2025-05-31T11:45:30.581352133+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"asu89e1w"}
+{"time":"2025-05-31T11:45:30.581378482+02:00","level":"INFO","msg":"sender: closed","stream_id":"asu89e1w"}
+{"time":"2025-05-31T11:45:30.582008551+02:00","level":"INFO","msg":"stream: closed","id":"asu89e1w"}
