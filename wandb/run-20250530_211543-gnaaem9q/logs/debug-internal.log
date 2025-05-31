@@ -1,0 +1,16 @@
+{"time":"2025-05-30T21:15:43.647395218+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250530_211543-gnaaem9q/logs/debug-core.log"}
+{"time":"2025-05-30T21:15:43.911745177+02:00","level":"INFO","msg":"created new stream","id":"gnaaem9q"}
+{"time":"2025-05-30T21:15:43.911965081+02:00","level":"INFO","msg":"stream: started","id":"gnaaem9q"}
+{"time":"2025-05-30T21:15:43.912019589+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"gnaaem9q"}
+{"time":"2025-05-30T21:15:43.912039241+02:00","level":"INFO","msg":"sender: started","stream_id":"gnaaem9q"}
+{"time":"2025-05-30T21:15:43.912097797+02:00","level":"INFO","msg":"handler: started","stream_id":"gnaaem9q"}
+{"time":"2025-05-30T21:15:44.102296253+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-30T21:18:14.775789237+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-30T21:18:14.776205213+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-30T21:18:15.776828303+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-gnaaem9q-val_probs_labels","runtime_seconds":1.03304451,"subtasks":[{"desc":"val_probs_labels.table.json","runtime_seconds":0.273842666,"progress":"21.8KB/21.8KB"}]}],"total_operations":1}}
+{"time":"2025-05-30T21:18:18.015823245+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-30T21:18:18.213954241+02:00","level":"INFO","msg":"stream: closing","id":"gnaaem9q"}
+{"time":"2025-05-30T21:18:18.214201251+02:00","level":"INFO","msg":"handler: closed","stream_id":"gnaaem9q"}
+{"time":"2025-05-30T21:18:18.214269882+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"gnaaem9q"}
+{"time":"2025-05-30T21:18:18.214298689+02:00","level":"INFO","msg":"sender: closed","stream_id":"gnaaem9q"}
+{"time":"2025-05-30T21:18:18.214943266+02:00","level":"INFO","msg":"stream: closed","id":"gnaaem9q"}

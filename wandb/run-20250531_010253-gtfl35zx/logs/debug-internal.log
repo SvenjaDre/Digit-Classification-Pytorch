@@ -1,0 +1,16 @@
+{"time":"2025-05-31T01:02:53.207892062+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250531_010253-gtfl35zx/logs/debug-core.log"}
+{"time":"2025-05-31T01:02:53.471623091+02:00","level":"INFO","msg":"created new stream","id":"gtfl35zx"}
+{"time":"2025-05-31T01:02:53.471854841+02:00","level":"INFO","msg":"stream: started","id":"gtfl35zx"}
+{"time":"2025-05-31T01:02:53.471930187+02:00","level":"INFO","msg":"handler: started","stream_id":"gtfl35zx"}
+{"time":"2025-05-31T01:02:53.471928854+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"gtfl35zx"}
+{"time":"2025-05-31T01:02:53.471969505+02:00","level":"INFO","msg":"sender: started","stream_id":"gtfl35zx"}
+{"time":"2025-05-31T01:02:53.664249943+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-31T01:06:00.813193018+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-31T01:06:00.813614872+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-31T01:06:01.814240947+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-gtfl35zx-val_probs_labels","runtime_seconds":1.032991926}],"total_operations":1}}
+{"time":"2025-05-31T01:06:03.709478033+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-31T01:06:03.916949534+02:00","level":"INFO","msg":"stream: closing","id":"gtfl35zx"}
+{"time":"2025-05-31T01:06:03.917188946+02:00","level":"INFO","msg":"handler: closed","stream_id":"gtfl35zx"}
+{"time":"2025-05-31T01:06:03.917245305+02:00","level":"INFO","msg":"sender: closed","stream_id":"gtfl35zx"}
+{"time":"2025-05-31T01:06:03.917239142+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"gtfl35zx"}
+{"time":"2025-05-31T01:06:03.917896454+02:00","level":"INFO","msg":"stream: closed","id":"gtfl35zx"}

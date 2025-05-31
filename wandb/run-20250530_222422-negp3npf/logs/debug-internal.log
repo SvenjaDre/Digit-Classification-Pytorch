@@ -1,0 +1,16 @@
+{"time":"2025-05-30T22:24:22.681105478+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250530_222422-negp3npf/logs/debug-core.log"}
+{"time":"2025-05-30T22:24:22.958406335+02:00","level":"INFO","msg":"created new stream","id":"negp3npf"}
+{"time":"2025-05-30T22:24:22.958616558+02:00","level":"INFO","msg":"stream: started","id":"negp3npf"}
+{"time":"2025-05-30T22:24:22.958634787+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"negp3npf"}
+{"time":"2025-05-30T22:24:22.958670721+02:00","level":"INFO","msg":"handler: started","stream_id":"negp3npf"}
+{"time":"2025-05-30T22:24:22.958689118+02:00","level":"INFO","msg":"sender: started","stream_id":"negp3npf"}
+{"time":"2025-05-30T22:24:23.12867837+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-30T22:26:37.68495693+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-30T22:26:37.685356629+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-30T22:26:38.68611975+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-negp3npf-val_probs_labels","runtime_seconds":1.032013409},{"desc":"uploading history steps 49-52, summary, console lines 49-54","runtime_seconds":0.103999505}],"total_operations":2}}
+{"time":"2025-05-30T22:26:40.958692893+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-30T22:26:41.153005332+02:00","level":"INFO","msg":"stream: closing","id":"negp3npf"}
+{"time":"2025-05-30T22:26:41.153229706+02:00","level":"INFO","msg":"handler: closed","stream_id":"negp3npf"}
+{"time":"2025-05-30T22:26:41.153250693+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"negp3npf"}
+{"time":"2025-05-30T22:26:41.153268663+02:00","level":"INFO","msg":"sender: closed","stream_id":"negp3npf"}
+{"time":"2025-05-30T22:26:41.154126501+02:00","level":"INFO","msg":"stream: closed","id":"negp3npf"}

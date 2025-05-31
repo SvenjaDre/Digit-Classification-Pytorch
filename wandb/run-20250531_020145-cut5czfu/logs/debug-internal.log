@@ -1,0 +1,16 @@
+{"time":"2025-05-31T02:01:45.892985478+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250531_020145-cut5czfu/logs/debug-core.log"}
+{"time":"2025-05-31T02:01:46.167489771+02:00","level":"INFO","msg":"created new stream","id":"cut5czfu"}
+{"time":"2025-05-31T02:01:46.167758488+02:00","level":"INFO","msg":"stream: started","id":"cut5czfu"}
+{"time":"2025-05-31T02:01:46.167798751+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"cut5czfu"}
+{"time":"2025-05-31T02:01:46.16783307+02:00","level":"INFO","msg":"sender: started","stream_id":"cut5czfu"}
+{"time":"2025-05-31T02:01:46.167877883+02:00","level":"INFO","msg":"handler: started","stream_id":"cut5czfu"}
+{"time":"2025-05-31T02:01:46.343013597+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-31T02:04:30.390856152+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-31T02:04:30.39131426+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-31T02:04:31.391963935+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-cut5czfu-val_probs_labels","runtime_seconds":1.0322255280000001,"subtasks":[{"desc":"val_probs_labels.table.json","runtime_seconds":0.335016148,"progress":"21.9KB/21.9KB"}]}],"total_operations":1}}
+{"time":"2025-05-31T02:04:33.932306855+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-31T02:04:34.115525436+02:00","level":"INFO","msg":"stream: closing","id":"cut5czfu"}
+{"time":"2025-05-31T02:04:34.115875956+02:00","level":"INFO","msg":"handler: closed","stream_id":"cut5czfu"}
+{"time":"2025-05-31T02:04:34.11599591+02:00","level":"INFO","msg":"sender: closed","stream_id":"cut5czfu"}
+{"time":"2025-05-31T02:04:34.115990696+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"cut5czfu"}
+{"time":"2025-05-31T02:04:34.116608215+02:00","level":"INFO","msg":"stream: closed","id":"cut5czfu"}

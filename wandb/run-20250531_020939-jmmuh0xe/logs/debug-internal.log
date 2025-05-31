@@ -1,0 +1,16 @@
+{"time":"2025-05-31T02:09:39.688771141+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250531_020939-jmmuh0xe/logs/debug-core.log"}
+{"time":"2025-05-31T02:09:39.954727518+02:00","level":"INFO","msg":"created new stream","id":"jmmuh0xe"}
+{"time":"2025-05-31T02:09:39.954939818+02:00","level":"INFO","msg":"stream: started","id":"jmmuh0xe"}
+{"time":"2025-05-31T02:09:39.954968299+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"jmmuh0xe"}
+{"time":"2025-05-31T02:09:39.954993416+02:00","level":"INFO","msg":"sender: started","stream_id":"jmmuh0xe"}
+{"time":"2025-05-31T02:09:39.955028651+02:00","level":"INFO","msg":"handler: started","stream_id":"jmmuh0xe"}
+{"time":"2025-05-31T02:09:40.134684462+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-31T02:25:54.87150964+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-31T02:25:54.871894002+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-31T02:25:55.877173338+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-jmmuh0xe-val_probs_labels","runtime_seconds":1.036927085},{"desc":"uploading config.yaml","runtime_seconds":0.495918647,"progress":"773B/773B"}],"total_operations":2}}
+{"time":"2025-05-31T02:25:58.530815786+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-31T02:25:58.737469906+02:00","level":"INFO","msg":"stream: closing","id":"jmmuh0xe"}
+{"time":"2025-05-31T02:25:58.737691581+02:00","level":"INFO","msg":"handler: closed","stream_id":"jmmuh0xe"}
+{"time":"2025-05-31T02:25:58.737728666+02:00","level":"INFO","msg":"sender: closed","stream_id":"jmmuh0xe"}
+{"time":"2025-05-31T02:25:58.737717578+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"jmmuh0xe"}
+{"time":"2025-05-31T02:25:58.73846474+02:00","level":"INFO","msg":"stream: closed","id":"jmmuh0xe"}

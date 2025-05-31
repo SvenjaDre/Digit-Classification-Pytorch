@@ -1,0 +1,16 @@
+{"time":"2025-05-31T03:02:23.3274644+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250531_030223-iz251bn9/logs/debug-core.log"}
+{"time":"2025-05-31T03:02:23.592884447+02:00","level":"INFO","msg":"created new stream","id":"iz251bn9"}
+{"time":"2025-05-31T03:02:23.593099561+02:00","level":"INFO","msg":"stream: started","id":"iz251bn9"}
+{"time":"2025-05-31T03:02:23.593138524+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"iz251bn9"}
+{"time":"2025-05-31T03:02:23.593174877+02:00","level":"INFO","msg":"sender: started","stream_id":"iz251bn9"}
+{"time":"2025-05-31T03:02:23.593188854+02:00","level":"INFO","msg":"handler: started","stream_id":"iz251bn9"}
+{"time":"2025-05-31T03:02:23.771395022+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-31T03:05:08.341659018+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-31T03:05:08.34211147+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-31T03:05:09.342686564+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-iz251bn9-val_probs_labels","runtime_seconds":1.033715465},{"desc":"uploading history steps 47-49, summary, console lines 47-51","runtime_seconds":0.128034467}],"total_operations":2}}
+{"time":"2025-05-31T03:05:11.360867516+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-31T03:05:11.541252767+02:00","level":"INFO","msg":"stream: closing","id":"iz251bn9"}
+{"time":"2025-05-31T03:05:11.541527437+02:00","level":"INFO","msg":"handler: closed","stream_id":"iz251bn9"}
+{"time":"2025-05-31T03:05:11.541543517+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"iz251bn9"}
+{"time":"2025-05-31T03:05:11.541553676+02:00","level":"INFO","msg":"sender: closed","stream_id":"iz251bn9"}
+{"time":"2025-05-31T03:05:11.54238038+02:00","level":"INFO","msg":"stream: closed","id":"iz251bn9"}
