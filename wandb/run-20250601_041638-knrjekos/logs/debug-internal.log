@@ -1,0 +1,16 @@
+{"time":"2025-06-01T04:16:38.251088577+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250601_041638-knrjekos/logs/debug-core.log"}
+{"time":"2025-06-01T04:16:38.516868743+02:00","level":"INFO","msg":"created new stream","id":"knrjekos"}
+{"time":"2025-06-01T04:16:38.517128716+02:00","level":"INFO","msg":"stream: started","id":"knrjekos"}
+{"time":"2025-06-01T04:16:38.5172021+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"knrjekos"}
+{"time":"2025-06-01T04:16:38.517253902+02:00","level":"INFO","msg":"sender: started","stream_id":"knrjekos"}
+{"time":"2025-06-01T04:16:38.517249781+02:00","level":"INFO","msg":"handler: started","stream_id":"knrjekos"}
+{"time":"2025-06-01T04:16:38.69763859+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T04:18:52.491091012+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T04:18:52.491492233+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T04:18:53.492085674+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-knrjekos-test_probs_labels","runtime_seconds":1.186897203},{"desc":"uploading artifact run-knrjekos-test_confusion_matrix_table","runtime_seconds":1.006865819,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.391306735,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-01T04:18:55.747331718+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T04:18:55.930312061+02:00","level":"INFO","msg":"stream: closing","id":"knrjekos"}
+{"time":"2025-06-01T04:18:55.930546108+02:00","level":"INFO","msg":"handler: closed","stream_id":"knrjekos"}
+{"time":"2025-06-01T04:18:55.930601244+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"knrjekos"}
+{"time":"2025-06-01T04:18:55.930647848+02:00","level":"INFO","msg":"sender: closed","stream_id":"knrjekos"}
+{"time":"2025-06-01T04:18:55.931313464+02:00","level":"INFO","msg":"stream: closed","id":"knrjekos"}

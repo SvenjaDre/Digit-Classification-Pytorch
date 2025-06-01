@@ -1,0 +1,16 @@
+{"time":"2025-06-01T06:34:24.576863489+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250601_063424-xaug1trd/logs/debug-core.log"}
+{"time":"2025-06-01T06:34:24.840377209+02:00","level":"INFO","msg":"created new stream","id":"xaug1trd"}
+{"time":"2025-06-01T06:34:24.840580038+02:00","level":"INFO","msg":"stream: started","id":"xaug1trd"}
+{"time":"2025-06-01T06:34:24.840637881+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"xaug1trd"}
+{"time":"2025-06-01T06:34:24.840670931+02:00","level":"INFO","msg":"handler: started","stream_id":"xaug1trd"}
+{"time":"2025-06-01T06:34:24.840694447+02:00","level":"INFO","msg":"sender: started","stream_id":"xaug1trd"}
+{"time":"2025-06-01T06:34:25.020118443+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T06:39:09.483632426+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T06:39:09.484069097+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T06:39:10.48461346+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-xaug1trd-test_probs_labels","runtime_seconds":1.18900324},{"desc":"uploading artifact run-xaug1trd-test_confusion_matrix_table","runtime_seconds":1.006511752,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.402163817,"progress":"632B/632B"}]},{"desc":"uploading history steps 68-70, summary, console lines 49-57","runtime_seconds":0.023082145}],"total_operations":3}}
+{"time":"2025-06-01T06:39:12.534818662+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T06:39:12.722869049+02:00","level":"INFO","msg":"stream: closing","id":"xaug1trd"}
+{"time":"2025-06-01T06:39:12.723123262+02:00","level":"INFO","msg":"handler: closed","stream_id":"xaug1trd"}
+{"time":"2025-06-01T06:39:12.723162831+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"xaug1trd"}
+{"time":"2025-06-01T06:39:12.723187472+02:00","level":"INFO","msg":"sender: closed","stream_id":"xaug1trd"}
+{"time":"2025-06-01T06:39:12.724072365+02:00","level":"INFO","msg":"stream: closed","id":"xaug1trd"}

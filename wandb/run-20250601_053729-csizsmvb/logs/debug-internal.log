@@ -1,0 +1,16 @@
+{"time":"2025-06-01T05:37:29.163459007+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250601_053729-csizsmvb/logs/debug-core.log"}
+{"time":"2025-06-01T05:37:29.984958546+02:00","level":"INFO","msg":"created new stream","id":"csizsmvb"}
+{"time":"2025-06-01T05:37:29.985167677+02:00","level":"INFO","msg":"stream: started","id":"csizsmvb"}
+{"time":"2025-06-01T05:37:29.985246806+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"csizsmvb"}
+{"time":"2025-06-01T05:37:29.985263724+02:00","level":"INFO","msg":"sender: started","stream_id":"csizsmvb"}
+{"time":"2025-06-01T05:37:29.985304777+02:00","level":"INFO","msg":"handler: started","stream_id":"csizsmvb"}
+{"time":"2025-06-01T05:37:30.139225954+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T05:41:15.34165938+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T05:41:15.342140085+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T05:41:16.34279334+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-csizsmvb-test_probs_labels","runtime_seconds":1.182688341},{"desc":"uploading artifact run-csizsmvb-test_confusion_matrix_table","runtime_seconds":0.870982198,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.259788242,"progress":"632B/632B"}]},{"desc":"uploading media/table/test_confusion_matrix_table_52_04ebdab4dcb4a93f30fd.table.json","runtime_seconds":0.64980529,"progress":"192B/192B"},{"desc":"uploading config.yaml","runtime_seconds":0.5020312,"progress":"2.1KB/2.1KB"}],"total_operations":4}}
+{"time":"2025-06-01T05:41:19.123467742+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T05:41:19.309191865+02:00","level":"INFO","msg":"stream: closing","id":"csizsmvb"}
+{"time":"2025-06-01T05:41:19.309436379+02:00","level":"INFO","msg":"handler: closed","stream_id":"csizsmvb"}
+{"time":"2025-06-01T05:41:19.309506348+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"csizsmvb"}
+{"time":"2025-06-01T05:41:19.309547191+02:00","level":"INFO","msg":"sender: closed","stream_id":"csizsmvb"}
+{"time":"2025-06-01T05:41:19.310300127+02:00","level":"INFO","msg":"stream: closed","id":"csizsmvb"}

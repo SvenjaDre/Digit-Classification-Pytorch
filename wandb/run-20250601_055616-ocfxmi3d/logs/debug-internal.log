@@ -1,0 +1,16 @@
+{"time":"2025-06-01T05:56:16.174103836+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250601_055616-ocfxmi3d/logs/debug-core.log"}
+{"time":"2025-06-01T05:56:16.444569603+02:00","level":"INFO","msg":"created new stream","id":"ocfxmi3d"}
+{"time":"2025-06-01T05:56:16.444775869+02:00","level":"INFO","msg":"stream: started","id":"ocfxmi3d"}
+{"time":"2025-06-01T05:56:16.44481752+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"ocfxmi3d"}
+{"time":"2025-06-01T05:56:16.44485667+02:00","level":"INFO","msg":"sender: started","stream_id":"ocfxmi3d"}
+{"time":"2025-06-01T05:56:16.444887597+02:00","level":"INFO","msg":"handler: started","stream_id":"ocfxmi3d"}
+{"time":"2025-06-01T05:56:16.604574264+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T06:10:03.012733052+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T06:10:03.013181609+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T06:10:04.018931268+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-ocfxmi3d-test_probs_labels","runtime_seconds":1.182037963},{"desc":"uploading artifact run-ocfxmi3d-test_confusion_matrix_table","runtime_seconds":1.01207106}],"total_operations":2}}
+{"time":"2025-06-01T06:10:06.120780352+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T06:10:06.325552979+02:00","level":"INFO","msg":"stream: closing","id":"ocfxmi3d"}
+{"time":"2025-06-01T06:10:06.325816905+02:00","level":"INFO","msg":"handler: closed","stream_id":"ocfxmi3d"}
+{"time":"2025-06-01T06:10:06.325834393+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ocfxmi3d"}
+{"time":"2025-06-01T06:10:06.325852377+02:00","level":"INFO","msg":"sender: closed","stream_id":"ocfxmi3d"}
+{"time":"2025-06-01T06:10:06.326605511+02:00","level":"INFO","msg":"stream: closed","id":"ocfxmi3d"}

@@ -1,0 +1,16 @@
+{"time":"2025-06-01T02:15:53.732468987+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250601_021553-ipt30kwl/logs/debug-core.log"}
+{"time":"2025-06-01T02:15:54.28970355+02:00","level":"INFO","msg":"created new stream","id":"ipt30kwl"}
+{"time":"2025-06-01T02:15:54.289932915+02:00","level":"INFO","msg":"stream: started","id":"ipt30kwl"}
+{"time":"2025-06-01T02:15:54.289950955+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"ipt30kwl"}
+{"time":"2025-06-01T02:15:54.289984378+02:00","level":"INFO","msg":"handler: started","stream_id":"ipt30kwl"}
+{"time":"2025-06-01T02:15:54.290000644+02:00","level":"INFO","msg":"sender: started","stream_id":"ipt30kwl"}
+{"time":"2025-06-01T02:15:54.464218123+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T02:20:32.370151655+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T02:20:32.370497172+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T02:20:33.371274911+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-ipt30kwl-test_probs_labels","runtime_seconds":1.182054605},{"desc":"uploading artifact run-ipt30kwl-test_confusion_matrix_table","runtime_seconds":1.006451906,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.392080078,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-01T02:20:35.382320462+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T02:20:35.57241002+02:00","level":"INFO","msg":"stream: closing","id":"ipt30kwl"}
+{"time":"2025-06-01T02:20:35.572622735+02:00","level":"INFO","msg":"handler: closed","stream_id":"ipt30kwl"}
+{"time":"2025-06-01T02:20:35.572692818+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ipt30kwl"}
+{"time":"2025-06-01T02:20:35.572720998+02:00","level":"INFO","msg":"sender: closed","stream_id":"ipt30kwl"}
+{"time":"2025-06-01T02:20:35.573353893+02:00","level":"INFO","msg":"stream: closed","id":"ipt30kwl"}

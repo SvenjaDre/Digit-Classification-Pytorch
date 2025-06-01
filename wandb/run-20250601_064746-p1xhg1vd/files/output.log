@@ -1,0 +1,45 @@
+🚀 Starting run: trainsample_231_run_9
+Epoch 1 | Train Loss: 0.6919 | Val Loss: 9.6371 | Val Acc: 49.06% | Sens: 1.00 | Spec: 0.00 | AUC: 0.52
+Epoch 2 | Train Loss: 4.9928 | Val Loss: 0.7283 | Val Acc: 50.94% | Sens: 0.00 | Spec: 1.00 | AUC: 0.32
+Epoch 3 | Train Loss: 0.7288 | Val Loss: 0.6952 | Val Acc: 50.94% | Sens: 0.00 | Spec: 1.00 | AUC: 0.28
+Epoch 4 | Train Loss: 0.6946 | Val Loss: 0.7197 | Val Acc: 49.06% | Sens: 1.00 | Spec: 0.00 | AUC: 0.73
+Epoch 5 | Train Loss: 0.7491 | Val Loss: 0.6845 | Val Acc: 49.06% | Sens: 1.00 | Spec: 0.00 | AUC: 0.77
+Epoch 6 | Train Loss: 0.7075 | Val Loss: 0.6891 | Val Acc: 49.06% | Sens: 1.00 | Spec: 0.00 | AUC: 0.80
+Epoch 7 | Train Loss: 0.6833 | Val Loss: 0.6866 | Val Acc: 52.44% | Sens: 0.03 | Spec: 1.00 | AUC: 0.82
+Epoch 8 | Train Loss: 0.6877 | Val Loss: 0.6587 | Val Acc: 71.99% | Sens: 0.90 | Spec: 0.55 | AUC: 0.81
+Epoch 9 | Train Loss: 0.6619 | Val Loss: 0.6458 | Val Acc: 57.52% | Sens: 0.99 | Spec: 0.18 | AUC: 0.81
+Epoch 10 | Train Loss: 0.6135 | Val Loss: 0.5851 | Val Acc: 66.92% | Sens: 0.46 | Spec: 0.87 | AUC: 0.81
+Epoch 11 | Train Loss: 0.5623 | Val Loss: 0.5938 | Val Acc: 71.05% | Sens: 0.95 | Spec: 0.48 | AUC: 0.81
+Epoch 12 | Train Loss: 0.5965 | Val Loss: 0.5225 | Val Acc: 73.12% | Sens: 0.73 | Spec: 0.73 | AUC: 0.82
+Epoch 13 | Train Loss: 0.6715 | Val Loss: 0.5173 | Val Acc: 73.50% | Sens: 0.73 | Spec: 0.74 | AUC: 0.82
+Epoch 14 | Train Loss: 0.5476 | Val Loss: 0.5742 | Val Acc: 67.11% | Sens: 0.39 | Spec: 0.94 | AUC: 0.82
+Epoch 15 | Train Loss: 0.5420 | Val Loss: 0.6402 | Val Acc: 69.74% | Sens: 0.96 | Spec: 0.45 | AUC: 0.83
+Epoch 16 | Train Loss: 0.5766 | Val Loss: 0.5041 | Val Acc: 73.50% | Sens: 0.72 | Spec: 0.75 | AUC: 0.83
+Epoch 17 | Train Loss: 0.5387 | Val Loss: 0.5563 | Val Acc: 68.23% | Sens: 0.41 | Spec: 0.94 | AUC: 0.84
+Epoch 18 | Train Loss: 0.5270 | Val Loss: 0.5500 | Val Acc: 75.38% | Sens: 0.94 | Spec: 0.58 | AUC: 0.84
+Epoch 19 | Train Loss: 0.5040 | Val Loss: 0.5416 | Val Acc: 75.38% | Sens: 0.94 | Spec: 0.57 | AUC: 0.85
+Epoch 20 | Train Loss: 0.4839 | Val Loss: 0.4959 | Val Acc: 74.62% | Sens: 0.64 | Spec: 0.85 | AUC: 0.85
+Epoch 21 | Train Loss: 0.4980 | Val Loss: 0.4803 | Val Acc: 76.69% | Sens: 0.72 | Spec: 0.81 | AUC: 0.86
+Epoch 22 | Train Loss: 0.4614 | Val Loss: 0.5250 | Val Acc: 75.94% | Sens: 0.95 | Spec: 0.58 | AUC: 0.86
+Epoch 23 | Train Loss: 0.4591 | Val Loss: 0.4603 | Val Acc: 78.20% | Sens: 0.80 | Spec: 0.76 | AUC: 0.87
+Epoch 24 | Train Loss: 0.4381 | Val Loss: 0.4532 | Val Acc: 77.44% | Sens: 0.71 | Spec: 0.84 | AUC: 0.87
+Epoch 25 | Train Loss: 0.4074 | Val Loss: 0.4896 | Val Acc: 77.82% | Sens: 0.90 | Spec: 0.66 | AUC: 0.87
+Epoch 26 | Train Loss: 0.4100 | Val Loss: 0.4438 | Val Acc: 79.32% | Sens: 0.79 | Spec: 0.79 | AUC: 0.88
+Epoch 27 | Train Loss: 0.3760 | Val Loss: 0.4435 | Val Acc: 77.44% | Sens: 0.74 | Spec: 0.81 | AUC: 0.88
+Epoch 28 | Train Loss: 0.3775 | Val Loss: 0.4693 | Val Acc: 79.51% | Sens: 0.84 | Spec: 0.76 | AUC: 0.88
+Epoch 29 | Train Loss: 0.3557 | Val Loss: 0.4683 | Val Acc: 79.51% | Sens: 0.82 | Spec: 0.77 | AUC: 0.87
+Epoch 30 | Train Loss: 0.3381 | Val Loss: 0.4789 | Val Acc: 80.45% | Sens: 0.85 | Spec: 0.76 | AUC: 0.87
+Epoch 31 | Train Loss: 0.3154 | Val Loss: 0.4620 | Val Acc: 79.70% | Sens: 0.79 | Spec: 0.80 | AUC: 0.87
+Epoch 32 | Train Loss: 0.2939 | Val Loss: 0.4848 | Val Acc: 79.70% | Sens: 0.84 | Spec: 0.76 | AUC: 0.87
+Epoch 33 | Train Loss: 0.3077 | Val Loss: 0.4763 | Val Acc: 80.08% | Sens: 0.80 | Spec: 0.80 | AUC: 0.87
+Epoch 34 | Train Loss: 0.3309 | Val Loss: 0.4829 | Val Acc: 78.20% | Sens: 0.72 | Spec: 0.84 | AUC: 0.87
+Epoch 35 | Train Loss: 0.3344 | Val Loss: 0.5285 | Val Acc: 77.44% | Sens: 0.85 | Spec: 0.70 | AUC: 0.87
+Epoch 36 | Train Loss: 0.2878 | Val Loss: 0.5127 | Val Acc: 79.14% | Sens: 0.83 | Spec: 0.75 | AUC: 0.87
+Epoch 37 | Train Loss: 0.3023 | Val Loss: 0.4934 | Val Acc: 78.76% | Sens: 0.76 | Spec: 0.81 | AUC: 0.86
+🚨 Early stopping after 37 epochs.
+
+🔍 Testing on separate test set...
+/nfs/homes/sdreyer/Digit-Classification-Pytorch/ClassSweep.py:284: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  classifier.load_state_dict(torch.load(model_path, map_location=device))
+✅ Correct: 461 | ❌ Incorrect: 145 | Total: 606
+🎯 Test Accuracy: 76.07% | Sens: 0.75 | Spec: 0.78 | AUC: 0.85

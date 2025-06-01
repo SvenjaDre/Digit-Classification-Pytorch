@@ -1,0 +1,16 @@
+{"time":"2025-06-01T06:17:26.074341585+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250601_061726-g8mac4o4/logs/debug-core.log"}
+{"time":"2025-06-01T06:17:28.115321694+02:00","level":"INFO","msg":"created new stream","id":"g8mac4o4"}
+{"time":"2025-06-01T06:17:28.115632108+02:00","level":"INFO","msg":"stream: started","id":"g8mac4o4"}
+{"time":"2025-06-01T06:17:28.115666958+02:00","level":"INFO","msg":"handler: started","stream_id":"g8mac4o4"}
+{"time":"2025-06-01T06:17:28.115711188+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"g8mac4o4"}
+{"time":"2025-06-01T06:17:28.115712527+02:00","level":"INFO","msg":"sender: started","stream_id":"g8mac4o4"}
+{"time":"2025-06-01T06:17:28.317089383+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T06:25:27.606247772+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T06:25:27.60662496+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T06:25:28.607198223+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-g8mac4o4-test_probs_labels","runtime_seconds":1.184798498},{"desc":"uploading artifact run-g8mac4o4-test_confusion_matrix_table","runtime_seconds":1.006698287,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.394212832,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-01T06:25:30.737537732+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T06:25:30.958663328+02:00","level":"INFO","msg":"stream: closing","id":"g8mac4o4"}
+{"time":"2025-06-01T06:25:30.95887654+02:00","level":"INFO","msg":"handler: closed","stream_id":"g8mac4o4"}
+{"time":"2025-06-01T06:25:30.958946925+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"g8mac4o4"}
+{"time":"2025-06-01T06:25:30.958995419+02:00","level":"INFO","msg":"sender: closed","stream_id":"g8mac4o4"}
+{"time":"2025-06-01T06:25:30.959885697+02:00","level":"INFO","msg":"stream: closed","id":"g8mac4o4"}

@@ -1,0 +1,16 @@
+{"time":"2025-06-01T01:31:29.160769431+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250601_013129-qg98r5q6/logs/debug-core.log"}
+{"time":"2025-06-01T01:31:29.431311746+02:00","level":"INFO","msg":"created new stream","id":"qg98r5q6"}
+{"time":"2025-06-01T01:31:29.431567086+02:00","level":"INFO","msg":"stream: started","id":"qg98r5q6"}
+{"time":"2025-06-01T01:31:29.431606404+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"qg98r5q6"}
+{"time":"2025-06-01T01:31:29.431612403+02:00","level":"INFO","msg":"sender: started","stream_id":"qg98r5q6"}
+{"time":"2025-06-01T01:31:29.431639327+02:00","level":"INFO","msg":"handler: started","stream_id":"qg98r5q6"}
+{"time":"2025-06-01T01:31:29.616702932+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T01:46:40.468206764+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T01:46:40.468578492+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T01:46:41.474332334+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-qg98r5q6-test_probs_labels","runtime_seconds":1.171681172},{"desc":"uploading artifact run-qg98r5q6-test_confusion_matrix_table","runtime_seconds":1.012403197}],"total_operations":2}}
+{"time":"2025-06-01T01:46:43.478380274+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T01:46:43.659431628+02:00","level":"INFO","msg":"stream: closing","id":"qg98r5q6"}
+{"time":"2025-06-01T01:46:43.659677555+02:00","level":"INFO","msg":"handler: closed","stream_id":"qg98r5q6"}
+{"time":"2025-06-01T01:46:43.659699166+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"qg98r5q6"}
+{"time":"2025-06-01T01:46:43.65973352+02:00","level":"INFO","msg":"sender: closed","stream_id":"qg98r5q6"}
+{"time":"2025-06-01T01:46:43.660351406+02:00","level":"INFO","msg":"stream: closed","id":"qg98r5q6"}

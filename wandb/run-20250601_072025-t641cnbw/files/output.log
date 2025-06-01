@@ -1,0 +1,51 @@
+🚀 Starting run: trainsample_1277_run_10
+Epoch 1 | Train Loss: 0.8583 | Val Loss: 0.6922 | Val Acc: 57.89% | Sens: 0.15 | Spec: 1.00 | AUC: 0.71
+Epoch 2 | Train Loss: 0.6934 | Val Loss: 0.6889 | Val Acc: 50.94% | Sens: 0.00 | Spec: 1.00 | AUC: 0.74
+Epoch 3 | Train Loss: 0.6624 | Val Loss: 0.5927 | Val Acc: 73.87% | Sens: 0.95 | Spec: 0.53 | AUC: 0.82
+Epoch 4 | Train Loss: 0.5373 | Val Loss: 0.5669 | Val Acc: 75.94% | Sens: 0.93 | Spec: 0.59 | AUC: 0.85
+Epoch 5 | Train Loss: 0.5048 | Val Loss: 0.4517 | Val Acc: 77.82% | Sens: 0.73 | Spec: 0.82 | AUC: 0.88
+Epoch 6 | Train Loss: 0.4841 | Val Loss: 0.4939 | Val Acc: 78.95% | Sens: 0.94 | Spec: 0.64 | AUC: 0.89
+Epoch 7 | Train Loss: 0.4437 | Val Loss: 0.4199 | Val Acc: 80.83% | Sens: 0.81 | Spec: 0.80 | AUC: 0.89
+Epoch 8 | Train Loss: 0.3915 | Val Loss: 0.4177 | Val Acc: 81.39% | Sens: 0.80 | Spec: 0.83 | AUC: 0.90
+Epoch 9 | Train Loss: 0.4139 | Val Loss: 0.4188 | Val Acc: 81.95% | Sens: 0.76 | Spec: 0.88 | AUC: 0.90
+Epoch 10 | Train Loss: 0.3948 | Val Loss: 0.4091 | Val Acc: 82.33% | Sens: 0.86 | Spec: 0.79 | AUC: 0.91
+Epoch 11 | Train Loss: 0.3857 | Val Loss: 0.4908 | Val Acc: 75.75% | Sens: 0.55 | Spec: 0.96 | AUC: 0.91
+Epoch 12 | Train Loss: 0.4474 | Val Loss: 0.4088 | Val Acc: 83.46% | Sens: 0.88 | Spec: 0.79 | AUC: 0.91
+Epoch 13 | Train Loss: 0.4106 | Val Loss: 0.4021 | Val Acc: 83.65% | Sens: 0.86 | Spec: 0.81 | AUC: 0.91
+Epoch 14 | Train Loss: 0.3743 | Val Loss: 0.3996 | Val Acc: 83.46% | Sens: 0.86 | Spec: 0.81 | AUC: 0.92
+Epoch 15 | Train Loss: 0.3449 | Val Loss: 0.4345 | Val Acc: 82.14% | Sens: 0.92 | Spec: 0.73 | AUC: 0.92
+Epoch 16 | Train Loss: 0.3172 | Val Loss: 0.4333 | Val Acc: 83.27% | Sens: 0.93 | Spec: 0.74 | AUC: 0.92
+Epoch 17 | Train Loss: 0.3246 | Val Loss: 0.3986 | Val Acc: 84.02% | Sens: 0.74 | Spec: 0.93 | AUC: 0.93
+Epoch 18 | Train Loss: 0.3082 | Val Loss: 0.4198 | Val Acc: 84.40% | Sens: 0.92 | Spec: 0.77 | AUC: 0.93
+Epoch 19 | Train Loss: 0.2858 | Val Loss: 0.3708 | Val Acc: 86.28% | Sens: 0.90 | Spec: 0.83 | AUC: 0.93
+Epoch 20 | Train Loss: 0.2748 | Val Loss: 0.3770 | Val Acc: 86.65% | Sens: 0.90 | Spec: 0.84 | AUC: 0.94
+Epoch 21 | Train Loss: 0.2842 | Val Loss: 0.3501 | Val Acc: 87.03% | Sens: 0.83 | Spec: 0.91 | AUC: 0.94
+Epoch 22 | Train Loss: 0.2611 | Val Loss: 0.3688 | Val Acc: 86.65% | Sens: 0.88 | Spec: 0.85 | AUC: 0.94
+Epoch 23 | Train Loss: 0.2655 | Val Loss: 0.3571 | Val Acc: 85.90% | Sens: 0.79 | Spec: 0.93 | AUC: 0.94
+Epoch 24 | Train Loss: 0.2813 | Val Loss: 0.3673 | Val Acc: 85.71% | Sens: 0.94 | Spec: 0.77 | AUC: 0.94
+Epoch 25 | Train Loss: 0.2435 | Val Loss: 0.3474 | Val Acc: 88.53% | Sens: 0.92 | Spec: 0.86 | AUC: 0.95
+Epoch 26 | Train Loss: 0.2172 | Val Loss: 0.3396 | Val Acc: 88.72% | Sens: 0.91 | Spec: 0.86 | AUC: 0.95
+Epoch 27 | Train Loss: 0.2027 | Val Loss: 0.3783 | Val Acc: 87.59% | Sens: 0.91 | Spec: 0.84 | AUC: 0.95
+Epoch 28 | Train Loss: 0.2124 | Val Loss: 0.3587 | Val Acc: 88.72% | Sens: 0.93 | Spec: 0.85 | AUC: 0.95
+Epoch 29 | Train Loss: 0.2073 | Val Loss: 0.3792 | Val Acc: 87.41% | Sens: 0.95 | Spec: 0.80 | AUC: 0.95
+Epoch 30 | Train Loss: 0.2026 | Val Loss: 0.3772 | Val Acc: 85.34% | Sens: 0.76 | Spec: 0.94 | AUC: 0.95
+Epoch 31 | Train Loss: 0.2281 | Val Loss: 0.4016 | Val Acc: 86.47% | Sens: 0.93 | Spec: 0.80 | AUC: 0.95
+Epoch 32 | Train Loss: 0.2520 | Val Loss: 0.3864 | Val Acc: 84.77% | Sens: 0.94 | Spec: 0.76 | AUC: 0.94
+Epoch 33 | Train Loss: 0.2308 | Val Loss: 0.3211 | Val Acc: 89.10% | Sens: 0.90 | Spec: 0.88 | AUC: 0.95
+Epoch 34 | Train Loss: 0.1938 | Val Loss: 0.3273 | Val Acc: 89.29% | Sens: 0.86 | Spec: 0.93 | AUC: 0.95
+Epoch 35 | Train Loss: 0.1830 | Val Loss: 0.3277 | Val Acc: 89.10% | Sens: 0.88 | Spec: 0.90 | AUC: 0.95
+Epoch 36 | Train Loss: 0.1601 | Val Loss: 0.3229 | Val Acc: 89.29% | Sens: 0.85 | Spec: 0.93 | AUC: 0.96
+Epoch 37 | Train Loss: 0.1600 | Val Loss: 0.3254 | Val Acc: 88.16% | Sens: 0.90 | Spec: 0.86 | AUC: 0.96
+Epoch 38 | Train Loss: 0.1552 | Val Loss: 0.3252 | Val Acc: 89.66% | Sens: 0.90 | Spec: 0.90 | AUC: 0.96
+Epoch 39 | Train Loss: 0.1735 | Val Loss: 0.3417 | Val Acc: 87.41% | Sens: 0.91 | Spec: 0.84 | AUC: 0.95
+Epoch 40 | Train Loss: 0.1554 | Val Loss: 0.3365 | Val Acc: 90.23% | Sens: 0.87 | Spec: 0.93 | AUC: 0.96
+Epoch 41 | Train Loss: 0.1359 | Val Loss: 0.3412 | Val Acc: 88.53% | Sens: 0.89 | Spec: 0.88 | AUC: 0.95
+Epoch 42 | Train Loss: 0.1440 | Val Loss: 0.3352 | Val Acc: 90.41% | Sens: 0.91 | Spec: 0.90 | AUC: 0.96
+Epoch 43 | Train Loss: 0.1338 | Val Loss: 0.4220 | Val Acc: 88.72% | Sens: 0.93 | Spec: 0.84 | AUC: 0.96
+🚨 Early stopping after 43 epochs.
+
+🔍 Testing on separate test set...
+/nfs/homes/sdreyer/Digit-Classification-Pytorch/ClassSweep.py:284: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  classifier.load_state_dict(torch.load(model_path, map_location=device))
+✅ Correct: 522 | ❌ Incorrect: 84 | Total: 606
+🎯 Test Accuracy: 86.14% | Sens: 0.88 | Spec: 0.85 | AUC: 0.94

@@ -1,0 +1,16 @@
+{"time":"2025-06-01T05:17:41.057747497+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250601_051741-jwsjjxaf/logs/debug-core.log"}
+{"time":"2025-06-01T05:17:41.559588093+02:00","level":"INFO","msg":"created new stream","id":"jwsjjxaf"}
+{"time":"2025-06-01T05:17:41.559842692+02:00","level":"INFO","msg":"stream: started","id":"jwsjjxaf"}
+{"time":"2025-06-01T05:17:41.559881357+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"jwsjjxaf"}
+{"time":"2025-06-01T05:17:41.559898019+02:00","level":"INFO","msg":"sender: started","stream_id":"jwsjjxaf"}
+{"time":"2025-06-01T05:17:41.559934358+02:00","level":"INFO","msg":"handler: started","stream_id":"jwsjjxaf"}
+{"time":"2025-06-01T05:17:41.742923963+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T05:23:07.27344114+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T05:23:07.273785325+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T05:23:08.27467359+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-jwsjjxaf-test_probs_labels","runtime_seconds":1.179003436},{"desc":"uploading artifact run-jwsjjxaf-test_confusion_matrix_table","runtime_seconds":1.007030666,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.401963798,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-01T05:23:10.546956385+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T05:23:10.742529049+02:00","level":"INFO","msg":"stream: closing","id":"jwsjjxaf"}
+{"time":"2025-06-01T05:23:10.742765071+02:00","level":"INFO","msg":"handler: closed","stream_id":"jwsjjxaf"}
+{"time":"2025-06-01T05:23:10.742845837+02:00","level":"INFO","msg":"sender: closed","stream_id":"jwsjjxaf"}
+{"time":"2025-06-01T05:23:10.742816776+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"jwsjjxaf"}
+{"time":"2025-06-01T05:23:10.743567541+02:00","level":"INFO","msg":"stream: closed","id":"jwsjjxaf"}

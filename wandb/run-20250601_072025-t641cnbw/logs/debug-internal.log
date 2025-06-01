@@ -1,0 +1,16 @@
+{"time":"2025-06-01T07:20:25.320448954+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250601_072025-t641cnbw/logs/debug-core.log"}
+{"time":"2025-06-01T07:20:26.344950083+02:00","level":"INFO","msg":"created new stream","id":"t641cnbw"}
+{"time":"2025-06-01T07:20:26.345171385+02:00","level":"INFO","msg":"stream: started","id":"t641cnbw"}
+{"time":"2025-06-01T07:20:26.34524818+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"t641cnbw"}
+{"time":"2025-06-01T07:20:26.345262609+02:00","level":"INFO","msg":"sender: started","stream_id":"t641cnbw"}
+{"time":"2025-06-01T07:20:26.345296189+02:00","level":"INFO","msg":"handler: started","stream_id":"t641cnbw"}
+{"time":"2025-06-01T07:20:26.543597185+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T07:25:03.483416112+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T07:25:03.483757385+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T07:25:04.484457156+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-t641cnbw-test_probs_labels","runtime_seconds":1.17716468},{"desc":"uploading artifact run-t641cnbw-test_confusion_matrix_table","runtime_seconds":1.00681029,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.377776085,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-01T07:25:06.569657385+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T07:25:06.762147931+02:00","level":"INFO","msg":"stream: closing","id":"t641cnbw"}
+{"time":"2025-06-01T07:25:06.762399817+02:00","level":"INFO","msg":"handler: closed","stream_id":"t641cnbw"}
+{"time":"2025-06-01T07:25:06.762455089+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"t641cnbw"}
+{"time":"2025-06-01T07:25:06.762527029+02:00","level":"INFO","msg":"sender: closed","stream_id":"t641cnbw"}
+{"time":"2025-06-01T07:25:06.76331077+02:00","level":"INFO","msg":"stream: closed","id":"t641cnbw"}

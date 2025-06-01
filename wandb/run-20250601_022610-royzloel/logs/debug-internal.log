@@ -1,0 +1,16 @@
+{"time":"2025-06-01T02:26:10.85062383+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250601_022610-royzloel/logs/debug-core.log"}
+{"time":"2025-06-01T02:26:11.122741172+02:00","level":"INFO","msg":"created new stream","id":"royzloel"}
+{"time":"2025-06-01T02:26:11.122977404+02:00","level":"INFO","msg":"stream: started","id":"royzloel"}
+{"time":"2025-06-01T02:26:11.123018882+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"royzloel"}
+{"time":"2025-06-01T02:26:11.123067159+02:00","level":"INFO","msg":"sender: started","stream_id":"royzloel"}
+{"time":"2025-06-01T02:26:11.123066925+02:00","level":"INFO","msg":"handler: started","stream_id":"royzloel"}
+{"time":"2025-06-01T02:26:11.310072383+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T02:27:46.621185564+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T02:27:46.621548515+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T02:27:47.622186014+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-royzloel-test_probs_labels","runtime_seconds":1.1782577029999999},{"desc":"uploading artifact run-royzloel-test_confusion_matrix_table","runtime_seconds":1.006980533,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.375521771,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-01T02:27:49.685428387+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T02:27:49.887840359+02:00","level":"INFO","msg":"stream: closing","id":"royzloel"}
+{"time":"2025-06-01T02:27:49.888067792+02:00","level":"INFO","msg":"handler: closed","stream_id":"royzloel"}
+{"time":"2025-06-01T02:27:49.888117724+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"royzloel"}
+{"time":"2025-06-01T02:27:49.888163399+02:00","level":"INFO","msg":"sender: closed","stream_id":"royzloel"}
+{"time":"2025-06-01T02:27:49.888857969+02:00","level":"INFO","msg":"stream: closed","id":"royzloel"}

@@ -1,0 +1,17 @@
+{"time":"2025-06-01T07:12:48.739558173+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250601_071248-tlkdlvxl/logs/debug-core.log"}
+{"time":"2025-06-01T07:12:50.66644696+02:00","level":"INFO","msg":"created new stream","id":"tlkdlvxl"}
+{"time":"2025-06-01T07:12:50.666641707+02:00","level":"INFO","msg":"stream: started","id":"tlkdlvxl"}
+{"time":"2025-06-01T07:12:50.666697687+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"tlkdlvxl"}
+{"time":"2025-06-01T07:12:50.666700512+02:00","level":"INFO","msg":"sender: started","stream_id":"tlkdlvxl"}
+{"time":"2025-06-01T07:12:50.666737812+02:00","level":"INFO","msg":"handler: started","stream_id":"tlkdlvxl"}
+{"time":"2025-06-01T07:12:50.882067752+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T07:16:09.515848239+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-06-01T07:20:16.492124992+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T07:20:16.492606107+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T07:20:17.49328245+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-tlkdlvxl-test_probs_labels","runtime_seconds":1.185200895},{"desc":"uploading artifact run-tlkdlvxl-test_confusion_matrix_table","runtime_seconds":1.007071367}],"total_operations":2}}
+{"time":"2025-06-01T07:20:19.575257792+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T07:20:19.788136218+02:00","level":"INFO","msg":"stream: closing","id":"tlkdlvxl"}
+{"time":"2025-06-01T07:20:19.788360142+02:00","level":"INFO","msg":"handler: closed","stream_id":"tlkdlvxl"}
+{"time":"2025-06-01T07:20:19.788399986+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"tlkdlvxl"}
+{"time":"2025-06-01T07:20:19.78842428+02:00","level":"INFO","msg":"sender: closed","stream_id":"tlkdlvxl"}
+{"time":"2025-06-01T07:20:19.789036129+02:00","level":"INFO","msg":"stream: closed","id":"tlkdlvxl"}

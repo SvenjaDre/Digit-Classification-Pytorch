@@ -1,0 +1,16 @@
+{"time":"2025-06-01T07:39:11.312016055+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250601_073911-kow23nia/logs/debug-core.log"}
+{"time":"2025-06-01T07:39:11.577315163+02:00","level":"INFO","msg":"created new stream","id":"kow23nia"}
+{"time":"2025-06-01T07:39:11.577557806+02:00","level":"INFO","msg":"stream: started","id":"kow23nia"}
+{"time":"2025-06-01T07:39:11.577636749+02:00","level":"INFO","msg":"handler: started","stream_id":"kow23nia"}
+{"time":"2025-06-01T07:39:11.577613616+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"kow23nia"}
+{"time":"2025-06-01T07:39:11.577668881+02:00","level":"INFO","msg":"sender: started","stream_id":"kow23nia"}
+{"time":"2025-06-01T07:39:11.754356666+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T07:40:53.893211174+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T07:40:53.893638805+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T07:40:54.894275795+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-kow23nia-test_probs_labels","runtime_seconds":1.189550763},{"desc":"uploading artifact run-kow23nia-test_confusion_matrix_table","runtime_seconds":1.007023756,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.35124522,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-01T07:40:56.970904406+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T07:40:57.180148418+02:00","level":"INFO","msg":"stream: closing","id":"kow23nia"}
+{"time":"2025-06-01T07:40:57.180380818+02:00","level":"INFO","msg":"handler: closed","stream_id":"kow23nia"}
+{"time":"2025-06-01T07:40:57.180447919+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"kow23nia"}
+{"time":"2025-06-01T07:40:57.180476379+02:00","level":"INFO","msg":"sender: closed","stream_id":"kow23nia"}
+{"time":"2025-06-01T07:40:57.181304223+02:00","level":"INFO","msg":"stream: closed","id":"kow23nia"}

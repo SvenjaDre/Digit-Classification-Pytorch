@@ -1,0 +1,16 @@
+{"time":"2025-06-01T05:05:50.605945489+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250601_050550-sey4ndmo/logs/debug-core.log"}
+{"time":"2025-06-01T05:05:50.872615275+02:00","level":"INFO","msg":"created new stream","id":"sey4ndmo"}
+{"time":"2025-06-01T05:05:50.872858684+02:00","level":"INFO","msg":"stream: started","id":"sey4ndmo"}
+{"time":"2025-06-01T05:05:50.872931978+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"sey4ndmo"}
+{"time":"2025-06-01T05:05:50.872970406+02:00","level":"INFO","msg":"sender: started","stream_id":"sey4ndmo"}
+{"time":"2025-06-01T05:05:50.872984388+02:00","level":"INFO","msg":"handler: started","stream_id":"sey4ndmo"}
+{"time":"2025-06-01T05:05:51.05128825+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T05:08:00.589401099+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T05:08:00.589759811+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T05:08:01.590553216+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-sey4ndmo-test_probs_labels","runtime_seconds":1.128466634},{"desc":"uploading artifact run-sey4ndmo-test_confusion_matrix_table","runtime_seconds":1.006699999,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.290344352,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-01T05:08:04.155976802+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T05:08:04.390715257+02:00","level":"INFO","msg":"stream: closing","id":"sey4ndmo"}
+{"time":"2025-06-01T05:08:04.390934917+02:00","level":"INFO","msg":"handler: closed","stream_id":"sey4ndmo"}
+{"time":"2025-06-01T05:08:04.390965485+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"sey4ndmo"}
+{"time":"2025-06-01T05:08:04.390991213+02:00","level":"INFO","msg":"sender: closed","stream_id":"sey4ndmo"}
+{"time":"2025-06-01T05:08:04.392016568+02:00","level":"INFO","msg":"stream: closed","id":"sey4ndmo"}

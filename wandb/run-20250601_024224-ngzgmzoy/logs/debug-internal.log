@@ -1,0 +1,16 @@
+{"time":"2025-06-01T02:42:24.114239719+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250601_024224-ngzgmzoy/logs/debug-core.log"}
+{"time":"2025-06-01T02:42:26.03844061+02:00","level":"INFO","msg":"created new stream","id":"ngzgmzoy"}
+{"time":"2025-06-01T02:42:26.03866392+02:00","level":"INFO","msg":"stream: started","id":"ngzgmzoy"}
+{"time":"2025-06-01T02:42:26.038685415+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"ngzgmzoy"}
+{"time":"2025-06-01T02:42:26.038708737+02:00","level":"INFO","msg":"sender: started","stream_id":"ngzgmzoy"}
+{"time":"2025-06-01T02:42:26.038690585+02:00","level":"INFO","msg":"handler: started","stream_id":"ngzgmzoy"}
+{"time":"2025-06-01T02:42:26.265084064+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T02:51:23.747706303+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T02:51:23.748142259+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T02:51:24.748714479+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-ngzgmzoy-test_probs_labels","runtime_seconds":1.184040399},{"desc":"uploading artifact run-ngzgmzoy-test_confusion_matrix_table","runtime_seconds":1.007454788,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.402600044,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-01T02:51:27.199469131+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T02:51:27.384900426+02:00","level":"INFO","msg":"stream: closing","id":"ngzgmzoy"}
+{"time":"2025-06-01T02:51:27.385150944+02:00","level":"INFO","msg":"handler: closed","stream_id":"ngzgmzoy"}
+{"time":"2025-06-01T02:51:27.385220779+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ngzgmzoy"}
+{"time":"2025-06-01T02:51:27.385248809+02:00","level":"INFO","msg":"sender: closed","stream_id":"ngzgmzoy"}
+{"time":"2025-06-01T02:51:27.385893909+02:00","level":"INFO","msg":"stream: closed","id":"ngzgmzoy"}

@@ -1,0 +1,16 @@
+{"time":"2025-06-01T07:34:44.917825214+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250601_073444-5u1rhkw3/logs/debug-core.log"}
+{"time":"2025-06-01T07:34:45.18431186+02:00","level":"INFO","msg":"created new stream","id":"5u1rhkw3"}
+{"time":"2025-06-01T07:34:45.184609989+02:00","level":"INFO","msg":"stream: started","id":"5u1rhkw3"}
+{"time":"2025-06-01T07:34:45.184684897+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"5u1rhkw3"}
+{"time":"2025-06-01T07:34:45.184684349+02:00","level":"INFO","msg":"sender: started","stream_id":"5u1rhkw3"}
+{"time":"2025-06-01T07:34:45.184744045+02:00","level":"INFO","msg":"handler: started","stream_id":"5u1rhkw3"}
+{"time":"2025-06-01T07:34:45.347915513+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T07:36:56.750425535+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T07:36:56.75084178+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T07:36:57.751565517+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-5u1rhkw3-test_probs_labels","runtime_seconds":1.169264575},{"desc":"uploading artifact run-5u1rhkw3-test_confusion_matrix_table","runtime_seconds":1.00656931}],"total_operations":2}}
+{"time":"2025-06-01T07:36:59.587350705+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T07:36:59.773958195+02:00","level":"INFO","msg":"stream: closing","id":"5u1rhkw3"}
+{"time":"2025-06-01T07:36:59.774510108+02:00","level":"INFO","msg":"handler: closed","stream_id":"5u1rhkw3"}
+{"time":"2025-06-01T07:36:59.774592577+02:00","level":"INFO","msg":"sender: closed","stream_id":"5u1rhkw3"}
+{"time":"2025-06-01T07:36:59.774534879+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"5u1rhkw3"}
+{"time":"2025-06-01T07:36:59.775658509+02:00","level":"INFO","msg":"stream: closed","id":"5u1rhkw3"}

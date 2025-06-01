@@ -3,48 +3,96 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import os
 
-# --- Teil 1: wandb-Daten exportieren ---
-api = wandb.Api()
-runs = api.runs("svenja-dreyer-tu-dortmund/Messungen-noTu-Tu")
+# Falls du noch nicht eingeloggt bist, öffnet sich ein Login-Link
+wandb.login()
 
+# Deine Projektinfos
+entity = "svenja-dreyer-tu-dortmund"
+project = "2-Messungen-Gli-Men"
+
+# W&B API initialisieren
+api = wandb.Api()
+
+# Runs aus dem Projekt abrufen
+runs = api.runs(f"{entity}/{project}")
+
+# Liste zum Speichern der Run-Daten
 data = []
+
+# Alle Runs durchgehen
 for run in runs:
-    row = run.config.copy()
-    row.update(run.summary)
-    row["name"] = run.name
-    row["id"] = run.id
+    summary = run.summary
+    config = run.config
+    name = run.name
+    run_id = run.id
+
+    # Relevante Infos aus summary & config extrahieren
+    row = {
+        "run_id": run_id,
+        "name": name,
+        "test_accuracy": summary.get("test_accuracy"),
+        "test_sensitivity": summary.get("test_sensitivity"),
+        "test_specificity": summary.get("test_specificity"),
+        "val_accuracy": summary.get("val_accuracy"),
+        "train_samples": config.get("train_samples"),
+        "batch_size": config.get("batch_size"),
+        "learning_rate": config.get("learning_rate"),
+        "epochs": config.get("epochs"),
+    }
+
     data.append(row)
 
+# In DataFrame umwandeln
 df = pd.DataFrame(data)
-csv_path = "wandb_export.csv"
-df.to_csv(csv_path, index=False)
 
-# --- Teil 2: CSV laden ---
-df = pd.read_csv(csv_path)
-# Spaltennamen anzeigen, um zu prüfen welche Metriken vorhanden sind
-print(df.columns.tolist())
+# Als CSV speichern (rohe Daten)
+csv_filename = "wandb_runs_2-Messungen-Gli-Men.csv"
+df.to_csv(csv_filename, index=False)
+
+print(f"✅ {len(df)} Runs erfolgreich exportiert in: {csv_filename}")
+print(df.head())
+
+# --- Aggregierte Mittelwerte und Std berechnen ---
+def get_agg_df(metric_name):
+    grouped = df.groupby("train_samples").agg({
+        metric_name: ["mean", "std"]
+    }).reset_index()
+    grouped.columns = ["train_samples", f"{metric_name}_mean", f"{metric_name}_std"]
+    return grouped
+
+# Aggregierte DataFrames erzeugen
+acc_df = get_agg_df("test_accuracy")
+sens_df = get_agg_df("test_sensitivity")
+spec_df = get_agg_df("test_specificity")
+
+# Alle in einem DataFrame zusammenführen
+agg_df = acc_df.merge(sens_df, on="train_samples").merge(spec_df, on="train_samples")
+
+# Aggregierte Daten als CSV speichern
+agg_csv_filename = "wandb_aggregated_metrics.csv"
+agg_df.to_csv(agg_csv_filename, index=False)
+
+print(f"Aggregierte Mittelwert- und Std-Daten gespeichert in: {agg_csv_filename}")
+
 # Ordner für Plots erstellen, falls nicht vorhanden
 os.makedirs("plots", exist_ok=True)
 
 # --- Funktion zum Plotten ---
 def plot_metric(metric_name, ylabel, filename):
-    grouped = df.groupby("train_samples_used").agg({
-        metric_name: ["mean", "std"]
-    }).reset_index()
-    grouped.columns = ["train_samples_used", f"{metric_name}_mean", f"{metric_name}_std"]
+    grouped = agg_df[["train_samples", f"{metric_name}_mean", f"{metric_name}_std"]]
 
     plt.figure(figsize=(10, 6))
-    plt.errorbar(grouped["train_samples_used"], grouped[f"{metric_name}_mean"],
+    plt.errorbar(grouped["train_samples"], grouped[f"{metric_name}_mean"],
                  yerr=grouped[f"{metric_name}_std"], fmt='none', ecolor='cornflowerblue',
                  capsize=5, label="Fehlerbalken")
 
-    plt.scatter(grouped["train_samples_used"], grouped[f"{metric_name}_mean"],
+    plt.scatter(grouped["train_samples"], grouped[f"{metric_name}_mean"],
                 color='red', marker='x', label="Mittelwert")
 
     plt.xlabel("Trainingssamples")
     plt.ylabel(ylabel)
     plt.title(f"{ylabel} in Abhängigkeit der Trainingssamples")
-    plt.xticks(grouped["train_samples_used"])
+    plt.xticks(grouped["train_samples"])
     plt.grid(True)
     plt.minorticks_on()
     plt.legend()
@@ -52,9 +100,7 @@ def plot_metric(metric_name, ylabel, filename):
     plt.savefig(f"plots/{filename}")
     plt.show()
 
-# --- Teil 3: Drei Plots erzeugen ---
-
+# --- Drei Plots erzeugen ---
 plot_metric("test_accuracy", "Test Accuracy / %", "Test_Accuracy_mean.pdf")
 plot_metric("test_sensitivity", "Test Sensitivity", "Test_Sensitivity_mean.pdf")
 plot_metric("test_specificity", "Test Specificity", "Test_Specificity_mean.pdf")
-

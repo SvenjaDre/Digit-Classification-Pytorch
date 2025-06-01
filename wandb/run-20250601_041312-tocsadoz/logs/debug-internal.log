@@ -1,0 +1,16 @@
+{"time":"2025-06-01T04:13:12.678879483+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250601_041312-tocsadoz/logs/debug-core.log"}
+{"time":"2025-06-01T04:13:12.946646285+02:00","level":"INFO","msg":"created new stream","id":"tocsadoz"}
+{"time":"2025-06-01T04:13:12.946882809+02:00","level":"INFO","msg":"stream: started","id":"tocsadoz"}
+{"time":"2025-06-01T04:13:12.946932109+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"tocsadoz"}
+{"time":"2025-06-01T04:13:12.946947897+02:00","level":"INFO","msg":"sender: started","stream_id":"tocsadoz"}
+{"time":"2025-06-01T04:13:12.94697243+02:00","level":"INFO","msg":"handler: started","stream_id":"tocsadoz"}
+{"time":"2025-06-01T04:13:13.095748333+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T04:16:30.024805277+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T04:16:30.025276543+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T04:16:31.025945207+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-tocsadoz-test_probs_labels","runtime_seconds":1.192120275},{"desc":"uploading artifact run-tocsadoz-test_confusion_matrix_table","runtime_seconds":1.006725908,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.36413767,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-01T04:16:33.550728645+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T04:16:33.738480446+02:00","level":"INFO","msg":"stream: closing","id":"tocsadoz"}
+{"time":"2025-06-01T04:16:33.738706622+02:00","level":"INFO","msg":"handler: closed","stream_id":"tocsadoz"}
+{"time":"2025-06-01T04:16:33.738760488+02:00","level":"INFO","msg":"sender: closed","stream_id":"tocsadoz"}
+{"time":"2025-06-01T04:16:33.738758115+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"tocsadoz"}
+{"time":"2025-06-01T04:16:33.739596641+02:00","level":"INFO","msg":"stream: closed","id":"tocsadoz"}

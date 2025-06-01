@@ -1,0 +1,17 @@
+{"time":"2025-06-01T07:37:03.294409552+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250601_073703-ihl6oa9c/logs/debug-core.log"}
+{"time":"2025-06-01T07:37:03.562737034+02:00","level":"INFO","msg":"created new stream","id":"ihl6oa9c"}
+{"time":"2025-06-01T07:37:03.562983535+02:00","level":"INFO","msg":"stream: started","id":"ihl6oa9c"}
+{"time":"2025-06-01T07:37:03.563054161+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"ihl6oa9c"}
+{"time":"2025-06-01T07:37:03.563099997+02:00","level":"INFO","msg":"handler: started","stream_id":"ihl6oa9c"}
+{"time":"2025-06-01T07:37:03.56309079+02:00","level":"INFO","msg":"sender: started","stream_id":"ihl6oa9c"}
+{"time":"2025-06-01T07:37:03.918478531+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T07:38:35.1977472+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T07:38:35.198257145+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T07:38:36.198827172+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-ihl6oa9c-val_probs_labels","runtime_seconds":17.509055994},{"desc":"uploading artifact run-ihl6oa9c-val_probs_labels","runtime_seconds":14.135884597},{"desc":"uploading artifact run-ihl6oa9c-val_probs_labels","runtime_seconds":10.744144536},{"desc":"uploading artifact run-ihl6oa9c-val_probs_labels","runtime_seconds":7.3732639110000004},{"desc":"uploading artifact run-ihl6oa9c-val_probs_labels","runtime_seconds":3.9917051839999997},{"desc":"uploading artifact run-ihl6oa9c-test_probs_labels","runtime_seconds":1.205060869},{"desc":"uploading artifact run-ihl6oa9c-test_confusion_matrix_table","runtime_seconds":1.006665883}],"total_operations":7}}
+{"time":"2025-06-01T07:38:48.690320677+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-06-01T07:39:00.600439973+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T07:39:00.780324026+02:00","level":"INFO","msg":"stream: closing","id":"ihl6oa9c"}
+{"time":"2025-06-01T07:39:00.780555313+02:00","level":"INFO","msg":"handler: closed","stream_id":"ihl6oa9c"}
+{"time":"2025-06-01T07:39:00.780586295+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ihl6oa9c"}
+{"time":"2025-06-01T07:39:00.780630962+02:00","level":"INFO","msg":"sender: closed","stream_id":"ihl6oa9c"}
+{"time":"2025-06-01T07:39:00.781438603+02:00","level":"INFO","msg":"stream: closed","id":"ihl6oa9c"}

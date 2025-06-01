@@ -1,0 +1,16 @@
+{"time":"2025-06-01T04:36:46.890187997+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250601_043646-3cs5416a/logs/debug-core.log"}
+{"time":"2025-06-01T04:36:47.156441716+02:00","level":"INFO","msg":"created new stream","id":"3cs5416a"}
+{"time":"2025-06-01T04:36:47.156663977+02:00","level":"INFO","msg":"stream: started","id":"3cs5416a"}
+{"time":"2025-06-01T04:36:47.156692755+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"3cs5416a"}
+{"time":"2025-06-01T04:36:47.156697361+02:00","level":"INFO","msg":"handler: started","stream_id":"3cs5416a"}
+{"time":"2025-06-01T04:36:47.15673524+02:00","level":"INFO","msg":"sender: started","stream_id":"3cs5416a"}
+{"time":"2025-06-01T04:36:47.388309145+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T04:45:17.854461854+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T04:45:17.854799921+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T04:45:18.855656221+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-3cs5416a-test_probs_labels","runtime_seconds":1.010982496},{"desc":"uploading artifact run-3cs5416a-test_confusion_matrix_table","runtime_seconds":1.006836145}],"total_operations":2}}
+{"time":"2025-06-01T04:45:20.872158886+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T04:45:21.070601179+02:00","level":"INFO","msg":"stream: closing","id":"3cs5416a"}
+{"time":"2025-06-01T04:45:21.070896565+02:00","level":"INFO","msg":"handler: closed","stream_id":"3cs5416a"}
+{"time":"2025-06-01T04:45:21.070950228+02:00","level":"INFO","msg":"sender: closed","stream_id":"3cs5416a"}
+{"time":"2025-06-01T04:45:21.070946097+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"3cs5416a"}
+{"time":"2025-06-01T04:45:21.071592989+02:00","level":"INFO","msg":"stream: closed","id":"3cs5416a"}
