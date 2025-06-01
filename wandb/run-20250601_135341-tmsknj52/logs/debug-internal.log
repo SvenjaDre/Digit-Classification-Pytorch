@@ -1,0 +1,16 @@
+{"time":"2025-06-01T13:53:41.468319411+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250601_135341-tmsknj52/logs/debug-core.log"}
+{"time":"2025-06-01T13:53:41.737042473+02:00","level":"INFO","msg":"created new stream","id":"tmsknj52"}
+{"time":"2025-06-01T13:53:41.737259603+02:00","level":"INFO","msg":"stream: started","id":"tmsknj52"}
+{"time":"2025-06-01T13:53:41.737275269+02:00","level":"INFO","msg":"handler: started","stream_id":"tmsknj52"}
+{"time":"2025-06-01T13:53:41.737286514+02:00","level":"INFO","msg":"sender: started","stream_id":"tmsknj52"}
+{"time":"2025-06-01T13:53:41.737312997+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"tmsknj52"}
+{"time":"2025-06-01T13:53:41.919032152+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T13:59:37.754158376+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T13:59:37.754619209+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T13:59:38.755196708+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-tmsknj52-test_probs_labels","runtime_seconds":1.188069371},{"desc":"uploading artifact run-tmsknj52-test_confusion_matrix_table","runtime_seconds":1.006607645}],"total_operations":2}}
+{"time":"2025-06-01T13:59:40.734718434+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T13:59:40.938416744+02:00","level":"INFO","msg":"stream: closing","id":"tmsknj52"}
+{"time":"2025-06-01T13:59:40.938666503+02:00","level":"INFO","msg":"handler: closed","stream_id":"tmsknj52"}
+{"time":"2025-06-01T13:59:40.938693533+02:00","level":"INFO","msg":"sender: closed","stream_id":"tmsknj52"}
+{"time":"2025-06-01T13:59:40.938683048+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"tmsknj52"}
+{"time":"2025-06-01T13:59:40.939411533+02:00","level":"INFO","msg":"stream: closed","id":"tmsknj52"}

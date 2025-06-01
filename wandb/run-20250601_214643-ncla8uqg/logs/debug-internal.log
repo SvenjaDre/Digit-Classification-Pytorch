@@ -1,0 +1,16 @@
+{"time":"2025-06-01T21:46:43.090319033+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250601_214643-ncla8uqg/logs/debug-core.log"}
+{"time":"2025-06-01T21:46:43.356547409+02:00","level":"INFO","msg":"created new stream","id":"ncla8uqg"}
+{"time":"2025-06-01T21:46:43.356758409+02:00","level":"INFO","msg":"stream: started","id":"ncla8uqg"}
+{"time":"2025-06-01T21:46:43.356858013+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"ncla8uqg"}
+{"time":"2025-06-01T21:46:43.356897995+02:00","level":"INFO","msg":"sender: started","stream_id":"ncla8uqg"}
+{"time":"2025-06-01T21:46:43.356912639+02:00","level":"INFO","msg":"handler: started","stream_id":"ncla8uqg"}
+{"time":"2025-06-01T21:46:43.553022182+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T22:06:01.40123438+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T22:06:01.401608518+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T22:06:02.407405456+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-ncla8uqg-test_probs_labels","runtime_seconds":1.206959369},{"desc":"uploading artifact run-ncla8uqg-test_confusion_matrix_table","runtime_seconds":1.012206599}],"total_operations":2}}
+{"time":"2025-06-01T22:06:04.811173377+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T22:06:05.018590672+02:00","level":"INFO","msg":"stream: closing","id":"ncla8uqg"}
+{"time":"2025-06-01T22:06:05.018803684+02:00","level":"INFO","msg":"handler: closed","stream_id":"ncla8uqg"}
+{"time":"2025-06-01T22:06:05.018820013+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ncla8uqg"}
+{"time":"2025-06-01T22:06:05.018858968+02:00","level":"INFO","msg":"sender: closed","stream_id":"ncla8uqg"}
+{"time":"2025-06-01T22:06:05.019599519+02:00","level":"INFO","msg":"stream: closed","id":"ncla8uqg"}

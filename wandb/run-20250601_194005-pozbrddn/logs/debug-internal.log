@@ -1,0 +1,16 @@
+{"time":"2025-06-01T19:40:05.036760631+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250601_194005-pozbrddn/logs/debug-core.log"}
+{"time":"2025-06-01T19:40:05.325174882+02:00","level":"INFO","msg":"created new stream","id":"pozbrddn"}
+{"time":"2025-06-01T19:40:05.32540814+02:00","level":"INFO","msg":"stream: started","id":"pozbrddn"}
+{"time":"2025-06-01T19:40:05.325468329+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"pozbrddn"}
+{"time":"2025-06-01T19:40:05.325473+02:00","level":"INFO","msg":"sender: started","stream_id":"pozbrddn"}
+{"time":"2025-06-01T19:40:05.32549143+02:00","level":"INFO","msg":"handler: started","stream_id":"pozbrddn"}
+{"time":"2025-06-01T19:40:05.636363052+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T19:45:29.895230572+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T19:45:29.895586365+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T19:45:30.896439246+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-pozbrddn-test_probs_labels","runtime_seconds":1.188298786},{"desc":"uploading artifact run-pozbrddn-test_confusion_matrix_table","runtime_seconds":1.006455603,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.385497022,"progress":"620B/620B"}]}],"total_operations":2}}
+{"time":"2025-06-01T19:45:33.280123809+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T19:45:33.487135567+02:00","level":"INFO","msg":"stream: closing","id":"pozbrddn"}
+{"time":"2025-06-01T19:45:33.48737085+02:00","level":"INFO","msg":"handler: closed","stream_id":"pozbrddn"}
+{"time":"2025-06-01T19:45:33.487407083+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"pozbrddn"}
+{"time":"2025-06-01T19:45:33.487432264+02:00","level":"INFO","msg":"sender: closed","stream_id":"pozbrddn"}
+{"time":"2025-06-01T19:45:33.488323646+02:00","level":"INFO","msg":"stream: closed","id":"pozbrddn"}

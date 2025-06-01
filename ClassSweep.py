@@ -27,44 +27,19 @@ def preprocess_image(image_path):
 
 
 # Eigenes Dataset, Unterscheidung Glioma und Meningioma
-class CustomImageDataset(Dataset):
-    def __init__(self, root_dir):
-        self.image_paths = []
-        self.labels = []
-        self.classes = ['glioma', 'meningioma']  # Nur die beiden gewünschten Klassen
-
-        for class_name in ['glioma', 'meningioma']:  # Explizite Auswahl
-            class_folder = os.path.join(root_dir, class_name)
-            if not os.path.isdir(class_folder):
-                continue
-
-            label = 0 if class_name.lower() == 'glioma' else 1  # Glioma = 0, Meningioma = 1
-
-            for fname in os.listdir(class_folder):
-                if fname.lower().endswith(('.png', '.jpg', '.jpeg')):
-                    self.image_paths.append(os.path.join(class_folder, fname))
-                    self.labels.append(label)
-
-    def __len__(self):
-        return len(self.image_paths)
-
-    def __getitem__(self, idx):
-        image_tensor = preprocess_image(self.image_paths[idx])
-        label = self.labels[idx]
-        return image_tensor, label, self.image_paths[idx]
-
-#EIgenes Dataset, Unterscheidung no Tumor und Tumor
 #class CustomImageDataset(Dataset):
 #    def __init__(self, root_dir):
 #        self.image_paths = []
 #        self.labels = []
-#        self.classes = ['no_tumor', 'tumor']  # Neue Klassennamen
-#        for class_name in os.listdir(root_dir):
+#        self.classes = ['glioma', 'meningioma']  # Nur die beiden gewünschten Klassen
+#
+#        for class_name in ['glioma', 'meningioma']:  # Explizite Auswahl
 #            class_folder = os.path.join(root_dir, class_name)
 #            if not os.path.isdir(class_folder):
 #                continue
-#            # Tumor = 1, No Tumor = 0
-#            label = 1 if class_name.lower() in ['glioma', 'meningioma'] else 0
+#
+#            label = 0 if class_name.lower() == 'glioma' else 1  # Glioma = 0, Meningioma = 1
+#
 #            for fname in os.listdir(class_folder):
 #                if fname.lower().endswith(('.png', '.jpg', '.jpeg')):
 #                    self.image_paths.append(os.path.join(class_folder, fname))
@@ -72,11 +47,36 @@ class CustomImageDataset(Dataset):
 #
 #    def __len__(self):
 #        return len(self.image_paths)
-#    
+#
 #    def __getitem__(self, idx):
 #        image_tensor = preprocess_image(self.image_paths[idx])
 #        label = self.labels[idx]
 #        return image_tensor, label, self.image_paths[idx]
+
+#Eigenes Dataset, Unterscheidung no Tumor und Tumor
+class CustomImageDataset(Dataset):
+    def __init__(self, root_dir):
+        self.image_paths = []
+        self.labels = []
+        self.classes = ['no_tumor', 'tumor']  # Neue Klassennamen
+        for class_name in os.listdir(root_dir):
+            class_folder = os.path.join(root_dir, class_name)
+            if not os.path.isdir(class_folder):
+                continue
+            # Tumor = 1, No Tumor = 0
+            label = 1 if class_name.lower() in ['glioma', 'meningioma'] else 0
+            for fname in os.listdir(class_folder):
+                if fname.lower().endswith(('.png', '.jpg', '.jpeg')):
+                    self.image_paths.append(os.path.join(class_folder, fname))
+                    self.labels.append(label)
+
+    def __len__(self):
+        return len(self.image_paths)
+    
+    def __getitem__(self, idx):
+        image_tensor = preprocess_image(self.image_paths[idx])
+        label = self.labels[idx]
+        return image_tensor, label, self.image_paths[idx]
 
 
 # CNN Modell
@@ -107,7 +107,7 @@ TEST_DIR = "archive/Testing"
 
 # Trainingsfunktion für Sweep
 def train():
-    wandb.init(project="2-Messungen-Gli-Men")
+    wandb.init(project="2-Messungen-noTu-Tu")
     config = wandb.config
 
     # 🔢 Automatische Run-ID finden (für Checkpoint-Ordner und eindeutige Benennung)
@@ -338,6 +338,6 @@ def evaluate_on_test_data(model_path):
 # Hauptfunktion
 if __name__ == "__main__":
     sweep_config = load_sweep_config()
-    sweep_id = wandb.sweep(sweep_config, project="2-Messungen-Gli-Men")
+    sweep_id = wandb.sweep(sweep_config, project="2-Messungen-noTu-Tu")
     wandb.agent(sweep_id, function=train)
 

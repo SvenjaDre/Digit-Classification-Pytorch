@@ -1,0 +1,16 @@
+{"time":"2025-06-01T19:59:03.08162776+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250601_195903-846rivvi/logs/debug-core.log"}
+{"time":"2025-06-01T19:59:03.352466284+02:00","level":"INFO","msg":"created new stream","id":"846rivvi"}
+{"time":"2025-06-01T19:59:03.352705697+02:00","level":"INFO","msg":"stream: started","id":"846rivvi"}
+{"time":"2025-06-01T19:59:03.352786392+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"846rivvi"}
+{"time":"2025-06-01T19:59:03.352838569+02:00","level":"INFO","msg":"sender: started","stream_id":"846rivvi"}
+{"time":"2025-06-01T19:59:03.352837409+02:00","level":"INFO","msg":"handler: started","stream_id":"846rivvi"}
+{"time":"2025-06-01T19:59:03.54115711+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T20:02:15.379259912+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T20:02:15.379628963+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T20:02:16.380283364+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-846rivvi-test_probs_labels","runtime_seconds":1.1968305049999999},{"desc":"uploading artifact run-846rivvi-test_confusion_matrix_table","runtime_seconds":1.006772681}],"total_operations":2}}
+{"time":"2025-06-01T20:02:18.265809521+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T20:02:18.465095848+02:00","level":"INFO","msg":"stream: closing","id":"846rivvi"}
+{"time":"2025-06-01T20:02:18.465342159+02:00","level":"INFO","msg":"handler: closed","stream_id":"846rivvi"}
+{"time":"2025-06-01T20:02:18.465409602+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"846rivvi"}
+{"time":"2025-06-01T20:02:18.465431909+02:00","level":"INFO","msg":"sender: closed","stream_id":"846rivvi"}
+{"time":"2025-06-01T20:02:18.466318078+02:00","level":"INFO","msg":"stream: closed","id":"846rivvi"}

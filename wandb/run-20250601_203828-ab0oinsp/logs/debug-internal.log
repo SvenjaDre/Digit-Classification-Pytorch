@@ -1,0 +1,16 @@
+{"time":"2025-06-01T20:38:28.728131675+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250601_203828-ab0oinsp/logs/debug-core.log"}
+{"time":"2025-06-01T20:38:28.994979613+02:00","level":"INFO","msg":"created new stream","id":"ab0oinsp"}
+{"time":"2025-06-01T20:38:28.995256576+02:00","level":"INFO","msg":"stream: started","id":"ab0oinsp"}
+{"time":"2025-06-01T20:38:28.995330479+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"ab0oinsp"}
+{"time":"2025-06-01T20:38:28.995391141+02:00","level":"INFO","msg":"handler: started","stream_id":"ab0oinsp"}
+{"time":"2025-06-01T20:38:28.995374208+02:00","level":"INFO","msg":"sender: started","stream_id":"ab0oinsp"}
+{"time":"2025-06-01T20:38:29.389859938+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T20:43:29.117380491+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T20:43:29.117881683+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T20:43:30.118541308+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-ab0oinsp-test_probs_labels","runtime_seconds":1.191940265},{"desc":"uploading artifact run-ab0oinsp-test_confusion_matrix_table","runtime_seconds":1.007063849,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.388067982,"progress":"620B/620B"}]}],"total_operations":2}}
+{"time":"2025-06-01T20:43:32.438323134+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T20:43:32.606147236+02:00","level":"INFO","msg":"stream: closing","id":"ab0oinsp"}
+{"time":"2025-06-01T20:43:32.606366774+02:00","level":"INFO","msg":"handler: closed","stream_id":"ab0oinsp"}
+{"time":"2025-06-01T20:43:32.60638859+02:00","level":"INFO","msg":"sender: closed","stream_id":"ab0oinsp"}
+{"time":"2025-06-01T20:43:32.606380229+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ab0oinsp"}
+{"time":"2025-06-01T20:43:32.607236987+02:00","level":"INFO","msg":"stream: closed","id":"ab0oinsp"}

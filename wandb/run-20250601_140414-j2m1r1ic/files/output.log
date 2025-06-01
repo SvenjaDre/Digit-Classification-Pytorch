@@ -1,0 +1,21 @@
+🚀 Starting run: trainsample_1702_run_1
+Epoch 1 | Train Loss: 1.0173 | Val Loss: 0.4720 | Val Acc: 83.67% | Sens: 0.94 | Spec: 0.65 | AUC: 0.86
+Epoch 2 | Train Loss: 0.4320 | Val Loss: 0.3732 | Val Acc: 83.55% | Sens: 0.96 | Spec: 0.61 | AUC: 0.92
+Epoch 3 | Train Loss: 0.3405 | Val Loss: 0.2771 | Val Acc: 87.19% | Sens: 0.97 | Spec: 0.71 | AUC: 0.96
+Epoch 4 | Train Loss: 0.2551 | Val Loss: 0.2448 | Val Acc: 89.07% | Sens: 0.96 | Spec: 0.77 | AUC: 0.97
+Epoch 5 | Train Loss: 0.2316 | Val Loss: 0.2392 | Val Acc: 91.66% | Sens: 0.93 | Spec: 0.89 | AUC: 0.97
+Epoch 6 | Train Loss: 0.1811 | Val Loss: 0.2137 | Val Acc: 92.36% | Sens: 0.94 | Spec: 0.89 | AUC: 0.98
+Epoch 7 | Train Loss: 0.1791 | Val Loss: 0.2545 | Val Acc: 93.07% | Sens: 0.94 | Spec: 0.92 | AUC: 0.98
+Epoch 8 | Train Loss: 0.2125 | Val Loss: 0.2006 | Val Acc: 91.77% | Sens: 0.95 | Spec: 0.86 | AUC: 0.98
+Epoch 9 | Train Loss: 0.1888 | Val Loss: 0.2249 | Val Acc: 93.77% | Sens: 0.94 | Spec: 0.94 | AUC: 0.98
+Epoch 10 | Train Loss: 0.1653 | Val Loss: 0.2007 | Val Acc: 91.66% | Sens: 0.97 | Spec: 0.83 | AUC: 0.98
+Epoch 11 | Train Loss: 0.1435 | Val Loss: 0.2046 | Val Acc: 91.42% | Sens: 0.96 | Spec: 0.83 | AUC: 0.98
+Epoch 12 | Train Loss: 0.1506 | Val Loss: 0.1724 | Val Acc: 93.89% | Sens: 0.96 | Spec: 0.91 | AUC: 0.98
+Epoch 13 | Train Loss: 0.1209 | Val Loss: 0.2028 | Val Acc: 94.59% | Sens: 0.94 | Spec: 0.95 | AUC: 0.98
+Epoch 14 | Train Loss: 0.1075 | Val Loss: 0.1938 | Val Acc: 94.59% | Sens: 0.94 | Spec: 0.96 | AUC: 0.98
+Epoch 15 | Train Loss: 0.1187 | Val Loss: 0.1905 | Val Acc: 92.95% | Sens: 0.97 | Spec: 0.86 | AUC: 0.98
+Epoch 16 | Train Loss: 0.0990 | Val Loss: 0.1750 | Val Acc: 94.95% | Sens: 0.95 | Spec: 0.95 | AUC: 0.98
+Epoch 17 | Train Loss: 0.0981 | Val Loss: 0.1855 | Val Acc: 95.42% | Sens: 0.95 | Spec: 0.96 | AUC: 0.98
+Epoch 18 | Train Loss: 0.0826 | Val Loss: 0.1722 | Val Acc: 94.95% | Sens: 0.96 | Spec: 0.94 | AUC: 0.98
+Epoch 19 | Train Loss: 0.0782 | Val Loss: 0.1710 | Val Acc: 94.24% | Sens: 0.97 | Spec: 0.90 | AUC: 0.99
+[34m[1mwandb[0m: Ctrl + C detected. Stopping sweep.

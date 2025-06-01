@@ -1,0 +1,1 @@
+{"columns": ["Actual", "Predicted", "nPredictions"], "data": [["no_tumor", "no_tumor", 405.0], ["no_tumor", "tumor", 0.0], ["tumor", "no_tumor", 21.0], ["tumor", "tumor", 585.0]]}

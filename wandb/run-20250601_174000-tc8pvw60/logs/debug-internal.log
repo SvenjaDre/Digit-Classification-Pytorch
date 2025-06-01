@@ -1,0 +1,16 @@
+{"time":"2025-06-01T17:40:00.797242288+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250601_174000-tc8pvw60/logs/debug-core.log"}
+{"time":"2025-06-01T17:40:01.065407851+02:00","level":"INFO","msg":"created new stream","id":"tc8pvw60"}
+{"time":"2025-06-01T17:40:01.065619825+02:00","level":"INFO","msg":"stream: started","id":"tc8pvw60"}
+{"time":"2025-06-01T17:40:01.065657553+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"tc8pvw60"}
+{"time":"2025-06-01T17:40:01.065686145+02:00","level":"INFO","msg":"handler: started","stream_id":"tc8pvw60"}
+{"time":"2025-06-01T17:40:01.065679963+02:00","level":"INFO","msg":"sender: started","stream_id":"tc8pvw60"}
+{"time":"2025-06-01T17:40:01.260183866+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T17:42:28.568092206+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T17:42:28.568490507+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T17:42:29.569046633+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-tc8pvw60-test_probs_labels","runtime_seconds":1.18425122},{"desc":"uploading artifact run-tc8pvw60-test_confusion_matrix_table","runtime_seconds":1.006691988,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.422214259,"progress":"620B/620B"}]}],"total_operations":2}}
+{"time":"2025-06-01T17:42:31.689934719+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T17:42:31.901134576+02:00","level":"INFO","msg":"stream: closing","id":"tc8pvw60"}
+{"time":"2025-06-01T17:42:31.901333459+02:00","level":"INFO","msg":"handler: closed","stream_id":"tc8pvw60"}
+{"time":"2025-06-01T17:42:31.901398664+02:00","level":"INFO","msg":"sender: closed","stream_id":"tc8pvw60"}
+{"time":"2025-06-01T17:42:31.90138697+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"tc8pvw60"}
+{"time":"2025-06-01T17:42:31.902125986+02:00","level":"INFO","msg":"stream: closed","id":"tc8pvw60"}

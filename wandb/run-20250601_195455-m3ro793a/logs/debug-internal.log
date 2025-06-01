@@ -1,0 +1,16 @@
+{"time":"2025-06-01T19:54:55.67898886+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250601_195455-m3ro793a/logs/debug-core.log"}
+{"time":"2025-06-01T19:54:55.945106191+02:00","level":"INFO","msg":"created new stream","id":"m3ro793a"}
+{"time":"2025-06-01T19:54:55.945310737+02:00","level":"INFO","msg":"stream: started","id":"m3ro793a"}
+{"time":"2025-06-01T19:54:55.945383611+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"m3ro793a"}
+{"time":"2025-06-01T19:54:55.945402751+02:00","level":"INFO","msg":"sender: started","stream_id":"m3ro793a"}
+{"time":"2025-06-01T19:54:55.945443013+02:00","level":"INFO","msg":"handler: started","stream_id":"m3ro793a"}
+{"time":"2025-06-01T19:54:56.099987886+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T19:58:56.492947903+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T19:58:56.493378841+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T19:58:57.494099154+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-m3ro793a-test_probs_labels","runtime_seconds":1.3863802299999999},{"desc":"uploading artifact run-m3ro793a-test_confusion_matrix_table","runtime_seconds":1.006566779}],"total_operations":2}}
+{"time":"2025-06-01T19:58:59.401453221+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T19:58:59.566123377+02:00","level":"INFO","msg":"stream: closing","id":"m3ro793a"}
+{"time":"2025-06-01T19:58:59.566390208+02:00","level":"INFO","msg":"handler: closed","stream_id":"m3ro793a"}
+{"time":"2025-06-01T19:58:59.566451143+02:00","level":"INFO","msg":"sender: closed","stream_id":"m3ro793a"}
+{"time":"2025-06-01T19:58:59.566441558+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"m3ro793a"}
+{"time":"2025-06-01T19:58:59.567309892+02:00","level":"INFO","msg":"stream: closed","id":"m3ro793a"}

@@ -12,7 +12,8 @@ parameters:
   dropout:
     values: [0.55]
   train_samples:
-    values: [2128, 1915, 1702, 1490, 1277, 1064, 851, 683, 426, 231] # Unterscheidung Glioma und Meningioma
-    #values: [3404, 3064, 2723, 2383, 2042, 1702, 1362, 1021, 681, 340] # Unterscheidung no Tumor und Tumor
+    values: [3404, 3064, 2723, 2383, 2042, 1702, 1362, 1021, 681, 340] # Unterscheidung no Tumor und Tumor
+    #values: [2128, 1915, 1702, 1490, 1277, 1064, 851, 683, 426, 231] # Unterscheidung Glioma und Meningioma
+    
     
  

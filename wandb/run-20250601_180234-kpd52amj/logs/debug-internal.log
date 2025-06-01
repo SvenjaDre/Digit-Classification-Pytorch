@@ -1,0 +1,16 @@
+{"time":"2025-06-01T18:02:34.520188528+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250601_180234-kpd52amj/logs/debug-core.log"}
+{"time":"2025-06-01T18:02:35.320427624+02:00","level":"INFO","msg":"created new stream","id":"kpd52amj"}
+{"time":"2025-06-01T18:02:35.320751154+02:00","level":"INFO","msg":"stream: started","id":"kpd52amj"}
+{"time":"2025-06-01T18:02:35.32080236+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"kpd52amj"}
+{"time":"2025-06-01T18:02:35.320832519+02:00","level":"INFO","msg":"sender: started","stream_id":"kpd52amj"}
+{"time":"2025-06-01T18:02:35.320873296+02:00","level":"INFO","msg":"handler: started","stream_id":"kpd52amj"}
+{"time":"2025-06-01T18:02:35.505226641+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T18:06:39.759719872+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T18:06:39.760165052+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T18:06:40.760727634+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-kpd52amj-test_probs_labels","runtime_seconds":1.161564922},{"desc":"uploading artifact run-kpd52amj-test_confusion_matrix_table","runtime_seconds":1.006653718,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.352260813,"progress":"619B/619B"}]}],"total_operations":2}}
+{"time":"2025-06-01T18:06:42.74991996+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T18:06:42.943182432+02:00","level":"INFO","msg":"stream: closing","id":"kpd52amj"}
+{"time":"2025-06-01T18:06:42.943371793+02:00","level":"INFO","msg":"handler: closed","stream_id":"kpd52amj"}
+{"time":"2025-06-01T18:06:42.94343428+02:00","level":"INFO","msg":"sender: closed","stream_id":"kpd52amj"}
+{"time":"2025-06-01T18:06:42.943424942+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"kpd52amj"}
+{"time":"2025-06-01T18:06:42.944232289+02:00","level":"INFO","msg":"stream: closed","id":"kpd52amj"}

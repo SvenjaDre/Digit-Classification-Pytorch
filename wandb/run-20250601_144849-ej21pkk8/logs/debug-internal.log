@@ -1,0 +1,16 @@
+{"time":"2025-06-01T14:48:49.980416503+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250601_144849-ej21pkk8/logs/debug-core.log"}
+{"time":"2025-06-01T14:48:50.248216525+02:00","level":"INFO","msg":"created new stream","id":"ej21pkk8"}
+{"time":"2025-06-01T14:48:50.24851027+02:00","level":"INFO","msg":"stream: started","id":"ej21pkk8"}
+{"time":"2025-06-01T14:48:50.248587889+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"ej21pkk8"}
+{"time":"2025-06-01T14:48:50.248610953+02:00","level":"INFO","msg":"handler: started","stream_id":"ej21pkk8"}
+{"time":"2025-06-01T14:48:50.248634883+02:00","level":"INFO","msg":"sender: started","stream_id":"ej21pkk8"}
+{"time":"2025-06-01T14:48:50.461500978+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T14:55:31.98754847+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T14:55:31.987942724+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T14:55:32.988662358+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-ej21pkk8-test_probs_labels","runtime_seconds":1.196455501},{"desc":"uploading artifact run-ej21pkk8-test_confusion_matrix_table","runtime_seconds":1.006774953,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.368988386,"progress":"619B/619B"}]}],"total_operations":2}}
+{"time":"2025-06-01T14:55:35.703768378+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T14:55:35.916454134+02:00","level":"INFO","msg":"stream: closing","id":"ej21pkk8"}
+{"time":"2025-06-01T14:55:35.916672755+02:00","level":"INFO","msg":"handler: closed","stream_id":"ej21pkk8"}
+{"time":"2025-06-01T14:55:35.91668911+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ej21pkk8"}
+{"time":"2025-06-01T14:55:35.916729066+02:00","level":"INFO","msg":"sender: closed","stream_id":"ej21pkk8"}
+{"time":"2025-06-01T14:55:35.917341689+02:00","level":"INFO","msg":"stream: closed","id":"ej21pkk8"}

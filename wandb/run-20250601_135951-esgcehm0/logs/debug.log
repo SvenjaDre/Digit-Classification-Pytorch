@@ -1,0 +1,33 @@
+2025-06-01 13:59:51,460 INFO    Thread-16 (_run_job):186373 [wandb_setup.py:_flush():70] Current SDK version is 0.19.11
+2025-06-01 13:59:51,460 INFO    Thread-16 (_run_job):186373 [wandb_setup.py:_flush():70] Configure stats pid to 186373
+2025-06-01 13:59:51,461 INFO    Thread-16 (_run_job):186373 [wandb_setup.py:_flush():70] Loading settings from /nfs/homes/sdreyer/.config/wandb/settings
+2025-06-01 13:59:51,461 INFO    Thread-16 (_run_job):186373 [wandb_setup.py:_flush():70] Loading settings from /nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/settings
+2025-06-01 13:59:51,461 INFO    Thread-16 (_run_job):186373 [wandb_setup.py:_flush():70] Loading settings from environment variables
+2025-06-01 13:59:51,462 INFO    Thread-16 (_run_job):186373 [wandb_init.py:setup_run_log_directory():724] Logging user logs to /nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250601_135951-esgcehm0/logs/debug.log
+2025-06-01 13:59:51,462 INFO    Thread-16 (_run_job):186373 [wandb_init.py:setup_run_log_directory():725] Logging internal logs to /nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250601_135951-esgcehm0/logs/debug-internal.log
+2025-06-01 13:59:51,462 INFO    Thread-16 (_run_job):186373 [wandb_init.py:init():852] calling init triggers
+2025-06-01 13:59:51,462 INFO    Thread-16 (_run_job):186373 [wandb_init.py:init():857] wandb.init called with sweep_config: {'batch_size': 128, 'dropout': 0.55, 'epochs': 1000, 'learning_rate': 0.005, 'optimizer': 'Adam', 'train_samples': 2042}
+config: {'_wandb': {}}
+2025-06-01 13:59:51,463 INFO    Thread-16 (_run_job):186373 [wandb_init.py:init():893] starting backend
+2025-06-01 13:59:51,463 INFO    Thread-16 (_run_job):186373 [wandb_init.py:init():897] sending inform_init request
+2025-06-01 13:59:51,464 INFO    Thread-16 (_run_job):186373 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-06-01 13:59:51,464 INFO    Thread-16 (_run_job):186373 [wandb_init.py:init():907] backend started and connected
+2025-06-01 13:59:51,465 INFO    Thread-16 (_run_job):186373 [wandb_run.py:_config_callback():1436] config_cb None None {'batch_size': 128, 'dropout': 0.55, 'epochs': 1000, 'learning_rate': 0.005, 'optimizer': 'Adam', 'train_samples': 2042}
+2025-06-01 13:59:51,466 INFO    Thread-16 (_run_job):186373 [wandb_init.py:init():1005] updated telemetry
+2025-06-01 13:59:51,477 INFO    Thread-16 (_run_job):186373 [wandb_init.py:init():1029] communicating run to backend with 90.0 second timeout
+2025-06-01 13:59:52,501 INFO    Thread-16 (_run_job):186373 [wandb_init.py:init():1104] starting run threads in backend
+2025-06-01 13:59:52,707 INFO    Thread-16 (_run_job):186373 [wandb_run.py:_console_start():2573] atexit reg
+2025-06-01 13:59:52,708 INFO    Thread-16 (_run_job):186373 [wandb_run.py:_redirect():2421] redirect: wrap_raw
+2025-06-01 13:59:52,708 INFO    Thread-16 (_run_job):186373 [wandb_run.py:_redirect():2490] Wrapping output streams.
+2025-06-01 13:59:52,708 INFO    Thread-16 (_run_job):186373 [wandb_run.py:_redirect():2513] Redirects installed.
+2025-06-01 13:59:52,709 INFO    Thread-16 (_run_job):186373 [wandb_init.py:init():1150] run started, returning control to user process
+2025-06-01 13:59:52,711 INFO    Thread-16 (_run_job):186373 [wandb_config.py:__setitem__():154] [no run ID] config set run_id = 1 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x7f0d8119d5e0>>
+2025-06-01 13:59:52,711 INFO    Thread-16 (_run_job):186373 [wandb_run.py:_config_callback():1436] config_cb run_id 1 None
+2025-06-01 14:04:07,444 INFO    Thread-16 (_run_job):186373 [wandb_run.py:_config_callback():1436] config_cb ('_wandb', 'visualize', 'test_confusion_matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'test_confusion_matrix_table'}], 'fields': []}]}]}}} None
+2025-06-01 14:04:07,818 INFO    Thread-16 (_run_job):186373 [wandb_run.py:_finish():2321] finishing run svenja-dreyer-tu-dortmund/2-Messungen-noTu-Tu/esgcehm0
+2025-06-01 14:04:07,818 INFO    Thread-16 (_run_job):186373 [wandb_run.py:_atexit_cleanup():2538] got exitcode: 0
+2025-06-01 14:04:07,818 INFO    Thread-16 (_run_job):186373 [wandb_run.py:_restore():2520] restore
+2025-06-01 14:04:07,819 INFO    Thread-16 (_run_job):186373 [wandb_run.py:_restore():2526] restore done
+2025-06-01 14:04:11,284 INFO    Thread-16 (_run_job):186373 [wandb_run.py:_footer_history_summary_info():4188] rendering history
+2025-06-01 14:04:11,285 INFO    Thread-16 (_run_job):186373 [wandb_run.py:_footer_history_summary_info():4220] rendering summary
+2025-06-01 14:04:11,286 INFO    Thread-16 (_run_job):186373 [wandb_run.py:_footer_sync_info():4149] logging synced files

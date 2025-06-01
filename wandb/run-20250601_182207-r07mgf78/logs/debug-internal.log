@@ -1,0 +1,16 @@
+{"time":"2025-06-01T18:22:07.757749541+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250601_182207-r07mgf78/logs/debug-core.log"}
+{"time":"2025-06-01T18:22:08.024409848+02:00","level":"INFO","msg":"created new stream","id":"r07mgf78"}
+{"time":"2025-06-01T18:22:08.024649144+02:00","level":"INFO","msg":"stream: started","id":"r07mgf78"}
+{"time":"2025-06-01T18:22:08.024671961+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"r07mgf78"}
+{"time":"2025-06-01T18:22:08.024692326+02:00","level":"INFO","msg":"sender: started","stream_id":"r07mgf78"}
+{"time":"2025-06-01T18:22:08.02473709+02:00","level":"INFO","msg":"handler: started","stream_id":"r07mgf78"}
+{"time":"2025-06-01T18:22:08.195275931+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T18:25:53.704572769+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T18:25:53.705007502+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T18:25:54.705706962+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-r07mgf78-test_probs_labels","runtime_seconds":1.060595876},{"desc":"uploading artifact run-r07mgf78-test_confusion_matrix_table","runtime_seconds":1.007054615}],"total_operations":2}}
+{"time":"2025-06-01T18:25:57.501559885+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T18:25:57.700469045+02:00","level":"INFO","msg":"stream: closing","id":"r07mgf78"}
+{"time":"2025-06-01T18:25:57.70073047+02:00","level":"INFO","msg":"handler: closed","stream_id":"r07mgf78"}
+{"time":"2025-06-01T18:25:57.700791863+02:00","level":"INFO","msg":"sender: closed","stream_id":"r07mgf78"}
+{"time":"2025-06-01T18:25:57.700783818+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"r07mgf78"}
+{"time":"2025-06-01T18:25:57.7016058+02:00","level":"INFO","msg":"stream: closed","id":"r07mgf78"}

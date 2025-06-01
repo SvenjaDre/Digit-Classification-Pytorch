@@ -1,0 +1,16 @@
+{"time":"2025-06-01T17:04:00.26049872+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250601_170400-29pht8y8/logs/debug-core.log"}
+{"time":"2025-06-01T17:04:01.313862694+02:00","level":"INFO","msg":"created new stream","id":"29pht8y8"}
+{"time":"2025-06-01T17:04:01.314135106+02:00","level":"INFO","msg":"stream: started","id":"29pht8y8"}
+{"time":"2025-06-01T17:04:01.314173701+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"29pht8y8"}
+{"time":"2025-06-01T17:04:01.314198345+02:00","level":"INFO","msg":"handler: started","stream_id":"29pht8y8"}
+{"time":"2025-06-01T17:04:01.314221941+02:00","level":"INFO","msg":"sender: started","stream_id":"29pht8y8"}
+{"time":"2025-06-01T17:04:01.540877446+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T17:09:45.897802531+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T17:09:45.898210388+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T17:09:46.899006946+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-29pht8y8-test_probs_labels","runtime_seconds":1.186734215},{"desc":"uploading artifact run-29pht8y8-test_confusion_matrix_table","runtime_seconds":1.006982139,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.411879794,"progress":"620B/620B"}]}],"total_operations":2}}
+{"time":"2025-06-01T17:09:48.946890168+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T17:09:49.135137211+02:00","level":"INFO","msg":"stream: closing","id":"29pht8y8"}
+{"time":"2025-06-01T17:09:49.135373055+02:00","level":"INFO","msg":"handler: closed","stream_id":"29pht8y8"}
+{"time":"2025-06-01T17:09:49.135408785+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"29pht8y8"}
+{"time":"2025-06-01T17:09:49.135431749+02:00","level":"INFO","msg":"sender: closed","stream_id":"29pht8y8"}
+{"time":"2025-06-01T17:09:49.136154111+02:00","level":"INFO","msg":"stream: closed","id":"29pht8y8"}
