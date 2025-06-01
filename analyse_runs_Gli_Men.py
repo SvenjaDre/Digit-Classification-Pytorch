@@ -50,7 +50,7 @@ csv_filename = "wandb_runs_2-Messungen-Gli-Men.csv"
 df.to_csv(csv_filename, index=False)
 
 print(f"✅ {len(df)} Runs erfolgreich exportiert in: {csv_filename}")
-print(df.head())
+#print(df.head())
 
 # --- Aggregierte Mittelwerte und Std berechnen ---
 def get_agg_df(metric_name):
@@ -69,7 +69,7 @@ spec_df = get_agg_df("test_specificity")
 agg_df = acc_df.merge(sens_df, on="train_samples").merge(spec_df, on="train_samples")
 
 # Aggregierte Daten als CSV speichern
-agg_csv_filename = "wandb_aggregated_metrics.csv"
+agg_csv_filename = "Gli_Men_aggregated_metrics.csv"
 agg_df.to_csv(agg_csv_filename, index=False)
 
 print(f"Aggregierte Mittelwert- und Std-Daten gespeichert in: {agg_csv_filename}")
@@ -101,6 +101,6 @@ def plot_metric(metric_name, ylabel, filename):
     plt.show()
 
 # --- Drei Plots erzeugen ---
-plot_metric("test_accuracy", "Test Accuracy / %", "Test_Accuracy_mean.pdf")
-plot_metric("test_sensitivity", "Test Sensitivity", "Test_Sensitivity_mean.pdf")
-plot_metric("test_specificity", "Test Specificity", "Test_Specificity_mean.pdf")
+plot_metric("test_accuracy", "Test Accuracy / %", "Test_Accuracy_mean_Gli_Men.pdf")
+plot_metric("test_sensitivity", "Test Sensitivity", "Test_Sensitivity_mean_Gli_Men.pdf")
+plot_metric("test_specificity", "Test Specificity", "Test_Specificity_mean_Gli_Men.pdf")
