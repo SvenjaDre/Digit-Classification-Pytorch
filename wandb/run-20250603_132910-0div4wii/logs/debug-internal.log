@@ -1,0 +1,16 @@
+{"time":"2025-06-03T13:29:10.904491756+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250603_132910-0div4wii/logs/debug-core.log"}
+{"time":"2025-06-03T13:29:11.179186905+02:00","level":"INFO","msg":"created new stream","id":"0div4wii"}
+{"time":"2025-06-03T13:29:11.180500013+02:00","level":"INFO","msg":"stream: started","id":"0div4wii"}
+{"time":"2025-06-03T13:29:11.180573466+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"0div4wii"}
+{"time":"2025-06-03T13:29:11.180599877+02:00","level":"INFO","msg":"sender: started","stream_id":"0div4wii"}
+{"time":"2025-06-03T13:29:11.180593073+02:00","level":"INFO","msg":"handler: started","stream_id":"0div4wii"}
+{"time":"2025-06-03T13:29:11.3857291+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-03T13:32:07.764243043+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-03T13:32:07.76503075+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-03T13:32:08.765247878+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-0div4wii-test_probs_labels","runtime_seconds":1.185394273},{"desc":"uploading artifact run-0div4wii-test_confusion_matrix_table","runtime_seconds":1.007157513}],"total_operations":2}}
+{"time":"2025-06-03T13:32:10.694335261+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-03T13:32:10.89743417+02:00","level":"INFO","msg":"stream: closing","id":"0div4wii"}
+{"time":"2025-06-03T13:32:10.89766149+02:00","level":"INFO","msg":"handler: closed","stream_id":"0div4wii"}
+{"time":"2025-06-03T13:32:10.897686258+02:00","level":"INFO","msg":"sender: closed","stream_id":"0div4wii"}
+{"time":"2025-06-03T13:32:10.897676722+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"0div4wii"}
+{"time":"2025-06-03T13:32:10.89848877+02:00","level":"INFO","msg":"stream: closed","id":"0div4wii"}

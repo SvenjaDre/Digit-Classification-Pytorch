@@ -1,0 +1,35 @@
+🚀 Starting run: trainsample_1915_run_1
+Epoch 1 | Train Loss: 0.5942 | Val Loss: 0.5526 | Val Acc: 72.56% | Sens: 0.95 | Spec: 0.51 | AUC: 0.87
+Epoch 2 | Train Loss: 0.4554 | Val Loss: 0.4013 | Val Acc: 82.14% | Sens: 0.82 | Spec: 0.82 | AUC: 0.90
+Epoch 3 | Train Loss: 0.4062 | Val Loss: 0.4526 | Val Acc: 80.45% | Sens: 0.95 | Spec: 0.67 | AUC: 0.92
+Epoch 4 | Train Loss: 0.3773 | Val Loss: 0.3692 | Val Acc: 83.83% | Sens: 0.92 | Spec: 0.76 | AUC: 0.93
+Epoch 5 | Train Loss: 0.3544 | Val Loss: 0.3472 | Val Acc: 85.34% | Sens: 0.77 | Spec: 0.93 | AUC: 0.94
+Epoch 6 | Train Loss: 0.3166 | Val Loss: 0.3900 | Val Acc: 84.02% | Sens: 0.96 | Spec: 0.72 | AUC: 0.94
+Epoch 7 | Train Loss: 0.2838 | Val Loss: 0.2933 | Val Acc: 89.29% | Sens: 0.87 | Spec: 0.91 | AUC: 0.95
+Epoch 8 | Train Loss: 0.2501 | Val Loss: 0.2702 | Val Acc: 89.85% | Sens: 0.89 | Spec: 0.91 | AUC: 0.96
+Epoch 9 | Train Loss: 0.2339 | Val Loss: 0.3422 | Val Acc: 84.77% | Sens: 0.74 | Spec: 0.96 | AUC: 0.96
+Epoch 10 | Train Loss: 0.2120 | Val Loss: 0.2482 | Val Acc: 90.98% | Sens: 0.95 | Spec: 0.87 | AUC: 0.97
+Epoch 11 | Train Loss: 0.2035 | Val Loss: 0.2850 | Val Acc: 90.79% | Sens: 0.96 | Spec: 0.86 | AUC: 0.96
+Epoch 12 | Train Loss: 0.1823 | Val Loss: 0.2414 | Val Acc: 90.04% | Sens: 0.88 | Spec: 0.92 | AUC: 0.97
+Epoch 13 | Train Loss: 0.1634 | Val Loss: 0.2439 | Val Acc: 91.17% | Sens: 0.93 | Spec: 0.89 | AUC: 0.97
+Epoch 14 | Train Loss: 0.1360 | Val Loss: 0.2502 | Val Acc: 91.92% | Sens: 0.94 | Spec: 0.90 | AUC: 0.97
+Epoch 15 | Train Loss: 0.1278 | Val Loss: 0.2427 | Val Acc: 92.11% | Sens: 0.96 | Spec: 0.89 | AUC: 0.97
+Epoch 16 | Train Loss: 0.1067 | Val Loss: 0.2357 | Val Acc: 93.05% | Sens: 0.95 | Spec: 0.91 | AUC: 0.97
+Epoch 17 | Train Loss: 0.1026 | Val Loss: 0.2227 | Val Acc: 92.86% | Sens: 0.95 | Spec: 0.91 | AUC: 0.97
+Epoch 18 | Train Loss: 0.1059 | Val Loss: 0.2388 | Val Acc: 92.67% | Sens: 0.95 | Spec: 0.90 | AUC: 0.97
+Epoch 19 | Train Loss: 0.0852 | Val Loss: 0.2531 | Val Acc: 94.17% | Sens: 0.97 | Spec: 0.91 | AUC: 0.98
+Epoch 20 | Train Loss: 0.0742 | Val Loss: 0.2355 | Val Acc: 92.67% | Sens: 0.92 | Spec: 0.93 | AUC: 0.98
+Epoch 21 | Train Loss: 0.0645 | Val Loss: 0.2936 | Val Acc: 90.23% | Sens: 0.87 | Spec: 0.94 | AUC: 0.97
+Epoch 22 | Train Loss: 0.0690 | Val Loss: 0.2601 | Val Acc: 92.11% | Sens: 0.98 | Spec: 0.86 | AUC: 0.98
+Epoch 23 | Train Loss: 0.0641 | Val Loss: 0.2732 | Val Acc: 91.17% | Sens: 0.89 | Spec: 0.94 | AUC: 0.97
+Epoch 24 | Train Loss: 0.0743 | Val Loss: 0.2746 | Val Acc: 92.11% | Sens: 0.95 | Spec: 0.90 | AUC: 0.97
+Epoch 25 | Train Loss: 0.0528 | Val Loss: 0.2856 | Val Acc: 91.17% | Sens: 0.87 | Spec: 0.96 | AUC: 0.97
+Epoch 26 | Train Loss: 0.0518 | Val Loss: 0.2311 | Val Acc: 92.67% | Sens: 0.91 | Spec: 0.94 | AUC: 0.98
+Epoch 27 | Train Loss: 0.0489 | Val Loss: 0.2317 | Val Acc: 94.36% | Sens: 0.95 | Spec: 0.93 | AUC: 0.98
+🚨 Early stopping after 27 epochs.
+
+🔍 Testing on separate test set...
+/nfs/homes/sdreyer/Digit-Classification-Pytorch/Class_Gli_Men.py:260: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  classifier.load_state_dict(torch.load(model_path, map_location=device))
+✅ Correct: 558 | ❌ Incorrect: 48 | Total: 606
+🎯 Test Accuracy: 92.08% | Sens: 0.93 | Spec: 0.91 | AUC: 0.98

@@ -1,0 +1,16 @@
+{"time":"2025-06-03T13:22:03.421573085+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250603_132203-jw55srui/logs/debug-core.log"}
+{"time":"2025-06-03T13:22:03.689804279+02:00","level":"INFO","msg":"created new stream","id":"jw55srui"}
+{"time":"2025-06-03T13:22:03.690034935+02:00","level":"INFO","msg":"stream: started","id":"jw55srui"}
+{"time":"2025-06-03T13:22:03.690076638+02:00","level":"INFO","msg":"handler: started","stream_id":"jw55srui"}
+{"time":"2025-06-03T13:22:03.690074203+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"jw55srui"}
+{"time":"2025-06-03T13:22:03.690116383+02:00","level":"INFO","msg":"sender: started","stream_id":"jw55srui"}
+{"time":"2025-06-03T13:22:03.879263751+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-03T13:25:41.487942202+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-03T13:25:41.488281722+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-03T13:25:42.488860793+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-jw55srui-test_probs_labels","runtime_seconds":1.209296046},{"desc":"uploading artifact run-jw55srui-test_confusion_matrix_table","runtime_seconds":1.007456956}],"total_operations":2}}
+{"time":"2025-06-03T13:25:44.264743965+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-03T13:25:44.486071873+02:00","level":"INFO","msg":"stream: closing","id":"jw55srui"}
+{"time":"2025-06-03T13:25:44.486304707+02:00","level":"INFO","msg":"handler: closed","stream_id":"jw55srui"}
+{"time":"2025-06-03T13:25:44.486371313+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"jw55srui"}
+{"time":"2025-06-03T13:25:44.486394579+02:00","level":"INFO","msg":"sender: closed","stream_id":"jw55srui"}
+{"time":"2025-06-03T13:25:44.487003572+02:00","level":"INFO","msg":"stream: closed","id":"jw55srui"}

@@ -8,7 +8,7 @@ wandb.login()
 
 # Deine Projektinfos
 entity = "svenja-dreyer-tu-dortmund"
-project = "2-Messungen-Gli-Men"
+project = "3-Messungen-Gli-Men"
 
 # W&B API initialisieren
 api = wandb.Api()
@@ -45,12 +45,14 @@ for run in runs:
 # In DataFrame umwandeln
 df = pd.DataFrame(data)
 
-# Als CSV speichern (rohe Daten)
-csv_filename = "wandb_runs_2-Messungen-Gli-Men.csv"
-df.to_csv(csv_filename, index=False)
+# Ordner für CSV-Dateien und Plots erstellen
+os.makedirs("csv", exist_ok=True)
+os.makedirs("plots", exist_ok=True)
 
+# Als CSV speichern (rohe Daten)
+csv_filename = "csv/wandb_runs_3-Messungen-Gli-Men.csv"
+df.to_csv(csv_filename, index=False)
 print(f"✅ {len(df)} Runs erfolgreich exportiert in: {csv_filename}")
-#print(df.head())
 
 # --- Aggregierte Mittelwerte und Std berechnen ---
 def get_agg_df(metric_name):
@@ -69,13 +71,9 @@ spec_df = get_agg_df("test_specificity")
 agg_df = acc_df.merge(sens_df, on="train_samples").merge(spec_df, on="train_samples")
 
 # Aggregierte Daten als CSV speichern
-agg_csv_filename = "Gli_Men_aggregated_metrics.csv"
+agg_csv_filename = "csv/Gli_Men_aggregated_metrics.csv"
 agg_df.to_csv(agg_csv_filename, index=False)
-
 print(f"Aggregierte Mittelwert- und Std-Daten gespeichert in: {agg_csv_filename}")
-
-# Ordner für Plots erstellen, falls nicht vorhanden
-os.makedirs("plots", exist_ok=True)
 
 # --- Funktion zum Plotten ---
 def plot_metric(metric_name, ylabel, filename):

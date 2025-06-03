@@ -45,8 +45,12 @@ for run in runs:
 # In DataFrame umwandeln
 df = pd.DataFrame(data)
 
+# Ordner für CSV-Dateien und Plots erstellen
+os.makedirs("csv", exist_ok=True)
+os.makedirs("plots", exist_ok=True)
+
 # Als CSV speichern (rohe Daten)
-csv_filename = "wandb_runs_2-Messungen-noTu-Tu.csv"
+csv_filename = "csv/wandb_runs_2-Messungen-noTu-Tu.csv"
 df.to_csv(csv_filename, index=False)
 
 print(f"✅ {len(df)} Runs erfolgreich exportiert in: {csv_filename}")
