@@ -1,0 +1,16 @@
+{"time":"2025-06-03T13:51:56.313204079+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250603_135156-208t3jlp/logs/debug-core.log"}
+{"time":"2025-06-03T13:51:56.585358786+02:00","level":"INFO","msg":"created new stream","id":"208t3jlp"}
+{"time":"2025-06-03T13:51:56.585591338+02:00","level":"INFO","msg":"stream: started","id":"208t3jlp"}
+{"time":"2025-06-03T13:51:56.58563575+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"208t3jlp"}
+{"time":"2025-06-03T13:51:56.585672275+02:00","level":"INFO","msg":"handler: started","stream_id":"208t3jlp"}
+{"time":"2025-06-03T13:51:56.585671665+02:00","level":"INFO","msg":"sender: started","stream_id":"208t3jlp"}
+{"time":"2025-06-03T13:51:56.742135954+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-03T13:55:33.484774645+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-03T13:55:33.485130165+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-03T13:55:34.485843366+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-208t3jlp-test_probs_labels","runtime_seconds":1.189115177},{"desc":"uploading artifact run-208t3jlp-test_confusion_matrix_table","runtime_seconds":1.00703201,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.324273415,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-03T13:55:36.734727804+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-03T13:55:36.951079494+02:00","level":"INFO","msg":"stream: closing","id":"208t3jlp"}
+{"time":"2025-06-03T13:55:36.951307839+02:00","level":"INFO","msg":"handler: closed","stream_id":"208t3jlp"}
+{"time":"2025-06-03T13:55:36.951324011+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"208t3jlp"}
+{"time":"2025-06-03T13:55:36.951338243+02:00","level":"INFO","msg":"sender: closed","stream_id":"208t3jlp"}
+{"time":"2025-06-03T13:55:36.952074622+02:00","level":"INFO","msg":"stream: closed","id":"208t3jlp"}

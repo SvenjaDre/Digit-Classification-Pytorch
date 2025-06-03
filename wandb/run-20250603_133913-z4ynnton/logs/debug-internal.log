@@ -1,0 +1,16 @@
+{"time":"2025-06-03T13:39:13.108950501+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250603_133913-z4ynnton/logs/debug-core.log"}
+{"time":"2025-06-03T13:39:13.603512343+02:00","level":"INFO","msg":"created new stream","id":"z4ynnton"}
+{"time":"2025-06-03T13:39:13.605056274+02:00","level":"INFO","msg":"stream: started","id":"z4ynnton"}
+{"time":"2025-06-03T13:39:13.605139561+02:00","level":"INFO","msg":"handler: started","stream_id":"z4ynnton"}
+{"time":"2025-06-03T13:39:13.605136135+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"z4ynnton"}
+{"time":"2025-06-03T13:39:13.605148323+02:00","level":"INFO","msg":"sender: started","stream_id":"z4ynnton"}
+{"time":"2025-06-03T13:39:13.779102749+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-03T13:40:24.572202737+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-03T13:40:24.572581274+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-03T13:40:25.57332389+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-z4ynnton-test_probs_labels","runtime_seconds":1.163545853},{"desc":"uploading artifact run-z4ynnton-test_confusion_matrix_table","runtime_seconds":1.007447132,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.279649417,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-03T13:40:27.847245332+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-03T13:40:28.030535541+02:00","level":"INFO","msg":"stream: closing","id":"z4ynnton"}
+{"time":"2025-06-03T13:40:28.030767205+02:00","level":"INFO","msg":"handler: closed","stream_id":"z4ynnton"}
+{"time":"2025-06-03T13:40:28.030800709+02:00","level":"INFO","msg":"sender: closed","stream_id":"z4ynnton"}
+{"time":"2025-06-03T13:40:28.030792819+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"z4ynnton"}
+{"time":"2025-06-03T13:40:28.031569317+02:00","level":"INFO","msg":"stream: closed","id":"z4ynnton"}

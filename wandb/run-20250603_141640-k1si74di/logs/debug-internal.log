@@ -1,0 +1,16 @@
+{"time":"2025-06-03T14:16:40.972246277+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250603_141640-k1si74di/logs/debug-core.log"}
+{"time":"2025-06-03T14:16:41.239163021+02:00","level":"INFO","msg":"created new stream","id":"k1si74di"}
+{"time":"2025-06-03T14:16:41.23944733+02:00","level":"INFO","msg":"stream: started","id":"k1si74di"}
+{"time":"2025-06-03T14:16:41.239537323+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"k1si74di"}
+{"time":"2025-06-03T14:16:41.239560132+02:00","level":"INFO","msg":"sender: started","stream_id":"k1si74di"}
+{"time":"2025-06-03T14:16:41.239590302+02:00","level":"INFO","msg":"handler: started","stream_id":"k1si74di"}
+{"time":"2025-06-03T14:16:41.452024222+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-03T14:20:25.867093801+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-03T14:20:25.867487734+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-03T14:20:26.868082091+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-k1si74di-test_probs_labels","runtime_seconds":1.1769684009999999},{"desc":"uploading artifact run-k1si74di-test_confusion_matrix_table","runtime_seconds":1.00667322,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.327917679,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-03T14:20:29.115614785+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-03T14:20:29.28689585+02:00","level":"INFO","msg":"stream: closing","id":"k1si74di"}
+{"time":"2025-06-03T14:20:29.287196873+02:00","level":"INFO","msg":"handler: closed","stream_id":"k1si74di"}
+{"time":"2025-06-03T14:20:29.287243607+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"k1si74di"}
+{"time":"2025-06-03T14:20:29.287302394+02:00","level":"INFO","msg":"sender: closed","stream_id":"k1si74di"}
+{"time":"2025-06-03T14:20:29.287972057+02:00","level":"INFO","msg":"stream: closed","id":"k1si74di"}

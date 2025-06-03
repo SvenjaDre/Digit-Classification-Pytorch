@@ -1,0 +1,16 @@
+{"time":"2025-06-03T14:20:32.800195602+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250603_142032-1ambr916/logs/debug-core.log"}
+{"time":"2025-06-03T14:20:33.066477426+02:00","level":"INFO","msg":"created new stream","id":"1ambr916"}
+{"time":"2025-06-03T14:20:33.066717672+02:00","level":"INFO","msg":"stream: started","id":"1ambr916"}
+{"time":"2025-06-03T14:20:33.066789622+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"1ambr916"}
+{"time":"2025-06-03T14:20:33.066831197+02:00","level":"INFO","msg":"sender: started","stream_id":"1ambr916"}
+{"time":"2025-06-03T14:20:33.066845544+02:00","level":"INFO","msg":"handler: started","stream_id":"1ambr916"}
+{"time":"2025-06-03T14:20:33.273391562+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-03T14:23:42.935140591+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-03T14:23:42.93553484+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-03T14:23:43.936252003+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-1ambr916-test_probs_labels","runtime_seconds":1.204755789},{"desc":"uploading artifact run-1ambr916-test_confusion_matrix_table","runtime_seconds":1.006630593}],"total_operations":2}}
+{"time":"2025-06-03T14:23:46.23067407+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-03T14:23:46.440985425+02:00","level":"INFO","msg":"stream: closing","id":"1ambr916"}
+{"time":"2025-06-03T14:23:46.441246327+02:00","level":"INFO","msg":"handler: closed","stream_id":"1ambr916"}
+{"time":"2025-06-03T14:23:46.441318748+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"1ambr916"}
+{"time":"2025-06-03T14:23:46.441345241+02:00","level":"INFO","msg":"sender: closed","stream_id":"1ambr916"}
+{"time":"2025-06-03T14:23:46.44225027+02:00","level":"INFO","msg":"stream: closed","id":"1ambr916"}

@@ -1,0 +1,17 @@
+{"time":"2025-06-03T14:36:16.853444271+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250603_143616-zjli6f9o/logs/debug-core.log"}
+{"time":"2025-06-03T14:36:17.121297885+02:00","level":"INFO","msg":"created new stream","id":"zjli6f9o"}
+{"time":"2025-06-03T14:36:17.121511891+02:00","level":"INFO","msg":"stream: started","id":"zjli6f9o"}
+{"time":"2025-06-03T14:36:17.121568926+02:00","level":"INFO","msg":"sender: started","stream_id":"zjli6f9o"}
+{"time":"2025-06-03T14:36:17.121568356+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"zjli6f9o"}
+{"time":"2025-06-03T14:36:17.121605136+02:00","level":"INFO","msg":"handler: started","stream_id":"zjli6f9o"}
+{"time":"2025-06-03T14:36:17.307166841+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-03T14:37:17.770478951+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-03T14:37:17.770879205+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-03T14:37:18.201786948+02:00","level":"INFO","msg":"api: retrying HTTP error","status":503,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"The service is currently unavailable. Please try again later.\",\"path\":[\"createArtifact\"]}],\"data\":{\"createArtifact\":null}}"}
+{"time":"2025-06-03T14:37:18.77145783+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-zjli6f9o-test_probs_labels","runtime_seconds":0.859877918,"subtasks":[{"desc":"test_probs_labels.table.json","runtime_seconds":0.139248666,"progress":"15.3KB/15.3KB"}]},{"desc":"uploading artifact run-zjli6f9o-test_confusion_matrix_table","runtime_seconds":0.859863707,"error_status":"retrying HTTP 503: The service is currently unavailable. Please try again later."}],"total_operations":2}}
+{"time":"2025-06-03T14:37:23.581042351+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-03T14:37:23.783737874+02:00","level":"INFO","msg":"stream: closing","id":"zjli6f9o"}
+{"time":"2025-06-03T14:37:23.783988725+02:00","level":"INFO","msg":"handler: closed","stream_id":"zjli6f9o"}
+{"time":"2025-06-03T14:37:23.784007851+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"zjli6f9o"}
+{"time":"2025-06-03T14:37:23.784044799+02:00","level":"INFO","msg":"sender: closed","stream_id":"zjli6f9o"}
+{"time":"2025-06-03T14:37:23.784839904+02:00","level":"INFO","msg":"stream: closed","id":"zjli6f9o"}

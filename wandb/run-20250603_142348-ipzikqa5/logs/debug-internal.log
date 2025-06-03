@@ -1,0 +1,16 @@
+{"time":"2025-06-03T14:23:48.968914831+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250603_142348-ipzikqa5/logs/debug-core.log"}
+{"time":"2025-06-03T14:23:49.260829764+02:00","level":"INFO","msg":"created new stream","id":"ipzikqa5"}
+{"time":"2025-06-03T14:23:49.261070659+02:00","level":"INFO","msg":"stream: started","id":"ipzikqa5"}
+{"time":"2025-06-03T14:23:49.261112306+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"ipzikqa5"}
+{"time":"2025-06-03T14:23:49.26115947+02:00","level":"INFO","msg":"handler: started","stream_id":"ipzikqa5"}
+{"time":"2025-06-03T14:23:49.261177993+02:00","level":"INFO","msg":"sender: started","stream_id":"ipzikqa5"}
+{"time":"2025-06-03T14:23:49.458637059+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-03T14:26:27.340899976+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-03T14:26:27.341385696+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-03T14:26:28.341970458+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-ipzikqa5-test_probs_labels","runtime_seconds":1.175373764},{"desc":"uploading artifact run-ipzikqa5-test_confusion_matrix_table","runtime_seconds":1.006888161,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.184989256,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-03T14:26:30.661650021+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-03T14:26:30.956417323+02:00","level":"INFO","msg":"stream: closing","id":"ipzikqa5"}
+{"time":"2025-06-03T14:26:30.956682228+02:00","level":"INFO","msg":"handler: closed","stream_id":"ipzikqa5"}
+{"time":"2025-06-03T14:26:30.956747349+02:00","level":"INFO","msg":"sender: closed","stream_id":"ipzikqa5"}
+{"time":"2025-06-03T14:26:30.956735609+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ipzikqa5"}
+{"time":"2025-06-03T14:26:30.957574811+02:00","level":"INFO","msg":"stream: closed","id":"ipzikqa5"}
