@@ -1,0 +1,16 @@
+{"time":"2025-06-02T21:47:41.169100979+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250602_214741-8heluivz/logs/debug-core.log"}
+{"time":"2025-06-02T21:47:41.43337499+02:00","level":"INFO","msg":"created new stream","id":"8heluivz"}
+{"time":"2025-06-02T21:47:41.43359775+02:00","level":"INFO","msg":"stream: started","id":"8heluivz"}
+{"time":"2025-06-02T21:47:41.433619575+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"8heluivz"}
+{"time":"2025-06-02T21:47:41.433657894+02:00","level":"INFO","msg":"sender: started","stream_id":"8heluivz"}
+{"time":"2025-06-02T21:47:41.43365404+02:00","level":"INFO","msg":"handler: started","stream_id":"8heluivz"}
+{"time":"2025-06-02T21:47:41.618665127+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-02T21:53:14.267350375+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-02T21:53:14.267828458+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-02T21:53:15.26847173+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-8heluivz-test_probs_labels","runtime_seconds":1.197305432},{"desc":"uploading artifact run-8heluivz-test_confusion_matrix_table","runtime_seconds":1.006887031}],"total_operations":2}}
+{"time":"2025-06-02T21:53:16.941912248+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-02T21:53:17.132342851+02:00","level":"INFO","msg":"stream: closing","id":"8heluivz"}
+{"time":"2025-06-02T21:53:17.132597128+02:00","level":"INFO","msg":"handler: closed","stream_id":"8heluivz"}
+{"time":"2025-06-02T21:53:17.132655131+02:00","level":"INFO","msg":"sender: closed","stream_id":"8heluivz"}
+{"time":"2025-06-02T21:53:17.132650974+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"8heluivz"}
+{"time":"2025-06-02T21:53:17.133349438+02:00","level":"INFO","msg":"stream: closed","id":"8heluivz"}

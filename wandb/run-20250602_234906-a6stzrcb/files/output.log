@@ -1,0 +1,53 @@
+🚀 Starting run: trainsample_2553_run_8
+Epoch 1 | Train Loss: 1.2687 | Val Loss: 0.6506 | Val Acc: 63.57% | Sens: 1.00 | Spec: 0.00 | AUC: 0.70
+Epoch 2 | Train Loss: 0.6385 | Val Loss: 0.5698 | Val Acc: 70.86% | Sens: 0.98 | Spec: 0.23 | AUC: 0.89
+Epoch 3 | Train Loss: 0.4787 | Val Loss: 0.3652 | Val Acc: 84.96% | Sens: 0.84 | Spec: 0.86 | AUC: 0.93
+Epoch 4 | Train Loss: 0.3154 | Val Loss: 0.2900 | Val Acc: 85.66% | Sens: 0.97 | Spec: 0.65 | AUC: 0.97
+Epoch 5 | Train Loss: 0.2188 | Val Loss: 0.1809 | Val Acc: 95.18% | Sens: 0.96 | Spec: 0.95 | AUC: 0.98
+Epoch 6 | Train Loss: 0.2115 | Val Loss: 0.1912 | Val Acc: 94.48% | Sens: 0.95 | Spec: 0.94 | AUC: 0.98
+Epoch 7 | Train Loss: 0.1892 | Val Loss: 0.1628 | Val Acc: 94.12% | Sens: 0.97 | Spec: 0.89 | AUC: 0.99
+Epoch 8 | Train Loss: 0.1846 | Val Loss: 0.1789 | Val Acc: 92.83% | Sens: 0.98 | Spec: 0.85 | AUC: 0.99
+Epoch 9 | Train Loss: 0.1563 | Val Loss: 0.1602 | Val Acc: 94.24% | Sens: 0.95 | Spec: 0.92 | AUC: 0.99
+Epoch 10 | Train Loss: 0.1480 | Val Loss: 0.1430 | Val Acc: 95.42% | Sens: 0.96 | Spec: 0.94 | AUC: 0.99
+Epoch 11 | Train Loss: 0.1501 | Val Loss: 0.1931 | Val Acc: 92.13% | Sens: 0.98 | Spec: 0.82 | AUC: 0.99
+Epoch 12 | Train Loss: 0.1760 | Val Loss: 0.1501 | Val Acc: 95.06% | Sens: 0.95 | Spec: 0.95 | AUC: 0.99
+Epoch 13 | Train Loss: 0.1471 | Val Loss: 0.1488 | Val Acc: 94.71% | Sens: 0.96 | Spec: 0.93 | AUC: 0.99
+Epoch 14 | Train Loss: 0.1346 | Val Loss: 0.1297 | Val Acc: 95.53% | Sens: 0.96 | Spec: 0.94 | AUC: 0.99
+Epoch 15 | Train Loss: 0.1505 | Val Loss: 0.1522 | Val Acc: 95.89% | Sens: 0.95 | Spec: 0.97 | AUC: 0.99
+Epoch 16 | Train Loss: 0.1124 | Val Loss: 0.1650 | Val Acc: 95.89% | Sens: 0.95 | Spec: 0.97 | AUC: 0.99
+Epoch 17 | Train Loss: 0.1107 | Val Loss: 0.1466 | Val Acc: 95.53% | Sens: 0.96 | Spec: 0.95 | AUC: 0.99
+Epoch 18 | Train Loss: 0.0974 | Val Loss: 0.1367 | Val Acc: 95.65% | Sens: 0.96 | Spec: 0.95 | AUC: 0.99
+Epoch 19 | Train Loss: 0.1129 | Val Loss: 0.1294 | Val Acc: 95.18% | Sens: 0.96 | Spec: 0.93 | AUC: 0.99
+Epoch 20 | Train Loss: 0.1071 | Val Loss: 0.1424 | Val Acc: 94.48% | Sens: 0.97 | Spec: 0.91 | AUC: 0.99
+Epoch 21 | Train Loss: 0.0951 | Val Loss: 0.1281 | Val Acc: 95.53% | Sens: 0.96 | Spec: 0.95 | AUC: 0.99
+Epoch 22 | Train Loss: 0.0799 | Val Loss: 0.1249 | Val Acc: 95.53% | Sens: 0.96 | Spec: 0.94 | AUC: 0.99
+Epoch 23 | Train Loss: 0.0697 | Val Loss: 0.1236 | Val Acc: 95.77% | Sens: 0.96 | Spec: 0.95 | AUC: 0.99
+Epoch 24 | Train Loss: 0.0730 | Val Loss: 0.1273 | Val Acc: 95.30% | Sens: 0.97 | Spec: 0.92 | AUC: 0.99
+Epoch 25 | Train Loss: 0.0742 | Val Loss: 0.1368 | Val Acc: 95.77% | Sens: 0.96 | Spec: 0.95 | AUC: 0.99
+Epoch 26 | Train Loss: 0.0616 | Val Loss: 0.1419 | Val Acc: 95.06% | Sens: 0.98 | Spec: 0.90 | AUC: 0.99
+Epoch 27 | Train Loss: 0.0714 | Val Loss: 0.1377 | Val Acc: 96.24% | Sens: 0.96 | Spec: 0.96 | AUC: 0.99
+Epoch 28 | Train Loss: 0.0612 | Val Loss: 0.1359 | Val Acc: 96.59% | Sens: 0.96 | Spec: 0.97 | AUC: 0.99
+Epoch 29 | Train Loss: 0.0490 | Val Loss: 0.1329 | Val Acc: 95.30% | Sens: 0.98 | Spec: 0.91 | AUC: 0.99
+Epoch 30 | Train Loss: 0.0635 | Val Loss: 0.1589 | Val Acc: 96.47% | Sens: 0.96 | Spec: 0.98 | AUC: 0.99
+Epoch 31 | Train Loss: 0.0557 | Val Loss: 0.1298 | Val Acc: 96.36% | Sens: 0.97 | Spec: 0.95 | AUC: 0.99
+Epoch 32 | Train Loss: 0.0490 | Val Loss: 0.1316 | Val Acc: 95.77% | Sens: 0.97 | Spec: 0.93 | AUC: 0.99
+Epoch 33 | Train Loss: 0.0462 | Val Loss: 0.1187 | Val Acc: 96.00% | Sens: 0.98 | Spec: 0.93 | AUC: 0.99
+[34m[1mwandb[0m: [33mWARNING[0m A graphql request initiated by the public wandb API timed out (timeout=19 sec). Create a new API with an integer timeout larger than 19, e.g., `api = wandb.Api(timeout=29)` to increase the graphql timeout.
+Epoch 34 | Train Loss: 0.0438 | Val Loss: 0.1099 | Val Acc: 96.12% | Sens: 0.98 | Spec: 0.94 | AUC: 0.99
+Epoch 35 | Train Loss: 0.0357 | Val Loss: 0.1225 | Val Acc: 95.53% | Sens: 0.97 | Spec: 0.93 | AUC: 0.99
+Epoch 36 | Train Loss: 0.0466 | Val Loss: 0.1268 | Val Acc: 96.00% | Sens: 0.97 | Spec: 0.94 | AUC: 0.99
+Epoch 37 | Train Loss: 0.0549 | Val Loss: 0.1500 | Val Acc: 95.53% | Sens: 0.97 | Spec: 0.94 | AUC: 0.99
+Epoch 38 | Train Loss: 0.0471 | Val Loss: 0.1421 | Val Acc: 96.36% | Sens: 0.96 | Spec: 0.96 | AUC: 0.99
+Epoch 39 | Train Loss: 0.0483 | Val Loss: 0.3005 | Val Acc: 95.53% | Sens: 0.93 | Spec: 0.99 | AUC: 0.99
+Epoch 40 | Train Loss: 0.0530 | Val Loss: 0.1366 | Val Acc: 96.83% | Sens: 0.96 | Spec: 0.98 | AUC: 0.99
+Epoch 41 | Train Loss: 0.0359 | Val Loss: 0.1510 | Val Acc: 97.06% | Sens: 0.97 | Spec: 0.98 | AUC: 0.99
+Epoch 42 | Train Loss: 0.0301 | Val Loss: 0.1871 | Val Acc: 94.83% | Sens: 0.99 | Spec: 0.88 | AUC: 0.99
+Epoch 43 | Train Loss: 0.0515 | Val Loss: 0.1557 | Val Acc: 96.71% | Sens: 0.96 | Spec: 0.97 | AUC: 0.99
+Epoch 44 | Train Loss: 0.0296 | Val Loss: 0.1452 | Val Acc: 95.77% | Sens: 0.98 | Spec: 0.92 | AUC: 0.99
+🚨 Early stopping after 44 epochs.
+
+🔍 Testing on separate test set...
+/nfs/homes/sdreyer/Digit-Classification-Pytorch/ClassSweep.py:284: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  classifier.load_state_dict(torch.load(model_path, map_location=device))
+✅ Correct: 974 | ❌ Incorrect: 37 | Total: 1011
+🎯 Test Accuracy: 96.34% | Sens: 0.96 | Spec: 0.97 | AUC: 0.99

@@ -1,0 +1,20 @@
+{"time":"2025-06-02T22:54:48.449645778+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250602_225448-zfm4jwyv/logs/debug-core.log"}
+{"time":"2025-06-02T22:54:48.713928905+02:00","level":"INFO","msg":"created new stream","id":"zfm4jwyv"}
+{"time":"2025-06-02T22:54:48.714148766+02:00","level":"INFO","msg":"stream: started","id":"zfm4jwyv"}
+{"time":"2025-06-02T22:54:48.71418722+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"zfm4jwyv"}
+{"time":"2025-06-02T22:54:48.714212013+02:00","level":"INFO","msg":"sender: started","stream_id":"zfm4jwyv"}
+{"time":"2025-06-02T22:54:48.714247046+02:00","level":"INFO","msg":"handler: started","stream_id":"zfm4jwyv"}
+{"time":"2025-06-02T22:54:49.075155001+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-02T23:00:43.529968277+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-06-02T23:01:43.582925144+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-06-02T23:01:49.25087314+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-06-02T23:02:18.143375675+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-02T23:02:18.143743944+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-02T23:02:19.144636893+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-zfm4jwyv-val_probs_labels","runtime_seconds":5.710260414},{"desc":"uploading artifact run-zfm4jwyv-test_probs_labels","runtime_seconds":1.192024359},{"desc":"uploading artifact run-zfm4jwyv-test_confusion_matrix_table","runtime_seconds":1.00705724,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.40250817,"progress":"620B/620B"}]}],"total_operations":3}}
+{"time":"2025-06-02T23:02:44.498975877+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-06-02T23:02:48.748783085+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-02T23:02:48.945127189+02:00","level":"INFO","msg":"stream: closing","id":"zfm4jwyv"}
+{"time":"2025-06-02T23:02:48.945395327+02:00","level":"INFO","msg":"handler: closed","stream_id":"zfm4jwyv"}
+{"time":"2025-06-02T23:02:48.945445439+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"zfm4jwyv"}
+{"time":"2025-06-02T23:02:48.945576784+02:00","level":"INFO","msg":"sender: closed","stream_id":"zfm4jwyv"}
+{"time":"2025-06-02T23:02:48.946403782+02:00","level":"INFO","msg":"stream: closed","id":"zfm4jwyv"}

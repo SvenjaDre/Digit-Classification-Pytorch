@@ -1,0 +1,21 @@
+{"time":"2025-06-02T23:49:06.037153146+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250602_234906-a6stzrcb/logs/debug-core.log"}
+{"time":"2025-06-02T23:49:06.307927831+02:00","level":"INFO","msg":"created new stream","id":"a6stzrcb"}
+{"time":"2025-06-02T23:49:06.308184524+02:00","level":"INFO","msg":"stream: started","id":"a6stzrcb"}
+{"time":"2025-06-02T23:49:06.30821298+02:00","level":"INFO","msg":"sender: started","stream_id":"a6stzrcb"}
+{"time":"2025-06-02T23:49:06.308212993+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"a6stzrcb"}
+{"time":"2025-06-02T23:49:06.308250857+02:00","level":"INFO","msg":"handler: started","stream_id":"a6stzrcb"}
+{"time":"2025-06-02T23:49:06.602845467+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-02T23:53:51.305117102+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-06-02T23:54:02.177837336+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-06-02T23:54:56.391791165+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-06-02T23:55:34.834373531+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-06-02T23:56:07.060490611+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-06-02T23:57:37.948007553+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-02T23:57:37.948387176+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-02T23:57:38.95421295+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-a6stzrcb-test_probs_labels","runtime_seconds":1.193569418},{"desc":"uploading artifact run-a6stzrcb-test_confusion_matrix_table","runtime_seconds":1.011919591,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.328727224,"progress":"620B/620B"}]}],"total_operations":2}}
+{"time":"2025-06-02T23:57:41.144897262+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-02T23:57:41.357715847+02:00","level":"INFO","msg":"stream: closing","id":"a6stzrcb"}
+{"time":"2025-06-02T23:57:41.357978453+02:00","level":"INFO","msg":"handler: closed","stream_id":"a6stzrcb"}
+{"time":"2025-06-02T23:57:41.358033707+02:00","level":"INFO","msg":"sender: closed","stream_id":"a6stzrcb"}
+{"time":"2025-06-02T23:57:41.358030303+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"a6stzrcb"}
+{"time":"2025-06-02T23:57:41.358864874+02:00","level":"INFO","msg":"stream: closed","id":"a6stzrcb"}

@@ -1,0 +1,17 @@
+{"time":"2025-06-03T00:15:13.603811725+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250603_001513-ga0k4hrp/logs/debug-core.log"}
+{"time":"2025-06-03T00:15:13.868341914+02:00","level":"INFO","msg":"created new stream","id":"ga0k4hrp"}
+{"time":"2025-06-03T00:15:13.868593502+02:00","level":"INFO","msg":"stream: started","id":"ga0k4hrp"}
+{"time":"2025-06-03T00:15:13.868611368+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"ga0k4hrp"}
+{"time":"2025-06-03T00:15:13.868611374+02:00","level":"INFO","msg":"sender: started","stream_id":"ga0k4hrp"}
+{"time":"2025-06-03T00:15:13.868669521+02:00","level":"INFO","msg":"handler: started","stream_id":"ga0k4hrp"}
+{"time":"2025-06-03T00:15:14.044956962+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-03T00:19:56.815617018+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-06-03T00:22:41.017197322+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-03T00:22:41.017545945+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-03T00:22:42.018389695+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-ga0k4hrp-test_probs_labels","runtime_seconds":1.212367403},{"desc":"uploading artifact run-ga0k4hrp-test_confusion_matrix_table","runtime_seconds":1.007369798}],"total_operations":2}}
+{"time":"2025-06-03T00:22:43.819758009+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-03T00:22:44.044234132+02:00","level":"INFO","msg":"stream: closing","id":"ga0k4hrp"}
+{"time":"2025-06-03T00:22:44.044523908+02:00","level":"INFO","msg":"handler: closed","stream_id":"ga0k4hrp"}
+{"time":"2025-06-03T00:22:44.044548386+02:00","level":"INFO","msg":"sender: closed","stream_id":"ga0k4hrp"}
+{"time":"2025-06-03T00:22:44.044537487+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ga0k4hrp"}
+{"time":"2025-06-03T00:22:44.045326598+02:00","level":"INFO","msg":"stream: closed","id":"ga0k4hrp"}
