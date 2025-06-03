@@ -1,0 +1,18 @@
+# sweep.yaml
+method: grid
+parameters:
+  epochs:
+    values: [1000]
+  batch_size:
+    values: [16]
+  learning_rate:
+    values: [0.0005]
+  optimizer:
+    values: ["Adam"]
+  dropout:
+    values: [0.55]
+  train_samples:
+    values:  [2128, 1915, 1702, 1490, 1277, 1064, 851, 683, 426, 231] # Unterscheidung Glioma und Meningioma
+    #[1775, 1848, 2012]
+    
+ 

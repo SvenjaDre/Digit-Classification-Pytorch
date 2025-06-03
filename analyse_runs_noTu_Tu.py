@@ -91,7 +91,7 @@ def plot_metric(metric_name, ylabel, filename):
 
     plt.xlabel("Trainingssamples")
     plt.ylabel(ylabel)
-    plt.title(f"{ylabel} in Abhängigkeit der Trainingssamples")
+    plt.title(f"{ylabel} in Abhängigkeit der Trainingssamples bei der Unterscheidung no Tumor & Tumor")
     plt.xticks(grouped["train_samples"])
     plt.grid(True)
     plt.minorticks_on()
