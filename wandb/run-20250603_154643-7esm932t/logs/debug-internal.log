@@ -1,0 +1,16 @@
+{"time":"2025-06-03T15:46:43.624998226+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250603_154643-7esm932t/logs/debug-core.log"}
+{"time":"2025-06-03T15:46:43.892075861+02:00","level":"INFO","msg":"created new stream","id":"7esm932t"}
+{"time":"2025-06-03T15:46:43.892293146+02:00","level":"INFO","msg":"stream: started","id":"7esm932t"}
+{"time":"2025-06-03T15:46:43.892350603+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"7esm932t"}
+{"time":"2025-06-03T15:46:43.892373152+02:00","level":"INFO","msg":"sender: started","stream_id":"7esm932t"}
+{"time":"2025-06-03T15:46:43.892425286+02:00","level":"INFO","msg":"handler: started","stream_id":"7esm932t"}
+{"time":"2025-06-03T15:46:44.086701719+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-03T15:49:40.035701347+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-03T15:49:40.036047544+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-03T15:49:41.036789107+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-7esm932t-test_probs_labels","runtime_seconds":1.209502704},{"desc":"uploading artifact run-7esm932t-test_confusion_matrix_table","runtime_seconds":1.006947125,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.351586492,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-03T15:49:43.788466697+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-03T15:49:44.039473193+02:00","level":"INFO","msg":"stream: closing","id":"7esm932t"}
+{"time":"2025-06-03T15:49:44.039729+02:00","level":"INFO","msg":"handler: closed","stream_id":"7esm932t"}
+{"time":"2025-06-03T15:49:44.039759819+02:00","level":"INFO","msg":"sender: closed","stream_id":"7esm932t"}
+{"time":"2025-06-03T15:49:44.039750555+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"7esm932t"}
+{"time":"2025-06-03T15:49:44.040511926+02:00","level":"INFO","msg":"stream: closed","id":"7esm932t"}

@@ -1,0 +1,16 @@
+{"time":"2025-06-03T15:40:58.156326029+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250603_154058-zanyr492/logs/debug-core.log"}
+{"time":"2025-06-03T15:40:58.422079877+02:00","level":"INFO","msg":"created new stream","id":"zanyr492"}
+{"time":"2025-06-03T15:40:58.422289664+02:00","level":"INFO","msg":"stream: started","id":"zanyr492"}
+{"time":"2025-06-03T15:40:58.422365439+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"zanyr492"}
+{"time":"2025-06-03T15:40:58.422376375+02:00","level":"INFO","msg":"handler: started","stream_id":"zanyr492"}
+{"time":"2025-06-03T15:40:58.422410619+02:00","level":"INFO","msg":"sender: started","stream_id":"zanyr492"}
+{"time":"2025-06-03T15:40:58.585107556+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-03T15:43:36.308684246+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-03T15:43:36.309093045+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-03T15:43:37.309836748+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-zanyr492-test_probs_labels","runtime_seconds":1.185573466},{"desc":"uploading artifact run-zanyr492-test_confusion_matrix_table","runtime_seconds":1.007064143,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.333173965,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-03T15:43:39.73356342+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-03T15:43:39.936153709+02:00","level":"INFO","msg":"stream: closing","id":"zanyr492"}
+{"time":"2025-06-03T15:43:39.93638655+02:00","level":"INFO","msg":"handler: closed","stream_id":"zanyr492"}
+{"time":"2025-06-03T15:43:39.936454184+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"zanyr492"}
+{"time":"2025-06-03T15:43:39.936479249+02:00","level":"INFO","msg":"sender: closed","stream_id":"zanyr492"}
+{"time":"2025-06-03T15:43:39.937290247+02:00","level":"INFO","msg":"stream: closed","id":"zanyr492"}

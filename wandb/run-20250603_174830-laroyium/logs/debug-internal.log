@@ -1,0 +1,16 @@
+{"time":"2025-06-03T17:48:30.566718635+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250603_174830-laroyium/logs/debug-core.log"}
+{"time":"2025-06-03T17:48:30.835380025+02:00","level":"INFO","msg":"created new stream","id":"laroyium"}
+{"time":"2025-06-03T17:48:30.835605937+02:00","level":"INFO","msg":"stream: started","id":"laroyium"}
+{"time":"2025-06-03T17:48:30.835645694+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"laroyium"}
+{"time":"2025-06-03T17:48:30.835683574+02:00","level":"INFO","msg":"sender: started","stream_id":"laroyium"}
+{"time":"2025-06-03T17:48:30.83570123+02:00","level":"INFO","msg":"handler: started","stream_id":"laroyium"}
+{"time":"2025-06-03T17:48:31.024205919+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-03T17:49:25.394596673+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-03T17:49:25.39498465+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-03T17:49:26.395728706+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-laroyium-test_probs_labels","runtime_seconds":1.197853218},{"desc":"uploading artifact run-laroyium-test_confusion_matrix_table","runtime_seconds":1.007269702}],"total_operations":2}}
+{"time":"2025-06-03T17:49:28.379538725+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-03T17:49:28.580283025+02:00","level":"INFO","msg":"stream: closing","id":"laroyium"}
+{"time":"2025-06-03T17:49:28.580556688+02:00","level":"INFO","msg":"handler: closed","stream_id":"laroyium"}
+{"time":"2025-06-03T17:49:28.580591231+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"laroyium"}
+{"time":"2025-06-03T17:49:28.580622291+02:00","level":"INFO","msg":"sender: closed","stream_id":"laroyium"}
+{"time":"2025-06-03T17:49:28.581304221+02:00","level":"INFO","msg":"stream: closed","id":"laroyium"}

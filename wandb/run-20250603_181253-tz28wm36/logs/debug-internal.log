@@ -1,0 +1,16 @@
+{"time":"2025-06-03T18:12:53.646395472+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250603_181253-tz28wm36/logs/debug-core.log"}
+{"time":"2025-06-03T18:12:53.914793009+02:00","level":"INFO","msg":"created new stream","id":"tz28wm36"}
+{"time":"2025-06-03T18:12:53.915027844+02:00","level":"INFO","msg":"stream: started","id":"tz28wm36"}
+{"time":"2025-06-03T18:12:53.915064504+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"tz28wm36"}
+{"time":"2025-06-03T18:12:53.91511564+02:00","level":"INFO","msg":"handler: started","stream_id":"tz28wm36"}
+{"time":"2025-06-03T18:12:53.915090724+02:00","level":"INFO","msg":"sender: started","stream_id":"tz28wm36"}
+{"time":"2025-06-03T18:12:54.085745452+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-03T18:14:29.352805283+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-03T18:14:29.353204936+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-03T18:14:30.354143941+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-tz28wm36-test_probs_labels","runtime_seconds":1.1860045590000001},{"desc":"uploading artifact run-tz28wm36-test_confusion_matrix_table","runtime_seconds":1.007305429,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.3379004,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-03T18:14:32.864282163+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-03T18:14:33.075143132+02:00","level":"INFO","msg":"stream: closing","id":"tz28wm36"}
+{"time":"2025-06-03T18:14:33.075376268+02:00","level":"INFO","msg":"handler: closed","stream_id":"tz28wm36"}
+{"time":"2025-06-03T18:14:33.075440919+02:00","level":"INFO","msg":"sender: closed","stream_id":"tz28wm36"}
+{"time":"2025-06-03T18:14:33.075430215+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"tz28wm36"}
+{"time":"2025-06-03T18:14:33.076165714+02:00","level":"INFO","msg":"stream: closed","id":"tz28wm36"}

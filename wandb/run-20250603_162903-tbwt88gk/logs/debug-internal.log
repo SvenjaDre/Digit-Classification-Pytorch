@@ -1,0 +1,16 @@
+{"time":"2025-06-03T16:29:03.748387201+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250603_162903-tbwt88gk/logs/debug-core.log"}
+{"time":"2025-06-03T16:29:04.017020665+02:00","level":"INFO","msg":"created new stream","id":"tbwt88gk"}
+{"time":"2025-06-03T16:29:04.01723733+02:00","level":"INFO","msg":"stream: started","id":"tbwt88gk"}
+{"time":"2025-06-03T16:29:04.017257363+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"tbwt88gk"}
+{"time":"2025-06-03T16:29:04.017296513+02:00","level":"INFO","msg":"handler: started","stream_id":"tbwt88gk"}
+{"time":"2025-06-03T16:29:04.017315044+02:00","level":"INFO","msg":"sender: started","stream_id":"tbwt88gk"}
+{"time":"2025-06-03T16:29:04.224777786+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-03T16:32:40.498958306+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-03T16:32:40.499391309+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-03T16:32:41.500159686+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-tbwt88gk-test_probs_labels","runtime_seconds":1.160024008},{"desc":"uploading artifact run-tbwt88gk-test_confusion_matrix_table","runtime_seconds":1.006686887,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.343759484,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-03T16:32:44.088898899+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-03T16:32:44.323243383+02:00","level":"INFO","msg":"stream: closing","id":"tbwt88gk"}
+{"time":"2025-06-03T16:32:44.32349867+02:00","level":"INFO","msg":"handler: closed","stream_id":"tbwt88gk"}
+{"time":"2025-06-03T16:32:44.323570078+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"tbwt88gk"}
+{"time":"2025-06-03T16:32:44.323610989+02:00","level":"INFO","msg":"sender: closed","stream_id":"tbwt88gk"}
+{"time":"2025-06-03T16:32:44.324213238+02:00","level":"INFO","msg":"stream: closed","id":"tbwt88gk"}

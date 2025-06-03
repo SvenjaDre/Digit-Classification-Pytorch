@@ -1,0 +1,16 @@
+{"time":"2025-06-03T17:36:55.645945811+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250603_173655-cva7wc4n/logs/debug-core.log"}
+{"time":"2025-06-03T17:36:55.90975646+02:00","level":"INFO","msg":"created new stream","id":"cva7wc4n"}
+{"time":"2025-06-03T17:36:55.909966174+02:00","level":"INFO","msg":"stream: started","id":"cva7wc4n"}
+{"time":"2025-06-03T17:36:55.910019919+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"cva7wc4n"}
+{"time":"2025-06-03T17:36:55.910036385+02:00","level":"INFO","msg":"handler: started","stream_id":"cva7wc4n"}
+{"time":"2025-06-03T17:36:55.910039453+02:00","level":"INFO","msg":"sender: started","stream_id":"cva7wc4n"}
+{"time":"2025-06-03T17:36:56.093920952+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-03T17:40:01.975002952+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-03T17:40:01.975331803+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-03T17:40:02.976271618+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-cva7wc4n-test_probs_labels","runtime_seconds":1.1786226929999999},{"desc":"uploading artifact run-cva7wc4n-test_confusion_matrix_table","runtime_seconds":1.006829418,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.301742447,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-03T17:40:05.327283635+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-03T17:40:05.514528918+02:00","level":"INFO","msg":"stream: closing","id":"cva7wc4n"}
+{"time":"2025-06-03T17:40:05.514758343+02:00","level":"INFO","msg":"handler: closed","stream_id":"cva7wc4n"}
+{"time":"2025-06-03T17:40:05.514821847+02:00","level":"INFO","msg":"sender: closed","stream_id":"cva7wc4n"}
+{"time":"2025-06-03T17:40:05.514808187+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"cva7wc4n"}
+{"time":"2025-06-03T17:40:05.515450823+02:00","level":"INFO","msg":"stream: closed","id":"cva7wc4n"}

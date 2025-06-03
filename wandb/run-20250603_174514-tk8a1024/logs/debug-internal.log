@@ -1,0 +1,16 @@
+{"time":"2025-06-03T17:45:14.415663286+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250603_174514-tk8a1024/logs/debug-core.log"}
+{"time":"2025-06-03T17:45:14.685058101+02:00","level":"INFO","msg":"created new stream","id":"tk8a1024"}
+{"time":"2025-06-03T17:45:14.685267564+02:00","level":"INFO","msg":"stream: started","id":"tk8a1024"}
+{"time":"2025-06-03T17:45:14.68532866+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"tk8a1024"}
+{"time":"2025-06-03T17:45:14.685351925+02:00","level":"INFO","msg":"sender: started","stream_id":"tk8a1024"}
+{"time":"2025-06-03T17:45:14.685397135+02:00","level":"INFO","msg":"handler: started","stream_id":"tk8a1024"}
+{"time":"2025-06-03T17:45:14.868017306+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-03T17:47:10.200072465+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-03T17:47:10.20053412+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-03T17:47:11.201280808+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-tk8a1024-test_probs_labels","runtime_seconds":1.180462698},{"desc":"uploading artifact run-tk8a1024-test_confusion_matrix_table","runtime_seconds":1.006920773,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.331895353,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-03T17:47:13.674469359+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-03T17:47:13.884966434+02:00","level":"INFO","msg":"stream: closing","id":"tk8a1024"}
+{"time":"2025-06-03T17:47:13.8851833+02:00","level":"INFO","msg":"handler: closed","stream_id":"tk8a1024"}
+{"time":"2025-06-03T17:47:13.885234518+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"tk8a1024"}
+{"time":"2025-06-03T17:47:13.885268792+02:00","level":"INFO","msg":"sender: closed","stream_id":"tk8a1024"}
+{"time":"2025-06-03T17:47:13.886054351+02:00","level":"INFO","msg":"stream: closed","id":"tk8a1024"}

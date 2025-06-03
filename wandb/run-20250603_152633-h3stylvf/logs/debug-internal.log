@@ -1,0 +1,16 @@
+{"time":"2025-06-03T15:26:33.681559172+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250603_152633-h3stylvf/logs/debug-core.log"}
+{"time":"2025-06-03T15:26:33.949031433+02:00","level":"INFO","msg":"created new stream","id":"h3stylvf"}
+{"time":"2025-06-03T15:26:33.949236559+02:00","level":"INFO","msg":"stream: started","id":"h3stylvf"}
+{"time":"2025-06-03T15:26:33.949308032+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"h3stylvf"}
+{"time":"2025-06-03T15:26:33.949326928+02:00","level":"INFO","msg":"sender: started","stream_id":"h3stylvf"}
+{"time":"2025-06-03T15:26:33.949347321+02:00","level":"INFO","msg":"handler: started","stream_id":"h3stylvf"}
+{"time":"2025-06-03T15:26:34.130440519+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-03T15:27:27.176691411+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-03T15:27:27.177036683+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-03T15:27:28.177889243+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-h3stylvf-test_probs_labels","runtime_seconds":1.186813858},{"desc":"uploading artifact run-h3stylvf-test_confusion_matrix_table","runtime_seconds":1.006858516,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.34154141,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-03T15:27:30.272690854+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-03T15:27:30.471028914+02:00","level":"INFO","msg":"stream: closing","id":"h3stylvf"}
+{"time":"2025-06-03T15:27:30.471289927+02:00","level":"INFO","msg":"handler: closed","stream_id":"h3stylvf"}
+{"time":"2025-06-03T15:27:30.47131215+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"h3stylvf"}
+{"time":"2025-06-03T15:27:30.471330233+02:00","level":"INFO","msg":"sender: closed","stream_id":"h3stylvf"}
+{"time":"2025-06-03T15:27:30.471966093+02:00","level":"INFO","msg":"stream: closed","id":"h3stylvf"}

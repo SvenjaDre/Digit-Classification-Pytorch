@@ -1,0 +1,16 @@
+{"time":"2025-06-03T18:06:58.053339222+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250603_180658-lnc53qat/logs/debug-core.log"}
+{"time":"2025-06-03T18:06:58.320302017+02:00","level":"INFO","msg":"created new stream","id":"lnc53qat"}
+{"time":"2025-06-03T18:06:58.320544468+02:00","level":"INFO","msg":"stream: started","id":"lnc53qat"}
+{"time":"2025-06-03T18:06:58.32057757+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"lnc53qat"}
+{"time":"2025-06-03T18:06:58.320602396+02:00","level":"INFO","msg":"sender: started","stream_id":"lnc53qat"}
+{"time":"2025-06-03T18:06:58.320623285+02:00","level":"INFO","msg":"handler: started","stream_id":"lnc53qat"}
+{"time":"2025-06-03T18:06:58.50362397+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-03T18:09:53.222106347+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-03T18:09:53.222457212+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-03T18:09:54.223349677+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-lnc53qat-test_probs_labels","runtime_seconds":1.2005128680000001},{"desc":"uploading artifact run-lnc53qat-test_confusion_matrix_table","runtime_seconds":1.007080556}],"total_operations":2}}
+{"time":"2025-06-03T18:09:56.113231406+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-03T18:09:56.316483662+02:00","level":"INFO","msg":"stream: closing","id":"lnc53qat"}
+{"time":"2025-06-03T18:09:56.316700802+02:00","level":"INFO","msg":"handler: closed","stream_id":"lnc53qat"}
+{"time":"2025-06-03T18:09:56.316771104+02:00","level":"INFO","msg":"sender: closed","stream_id":"lnc53qat"}
+{"time":"2025-06-03T18:09:56.316764919+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"lnc53qat"}
+{"time":"2025-06-03T18:09:56.317503024+02:00","level":"INFO","msg":"stream: closed","id":"lnc53qat"}

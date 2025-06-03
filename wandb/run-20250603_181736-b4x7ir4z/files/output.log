@@ -1,0 +1,26 @@
+🚀 Starting run: trainsample_231_run_10
+Epoch 1 | Train Loss: 0.7018 | Val Loss: 0.6892 | Val Acc: 49.06% | Sens: 1.00 | Spec: 0.00 | AUC: 0.77
+Epoch 2 | Train Loss: 0.6685 | Val Loss: 0.6608 | Val Acc: 51.88% | Sens: 1.00 | Spec: 0.06 | AUC: 0.81
+Epoch 3 | Train Loss: 0.6321 | Val Loss: 0.6143 | Val Acc: 62.03% | Sens: 0.25 | Spec: 0.97 | AUC: 0.83
+Epoch 4 | Train Loss: 0.5965 | Val Loss: 0.6625 | Val Acc: 58.08% | Sens: 0.15 | Spec: 1.00 | AUC: 0.84
+Epoch 5 | Train Loss: 0.5566 | Val Loss: 0.5191 | Val Acc: 77.63% | Sens: 0.81 | Spec: 0.74 | AUC: 0.85
+Epoch 6 | Train Loss: 0.4948 | Val Loss: 0.4737 | Val Acc: 77.63% | Sens: 0.75 | Spec: 0.80 | AUC: 0.86
+Epoch 7 | Train Loss: 0.4624 | Val Loss: 0.5558 | Val Acc: 73.12% | Sens: 0.95 | Spec: 0.52 | AUC: 0.87
+Epoch 8 | Train Loss: 0.3949 | Val Loss: 0.4393 | Val Acc: 80.83% | Sens: 0.85 | Spec: 0.77 | AUC: 0.88
+Epoch 9 | Train Loss: 0.3537 | Val Loss: 0.4403 | Val Acc: 81.58% | Sens: 0.80 | Spec: 0.83 | AUC: 0.88
+Epoch 10 | Train Loss: 0.3516 | Val Loss: 0.4635 | Val Acc: 78.76% | Sens: 0.71 | Spec: 0.86 | AUC: 0.88
+Epoch 11 | Train Loss: 0.2931 | Val Loss: 0.4830 | Val Acc: 77.63% | Sens: 0.83 | Spec: 0.72 | AUC: 0.87
+Epoch 12 | Train Loss: 0.2702 | Val Loss: 0.4856 | Val Acc: 79.70% | Sens: 0.80 | Spec: 0.79 | AUC: 0.87
+Epoch 13 | Train Loss: 0.2279 | Val Loss: 0.5358 | Val Acc: 79.51% | Sens: 0.83 | Spec: 0.76 | AUC: 0.87
+Epoch 14 | Train Loss: 0.2648 | Val Loss: 0.5595 | Val Acc: 78.95% | Sens: 0.69 | Spec: 0.89 | AUC: 0.87
+Epoch 15 | Train Loss: 0.2168 | Val Loss: 0.6359 | Val Acc: 78.20% | Sens: 0.63 | Spec: 0.93 | AUC: 0.85
+Epoch 16 | Train Loss: 0.2442 | Val Loss: 0.5144 | Val Acc: 82.14% | Sens: 0.75 | Spec: 0.89 | AUC: 0.88
+Epoch 17 | Train Loss: 0.2053 | Val Loss: 0.5238 | Val Acc: 81.39% | Sens: 0.82 | Spec: 0.81 | AUC: 0.88
+Epoch 18 | Train Loss: 0.1378 | Val Loss: 0.5574 | Val Acc: 81.39% | Sens: 0.78 | Spec: 0.85 | AUC: 0.88
+🚨 Early stopping after 18 epochs.
+
+🔍 Testing on separate test set...
+/nfs/homes/sdreyer/Digit-Classification-Pytorch/Class_Gli_Men.py:260: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  classifier.load_state_dict(torch.load(model_path, map_location=device))
+✅ Correct: 467 | ❌ Incorrect: 139 | Total: 606
+🎯 Test Accuracy: 77.06% | Sens: 0.82 | Spec: 0.72 | AUC: 0.86

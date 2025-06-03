@@ -1,0 +1,1 @@
+{"columns": ["Actual", "Predicted", "nPredictions"], "data": [["glioma", "glioma", 215.0], ["glioma", "meningioma", 85.0], ["meningioma", "glioma", 60.0], ["meningioma", "meningioma", 246.0]]}

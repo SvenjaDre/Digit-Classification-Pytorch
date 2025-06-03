@@ -1,0 +1,16 @@
+{"time":"2025-06-03T15:04:39.605217885+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250603_150439-egy7ajkt/logs/debug-core.log"}
+{"time":"2025-06-03T15:04:40.432364823+02:00","level":"INFO","msg":"created new stream","id":"egy7ajkt"}
+{"time":"2025-06-03T15:04:40.43260064+02:00","level":"INFO","msg":"stream: started","id":"egy7ajkt"}
+{"time":"2025-06-03T15:04:40.432645271+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"egy7ajkt"}
+{"time":"2025-06-03T15:04:40.432662847+02:00","level":"INFO","msg":"sender: started","stream_id":"egy7ajkt"}
+{"time":"2025-06-03T15:04:40.432679713+02:00","level":"INFO","msg":"handler: started","stream_id":"egy7ajkt"}
+{"time":"2025-06-03T15:04:40.604003037+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-03T15:08:32.925759191+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-03T15:08:32.926170706+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-03T15:08:33.927014795+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-egy7ajkt-test_probs_labels","runtime_seconds":1.192937589},{"desc":"uploading artifact run-egy7ajkt-test_confusion_matrix_table","runtime_seconds":1.006643173}],"total_operations":2}}
+{"time":"2025-06-03T15:08:35.831720522+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-03T15:08:36.029215944+02:00","level":"INFO","msg":"stream: closing","id":"egy7ajkt"}
+{"time":"2025-06-03T15:08:36.029444772+02:00","level":"INFO","msg":"handler: closed","stream_id":"egy7ajkt"}
+{"time":"2025-06-03T15:08:36.029496646+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"egy7ajkt"}
+{"time":"2025-06-03T15:08:36.02953027+02:00","level":"INFO","msg":"sender: closed","stream_id":"egy7ajkt"}
+{"time":"2025-06-03T15:08:36.030203763+02:00","level":"INFO","msg":"stream: closed","id":"egy7ajkt"}

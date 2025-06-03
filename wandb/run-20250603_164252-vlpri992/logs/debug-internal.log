@@ -1,0 +1,16 @@
+{"time":"2025-06-03T16:42:52.923966087+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250603_164252-vlpri992/logs/debug-core.log"}
+{"time":"2025-06-03T16:42:53.190572375+02:00","level":"INFO","msg":"created new stream","id":"vlpri992"}
+{"time":"2025-06-03T16:42:53.190795162+02:00","level":"INFO","msg":"stream: started","id":"vlpri992"}
+{"time":"2025-06-03T16:42:53.190867734+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"vlpri992"}
+{"time":"2025-06-03T16:42:53.190903626+02:00","level":"INFO","msg":"handler: started","stream_id":"vlpri992"}
+{"time":"2025-06-03T16:42:53.190927782+02:00","level":"INFO","msg":"sender: started","stream_id":"vlpri992"}
+{"time":"2025-06-03T16:42:53.365916891+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-03T16:45:58.170498933+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-03T16:45:58.170963381+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-03T16:45:59.171767189+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-vlpri992-test_probs_labels","runtime_seconds":1.165339116},{"desc":"uploading artifact run-vlpri992-test_confusion_matrix_table","runtime_seconds":1.008110624,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.335741037,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-03T16:46:01.677260855+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-03T16:46:01.904991041+02:00","level":"INFO","msg":"stream: closing","id":"vlpri992"}
+{"time":"2025-06-03T16:46:01.905210727+02:00","level":"INFO","msg":"handler: closed","stream_id":"vlpri992"}
+{"time":"2025-06-03T16:46:01.905278425+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"vlpri992"}
+{"time":"2025-06-03T16:46:01.905305826+02:00","level":"INFO","msg":"sender: closed","stream_id":"vlpri992"}
+{"time":"2025-06-03T16:46:01.905996555+02:00","level":"INFO","msg":"stream: closed","id":"vlpri992"}
