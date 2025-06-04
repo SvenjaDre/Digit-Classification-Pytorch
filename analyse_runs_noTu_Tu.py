@@ -73,7 +73,7 @@ spec_df = get_agg_df("test_specificity")
 agg_df = acc_df.merge(sens_df, on="train_samples").merge(spec_df, on="train_samples")
 
 # Aggregierte Daten als CSV speichern
-agg_csv_filename = "noTu_Tu_aggregated_metrics.csv"
+agg_csv_filename = "csv/noTu_Tu_aggregated_metrics.csv"
 agg_df.to_csv(agg_csv_filename, index=False)
 
 print(f"Aggregierte Mittelwert- und Std-Daten gespeichert in: {agg_csv_filename}")
