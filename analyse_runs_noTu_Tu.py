@@ -105,6 +105,6 @@ def plot_metric(metric_name, ylabel, filename):
     plt.show()
 
 # --- Drei Plots erzeugen ---
-plot_metric("test_accuracy", "Test Accuracy / %", "Test_Accuracy_mean_noTu_Tu.pdf")
-plot_metric("test_sensitivity", "Test Sensitivity", "Test_Sensitivity_mean_noTu_Tu.pdf")
-plot_metric("test_specificity", "Test Specificity", "Test_Specificity_mean_noTu_Tu.pdf")
+plot_metric("test_accuracy", "Test Accuracy / %", "Accuracy_noTu_Tu_mean.pdf")
+plot_metric("test_sensitivity", "Test Sensitivity", "Sensitivity_noTu_Tu_mean.pdf")
+plot_metric("test_specificity", "Test Specificity", "Specificity_noTu_Tu_mean.pdf")
