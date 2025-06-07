@@ -72,12 +72,13 @@ class ImageClassifier(nn.Module):
         return x
 
 # Verzeichnisse
-TRAIN_DIR = "archive/Training"
+TRAIN_DIR = "archive_augmented/Training"
+#TRAIN_DIR = "archive/Training"
 TEST_DIR = "archive/Testing"
 
 # Trainingsfunktion für Sweep
 def train():
-    wandb.init(project="2-Messungen-noTu-Tu")
+    wandb.init(project="Data-optim-Messungen-noTu-Tu")
     config = wandb.config
 
     base_checkpoint_dir = os.path.join("Checkpoints", wandb.run.project, f"trainpercent_{config.train_percent}")
@@ -283,5 +284,5 @@ def evaluate_on_test_data(model_path):
 
 if __name__ == "__main__":
     sweep_config = load_sweep_config()
-    sweep_id = wandb.sweep(sweep_config, project="2-Messungen-noTu-Tu")
+    sweep_id = wandb.sweep(sweep_config, project="Data-optim-Messungen-noTu-Tu")
     wandb.agent(sweep_id, function=train)
