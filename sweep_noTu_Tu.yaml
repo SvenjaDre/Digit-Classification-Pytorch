@@ -11,6 +11,10 @@ parameters:
     values: ["Adam"]
   dropout:
     values: [0.55]
-  train_samples:
-    values: [2553, 2893, 3234]    # Unterscheidung notu-tu
+  train_percent:
+    values: [1.0, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2, 0.1]
+  
+  
+  #train_samples:
+   # values: [2553, 2893, 3234]    # Unterscheidung notu-tu
     #values: [3404, 3064, 2723, 2383, 2042, 1702, 1362, 1021, 681, 340] # Unterscheidung no Tumor und Tumor

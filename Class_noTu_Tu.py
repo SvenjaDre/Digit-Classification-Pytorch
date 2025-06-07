@@ -25,18 +25,16 @@ def preprocess_image(image_path):
     image = np.expand_dims(image, axis=0)
     return torch.tensor(image, dtype=torch.float32)
 
-
-#Eigenes Dataset, Unterscheidung no Tumor und Tumor
+# Dataset: no_tumor vs tumor
 class CustomImageDataset(Dataset):
     def __init__(self, root_dir):
         self.image_paths = []
         self.labels = []
-        self.classes = ['no_tumor', 'tumor']  # Neue Klassennamen
+        self.classes = ['no_tumor', 'tumor']
         for class_name in os.listdir(root_dir):
             class_folder = os.path.join(root_dir, class_name)
             if not os.path.isdir(class_folder):
                 continue
-            # Tumor = 1, No Tumor = 0
             label = 1 if class_name.lower() in ['glioma', 'meningioma'] else 0
             for fname in os.listdir(class_folder):
                 if fname.lower().endswith(('.png', '.jpg', '.jpeg')):
@@ -45,12 +43,11 @@ class CustomImageDataset(Dataset):
 
     def __len__(self):
         return len(self.image_paths)
-    
+
     def __getitem__(self, idx):
         image_tensor = preprocess_image(self.image_paths[idx])
         label = self.labels[idx]
         return image_tensor, label, self.image_paths[idx]
-
 
 # CNN Modell
 class ImageClassifier(nn.Module):
@@ -83,8 +80,7 @@ def train():
     wandb.init(project="2-Messungen-noTu-Tu")
     config = wandb.config
 
-    # 🔢 Automatische Run-ID finden (für Checkpoint-Ordner und eindeutige Benennung)
-    base_checkpoint_dir = os.path.join("Checkpoints", wandb.run.project, f"trainsample_{config.train_samples}")
+    base_checkpoint_dir = os.path.join("Checkpoints", wandb.run.project, f"trainpercent_{config.train_percent}")
     run_id = 1
     checkpoint_dir = os.path.join(base_checkpoint_dir, f"run_{run_id}")
     while os.path.exists(checkpoint_dir):
@@ -92,15 +88,14 @@ def train():
         checkpoint_dir = os.path.join(base_checkpoint_dir, f"run_{run_id}")
     os.makedirs(checkpoint_dir, exist_ok=True)
 
-    # 🏷️ WandB Run eindeutig benennen
-    run_name = f"trainsample_{config.train_samples}_run_{run_id}"
+    run_name = f"trainpercent_{config.train_percent}_run_{run_id}"
     wandb.run.name = run_name
-    wandb.run.tags = [f"samples_{config.train_samples}", f"run_{run_id}"]
-    wandb.config.run_id = run_id  # Für spätere Auswertung in wandb
+    wandb.run.tags = [f"percent_{config.train_percent}", f"run_{run_id}"]
+    wandb.config.run_id = run_id
+    wandb.config.train_percent_used = config.train_percent
 
     print(f"🚀 Starting run: {run_name}")
 
-    # 📌 Seed setzen
     seed = 42
     torch.manual_seed(seed)
     np.random.seed(seed)
@@ -108,7 +103,6 @@ def train():
     if torch.cuda.is_available():
         torch.cuda.manual_seed_all(seed)
 
-    # 📊 Datensätze laden
     full_dataset = CustomImageDataset(root_dir=TRAIN_DIR)
     total_size = len(full_dataset)
     val_size = int(0.2 * total_size)
@@ -120,12 +114,17 @@ def train():
         generator=torch.Generator().manual_seed(seed)
     )
 
-    target_train_samples = min(config.train_samples, len(base_train_dataset))
+    train_percent = config.train_percent
+    target_train_samples = int(train_percent * len(base_train_dataset))
+
     reduced_train_dataset, _ = random_split(
         base_train_dataset,
         [target_train_samples, len(base_train_dataset) - target_train_samples],
         generator=torch.Generator().manual_seed(seed)
     )
+
+    print(f"📊 Trainingsdaten: {target_train_samples} von {len(base_train_dataset)} ({train_percent*100:.1f}%)")
+    wandb.config.actual_train_images = target_train_samples
 
     train_loader = DataLoader(reduced_train_dataset, batch_size=config.batch_size, shuffle=True)
     val_loader = DataLoader(val_dataset, batch_size=config.batch_size, shuffle=False)
@@ -155,9 +154,7 @@ def train():
         classifier.eval()
         val_loss = 0.0
         val_correct = 0
-        val_incorrect = 0
         val_total = 0
-
         all_probs = []
         all_preds = []
         all_labels = []
@@ -173,7 +170,6 @@ def train():
                 predictions = torch.argmax(outputs, dim=1)
 
                 val_correct += (predictions == val_labels).sum().item()
-                val_incorrect += (predictions != val_labels).sum().item()
                 val_total += val_labels.size(0)
 
                 all_probs.extend(probs.cpu().numpy())
@@ -198,36 +194,26 @@ def train():
             "train_loss": avg_train_loss,
             "val_loss": avg_val_loss,
             "val_accuracy": val_accuracy,
-            "val_correct": val_correct,
-            "val_incorrect": val_incorrect,
-            "val_total": val_total,
             "sensitivity": sensitivity,
             "specificity": specificity,
             "auc": auc_score,
             "train_samples_used": target_train_samples,
+            "train_percent_used": train_percent,
             "val_probs_labels": wandb.Table(data=list(zip(all_probs, all_labels)), columns=["prob", "label"])
         })
 
-        # ⬇️ Speichern bei Verbesserung
         if avg_val_loss < best_val_loss - 1e-4:
             best_val_loss = avg_val_loss
             epochs_no_improve = 0
             best_model_path = os.path.join(checkpoint_dir, "best_model.pt")
             torch.save(classifier.state_dict(), best_model_path)
             wandb.save(best_model_path)
-            wandb.log({"best_model_path": best_model_path})
         else:
             epochs_no_improve += 1
 
         if epochs_no_improve >= patience:
             print(f"🚨 Early stopping after {epoch+1} epochs.")
             break
-
-        if (epoch + 1) % 10 == 0:
-            checkpoint_path = os.path.join(checkpoint_dir, f"checkpoint_epoch_{epoch+1:03}.pt")
-            torch.save(classifier.state_dict(), checkpoint_path)
-            wandb.save(checkpoint_path)
-            wandb.log({"checkpoint_path": checkpoint_path})
 
     final_model_path = os.path.join(checkpoint_dir, "final_model.pt")
     torch.save(classifier.state_dict(), final_model_path)
@@ -239,14 +225,10 @@ def train():
 
     wandb.finish()
 
-  
-
-# Sweep-Konfiguration laden
 def load_sweep_config(path="sweep_noTu_Tu.yaml"):
     with open(path) as f:
         return yaml.safe_load(f)
 
-# Test-Funktion
 def evaluate_on_test_data(model_path):
     print("\n🔍 Testing on separate test set...")
     test_dataset = CustomImageDataset(root_dir=TEST_DIR)
@@ -279,8 +261,6 @@ def evaluate_on_test_data(model_path):
 
     total = correct + incorrect
     accuracy = (correct / total) * 100
-
-    # ⬇️ Test-Metriken berechnen
     auc_score = roc_auc_score(all_labels, all_probs)
     tn, fp, fn, tp = confusion_matrix(all_labels, all_preds).ravel()
     sensitivity = tp / (tp + fn + 1e-8)
@@ -297,20 +277,11 @@ def evaluate_on_test_data(model_path):
         "test_auc": auc_score,
         "test_sensitivity": sensitivity,
         "test_specificity": specificity,
-        "test_confusion_matrix": wandb.plot.confusion_matrix(
-            probs=None,
-            y_true=all_labels,
-            preds=all_preds,
-            class_names=class_names
-        ),
-        "test_probs_labels": wandb.Table(data=list(zip(all_probs, all_labels)), columns=["prob", "label"]),
-        "train_samples_used": wandb.config.train_samples 
+        "train_samples_used": wandb.config.actual_train_images,
+        "train_percent_used": wandb.config.train_percent_used
     })
 
-
-# Hauptfunktion
 if __name__ == "__main__":
     sweep_config = load_sweep_config()
     sweep_id = wandb.sweep(sweep_config, project="2-Messungen-noTu-Tu")
     wandb.agent(sweep_id, function=train)
-

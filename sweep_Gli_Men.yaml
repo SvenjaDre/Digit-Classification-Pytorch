@@ -11,8 +11,13 @@ parameters:
     values: ["Adam"]
   dropout:
     values: [0.55]
-  train_samples:
-    values:  [2128, 1915, 1702, 1490, 1277, 1064, 851, 683, 426, 231] # Unterscheidung Glioma und Meningioma
+  train_percent:
+    values: [1.0, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2, 0.1]
+
+
+ # train_samples:
+  #  values:  []
+    #[2128, 1915, 1702, 1490, 1277, 1064, 851, 683, 426, 231] # Unterscheidung Glioma und Meningioma
     #[1775, 1848, 2012]
     
  
