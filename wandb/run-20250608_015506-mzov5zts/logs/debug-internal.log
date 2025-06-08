@@ -1,0 +1,16 @@
+{"time":"2025-06-08T01:55:06.650859824+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250608_015506-mzov5zts/logs/debug-core.log"}
+{"time":"2025-06-08T01:55:06.915002552+02:00","level":"INFO","msg":"created new stream","id":"mzov5zts"}
+{"time":"2025-06-08T01:55:06.915208585+02:00","level":"INFO","msg":"stream: started","id":"mzov5zts"}
+{"time":"2025-06-08T01:55:06.915229001+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"mzov5zts"}
+{"time":"2025-06-08T01:55:06.915231148+02:00","level":"INFO","msg":"sender: started","stream_id":"mzov5zts"}
+{"time":"2025-06-08T01:55:06.915260782+02:00","level":"INFO","msg":"handler: started","stream_id":"mzov5zts"}
+{"time":"2025-06-08T01:55:07.070191617+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-08T02:55:41.397729343+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-08T02:55:41.398186072+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-08T02:55:42.365453362+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.484228573,"progress":"883B/883B"},{"desc":"uploading Checkpoints/Data-optim-Messungen-noTu-Tu/trainpercent_1/run_3/best_model.pt","runtime_seconds":0.484217286,"progress":"706.5KB/706.5KB"}],"total_operations":2}}
+{"time":"2025-06-08T02:55:43.096684347+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-08T02:55:43.431146456+02:00","level":"INFO","msg":"stream: closing","id":"mzov5zts"}
+{"time":"2025-06-08T02:55:43.431396797+02:00","level":"INFO","msg":"handler: closed","stream_id":"mzov5zts"}
+{"time":"2025-06-08T02:55:43.431428249+02:00","level":"INFO","msg":"sender: closed","stream_id":"mzov5zts"}
+{"time":"2025-06-08T02:55:43.43142928+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"mzov5zts"}
+{"time":"2025-06-08T02:55:43.432312725+02:00","level":"INFO","msg":"stream: closed","id":"mzov5zts"}

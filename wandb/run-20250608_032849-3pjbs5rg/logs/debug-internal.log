@@ -1,0 +1,16 @@
+{"time":"2025-06-08T03:28:49.405180711+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250608_032849-3pjbs5rg/logs/debug-core.log"}
+{"time":"2025-06-08T03:28:49.951369908+02:00","level":"INFO","msg":"created new stream","id":"3pjbs5rg"}
+{"time":"2025-06-08T03:28:49.951598692+02:00","level":"INFO","msg":"stream: started","id":"3pjbs5rg"}
+{"time":"2025-06-08T03:28:49.951623043+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"3pjbs5rg"}
+{"time":"2025-06-08T03:28:49.951622644+02:00","level":"INFO","msg":"sender: started","stream_id":"3pjbs5rg"}
+{"time":"2025-06-08T03:28:49.951665914+02:00","level":"INFO","msg":"handler: started","stream_id":"3pjbs5rg"}
+{"time":"2025-06-08T03:28:50.137013913+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-08T04:07:39.183012628+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-08T04:07:39.183432591+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-08T04:07:40.184228912+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.479185046,"progress":"886B/886B"},{"desc":"uploading Checkpoints/Data-optim-Messungen-noTu-Tu/trainpercent_0.8/run_3/best_model.pt","runtime_seconds":0.148237503,"progress":"706.5KB/706.5KB"}],"total_operations":2}}
+{"time":"2025-06-08T04:07:41.082614526+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-08T04:07:41.299643215+02:00","level":"INFO","msg":"stream: closing","id":"3pjbs5rg"}
+{"time":"2025-06-08T04:07:41.299896488+02:00","level":"INFO","msg":"handler: closed","stream_id":"3pjbs5rg"}
+{"time":"2025-06-08T04:07:41.299925698+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"3pjbs5rg"}
+{"time":"2025-06-08T04:07:41.299971729+02:00","level":"INFO","msg":"sender: closed","stream_id":"3pjbs5rg"}
+{"time":"2025-06-08T04:07:41.300798784+02:00","level":"INFO","msg":"stream: closed","id":"3pjbs5rg"}

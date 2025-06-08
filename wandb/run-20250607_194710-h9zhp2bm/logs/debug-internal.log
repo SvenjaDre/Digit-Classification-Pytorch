@@ -1,0 +1,16 @@
+{"time":"2025-06-07T19:47:10.650914122+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250607_194710-h9zhp2bm/logs/debug-core.log"}
+{"time":"2025-06-07T19:47:11.97477497+02:00","level":"INFO","msg":"created new stream","id":"h9zhp2bm"}
+{"time":"2025-06-07T19:47:11.97503127+02:00","level":"INFO","msg":"stream: started","id":"h9zhp2bm"}
+{"time":"2025-06-07T19:47:11.975057709+02:00","level":"INFO","msg":"sender: started","stream_id":"h9zhp2bm"}
+{"time":"2025-06-07T19:47:11.975051099+02:00","level":"INFO","msg":"handler: started","stream_id":"h9zhp2bm"}
+{"time":"2025-06-07T19:47:11.975062427+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"h9zhp2bm"}
+{"time":"2025-06-07T19:47:12.397359759+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-07T20:07:05.252666276+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-07T20:07:05.253296538+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-07T20:07:06.216619011+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-h9zhp2bm-val_probs_labels","runtime_seconds":6.361000207,"subtasks":[{"desc":"val_probs_labels.table.json","runtime_seconds":5.554003622,"progress":"64.7KB/64.7KB"}]},{"desc":"uploading media/table/val_probs_labels_44_9458edb99da9c1175038.table.json","runtime_seconds":6.073116443,"progress":"64.4KB/64.4KB"},{"desc":"uploading output.log","runtime_seconds":0.623422043,"progress":"5.9KB/5.9KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.62340537,"progress":"1.2KB/1.2KB"},{"desc":"uploading config.yaml","runtime_seconds":0.47126826,"progress":"886B/886B"}],"total_operations":5}}
+{"time":"2025-06-07T20:07:29.233584217+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-07T20:07:29.412293523+02:00","level":"INFO","msg":"stream: closing","id":"h9zhp2bm"}
+{"time":"2025-06-07T20:07:29.412513464+02:00","level":"INFO","msg":"handler: closed","stream_id":"h9zhp2bm"}
+{"time":"2025-06-07T20:07:29.41254091+02:00","level":"INFO","msg":"sender: closed","stream_id":"h9zhp2bm"}
+{"time":"2025-06-07T20:07:29.412530004+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"h9zhp2bm"}
+{"time":"2025-06-07T20:07:29.413216481+02:00","level":"INFO","msg":"stream: closed","id":"h9zhp2bm"}

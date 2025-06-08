@@ -1,0 +1,16 @@
+{"time":"2025-06-08T01:23:04.108129964+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250608_012304-wfxn42l5/logs/debug-core.log"}
+{"time":"2025-06-08T01:23:04.484411715+02:00","level":"INFO","msg":"created new stream","id":"wfxn42l5"}
+{"time":"2025-06-08T01:23:04.484656741+02:00","level":"INFO","msg":"stream: started","id":"wfxn42l5"}
+{"time":"2025-06-08T01:23:04.484684005+02:00","level":"INFO","msg":"handler: started","stream_id":"wfxn42l5"}
+{"time":"2025-06-08T01:23:04.484682657+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"wfxn42l5"}
+{"time":"2025-06-08T01:23:04.484690919+02:00","level":"INFO","msg":"sender: started","stream_id":"wfxn42l5"}
+{"time":"2025-06-08T01:23:04.671752784+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-08T01:45:19.183659052+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-08T01:45:19.184118976+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-08T01:45:20.146185875+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading Checkpoints/Data-optim-Messungen-noTu-Tu/trainpercent_0.2/run_2/best_model.pt","runtime_seconds":0.142788519,"progress":"706.5KB/706.5KB"},{"desc":"uploading history steps 42-43, summary, console lines 44-51","runtime_seconds":0.050273421}],"total_operations":2}}
+{"time":"2025-06-08T01:45:20.668481514+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-08T01:45:20.860560072+02:00","level":"INFO","msg":"stream: closing","id":"wfxn42l5"}
+{"time":"2025-06-08T01:45:20.86080908+02:00","level":"INFO","msg":"handler: closed","stream_id":"wfxn42l5"}
+{"time":"2025-06-08T01:45:20.860832968+02:00","level":"INFO","msg":"sender: closed","stream_id":"wfxn42l5"}
+{"time":"2025-06-08T01:45:20.860824926+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"wfxn42l5"}
+{"time":"2025-06-08T01:45:20.861683558+02:00","level":"INFO","msg":"stream: closed","id":"wfxn42l5"}

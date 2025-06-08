@@ -1,0 +1,16 @@
+{"time":"2025-06-07T16:34:21.445639605+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250607_163421-asftsh7t/logs/debug-core.log"}
+{"time":"2025-06-07T16:34:23.651791085+02:00","level":"INFO","msg":"created new stream","id":"asftsh7t"}
+{"time":"2025-06-07T16:34:23.652005417+02:00","level":"INFO","msg":"stream: started","id":"asftsh7t"}
+{"time":"2025-06-07T16:34:23.652034206+02:00","level":"INFO","msg":"sender: started","stream_id":"asftsh7t"}
+{"time":"2025-06-07T16:34:23.652034082+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"asftsh7t"}
+{"time":"2025-06-07T16:34:23.652026749+02:00","level":"INFO","msg":"handler: started","stream_id":"asftsh7t"}
+{"time":"2025-06-07T16:34:23.867396588+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-07T16:53:26.552818895+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-07T16:53:26.553190562+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-07T16:53:27.553973161+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-asftsh7t-test_probs_labels","runtime_seconds":1.191422105},{"desc":"uploading artifact run-asftsh7t-test_confusion_matrix_table","runtime_seconds":1.008393741,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.353829611,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-07T16:53:29.721600948+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-07T16:53:29.919404975+02:00","level":"INFO","msg":"stream: closing","id":"asftsh7t"}
+{"time":"2025-06-07T16:53:29.919604687+02:00","level":"INFO","msg":"handler: closed","stream_id":"asftsh7t"}
+{"time":"2025-06-07T16:53:29.919616373+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"asftsh7t"}
+{"time":"2025-06-07T16:53:29.919678687+02:00","level":"INFO","msg":"sender: closed","stream_id":"asftsh7t"}
+{"time":"2025-06-07T16:53:29.920471042+02:00","level":"INFO","msg":"stream: closed","id":"asftsh7t"}

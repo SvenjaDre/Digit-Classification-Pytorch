@@ -1,0 +1,16 @@
+{"time":"2025-06-07T22:52:00.081800792+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250607_225200-2w2k8afd/logs/debug-core.log"}
+{"time":"2025-06-07T22:52:00.367161004+02:00","level":"INFO","msg":"created new stream","id":"2w2k8afd"}
+{"time":"2025-06-07T22:52:00.367450929+02:00","level":"INFO","msg":"stream: started","id":"2w2k8afd"}
+{"time":"2025-06-07T22:52:00.367467387+02:00","level":"INFO","msg":"handler: started","stream_id":"2w2k8afd"}
+{"time":"2025-06-07T22:52:00.367475996+02:00","level":"INFO","msg":"sender: started","stream_id":"2w2k8afd"}
+{"time":"2025-06-07T22:52:00.367479936+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"2w2k8afd"}
+{"time":"2025-06-07T22:52:00.546089856+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-07T23:31:45.14468232+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-07T23:31:45.145133066+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-07T23:31:46.109261246+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.631936339,"progress":"4.4KB/4.4KB"},{"desc":"uploading config.yaml","runtime_seconds":0.477935167,"progress":"886B/886B"},{"desc":"uploading Checkpoints/Data-optim-Messungen-noTu-Tu/trainpercent_0.7/run_2/best_model.pt","runtime_seconds":0.168002912,"progress":"706.5KB/706.5KB"},{"desc":"uploading history steps 31-31, summary, console lines 38-39","runtime_seconds":0.102834878}],"total_operations":4}}
+{"time":"2025-06-07T23:31:46.750462548+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-07T23:31:46.928404318+02:00","level":"INFO","msg":"stream: closing","id":"2w2k8afd"}
+{"time":"2025-06-07T23:31:46.928635343+02:00","level":"INFO","msg":"handler: closed","stream_id":"2w2k8afd"}
+{"time":"2025-06-07T23:31:46.928674973+02:00","level":"INFO","msg":"sender: closed","stream_id":"2w2k8afd"}
+{"time":"2025-06-07T23:31:46.928662245+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"2w2k8afd"}
+{"time":"2025-06-07T23:31:46.929324751+02:00","level":"INFO","msg":"stream: closed","id":"2w2k8afd"}

@@ -1,0 +1,16 @@
+{"time":"2025-06-07T20:37:26.69722782+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250607_203726-dgc068hv/logs/debug-core.log"}
+{"time":"2025-06-07T20:37:27.935565195+02:00","level":"INFO","msg":"created new stream","id":"dgc068hv"}
+{"time":"2025-06-07T20:37:27.935880897+02:00","level":"INFO","msg":"stream: started","id":"dgc068hv"}
+{"time":"2025-06-07T20:37:27.935993266+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"dgc068hv"}
+{"time":"2025-06-07T20:37:27.935990608+02:00","level":"INFO","msg":"sender: started","stream_id":"dgc068hv"}
+{"time":"2025-06-07T20:37:27.936028803+02:00","level":"INFO","msg":"handler: started","stream_id":"dgc068hv"}
+{"time":"2025-06-07T20:37:28.119347307+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-07T20:54:28.065018449+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-07T20:54:28.0653947+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-07T20:54:29.066674297+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-dgc068hv-test_probs_labels","runtime_seconds":1.194192057},{"desc":"uploading artifact run-dgc068hv-test_confusion_matrix_table","runtime_seconds":1.008275301,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.322600422,"progress":"631B/631B"}]}],"total_operations":2}}
+{"time":"2025-06-07T20:54:31.490956779+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-07T20:54:31.684631943+02:00","level":"INFO","msg":"stream: closing","id":"dgc068hv"}
+{"time":"2025-06-07T20:54:31.684850339+02:00","level":"INFO","msg":"handler: closed","stream_id":"dgc068hv"}
+{"time":"2025-06-07T20:54:31.684873686+02:00","level":"INFO","msg":"sender: closed","stream_id":"dgc068hv"}
+{"time":"2025-06-07T20:54:31.684865674+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"dgc068hv"}
+{"time":"2025-06-07T20:54:31.685622236+02:00","level":"INFO","msg":"stream: closed","id":"dgc068hv"}

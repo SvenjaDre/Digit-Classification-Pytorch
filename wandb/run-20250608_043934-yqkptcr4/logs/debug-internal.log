@@ -1,0 +1,16 @@
+{"time":"2025-06-08T04:39:34.113248428+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250608_043934-yqkptcr4/logs/debug-core.log"}
+{"time":"2025-06-08T04:39:35.748022478+02:00","level":"INFO","msg":"created new stream","id":"yqkptcr4"}
+{"time":"2025-06-08T04:39:35.748261434+02:00","level":"INFO","msg":"stream: started","id":"yqkptcr4"}
+{"time":"2025-06-08T04:39:35.748316427+02:00","level":"INFO","msg":"handler: started","stream_id":"yqkptcr4"}
+{"time":"2025-06-08T04:39:35.748309779+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"yqkptcr4"}
+{"time":"2025-06-08T04:39:35.748366356+02:00","level":"INFO","msg":"sender: started","stream_id":"yqkptcr4"}
+{"time":"2025-06-08T04:39:35.9776216+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-08T05:09:02.8573436+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-08T05:09:02.857719683+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-08T05:09:03.858721338+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.65829381,"progress":"1.2KB/1.2KB"},{"desc":"uploading config.yaml","runtime_seconds":0.493620519,"progress":"886B/886B"},{"desc":"uploading Checkpoints/Data-optim-Messungen-noTu-Tu/trainpercent_0.6/run_3/best_model.pt","runtime_seconds":0.113160797,"progress":"706.5KB/706.5KB"}],"total_operations":3}}
+{"time":"2025-06-08T05:09:04.713596173+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-08T05:09:04.932736831+02:00","level":"INFO","msg":"stream: closing","id":"yqkptcr4"}
+{"time":"2025-06-08T05:09:04.932956614+02:00","level":"INFO","msg":"handler: closed","stream_id":"yqkptcr4"}
+{"time":"2025-06-08T05:09:04.932996646+02:00","level":"INFO","msg":"sender: closed","stream_id":"yqkptcr4"}
+{"time":"2025-06-08T05:09:04.932982784+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"yqkptcr4"}
+{"time":"2025-06-08T05:09:04.933827747+02:00","level":"INFO","msg":"stream: closed","id":"yqkptcr4"}
