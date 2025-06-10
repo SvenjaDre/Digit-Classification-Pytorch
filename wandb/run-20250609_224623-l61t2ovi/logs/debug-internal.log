@@ -1,0 +1,16 @@
+{"time":"2025-06-09T22:46:23.531355663+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250609_224623-l61t2ovi/logs/debug-core.log"}
+{"time":"2025-06-09T22:46:23.807894734+02:00","level":"INFO","msg":"created new stream","id":"l61t2ovi"}
+{"time":"2025-06-09T22:46:23.808126716+02:00","level":"INFO","msg":"stream: started","id":"l61t2ovi"}
+{"time":"2025-06-09T22:46:23.808155728+02:00","level":"INFO","msg":"sender: started","stream_id":"l61t2ovi"}
+{"time":"2025-06-09T22:46:23.808173612+02:00","level":"INFO","msg":"handler: started","stream_id":"l61t2ovi"}
+{"time":"2025-06-09T22:46:23.808151828+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"l61t2ovi"}
+{"time":"2025-06-09T22:46:23.965015698+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-09T22:53:23.485132266+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-09T22:53:23.485550166+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-09T22:53:24.486358161+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-l61t2ovi-test_probs_labels","runtime_seconds":1.166746176},{"desc":"uploading artifact run-l61t2ovi-test_confusion_matrix_table","runtime_seconds":1.009082267},{"desc":"uploading history steps 20-21, summary, console lines 21-28","runtime_seconds":0.06673052}],"total_operations":3}}
+{"time":"2025-06-09T22:53:26.988389179+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-09T22:53:27.155995965+02:00","level":"INFO","msg":"stream: closing","id":"l61t2ovi"}
+{"time":"2025-06-09T22:53:27.156194552+02:00","level":"INFO","msg":"handler: closed","stream_id":"l61t2ovi"}
+{"time":"2025-06-09T22:53:27.156207986+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"l61t2ovi"}
+{"time":"2025-06-09T22:53:27.156226219+02:00","level":"INFO","msg":"sender: closed","stream_id":"l61t2ovi"}
+{"time":"2025-06-09T22:53:27.157042749+02:00","level":"INFO","msg":"stream: closed","id":"l61t2ovi"}

@@ -1,0 +1,17 @@
+{"time":"2025-06-10T00:02:20.206387315+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250610_000220-dtxe22ww/logs/debug-core.log"}
+{"time":"2025-06-10T00:02:22.59127566+02:00","level":"INFO","msg":"created new stream","id":"dtxe22ww"}
+{"time":"2025-06-10T00:02:22.591573373+02:00","level":"INFO","msg":"stream: started","id":"dtxe22ww"}
+{"time":"2025-06-10T00:02:22.59159992+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"dtxe22ww"}
+{"time":"2025-06-10T00:02:22.591640015+02:00","level":"INFO","msg":"sender: started","stream_id":"dtxe22ww"}
+{"time":"2025-06-10T00:02:22.591654909+02:00","level":"INFO","msg":"handler: started","stream_id":"dtxe22ww"}
+{"time":"2025-06-10T00:02:22.799606902+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-10T00:15:38.004849555+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-06-10T00:17:49.25871209+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-10T00:17:49.259426067+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-10T00:17:50.221960185+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading Checkpoints/Data-optim-Messungen-noTu-Tu/trainpercent_0.4/run_6/best_model.pt","runtime_seconds":0.155067692,"progress":"706.5KB/706.5KB"}],"total_operations":1}}
+{"time":"2025-06-10T00:17:50.994657345+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-10T00:17:51.230774979+02:00","level":"INFO","msg":"stream: closing","id":"dtxe22ww"}
+{"time":"2025-06-10T00:17:51.231006909+02:00","level":"INFO","msg":"handler: closed","stream_id":"dtxe22ww"}
+{"time":"2025-06-10T00:17:51.231034491+02:00","level":"INFO","msg":"sender: closed","stream_id":"dtxe22ww"}
+{"time":"2025-06-10T00:17:51.231029421+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"dtxe22ww"}
+{"time":"2025-06-10T00:17:51.23171352+02:00","level":"INFO","msg":"stream: closed","id":"dtxe22ww"}

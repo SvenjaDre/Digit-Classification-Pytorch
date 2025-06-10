@@ -1,0 +1,16 @@
+{"time":"2025-06-09T21:25:26.894801135+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250609_212526-tbxrst50/logs/debug-core.log"}
+{"time":"2025-06-09T21:25:27.543063405+02:00","level":"INFO","msg":"created new stream","id":"tbxrst50"}
+{"time":"2025-06-09T21:25:27.543327603+02:00","level":"INFO","msg":"stream: started","id":"tbxrst50"}
+{"time":"2025-06-09T21:25:27.543352645+02:00","level":"INFO","msg":"sender: started","stream_id":"tbxrst50"}
+{"time":"2025-06-09T21:25:27.543355854+02:00","level":"INFO","msg":"handler: started","stream_id":"tbxrst50"}
+{"time":"2025-06-09T21:25:27.54336383+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"tbxrst50"}
+{"time":"2025-06-09T21:25:27.741379124+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-09T21:32:43.697125499+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-09T21:32:43.697508752+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-09T21:32:44.698838841+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-tbxrst50-test_probs_labels","runtime_seconds":1.19762124},{"desc":"uploading artifact run-tbxrst50-test_confusion_matrix_table","runtime_seconds":1.008821552}],"total_operations":2}}
+{"time":"2025-06-09T21:32:46.712791523+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-09T21:32:46.961500315+02:00","level":"INFO","msg":"stream: closing","id":"tbxrst50"}
+{"time":"2025-06-09T21:32:46.96170792+02:00","level":"INFO","msg":"handler: closed","stream_id":"tbxrst50"}
+{"time":"2025-06-09T21:32:46.961723518+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"tbxrst50"}
+{"time":"2025-06-09T21:32:46.961741323+02:00","level":"INFO","msg":"sender: closed","stream_id":"tbxrst50"}
+{"time":"2025-06-09T21:32:46.962441559+02:00","level":"INFO","msg":"stream: closed","id":"tbxrst50"}

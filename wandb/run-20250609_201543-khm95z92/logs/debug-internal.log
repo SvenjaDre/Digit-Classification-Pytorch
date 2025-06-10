@@ -1,0 +1,16 @@
+{"time":"2025-06-09T20:15:43.736616811+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250609_201543-khm95z92/logs/debug-core.log"}
+{"time":"2025-06-09T20:15:44.008079138+02:00","level":"INFO","msg":"created new stream","id":"khm95z92"}
+{"time":"2025-06-09T20:15:44.008364121+02:00","level":"INFO","msg":"stream: started","id":"khm95z92"}
+{"time":"2025-06-09T20:15:44.00839269+02:00","level":"INFO","msg":"sender: started","stream_id":"khm95z92"}
+{"time":"2025-06-09T20:15:44.008395915+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"khm95z92"}
+{"time":"2025-06-09T20:15:44.00839389+02:00","level":"INFO","msg":"handler: started","stream_id":"khm95z92"}
+{"time":"2025-06-09T20:15:44.20551991+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-09T20:24:23.107408463+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-09T20:24:23.107819916+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-09T20:24:24.108499791+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-khm95z92-test_probs_labels","runtime_seconds":1.189434128},{"desc":"uploading artifact run-khm95z92-test_confusion_matrix_table","runtime_seconds":1.009099233,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.345895071,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-09T20:24:26.282676443+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-09T20:24:26.490494381+02:00","level":"INFO","msg":"stream: closing","id":"khm95z92"}
+{"time":"2025-06-09T20:24:26.490713498+02:00","level":"INFO","msg":"handler: closed","stream_id":"khm95z92"}
+{"time":"2025-06-09T20:24:26.490738583+02:00","level":"INFO","msg":"sender: closed","stream_id":"khm95z92"}
+{"time":"2025-06-09T20:24:26.490730289+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"khm95z92"}
+{"time":"2025-06-09T20:24:26.491436124+02:00","level":"INFO","msg":"stream: closed","id":"khm95z92"}

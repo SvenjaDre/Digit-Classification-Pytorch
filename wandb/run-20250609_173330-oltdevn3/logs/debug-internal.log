@@ -1,0 +1,16 @@
+{"time":"2025-06-09T17:33:30.765884728+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250609_173330-oltdevn3/logs/debug-core.log"}
+{"time":"2025-06-09T17:33:31.036164499+02:00","level":"INFO","msg":"created new stream","id":"oltdevn3"}
+{"time":"2025-06-09T17:33:31.036395321+02:00","level":"INFO","msg":"stream: started","id":"oltdevn3"}
+{"time":"2025-06-09T17:33:31.036413768+02:00","level":"INFO","msg":"sender: started","stream_id":"oltdevn3"}
+{"time":"2025-06-09T17:33:31.036415109+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"oltdevn3"}
+{"time":"2025-06-09T17:33:31.036433144+02:00","level":"INFO","msg":"handler: started","stream_id":"oltdevn3"}
+{"time":"2025-06-09T17:33:31.217076329+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-09T17:37:13.227279648+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-09T17:37:13.22766165+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-09T17:37:14.228432335+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-oltdevn3-test_probs_labels","runtime_seconds":1.195199981},{"desc":"uploading artifact run-oltdevn3-test_confusion_matrix_table","runtime_seconds":1.008023749,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.082578732,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-09T17:37:16.804169143+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-09T17:37:17.096423985+02:00","level":"INFO","msg":"stream: closing","id":"oltdevn3"}
+{"time":"2025-06-09T17:37:17.096696244+02:00","level":"INFO","msg":"handler: closed","stream_id":"oltdevn3"}
+{"time":"2025-06-09T17:37:17.096718224+02:00","level":"INFO","msg":"sender: closed","stream_id":"oltdevn3"}
+{"time":"2025-06-09T17:37:17.096706987+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"oltdevn3"}
+{"time":"2025-06-09T17:37:17.097523421+02:00","level":"INFO","msg":"stream: closed","id":"oltdevn3"}

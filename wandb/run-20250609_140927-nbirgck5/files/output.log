@@ -1,0 +1,30 @@
+📊 Training with 105 glioma and 1072 meningioma samples.
+Epoch 1 | Train Loss: 0.3084 | Val Loss: 1.4373 | Val Acc: 50.28% | Sens: 1.00 | Spec: 0.00 | AUC: 0.81
+Epoch 2 | Train Loss: 0.2612 | Val Loss: 1.7164 | Val Acc: 50.28% | Sens: 1.00 | Spec: 0.00 | AUC: 0.83
+Epoch 3 | Train Loss: 0.2275 | Val Loss: 0.9293 | Val Acc: 50.47% | Sens: 1.00 | Spec: 0.00 | AUC: 0.84
+Epoch 4 | Train Loss: 0.1987 | Val Loss: 0.9961 | Val Acc: 61.02% | Sens: 0.99 | Spec: 0.22 | AUC: 0.86
+Epoch 5 | Train Loss: 0.1909 | Val Loss: 0.7733 | Val Acc: 61.21% | Sens: 0.99 | Spec: 0.23 | AUC: 0.87
+Epoch 6 | Train Loss: 0.1811 | Val Loss: 0.9545 | Val Acc: 55.37% | Sens: 0.99 | Spec: 0.11 | AUC: 0.88
+Epoch 7 | Train Loss: 0.1815 | Val Loss: 1.0306 | Val Acc: 61.02% | Sens: 1.00 | Spec: 0.22 | AUC: 0.88
+Epoch 8 | Train Loss: 0.1642 | Val Loss: 0.8814 | Val Acc: 63.09% | Sens: 0.99 | Spec: 0.27 | AUC: 0.88
+Epoch 9 | Train Loss: 0.1474 | Val Loss: 1.0531 | Val Acc: 66.48% | Sens: 1.00 | Spec: 0.33 | AUC: 0.88
+Epoch 10 | Train Loss: 0.1359 | Val Loss: 0.9760 | Val Acc: 70.62% | Sens: 0.99 | Spec: 0.42 | AUC: 0.89
+Epoch 11 | Train Loss: 0.1109 | Val Loss: 1.2262 | Val Acc: 66.29% | Sens: 1.00 | Spec: 0.33 | AUC: 0.89
+Epoch 12 | Train Loss: 0.1193 | Val Loss: 0.6632 | Val Acc: 78.91% | Sens: 0.98 | Spec: 0.60 | AUC: 0.89
+Epoch 13 | Train Loss: 0.0982 | Val Loss: 0.9575 | Val Acc: 74.76% | Sens: 0.99 | Spec: 0.50 | AUC: 0.89
+Epoch 14 | Train Loss: 0.0795 | Val Loss: 1.4726 | Val Acc: 69.68% | Sens: 1.00 | Spec: 0.39 | AUC: 0.89
+Epoch 15 | Train Loss: 0.0954 | Val Loss: 1.3145 | Val Acc: 67.80% | Sens: 1.00 | Spec: 0.36 | AUC: 0.89
+Epoch 16 | Train Loss: 0.0774 | Val Loss: 1.2324 | Val Acc: 71.37% | Sens: 0.99 | Spec: 0.43 | AUC: 0.90
+Epoch 17 | Train Loss: 0.0815 | Val Loss: 1.6163 | Val Acc: 68.36% | Sens: 1.00 | Spec: 0.37 | AUC: 0.90
+Epoch 18 | Train Loss: 0.0731 | Val Loss: 1.1689 | Val Acc: 75.52% | Sens: 0.99 | Spec: 0.52 | AUC: 0.90
+Epoch 19 | Train Loss: 0.0549 | Val Loss: 1.6028 | Val Acc: 70.62% | Sens: 1.00 | Spec: 0.41 | AUC: 0.90
+Epoch 20 | Train Loss: 0.0667 | Val Loss: 0.9261 | Val Acc: 79.10% | Sens: 0.97 | Spec: 0.61 | AUC: 0.90
+Epoch 21 | Train Loss: 0.0506 | Val Loss: 0.9705 | Val Acc: 80.04% | Sens: 0.98 | Spec: 0.62 | AUC: 0.90
+Epoch 22 | Train Loss: 0.0527 | Val Loss: 0.8953 | Val Acc: 81.36% | Sens: 0.96 | Spec: 0.66 | AUC: 0.90
+⏹️ Early stopping after 22 epochs.
+
+🔍 Testing on separate test set...
+/nfs/homes/sdreyer/Digit-Classification-Pytorch/Class_reduce_Gli.py:248: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  classifier.load_state_dict(torch.load(model_path, map_location=device))
+✅ Correct: 463 | ❌ Incorrect: 143 | 🎯 Accuracy: 76.40%
+Sens: 0.97 | Spec: 0.56 | AUC: 0.89

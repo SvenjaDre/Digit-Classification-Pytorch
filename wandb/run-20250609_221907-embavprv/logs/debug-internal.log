@@ -1,0 +1,16 @@
+{"time":"2025-06-09T22:19:07.762899928+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250609_221907-embavprv/logs/debug-core.log"}
+{"time":"2025-06-09T22:19:08.040133809+02:00","level":"INFO","msg":"created new stream","id":"embavprv"}
+{"time":"2025-06-09T22:19:08.040395085+02:00","level":"INFO","msg":"stream: started","id":"embavprv"}
+{"time":"2025-06-09T22:19:08.040419959+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"embavprv"}
+{"time":"2025-06-09T22:19:08.040423103+02:00","level":"INFO","msg":"handler: started","stream_id":"embavprv"}
+{"time":"2025-06-09T22:19:08.040431915+02:00","level":"INFO","msg":"sender: started","stream_id":"embavprv"}
+{"time":"2025-06-09T22:19:08.233228719+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-09T22:29:29.389614925+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-09T22:29:29.390008173+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-09T22:29:30.396478328+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-embavprv-test_probs_labels","runtime_seconds":1.206930769},{"desc":"uploading artifact run-embavprv-test_confusion_matrix_table","runtime_seconds":1.013913713,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.232639248,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-09T22:29:32.593427652+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-09T22:29:32.805641739+02:00","level":"INFO","msg":"stream: closing","id":"embavprv"}
+{"time":"2025-06-09T22:29:32.805859739+02:00","level":"INFO","msg":"handler: closed","stream_id":"embavprv"}
+{"time":"2025-06-09T22:29:32.805873379+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"embavprv"}
+{"time":"2025-06-09T22:29:32.805883923+02:00","level":"INFO","msg":"sender: closed","stream_id":"embavprv"}
+{"time":"2025-06-09T22:29:32.806622858+02:00","level":"INFO","msg":"stream: closed","id":"embavprv"}

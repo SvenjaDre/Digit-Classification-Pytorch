@@ -1,0 +1,16 @@
+{"time":"2025-06-09T15:51:16.25489398+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250609_155116-frt5kimj/logs/debug-core.log"}
+{"time":"2025-06-09T15:51:16.528779768+02:00","level":"INFO","msg":"created new stream","id":"frt5kimj"}
+{"time":"2025-06-09T15:51:16.529006109+02:00","level":"INFO","msg":"stream: started","id":"frt5kimj"}
+{"time":"2025-06-09T15:51:16.529025021+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"frt5kimj"}
+{"time":"2025-06-09T15:51:16.529025853+02:00","level":"INFO","msg":"sender: started","stream_id":"frt5kimj"}
+{"time":"2025-06-09T15:51:16.529042939+02:00","level":"INFO","msg":"handler: started","stream_id":"frt5kimj"}
+{"time":"2025-06-09T15:51:16.947090661+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-09T15:56:26.550422523+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-09T15:56:26.550795564+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-09T15:56:27.55564131+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-frt5kimj-test_probs_labels","runtime_seconds":1.211851877},{"desc":"uploading artifact run-frt5kimj-test_confusion_matrix_table","runtime_seconds":1.013038145}],"total_operations":2}}
+{"time":"2025-06-09T15:56:30.123890432+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-09T15:56:30.333728284+02:00","level":"INFO","msg":"stream: closing","id":"frt5kimj"}
+{"time":"2025-06-09T15:56:30.33400011+02:00","level":"INFO","msg":"handler: closed","stream_id":"frt5kimj"}
+{"time":"2025-06-09T15:56:30.334015501+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"frt5kimj"}
+{"time":"2025-06-09T15:56:30.334077389+02:00","level":"INFO","msg":"sender: closed","stream_id":"frt5kimj"}
+{"time":"2025-06-09T15:56:30.334887129+02:00","level":"INFO","msg":"stream: closed","id":"frt5kimj"}

@@ -1,0 +1,16 @@
+{"time":"2025-06-09T18:40:40.330432376+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250609_184040-fildgvml/logs/debug-core.log"}
+{"time":"2025-06-09T18:40:40.603725829+02:00","level":"INFO","msg":"created new stream","id":"fildgvml"}
+{"time":"2025-06-09T18:40:40.603944042+02:00","level":"INFO","msg":"stream: started","id":"fildgvml"}
+{"time":"2025-06-09T18:40:40.603965009+02:00","level":"INFO","msg":"handler: started","stream_id":"fildgvml"}
+{"time":"2025-06-09T18:40:40.603968815+02:00","level":"INFO","msg":"sender: started","stream_id":"fildgvml"}
+{"time":"2025-06-09T18:40:40.603972288+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"fildgvml"}
+{"time":"2025-06-09T18:40:40.817133727+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-09T18:48:57.37327878+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-09T18:48:57.373684309+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-09T18:48:58.374604067+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-fildgvml-test_probs_labels","runtime_seconds":1.204373545},{"desc":"uploading artifact run-fildgvml-test_confusion_matrix_table","runtime_seconds":1.008346675,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.391379943,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-09T18:49:00.989292412+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-09T18:49:01.193959008+02:00","level":"INFO","msg":"stream: closing","id":"fildgvml"}
+{"time":"2025-06-09T18:49:01.194197584+02:00","level":"INFO","msg":"handler: closed","stream_id":"fildgvml"}
+{"time":"2025-06-09T18:49:01.194214477+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"fildgvml"}
+{"time":"2025-06-09T18:49:01.194238144+02:00","level":"INFO","msg":"sender: closed","stream_id":"fildgvml"}
+{"time":"2025-06-09T18:49:01.194992463+02:00","level":"INFO","msg":"stream: closed","id":"fildgvml"}

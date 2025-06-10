@@ -1,0 +1,17 @@
+{"time":"2025-06-09T13:45:05.648118617+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250609_134505-r5h8t9cb/logs/debug-core.log"}
+{"time":"2025-06-09T13:45:05.917968044+02:00","level":"INFO","msg":"created new stream","id":"r5h8t9cb"}
+{"time":"2025-06-09T13:45:05.918183832+02:00","level":"INFO","msg":"stream: started","id":"r5h8t9cb"}
+{"time":"2025-06-09T13:45:05.918201537+02:00","level":"INFO","msg":"sender: started","stream_id":"r5h8t9cb"}
+{"time":"2025-06-09T13:45:05.918203706+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"r5h8t9cb"}
+{"time":"2025-06-09T13:45:05.918226919+02:00","level":"INFO","msg":"handler: started","stream_id":"r5h8t9cb"}
+{"time":"2025-06-09T13:45:06.11093876+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-09T14:33:06.391270649+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 129.217.167.99:42134->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-06-09T14:33:43.121155844+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-09T14:33:43.121583964+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-09T14:33:44.127339278+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading Checkpoints/Data-optim-Messungen-noTu-Tu/trainpercent_1/run_5/best_model.pt","runtime_seconds":0.319357335,"progress":"706.5KB/706.5KB"}],"total_operations":1}}
+{"time":"2025-06-09T14:33:44.659961172+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-09T14:33:44.979048486+02:00","level":"INFO","msg":"stream: closing","id":"r5h8t9cb"}
+{"time":"2025-06-09T14:33:44.979268209+02:00","level":"INFO","msg":"handler: closed","stream_id":"r5h8t9cb"}
+{"time":"2025-06-09T14:33:44.979301004+02:00","level":"INFO","msg":"sender: closed","stream_id":"r5h8t9cb"}
+{"time":"2025-06-09T14:33:44.979280378+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"r5h8t9cb"}
+{"time":"2025-06-09T14:33:44.980117201+02:00","level":"INFO","msg":"stream: closed","id":"r5h8t9cb"}

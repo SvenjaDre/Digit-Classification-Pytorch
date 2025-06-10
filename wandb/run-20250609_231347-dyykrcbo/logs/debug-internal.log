@@ -1,0 +1,16 @@
+{"time":"2025-06-09T23:13:47.14879723+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250609_231347-dyykrcbo/logs/debug-core.log"}
+{"time":"2025-06-09T23:13:48.818554397+02:00","level":"INFO","msg":"created new stream","id":"dyykrcbo"}
+{"time":"2025-06-09T23:13:48.818829714+02:00","level":"INFO","msg":"stream: started","id":"dyykrcbo"}
+{"time":"2025-06-09T23:13:48.81886377+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"dyykrcbo"}
+{"time":"2025-06-09T23:13:48.818863365+02:00","level":"INFO","msg":"sender: started","stream_id":"dyykrcbo"}
+{"time":"2025-06-09T23:13:48.818880192+02:00","level":"INFO","msg":"handler: started","stream_id":"dyykrcbo"}
+{"time":"2025-06-09T23:13:49.084571574+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-09T23:19:03.578650404+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-09T23:19:03.579072989+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-09T23:19:04.579729458+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-dyykrcbo-test_probs_labels","runtime_seconds":1.191311741},{"desc":"uploading artifact run-dyykrcbo-test_confusion_matrix_table","runtime_seconds":1.011588771,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.033540833,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-09T23:19:06.973686052+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-09T23:19:07.148978209+02:00","level":"INFO","msg":"stream: closing","id":"dyykrcbo"}
+{"time":"2025-06-09T23:19:07.149191787+02:00","level":"INFO","msg":"handler: closed","stream_id":"dyykrcbo"}
+{"time":"2025-06-09T23:19:07.149220839+02:00","level":"INFO","msg":"sender: closed","stream_id":"dyykrcbo"}
+{"time":"2025-06-09T23:19:07.149211523+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"dyykrcbo"}
+{"time":"2025-06-09T23:19:07.149980468+02:00","level":"INFO","msg":"stream: closed","id":"dyykrcbo"}

@@ -1,0 +1,16 @@
+{"time":"2025-06-09T16:57:01.777873378+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250609_165701-mx23zstc/logs/debug-core.log"}
+{"time":"2025-06-09T16:57:03.26870399+02:00","level":"INFO","msg":"created new stream","id":"mx23zstc"}
+{"time":"2025-06-09T16:57:03.268923698+02:00","level":"INFO","msg":"stream: started","id":"mx23zstc"}
+{"time":"2025-06-09T16:57:03.268952673+02:00","level":"INFO","msg":"handler: started","stream_id":"mx23zstc"}
+{"time":"2025-06-09T16:57:03.268959892+02:00","level":"INFO","msg":"sender: started","stream_id":"mx23zstc"}
+{"time":"2025-06-09T16:57:03.268950978+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"mx23zstc"}
+{"time":"2025-06-09T16:57:03.625398725+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-09T17:04:29.791692223+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-09T17:04:29.792093118+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-09T17:04:30.793414916+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-mx23zstc-test_probs_labels","runtime_seconds":1.197890667},{"desc":"uploading artifact run-mx23zstc-test_confusion_matrix_table","runtime_seconds":1.008869134,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.208114469,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-09T17:04:33.330341649+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-09T17:04:33.571533846+02:00","level":"INFO","msg":"stream: closing","id":"mx23zstc"}
+{"time":"2025-06-09T17:04:33.571749861+02:00","level":"INFO","msg":"handler: closed","stream_id":"mx23zstc"}
+{"time":"2025-06-09T17:04:33.571765748+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"mx23zstc"}
+{"time":"2025-06-09T17:04:33.571830741+02:00","level":"INFO","msg":"sender: closed","stream_id":"mx23zstc"}
+{"time":"2025-06-09T17:04:33.572538256+02:00","level":"INFO","msg":"stream: closed","id":"mx23zstc"}

@@ -1,0 +1,35 @@
+📊 Training with 951 glioma and 1072 meningioma samples.
+Epoch 1 | Train Loss: 0.5770 | Val Loss: 0.4728 | Val Acc: 78.53% | Sens: 0.77 | Spec: 0.80 | AUC: 0.86
+Epoch 2 | Train Loss: 0.4552 | Val Loss: 0.4595 | Val Acc: 78.53% | Sens: 0.90 | Spec: 0.67 | AUC: 0.88
+Epoch 3 | Train Loss: 0.3875 | Val Loss: 0.3957 | Val Acc: 81.92% | Sens: 0.81 | Spec: 0.83 | AUC: 0.90
+Epoch 4 | Train Loss: 0.3492 | Val Loss: 0.3891 | Val Acc: 81.17% | Sens: 0.74 | Spec: 0.89 | AUC: 0.92
+Epoch 5 | Train Loss: 0.3141 | Val Loss: 0.3601 | Val Acc: 84.18% | Sens: 0.79 | Spec: 0.89 | AUC: 0.92
+Epoch 6 | Train Loss: 0.2783 | Val Loss: 0.3327 | Val Acc: 85.88% | Sens: 0.90 | Spec: 0.82 | AUC: 0.93
+Epoch 7 | Train Loss: 0.2486 | Val Loss: 0.3934 | Val Acc: 84.93% | Sens: 0.99 | Spec: 0.71 | AUC: 0.94
+Epoch 8 | Train Loss: 0.2426 | Val Loss: 0.4556 | Val Acc: 84.37% | Sens: 0.97 | Spec: 0.72 | AUC: 0.93
+Epoch 9 | Train Loss: 0.2097 | Val Loss: 0.3083 | Val Acc: 88.89% | Sens: 0.88 | Spec: 0.89 | AUC: 0.95
+Epoch 10 | Train Loss: 0.2012 | Val Loss: 0.3031 | Val Acc: 90.02% | Sens: 0.95 | Spec: 0.85 | AUC: 0.95
+Epoch 11 | Train Loss: 0.1965 | Val Loss: 0.3298 | Val Acc: 89.64% | Sens: 0.97 | Spec: 0.82 | AUC: 0.95
+Epoch 12 | Train Loss: 0.1588 | Val Loss: 0.2840 | Val Acc: 90.77% | Sens: 0.93 | Spec: 0.89 | AUC: 0.95
+Epoch 13 | Train Loss: 0.1389 | Val Loss: 0.2691 | Val Acc: 91.15% | Sens: 0.94 | Spec: 0.89 | AUC: 0.96
+Epoch 14 | Train Loss: 0.1294 | Val Loss: 0.3315 | Val Acc: 89.27% | Sens: 0.97 | Spec: 0.81 | AUC: 0.96
+Epoch 15 | Train Loss: 0.1238 | Val Loss: 0.2983 | Val Acc: 91.15% | Sens: 0.93 | Spec: 0.90 | AUC: 0.96
+Epoch 16 | Train Loss: 0.1109 | Val Loss: 0.3179 | Val Acc: 90.40% | Sens: 0.98 | Spec: 0.83 | AUC: 0.96
+Epoch 17 | Train Loss: 0.1010 | Val Loss: 0.3653 | Val Acc: 90.40% | Sens: 0.97 | Spec: 0.84 | AUC: 0.96
+Epoch 18 | Train Loss: 0.1017 | Val Loss: 0.3712 | Val Acc: 90.58% | Sens: 0.97 | Spec: 0.84 | AUC: 0.95
+Epoch 19 | Train Loss: 0.0939 | Val Loss: 0.4614 | Val Acc: 89.08% | Sens: 0.99 | Spec: 0.79 | AUC: 0.96
+Epoch 20 | Train Loss: 0.0799 | Val Loss: 0.3079 | Val Acc: 92.66% | Sens: 0.93 | Spec: 0.92 | AUC: 0.96
+Epoch 21 | Train Loss: 0.0902 | Val Loss: 0.2603 | Val Acc: 92.84% | Sens: 0.93 | Spec: 0.92 | AUC: 0.97
+Epoch 22 | Train Loss: 0.0663 | Val Loss: 0.2942 | Val Acc: 92.66% | Sens: 0.96 | Spec: 0.90 | AUC: 0.96
+Epoch 23 | Train Loss: 0.0523 | Val Loss: 0.3627 | Val Acc: 91.71% | Sens: 0.98 | Spec: 0.85 | AUC: 0.97
+Epoch 24 | Train Loss: 0.0542 | Val Loss: 0.3498 | Val Acc: 91.71% | Sens: 0.96 | Spec: 0.87 | AUC: 0.96
+Epoch 25 | Train Loss: 0.0576 | Val Loss: 0.3072 | Val Acc: 93.03% | Sens: 0.97 | Spec: 0.89 | AUC: 0.97
+Epoch 26 | Train Loss: 0.0555 | Val Loss: 0.3931 | Val Acc: 90.40% | Sens: 0.98 | Spec: 0.83 | AUC: 0.96
+Epoch 27 | Train Loss: 0.0396 | Val Loss: 0.4065 | Val Acc: 92.09% | Sens: 0.98 | Spec: 0.86 | AUC: 0.96
+Epoch 28 | Train Loss: 0.0439 | Val Loss: 0.3708 | Val Acc: 91.90% | Sens: 0.97 | Spec: 0.86 | AUC: 0.97
+Epoch 29 | Train Loss: 0.0421 | Val Loss: 0.3743 | Val Acc: 93.41% | Sens: 0.97 | Spec: 0.89 | AUC: 0.96
+Epoch 30 | Train Loss: 0.0304 | Val Loss: 0.3789 | Val Acc: 93.97% | Sens: 0.95 | Spec: 0.93 | AUC: 0.97
+Epoch 31 | Train Loss: 0.0405 | Val Loss: 0.4839 | Val Acc: 91.53% | Sens: 0.98 | Spec: 0.85 | AUC: 0.96
+⏹️ Early stopping after 31 epochs.
+
+🔍 Testing on separate test set...

@@ -1,0 +1,16 @@
+{"time":"2025-06-09T22:53:31.670147821+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250609_225331-elkygakn/logs/debug-core.log"}
+{"time":"2025-06-09T22:53:32.264740709+02:00","level":"INFO","msg":"created new stream","id":"elkygakn"}
+{"time":"2025-06-09T22:53:32.26497006+02:00","level":"INFO","msg":"stream: started","id":"elkygakn"}
+{"time":"2025-06-09T22:53:32.264990332+02:00","level":"INFO","msg":"handler: started","stream_id":"elkygakn"}
+{"time":"2025-06-09T22:53:32.265002181+02:00","level":"INFO","msg":"sender: started","stream_id":"elkygakn"}
+{"time":"2025-06-09T22:53:32.265011892+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"elkygakn"}
+{"time":"2025-06-09T22:53:32.44811584+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-09T23:00:42.621569899+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-09T23:00:42.621976085+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-09T23:00:43.623382452+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-elkygakn-test_probs_labels","runtime_seconds":1.181449945},{"desc":"uploading artifact run-elkygakn-test_confusion_matrix_table","runtime_seconds":1.009266619,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.231132744,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-09T23:00:45.800705418+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-09T23:00:46.02157453+02:00","level":"INFO","msg":"stream: closing","id":"elkygakn"}
+{"time":"2025-06-09T23:00:46.021865648+02:00","level":"INFO","msg":"handler: closed","stream_id":"elkygakn"}
+{"time":"2025-06-09T23:00:46.021897884+02:00","level":"INFO","msg":"sender: closed","stream_id":"elkygakn"}
+{"time":"2025-06-09T23:00:46.0218855+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"elkygakn"}
+{"time":"2025-06-09T23:00:46.022686103+02:00","level":"INFO","msg":"stream: closed","id":"elkygakn"}

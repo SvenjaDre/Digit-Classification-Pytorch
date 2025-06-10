@@ -1,0 +1,16 @@
+{"time":"2025-06-09T14:03:11.45296265+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250609_140311-lu2vaaho/logs/debug-core.log"}
+{"time":"2025-06-09T14:03:11.724842311+02:00","level":"INFO","msg":"created new stream","id":"lu2vaaho"}
+{"time":"2025-06-09T14:03:11.725066805+02:00","level":"INFO","msg":"stream: started","id":"lu2vaaho"}
+{"time":"2025-06-09T14:03:11.725083692+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"lu2vaaho"}
+{"time":"2025-06-09T14:03:11.725091846+02:00","level":"INFO","msg":"handler: started","stream_id":"lu2vaaho"}
+{"time":"2025-06-09T14:03:11.725098822+02:00","level":"INFO","msg":"sender: started","stream_id":"lu2vaaho"}
+{"time":"2025-06-09T14:03:11.914762017+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-09T14:06:17.936323431+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-09T14:06:17.936690597+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-09T14:06:18.93761934+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-lu2vaaho-test_probs_labels","runtime_seconds":1.195940045},{"desc":"uploading artifact run-lu2vaaho-test_confusion_matrix_table","runtime_seconds":1.007597719,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.320608895,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-09T14:06:20.975182643+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-09T14:06:21.209836892+02:00","level":"INFO","msg":"stream: closing","id":"lu2vaaho"}
+{"time":"2025-06-09T14:06:21.210048129+02:00","level":"INFO","msg":"handler: closed","stream_id":"lu2vaaho"}
+{"time":"2025-06-09T14:06:21.210070913+02:00","level":"INFO","msg":"sender: closed","stream_id":"lu2vaaho"}
+{"time":"2025-06-09T14:06:21.21006119+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"lu2vaaho"}
+{"time":"2025-06-09T14:06:21.210902225+02:00","level":"INFO","msg":"stream: closed","id":"lu2vaaho"}

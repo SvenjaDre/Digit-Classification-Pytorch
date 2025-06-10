@@ -1,0 +1,36 @@
+📊 Training with 211 glioma and 1072 meningioma samples.
+Epoch 1 | Train Loss: 0.4448 | Val Loss: 0.7915 | Val Acc: 50.28% | Sens: 1.00 | Spec: 0.00 | AUC: 0.81
+Epoch 2 | Train Loss: 0.3564 | Val Loss: 0.7640 | Val Acc: 58.00% | Sens: 0.99 | Spec: 0.16 | AUC: 0.84
+Epoch 3 | Train Loss: 0.3069 | Val Loss: 0.7222 | Val Acc: 68.74% | Sens: 0.96 | Spec: 0.41 | AUC: 0.85
+Epoch 4 | Train Loss: 0.3007 | Val Loss: 0.8508 | Val Acc: 63.09% | Sens: 0.99 | Spec: 0.27 | AUC: 0.87
+Epoch 5 | Train Loss: 0.2689 | Val Loss: 0.4852 | Val Acc: 78.72% | Sens: 0.92 | Spec: 0.65 | AUC: 0.88
+Epoch 6 | Train Loss: 0.2423 | Val Loss: 0.8684 | Val Acc: 67.23% | Sens: 0.99 | Spec: 0.36 | AUC: 0.89
+Epoch 7 | Train Loss: 0.2392 | Val Loss: 0.7414 | Val Acc: 73.45% | Sens: 0.98 | Spec: 0.49 | AUC: 0.89
+Epoch 8 | Train Loss: 0.2163 | Val Loss: 0.7394 | Val Acc: 72.50% | Sens: 0.98 | Spec: 0.47 | AUC: 0.90
+Epoch 9 | Train Loss: 0.1965 | Val Loss: 0.7085 | Val Acc: 74.76% | Sens: 0.99 | Spec: 0.51 | AUC: 0.91
+Epoch 10 | Train Loss: 0.1897 | Val Loss: 0.5188 | Val Acc: 80.04% | Sens: 0.97 | Spec: 0.62 | AUC: 0.92
+Epoch 11 | Train Loss: 0.1838 | Val Loss: 0.7998 | Val Acc: 72.13% | Sens: 0.99 | Spec: 0.45 | AUC: 0.92
+Epoch 12 | Train Loss: 0.1654 | Val Loss: 0.5039 | Val Acc: 80.98% | Sens: 0.97 | Spec: 0.64 | AUC: 0.92
+Epoch 13 | Train Loss: 0.1581 | Val Loss: 0.4476 | Val Acc: 83.24% | Sens: 0.96 | Spec: 0.70 | AUC: 0.93
+Epoch 14 | Train Loss: 0.1479 | Val Loss: 0.4838 | Val Acc: 79.85% | Sens: 0.98 | Spec: 0.62 | AUC: 0.93
+Epoch 15 | Train Loss: 0.1297 | Val Loss: 0.9732 | Val Acc: 72.50% | Sens: 0.99 | Spec: 0.45 | AUC: 0.93
+Epoch 16 | Train Loss: 0.1153 | Val Loss: 0.6637 | Val Acc: 80.79% | Sens: 0.98 | Spec: 0.64 | AUC: 0.93
+Epoch 17 | Train Loss: 0.1526 | Val Loss: 0.4975 | Val Acc: 82.30% | Sens: 0.97 | Spec: 0.67 | AUC: 0.93
+Epoch 18 | Train Loss: 0.1552 | Val Loss: 0.4321 | Val Acc: 84.93% | Sens: 0.96 | Spec: 0.74 | AUC: 0.92
+Epoch 19 | Train Loss: 0.0849 | Val Loss: 0.5065 | Val Acc: 84.56% | Sens: 0.96 | Spec: 0.73 | AUC: 0.93
+Epoch 20 | Train Loss: 0.0711 | Val Loss: 0.7113 | Val Acc: 80.79% | Sens: 0.99 | Spec: 0.63 | AUC: 0.93
+Epoch 21 | Train Loss: 0.0716 | Val Loss: 0.6132 | Val Acc: 81.54% | Sens: 0.98 | Spec: 0.65 | AUC: 0.94
+Epoch 22 | Train Loss: 0.0482 | Val Loss: 0.5667 | Val Acc: 85.12% | Sens: 0.97 | Spec: 0.73 | AUC: 0.93
+Epoch 23 | Train Loss: 0.0738 | Val Loss: 0.5590 | Val Acc: 85.50% | Sens: 0.96 | Spec: 0.75 | AUC: 0.93
+Epoch 24 | Train Loss: 0.0601 | Val Loss: 0.7016 | Val Acc: 84.37% | Sens: 0.98 | Spec: 0.70 | AUC: 0.94
+Epoch 25 | Train Loss: 0.0466 | Val Loss: 0.7520 | Val Acc: 83.05% | Sens: 0.98 | Spec: 0.68 | AUC: 0.93
+Epoch 26 | Train Loss: 0.0450 | Val Loss: 0.8286 | Val Acc: 82.30% | Sens: 0.97 | Spec: 0.68 | AUC: 0.92
+Epoch 27 | Train Loss: 0.0585 | Val Loss: 0.7903 | Val Acc: 83.05% | Sens: 0.98 | Spec: 0.68 | AUC: 0.94
+Epoch 28 | Train Loss: 0.0406 | Val Loss: 1.0476 | Val Acc: 80.79% | Sens: 0.99 | Spec: 0.62 | AUC: 0.94
+⏹️ Early stopping after 28 epochs.
+
+🔍 Testing on separate test set...
+/nfs/homes/sdreyer/Digit-Classification-Pytorch/Class_reduce_Gli.py:248: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  classifier.load_state_dict(torch.load(model_path, map_location=device))
+✅ Correct: 496 | ❌ Incorrect: 110 | 🎯 Accuracy: 81.85%
+Sens: 0.97 | Spec: 0.67 | AUC: 0.93

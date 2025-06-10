@@ -1,0 +1,16 @@
+{"time":"2025-06-09T21:59:57.085567531+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250609_215957-gz212wme/logs/debug-core.log"}
+{"time":"2025-06-09T21:59:57.360066419+02:00","level":"INFO","msg":"created new stream","id":"gz212wme"}
+{"time":"2025-06-09T21:59:57.360322981+02:00","level":"INFO","msg":"stream: started","id":"gz212wme"}
+{"time":"2025-06-09T21:59:57.360352254+02:00","level":"INFO","msg":"sender: started","stream_id":"gz212wme"}
+{"time":"2025-06-09T21:59:57.360358385+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"gz212wme"}
+{"time":"2025-06-09T21:59:57.360348546+02:00","level":"INFO","msg":"handler: started","stream_id":"gz212wme"}
+{"time":"2025-06-09T21:59:57.603677497+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-09T22:07:16.788768883+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-09T22:07:16.789203191+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-09T22:07:17.790090628+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-gz212wme-test_probs_labels","runtime_seconds":1.196902811},{"desc":"uploading artifact run-gz212wme-test_confusion_matrix_table","runtime_seconds":1.011351817}],"total_operations":2}}
+{"time":"2025-06-09T22:07:19.676168777+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-09T22:07:19.999482958+02:00","level":"INFO","msg":"stream: closing","id":"gz212wme"}
+{"time":"2025-06-09T22:07:19.999742931+02:00","level":"INFO","msg":"handler: closed","stream_id":"gz212wme"}
+{"time":"2025-06-09T22:07:19.999754109+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"gz212wme"}
+{"time":"2025-06-09T22:07:19.99981988+02:00","level":"INFO","msg":"sender: closed","stream_id":"gz212wme"}
+{"time":"2025-06-09T22:07:20.00052735+02:00","level":"INFO","msg":"stream: closed","id":"gz212wme"}

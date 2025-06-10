@@ -1,0 +1,16 @@
+{"time":"2025-06-09T14:38:15.251579495+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250609_143815-u40rtvmy/logs/debug-core.log"}
+{"time":"2025-06-09T14:38:15.589744842+02:00","level":"INFO","msg":"created new stream","id":"u40rtvmy"}
+{"time":"2025-06-09T14:38:15.589979076+02:00","level":"INFO","msg":"stream: started","id":"u40rtvmy"}
+{"time":"2025-06-09T14:38:15.589999096+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"u40rtvmy"}
+{"time":"2025-06-09T14:38:15.590007036+02:00","level":"INFO","msg":"sender: started","stream_id":"u40rtvmy"}
+{"time":"2025-06-09T14:38:15.590024708+02:00","level":"INFO","msg":"handler: started","stream_id":"u40rtvmy"}
+{"time":"2025-06-09T14:38:15.779730549+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-09T14:42:24.438669865+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-09T14:42:24.439014258+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-09T14:42:25.439837227+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-u40rtvmy-test_probs_labels","runtime_seconds":1.18951625},{"desc":"uploading artifact run-u40rtvmy-test_confusion_matrix_table","runtime_seconds":1.007604901,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.2847032,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-09T14:42:27.963937963+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-09T14:42:28.163608908+02:00","level":"INFO","msg":"stream: closing","id":"u40rtvmy"}
+{"time":"2025-06-09T14:42:28.163890707+02:00","level":"INFO","msg":"handler: closed","stream_id":"u40rtvmy"}
+{"time":"2025-06-09T14:42:28.163910508+02:00","level":"INFO","msg":"sender: closed","stream_id":"u40rtvmy"}
+{"time":"2025-06-09T14:42:28.163902959+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"u40rtvmy"}
+{"time":"2025-06-09T14:42:28.164586769+02:00","level":"INFO","msg":"stream: closed","id":"u40rtvmy"}

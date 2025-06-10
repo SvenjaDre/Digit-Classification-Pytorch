@@ -1,0 +1,16 @@
+{"time":"2025-06-09T23:06:59.906177276+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250609_230659-imh1oig6/logs/debug-core.log"}
+{"time":"2025-06-09T23:07:01.061977725+02:00","level":"INFO","msg":"created new stream","id":"imh1oig6"}
+{"time":"2025-06-09T23:07:01.062213344+02:00","level":"INFO","msg":"stream: started","id":"imh1oig6"}
+{"time":"2025-06-09T23:07:01.062233078+02:00","level":"INFO","msg":"handler: started","stream_id":"imh1oig6"}
+{"time":"2025-06-09T23:07:01.062242684+02:00","level":"INFO","msg":"sender: started","stream_id":"imh1oig6"}
+{"time":"2025-06-09T23:07:01.062259498+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"imh1oig6"}
+{"time":"2025-06-09T23:07:01.237875712+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-09T23:13:39.808578684+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-09T23:13:39.808994145+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-09T23:13:40.810086728+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-imh1oig6-test_probs_labels","runtime_seconds":1.197564953},{"desc":"uploading artifact run-imh1oig6-test_confusion_matrix_table","runtime_seconds":1.008562739,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.329318189,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-09T23:13:43.408266234+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-09T23:13:43.615369993+02:00","level":"INFO","msg":"stream: closing","id":"imh1oig6"}
+{"time":"2025-06-09T23:13:43.615620846+02:00","level":"INFO","msg":"handler: closed","stream_id":"imh1oig6"}
+{"time":"2025-06-09T23:13:43.615706083+02:00","level":"INFO","msg":"sender: closed","stream_id":"imh1oig6"}
+{"time":"2025-06-09T23:13:43.615695485+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"imh1oig6"}
+{"time":"2025-06-09T23:13:43.616356671+02:00","level":"INFO","msg":"stream: closed","id":"imh1oig6"}

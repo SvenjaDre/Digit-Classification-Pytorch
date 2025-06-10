@@ -1,0 +1,16 @@
+{"time":"2025-06-09T14:47:20.581918933+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250609_144720-gt7nul8o/logs/debug-core.log"}
+{"time":"2025-06-09T14:47:20.850445897+02:00","level":"INFO","msg":"created new stream","id":"gt7nul8o"}
+{"time":"2025-06-09T14:47:20.850687301+02:00","level":"INFO","msg":"stream: started","id":"gt7nul8o"}
+{"time":"2025-06-09T14:47:20.850720445+02:00","level":"INFO","msg":"sender: started","stream_id":"gt7nul8o"}
+{"time":"2025-06-09T14:47:20.85072485+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"gt7nul8o"}
+{"time":"2025-06-09T14:47:20.850748763+02:00","level":"INFO","msg":"handler: started","stream_id":"gt7nul8o"}
+{"time":"2025-06-09T14:47:21.025228665+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-09T14:53:03.005566561+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-09T14:53:03.005927348+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-09T14:53:04.006615984+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-gt7nul8o-test_probs_labels","runtime_seconds":1.197695624,"subtasks":[{"desc":"test_probs_labels.table.json","runtime_seconds":0.21563871,"progress":"14.5KB/14.5KB"}]},{"desc":"uploading artifact run-gt7nul8o-test_confusion_matrix_table","runtime_seconds":1.008973419}],"total_operations":2}}
+{"time":"2025-06-09T14:53:06.457496439+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-09T14:53:06.636587986+02:00","level":"INFO","msg":"stream: closing","id":"gt7nul8o"}
+{"time":"2025-06-09T14:53:06.636783986+02:00","level":"INFO","msg":"handler: closed","stream_id":"gt7nul8o"}
+{"time":"2025-06-09T14:53:06.636808265+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"gt7nul8o"}
+{"time":"2025-06-09T14:53:06.636824747+02:00","level":"INFO","msg":"sender: closed","stream_id":"gt7nul8o"}
+{"time":"2025-06-09T14:53:06.637631206+02:00","level":"INFO","msg":"stream: closed","id":"gt7nul8o"}

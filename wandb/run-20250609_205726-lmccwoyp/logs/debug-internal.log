@@ -1,0 +1,16 @@
+{"time":"2025-06-09T20:57:26.051566596+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250609_205726-lmccwoyp/logs/debug-core.log"}
+{"time":"2025-06-09T20:57:26.974657518+02:00","level":"INFO","msg":"created new stream","id":"lmccwoyp"}
+{"time":"2025-06-09T20:57:26.974907928+02:00","level":"INFO","msg":"stream: started","id":"lmccwoyp"}
+{"time":"2025-06-09T20:57:26.974944065+02:00","level":"INFO","msg":"sender: started","stream_id":"lmccwoyp"}
+{"time":"2025-06-09T20:57:26.97494618+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"lmccwoyp"}
+{"time":"2025-06-09T20:57:26.974951208+02:00","level":"INFO","msg":"handler: started","stream_id":"lmccwoyp"}
+{"time":"2025-06-09T20:57:27.202541418+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-09T21:02:21.761407677+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-09T21:02:21.76176758+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-09T21:02:22.76250608+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-lmccwoyp-test_probs_labels","runtime_seconds":1.109843872},{"desc":"uploading artifact run-lmccwoyp-test_confusion_matrix_table","runtime_seconds":1.009014894}],"total_operations":2}}
+{"time":"2025-06-09T21:02:25.139481129+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-09T21:02:25.42217857+02:00","level":"INFO","msg":"stream: closing","id":"lmccwoyp"}
+{"time":"2025-06-09T21:02:25.422402618+02:00","level":"INFO","msg":"handler: closed","stream_id":"lmccwoyp"}
+{"time":"2025-06-09T21:02:25.42242908+02:00","level":"INFO","msg":"sender: closed","stream_id":"lmccwoyp"}
+{"time":"2025-06-09T21:02:25.422422948+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"lmccwoyp"}
+{"time":"2025-06-09T21:02:25.423145393+02:00","level":"INFO","msg":"stream: closed","id":"lmccwoyp"}
