@@ -1,0 +1,16 @@
+{"time":"2025-06-12T19:51:51.807905725+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250612_195151-c3eceovg/logs/debug-core.log"}
+{"time":"2025-06-12T19:51:52.108404874+02:00","level":"INFO","msg":"created new stream","id":"c3eceovg"}
+{"time":"2025-06-12T19:51:52.108630229+02:00","level":"INFO","msg":"stream: started","id":"c3eceovg"}
+{"time":"2025-06-12T19:51:52.108656396+02:00","level":"INFO","msg":"sender: started","stream_id":"c3eceovg"}
+{"time":"2025-06-12T19:51:52.108661562+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"c3eceovg"}
+{"time":"2025-06-12T19:51:52.108688055+02:00","level":"INFO","msg":"handler: started","stream_id":"c3eceovg"}
+{"time":"2025-06-12T19:51:52.28420887+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-12T19:57:23.979579563+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-12T19:57:23.9799172+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-12T19:57:24.985655728+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-c3eceovg-val_probs_labels","runtime_seconds":5.195742091},{"desc":"uploading artifact run-c3eceovg-test_probs_labels","runtime_seconds":1.192918381},{"desc":"uploading artifact run-c3eceovg-test_confusion_matrix_table","runtime_seconds":1.014086489,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.318825511,"progress":"632B/632B"}]},{"desc":"uploading media/table/test_probs_labels_21_528b21b3f2960dc88dcb.table.json","runtime_seconds":0.988475276,"progress":"14.9KB/14.9KB"},{"desc":"uploading media/table/test_confusion_matrix_table_21_7ad08b5f87cbe46f08e2.table.json","runtime_seconds":0.82795357,"progress":"192B/192B"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.827943704,"progress":"2.5KB/2.5KB"},{"desc":"uploading config.yaml","runtime_seconds":0.644590993,"progress":"2.1KB/2.1KB"}],"total_operations":7}}
+{"time":"2025-06-12T19:57:54.552873174+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-12T19:57:54.919187533+02:00","level":"INFO","msg":"stream: closing","id":"c3eceovg"}
+{"time":"2025-06-12T19:57:54.919454612+02:00","level":"INFO","msg":"handler: closed","stream_id":"c3eceovg"}
+{"time":"2025-06-12T19:57:54.91951782+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"c3eceovg"}
+{"time":"2025-06-12T19:57:54.91953275+02:00","level":"INFO","msg":"sender: closed","stream_id":"c3eceovg"}
+{"time":"2025-06-12T19:57:54.920330567+02:00","level":"INFO","msg":"stream: closed","id":"c3eceovg"}

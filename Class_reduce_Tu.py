@@ -22,11 +22,11 @@ def preprocess_image(image_path):
     image = np.expand_dims(image, axis=0)
     return torch.tensor(image, dtype=torch.float32)
 
-class CustomImageDataset(Dataset):
-    def __init__(self, image_paths, labels, class_names=['glioma', 'meningioma']):
+class CustomImageDatasetFromLists(Dataset):
+    def __init__(self, image_paths, labels):
         self.image_paths = image_paths
         self.labels = labels
-        self.classes = class_names
+        self.classes = ['no_tumor', 'tumor']
 
     def __len__(self):
         return len(self.image_paths)
@@ -36,65 +36,49 @@ class CustomImageDataset(Dataset):
         label = self.labels[idx]
         return image_tensor, label, self.image_paths[idx]
 
-    @staticmethod
-    def from_directory(directory, class_names=['glioma', 'meningioma']):
-        image_paths = []
-        labels = []
-        for label, class_name in enumerate(class_names):
-            class_dir = os.path.join(directory, class_name)
-            if not os.path.isdir(class_dir):
-                continue
-            paths = [
-                os.path.join(class_dir, f)
-                for f in os.listdir(class_dir)
-                if f.lower().endswith(('.png', '.jpg', '.jpeg'))
-            ]
-            image_paths.extend(paths)
-            labels.extend([label] * len(paths))
-        return CustomImageDataset(image_paths, labels, class_names)
-
 def split_dataset_by_class(root_dir, train_percent):
-    glioma_paths, meningioma_paths = [], []
-    for class_name in ['glioma', 'meningioma']:
+    tumor_paths, no_tumor_paths = [], []
+    for class_name in os.listdir(root_dir):
         class_dir = os.path.join(root_dir, class_name)
         if not os.path.isdir(class_dir):
             continue
-        label = 0 if class_name == 'glioma' else 1
+        label = 1 if class_name.lower() in ['glioma', 'meningioma'] else 0
         paths = [os.path.join(class_dir, f) for f in os.listdir(class_dir)
                  if f.lower().endswith(('.png', '.jpg', '.jpeg'))]
-        if class_name == 'glioma':
-            glioma_paths = [(p, label) for p in paths]
+        if label == 1:
+            tumor_paths.extend([(p, 1) for p in paths])
         else:
-            meningioma_paths = [(p, label) for p in paths]
+            no_tumor_paths.extend([(p, 0) for p in paths])
 
     random.seed(42)
-    random.shuffle(glioma_paths)
-    random.shuffle(meningioma_paths)
+    random.shuffle(tumor_paths)
+    random.shuffle(no_tumor_paths)
 
-    # Separat splitten (20 % Validierung)
-    glioma_val_size = int(0.2 * len(glioma_paths))
-    meningioma_val_size = int(0.2 * len(meningioma_paths))
-    glioma_val = glioma_paths[:glioma_val_size]
-    glioma_train_full = glioma_paths[glioma_val_size:]
-    meningioma_val = meningioma_paths[:meningioma_val_size]
-    meningioma_train = meningioma_paths[meningioma_val_size:]
+    tumor_val_size = int(0.2 * len(tumor_paths))
+    no_tumor_val_size = int(0.2 * len(no_tumor_paths))
 
-    # Glioma Trainingsmenge reduzieren
-    target_glioma_train_samples = int(train_percent * len(glioma_train_full))
-    glioma_train_reduced = glioma_train_full[:target_glioma_train_samples]
+    tumor_val = tumor_paths[:tumor_val_size]
+    tumor_train_full = tumor_paths[tumor_val_size:]
+    no_tumor_val = no_tumor_paths[:no_tumor_val_size]
+    no_tumor_train = no_tumor_paths[no_tumor_val_size:]
 
-    train_paths = glioma_train_reduced + meningioma_train
-    train_labels = [label for _, label in train_paths]
-    train_paths = [path for path, _ in train_paths]
+    target_tumor_train_samples = int(train_percent * len(tumor_train_full))
+    tumor_train_reduced = tumor_train_full[:target_tumor_train_samples]
 
-    val_paths = glioma_val + meningioma_val
-    val_labels = [label for _, label in val_paths]
-    val_paths = [path for path, _ in val_paths]
+    train_combined = tumor_train_reduced + no_tumor_train
+    val_combined = tumor_val + no_tumor_val
+    random.shuffle(train_combined)
+    random.shuffle(val_combined)
 
-    train_dataset = CustomImageDataset(train_paths, train_labels)
-    val_dataset = CustomImageDataset(val_paths, val_labels)
+    train_paths = [p for p, _ in train_combined]
+    train_labels = [l for _, l in train_combined]
+    val_paths = [p for p, _ in val_combined]
+    val_labels = [l for _, l in val_combined]
 
-    return train_dataset, val_dataset, len(glioma_train_reduced), len(meningioma_train)
+    train_dataset = CustomImageDatasetFromLists(train_paths, train_labels)
+    val_dataset = CustomImageDatasetFromLists(val_paths, val_labels)
+
+    return train_dataset, val_dataset, len(no_tumor_train), len(tumor_train_reduced)
 
 class ImageClassifier(nn.Module):
     def __init__(self):
@@ -121,11 +105,11 @@ TRAIN_DIR = "archive/Training"
 TEST_DIR = "archive/Testing"
 
 def train():
-    wandb.init(project="Reduzierung-Gli + Balnce")
+    wandb.init(project="Reduzierung-Tu + Balance")
     config = wandb.config
 
-    train_dataset, val_dataset, glioma_train_count, meningioma_train_count = split_dataset_by_class(TRAIN_DIR, config.train_percent)
-    total_train_samples = glioma_train_count + meningioma_train_count
+    train_dataset, val_dataset, no_tumor_count, tumor_count = split_dataset_by_class(TRAIN_DIR, config.train_percent)
+    total_train_samples = no_tumor_count + tumor_count
 
     base_checkpoint_dir = os.path.join("Checkpoints", wandb.run.project, f"trainpercent_{config.train_percent}")
     run_id = 1
@@ -139,18 +123,17 @@ def train():
     wandb.run.tags = [f"percent_{config.train_percent}", f"run_{run_id}"]
     wandb.config.run_id = run_id
 
-    print(f"📊 Training with {glioma_train_count} glioma and {meningioma_train_count} meningioma samples.")
+    print(f"📊 Training with {tumor_count} tumor and {no_tumor_count} no_tumor samples.")
 
     train_loader = DataLoader(train_dataset, batch_size=config.batch_size, shuffle=True)
     val_loader = DataLoader(val_dataset, batch_size=config.batch_size, shuffle=False)
 
     classifier = ImageClassifier().to(device)
     optimizer = Adam(classifier.parameters(), lr=config.learning_rate)
-    #loss_fn = nn.CrossEntropyLoss()
     #balance
-    counts = torch.tensor( [glioma_train_count, meningioma_train_count], dtype=torch.float32, device=device)
-    w = 1.0 / counts
-    class_weights = w / w.sum()
+    counts = torch.tensor([no_tumor_count, tumor_count], dtype=torch.float32, device=device)
+    weights = 1.0 / counts
+    class_weights = weights / weights.sum()
     print(f"Using class weights: {class_weights.cpu().tolist()}")
     loss_fn = nn.CrossEntropyLoss(weight=class_weights)
 
@@ -176,9 +159,7 @@ def train():
         val_loss = 0.0
         val_correct = 0
         val_total = 0
-        all_probs = []
-        all_preds = []
-        all_labels = []
+        all_probs, all_preds, all_labels = [], [], []
 
         with torch.no_grad():
             for val_images, val_labels, _ in val_loader:
@@ -192,7 +173,6 @@ def train():
 
                 val_correct += (predictions == val_labels).sum().item()
                 val_total += val_labels.size(0)
-
                 all_probs.extend(probs.cpu().numpy())
                 all_preds.extend(predictions.cpu().numpy())
                 all_labels.extend(val_labels.cpu().numpy())
@@ -219,8 +199,8 @@ def train():
             "specificity": specificity,
             "auc": auc_score,
             "train_samples_used": total_train_samples,
-            "glioma_train": glioma_train_count,
-            "meningioma_train": meningioma_train_count,
+            "tumor_train": tumor_count,
+            "no_tumor_train": no_tumor_count,
             "val_probs_labels": wandb.Table(data=list(zip(all_probs, all_labels)), columns=["prob", "label"])
         })
 
@@ -240,13 +220,16 @@ def train():
     final_model_path = os.path.join(checkpoint_dir, "final_model.pt")
     torch.save(classifier.state_dict(), final_model_path)
 
-    model_path = best_model_path if os.path.exists(best_model_path) else final_model_path
-    evaluate_on_test_data(model_path)
+    if os.path.exists(best_model_path):
+        evaluate_on_test_data(model_path=best_model_path)
+    else:
+        evaluate_on_test_data(model_path=final_model_path)
+
     wandb.finish()
 
 def evaluate_on_test_data(model_path):
     print("\n🔍 Testing on separate test set...")
-    test_dataset = CustomImageDataset.from_directory(TEST_DIR)
+    test_dataset = CustomImageDatasetFromLists.from_directory(TEST_DIR)
     test_loader = DataLoader(test_dataset, batch_size=1, shuffle=False)
     class_names = test_dataset.classes
 
@@ -255,53 +238,47 @@ def evaluate_on_test_data(model_path):
     classifier.eval()
 
     all_probs, all_preds, all_labels = [], [], []
-    correct, incorrect = 0, 0
+    correct = 0
+    incorrect = 0
 
     with torch.no_grad():
         for images, labels, _ in test_loader:
             images, labels = images.to(device), labels.to(device)
             outputs = classifier(images)
             probs = torch.softmax(outputs, dim=1)[:, 1]
-            preds = torch.argmax(outputs, dim=1)
+            predicted_index = torch.argmax(outputs, dim=1)
 
             all_probs.extend(probs.cpu().numpy())
-            all_preds.extend(preds.cpu().numpy())
+            all_preds.extend(predicted_index.cpu().numpy())
             all_labels.extend(labels.cpu().numpy())
+            correct += (predicted_index == labels).sum().item()
+            incorrect += (predicted_index != labels).sum().item()
 
-            correct += (preds == labels).sum().item()
-            incorrect += (preds != labels).sum().item()
-
-    accuracy = 100 * correct / (correct + incorrect)
+    total = correct + incorrect
+    accuracy = (correct / total) * 100
     auc_score = roc_auc_score(all_labels, all_probs)
     tn, fp, fn, tp = confusion_matrix(all_labels, all_preds).ravel()
     sensitivity = tp / (tp + fn + 1e-8)
     specificity = tn / (tn + fp + 1e-8)
 
-    print(f"✅ Correct: {correct} | ❌ Incorrect: {incorrect} | 🎯 Accuracy: {accuracy:.2f}%")
-    print(f"Sens: {sensitivity:.2f} | Spec: {specificity:.2f} | AUC: {auc_score:.2f}")
+    print(f"✅ Correct: {correct} | ❌ Incorrect: {incorrect} | Total: {total}")
+    print(f"🎯 Test Accuracy: {accuracy:.2f}% | Sens: {sensitivity:.2f} | Spec: {specificity:.2f} | AUC: {auc_score:.2f}")
 
     wandb.log({
         "test_accuracy": accuracy,
-        "test_auc": auc_score,
-        "test_sensitivity": sensitivity,
-        "test_specificity": specificity,
         "test_correct": correct,
         "test_incorrect": incorrect,
-        "test_total": correct + incorrect,
-        "test_confusion_matrix": wandb.plot.confusion_matrix(
-            probs=None,
-            y_true=all_labels,
-            preds=all_preds,
-            class_names=class_names
-        ),
-        "test_probs_labels": wandb.Table(data=list(zip(all_probs, all_labels)), columns=["prob", "label"])
+        "test_total": total,
+        "test_auc": auc_score,
+        "test_sensitivity": sensitivity,
+        "test_specificity": specificity
     })
 
-def load_sweep_config(path="sweep_Gli_Men.yaml"):
+def load_sweep_config(path="sweep_noTu_Tu.yaml"):
     with open(path) as f:
         return yaml.safe_load(f)
 
 if __name__ == "__main__":
     sweep_config = load_sweep_config()
-    sweep_id = wandb.sweep(sweep_config, project="Reduzierung-Gli + Balnce")
+    sweep_id = wandb.sweep(sweep_config, project="Reduzierung-Tu + Balance")
     wandb.agent(sweep_id, function=train)
