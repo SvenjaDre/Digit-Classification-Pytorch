@@ -1,0 +1,16 @@
+{"time":"2025-06-13T01:43:09.916828141+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_014309-o4veuzxo/logs/debug-core.log"}
+{"time":"2025-06-13T01:43:10.180244081+02:00","level":"INFO","msg":"created new stream","id":"o4veuzxo"}
+{"time":"2025-06-13T01:43:10.180467599+02:00","level":"INFO","msg":"stream: started","id":"o4veuzxo"}
+{"time":"2025-06-13T01:43:10.180539712+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"o4veuzxo"}
+{"time":"2025-06-13T01:43:10.180561347+02:00","level":"INFO","msg":"handler: started","stream_id":"o4veuzxo"}
+{"time":"2025-06-13T01:43:10.180571357+02:00","level":"INFO","msg":"sender: started","stream_id":"o4veuzxo"}
+{"time":"2025-06-13T01:43:10.363051936+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T01:49:42.993275378+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T01:49:42.993792019+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T01:49:43.956586948+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.641751275,"progress":"1.2KB/1.2KB"},{"desc":"uploading config.yaml","runtime_seconds":0.508619419,"progress":"886B/886B"},{"desc":"uploading Checkpoints/Augm-Messungen-noTu-Tu/trainpercent_0.8/run_3/best_model.pt","runtime_seconds":0.383186949,"progress":"706.5KB/706.5KB"}],"total_operations":3}}
+{"time":"2025-06-13T01:49:44.86203132+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T01:49:45.049658152+02:00","level":"INFO","msg":"stream: closing","id":"o4veuzxo"}
+{"time":"2025-06-13T01:49:45.049868541+02:00","level":"INFO","msg":"handler: closed","stream_id":"o4veuzxo"}
+{"time":"2025-06-13T01:49:45.049912125+02:00","level":"INFO","msg":"sender: closed","stream_id":"o4veuzxo"}
+{"time":"2025-06-13T01:49:45.049895399+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"o4veuzxo"}
+{"time":"2025-06-13T01:49:45.050792177+02:00","level":"INFO","msg":"stream: closed","id":"o4veuzxo"}

@@ -1,0 +1,16 @@
+{"time":"2025-06-13T02:05:25.123188747+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_020525-qlkb0kmh/logs/debug-core.log"}
+{"time":"2025-06-13T02:05:25.393037702+02:00","level":"INFO","msg":"created new stream","id":"qlkb0kmh"}
+{"time":"2025-06-13T02:05:25.393277796+02:00","level":"INFO","msg":"stream: started","id":"qlkb0kmh"}
+{"time":"2025-06-13T02:05:25.393331988+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"qlkb0kmh"}
+{"time":"2025-06-13T02:05:25.393348301+02:00","level":"INFO","msg":"handler: started","stream_id":"qlkb0kmh"}
+{"time":"2025-06-13T02:05:25.393368786+02:00","level":"INFO","msg":"sender: started","stream_id":"qlkb0kmh"}
+{"time":"2025-06-13T02:05:25.559097957+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T02:11:15.181194112+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T02:11:15.181588277+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T02:11:16.18443761+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.527809689,"progress":"886B/886B"},{"desc":"uploading Checkpoints/Augm-Messungen-noTu-Tu/trainpercent_0.5/run_3/best_model.pt","runtime_seconds":0.527798924,"progress":"706.5KB/706.5KB"}],"total_operations":2}}
+{"time":"2025-06-13T02:11:16.855073524+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T02:11:17.040957545+02:00","level":"INFO","msg":"stream: closing","id":"qlkb0kmh"}
+{"time":"2025-06-13T02:11:17.041173731+02:00","level":"INFO","msg":"handler: closed","stream_id":"qlkb0kmh"}
+{"time":"2025-06-13T02:11:17.041200355+02:00","level":"INFO","msg":"sender: closed","stream_id":"qlkb0kmh"}
+{"time":"2025-06-13T02:11:17.041189408+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"qlkb0kmh"}
+{"time":"2025-06-13T02:11:17.041868333+02:00","level":"INFO","msg":"stream: closed","id":"qlkb0kmh"}

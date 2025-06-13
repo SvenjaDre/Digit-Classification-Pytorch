@@ -1,0 +1,16 @@
+{"time":"2025-06-13T00:31:42.696413331+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_003142-35a000po/logs/debug-core.log"}
+{"time":"2025-06-13T00:31:42.965118071+02:00","level":"INFO","msg":"created new stream","id":"35a000po"}
+{"time":"2025-06-13T00:31:42.965383457+02:00","level":"INFO","msg":"stream: started","id":"35a000po"}
+{"time":"2025-06-13T00:31:42.965409144+02:00","level":"INFO","msg":"sender: started","stream_id":"35a000po"}
+{"time":"2025-06-13T00:31:42.965408647+02:00","level":"INFO","msg":"handler: started","stream_id":"35a000po"}
+{"time":"2025-06-13T00:31:42.965420216+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"35a000po"}
+{"time":"2025-06-13T00:31:43.122941732+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T00:34:51.134023078+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T00:34:51.134473519+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T00:34:52.1352137+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-35a000po-test_probs_labels","runtime_seconds":1.178139265},{"desc":"uploading artifact run-35a000po-test_confusion_matrix_table","runtime_seconds":1.007712349}],"total_operations":2}}
+{"time":"2025-06-13T00:34:53.786474985+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T00:34:53.959169758+02:00","level":"INFO","msg":"stream: closing","id":"35a000po"}
+{"time":"2025-06-13T00:34:53.959387749+02:00","level":"INFO","msg":"handler: closed","stream_id":"35a000po"}
+{"time":"2025-06-13T00:34:53.959427818+02:00","level":"INFO","msg":"sender: closed","stream_id":"35a000po"}
+{"time":"2025-06-13T00:34:53.959418718+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"35a000po"}
+{"time":"2025-06-13T00:34:53.960106963+02:00","level":"INFO","msg":"stream: closed","id":"35a000po"}

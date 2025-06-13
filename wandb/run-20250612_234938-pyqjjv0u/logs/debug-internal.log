@@ -1,0 +1,16 @@
+{"time":"2025-06-12T23:49:38.414153459+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250612_234938-pyqjjv0u/logs/debug-core.log"}
+{"time":"2025-06-12T23:49:38.681085633+02:00","level":"INFO","msg":"created new stream","id":"pyqjjv0u"}
+{"time":"2025-06-12T23:49:38.681356293+02:00","level":"INFO","msg":"stream: started","id":"pyqjjv0u"}
+{"time":"2025-06-12T23:49:38.681381125+02:00","level":"INFO","msg":"sender: started","stream_id":"pyqjjv0u"}
+{"time":"2025-06-12T23:49:38.681383233+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"pyqjjv0u"}
+{"time":"2025-06-12T23:49:38.681380879+02:00","level":"INFO","msg":"handler: started","stream_id":"pyqjjv0u"}
+{"time":"2025-06-12T23:49:38.88800529+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-12T23:53:35.116618586+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-12T23:53:35.117063503+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-12T23:53:36.117770311+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-pyqjjv0u-val_probs_labels","runtime_seconds":6.123358267,"subtasks":[{"desc":"val_probs_labels.table.json","runtime_seconds":5.353341607,"progress":"13.5KB/13.5KB"}]},{"desc":"uploading media/table/val_probs_labels_21_edac193c7a7194b1b37e.table.json","runtime_seconds":5.93136175,"progress":"13.2KB/13.2KB"},{"desc":"uploading artifact run-pyqjjv0u-test_probs_labels","runtime_seconds":1.181528451,"subtasks":[{"desc":"test_probs_labels.table.json","runtime_seconds":0.560645413,"progress":"15.4KB/15.4KB"}]},{"desc":"uploading artifact run-pyqjjv0u-test_confusion_matrix_table","runtime_seconds":1.007867156,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.288929576,"progress":"632B/632B"}]},{"desc":"uploading media/table/test_probs_labels_22_a7d73ff038fe05731c34.table.json","runtime_seconds":0.98474765,"progress":"15.1KB/15.1KB"},{"desc":"uploading media/table/test_confusion_matrix_table_22_9a770868963686c839a9.table.json","runtime_seconds":0.825625461,"progress":"192B/192B"},{"desc":"uploading output.log","runtime_seconds":0.825610418,"progress":"3.5KB/3.5KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.82560737,"progress":"2.5KB/2.5KB"},{"desc":"uploading config.yaml","runtime_seconds":0.646170383,"progress":"2.1KB/2.1KB"}],"total_operations":9}}
+{"time":"2025-06-12T23:53:59.466678582+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-12T23:53:59.644631789+02:00","level":"INFO","msg":"stream: closing","id":"pyqjjv0u"}
+{"time":"2025-06-12T23:53:59.644962147+02:00","level":"INFO","msg":"handler: closed","stream_id":"pyqjjv0u"}
+{"time":"2025-06-12T23:53:59.644978592+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"pyqjjv0u"}
+{"time":"2025-06-12T23:53:59.644990557+02:00","level":"INFO","msg":"sender: closed","stream_id":"pyqjjv0u"}
+{"time":"2025-06-12T23:53:59.645855671+02:00","level":"INFO","msg":"stream: closed","id":"pyqjjv0u"}

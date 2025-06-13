@@ -1,0 +1,16 @@
+{"time":"2025-06-13T00:06:13.906184927+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_000613-ompwpdum/logs/debug-core.log"}
+{"time":"2025-06-13T00:06:14.170385358+02:00","level":"INFO","msg":"created new stream","id":"ompwpdum"}
+{"time":"2025-06-13T00:06:14.170627758+02:00","level":"INFO","msg":"stream: started","id":"ompwpdum"}
+{"time":"2025-06-13T00:06:14.170667737+02:00","level":"INFO","msg":"handler: started","stream_id":"ompwpdum"}
+{"time":"2025-06-13T00:06:14.170679507+02:00","level":"INFO","msg":"sender: started","stream_id":"ompwpdum"}
+{"time":"2025-06-13T00:06:14.170671629+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"ompwpdum"}
+{"time":"2025-06-13T00:06:14.339182825+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T00:09:41.376444144+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T00:09:41.384794405+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T00:09:42.377456966+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-ompwpdum-test_probs_labels","runtime_seconds":1.338604492},{"desc":"uploading artifact run-ompwpdum-test_confusion_matrix_table","runtime_seconds":1.057168149}],"total_operations":2}}
+{"time":"2025-06-13T00:09:44.389080052+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T00:09:44.606466685+02:00","level":"INFO","msg":"stream: closing","id":"ompwpdum"}
+{"time":"2025-06-13T00:09:44.614456493+02:00","level":"INFO","msg":"handler: closed","stream_id":"ompwpdum"}
+{"time":"2025-06-13T00:09:44.614508676+02:00","level":"INFO","msg":"sender: closed","stream_id":"ompwpdum"}
+{"time":"2025-06-13T00:09:44.614502099+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ompwpdum"}
+{"time":"2025-06-13T00:09:44.622616787+02:00","level":"INFO","msg":"stream: closed","id":"ompwpdum"}

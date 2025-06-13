@@ -1,0 +1,11 @@
+🚀 Starting run: trainpercent_1_run_7
+📊 Trainingsdaten: 3404 von 3404 (100.0%)
+Epoch 1 | Train Loss: 1.2106 | Val Loss: 0.4643 | Val Acc: 82.49% | Sens: 0.92 | Spec: 0.66 | AUC: 0.82
+Epoch 2 | Train Loss: 0.4508 | Val Loss: 0.4399 | Val Acc: 81.90% | Sens: 0.86 | Spec: 0.74 | AUC: 0.85
+Epoch 3 | Train Loss: 0.3850 | Val Loss: 0.3840 | Val Acc: 85.31% | Sens: 0.94 | Spec: 0.70 | AUC: 0.89
+Epoch 4 | Train Loss: 0.3385 | Val Loss: 0.3183 | Val Acc: 87.19% | Sens: 0.96 | Spec: 0.73 | AUC: 0.95
+Epoch 5 | Train Loss: 0.3361 | Val Loss: 0.3436 | Val Acc: 88.48% | Sens: 0.86 | Spec: 0.93 | AUC: 0.96
+Epoch 6 | Train Loss: 0.2563 | Val Loss: 0.2883 | Val Acc: 86.25% | Sens: 0.97 | Spec: 0.68 | AUC: 0.97
+Epoch 7 | Train Loss: 0.2099 | Val Loss: 0.1914 | Val Acc: 91.54% | Sens: 0.95 | Spec: 0.85 | AUC: 0.98
+Epoch 8 | Train Loss: 0.1654 | Val Loss: 0.1540 | Val Acc: 94.24% | Sens: 0.95 | Spec: 0.92 | AUC: 0.98
+Epoch 9 | Train Loss: 0.1436 | Val Loss: 0.1637 | Val Acc: 93.07% | Sens: 0.96 | Spec: 0.88 | AUC: 0.98

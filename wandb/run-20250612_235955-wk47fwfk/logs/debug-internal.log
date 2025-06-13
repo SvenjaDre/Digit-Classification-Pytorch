@@ -1,0 +1,17 @@
+{"time":"2025-06-12T23:59:55.311124861+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250612_235955-wk47fwfk/logs/debug-core.log"}
+{"time":"2025-06-12T23:59:55.580548402+02:00","level":"INFO","msg":"created new stream","id":"wk47fwfk"}
+{"time":"2025-06-12T23:59:55.580853103+02:00","level":"INFO","msg":"stream: started","id":"wk47fwfk"}
+{"time":"2025-06-12T23:59:55.580882738+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"wk47fwfk"}
+{"time":"2025-06-12T23:59:55.580886577+02:00","level":"INFO","msg":"sender: started","stream_id":"wk47fwfk"}
+{"time":"2025-06-12T23:59:55.580888074+02:00","level":"INFO","msg":"handler: started","stream_id":"wk47fwfk"}
+{"time":"2025-06-12T23:59:55.789760275+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T00:02:41.430540401+02:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/svenja-dreyer-tu-dortmund/Augm-Messungen-noTu-Tu/wk47fwfk/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-06-13T00:03:25.778615395+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T00:03:25.778990391+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T00:03:26.779674416+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading Checkpoints/Augm-Messungen-noTu-Tu/trainpercent_0.1/run_1/best_model.pt","runtime_seconds":0.154026922,"progress":"706.5KB/706.5KB"}],"total_operations":1}}
+{"time":"2025-06-13T00:03:27.493165966+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T00:03:27.679670345+02:00","level":"INFO","msg":"stream: closing","id":"wk47fwfk"}
+{"time":"2025-06-13T00:03:27.679895269+02:00","level":"INFO","msg":"handler: closed","stream_id":"wk47fwfk"}
+{"time":"2025-06-13T00:03:27.679914893+02:00","level":"INFO","msg":"sender: closed","stream_id":"wk47fwfk"}
+{"time":"2025-06-13T00:03:27.679909346+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"wk47fwfk"}
+{"time":"2025-06-13T00:03:27.680622647+02:00","level":"INFO","msg":"stream: closed","id":"wk47fwfk"}

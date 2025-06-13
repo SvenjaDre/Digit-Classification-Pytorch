@@ -1,0 +1,17 @@
+{"time":"2025-06-13T03:51:22.943910033+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_035122-oyavaony/logs/debug-core.log"}
+{"time":"2025-06-13T03:51:23.202576704+02:00","level":"INFO","msg":"created new stream","id":"oyavaony"}
+{"time":"2025-06-13T03:51:23.202816093+02:00","level":"INFO","msg":"stream: started","id":"oyavaony"}
+{"time":"2025-06-13T03:51:23.202846637+02:00","level":"INFO","msg":"sender: started","stream_id":"oyavaony"}
+{"time":"2025-06-13T03:51:23.202846567+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"oyavaony"}
+{"time":"2025-06-13T03:51:23.202870579+02:00","level":"INFO","msg":"handler: started","stream_id":"oyavaony"}
+{"time":"2025-06-13T03:51:23.353157461+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T03:52:12.80029316+02:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/graphql","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-06-13T03:59:47.104771573+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T03:59:47.105316352+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T03:59:48.111082207+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-oyavaony-test_probs_labels","runtime_seconds":1.182441754},{"desc":"uploading artifact run-oyavaony-test_confusion_matrix_table","runtime_seconds":1.01396386,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.322811188,"progress":"631B/631B"}]}],"total_operations":2}}
+{"time":"2025-06-13T03:59:50.044358575+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T03:59:50.230863243+02:00","level":"INFO","msg":"stream: closing","id":"oyavaony"}
+{"time":"2025-06-13T03:59:50.231116462+02:00","level":"INFO","msg":"handler: closed","stream_id":"oyavaony"}
+{"time":"2025-06-13T03:59:50.231137161+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"oyavaony"}
+{"time":"2025-06-13T03:59:50.231191116+02:00","level":"INFO","msg":"sender: closed","stream_id":"oyavaony"}
+{"time":"2025-06-13T03:59:50.232041042+02:00","level":"INFO","msg":"stream: closed","id":"oyavaony"}

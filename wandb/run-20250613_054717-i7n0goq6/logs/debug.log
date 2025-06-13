@@ -1,0 +1,29 @@
+2025-06-13 05:47:17,891 INFO    Thread-4 (_run_job):239746 [wandb_setup.py:_flush():70] Current SDK version is 0.19.11
+2025-06-13 05:47:17,891 INFO    Thread-4 (_run_job):239746 [wandb_setup.py:_flush():70] Configure stats pid to 239746
+2025-06-13 05:47:17,892 INFO    Thread-4 (_run_job):239746 [wandb_setup.py:_flush():70] Loading settings from /nfs/homes/sdreyer/.config/wandb/settings
+2025-06-13 05:47:17,892 INFO    Thread-4 (_run_job):239746 [wandb_setup.py:_flush():70] Loading settings from /nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/settings
+2025-06-13 05:47:17,892 INFO    Thread-4 (_run_job):239746 [wandb_setup.py:_flush():70] Loading settings from environment variables
+2025-06-13 05:47:17,892 INFO    Thread-4 (_run_job):239746 [wandb_init.py:setup_run_log_directory():724] Logging user logs to /nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_054717-i7n0goq6/logs/debug.log
+2025-06-13 05:47:17,893 INFO    Thread-4 (_run_job):239746 [wandb_init.py:setup_run_log_directory():725] Logging internal logs to /nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_054717-i7n0goq6/logs/debug-internal.log
+2025-06-13 05:47:17,893 INFO    Thread-4 (_run_job):239746 [wandb_init.py:init():852] calling init triggers
+2025-06-13 05:47:17,893 INFO    Thread-4 (_run_job):239746 [wandb_init.py:init():857] wandb.init called with sweep_config: {'batch_size': 128, 'dropout': 0.55, 'epochs': 1000, 'learning_rate': 0.005, 'optimizer': 'Adam', 'train_percent': 1}
+config: {'_wandb': {}}
+2025-06-13 05:47:17,894 INFO    Thread-4 (_run_job):239746 [wandb_init.py:init():893] starting backend
+2025-06-13 05:47:17,894 INFO    Thread-4 (_run_job):239746 [wandb_init.py:init():897] sending inform_init request
+2025-06-13 05:47:17,901 INFO    Thread-4 (_run_job):239746 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-06-13 05:47:17,901 INFO    Thread-4 (_run_job):239746 [wandb_init.py:init():907] backend started and connected
+2025-06-13 05:47:17,902 INFO    Thread-4 (_run_job):239746 [wandb_run.py:_config_callback():1436] config_cb None None {'batch_size': 128, 'dropout': 0.55, 'epochs': 1000, 'learning_rate': 0.005, 'optimizer': 'Adam', 'train_percent': 1}
+2025-06-13 05:47:17,904 INFO    Thread-4 (_run_job):239746 [wandb_init.py:init():1005] updated telemetry
+2025-06-13 05:47:17,924 INFO    Thread-4 (_run_job):239746 [wandb_init.py:init():1029] communicating run to backend with 90.0 second timeout
+2025-06-13 05:47:18,349 INFO    Thread-4 (_run_job):239746 [wandb_init.py:init():1104] starting run threads in backend
+2025-06-13 05:47:18,581 INFO    Thread-4 (_run_job):239746 [wandb_run.py:_console_start():2573] atexit reg
+2025-06-13 05:47:18,582 INFO    Thread-4 (_run_job):239746 [wandb_run.py:_redirect():2421] redirect: wrap_raw
+2025-06-13 05:47:18,584 INFO    Thread-4 (_run_job):239746 [wandb_run.py:_redirect():2490] Wrapping output streams.
+2025-06-13 05:47:18,585 INFO    Thread-4 (_run_job):239746 [wandb_run.py:_redirect():2513] Redirects installed.
+2025-06-13 05:47:18,588 INFO    Thread-4 (_run_job):239746 [wandb_init.py:init():1150] run started, returning control to user process
+2025-06-13 05:47:18,591 INFO    Thread-4 (_run_job):239746 [wandb_config.py:__setitem__():154] [no run ID] config set run_id = 7 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x7fa222695a30>>
+2025-06-13 05:47:18,591 INFO    Thread-4 (_run_job):239746 [wandb_run.py:_config_callback():1436] config_cb run_id 7 None
+2025-06-13 05:47:18,592 INFO    Thread-4 (_run_job):239746 [wandb_config.py:__setitem__():154] [no run ID] config set train_percent_used = 1 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x7fa222695a30>>
+2025-06-13 05:47:18,592 INFO    Thread-4 (_run_job):239746 [wandb_run.py:_config_callback():1436] config_cb train_percent_used 1 None
+2025-06-13 05:47:18,604 INFO    Thread-4 (_run_job):239746 [wandb_config.py:__setitem__():154] [no run ID] config set actual_train_images = 3404 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x7fa222695a30>>
+2025-06-13 05:47:18,604 INFO    Thread-4 (_run_job):239746 [wandb_run.py:_config_callback():1436] config_cb actual_train_images 3404 None

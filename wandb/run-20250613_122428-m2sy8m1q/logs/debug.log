@@ -1,0 +1,36 @@
+2025-06-13 12:24:28,348 INFO    Thread-16 (_run_job):307037 [wandb_setup.py:_flush():70] Current SDK version is 0.19.11
+2025-06-13 12:24:28,349 INFO    Thread-16 (_run_job):307037 [wandb_setup.py:_flush():70] Configure stats pid to 307037
+2025-06-13 12:24:28,349 INFO    Thread-16 (_run_job):307037 [wandb_setup.py:_flush():70] Loading settings from /nfs/homes/sdreyer/.config/wandb/settings
+2025-06-13 12:24:28,349 INFO    Thread-16 (_run_job):307037 [wandb_setup.py:_flush():70] Loading settings from /nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/settings
+2025-06-13 12:24:28,350 INFO    Thread-16 (_run_job):307037 [wandb_setup.py:_flush():70] Loading settings from environment variables
+2025-06-13 12:24:28,350 INFO    Thread-16 (_run_job):307037 [wandb_init.py:setup_run_log_directory():724] Logging user logs to /nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_122428-m2sy8m1q/logs/debug.log
+2025-06-13 12:24:28,350 INFO    Thread-16 (_run_job):307037 [wandb_init.py:setup_run_log_directory():725] Logging internal logs to /nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_122428-m2sy8m1q/logs/debug-internal.log
+2025-06-13 12:24:28,351 INFO    Thread-16 (_run_job):307037 [wandb_init.py:init():852] calling init triggers
+2025-06-13 12:24:28,351 INFO    Thread-16 (_run_job):307037 [wandb_init.py:init():857] wandb.init called with sweep_config: {'batch_size': 128, 'dropout': 0.55, 'epochs': 1000, 'learning_rate': 0.005, 'optimizer': 'Adam', 'train_percent': 0.6}
+config: {'_wandb': {}}
+2025-06-13 12:24:28,351 INFO    Thread-16 (_run_job):307037 [wandb_init.py:init():893] starting backend
+2025-06-13 12:24:28,352 INFO    Thread-16 (_run_job):307037 [wandb_init.py:init():897] sending inform_init request
+2025-06-13 12:24:28,354 INFO    Thread-16 (_run_job):307037 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-06-13 12:24:28,354 INFO    Thread-16 (_run_job):307037 [wandb_init.py:init():907] backend started and connected
+2025-06-13 12:24:28,355 INFO    Thread-16 (_run_job):307037 [wandb_run.py:_config_callback():1436] config_cb None None {'batch_size': 128, 'dropout': 0.55, 'epochs': 1000, 'learning_rate': 0.005, 'optimizer': 'Adam', 'train_percent': 0.6}
+2025-06-13 12:24:28,356 INFO    Thread-16 (_run_job):307037 [wandb_init.py:init():1005] updated telemetry
+2025-06-13 12:24:28,373 INFO    Thread-16 (_run_job):307037 [wandb_init.py:init():1029] communicating run to backend with 90.0 second timeout
+2025-06-13 12:24:28,793 INFO    Thread-16 (_run_job):307037 [wandb_init.py:init():1104] starting run threads in backend
+2025-06-13 12:24:29,047 INFO    Thread-16 (_run_job):307037 [wandb_run.py:_console_start():2573] atexit reg
+2025-06-13 12:24:29,047 INFO    Thread-16 (_run_job):307037 [wandb_run.py:_redirect():2421] redirect: wrap_raw
+2025-06-13 12:24:29,048 INFO    Thread-16 (_run_job):307037 [wandb_run.py:_redirect():2490] Wrapping output streams.
+2025-06-13 12:24:29,048 INFO    Thread-16 (_run_job):307037 [wandb_run.py:_redirect():2513] Redirects installed.
+2025-06-13 12:24:29,049 INFO    Thread-16 (_run_job):307037 [wandb_init.py:init():1150] run started, returning control to user process
+2025-06-13 12:24:29,052 INFO    Thread-16 (_run_job):307037 [wandb_config.py:__setitem__():154] [no run ID] config set run_id = 8 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x7f67bd43ba10>>
+2025-06-13 12:24:29,052 INFO    Thread-16 (_run_job):307037 [wandb_run.py:_config_callback():1436] config_cb run_id 8 None
+2025-06-13 12:24:29,053 INFO    Thread-16 (_run_job):307037 [wandb_config.py:__setitem__():154] [no run ID] config set train_percent_used = 0.6 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x7f67bd43ba10>>
+2025-06-13 12:24:29,053 INFO    Thread-16 (_run_job):307037 [wandb_run.py:_config_callback():1436] config_cb train_percent_used 0.6 None
+2025-06-13 12:24:29,064 INFO    Thread-16 (_run_job):307037 [wandb_config.py:__setitem__():154] [no run ID] config set actual_train_images = 2042 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x7f67bd43ba10>>
+2025-06-13 12:24:29,065 INFO    Thread-16 (_run_job):307037 [wandb_run.py:_config_callback():1436] config_cb actual_train_images 2042 None
+2025-06-13 12:34:10,827 INFO    Thread-16 (_run_job):307037 [wandb_run.py:_finish():2321] finishing run svenja-dreyer-tu-dortmund/Augm-Messungen-noTu-Tu/m2sy8m1q
+2025-06-13 12:34:10,827 INFO    Thread-16 (_run_job):307037 [wandb_run.py:_atexit_cleanup():2538] got exitcode: 0
+2025-06-13 12:34:10,828 INFO    Thread-16 (_run_job):307037 [wandb_run.py:_restore():2520] restore
+2025-06-13 12:34:10,828 INFO    Thread-16 (_run_job):307037 [wandb_run.py:_restore():2526] restore done
+2025-06-13 12:34:12,776 INFO    Thread-16 (_run_job):307037 [wandb_run.py:_footer_history_summary_info():4188] rendering history
+2025-06-13 12:34:12,778 INFO    Thread-16 (_run_job):307037 [wandb_run.py:_footer_history_summary_info():4220] rendering summary
+2025-06-13 12:34:12,779 INFO    Thread-16 (_run_job):307037 [wandb_run.py:_footer_sync_info():4149] logging synced files

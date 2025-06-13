@@ -1,0 +1,16 @@
+{"time":"2025-06-13T03:15:24.802604324+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_031524-yrynkopu/logs/debug-core.log"}
+{"time":"2025-06-13T03:15:25.060056674+02:00","level":"INFO","msg":"created new stream","id":"yrynkopu"}
+{"time":"2025-06-13T03:15:25.060264249+02:00","level":"INFO","msg":"stream: started","id":"yrynkopu"}
+{"time":"2025-06-13T03:15:25.06029486+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"yrynkopu"}
+{"time":"2025-06-13T03:15:25.060296743+02:00","level":"INFO","msg":"sender: started","stream_id":"yrynkopu"}
+{"time":"2025-06-13T03:15:25.060294386+02:00","level":"INFO","msg":"handler: started","stream_id":"yrynkopu"}
+{"time":"2025-06-13T03:15:25.239696837+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T03:20:17.947382307+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T03:20:17.947783396+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T03:20:18.948621631+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-yrynkopu-test_probs_labels","runtime_seconds":1.1603641439999999},{"desc":"uploading artifact run-yrynkopu-test_confusion_matrix_table","runtime_seconds":1.006866178,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.433696046,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-13T03:20:20.722851002+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T03:20:20.904492147+02:00","level":"INFO","msg":"stream: closing","id":"yrynkopu"}
+{"time":"2025-06-13T03:20:20.904695169+02:00","level":"INFO","msg":"handler: closed","stream_id":"yrynkopu"}
+{"time":"2025-06-13T03:20:20.904710251+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"yrynkopu"}
+{"time":"2025-06-13T03:20:20.90476712+02:00","level":"INFO","msg":"sender: closed","stream_id":"yrynkopu"}
+{"time":"2025-06-13T03:20:20.90533427+02:00","level":"INFO","msg":"stream: closed","id":"yrynkopu"}

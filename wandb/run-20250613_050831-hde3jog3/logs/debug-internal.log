@@ -1,0 +1,16 @@
+{"time":"2025-06-13T05:08:31.015360457+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_050831-hde3jog3/logs/debug-core.log"}
+{"time":"2025-06-13T05:08:31.280348607+02:00","level":"INFO","msg":"created new stream","id":"hde3jog3"}
+{"time":"2025-06-13T05:08:31.280597399+02:00","level":"INFO","msg":"stream: started","id":"hde3jog3"}
+{"time":"2025-06-13T05:08:31.280625489+02:00","level":"INFO","msg":"sender: started","stream_id":"hde3jog3"}
+{"time":"2025-06-13T05:08:31.280627494+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"hde3jog3"}
+{"time":"2025-06-13T05:08:31.280667348+02:00","level":"INFO","msg":"handler: started","stream_id":"hde3jog3"}
+{"time":"2025-06-13T05:08:31.442143527+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T05:12:03.727843294+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T05:12:03.728248228+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T05:12:04.729042535+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-hde3jog3-test_probs_labels","runtime_seconds":1.175694128},{"desc":"uploading artifact run-hde3jog3-test_confusion_matrix_table","runtime_seconds":1.006995712,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.267892008,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-13T05:12:06.918513838+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T05:12:07.109251211+02:00","level":"INFO","msg":"stream: closing","id":"hde3jog3"}
+{"time":"2025-06-13T05:12:07.109490022+02:00","level":"INFO","msg":"handler: closed","stream_id":"hde3jog3"}
+{"time":"2025-06-13T05:12:07.10951521+02:00","level":"INFO","msg":"sender: closed","stream_id":"hde3jog3"}
+{"time":"2025-06-13T05:12:07.109508796+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"hde3jog3"}
+{"time":"2025-06-13T05:12:07.110279139+02:00","level":"INFO","msg":"stream: closed","id":"hde3jog3"}

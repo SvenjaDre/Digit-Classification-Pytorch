@@ -1,0 +1,17 @@
+{"time":"2025-06-13T04:35:03.377636495+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_043503-ztjyz0tt/logs/debug-core.log"}
+{"time":"2025-06-13T04:35:03.642207564+02:00","level":"INFO","msg":"created new stream","id":"ztjyz0tt"}
+{"time":"2025-06-13T04:35:03.642406173+02:00","level":"INFO","msg":"stream: started","id":"ztjyz0tt"}
+{"time":"2025-06-13T04:35:03.642438231+02:00","level":"INFO","msg":"handler: started","stream_id":"ztjyz0tt"}
+{"time":"2025-06-13T04:35:03.642483814+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"ztjyz0tt"}
+{"time":"2025-06-13T04:35:03.642480123+02:00","level":"INFO","msg":"sender: started","stream_id":"ztjyz0tt"}
+{"time":"2025-06-13T04:35:03.81512856+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T04:39:48.28131249+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T04:39:48.281957114+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T04:39:49.244464185+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 28-29, console lines 30-31","runtime_seconds":29.97172036},{"desc":"uploading Checkpoints/Augm-Messungen-noTu-Tu/trainpercent_0.3/run_5/best_model.pt","runtime_seconds":0.49150366,"progress":"706.5KB/706.5KB"}],"total_operations":2}}
+{"time":"2025-06-13T04:39:49.65492484+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T04:40:29.284182908+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/svenja-dreyer-tu-dortmund/Augm-Messungen-noTu-Tu/ztjyz0tt/file_stream\": dial tcp: lookup api.wandb.ai on 129.217.129.42:53: read udp 129.217.167.98:56543->129.217.129.42:53: i/o timeout"}
+{"time":"2025-06-13T04:40:36.877284155+02:00","level":"INFO","msg":"stream: closing","id":"ztjyz0tt"}
+{"time":"2025-06-13T04:40:36.877561574+02:00","level":"INFO","msg":"handler: closed","stream_id":"ztjyz0tt"}
+{"time":"2025-06-13T04:40:36.877607151+02:00","level":"INFO","msg":"sender: closed","stream_id":"ztjyz0tt"}
+{"time":"2025-06-13T04:40:36.877600606+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ztjyz0tt"}
+{"time":"2025-06-13T04:40:36.878393495+02:00","level":"INFO","msg":"stream: closed","id":"ztjyz0tt"}

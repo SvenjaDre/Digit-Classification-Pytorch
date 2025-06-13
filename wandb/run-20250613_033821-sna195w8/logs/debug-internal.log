@@ -1,0 +1,16 @@
+{"time":"2025-06-13T03:38:21.36503524+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_033821-sna195w8/logs/debug-core.log"}
+{"time":"2025-06-13T03:38:21.630758444+02:00","level":"INFO","msg":"created new stream","id":"sna195w8"}
+{"time":"2025-06-13T03:38:21.630964329+02:00","level":"INFO","msg":"stream: started","id":"sna195w8"}
+{"time":"2025-06-13T03:38:21.6310376+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"sna195w8"}
+{"time":"2025-06-13T03:38:21.631043891+02:00","level":"INFO","msg":"handler: started","stream_id":"sna195w8"}
+{"time":"2025-06-13T03:38:21.631045243+02:00","level":"INFO","msg":"sender: started","stream_id":"sna195w8"}
+{"time":"2025-06-13T03:38:21.802536838+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T03:41:29.298850342+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T03:41:29.299211397+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T03:41:30.300043676+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-sna195w8-test_probs_labels","runtime_seconds":1.192466757},{"desc":"uploading artifact run-sna195w8-test_confusion_matrix_table","runtime_seconds":1.006539173,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.392329724,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-13T03:41:32.56274191+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T03:41:32.734715341+02:00","level":"INFO","msg":"stream: closing","id":"sna195w8"}
+{"time":"2025-06-13T03:41:32.734922654+02:00","level":"INFO","msg":"handler: closed","stream_id":"sna195w8"}
+{"time":"2025-06-13T03:41:32.734940286+02:00","level":"INFO","msg":"sender: closed","stream_id":"sna195w8"}
+{"time":"2025-06-13T03:41:32.734932603+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"sna195w8"}
+{"time":"2025-06-13T03:41:32.735677126+02:00","level":"INFO","msg":"stream: closed","id":"sna195w8"}

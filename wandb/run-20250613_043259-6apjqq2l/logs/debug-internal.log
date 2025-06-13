@@ -1,0 +1,16 @@
+{"time":"2025-06-13T04:32:59.230086856+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_043259-6apjqq2l/logs/debug-core.log"}
+{"time":"2025-06-13T04:32:59.523008683+02:00","level":"INFO","msg":"created new stream","id":"6apjqq2l"}
+{"time":"2025-06-13T04:32:59.523254426+02:00","level":"INFO","msg":"stream: started","id":"6apjqq2l"}
+{"time":"2025-06-13T04:32:59.523295959+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"6apjqq2l"}
+{"time":"2025-06-13T04:32:59.523294384+02:00","level":"INFO","msg":"sender: started","stream_id":"6apjqq2l"}
+{"time":"2025-06-13T04:32:59.523319506+02:00","level":"INFO","msg":"handler: started","stream_id":"6apjqq2l"}
+{"time":"2025-06-13T04:32:59.701016329+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T04:35:39.598056118+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T04:35:39.598423364+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T04:35:40.599190343+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-6apjqq2l-test_probs_labels","runtime_seconds":1.209816296},{"desc":"uploading artifact run-6apjqq2l-test_confusion_matrix_table","runtime_seconds":1.00743719,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.406698963,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-13T04:35:42.546348627+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T04:35:42.746326708+02:00","level":"INFO","msg":"stream: closing","id":"6apjqq2l"}
+{"time":"2025-06-13T04:35:42.746608644+02:00","level":"INFO","msg":"handler: closed","stream_id":"6apjqq2l"}
+{"time":"2025-06-13T04:35:42.746633809+02:00","level":"INFO","msg":"sender: closed","stream_id":"6apjqq2l"}
+{"time":"2025-06-13T04:35:42.746633877+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"6apjqq2l"}
+{"time":"2025-06-13T04:35:42.747310069+02:00","level":"INFO","msg":"stream: closed","id":"6apjqq2l"}

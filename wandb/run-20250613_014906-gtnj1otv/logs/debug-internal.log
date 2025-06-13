@@ -1,0 +1,16 @@
+{"time":"2025-06-13T01:49:06.323717643+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_014906-gtnj1otv/logs/debug-core.log"}
+{"time":"2025-06-13T01:49:06.596909368+02:00","level":"INFO","msg":"created new stream","id":"gtnj1otv"}
+{"time":"2025-06-13T01:49:06.59718328+02:00","level":"INFO","msg":"stream: started","id":"gtnj1otv"}
+{"time":"2025-06-13T01:49:06.597231949+02:00","level":"INFO","msg":"handler: started","stream_id":"gtnj1otv"}
+{"time":"2025-06-13T01:49:06.597222784+02:00","level":"INFO","msg":"sender: started","stream_id":"gtnj1otv"}
+{"time":"2025-06-13T01:49:06.597224514+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"gtnj1otv"}
+{"time":"2025-06-13T01:49:06.88953535+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T01:53:40.799775761+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T01:53:40.800144022+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T01:53:41.80085602+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-gtnj1otv-test_probs_labels","runtime_seconds":1.178950059},{"desc":"uploading artifact run-gtnj1otv-test_confusion_matrix_table","runtime_seconds":1.007290821,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.31734393,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-13T01:53:43.832837286+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T01:53:44.039227398+02:00","level":"INFO","msg":"stream: closing","id":"gtnj1otv"}
+{"time":"2025-06-13T01:53:44.039492139+02:00","level":"INFO","msg":"handler: closed","stream_id":"gtnj1otv"}
+{"time":"2025-06-13T01:53:44.039509102+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"gtnj1otv"}
+{"time":"2025-06-13T01:53:44.039560929+02:00","level":"INFO","msg":"sender: closed","stream_id":"gtnj1otv"}
+{"time":"2025-06-13T01:53:44.0403801+02:00","level":"INFO","msg":"stream: closed","id":"gtnj1otv"}

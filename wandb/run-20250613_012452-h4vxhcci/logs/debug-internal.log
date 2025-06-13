@@ -1,0 +1,16 @@
+{"time":"2025-06-13T01:24:52.038118803+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_012452-h4vxhcci/logs/debug-core.log"}
+{"time":"2025-06-13T01:24:52.309182379+02:00","level":"INFO","msg":"created new stream","id":"h4vxhcci"}
+{"time":"2025-06-13T01:24:52.30942523+02:00","level":"INFO","msg":"stream: started","id":"h4vxhcci"}
+{"time":"2025-06-13T01:24:52.309451774+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"h4vxhcci"}
+{"time":"2025-06-13T01:24:52.309461328+02:00","level":"INFO","msg":"handler: started","stream_id":"h4vxhcci"}
+{"time":"2025-06-13T01:24:52.30945893+02:00","level":"INFO","msg":"sender: started","stream_id":"h4vxhcci"}
+{"time":"2025-06-13T01:24:52.467089997+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T01:28:36.962635952+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T01:28:36.962980569+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T01:28:37.96366405+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-h4vxhcci-test_probs_labels","runtime_seconds":1.216229757},{"desc":"uploading artifact run-h4vxhcci-test_confusion_matrix_table","runtime_seconds":1.006438144,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.450652646,"progress":"632B/632B"}]},{"desc":"uploading history steps 21-23, summary, console lines 23-31","runtime_seconds":0.055592847}],"total_operations":3}}
+{"time":"2025-06-13T01:28:39.893554644+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T01:28:40.063231035+02:00","level":"INFO","msg":"stream: closing","id":"h4vxhcci"}
+{"time":"2025-06-13T01:28:40.063477937+02:00","level":"INFO","msg":"handler: closed","stream_id":"h4vxhcci"}
+{"time":"2025-06-13T01:28:40.063490912+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"h4vxhcci"}
+{"time":"2025-06-13T01:28:40.063556607+02:00","level":"INFO","msg":"sender: closed","stream_id":"h4vxhcci"}
+{"time":"2025-06-13T01:28:40.064382936+02:00","level":"INFO","msg":"stream: closed","id":"h4vxhcci"}

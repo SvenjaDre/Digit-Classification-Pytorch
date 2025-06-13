@@ -1,0 +1,16 @@
+{"time":"2025-06-13T04:17:08.206732582+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_041708-d8ip5pu3/logs/debug-core.log"}
+{"time":"2025-06-13T04:17:08.466019083+02:00","level":"INFO","msg":"created new stream","id":"d8ip5pu3"}
+{"time":"2025-06-13T04:17:08.466254084+02:00","level":"INFO","msg":"stream: started","id":"d8ip5pu3"}
+{"time":"2025-06-13T04:17:08.466302075+02:00","level":"INFO","msg":"sender: started","stream_id":"d8ip5pu3"}
+{"time":"2025-06-13T04:17:08.46631383+02:00","level":"INFO","msg":"handler: started","stream_id":"d8ip5pu3"}
+{"time":"2025-06-13T04:17:08.466305937+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"d8ip5pu3"}
+{"time":"2025-06-13T04:17:08.615415475+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T04:20:40.701003684+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T04:20:40.701395497+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T04:20:41.702061307+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-d8ip5pu3-test_probs_labels","runtime_seconds":0.99721076},{"desc":"uploading artifact run-d8ip5pu3-test_confusion_matrix_table","runtime_seconds":0.997189491}],"total_operations":2}}
+{"time":"2025-06-13T04:20:44.003582844+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T04:20:44.188615207+02:00","level":"INFO","msg":"stream: closing","id":"d8ip5pu3"}
+{"time":"2025-06-13T04:20:44.188885619+02:00","level":"INFO","msg":"handler: closed","stream_id":"d8ip5pu3"}
+{"time":"2025-06-13T04:20:44.188935659+02:00","level":"INFO","msg":"sender: closed","stream_id":"d8ip5pu3"}
+{"time":"2025-06-13T04:20:44.188921076+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"d8ip5pu3"}
+{"time":"2025-06-13T04:20:44.189694254+02:00","level":"INFO","msg":"stream: closed","id":"d8ip5pu3"}

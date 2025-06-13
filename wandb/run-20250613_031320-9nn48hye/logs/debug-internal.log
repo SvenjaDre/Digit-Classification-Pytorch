@@ -1,0 +1,16 @@
+{"time":"2025-06-13T03:13:20.26601256+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_031320-9nn48hye/logs/debug-core.log"}
+{"time":"2025-06-13T03:13:20.53397748+02:00","level":"INFO","msg":"created new stream","id":"9nn48hye"}
+{"time":"2025-06-13T03:13:20.534232834+02:00","level":"INFO","msg":"stream: started","id":"9nn48hye"}
+{"time":"2025-06-13T03:13:20.534332413+02:00","level":"INFO","msg":"handler: started","stream_id":"9nn48hye"}
+{"time":"2025-06-13T03:13:20.534302468+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"9nn48hye"}
+{"time":"2025-06-13T03:13:20.534355736+02:00","level":"INFO","msg":"sender: started","stream_id":"9nn48hye"}
+{"time":"2025-06-13T03:13:20.694368154+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T03:18:53.220270498+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T03:18:53.221345974+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T03:18:54.186008697+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.614577395,"progress":"1.2KB/1.2KB"},{"desc":"uploading config.yaml","runtime_seconds":0.044032025,"progress":"886B/886B"}],"total_operations":2}}
+{"time":"2025-06-13T03:18:55.526760206+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T03:18:55.701869999+02:00","level":"INFO","msg":"stream: closing","id":"9nn48hye"}
+{"time":"2025-06-13T03:18:55.70214814+02:00","level":"INFO","msg":"handler: closed","stream_id":"9nn48hye"}
+{"time":"2025-06-13T03:18:55.702162711+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"9nn48hye"}
+{"time":"2025-06-13T03:18:55.702225109+02:00","level":"INFO","msg":"sender: closed","stream_id":"9nn48hye"}
+{"time":"2025-06-13T03:18:55.702932193+02:00","level":"INFO","msg":"stream: closed","id":"9nn48hye"}

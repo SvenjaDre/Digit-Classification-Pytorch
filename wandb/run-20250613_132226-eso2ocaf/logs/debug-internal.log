@@ -1,0 +1,16 @@
+{"time":"2025-06-13T13:22:26.947993028+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_132226-eso2ocaf/logs/debug-core.log"}
+{"time":"2025-06-13T13:22:27.219045921+02:00","level":"INFO","msg":"created new stream","id":"eso2ocaf"}
+{"time":"2025-06-13T13:22:27.219335541+02:00","level":"INFO","msg":"stream: started","id":"eso2ocaf"}
+{"time":"2025-06-13T13:22:27.219366361+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"eso2ocaf"}
+{"time":"2025-06-13T13:22:27.219393947+02:00","level":"INFO","msg":"handler: started","stream_id":"eso2ocaf"}
+{"time":"2025-06-13T13:22:27.219391523+02:00","level":"INFO","msg":"sender: started","stream_id":"eso2ocaf"}
+{"time":"2025-06-13T13:22:27.396255806+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T13:26:46.776973217+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T13:26:46.777333964+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T13:26:47.778064575+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.519158906,"progress":"886B/886B"},{"desc":"uploading Checkpoints/Augm-Messungen-noTu-Tu/trainpercent_0.8/run_9/best_model.pt","runtime_seconds":0.053916969,"progress":"706.5KB/706.5KB"}],"total_operations":2}}
+{"time":"2025-06-13T13:26:48.634722119+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T13:26:48.819543582+02:00","level":"INFO","msg":"stream: closing","id":"eso2ocaf"}
+{"time":"2025-06-13T13:26:48.81984511+02:00","level":"INFO","msg":"handler: closed","stream_id":"eso2ocaf"}
+{"time":"2025-06-13T13:26:48.819915608+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"eso2ocaf"}
+{"time":"2025-06-13T13:26:48.819939515+02:00","level":"INFO","msg":"sender: closed","stream_id":"eso2ocaf"}
+{"time":"2025-06-13T13:26:48.820665391+02:00","level":"INFO","msg":"stream: closed","id":"eso2ocaf"}
