@@ -8,10 +8,8 @@ wandb.login()
 
 # Projektinfos
 entity = "svenja-dreyer-tu-dortmund"
-#project = "3-Messungen-Gli-Men"
-#project = "2-Messungen-noTu-Tu"
-#project = "Augm-Gli-Men"
-project  = "Augm-Messungen-noTu-Tu"
+
+project = "Reduzierung-Tu + Balance"
 
 # Basisverzeichnisse setzen
 base_dir = "tudothesis-main"
@@ -36,8 +34,7 @@ for run in runs:
         "test_sensitivity": summary.get("test_sensitivity"),
         "test_specificity": summary.get("test_specificity"),
         "val_accuracy": summary.get("val_accuracy"),
-        "train_samples": summary.get("train_samples_used"),
-        #"train_samples": config.get("train_samples"),
+        "tumor_samples": summary.get("tumor_train"),
         "batch_size": config.get("batch_size"),
         "learning_rate": config.get("learning_rate"),
         "epochs": config.get("epochs"),
@@ -52,14 +49,14 @@ print(f"✅ {len(df)} Runs exportiert nach: {csv_filename}")
 
 # Aggregierte Statistik berechnen
 def get_agg_df(metric):
-    grouped = df.groupby("train_samples").agg({metric: ["mean", "std"]}).reset_index()
-    grouped.columns = ["train_samples", f"{metric}_mean", f"{metric}_std"]
+    grouped = df.groupby("tumor_samples").agg({metric: ["mean", "std"]}).reset_index()
+    grouped.columns = ["tumor_samples", f"{metric}_mean", f"{metric}_std"]
     return grouped
 
 acc_df = get_agg_df("test_accuracy")
 sens_df = get_agg_df("test_sensitivity")
 spec_df = get_agg_df("test_specificity")
-agg_df = acc_df.merge(sens_df, on="train_samples").merge(spec_df, on="train_samples")
+agg_df = acc_df.merge(sens_df, on="tumor_samples").merge(spec_df, on="tumor_samples")
 
 # Aggregierte CSV speichern
 agg_csv_filename = os.path.join(csv_dir, f"{project}_aggregated_metrics.csv")
@@ -68,20 +65,20 @@ print(f"✅ Aggregierte Daten gespeichert nach: {agg_csv_filename}")
 
 # Plotfunktion definieren
 def plot_metric(metric, ylabel, suffix):
-    grouped = agg_df[["train_samples", f"{metric}_mean", f"{metric}_std"]]
+    grouped = agg_df[["tumor_samples", f"{metric}_mean", f"{metric}_std"]]
 
     plt.figure(figsize=(10, 6))
-    plt.errorbar(grouped["train_samples"], grouped[f"{metric}_mean"],
+    plt.errorbar(grouped["tumor_samples"], grouped[f"{metric}_mean"],
                  yerr=grouped[f"{metric}_std"], fmt='none', ecolor='cornflowerblue',
                  capsize=5, label="Fehlerbalken")
 
-    plt.scatter(grouped["train_samples"], grouped[f"{metric}_mean"],
+    plt.scatter(grouped["tumor_samples"], grouped[f"{metric}_mean"],
                 color='red', marker='x', label="Mittelwert")
 
-    plt.xlabel("Trainingssamples")
+    plt.xlabel("Tumor samples")
     plt.ylabel(ylabel)
     plt.title(f"{ylabel} in Abhängigkeit der Trainingssamples")
-    plt.xticks(grouped["train_samples"])
+    plt.xticks(grouped["tumor_samples"])
     plt.grid(True)
     plt.minorticks_on()
     plt.legend()
