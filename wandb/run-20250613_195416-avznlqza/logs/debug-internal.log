@@ -1,0 +1,17 @@
+{"time":"2025-06-13T19:54:16.365661021+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_195416-avznlqza/logs/debug-core.log"}
+{"time":"2025-06-13T19:54:21.891832996+02:00","level":"INFO","msg":"created new stream","id":"avznlqza"}
+{"time":"2025-06-13T19:54:21.892209791+02:00","level":"INFO","msg":"stream: started","id":"avznlqza"}
+{"time":"2025-06-13T19:54:21.892306527+02:00","level":"INFO","msg":"sender: started","stream_id":"avznlqza"}
+{"time":"2025-06-13T19:54:21.892296832+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"avznlqza"}
+{"time":"2025-06-13T19:54:21.892341647+02:00","level":"INFO","msg":"handler: started","stream_id":"avznlqza"}
+{"time":"2025-06-13T19:54:22.112871139+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T19:57:50.336589909+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-06-13T19:58:28.09173103+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T19:58:28.092113438+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T19:58:29.092911276+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-avznlqza-test_probs_labels","runtime_seconds":1.256661026,"subtasks":[{"desc":"test_probs_labels.table.json","runtime_seconds":0.321467422,"progress":"15.0KB/15.0KB"}]},{"desc":"uploading artifact run-avznlqza-test_confusion_matrix_table","runtime_seconds":1.007340352}],"total_operations":2}}
+{"time":"2025-06-13T19:58:31.250767838+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T19:58:31.428339281+02:00","level":"INFO","msg":"stream: closing","id":"avznlqza"}
+{"time":"2025-06-13T19:58:31.428592393+02:00","level":"INFO","msg":"handler: closed","stream_id":"avznlqza"}
+{"time":"2025-06-13T19:58:31.428667107+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"avznlqza"}
+{"time":"2025-06-13T19:58:31.428684479+02:00","level":"INFO","msg":"sender: closed","stream_id":"avznlqza"}
+{"time":"2025-06-13T19:58:31.429320184+02:00","level":"INFO","msg":"stream: closed","id":"avznlqza"}

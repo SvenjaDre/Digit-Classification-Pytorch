@@ -1,0 +1,17 @@
+{"time":"2025-06-13T18:15:19.052902398+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_181519-ms8102hw/logs/debug-core.log"}
+{"time":"2025-06-13T18:15:19.328210057+02:00","level":"INFO","msg":"created new stream","id":"ms8102hw"}
+{"time":"2025-06-13T18:15:19.328464704+02:00","level":"INFO","msg":"stream: started","id":"ms8102hw"}
+{"time":"2025-06-13T18:15:19.328487732+02:00","level":"INFO","msg":"handler: started","stream_id":"ms8102hw"}
+{"time":"2025-06-13T18:15:19.328498955+02:00","level":"INFO","msg":"sender: started","stream_id":"ms8102hw"}
+{"time":"2025-06-13T18:15:19.328495795+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"ms8102hw"}
+{"time":"2025-06-13T18:15:19.514762764+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T18:27:30.417647369+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-06-13T18:30:46.739066199+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T18:30:46.739469124+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T18:30:47.744636546+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading Checkpoints/Reduzierung-Tu + Balance/trainpercent_1/run_3/best_model.pt","runtime_seconds":0.236487124,"progress":"706.5KB/706.5KB"}],"total_operations":1}}
+{"time":"2025-06-13T18:30:48.462087158+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T18:30:48.679690641+02:00","level":"INFO","msg":"stream: closing","id":"ms8102hw"}
+{"time":"2025-06-13T18:30:48.679940135+02:00","level":"INFO","msg":"handler: closed","stream_id":"ms8102hw"}
+{"time":"2025-06-13T18:30:48.679962586+02:00","level":"INFO","msg":"sender: closed","stream_id":"ms8102hw"}
+{"time":"2025-06-13T18:30:48.679959273+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ms8102hw"}
+{"time":"2025-06-13T18:30:48.680675446+02:00","level":"INFO","msg":"stream: closed","id":"ms8102hw"}

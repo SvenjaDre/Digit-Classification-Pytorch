@@ -36,6 +36,20 @@ class CustomImageDatasetFromLists(Dataset):
         label = self.labels[idx]
         return image_tensor, label, self.image_paths[idx]
 
+    @classmethod
+    def from_directory(cls, root_dir):
+        image_paths, labels = [], []
+        for class_name in os.listdir(root_dir):
+            class_dir = os.path.join(root_dir, class_name)
+            if not os.path.isdir(class_dir):
+                continue
+            label = 1 if class_name.lower() in ['glioma', 'meningioma'] else 0
+            for fname in os.listdir(class_dir):
+                if fname.lower().endswith(('.png', '.jpg', '.jpeg')):
+                    image_paths.append(os.path.join(class_dir, fname))
+                    labels.append(label)
+        return cls(image_paths, labels)
+
 def split_dataset_by_class(root_dir, train_percent):
     tumor_paths, no_tumor_paths = [], []
     for class_name in os.listdir(root_dir):
@@ -130,7 +144,7 @@ def train():
 
     classifier = ImageClassifier().to(device)
     optimizer = Adam(classifier.parameters(), lr=config.learning_rate)
-    #balance
+
     counts = torch.tensor([no_tumor_count, tumor_count], dtype=torch.float32, device=device)
     weights = 1.0 / counts
     class_weights = weights / weights.sum()
@@ -231,7 +245,6 @@ def evaluate_on_test_data(model_path):
     print("\n🔍 Testing on separate test set...")
     test_dataset = CustomImageDatasetFromLists.from_directory(TEST_DIR)
     test_loader = DataLoader(test_dataset, batch_size=1, shuffle=False)
-    class_names = test_dataset.classes
 
     classifier = ImageClassifier().to(device)
     classifier.load_state_dict(torch.load(model_path, map_location=device))

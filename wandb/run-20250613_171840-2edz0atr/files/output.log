@@ -1,0 +1,37 @@
+🚀 Starting run: trainpercent_0.7_run_3
+📈 Trainingsdaten: 1489 von 2128 (70.0%)
+Epoch 1 | Train Loss: 0.6298 | Val Loss: 0.5118 | Val Acc: 76.50% | Sens: 0.91 | Spec: 0.63 | AUC: 0.85
+Epoch 2 | Train Loss: 0.4821 | Val Loss: 0.6496 | Val Acc: 65.23% | Sens: 0.30 | Spec: 0.99 | AUC: 0.89
+Epoch 3 | Train Loss: 0.5081 | Val Loss: 0.4359 | Val Acc: 80.26% | Sens: 0.71 | Spec: 0.89 | AUC: 0.90
+Epoch 4 | Train Loss: 0.4149 | Val Loss: 0.4609 | Val Acc: 76.50% | Sens: 0.57 | Spec: 0.96 | AUC: 0.91
+Epoch 5 | Train Loss: 0.3914 | Val Loss: 0.3733 | Val Acc: 84.02% | Sens: 0.85 | Spec: 0.83 | AUC: 0.92
+Epoch 6 | Train Loss: 0.3668 | Val Loss: 0.3665 | Val Acc: 85.15% | Sens: 0.82 | Spec: 0.88 | AUC: 0.92
+Epoch 7 | Train Loss: 0.3211 | Val Loss: 0.3824 | Val Acc: 83.46% | Sens: 0.74 | Spec: 0.93 | AUC: 0.93
+Epoch 8 | Train Loss: 0.2806 | Val Loss: 0.3747 | Val Acc: 85.71% | Sens: 0.95 | Spec: 0.77 | AUC: 0.94
+Epoch 9 | Train Loss: 0.2842 | Val Loss: 0.3574 | Val Acc: 85.53% | Sens: 0.77 | Spec: 0.93 | AUC: 0.94
+Epoch 10 | Train Loss: 0.2588 | Val Loss: 0.3157 | Val Acc: 86.28% | Sens: 0.91 | Spec: 0.82 | AUC: 0.95
+Epoch 11 | Train Loss: 0.2212 | Val Loss: 0.3249 | Val Acc: 87.97% | Sens: 0.95 | Spec: 0.81 | AUC: 0.95
+Epoch 12 | Train Loss: 0.2207 | Val Loss: 0.3543 | Val Acc: 86.65% | Sens: 0.96 | Spec: 0.78 | AUC: 0.95
+Epoch 13 | Train Loss: 0.1940 | Val Loss: 0.3866 | Val Acc: 86.84% | Sens: 0.96 | Spec: 0.78 | AUC: 0.96
+Epoch 14 | Train Loss: 0.1875 | Val Loss: 0.3214 | Val Acc: 87.97% | Sens: 0.81 | Spec: 0.94 | AUC: 0.96
+Epoch 15 | Train Loss: 0.1630 | Val Loss: 0.3324 | Val Acc: 88.35% | Sens: 0.94 | Spec: 0.83 | AUC: 0.96
+Epoch 16 | Train Loss: 0.2124 | Val Loss: 0.3110 | Val Acc: 88.16% | Sens: 0.81 | Spec: 0.95 | AUC: 0.96
+Epoch 17 | Train Loss: 0.2170 | Val Loss: 0.3729 | Val Acc: 86.65% | Sens: 0.97 | Spec: 0.77 | AUC: 0.96
+Epoch 18 | Train Loss: 0.1374 | Val Loss: 0.2759 | Val Acc: 89.29% | Sens: 0.86 | Spec: 0.92 | AUC: 0.96
+Epoch 19 | Train Loss: 0.1219 | Val Loss: 0.2952 | Val Acc: 89.47% | Sens: 0.87 | Spec: 0.92 | AUC: 0.96
+Epoch 20 | Train Loss: 0.0956 | Val Loss: 0.3011 | Val Acc: 89.85% | Sens: 0.86 | Spec: 0.94 | AUC: 0.96
+Epoch 21 | Train Loss: 0.0963 | Val Loss: 0.3477 | Val Acc: 89.10% | Sens: 0.96 | Spec: 0.82 | AUC: 0.96
+Epoch 22 | Train Loss: 0.1011 | Val Loss: 0.3541 | Val Acc: 88.91% | Sens: 0.83 | Spec: 0.95 | AUC: 0.96
+Epoch 23 | Train Loss: 0.0843 | Val Loss: 0.2963 | Val Acc: 90.60% | Sens: 0.93 | Spec: 0.88 | AUC: 0.97
+Epoch 24 | Train Loss: 0.0872 | Val Loss: 0.4070 | Val Acc: 87.97% | Sens: 0.95 | Spec: 0.81 | AUC: 0.96
+Epoch 25 | Train Loss: 0.0869 | Val Loss: 0.2997 | Val Acc: 90.79% | Sens: 0.92 | Spec: 0.89 | AUC: 0.97
+Epoch 26 | Train Loss: 0.0555 | Val Loss: 0.3122 | Val Acc: 90.23% | Sens: 0.87 | Spec: 0.93 | AUC: 0.97
+Epoch 27 | Train Loss: 0.0578 | Val Loss: 0.3153 | Val Acc: 90.98% | Sens: 0.93 | Spec: 0.89 | AUC: 0.97
+Epoch 28 | Train Loss: 0.0650 | Val Loss: 0.3560 | Val Acc: 90.98% | Sens: 0.95 | Spec: 0.87 | AUC: 0.97
+🚨 Early stopping after 28 epochs.
+
+🔍 Testing on separate test set...
+/nfs/homes/sdreyer/Digit-Classification-Pytorch/augmention_Gli_Men.py:245: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  classifier.load_state_dict(torch.load(model_path, map_location=device))
+✅ Correct: 537 | ❌ Incorrect: 69 | Total: 606
+🎯 Test Accuracy: 88.61% | Sens: 0.86 | Spec: 0.91 | AUC: 0.96

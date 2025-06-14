@@ -1,0 +1,17 @@
+{"time":"2025-06-13T19:11:15.658480653+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_191115-qfqxp1mz/logs/debug-core.log"}
+{"time":"2025-06-13T19:11:15.952880348+02:00","level":"INFO","msg":"created new stream","id":"qfqxp1mz"}
+{"time":"2025-06-13T19:11:15.953126237+02:00","level":"INFO","msg":"stream: started","id":"qfqxp1mz"}
+{"time":"2025-06-13T19:11:15.953147512+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"qfqxp1mz"}
+{"time":"2025-06-13T19:11:15.953157013+02:00","level":"INFO","msg":"sender: started","stream_id":"qfqxp1mz"}
+{"time":"2025-06-13T19:11:15.953157719+02:00","level":"INFO","msg":"handler: started","stream_id":"qfqxp1mz"}
+{"time":"2025-06-13T19:11:16.156631463+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T19:13:25.00385986+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-06-13T19:15:02.494742974+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T19:15:02.495125883+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T19:15:03.495941294+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-qfqxp1mz-test_probs_labels","runtime_seconds":1.174371362},{"desc":"uploading artifact run-qfqxp1mz-test_confusion_matrix_table","runtime_seconds":1.007822106,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.245905526,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-13T19:15:05.77656035+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T19:15:05.992296738+02:00","level":"INFO","msg":"stream: closing","id":"qfqxp1mz"}
+{"time":"2025-06-13T19:15:05.992556568+02:00","level":"INFO","msg":"handler: closed","stream_id":"qfqxp1mz"}
+{"time":"2025-06-13T19:15:05.9925815+02:00","level":"INFO","msg":"sender: closed","stream_id":"qfqxp1mz"}
+{"time":"2025-06-13T19:15:05.992572512+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"qfqxp1mz"}
+{"time":"2025-06-13T19:15:05.993473271+02:00","level":"INFO","msg":"stream: closed","id":"qfqxp1mz"}

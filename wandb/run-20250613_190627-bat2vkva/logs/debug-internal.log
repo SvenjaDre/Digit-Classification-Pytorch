@@ -1,0 +1,17 @@
+{"time":"2025-06-13T19:06:27.772003018+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_190627-bat2vkva/logs/debug-core.log"}
+{"time":"2025-06-13T19:06:29.962062805+02:00","level":"INFO","msg":"created new stream","id":"bat2vkva"}
+{"time":"2025-06-13T19:06:29.962301064+02:00","level":"INFO","msg":"stream: started","id":"bat2vkva"}
+{"time":"2025-06-13T19:06:29.962319521+02:00","level":"INFO","msg":"handler: started","stream_id":"bat2vkva"}
+{"time":"2025-06-13T19:06:29.962333861+02:00","level":"INFO","msg":"sender: started","stream_id":"bat2vkva"}
+{"time":"2025-06-13T19:06:29.962341817+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"bat2vkva"}
+{"time":"2025-06-13T19:06:30.374024246+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T19:10:35.012421514+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-06-13T19:11:09.408902371+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T19:11:09.409279967+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T19:11:10.410004126+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-bat2vkva-test_probs_labels","runtime_seconds":1.125567703},{"desc":"uploading artifact run-bat2vkva-test_confusion_matrix_table","runtime_seconds":1.006815509,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.198641557,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-13T19:11:12.940433729+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T19:11:13.144997426+02:00","level":"INFO","msg":"stream: closing","id":"bat2vkva"}
+{"time":"2025-06-13T19:11:13.145305903+02:00","level":"INFO","msg":"handler: closed","stream_id":"bat2vkva"}
+{"time":"2025-06-13T19:11:13.145359481+02:00","level":"INFO","msg":"sender: closed","stream_id":"bat2vkva"}
+{"time":"2025-06-13T19:11:13.145354703+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"bat2vkva"}
+{"time":"2025-06-13T19:11:13.146070724+02:00","level":"INFO","msg":"stream: closed","id":"bat2vkva"}

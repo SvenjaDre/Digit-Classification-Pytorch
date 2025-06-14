@@ -1,0 +1,8 @@
+{"time":"2025-06-13T15:30:52.59695203+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_153052-ivhivqzh/logs/debug-core.log"}
+{"time":"2025-06-13T15:30:53.170090689+02:00","level":"INFO","msg":"created new stream","id":"ivhivqzh"}
+{"time":"2025-06-13T15:30:53.170350851+02:00","level":"INFO","msg":"stream: started","id":"ivhivqzh"}
+{"time":"2025-06-13T15:30:53.170378607+02:00","level":"INFO","msg":"sender: started","stream_id":"ivhivqzh"}
+{"time":"2025-06-13T15:30:53.170374742+02:00","level":"INFO","msg":"handler: started","stream_id":"ivhivqzh"}
+{"time":"2025-06-13T15:30:53.170403482+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"ivhivqzh"}
+{"time":"2025-06-13T15:30:53.38201985+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T15:37:41.380875+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/svenja-dreyer-tu-dortmund/Augm-Gli-Men/ivhivqzh/file_stream\": unexpected EOF"}

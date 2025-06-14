@@ -1,0 +1,16 @@
+{"time":"2025-06-13T19:39:11.805567153+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_193911-zh73is4a/logs/debug-core.log"}
+{"time":"2025-06-13T19:39:12.07083365+02:00","level":"INFO","msg":"created new stream","id":"zh73is4a"}
+{"time":"2025-06-13T19:39:12.07105288+02:00","level":"INFO","msg":"stream: started","id":"zh73is4a"}
+{"time":"2025-06-13T19:39:12.071110178+02:00","level":"INFO","msg":"sender: started","stream_id":"zh73is4a"}
+{"time":"2025-06-13T19:39:12.071106617+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"zh73is4a"}
+{"time":"2025-06-13T19:39:12.071127263+02:00","level":"INFO","msg":"handler: started","stream_id":"zh73is4a"}
+{"time":"2025-06-13T19:39:12.257802003+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T19:41:46.705725968+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T19:41:46.706066953+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T19:41:47.706669799+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading Checkpoints/Reduzierung-Tu + Balance/trainpercent_0.1/run_3/best_model.pt","runtime_seconds":0.157574633,"progress":"706.5KB/706.5KB"}],"total_operations":1}}
+{"time":"2025-06-13T19:41:48.470437505+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T19:41:48.683422799+02:00","level":"INFO","msg":"stream: closing","id":"zh73is4a"}
+{"time":"2025-06-13T19:41:48.683675976+02:00","level":"INFO","msg":"handler: closed","stream_id":"zh73is4a"}
+{"time":"2025-06-13T19:41:48.683691862+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"zh73is4a"}
+{"time":"2025-06-13T19:41:48.683720233+02:00","level":"INFO","msg":"sender: closed","stream_id":"zh73is4a"}
+{"time":"2025-06-13T19:41:48.684480322+02:00","level":"INFO","msg":"stream: closed","id":"zh73is4a"}

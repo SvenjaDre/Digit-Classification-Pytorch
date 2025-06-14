@@ -1,0 +1,16 @@
+{"time":"2025-06-13T20:09:19.027679699+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_200919-quzv2imm/logs/debug-core.log"}
+{"time":"2025-06-13T20:09:19.292095974+02:00","level":"INFO","msg":"created new stream","id":"quzv2imm"}
+{"time":"2025-06-13T20:09:19.292339265+02:00","level":"INFO","msg":"stream: started","id":"quzv2imm"}
+{"time":"2025-06-13T20:09:19.292412368+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"quzv2imm"}
+{"time":"2025-06-13T20:09:19.292422434+02:00","level":"INFO","msg":"handler: started","stream_id":"quzv2imm"}
+{"time":"2025-06-13T20:09:19.292419181+02:00","level":"INFO","msg":"sender: started","stream_id":"quzv2imm"}
+{"time":"2025-06-13T20:09:19.45902473+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T20:11:52.341412709+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T20:11:52.341930969+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T20:11:53.342387004+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-quzv2imm-test_probs_labels","runtime_seconds":1.124350414},{"desc":"uploading artifact run-quzv2imm-test_confusion_matrix_table","runtime_seconds":1.00614045,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.296465573,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-13T20:11:55.871281943+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T20:11:56.089375159+02:00","level":"INFO","msg":"stream: closing","id":"quzv2imm"}
+{"time":"2025-06-13T20:11:56.08956204+02:00","level":"INFO","msg":"handler: closed","stream_id":"quzv2imm"}
+{"time":"2025-06-13T20:11:56.089583714+02:00","level":"INFO","msg":"sender: closed","stream_id":"quzv2imm"}
+{"time":"2025-06-13T20:11:56.089576162+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"quzv2imm"}
+{"time":"2025-06-13T20:11:56.090478614+02:00","level":"INFO","msg":"stream: closed","id":"quzv2imm"}

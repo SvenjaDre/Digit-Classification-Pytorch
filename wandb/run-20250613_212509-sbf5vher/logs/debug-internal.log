@@ -1,0 +1,16 @@
+{"time":"2025-06-13T21:25:09.377706754+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_212509-sbf5vher/logs/debug-core.log"}
+{"time":"2025-06-13T21:25:09.640854317+02:00","level":"INFO","msg":"created new stream","id":"sbf5vher"}
+{"time":"2025-06-13T21:25:09.64105463+02:00","level":"INFO","msg":"stream: started","id":"sbf5vher"}
+{"time":"2025-06-13T21:25:09.64108179+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"sbf5vher"}
+{"time":"2025-06-13T21:25:09.641096275+02:00","level":"INFO","msg":"sender: started","stream_id":"sbf5vher"}
+{"time":"2025-06-13T21:25:09.641092855+02:00","level":"INFO","msg":"handler: started","stream_id":"sbf5vher"}
+{"time":"2025-06-13T21:25:09.8256635+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T21:27:35.657811522+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T21:27:35.658178034+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T21:27:36.658974222+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-sbf5vher-test_probs_labels","runtime_seconds":1.157154119},{"desc":"uploading artifact run-sbf5vher-test_confusion_matrix_table","runtime_seconds":1.006287096,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.259201412,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-13T21:27:38.993536622+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T21:27:39.176867791+02:00","level":"INFO","msg":"stream: closing","id":"sbf5vher"}
+{"time":"2025-06-13T21:27:39.177082867+02:00","level":"INFO","msg":"handler: closed","stream_id":"sbf5vher"}
+{"time":"2025-06-13T21:27:39.177105377+02:00","level":"INFO","msg":"sender: closed","stream_id":"sbf5vher"}
+{"time":"2025-06-13T21:27:39.177096685+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"sbf5vher"}
+{"time":"2025-06-13T21:27:39.177901039+02:00","level":"INFO","msg":"stream: closed","id":"sbf5vher"}

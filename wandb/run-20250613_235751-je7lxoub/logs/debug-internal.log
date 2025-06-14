@@ -1,0 +1,16 @@
+{"time":"2025-06-13T23:57:51.561335908+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_235751-je7lxoub/logs/debug-core.log"}
+{"time":"2025-06-13T23:57:51.82843359+02:00","level":"INFO","msg":"created new stream","id":"je7lxoub"}
+{"time":"2025-06-13T23:57:51.828634162+02:00","level":"INFO","msg":"stream: started","id":"je7lxoub"}
+{"time":"2025-06-13T23:57:51.828670859+02:00","level":"INFO","msg":"sender: started","stream_id":"je7lxoub"}
+{"time":"2025-06-13T23:57:51.828669578+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"je7lxoub"}
+{"time":"2025-06-13T23:57:51.828718326+02:00","level":"INFO","msg":"handler: started","stream_id":"je7lxoub"}
+{"time":"2025-06-13T23:57:52.011672188+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-14T00:08:06.636152551+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-14T00:08:06.636536582+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-14T00:08:07.598984041+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading Checkpoints/Reduzierung-Tu + Balance/trainpercent_0.7/run_7/best_model.pt","runtime_seconds":0.267248164,"progress":"706.5KB/706.5KB"},{"desc":"uploading history steps 36-37, summary, console lines 38-45","runtime_seconds":0.1474342}],"total_operations":2}}
+{"time":"2025-06-14T00:08:08.287709124+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-14T00:08:08.480308439+02:00","level":"INFO","msg":"stream: closing","id":"je7lxoub"}
+{"time":"2025-06-14T00:08:08.480555411+02:00","level":"INFO","msg":"handler: closed","stream_id":"je7lxoub"}
+{"time":"2025-06-14T00:08:08.480590035+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"je7lxoub"}
+{"time":"2025-06-14T00:08:08.480609947+02:00","level":"INFO","msg":"sender: closed","stream_id":"je7lxoub"}
+{"time":"2025-06-14T00:08:08.481363213+02:00","level":"INFO","msg":"stream: closed","id":"je7lxoub"}

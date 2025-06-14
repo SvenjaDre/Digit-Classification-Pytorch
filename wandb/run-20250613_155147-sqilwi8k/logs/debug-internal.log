@@ -1,0 +1,16 @@
+{"time":"2025-06-13T15:51:47.280073981+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_155147-sqilwi8k/logs/debug-core.log"}
+{"time":"2025-06-13T15:51:47.550886575+02:00","level":"INFO","msg":"created new stream","id":"sqilwi8k"}
+{"time":"2025-06-13T15:51:47.551134016+02:00","level":"INFO","msg":"stream: started","id":"sqilwi8k"}
+{"time":"2025-06-13T15:51:47.55118261+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"sqilwi8k"}
+{"time":"2025-06-13T15:51:47.551197874+02:00","level":"INFO","msg":"handler: started","stream_id":"sqilwi8k"}
+{"time":"2025-06-13T15:51:47.551198019+02:00","level":"INFO","msg":"sender: started","stream_id":"sqilwi8k"}
+{"time":"2025-06-13T15:51:47.718419733+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T15:56:27.069842161+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T15:56:27.070239728+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T15:56:28.071030482+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-sqilwi8k-test_probs_labels","runtime_seconds":1.193036413,"subtasks":[{"desc":"test_probs_labels.table.json","runtime_seconds":0.216610612,"progress":"15.2KB/15.2KB"}]},{"desc":"uploading artifact run-sqilwi8k-test_confusion_matrix_table","runtime_seconds":1.009337154}],"total_operations":2}}
+{"time":"2025-06-13T15:56:30.900529667+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T15:56:31.090557099+02:00","level":"INFO","msg":"stream: closing","id":"sqilwi8k"}
+{"time":"2025-06-13T15:56:31.090840742+02:00","level":"INFO","msg":"handler: closed","stream_id":"sqilwi8k"}
+{"time":"2025-06-13T15:56:31.090879552+02:00","level":"INFO","msg":"sender: closed","stream_id":"sqilwi8k"}
+{"time":"2025-06-13T15:56:31.090870872+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"sqilwi8k"}
+{"time":"2025-06-13T15:56:31.091587168+02:00","level":"INFO","msg":"stream: closed","id":"sqilwi8k"}

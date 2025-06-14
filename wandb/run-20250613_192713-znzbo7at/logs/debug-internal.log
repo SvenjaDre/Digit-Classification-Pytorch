@@ -1,0 +1,20 @@
+{"time":"2025-06-13T19:27:13.522411217+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_192713-znzbo7at/logs/debug-core.log"}
+{"time":"2025-06-13T19:27:13.852462678+02:00","level":"INFO","msg":"created new stream","id":"znzbo7at"}
+{"time":"2025-06-13T19:27:13.861319993+02:00","level":"INFO","msg":"handler: started","stream_id":"znzbo7at"}
+{"time":"2025-06-13T19:27:13.861343498+02:00","level":"INFO","msg":"stream: started","id":"znzbo7at"}
+{"time":"2025-06-13T19:27:13.861387366+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"znzbo7at"}
+{"time":"2025-06-13T19:27:13.86139385+02:00","level":"INFO","msg":"sender: started","stream_id":"znzbo7at"}
+{"time":"2025-06-13T19:27:14.405263561+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T19:50:18.436116185+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/svenja-dreyer-tu-dortmund/Augm-Gli-Men/znzbo7at/file_stream\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-06-13T19:50:18.881011012+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-06-13T19:50:18.895572936+02:00","level":"WARN","msg":"sender: taking a long time","seconds":796.414625458,"work":"WorkRecord(*service_go_proto.Request_StopStatus); Control(local:true mailbox_slot:\"2xkplhzaponz\" connection_id:\"127.0.0.1:37620\")"}
+{"time":"2025-06-13T19:50:21.213385953+02:00","level":"INFO","msg":"sender: succeeded after taking longer than expected","seconds":1133.97172522,"work":"WorkRecord(*service_go_proto.Request_StopStatus); Control(local:true mailbox_slot:\"2xkplhzaponz\" connection_id:\"127.0.0.1:37620\")"}
+{"time":"2025-06-13T19:54:04.123431853+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T19:54:04.124713316+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T19:54:07.058309258+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading Checkpoints/Augm-Gli-Men/trainpercent_1/run_7/best_model.pt","runtime_seconds":0.398886701,"progress":"706.5KB/706.5KB"}],"total_operations":1}}
+{"time":"2025-06-13T19:54:07.608536374+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T19:54:07.869078792+02:00","level":"INFO","msg":"stream: closing","id":"znzbo7at"}
+{"time":"2025-06-13T19:54:07.869304267+02:00","level":"INFO","msg":"handler: closed","stream_id":"znzbo7at"}
+{"time":"2025-06-13T19:54:07.869317005+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"znzbo7at"}
+{"time":"2025-06-13T19:54:07.869326243+02:00","level":"INFO","msg":"sender: closed","stream_id":"znzbo7at"}
+{"time":"2025-06-13T19:54:07.870030515+02:00","level":"INFO","msg":"stream: closed","id":"znzbo7at"}

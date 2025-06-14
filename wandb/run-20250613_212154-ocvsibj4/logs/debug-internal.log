@@ -1,0 +1,16 @@
+{"time":"2025-06-13T21:21:54.321560795+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_212154-ocvsibj4/logs/debug-core.log"}
+{"time":"2025-06-13T21:21:54.587833952+02:00","level":"INFO","msg":"created new stream","id":"ocvsibj4"}
+{"time":"2025-06-13T21:21:54.588064782+02:00","level":"INFO","msg":"stream: started","id":"ocvsibj4"}
+{"time":"2025-06-13T21:21:54.588139287+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"ocvsibj4"}
+{"time":"2025-06-13T21:21:54.58815462+02:00","level":"INFO","msg":"handler: started","stream_id":"ocvsibj4"}
+{"time":"2025-06-13T21:21:54.588156916+02:00","level":"INFO","msg":"sender: started","stream_id":"ocvsibj4"}
+{"time":"2025-06-13T21:21:54.762024286+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T21:25:02.809651564+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T21:25:02.810009448+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T21:25:03.810696052+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-ocvsibj4-test_probs_labels","runtime_seconds":1.211998782},{"desc":"uploading artifact run-ocvsibj4-test_confusion_matrix_table","runtime_seconds":1.007196536,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.126415459,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-13T21:25:06.694153054+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T21:25:06.871949664+02:00","level":"INFO","msg":"stream: closing","id":"ocvsibj4"}
+{"time":"2025-06-13T21:25:06.872195968+02:00","level":"INFO","msg":"handler: closed","stream_id":"ocvsibj4"}
+{"time":"2025-06-13T21:25:06.872213958+02:00","level":"INFO","msg":"sender: closed","stream_id":"ocvsibj4"}
+{"time":"2025-06-13T21:25:06.872206452+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ocvsibj4"}
+{"time":"2025-06-13T21:25:06.872962717+02:00","level":"INFO","msg":"stream: closed","id":"ocvsibj4"}

@@ -1,0 +1,17 @@
+{"time":"2025-06-13T20:27:56.865337417+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_202756-phqxhx7z/logs/debug-core.log"}
+{"time":"2025-06-13T20:27:57.130912612+02:00","level":"INFO","msg":"created new stream","id":"phqxhx7z"}
+{"time":"2025-06-13T20:27:57.131123932+02:00","level":"INFO","msg":"stream: started","id":"phqxhx7z"}
+{"time":"2025-06-13T20:27:57.131202367+02:00","level":"INFO","msg":"handler: started","stream_id":"phqxhx7z"}
+{"time":"2025-06-13T20:27:57.131199507+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"phqxhx7z"}
+{"time":"2025-06-13T20:27:57.131213526+02:00","level":"INFO","msg":"sender: started","stream_id":"phqxhx7z"}
+{"time":"2025-06-13T20:27:57.315366232+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T20:35:12.916432306+02:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/svenja-dreyer-tu-dortmund/Reduzierung-Tu%20+%20Balance/phqxhx7z/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-06-13T20:35:41.468263727+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T20:35:41.468962619+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T20:35:42.439433487+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading Checkpoints/Reduzierung-Tu + Balance/trainpercent_0.5/run_4/best_model.pt","runtime_seconds":0.268581236,"progress":"706.5KB/706.5KB"}],"total_operations":1}}
+{"time":"2025-06-13T20:35:43.078323153+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T20:35:43.287578613+02:00","level":"INFO","msg":"stream: closing","id":"phqxhx7z"}
+{"time":"2025-06-13T20:35:43.287836205+02:00","level":"INFO","msg":"handler: closed","stream_id":"phqxhx7z"}
+{"time":"2025-06-13T20:35:43.287847438+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"phqxhx7z"}
+{"time":"2025-06-13T20:35:43.287885232+02:00","level":"INFO","msg":"sender: closed","stream_id":"phqxhx7z"}
+{"time":"2025-06-13T20:35:43.288673708+02:00","level":"INFO","msg":"stream: closed","id":"phqxhx7z"}

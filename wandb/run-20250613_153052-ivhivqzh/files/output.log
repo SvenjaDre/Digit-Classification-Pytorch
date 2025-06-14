@@ -1,0 +1,23 @@
+🚀 Starting run: trainpercent_1_run_1
+📈 Trainingsdaten: 6384 von 6384 (100.0%)
+Epoch 1 | Train Loss: 0.5249 | Val Loss: 0.4883 | Val Acc: 73.93% | Sens: 0.58 | Spec: 0.91 | AUC: 0.89
+Epoch 2 | Train Loss: 0.4330 | Val Loss: 0.3630 | Val Acc: 84.59% | Sens: 0.91 | Spec: 0.78 | AUC: 0.92
+Epoch 3 | Train Loss: 0.3456 | Val Loss: 0.3009 | Val Acc: 87.41% | Sens: 0.88 | Spec: 0.87 | AUC: 0.94
+Epoch 4 | Train Loss: 0.2900 | Val Loss: 0.2548 | Val Acc: 89.91% | Sens: 0.96 | Spec: 0.83 | AUC: 0.97
+Epoch 5 | Train Loss: 0.2216 | Val Loss: 0.1936 | Val Acc: 92.86% | Sens: 0.95 | Spec: 0.90 | AUC: 0.98
+Epoch 6 | Train Loss: 0.1766 | Val Loss: 0.1631 | Val Acc: 93.23% | Sens: 0.93 | Spec: 0.94 | AUC: 0.98
+[34m[1mwandb[0m: Ctrl + C detected. Stopping sweep.
+Exception ignored in atexit callback: <function _start_and_connect_service.<locals>.teardown_atexit at 0x7f7e46c4a7a0>
+Traceback (most recent call last):
+  File "/nfs/homes/sdreyer/.local/lib/python3.12/site-packages/wandb/sdk/lib/service_connection.py", line 94, in teardown_atexit
+    conn.teardown(hooks.exit_code)
+  File "/nfs/homes/sdreyer/.local/lib/python3.12/site-packages/wandb/sdk/lib/service_connection.py", line 226, in teardown
+    self._router.join()
+  File "/nfs/homes/sdreyer/.local/lib/python3.12/site-packages/wandb/sdk/interface/router.py", line 75, in join
+    self._thread.join()
+  File "/nfs/sw/micromamba/envs/pytorch_gpu/lib/python3.12/threading.py", line 1149, in join
+    self._wait_for_tstate_lock()
+  File "/nfs/sw/micromamba/envs/pytorch_gpu/lib/python3.12/threading.py", line 1169, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt:

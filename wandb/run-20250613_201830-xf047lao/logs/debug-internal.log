@@ -1,0 +1,16 @@
+{"time":"2025-06-13T20:18:30.165649998+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_201830-xf047lao/logs/debug-core.log"}
+{"time":"2025-06-13T20:18:30.426659375+02:00","level":"INFO","msg":"created new stream","id":"xf047lao"}
+{"time":"2025-06-13T20:18:30.426921767+02:00","level":"INFO","msg":"stream: started","id":"xf047lao"}
+{"time":"2025-06-13T20:18:30.426983357+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"xf047lao"}
+{"time":"2025-06-13T20:18:30.426983254+02:00","level":"INFO","msg":"sender: started","stream_id":"xf047lao"}
+{"time":"2025-06-13T20:18:30.427077071+02:00","level":"INFO","msg":"handler: started","stream_id":"xf047lao"}
+{"time":"2025-06-13T20:18:30.585262527+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T20:22:42.07326542+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T20:22:42.073646913+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T20:22:43.078823258+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-xf047lao-test_probs_labels","runtime_seconds":1.24731429},{"desc":"uploading artifact run-xf047lao-test_confusion_matrix_table","runtime_seconds":1.012051282,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.38438773,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-13T20:22:44.958971274+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T20:22:45.182197701+02:00","level":"INFO","msg":"stream: closing","id":"xf047lao"}
+{"time":"2025-06-13T20:22:45.182405716+02:00","level":"INFO","msg":"handler: closed","stream_id":"xf047lao"}
+{"time":"2025-06-13T20:22:45.182420083+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"xf047lao"}
+{"time":"2025-06-13T20:22:45.182485131+02:00","level":"INFO","msg":"sender: closed","stream_id":"xf047lao"}
+{"time":"2025-06-13T20:22:45.183063473+02:00","level":"INFO","msg":"stream: closed","id":"xf047lao"}

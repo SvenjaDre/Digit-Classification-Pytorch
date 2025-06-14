@@ -1,0 +1,28 @@
+🚀 Starting run: trainpercent_0.4_run_5
+📈 Trainingsdaten: 851 von 2128 (40.0%)
+Epoch 1 | Train Loss: 0.6895 | Val Loss: 0.6344 | Val Acc: 62.41% | Sens: 0.98 | Spec: 0.28 | AUC: 0.82
+Epoch 2 | Train Loss: 0.5454 | Val Loss: 0.6448 | Val Acc: 68.61% | Sens: 0.98 | Spec: 0.41 | AUC: 0.86
+Epoch 3 | Train Loss: 0.5050 | Val Loss: 0.4436 | Val Acc: 81.95% | Sens: 0.88 | Spec: 0.76 | AUC: 0.89
+Epoch 4 | Train Loss: 0.4785 | Val Loss: 0.5193 | Val Acc: 75.94% | Sens: 0.95 | Spec: 0.58 | AUC: 0.90
+Epoch 5 | Train Loss: 0.4115 | Val Loss: 0.5369 | Val Acc: 72.93% | Sens: 0.48 | Spec: 0.97 | AUC: 0.91
+Epoch 6 | Train Loss: 0.4017 | Val Loss: 0.4651 | Val Acc: 76.32% | Sens: 0.58 | Spec: 0.94 | AUC: 0.90
+Epoch 7 | Train Loss: 0.3532 | Val Loss: 0.4710 | Val Acc: 80.45% | Sens: 0.94 | Spec: 0.67 | AUC: 0.92
+Epoch 8 | Train Loss: 0.3235 | Val Loss: 0.3755 | Val Acc: 83.65% | Sens: 0.87 | Spec: 0.81 | AUC: 0.92
+Epoch 9 | Train Loss: 0.3146 | Val Loss: 0.3585 | Val Acc: 85.34% | Sens: 0.88 | Spec: 0.83 | AUC: 0.92
+Epoch 10 | Train Loss: 0.2748 | Val Loss: 0.3591 | Val Acc: 84.21% | Sens: 0.87 | Spec: 0.82 | AUC: 0.93
+Epoch 11 | Train Loss: 0.2656 | Val Loss: 0.3599 | Val Acc: 84.77% | Sens: 0.88 | Spec: 0.82 | AUC: 0.93
+Epoch 12 | Train Loss: 0.2477 | Val Loss: 0.4369 | Val Acc: 80.45% | Sens: 0.65 | Spec: 0.95 | AUC: 0.93
+Epoch 13 | Train Loss: 0.2264 | Val Loss: 0.4699 | Val Acc: 83.08% | Sens: 0.95 | Spec: 0.72 | AUC: 0.93
+Epoch 14 | Train Loss: 0.1838 | Val Loss: 0.3751 | Val Acc: 85.71% | Sens: 0.84 | Spec: 0.88 | AUC: 0.94
+Epoch 15 | Train Loss: 0.1895 | Val Loss: 0.4290 | Val Acc: 83.83% | Sens: 0.74 | Spec: 0.93 | AUC: 0.93
+Epoch 16 | Train Loss: 0.1663 | Val Loss: 0.3713 | Val Acc: 85.53% | Sens: 0.85 | Spec: 0.86 | AUC: 0.93
+Epoch 17 | Train Loss: 0.1415 | Val Loss: 0.4307 | Val Acc: 84.96% | Sens: 0.87 | Spec: 0.83 | AUC: 0.93
+Epoch 18 | Train Loss: 0.1529 | Val Loss: 0.3951 | Val Acc: 86.84% | Sens: 0.94 | Spec: 0.80 | AUC: 0.94
+Epoch 19 | Train Loss: 0.1429 | Val Loss: 0.4213 | Val Acc: 85.71% | Sens: 0.94 | Spec: 0.77 | AUC: 0.94
+🚨 Early stopping after 19 epochs.
+
+🔍 Testing on separate test set...
+/nfs/homes/sdreyer/Digit-Classification-Pytorch/augmention_Gli_Men.py:245: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  classifier.load_state_dict(torch.load(model_path, map_location=device))
+✅ Correct: 494 | ❌ Incorrect: 112 | Total: 606
+🎯 Test Accuracy: 81.52% | Sens: 0.84 | Spec: 0.79 | AUC: 0.90

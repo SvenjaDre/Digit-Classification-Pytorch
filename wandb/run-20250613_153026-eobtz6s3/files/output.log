@@ -1,0 +1,42 @@
+📊 Training with 2128 tumor and 1276 no_tumor samples.
+Using class weights: [0.6251468658447266, 0.37485313415527344]
+Epoch 1 | Train Loss: 1.5544 | Val Loss: 0.5263 | Val Acc: 69.80% | Sens: 0.59 | Spec: 0.88 | AUC: 0.88
+Epoch 2 | Train Loss: 0.4446 | Val Loss: 0.3408 | Val Acc: 86.60% | Sens: 0.89 | Spec: 0.82 | AUC: 0.93
+Epoch 3 | Train Loss: 0.3258 | Val Loss: 0.1951 | Val Acc: 93.30% | Sens: 0.95 | Spec: 0.90 | AUC: 0.98
+Epoch 4 | Train Loss: 0.2517 | Val Loss: 0.1802 | Val Acc: 95.30% | Sens: 0.93 | Spec: 1.00 | AUC: 0.99
+Epoch 5 | Train Loss: 0.2195 | Val Loss: 0.1603 | Val Acc: 95.53% | Sens: 0.95 | Spec: 0.97 | AUC: 0.99
+Epoch 6 | Train Loss: 0.1800 | Val Loss: 0.1776 | Val Acc: 94.12% | Sens: 0.98 | Spec: 0.88 | AUC: 0.99
+Epoch 7 | Train Loss: 0.1723 | Val Loss: 0.1216 | Val Acc: 96.36% | Sens: 0.95 | Spec: 0.99 | AUC: 0.99
+Epoch 8 | Train Loss: 0.1506 | Val Loss: 0.0940 | Val Acc: 97.18% | Sens: 0.96 | Spec: 0.99 | AUC: 0.99
+Epoch 9 | Train Loss: 0.1351 | Val Loss: 0.1416 | Val Acc: 95.89% | Sens: 0.93 | Spec: 1.00 | AUC: 0.99
+Epoch 10 | Train Loss: 0.1351 | Val Loss: 0.1470 | Val Acc: 96.24% | Sens: 0.94 | Spec: 0.99 | AUC: 0.99
+Epoch 11 | Train Loss: 0.1168 | Val Loss: 0.0958 | Val Acc: 97.41% | Sens: 0.97 | Spec: 0.98 | AUC: 0.99
+Epoch 12 | Train Loss: 0.1067 | Val Loss: 0.0838 | Val Acc: 97.41% | Sens: 0.97 | Spec: 0.98 | AUC: 0.99
+Epoch 13 | Train Loss: 0.0927 | Val Loss: 0.1005 | Val Acc: 97.30% | Sens: 0.96 | Spec: 0.99 | AUC: 0.99
+Epoch 14 | Train Loss: 0.0990 | Val Loss: 0.0885 | Val Acc: 97.53% | Sens: 0.96 | Spec: 0.99 | AUC: 0.99
+Epoch 15 | Train Loss: 0.0876 | Val Loss: 0.0798 | Val Acc: 97.88% | Sens: 0.97 | Spec: 0.99 | AUC: 0.99
+Epoch 16 | Train Loss: 0.0850 | Val Loss: 0.0725 | Val Acc: 97.77% | Sens: 0.98 | Spec: 0.97 | AUC: 0.99
+Epoch 17 | Train Loss: 0.0804 | Val Loss: 0.0874 | Val Acc: 97.88% | Sens: 0.97 | Spec: 0.99 | AUC: 0.99
+Epoch 18 | Train Loss: 0.0895 | Val Loss: 0.0841 | Val Acc: 97.65% | Sens: 0.97 | Spec: 0.99 | AUC: 0.99
+Epoch 19 | Train Loss: 0.0731 | Val Loss: 0.0706 | Val Acc: 98.24% | Sens: 0.98 | Spec: 0.99 | AUC: 1.00
+Epoch 20 | Train Loss: 0.0671 | Val Loss: 0.0684 | Val Acc: 97.88% | Sens: 0.98 | Spec: 0.97 | AUC: 1.00
+Epoch 21 | Train Loss: 0.0694 | Val Loss: 0.0818 | Val Acc: 97.77% | Sens: 0.97 | Spec: 0.98 | AUC: 0.99
+Epoch 22 | Train Loss: 0.0820 | Val Loss: 0.0922 | Val Acc: 97.88% | Sens: 0.97 | Spec: 1.00 | AUC: 0.99
+Epoch 23 | Train Loss: 0.0965 | Val Loss: 0.0780 | Val Acc: 97.53% | Sens: 0.98 | Spec: 0.97 | AUC: 1.00
+Epoch 24 | Train Loss: 0.0729 | Val Loss: 0.0799 | Val Acc: 98.12% | Sens: 0.97 | Spec: 0.99 | AUC: 0.99
+Epoch 25 | Train Loss: 0.0511 | Val Loss: 0.0870 | Val Acc: 98.24% | Sens: 0.97 | Spec: 1.00 | AUC: 0.99
+Epoch 26 | Train Loss: 0.0452 | Val Loss: 0.0668 | Val Acc: 98.59% | Sens: 0.98 | Spec: 0.99 | AUC: 1.00
+Epoch 27 | Train Loss: 0.0520 | Val Loss: 0.0635 | Val Acc: 98.12% | Sens: 0.98 | Spec: 0.98 | AUC: 1.00
+Epoch 28 | Train Loss: 0.0487 | Val Loss: 0.0636 | Val Acc: 98.35% | Sens: 0.98 | Spec: 0.98 | AUC: 1.00
+Epoch 29 | Train Loss: 0.0355 | Val Loss: 0.0790 | Val Acc: 98.35% | Sens: 0.98 | Spec: 0.99 | AUC: 1.00
+Epoch 30 | Train Loss: 0.0401 | Val Loss: 0.1194 | Val Acc: 96.71% | Sens: 0.95 | Spec: 0.99 | AUC: 1.00
+Epoch 31 | Train Loss: 0.0579 | Val Loss: 0.0797 | Val Acc: 98.12% | Sens: 0.98 | Spec: 0.99 | AUC: 1.00
+Epoch 32 | Train Loss: 0.0378 | Val Loss: 0.0684 | Val Acc: 98.12% | Sens: 0.98 | Spec: 0.98 | AUC: 1.00
+Epoch 33 | Train Loss: 0.0397 | Val Loss: 0.0702 | Val Acc: 98.35% | Sens: 0.98 | Spec: 0.99 | AUC: 1.00
+Epoch 34 | Train Loss: 0.0320 | Val Loss: 0.0769 | Val Acc: 98.00% | Sens: 0.98 | Spec: 0.98 | AUC: 1.00
+Epoch 35 | Train Loss: 0.0321 | Val Loss: 0.0729 | Val Acc: 98.35% | Sens: 0.98 | Spec: 0.99 | AUC: 1.00
+Epoch 36 | Train Loss: 0.0283 | Val Loss: 0.0802 | Val Acc: 98.35% | Sens: 0.98 | Spec: 0.99 | AUC: 1.00
+Epoch 37 | Train Loss: 0.0220 | Val Loss: 0.0785 | Val Acc: 98.24% | Sens: 0.98 | Spec: 0.98 | AUC: 1.00
+⏹️ Early stopping after 37 epochs.
+
+🔍 Testing on separate test set...

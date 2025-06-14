@@ -1,0 +1,17 @@
+{"time":"2025-06-14T03:00:51.272207006+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250614_030051-vwgygb2i/logs/debug-core.log"}
+{"time":"2025-06-14T03:00:51.54151856+02:00","level":"INFO","msg":"created new stream","id":"vwgygb2i"}
+{"time":"2025-06-14T03:00:51.541737785+02:00","level":"INFO","msg":"stream: started","id":"vwgygb2i"}
+{"time":"2025-06-14T03:00:51.541759475+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"vwgygb2i"}
+{"time":"2025-06-14T03:00:51.541763948+02:00","level":"INFO","msg":"sender: started","stream_id":"vwgygb2i"}
+{"time":"2025-06-14T03:00:51.541786461+02:00","level":"INFO","msg":"handler: started","stream_id":"vwgygb2i"}
+{"time":"2025-06-14T03:00:51.699061804+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-14T03:07:03.769099119+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-06-14T03:08:16.868245966+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-14T03:08:16.871662759+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-14T03:08:17.83829904+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading Checkpoints/Reduzierung-Tu + Balance/trainpercent_0.4/run_9/best_model.pt","runtime_seconds":0.086663291,"progress":"706.5KB/706.5KB"}],"total_operations":1}}
+{"time":"2025-06-14T03:08:18.448705033+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-14T03:08:18.696545173+02:00","level":"INFO","msg":"stream: closing","id":"vwgygb2i"}
+{"time":"2025-06-14T03:08:18.698233591+02:00","level":"INFO","msg":"handler: closed","stream_id":"vwgygb2i"}
+{"time":"2025-06-14T03:08:18.698252836+02:00","level":"INFO","msg":"sender: closed","stream_id":"vwgygb2i"}
+{"time":"2025-06-14T03:08:18.698246734+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"vwgygb2i"}
+{"time":"2025-06-14T03:08:18.703066855+02:00","level":"INFO","msg":"stream: closed","id":"vwgygb2i"}

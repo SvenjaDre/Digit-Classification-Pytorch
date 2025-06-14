@@ -1,0 +1,16 @@
+{"time":"2025-06-13T20:38:33.841054862+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_203833-jre119if/logs/debug-core.log"}
+{"time":"2025-06-13T20:38:34.133576591+02:00","level":"INFO","msg":"created new stream","id":"jre119if"}
+{"time":"2025-06-13T20:38:34.133817991+02:00","level":"INFO","msg":"stream: started","id":"jre119if"}
+{"time":"2025-06-13T20:38:34.133844821+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"jre119if"}
+{"time":"2025-06-13T20:38:34.133883678+02:00","level":"INFO","msg":"handler: started","stream_id":"jre119if"}
+{"time":"2025-06-13T20:38:34.133897787+02:00","level":"INFO","msg":"sender: started","stream_id":"jre119if"}
+{"time":"2025-06-13T20:38:34.297273876+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T20:40:15.709889192+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T20:40:15.710261255+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T20:40:16.711168882+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-jre119if-test_probs_labels","runtime_seconds":1.21152046},{"desc":"uploading artifact run-jre119if-test_confusion_matrix_table","runtime_seconds":1.006201112,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.117179012,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-13T20:40:18.889687724+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T20:40:19.076886302+02:00","level":"INFO","msg":"stream: closing","id":"jre119if"}
+{"time":"2025-06-13T20:40:19.077132836+02:00","level":"INFO","msg":"handler: closed","stream_id":"jre119if"}
+{"time":"2025-06-13T20:40:19.07715214+02:00","level":"INFO","msg":"sender: closed","stream_id":"jre119if"}
+{"time":"2025-06-13T20:40:19.07714663+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"jre119if"}
+{"time":"2025-06-13T20:40:19.077894536+02:00","level":"INFO","msg":"stream: closed","id":"jre119if"}

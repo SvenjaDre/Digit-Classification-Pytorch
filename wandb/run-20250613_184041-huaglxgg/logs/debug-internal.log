@@ -1,0 +1,16 @@
+{"time":"2025-06-13T18:40:41.54010982+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_184041-huaglxgg/logs/debug-core.log"}
+{"time":"2025-06-13T18:40:41.804234344+02:00","level":"INFO","msg":"created new stream","id":"huaglxgg"}
+{"time":"2025-06-13T18:40:41.804466872+02:00","level":"INFO","msg":"stream: started","id":"huaglxgg"}
+{"time":"2025-06-13T18:40:41.804487067+02:00","level":"INFO","msg":"handler: started","stream_id":"huaglxgg"}
+{"time":"2025-06-13T18:40:41.804496156+02:00","level":"INFO","msg":"sender: started","stream_id":"huaglxgg"}
+{"time":"2025-06-13T18:40:41.804504071+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"huaglxgg"}
+{"time":"2025-06-13T18:40:41.976598466+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T18:42:47.265659729+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T18:42:47.266044935+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T18:42:48.266834871+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-huaglxgg-test_probs_labels","runtime_seconds":1.2244187659999999},{"desc":"uploading artifact run-huaglxgg-test_confusion_matrix_table","runtime_seconds":1.007445012,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.127605702,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-13T18:42:50.296616614+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T18:42:50.571051406+02:00","level":"INFO","msg":"stream: closing","id":"huaglxgg"}
+{"time":"2025-06-13T18:42:50.57130671+02:00","level":"INFO","msg":"handler: closed","stream_id":"huaglxgg"}
+{"time":"2025-06-13T18:42:50.571379869+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"huaglxgg"}
+{"time":"2025-06-13T18:42:50.571398005+02:00","level":"INFO","msg":"sender: closed","stream_id":"huaglxgg"}
+{"time":"2025-06-13T18:42:50.572139462+02:00","level":"INFO","msg":"stream: closed","id":"huaglxgg"}

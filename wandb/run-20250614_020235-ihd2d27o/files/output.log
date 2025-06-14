@@ -1,0 +1,28 @@
+📊 Training with 212 tumor and 1276 no_tumor samples.
+Using class weights: [0.14247311651706696, 0.8575268983840942]
+Epoch 1 | Train Loss: 1.2727 | Val Loss: 0.6460 | Val Acc: 77.67% | Sens: 0.74 | Spec: 0.83 | AUC: 0.89
+Epoch 2 | Train Loss: 0.4969 | Val Loss: 0.5969 | Val Acc: 86.84% | Sens: 0.84 | Spec: 0.91 | AUC: 0.94
+Epoch 3 | Train Loss: 0.3977 | Val Loss: 0.3322 | Val Acc: 92.48% | Sens: 0.94 | Spec: 0.90 | AUC: 0.97
+Epoch 4 | Train Loss: 0.2622 | Val Loss: 0.3502 | Val Acc: 93.89% | Sens: 0.93 | Spec: 0.95 | AUC: 0.97
+Epoch 5 | Train Loss: 0.2681 | Val Loss: 0.2573 | Val Acc: 94.01% | Sens: 0.95 | Spec: 0.92 | AUC: 0.98
+Epoch 6 | Train Loss: 0.2297 | Val Loss: 0.2735 | Val Acc: 95.06% | Sens: 0.95 | Spec: 0.95 | AUC: 0.98
+Epoch 7 | Train Loss: 0.2154 | Val Loss: 0.2668 | Val Acc: 94.01% | Sens: 0.95 | Spec: 0.92 | AUC: 0.98
+Epoch 8 | Train Loss: 0.2282 | Val Loss: 0.4189 | Val Acc: 93.07% | Sens: 0.90 | Spec: 0.98 | AUC: 0.98
+Epoch 9 | Train Loss: 0.1532 | Val Loss: 0.2231 | Val Acc: 95.42% | Sens: 0.95 | Spec: 0.95 | AUC: 0.98
+Epoch 10 | Train Loss: 0.1475 | Val Loss: 0.3142 | Val Acc: 94.59% | Sens: 0.95 | Spec: 0.93 | AUC: 0.98
+Epoch 11 | Train Loss: 0.2473 | Val Loss: 0.3213 | Val Acc: 92.60% | Sens: 0.95 | Spec: 0.89 | AUC: 0.98
+Epoch 12 | Train Loss: 0.1919 | Val Loss: 0.5720 | Val Acc: 93.42% | Sens: 0.92 | Spec: 0.96 | AUC: 0.98
+Epoch 13 | Train Loss: 0.2418 | Val Loss: 0.4916 | Val Acc: 92.13% | Sens: 0.89 | Spec: 0.97 | AUC: 0.98
+Epoch 14 | Train Loss: 0.1655 | Val Loss: 0.3379 | Val Acc: 95.18% | Sens: 0.94 | Spec: 0.97 | AUC: 0.98
+Epoch 15 | Train Loss: 0.1291 | Val Loss: 0.2918 | Val Acc: 95.77% | Sens: 0.95 | Spec: 0.97 | AUC: 0.98
+Epoch 16 | Train Loss: 0.0986 | Val Loss: 0.4565 | Val Acc: 95.18% | Sens: 0.93 | Spec: 0.98 | AUC: 0.99
+Epoch 17 | Train Loss: 0.1439 | Val Loss: 0.4302 | Val Acc: 95.65% | Sens: 0.94 | Spec: 0.99 | AUC: 0.99
+Epoch 18 | Train Loss: 0.1256 | Val Loss: 0.4134 | Val Acc: 94.01% | Sens: 0.91 | Spec: 0.99 | AUC: 0.99
+Epoch 19 | Train Loss: 0.0979 | Val Loss: 0.3982 | Val Acc: 95.18% | Sens: 0.93 | Spec: 0.98 | AUC: 0.98
+⏹️ Early stopping after 19 epochs.
+
+🔍 Testing on separate test set...
+/nfs/homes/sdreyer/Digit-Classification-Pytorch/Class_reduce_Tu.py:250: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  classifier.load_state_dict(torch.load(model_path, map_location=device))
+✅ Correct: 895 | ❌ Incorrect: 116 | Total: 1011
+🎯 Test Accuracy: 88.53% | Sens: 0.86 | Spec: 0.92 | AUC: 0.94

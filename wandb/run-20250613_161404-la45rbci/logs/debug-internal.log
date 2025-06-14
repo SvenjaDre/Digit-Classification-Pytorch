@@ -1,0 +1,16 @@
+{"time":"2025-06-13T16:14:04.902765672+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_161404-la45rbci/logs/debug-core.log"}
+{"time":"2025-06-13T16:14:05.201768652+02:00","level":"INFO","msg":"created new stream","id":"la45rbci"}
+{"time":"2025-06-13T16:14:05.201999486+02:00","level":"INFO","msg":"stream: started","id":"la45rbci"}
+{"time":"2025-06-13T16:14:05.20204076+02:00","level":"INFO","msg":"sender: started","stream_id":"la45rbci"}
+{"time":"2025-06-13T16:14:05.202041243+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"la45rbci"}
+{"time":"2025-06-13T16:14:05.202063313+02:00","level":"INFO","msg":"handler: started","stream_id":"la45rbci"}
+{"time":"2025-06-13T16:14:05.387329888+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T16:15:13.327120662+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T16:15:13.327461958+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T16:15:14.328179005+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-la45rbci-test_probs_labels","runtime_seconds":1.1795696549999999},{"desc":"uploading artifact run-la45rbci-test_confusion_matrix_table","runtime_seconds":1.006874402,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.300788972,"progress":"633B/633B"}]}],"total_operations":2}}
+{"time":"2025-06-13T16:15:16.593972952+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T16:15:16.809642624+02:00","level":"INFO","msg":"stream: closing","id":"la45rbci"}
+{"time":"2025-06-13T16:15:16.809891496+02:00","level":"INFO","msg":"handler: closed","stream_id":"la45rbci"}
+{"time":"2025-06-13T16:15:16.809947525+02:00","level":"INFO","msg":"sender: closed","stream_id":"la45rbci"}
+{"time":"2025-06-13T16:15:16.809932016+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"la45rbci"}
+{"time":"2025-06-13T16:15:16.810840076+02:00","level":"INFO","msg":"stream: closed","id":"la45rbci"}

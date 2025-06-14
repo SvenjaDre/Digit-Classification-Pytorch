@@ -1,0 +1,42 @@
+📊 Training with 851 tumor and 1276 no_tumor samples.
+Using class weights: [0.40009400248527527, 0.5999059677124023]
+Epoch 1 | Train Loss: 0.9717 | Val Loss: 0.4668 | Val Acc: 70.15% | Sens: 0.99 | Spec: 0.21 | AUC: 0.91
+Epoch 2 | Train Loss: 0.4818 | Val Loss: 0.3260 | Val Acc: 88.01% | Sens: 0.96 | Spec: 0.74 | AUC: 0.94
+Epoch 3 | Train Loss: 0.3213 | Val Loss: 0.2118 | Val Acc: 91.19% | Sens: 0.96 | Spec: 0.84 | AUC: 0.97
+Epoch 4 | Train Loss: 0.2664 | Val Loss: 0.2682 | Val Acc: 94.48% | Sens: 0.93 | Spec: 0.97 | AUC: 0.98
+Epoch 5 | Train Loss: 0.2367 | Val Loss: 0.2727 | Val Acc: 94.48% | Sens: 0.92 | Spec: 0.98 | AUC: 0.98
+Epoch 6 | Train Loss: 0.1974 | Val Loss: 0.2065 | Val Acc: 95.18% | Sens: 0.94 | Spec: 0.97 | AUC: 0.98
+Epoch 7 | Train Loss: 0.1938 | Val Loss: 0.1442 | Val Acc: 94.36% | Sens: 0.97 | Spec: 0.90 | AUC: 0.99
+Epoch 8 | Train Loss: 0.1800 | Val Loss: 0.1947 | Val Acc: 95.06% | Sens: 0.93 | Spec: 0.99 | AUC: 0.99
+Epoch 9 | Train Loss: 0.1509 | Val Loss: 0.2009 | Val Acc: 95.06% | Sens: 0.93 | Spec: 0.99 | AUC: 0.99
+[34m[1mwandb[0m: [33mWARNING[0m A graphql request initiated by the public wandb API timed out (timeout=19 sec). Create a new API with an integer timeout larger than 19, e.g., `api = wandb.Api(timeout=29)` to increase the graphql timeout.
+Epoch 10 | Train Loss: 0.1386 | Val Loss: 0.1454 | Val Acc: 95.89% | Sens: 0.94 | Spec: 0.98 | AUC: 0.99
+Epoch 11 | Train Loss: 0.1307 | Val Loss: 0.1348 | Val Acc: 96.24% | Sens: 0.96 | Spec: 0.97 | AUC: 0.99
+Epoch 12 | Train Loss: 0.1072 | Val Loss: 0.1450 | Val Acc: 96.00% | Sens: 0.95 | Spec: 0.98 | AUC: 0.99
+Epoch 13 | Train Loss: 0.1061 | Val Loss: 0.1109 | Val Acc: 96.36% | Sens: 0.96 | Spec: 0.97 | AUC: 0.99
+Epoch 14 | Train Loss: 0.0948 | Val Loss: 0.1102 | Val Acc: 96.71% | Sens: 0.96 | Spec: 0.98 | AUC: 0.99
+Epoch 15 | Train Loss: 0.0963 | Val Loss: 0.2136 | Val Acc: 95.53% | Sens: 0.94 | Spec: 0.99 | AUC: 0.99
+Epoch 16 | Train Loss: 0.1090 | Val Loss: 0.0898 | Val Acc: 97.06% | Sens: 0.97 | Spec: 0.97 | AUC: 0.99
+Epoch 17 | Train Loss: 0.1160 | Val Loss: 0.1927 | Val Acc: 95.65% | Sens: 0.93 | Spec: 1.00 | AUC: 0.99
+Epoch 18 | Train Loss: 0.1046 | Val Loss: 0.1101 | Val Acc: 96.47% | Sens: 0.96 | Spec: 0.97 | AUC: 0.99
+Epoch 19 | Train Loss: 0.0790 | Val Loss: 0.1714 | Val Acc: 96.71% | Sens: 0.96 | Spec: 0.98 | AUC: 0.99
+Epoch 20 | Train Loss: 0.0667 | Val Loss: 0.1359 | Val Acc: 96.83% | Sens: 0.96 | Spec: 0.99 | AUC: 0.99
+Epoch 21 | Train Loss: 0.0690 | Val Loss: 0.1149 | Val Acc: 97.65% | Sens: 0.97 | Spec: 0.98 | AUC: 0.99
+Epoch 22 | Train Loss: 0.0648 | Val Loss: 0.0835 | Val Acc: 97.53% | Sens: 0.97 | Spec: 0.98 | AUC: 0.99
+Epoch 23 | Train Loss: 0.0709 | Val Loss: 0.1250 | Val Acc: 96.94% | Sens: 0.96 | Spec: 0.98 | AUC: 0.99
+Epoch 24 | Train Loss: 0.0605 | Val Loss: 0.1015 | Val Acc: 97.77% | Sens: 0.98 | Spec: 0.97 | AUC: 0.99
+Epoch 25 | Train Loss: 0.0485 | Val Loss: 0.1590 | Val Acc: 96.83% | Sens: 0.95 | Spec: 1.00 | AUC: 0.99
+Epoch 26 | Train Loss: 0.0566 | Val Loss: 0.1170 | Val Acc: 97.88% | Sens: 0.98 | Spec: 0.97 | AUC: 0.99
+Epoch 27 | Train Loss: 0.0433 | Val Loss: 0.1608 | Val Acc: 96.71% | Sens: 0.95 | Spec: 0.99 | AUC: 0.99
+Epoch 28 | Train Loss: 0.0388 | Val Loss: 0.1086 | Val Acc: 97.65% | Sens: 0.97 | Spec: 0.98 | AUC: 0.99
+Epoch 29 | Train Loss: 0.0361 | Val Loss: 0.1187 | Val Acc: 97.77% | Sens: 0.98 | Spec: 0.98 | AUC: 0.99
+Epoch 30 | Train Loss: 0.0739 | Val Loss: 0.1479 | Val Acc: 96.83% | Sens: 0.97 | Spec: 0.97 | AUC: 0.99
+Epoch 31 | Train Loss: 0.0507 | Val Loss: 0.1247 | Val Acc: 98.12% | Sens: 0.98 | Spec: 0.99 | AUC: 0.99
+Epoch 32 | Train Loss: 0.0416 | Val Loss: 0.2128 | Val Acc: 96.36% | Sens: 0.94 | Spec: 1.00 | AUC: 0.99
+⏹️ Early stopping after 32 epochs.
+
+🔍 Testing on separate test set...
+/nfs/homes/sdreyer/Digit-Classification-Pytorch/Class_reduce_Tu.py:250: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  classifier.load_state_dict(torch.load(model_path, map_location=device))
+✅ Correct: 946 | ❌ Incorrect: 65 | Total: 1011
+🎯 Test Accuracy: 93.57% | Sens: 0.91 | Spec: 0.97 | AUC: 0.98

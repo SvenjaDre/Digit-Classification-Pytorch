@@ -75,7 +75,7 @@ class ImageClassifier(nn.Module):
         x = self.fc_layers(x)
         return x
 
-TRAIN_DIR = "archive_augmented/Training"
+TRAIN_DIR = "archive/Training"
 TEST_DIR = "archive/Testing"
 
 def train():

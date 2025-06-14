@@ -1,0 +1,17 @@
+{"time":"2025-06-13T21:04:27.215693165+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_210427-t4p6rdmd/logs/debug-core.log"}
+{"time":"2025-06-13T21:04:27.487647805+02:00","level":"INFO","msg":"created new stream","id":"t4p6rdmd"}
+{"time":"2025-06-13T21:04:27.487874279+02:00","level":"INFO","msg":"stream: started","id":"t4p6rdmd"}
+{"time":"2025-06-13T21:04:27.48789691+02:00","level":"INFO","msg":"sender: started","stream_id":"t4p6rdmd"}
+{"time":"2025-06-13T21:04:27.48789058+02:00","level":"INFO","msg":"handler: started","stream_id":"t4p6rdmd"}
+{"time":"2025-06-13T21:04:27.487921247+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"t4p6rdmd"}
+{"time":"2025-06-13T21:04:27.672464407+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T21:05:48.26633934+02:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/svenja-dreyer-tu-dortmund/Reduzierung-Tu%20+%20Balance/t4p6rdmd/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2025-06-13T21:15:13.541720157+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T21:15:13.542070978+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T21:15:14.542766862+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading Checkpoints/Reduzierung-Tu + Balance/trainpercent_0.9/run_5/best_model.pt","runtime_seconds":0.110211219,"progress":"706.5KB/706.5KB"}],"total_operations":1}}
+{"time":"2025-06-13T21:15:15.303521372+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T21:15:15.514783351+02:00","level":"INFO","msg":"stream: closing","id":"t4p6rdmd"}
+{"time":"2025-06-13T21:15:15.515000736+02:00","level":"INFO","msg":"handler: closed","stream_id":"t4p6rdmd"}
+{"time":"2025-06-13T21:15:15.51504743+02:00","level":"INFO","msg":"sender: closed","stream_id":"t4p6rdmd"}
+{"time":"2025-06-13T21:15:15.515039436+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"t4p6rdmd"}
+{"time":"2025-06-13T21:15:15.515802336+02:00","level":"INFO","msg":"stream: closed","id":"t4p6rdmd"}

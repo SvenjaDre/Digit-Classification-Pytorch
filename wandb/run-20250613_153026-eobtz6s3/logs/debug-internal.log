@@ -1,0 +1,16 @@
+{"time":"2025-06-13T15:30:26.249799514+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_153026-eobtz6s3/logs/debug-core.log"}
+{"time":"2025-06-13T15:30:26.516554065+02:00","level":"INFO","msg":"created new stream","id":"eobtz6s3"}
+{"time":"2025-06-13T15:30:26.516745089+02:00","level":"INFO","msg":"stream: started","id":"eobtz6s3"}
+{"time":"2025-06-13T15:30:26.516808482+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"eobtz6s3"}
+{"time":"2025-06-13T15:30:26.516864309+02:00","level":"INFO","msg":"handler: started","stream_id":"eobtz6s3"}
+{"time":"2025-06-13T15:30:26.516864311+02:00","level":"INFO","msg":"sender: started","stream_id":"eobtz6s3"}
+{"time":"2025-06-13T15:30:26.692165347+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T15:43:01.967279025+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T15:43:01.967658308+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T15:43:02.975177096+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-eobtz6s3-val_probs_labels","runtime_seconds":1.046684446,"subtasks":[{"desc":"val_probs_labels.table.json","runtime_seconds":0.144501604,"progress":"21.8KB/21.8KB"}]}],"total_operations":1}}
+{"time":"2025-06-13T15:43:05.123224013+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T15:43:05.321690044+02:00","level":"INFO","msg":"stream: closing","id":"eobtz6s3"}
+{"time":"2025-06-13T15:43:05.321985856+02:00","level":"INFO","msg":"handler: closed","stream_id":"eobtz6s3"}
+{"time":"2025-06-13T15:43:05.322003736+02:00","level":"INFO","msg":"sender: closed","stream_id":"eobtz6s3"}
+{"time":"2025-06-13T15:43:05.322002713+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"eobtz6s3"}
+{"time":"2025-06-13T15:43:05.322808518+02:00","level":"INFO","msg":"stream: closed","id":"eobtz6s3"}

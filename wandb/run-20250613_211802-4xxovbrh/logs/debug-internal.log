@@ -1,0 +1,17 @@
+{"time":"2025-06-13T21:18:02.640000293+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_211802-4xxovbrh/logs/debug-core.log"}
+{"time":"2025-06-13T21:18:02.903894918+02:00","level":"INFO","msg":"created new stream","id":"4xxovbrh"}
+{"time":"2025-06-13T21:18:02.904107892+02:00","level":"INFO","msg":"stream: started","id":"4xxovbrh"}
+{"time":"2025-06-13T21:18:02.904127972+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"4xxovbrh"}
+{"time":"2025-06-13T21:18:02.904159357+02:00","level":"INFO","msg":"handler: started","stream_id":"4xxovbrh"}
+{"time":"2025-06-13T21:18:02.904180962+02:00","level":"INFO","msg":"sender: started","stream_id":"4xxovbrh"}
+{"time":"2025-06-13T21:18:03.099107158+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T21:19:33.27576327+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-06-13T21:21:45.656396015+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T21:21:45.656752196+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T21:21:46.657656+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-4xxovbrh-test_probs_labels","runtime_seconds":1.14181321},{"desc":"uploading artifact run-4xxovbrh-test_confusion_matrix_table","runtime_seconds":1.007018866}],"total_operations":2}}
+{"time":"2025-06-13T21:21:48.487383288+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T21:21:48.794887905+02:00","level":"INFO","msg":"stream: closing","id":"4xxovbrh"}
+{"time":"2025-06-13T21:21:48.795134913+02:00","level":"INFO","msg":"handler: closed","stream_id":"4xxovbrh"}
+{"time":"2025-06-13T21:21:48.795156506+02:00","level":"INFO","msg":"sender: closed","stream_id":"4xxovbrh"}
+{"time":"2025-06-13T21:21:48.795147619+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"4xxovbrh"}
+{"time":"2025-06-13T21:21:48.795815318+02:00","level":"INFO","msg":"stream: closed","id":"4xxovbrh"}

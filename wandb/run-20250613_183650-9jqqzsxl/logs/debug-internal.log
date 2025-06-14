@@ -1,0 +1,18 @@
+{"time":"2025-06-13T18:36:50.688576767+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_183650-9jqqzsxl/logs/debug-core.log"}
+{"time":"2025-06-13T18:36:50.954550051+02:00","level":"INFO","msg":"created new stream","id":"9jqqzsxl"}
+{"time":"2025-06-13T18:36:50.954785714+02:00","level":"INFO","msg":"stream: started","id":"9jqqzsxl"}
+{"time":"2025-06-13T18:36:50.954844096+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"9jqqzsxl"}
+{"time":"2025-06-13T18:36:50.954854411+02:00","level":"INFO","msg":"handler: started","stream_id":"9jqqzsxl"}
+{"time":"2025-06-13T18:36:50.954855341+02:00","level":"INFO","msg":"sender: started","stream_id":"9jqqzsxl"}
+{"time":"2025-06-13T18:36:51.140631524+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T18:37:21.358008194+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-06-13T18:39:53.22997335+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-06-13T18:40:32.391525387+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T18:40:32.391895567+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T18:40:33.392665621+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-9jqqzsxl-test_probs_labels","runtime_seconds":1.216110708},{"desc":"uploading artifact run-9jqqzsxl-test_confusion_matrix_table","runtime_seconds":1.009863601,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.177072803,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-13T18:40:35.816168625+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T18:40:36.018502483+02:00","level":"INFO","msg":"stream: closing","id":"9jqqzsxl"}
+{"time":"2025-06-13T18:40:36.018755573+02:00","level":"INFO","msg":"handler: closed","stream_id":"9jqqzsxl"}
+{"time":"2025-06-13T18:40:36.018783224+02:00","level":"INFO","msg":"sender: closed","stream_id":"9jqqzsxl"}
+{"time":"2025-06-13T18:40:36.018776101+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"9jqqzsxl"}
+{"time":"2025-06-13T18:40:36.019542589+02:00","level":"INFO","msg":"stream: closed","id":"9jqqzsxl"}

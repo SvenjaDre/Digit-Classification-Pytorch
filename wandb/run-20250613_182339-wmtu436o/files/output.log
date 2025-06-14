@@ -1,0 +1,40 @@
+🚀 Starting run: trainpercent_0.8_run_5
+📈 Trainingsdaten: 1702 von 2128 (80.0%)
+Epoch 1 | Train Loss: 0.6092 | Val Loss: 0.4796 | Val Acc: 79.32% | Sens: 0.86 | Spec: 0.73 | AUC: 0.87
+Epoch 2 | Train Loss: 0.4615 | Val Loss: 0.4025 | Val Acc: 81.77% | Sens: 0.82 | Spec: 0.81 | AUC: 0.90
+Epoch 3 | Train Loss: 0.4137 | Val Loss: 0.5906 | Val Acc: 73.87% | Sens: 0.98 | Spec: 0.51 | AUC: 0.91
+Epoch 4 | Train Loss: 0.4004 | Val Loss: 0.3708 | Val Acc: 83.27% | Sens: 0.86 | Spec: 0.81 | AUC: 0.92
+Epoch 5 | Train Loss: 0.3737 | Val Loss: 0.3501 | Val Acc: 85.71% | Sens: 0.85 | Spec: 0.86 | AUC: 0.93
+Epoch 6 | Train Loss: 0.3134 | Val Loss: 0.3267 | Val Acc: 86.65% | Sens: 0.89 | Spec: 0.85 | AUC: 0.94
+Epoch 7 | Train Loss: 0.2813 | Val Loss: 0.3530 | Val Acc: 85.34% | Sens: 0.97 | Spec: 0.75 | AUC: 0.95
+Epoch 8 | Train Loss: 0.2776 | Val Loss: 0.3669 | Val Acc: 86.09% | Sens: 0.96 | Spec: 0.77 | AUC: 0.94
+Epoch 9 | Train Loss: 0.2508 | Val Loss: 0.3388 | Val Acc: 88.53% | Sens: 0.93 | Spec: 0.84 | AUC: 0.94
+Epoch 10 | Train Loss: 0.2404 | Val Loss: 0.3318 | Val Acc: 87.97% | Sens: 0.95 | Spec: 0.81 | AUC: 0.95
+Epoch 11 | Train Loss: 0.1967 | Val Loss: 0.3173 | Val Acc: 87.97% | Sens: 0.84 | Spec: 0.92 | AUC: 0.96
+Epoch 12 | Train Loss: 0.1901 | Val Loss: 0.2967 | Val Acc: 89.10% | Sens: 0.95 | Spec: 0.83 | AUC: 0.96
+Epoch 13 | Train Loss: 0.1665 | Val Loss: 0.3030 | Val Acc: 88.35% | Sens: 0.95 | Spec: 0.82 | AUC: 0.96
+Epoch 14 | Train Loss: 0.1833 | Val Loss: 0.2516 | Val Acc: 89.47% | Sens: 0.87 | Spec: 0.92 | AUC: 0.97
+Epoch 15 | Train Loss: 0.1493 | Val Loss: 0.3669 | Val Acc: 87.59% | Sens: 0.98 | Spec: 0.77 | AUC: 0.97
+Epoch 16 | Train Loss: 0.1419 | Val Loss: 0.2615 | Val Acc: 90.23% | Sens: 0.90 | Spec: 0.90 | AUC: 0.97
+Epoch 17 | Train Loss: 0.1448 | Val Loss: 0.2642 | Val Acc: 91.17% | Sens: 0.92 | Spec: 0.91 | AUC: 0.97
+Epoch 18 | Train Loss: 0.1006 | Val Loss: 0.3244 | Val Acc: 90.60% | Sens: 0.97 | Spec: 0.84 | AUC: 0.97
+Epoch 19 | Train Loss: 0.1032 | Val Loss: 0.2516 | Val Acc: 90.79% | Sens: 0.88 | Spec: 0.93 | AUC: 0.97
+Epoch 20 | Train Loss: 0.0882 | Val Loss: 0.2542 | Val Acc: 91.54% | Sens: 0.92 | Spec: 0.91 | AUC: 0.97
+Epoch 21 | Train Loss: 0.0977 | Val Loss: 0.2413 | Val Acc: 91.92% | Sens: 0.93 | Spec: 0.91 | AUC: 0.97
+Epoch 22 | Train Loss: 0.0853 | Val Loss: 0.2751 | Val Acc: 91.54% | Sens: 0.95 | Spec: 0.88 | AUC: 0.97
+Epoch 23 | Train Loss: 0.0649 | Val Loss: 0.2868 | Val Acc: 91.17% | Sens: 0.92 | Spec: 0.90 | AUC: 0.97
+Epoch 24 | Train Loss: 0.0664 | Val Loss: 0.3031 | Val Acc: 90.60% | Sens: 0.96 | Spec: 0.85 | AUC: 0.97
+Epoch 25 | Train Loss: 0.0552 | Val Loss: 0.3141 | Val Acc: 90.41% | Sens: 0.96 | Spec: 0.85 | AUC: 0.97
+Epoch 26 | Train Loss: 0.0509 | Val Loss: 0.3137 | Val Acc: 90.98% | Sens: 0.95 | Spec: 0.87 | AUC: 0.97
+Epoch 27 | Train Loss: 0.0567 | Val Loss: 0.2837 | Val Acc: 91.35% | Sens: 0.92 | Spec: 0.90 | AUC: 0.97
+Epoch 28 | Train Loss: 0.0468 | Val Loss: 0.2971 | Val Acc: 90.98% | Sens: 0.94 | Spec: 0.88 | AUC: 0.97
+Epoch 29 | Train Loss: 0.0434 | Val Loss: 0.2742 | Val Acc: 92.86% | Sens: 0.96 | Spec: 0.90 | AUC: 0.98
+Epoch 30 | Train Loss: 0.0411 | Val Loss: 0.3770 | Val Acc: 90.04% | Sens: 0.97 | Spec: 0.83 | AUC: 0.97
+Epoch 31 | Train Loss: 0.0756 | Val Loss: 0.3797 | Val Acc: 90.98% | Sens: 0.98 | Spec: 0.84 | AUC: 0.97
+🚨 Early stopping after 31 epochs.
+
+🔍 Testing on separate test set...
+/nfs/homes/sdreyer/Digit-Classification-Pytorch/augmention_Gli_Men.py:245: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  classifier.load_state_dict(torch.load(model_path, map_location=device))
+✅ Correct: 552 | ❌ Incorrect: 54 | Total: 606
+🎯 Test Accuracy: 91.09% | Sens: 0.91 | Spec: 0.91 | AUC: 0.97

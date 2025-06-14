@@ -1,0 +1,36 @@
+🚀 Starting run: trainpercent_1_run_4
+📈 Trainingsdaten: 2128 von 2128 (100.0%)
+Epoch 1 | Train Loss: 0.5676 | Val Loss: 0.5116 | Val Acc: 71.80% | Sens: 0.47 | Spec: 0.96 | AUC: 0.89
+Epoch 2 | Train Loss: 0.4481 | Val Loss: 0.4031 | Val Acc: 83.46% | Sens: 0.75 | Spec: 0.91 | AUC: 0.92
+Epoch 3 | Train Loss: 0.4047 | Val Loss: 0.3764 | Val Acc: 83.08% | Sens: 0.90 | Spec: 0.77 | AUC: 0.92
+Epoch 4 | Train Loss: 0.3536 | Val Loss: 0.3771 | Val Acc: 84.96% | Sens: 0.93 | Spec: 0.77 | AUC: 0.93
+Epoch 5 | Train Loss: 0.3321 | Val Loss: 0.4878 | Val Acc: 81.77% | Sens: 0.97 | Spec: 0.68 | AUC: 0.94
+Epoch 6 | Train Loss: 0.3016 | Val Loss: 0.4040 | Val Acc: 80.45% | Sens: 0.64 | Spec: 0.96 | AUC: 0.95
+Epoch 7 | Train Loss: 0.2640 | Val Loss: 0.3031 | Val Acc: 88.72% | Sens: 0.94 | Spec: 0.83 | AUC: 0.96
+Epoch 8 | Train Loss: 0.2523 | Val Loss: 0.2725 | Val Acc: 90.04% | Sens: 0.93 | Spec: 0.87 | AUC: 0.96
+Epoch 9 | Train Loss: 0.2324 | Val Loss: 0.2995 | Val Acc: 89.29% | Sens: 0.96 | Spec: 0.83 | AUC: 0.96
+Epoch 10 | Train Loss: 0.2040 | Val Loss: 0.3205 | Val Acc: 87.97% | Sens: 0.97 | Spec: 0.79 | AUC: 0.97
+Epoch 11 | Train Loss: 0.2081 | Val Loss: 0.2927 | Val Acc: 87.22% | Sens: 0.78 | Spec: 0.96 | AUC: 0.97
+Epoch 12 | Train Loss: 0.1738 | Val Loss: 0.3010 | Val Acc: 86.47% | Sens: 0.75 | Spec: 0.97 | AUC: 0.97
+Epoch 13 | Train Loss: 0.1573 | Val Loss: 0.2434 | Val Acc: 92.11% | Sens: 0.90 | Spec: 0.94 | AUC: 0.97
+Epoch 14 | Train Loss: 0.1477 | Val Loss: 0.2264 | Val Acc: 92.11% | Sens: 0.89 | Spec: 0.95 | AUC: 0.98
+Epoch 15 | Train Loss: 0.1379 | Val Loss: 0.2278 | Val Acc: 92.29% | Sens: 0.93 | Spec: 0.92 | AUC: 0.97
+Epoch 16 | Train Loss: 0.1162 | Val Loss: 0.2382 | Val Acc: 90.60% | Sens: 0.85 | Spec: 0.96 | AUC: 0.97
+Epoch 17 | Train Loss: 0.1130 | Val Loss: 0.2118 | Val Acc: 93.42% | Sens: 0.95 | Spec: 0.92 | AUC: 0.98
+Epoch 18 | Train Loss: 0.1095 | Val Loss: 0.2332 | Val Acc: 94.17% | Sens: 0.97 | Spec: 0.91 | AUC: 0.98
+Epoch 19 | Train Loss: 0.0905 | Val Loss: 0.2322 | Val Acc: 92.29% | Sens: 0.92 | Spec: 0.93 | AUC: 0.98
+Epoch 20 | Train Loss: 0.0922 | Val Loss: 0.2734 | Val Acc: 92.11% | Sens: 0.95 | Spec: 0.89 | AUC: 0.97
+Epoch 21 | Train Loss: 0.0795 | Val Loss: 0.2226 | Val Acc: 93.42% | Sens: 0.94 | Spec: 0.93 | AUC: 0.98
+Epoch 22 | Train Loss: 0.0714 | Val Loss: 0.2450 | Val Acc: 92.11% | Sens: 0.88 | Spec: 0.96 | AUC: 0.98
+Epoch 23 | Train Loss: 0.0645 | Val Loss: 0.2451 | Val Acc: 93.42% | Sens: 0.92 | Spec: 0.95 | AUC: 0.98
+Epoch 24 | Train Loss: 0.0587 | Val Loss: 0.2804 | Val Acc: 93.05% | Sens: 0.93 | Spec: 0.93 | AUC: 0.97
+Epoch 25 | Train Loss: 0.0868 | Val Loss: 0.2950 | Val Acc: 91.35% | Sens: 0.95 | Spec: 0.87 | AUC: 0.97
+Epoch 26 | Train Loss: 0.0526 | Val Loss: 0.2572 | Val Acc: 93.80% | Sens: 0.96 | Spec: 0.92 | AUC: 0.98
+Epoch 27 | Train Loss: 0.0704 | Val Loss: 0.3203 | Val Acc: 91.35% | Sens: 0.97 | Spec: 0.86 | AUC: 0.97
+🚨 Early stopping after 27 epochs.
+
+🔍 Testing on separate test set...
+/nfs/homes/sdreyer/Digit-Classification-Pytorch/augmention_Gli_Men.py:245: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  classifier.load_state_dict(torch.load(model_path, map_location=device))
+✅ Correct: 562 | ❌ Incorrect: 44 | Total: 606
+🎯 Test Accuracy: 92.74% | Sens: 0.94 | Spec: 0.91 | AUC: 0.98

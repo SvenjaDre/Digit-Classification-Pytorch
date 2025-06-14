@@ -1,0 +1,4 @@
+📊 Training with 1915 tumor and 1276 no_tumor samples.
+Using class weights: [0.6001253724098206, 0.39987465739250183]
+Epoch 1 | Train Loss: 0.6950 | Val Loss: 0.3827 | Val Acc: 88.13% | Sens: 0.95 | Spec: 0.77 | AUC: 0.92
+[34m[1mwandb[0m: Ctrl + C detected. Stopping sweep.

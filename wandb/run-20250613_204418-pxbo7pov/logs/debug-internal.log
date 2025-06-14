@@ -1,0 +1,16 @@
+{"time":"2025-06-13T20:44:18.786564962+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_204418-pxbo7pov/logs/debug-core.log"}
+{"time":"2025-06-13T20:44:19.057070192+02:00","level":"INFO","msg":"created new stream","id":"pxbo7pov"}
+{"time":"2025-06-13T20:44:19.057292634+02:00","level":"INFO","msg":"stream: started","id":"pxbo7pov"}
+{"time":"2025-06-13T20:44:19.057313725+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"pxbo7pov"}
+{"time":"2025-06-13T20:44:19.057336574+02:00","level":"INFO","msg":"handler: started","stream_id":"pxbo7pov"}
+{"time":"2025-06-13T20:44:19.057353118+02:00","level":"INFO","msg":"sender: started","stream_id":"pxbo7pov"}
+{"time":"2025-06-13T20:44:19.27149002+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T20:48:36.744645513+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T20:48:36.745025944+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T20:48:37.750369875+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-pxbo7pov-test_probs_labels","runtime_seconds":1.116673661},{"desc":"uploading artifact run-pxbo7pov-test_confusion_matrix_table","runtime_seconds":1.01133768}],"total_operations":2}}
+{"time":"2025-06-13T20:48:39.766329329+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T20:48:39.955055172+02:00","level":"INFO","msg":"stream: closing","id":"pxbo7pov"}
+{"time":"2025-06-13T20:48:39.9552717+02:00","level":"INFO","msg":"handler: closed","stream_id":"pxbo7pov"}
+{"time":"2025-06-13T20:48:39.955280976+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"pxbo7pov"}
+{"time":"2025-06-13T20:48:39.955342516+02:00","level":"INFO","msg":"sender: closed","stream_id":"pxbo7pov"}
+{"time":"2025-06-13T20:48:39.955977462+02:00","level":"INFO","msg":"stream: closed","id":"pxbo7pov"}

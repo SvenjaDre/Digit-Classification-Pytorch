@@ -1,0 +1,16 @@
+{"time":"2025-06-13T17:38:04.446273896+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_173804-f8wpm18k/logs/debug-core.log"}
+{"time":"2025-06-13T17:38:04.712546348+02:00","level":"INFO","msg":"created new stream","id":"f8wpm18k"}
+{"time":"2025-06-13T17:38:04.712777785+02:00","level":"INFO","msg":"stream: started","id":"f8wpm18k"}
+{"time":"2025-06-13T17:38:04.712802263+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"f8wpm18k"}
+{"time":"2025-06-13T17:38:04.712807587+02:00","level":"INFO","msg":"handler: started","stream_id":"f8wpm18k"}
+{"time":"2025-06-13T17:38:04.712814765+02:00","level":"INFO","msg":"sender: started","stream_id":"f8wpm18k"}
+{"time":"2025-06-13T17:38:04.909983626+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T17:43:38.143051657+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T17:43:38.143485554+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T17:43:39.148504894+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-f8wpm18k-test_probs_labels","runtime_seconds":1.1867687789999999},{"desc":"uploading artifact run-f8wpm18k-test_confusion_matrix_table","runtime_seconds":1.012098042,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.327016959,"progress":"632B/632B"}]}],"total_operations":2}}
+{"time":"2025-06-13T17:43:41.268191546+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T17:43:41.47194877+02:00","level":"INFO","msg":"stream: closing","id":"f8wpm18k"}
+{"time":"2025-06-13T17:43:41.472195411+02:00","level":"INFO","msg":"handler: closed","stream_id":"f8wpm18k"}
+{"time":"2025-06-13T17:43:41.472231658+02:00","level":"INFO","msg":"sender: closed","stream_id":"f8wpm18k"}
+{"time":"2025-06-13T17:43:41.472221031+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"f8wpm18k"}
+{"time":"2025-06-13T17:43:41.472930424+02:00","level":"INFO","msg":"stream: closed","id":"f8wpm18k"}

@@ -1,0 +1,16 @@
+{"time":"2025-06-13T15:56:59.600284164+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_155659-qvcx61vu/logs/debug-core.log"}
+{"time":"2025-06-13T15:56:59.889442622+02:00","level":"INFO","msg":"created new stream","id":"qvcx61vu"}
+{"time":"2025-06-13T15:56:59.889718178+02:00","level":"INFO","msg":"stream: started","id":"qvcx61vu"}
+{"time":"2025-06-13T15:56:59.889786113+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"qvcx61vu"}
+{"time":"2025-06-13T15:56:59.889795239+02:00","level":"INFO","msg":"handler: started","stream_id":"qvcx61vu"}
+{"time":"2025-06-13T15:56:59.88980667+02:00","level":"INFO","msg":"sender: started","stream_id":"qvcx61vu"}
+{"time":"2025-06-13T15:57:00.069393771+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T16:08:58.204911735+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T16:08:58.205327082+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T16:08:59.206038659+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading Checkpoints/Reduzierung-Tu + Balance/trainpercent_0.9/run_1/best_model.pt","runtime_seconds":0.328228081,"progress":"706.5KB/706.5KB"}],"total_operations":1}}
+{"time":"2025-06-13T16:08:59.832120636+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T16:09:00.027697907+02:00","level":"INFO","msg":"stream: closing","id":"qvcx61vu"}
+{"time":"2025-06-13T16:09:00.027933813+02:00","level":"INFO","msg":"handler: closed","stream_id":"qvcx61vu"}
+{"time":"2025-06-13T16:09:00.027944292+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"qvcx61vu"}
+{"time":"2025-06-13T16:09:00.027956243+02:00","level":"INFO","msg":"sender: closed","stream_id":"qvcx61vu"}
+{"time":"2025-06-13T16:09:00.028657381+02:00","level":"INFO","msg":"stream: closed","id":"qvcx61vu"}

@@ -1,0 +1,17 @@
+{"time":"2025-06-13T19:22:28.112676496+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250613_192228-7he3cy76/logs/debug-core.log"}
+{"time":"2025-06-13T19:22:28.380538759+02:00","level":"INFO","msg":"created new stream","id":"7he3cy76"}
+{"time":"2025-06-13T19:22:28.380772029+02:00","level":"INFO","msg":"stream: started","id":"7he3cy76"}
+{"time":"2025-06-13T19:22:28.380837364+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"7he3cy76"}
+{"time":"2025-06-13T19:22:28.380877063+02:00","level":"INFO","msg":"sender: started","stream_id":"7he3cy76"}
+{"time":"2025-06-13T19:22:28.380891104+02:00","level":"INFO","msg":"handler: started","stream_id":"7he3cy76"}
+{"time":"2025-06-13T19:22:28.769025571+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T19:23:13.572765731+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-06-13T19:29:32.692172986+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T19:29:32.692653698+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T19:29:33.654885085+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading Checkpoints/Reduzierung-Tu + Balance/trainpercent_0.4/run_3/best_model.pt","runtime_seconds":0.34107136,"progress":"706.5KB/706.5KB"}],"total_operations":1}}
+{"time":"2025-06-13T19:29:34.221274846+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T19:29:34.427555657+02:00","level":"INFO","msg":"stream: closing","id":"7he3cy76"}
+{"time":"2025-06-13T19:29:34.427756651+02:00","level":"INFO","msg":"handler: closed","stream_id":"7he3cy76"}
+{"time":"2025-06-13T19:29:34.427811041+02:00","level":"INFO","msg":"sender: closed","stream_id":"7he3cy76"}
+{"time":"2025-06-13T19:29:34.427803555+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"7he3cy76"}
+{"time":"2025-06-13T19:29:34.428614623+02:00","level":"INFO","msg":"stream: closed","id":"7he3cy76"}
