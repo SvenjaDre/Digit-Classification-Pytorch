@@ -1,11 +1,47 @@
 \chapter{Theorie}
 
 \section{Grundlagen MRT}
-Die Magnetresonanztomographie (MRT) ist ein Bildgebendes Verfahren, welches ohne Ionisierender Strahlung
+Die Magnetresonanztomographie (MRT) ist ein Bildgebendes Verfahren, bei der keine ionisierender Strahlung eingesetzt wird.
+Dadurch gibt es keine Strahlenbelastung für Patientinnen und Patienten und die Untersuchung kann beliebig oft wiederholt werden.
+Die MRT wird zur Darstellung von morphologischen Strukturen und zur Abbildung funktioneller Prozesse verwendet.
+Das MRT-Gerät besteht aus einem zylinderförmigen, supraleitenden Magneten, der ein homogenes Hauptmagnetfeld $B_0$ erzeugt. %Shimming optional
+In der klinischen Anwendung liegt die Magnetfeldstärke bei $\qty{1.5}{T}$ - $\qty{3}{T}$.~\cite{Schlegel}
+Die Kernteilchen besitzen einen magnetischen Moment $\vec{m}$, aufgrund dessen das sie um ihre eigene Achse, mit der Lamorfrequenz 
+\begin{equation}
+    \omega_0 = \gamma \cdot B_0,
+\end{equation}
+präzedieren. $\gamma$ beschriebt dabei das Gyromagnetische Verhältnis, welches Materialabhängig ist.
+Die magnetischen Momente summieren sich im Kern und es entsteht eine gesamt Magnetisierung $\vec{M}$ des Atoms. Befinden sich diese Atome im Magnetfeld,
+richten sich die Spins der Kernteilchen parallel und antiparallel nach dem Magnetfeld aus. Sie befinden sich im thermischen Gleichgewicht
+Bei Atomen mit einer geraden Anzahl an Kernteilchen hebt sich beim aufsummieren die magnetischen Momente auf und besitzen somit keine
+Magnetisierung. Diese ist jedoch notwendig für die Messung eines Signals im MRT.
+Somit können nur Atome mit einer ungeraden Anzahl an Kernteilchen gemessen werden. 
+Am häufigsten wird zur Messung Wasserstoff verwendet, da dies mit 80$\%$ am häufigsten im Menschlichen Körper vorkommt.
+Mittels eines Hochfrequenzsignals (HF) werden die Spins um einen Winkel
+\begin{equation}
+    \alpha = \gamma \cdot B_1 \cdot T 
+\end{equation}
+gekippt. Dabei entspricht $B_1$ dem Anregungsimpuls und $T$ die Zeit des HF-Impulses.
+Die Frequenz des HF-Signals entspricht der Lamorfrequenz des Atoms. 
+Durch die Änderung der Magnetisierung, mittels des HF-Signals, lässt sich ein Signal messen. 
+Beim Ausschalten des Signals, relaxieren die Kernteilchen zurück in ihre Gleichgewichtsmagnetisierung. 
+Dabei lässt sich zwischen der T1-Relaxation und der T2-Relaxation. 
+Bei der T1- Relaxation wird die Längsmagnetisierung betrachte, welche mit der Zeit zunimmt.
+% Bild 
+Die T2-Relaxation beschreibt die Quermagnetisierung, welche mit der Zeit abnimmt, da die Spins dephasieren.~\cite{Pollmann}
 
 
 \section{Maschinelles Lernen}
+Supervised lernen (unsupervised)
+
 
 \subsection{Neuronales Netzwerk}
 
+Aufbau
+    weights 
+training: loss fkt reduzieren
+Hyperparameter
+Aktivierungsfunktion 
 \subsection{Convolutional Neural Network}
+
+Aufbau
