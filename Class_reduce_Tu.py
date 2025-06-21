@@ -119,7 +119,7 @@ TRAIN_DIR = "archive/Training"
 TEST_DIR = "archive/Testing"
 
 def train():
-    wandb.init(project="Reduzierung-Tu + Balance")
+    wandb.init(project="neu Reduzierung-Tu + Balance")
     config = wandb.config
 
     train_dataset, val_dataset, no_tumor_count, tumor_count = split_dataset_by_class(TRAIN_DIR, config.train_percent)
@@ -293,5 +293,5 @@ def load_sweep_config(path="sweep_noTu_Tu.yaml"):
 
 if __name__ == "__main__":
     sweep_config = load_sweep_config()
-    sweep_id = wandb.sweep(sweep_config, project="Reduzierung-Tu + Balance")
+    sweep_id = wandb.sweep(sweep_config, project="neu Reduzierung-Tu + Balance")
     wandb.agent(sweep_id, function=train)

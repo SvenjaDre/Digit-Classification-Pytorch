@@ -9,7 +9,7 @@ wandb.login()
 # Projektinfos
 entity = "svenja-dreyer-tu-dortmund"
 
-project = "Reduzierung-Tu + Balance"
+project = "neu Reduzierung-Tu + Balance"
 
 # Basisverzeichnisse setzen
 base_dir = "tudothesis-main"

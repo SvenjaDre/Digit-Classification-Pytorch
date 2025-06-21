@@ -1,0 +1,16 @@
+{"time":"2025-06-20T13:48:06.646320149+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250620_134806-dcwxg9j6/logs/debug-core.log"}
+{"time":"2025-06-20T13:48:06.923158418+02:00","level":"INFO","msg":"created new stream","id":"dcwxg9j6"}
+{"time":"2025-06-20T13:48:06.923405813+02:00","level":"INFO","msg":"stream: started","id":"dcwxg9j6"}
+{"time":"2025-06-20T13:48:06.923440054+02:00","level":"INFO","msg":"handler: started","stream_id":"dcwxg9j6"}
+{"time":"2025-06-20T13:48:06.923482984+02:00","level":"INFO","msg":"sender: started","stream_id":"dcwxg9j6"}
+{"time":"2025-06-20T13:48:06.923494218+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"dcwxg9j6"}
+{"time":"2025-06-20T13:48:07.124204402+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-20T14:05:03.242188801+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-20T14:05:03.242621567+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-20T14:05:04.209720572+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.468417903,"progress":"812B/812B"},{"desc":"uploading Checkpoints/neu Reduzierung-Tu + Balance/trainpercent_1/run_3/best_model.pt","runtime_seconds":0.114373196,"progress":"706.5KB/706.5KB"}],"total_operations":2}}
+{"time":"2025-06-20T14:05:05.102265752+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-20T14:05:05.445792869+02:00","level":"INFO","msg":"stream: closing","id":"dcwxg9j6"}
+{"time":"2025-06-20T14:05:05.445991385+02:00","level":"INFO","msg":"handler: closed","stream_id":"dcwxg9j6"}
+{"time":"2025-06-20T14:05:05.446023579+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"dcwxg9j6"}
+{"time":"2025-06-20T14:05:05.446036716+02:00","level":"INFO","msg":"sender: closed","stream_id":"dcwxg9j6"}
+{"time":"2025-06-20T14:05:05.446816073+02:00","level":"INFO","msg":"stream: closed","id":"dcwxg9j6"}

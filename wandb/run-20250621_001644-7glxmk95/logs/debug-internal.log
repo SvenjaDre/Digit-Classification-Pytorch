@@ -1,0 +1,16 @@
+{"time":"2025-06-21T00:16:44.929736999+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250621_001644-7glxmk95/logs/debug-core.log"}
+{"time":"2025-06-21T00:16:45.198399738+02:00","level":"INFO","msg":"created new stream","id":"7glxmk95"}
+{"time":"2025-06-21T00:16:45.198600969+02:00","level":"INFO","msg":"stream: started","id":"7glxmk95"}
+{"time":"2025-06-21T00:16:45.19865224+02:00","level":"INFO","msg":"sender: started","stream_id":"7glxmk95"}
+{"time":"2025-06-21T00:16:45.198661394+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"7glxmk95"}
+{"time":"2025-06-21T00:16:45.19869523+02:00","level":"INFO","msg":"handler: started","stream_id":"7glxmk95"}
+{"time":"2025-06-21T00:16:45.363813167+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-21T00:22:14.882724527+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-21T00:22:14.883098068+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-21T00:22:15.883746705+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading Checkpoints/neu Reduzierung-Tu + Balance/trainpercent_0.4/run_9/best_model.pt","runtime_seconds":0.179287777,"progress":"706.5KB/706.5KB"},{"desc":"uploading history steps 26-27, summary, console lines 28-35","runtime_seconds":0.080144153}],"total_operations":2}}
+{"time":"2025-06-21T00:22:16.573454715+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-21T00:22:16.760906888+02:00","level":"INFO","msg":"stream: closing","id":"7glxmk95"}
+{"time":"2025-06-21T00:22:16.76114744+02:00","level":"INFO","msg":"handler: closed","stream_id":"7glxmk95"}
+{"time":"2025-06-21T00:22:16.761211383+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"7glxmk95"}
+{"time":"2025-06-21T00:22:16.76125443+02:00","level":"INFO","msg":"sender: closed","stream_id":"7glxmk95"}
+{"time":"2025-06-21T00:22:16.761880586+02:00","level":"INFO","msg":"stream: closed","id":"7glxmk95"}

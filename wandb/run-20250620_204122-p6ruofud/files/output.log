@@ -1,0 +1,21 @@
+📊 Training with 2128 tumor and 1276 no_tumor samples.
+Using class weights: [0.6251468658447266, 0.37485313415527344]
+Epoch 1 | Train Loss: 1.3632 | Val Loss: 0.6976 | Val Acc: 62.51% | Sens: 1.00 | Spec: 0.00 | AUC: 0.50
+Epoch 2 | Train Loss: 0.6950 | Val Loss: 0.6932 | Val Acc: 37.49% | Sens: 0.00 | Spec: 1.00 | AUC: 0.50
+Epoch 3 | Train Loss: 0.6934 | Val Loss: 0.6931 | Val Acc: 62.51% | Sens: 1.00 | Spec: 0.00 | AUC: 0.50
+Epoch 4 | Train Loss: 0.6933 | Val Loss: 0.6931 | Val Acc: 62.51% | Sens: 1.00 | Spec: 0.00 | AUC: 0.50
+Epoch 5 | Train Loss: 0.6934 | Val Loss: 0.6932 | Val Acc: 62.51% | Sens: 1.00 | Spec: 0.00 | AUC: 0.50
+Epoch 6 | Train Loss: 0.6932 | Val Loss: 0.6931 | Val Acc: 62.51% | Sens: 1.00 | Spec: 0.00 | AUC: 0.50
+Epoch 7 | Train Loss: 0.6933 | Val Loss: 0.6931 | Val Acc: 62.51% | Sens: 1.00 | Spec: 0.00 | AUC: 0.50
+Epoch 8 | Train Loss: 0.6934 | Val Loss: 0.6932 | Val Acc: 62.51% | Sens: 1.00 | Spec: 0.00 | AUC: 0.50
+Epoch 9 | Train Loss: 0.6931 | Val Loss: 0.6931 | Val Acc: 62.51% | Sens: 1.00 | Spec: 0.00 | AUC: 0.50
+Epoch 10 | Train Loss: 0.6932 | Val Loss: 0.6932 | Val Acc: 62.51% | Sens: 1.00 | Spec: 0.00 | AUC: 0.50
+Epoch 11 | Train Loss: 0.6932 | Val Loss: 0.6931 | Val Acc: 62.51% | Sens: 1.00 | Spec: 0.00 | AUC: 0.50
+Epoch 12 | Train Loss: 0.6933 | Val Loss: 0.6931 | Val Acc: 62.51% | Sens: 1.00 | Spec: 0.00 | AUC: 0.50
+⏹️ Early stopping after 12 epochs.
+
+🔍 Testing on separate test set...
+/nfs/homes/sdreyer/Digit-Classification-Pytorch/Class_reduce_Tu.py:250: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  classifier.load_state_dict(torch.load(model_path, map_location=device))
+✅ Correct: 405 | ❌ Incorrect: 606 | Total: 1011
+🎯 Test Accuracy: 40.06% | Sens: 0.00 | Spec: 1.00 | AUC: 0.50

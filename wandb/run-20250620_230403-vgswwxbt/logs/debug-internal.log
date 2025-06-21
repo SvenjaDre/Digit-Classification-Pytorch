@@ -1,0 +1,17 @@
+{"time":"2025-06-20T23:04:03.248709244+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250620_230403-vgswwxbt/logs/debug-core.log"}
+{"time":"2025-06-20T23:04:03.517510813+02:00","level":"INFO","msg":"created new stream","id":"vgswwxbt"}
+{"time":"2025-06-20T23:04:03.517728833+02:00","level":"INFO","msg":"stream: started","id":"vgswwxbt"}
+{"time":"2025-06-20T23:04:03.51778029+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"vgswwxbt"}
+{"time":"2025-06-20T23:04:03.517799255+02:00","level":"INFO","msg":"sender: started","stream_id":"vgswwxbt"}
+{"time":"2025-06-20T23:04:03.517838117+02:00","level":"INFO","msg":"handler: started","stream_id":"vgswwxbt"}
+{"time":"2025-06-20T23:04:03.692607181+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-20T23:08:19.163839231+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/svenja-dreyer-tu-dortmund/neu%20Reduzierung-Tu%20+%20Balance/vgswwxbt/file_stream\": dial tcp: lookup api.wandb.ai on 129.217.129.42:53: read udp 129.217.167.98:58586->129.217.129.42:53: i/o timeout"}
+{"time":"2025-06-20T23:08:35.797136379+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-20T23:08:35.797507321+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-20T23:08:36.759759193+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading Checkpoints/neu Reduzierung-Tu + Balance/trainpercent_0.3/run_8/best_model.pt","runtime_seconds":0.148384254,"progress":"706.5KB/706.5KB"}],"total_operations":1}}
+{"time":"2025-06-20T23:08:37.500003109+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-20T23:08:37.70460335+02:00","level":"INFO","msg":"stream: closing","id":"vgswwxbt"}
+{"time":"2025-06-20T23:08:37.704826116+02:00","level":"INFO","msg":"handler: closed","stream_id":"vgswwxbt"}
+{"time":"2025-06-20T23:08:37.704841749+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"vgswwxbt"}
+{"time":"2025-06-20T23:08:37.704868338+02:00","level":"INFO","msg":"sender: closed","stream_id":"vgswwxbt"}
+{"time":"2025-06-20T23:08:37.705588515+02:00","level":"INFO","msg":"stream: closed","id":"vgswwxbt"}

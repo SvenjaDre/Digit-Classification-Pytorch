@@ -1,0 +1,19 @@
+{"time":"2025-06-20T21:11:34.101699066+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250620_211134-dgycrn1q/logs/debug-core.log"}
+{"time":"2025-06-20T21:11:34.368168894+02:00","level":"INFO","msg":"created new stream","id":"dgycrn1q"}
+{"time":"2025-06-20T21:11:34.368469612+02:00","level":"INFO","msg":"stream: started","id":"dgycrn1q"}
+{"time":"2025-06-20T21:11:34.368514939+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"dgycrn1q"}
+{"time":"2025-06-20T21:11:34.368529749+02:00","level":"INFO","msg":"sender: started","stream_id":"dgycrn1q"}
+{"time":"2025-06-20T21:11:34.368565407+02:00","level":"INFO","msg":"handler: started","stream_id":"dgycrn1q"}
+{"time":"2025-06-20T21:11:34.625308638+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-20T21:18:35.230513289+02:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/svenja-dreyer-tu-dortmund/neu%20Reduzierung-Tu%20+%20Balance/dgycrn1q/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-06-20T21:19:47.480732819+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-06-20T21:19:57.112138656+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-20T21:19:57.112410333+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-20T21:19:58.074748602+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 27-27, summary, console lines 29-30","runtime_seconds":53.444244395},{"desc":"uploading Checkpoints/neu Reduzierung-Tu + Balance/trainpercent_0.7/run_7/best_model.pt","runtime_seconds":0.275509426,"progress":"706.5KB/706.5KB"}],"total_operations":2}}
+{"time":"2025-06-20T21:19:58.643488846+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-20T21:20:04.76917821+02:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/svenja-dreyer-tu-dortmund/neu%20Reduzierung-Tu%20+%20Balance/dgycrn1q/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-06-20T21:20:07.226281062+02:00","level":"INFO","msg":"stream: closing","id":"dgycrn1q"}
+{"time":"2025-06-20T21:20:07.2265142+02:00","level":"INFO","msg":"handler: closed","stream_id":"dgycrn1q"}
+{"time":"2025-06-20T21:20:07.226529697+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"dgycrn1q"}
+{"time":"2025-06-20T21:20:07.226596125+02:00","level":"INFO","msg":"sender: closed","stream_id":"dgycrn1q"}
+{"time":"2025-06-20T21:20:07.227470373+02:00","level":"INFO","msg":"stream: closed","id":"dgycrn1q"}

@@ -1,0 +1,16 @@
+{"time":"2025-06-20T12:37:28.005924554+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250620_123727-gpsd900c/logs/debug-core.log"}
+{"time":"2025-06-20T12:37:28.285569142+02:00","level":"INFO","msg":"created new stream","id":"gpsd900c"}
+{"time":"2025-06-20T12:37:28.285833361+02:00","level":"INFO","msg":"stream: started","id":"gpsd900c"}
+{"time":"2025-06-20T12:37:28.285892783+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"gpsd900c"}
+{"time":"2025-06-20T12:37:28.285902865+02:00","level":"INFO","msg":"handler: started","stream_id":"gpsd900c"}
+{"time":"2025-06-20T12:37:28.28590736+02:00","level":"INFO","msg":"sender: started","stream_id":"gpsd900c"}
+{"time":"2025-06-20T12:37:28.474703333+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-20T12:51:42.617224972+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-20T12:51:42.617719927+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-20T12:51:43.585036892+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading Checkpoints/neu Reduzierung-Tu + Balance/trainpercent_1/run_2/best_model.pt","runtime_seconds":0.165106852,"progress":"706.5KB/706.5KB"}],"total_operations":1}}
+{"time":"2025-06-20T12:51:44.156357303+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-20T12:51:44.365382268+02:00","level":"INFO","msg":"stream: closing","id":"gpsd900c"}
+{"time":"2025-06-20T12:51:44.365635705+02:00","level":"INFO","msg":"handler: closed","stream_id":"gpsd900c"}
+{"time":"2025-06-20T12:51:44.365676728+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"gpsd900c"}
+{"time":"2025-06-20T12:51:44.365707776+02:00","level":"INFO","msg":"sender: closed","stream_id":"gpsd900c"}
+{"time":"2025-06-20T12:51:44.366467636+02:00","level":"INFO","msg":"stream: closed","id":"gpsd900c"}

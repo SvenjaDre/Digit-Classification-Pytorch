@@ -1,0 +1,16 @@
+{"time":"2025-06-20T19:19:29.394544767+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250620_191929-3923n4ce/logs/debug-core.log"}
+{"time":"2025-06-20T19:19:29.667312238+02:00","level":"INFO","msg":"created new stream","id":"3923n4ce"}
+{"time":"2025-06-20T19:19:29.667656361+02:00","level":"INFO","msg":"stream: started","id":"3923n4ce"}
+{"time":"2025-06-20T19:19:29.667682417+02:00","level":"INFO","msg":"sender: started","stream_id":"3923n4ce"}
+{"time":"2025-06-20T19:19:29.667682258+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"3923n4ce"}
+{"time":"2025-06-20T19:19:29.667704232+02:00","level":"INFO","msg":"handler: started","stream_id":"3923n4ce"}
+{"time":"2025-06-20T19:19:30.143215273+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-20T19:22:44.67127804+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-20T19:22:44.67204739+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-20T19:22:45.634034678+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading Checkpoints/neu Reduzierung-Tu + Balance/trainpercent_0.1/run_5/best_model.pt","runtime_seconds":0.245123031,"progress":"706.5KB/706.5KB"},{"desc":"uploading history steps 20-21, summary, console lines 22-29","runtime_seconds":0.030844515}],"total_operations":2}}
+{"time":"2025-06-20T19:22:46.297227808+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-20T19:22:46.479126464+02:00","level":"INFO","msg":"stream: closing","id":"3923n4ce"}
+{"time":"2025-06-20T19:22:46.479406906+02:00","level":"INFO","msg":"handler: closed","stream_id":"3923n4ce"}
+{"time":"2025-06-20T19:22:46.479431125+02:00","level":"INFO","msg":"sender: closed","stream_id":"3923n4ce"}
+{"time":"2025-06-20T19:22:46.479425653+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"3923n4ce"}
+{"time":"2025-06-20T19:22:46.480165395+02:00","level":"INFO","msg":"stream: closed","id":"3923n4ce"}

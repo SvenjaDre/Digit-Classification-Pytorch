@@ -1,0 +1,32 @@
+2025-06-20 17:36:52,691 INFO    Thread-19 (_run_job):1640155 [wandb_setup.py:_flush():70] Current SDK version is 0.19.11
+2025-06-20 17:36:52,691 INFO    Thread-19 (_run_job):1640155 [wandb_setup.py:_flush():70] Configure stats pid to 1640155
+2025-06-20 17:36:52,692 INFO    Thread-19 (_run_job):1640155 [wandb_setup.py:_flush():70] Loading settings from /nfs/homes/sdreyer/.config/wandb/settings
+2025-06-20 17:36:52,692 INFO    Thread-19 (_run_job):1640155 [wandb_setup.py:_flush():70] Loading settings from /nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/settings
+2025-06-20 17:36:52,692 INFO    Thread-19 (_run_job):1640155 [wandb_setup.py:_flush():70] Loading settings from environment variables
+2025-06-20 17:36:52,692 INFO    Thread-19 (_run_job):1640155 [wandb_init.py:setup_run_log_directory():724] Logging user logs to /nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250620_173652-l4quwkpo/logs/debug.log
+2025-06-20 17:36:52,693 INFO    Thread-19 (_run_job):1640155 [wandb_init.py:setup_run_log_directory():725] Logging internal logs to /nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250620_173652-l4quwkpo/logs/debug-internal.log
+2025-06-20 17:36:52,693 INFO    Thread-19 (_run_job):1640155 [wandb_init.py:init():852] calling init triggers
+2025-06-20 17:36:52,693 INFO    Thread-19 (_run_job):1640155 [wandb_init.py:init():857] wandb.init called with sweep_config: {'batch_size': 128, 'dropout': 0.55, 'epochs': 1000, 'learning_rate': 0.005, 'optimizer': 'Adam', 'train_percent': 0.5}
+config: {'_wandb': {}}
+2025-06-20 17:36:52,694 INFO    Thread-19 (_run_job):1640155 [wandb_init.py:init():893] starting backend
+2025-06-20 17:36:52,694 INFO    Thread-19 (_run_job):1640155 [wandb_init.py:init():897] sending inform_init request
+2025-06-20 17:36:52,695 INFO    Thread-19 (_run_job):1640155 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-06-20 17:36:52,695 INFO    Thread-19 (_run_job):1640155 [wandb_init.py:init():907] backend started and connected
+2025-06-20 17:36:52,696 INFO    Thread-19 (_run_job):1640155 [wandb_run.py:_config_callback():1436] config_cb None None {'batch_size': 128, 'dropout': 0.55, 'epochs': 1000, 'learning_rate': 0.005, 'optimizer': 'Adam', 'train_percent': 0.5}
+2025-06-20 17:36:52,697 INFO    Thread-19 (_run_job):1640155 [wandb_init.py:init():1005] updated telemetry
+2025-06-20 17:36:52,711 INFO    Thread-19 (_run_job):1640155 [wandb_init.py:init():1029] communicating run to backend with 90.0 second timeout
+2025-06-20 17:36:53,151 INFO    Thread-19 (_run_job):1640155 [wandb_init.py:init():1104] starting run threads in backend
+2025-06-20 17:36:53,390 INFO    Thread-19 (_run_job):1640155 [wandb_run.py:_console_start():2573] atexit reg
+2025-06-20 17:36:53,390 INFO    Thread-19 (_run_job):1640155 [wandb_run.py:_redirect():2421] redirect: wrap_raw
+2025-06-20 17:36:53,391 INFO    Thread-19 (_run_job):1640155 [wandb_run.py:_redirect():2490] Wrapping output streams.
+2025-06-20 17:36:53,391 INFO    Thread-19 (_run_job):1640155 [wandb_run.py:_redirect():2513] Redirects installed.
+2025-06-20 17:36:53,392 INFO    Thread-19 (_run_job):1640155 [wandb_init.py:init():1150] run started, returning control to user process
+2025-06-20 17:36:53,408 INFO    Thread-19 (_run_job):1640155 [wandb_config.py:__setitem__():154] [no run ID] config set run_id = 4 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x7fe3a4982d50>>
+2025-06-20 17:36:53,409 INFO    Thread-19 (_run_job):1640155 [wandb_run.py:_config_callback():1436] config_cb run_id 4 None
+2025-06-20 17:45:11,735 INFO    Thread-19 (_run_job):1640155 [wandb_run.py:_finish():2321] finishing run svenja-dreyer-tu-dortmund/neu Reduzierung-Tu + Balance/l4quwkpo
+2025-06-20 17:45:11,735 INFO    Thread-19 (_run_job):1640155 [wandb_run.py:_atexit_cleanup():2538] got exitcode: 0
+2025-06-20 17:45:11,735 INFO    Thread-19 (_run_job):1640155 [wandb_run.py:_restore():2520] restore
+2025-06-20 17:45:11,736 INFO    Thread-19 (_run_job):1640155 [wandb_run.py:_restore():2526] restore done
+2025-06-20 17:45:13,554 INFO    Thread-19 (_run_job):1640155 [wandb_run.py:_footer_history_summary_info():4188] rendering history
+2025-06-20 17:45:13,555 INFO    Thread-19 (_run_job):1640155 [wandb_run.py:_footer_history_summary_info():4220] rendering summary
+2025-06-20 17:45:13,555 INFO    Thread-19 (_run_job):1640155 [wandb_run.py:_footer_sync_info():4149] logging synced files

@@ -1,0 +1,16 @@
+{"time":"2025-06-20T13:18:34.370252896+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/nfs/homes/sdreyer/Digit-Classification-Pytorch/wandb/run-20250620_131834-g4tqjsej/logs/debug-core.log"}
+{"time":"2025-06-20T13:18:34.644452345+02:00","level":"INFO","msg":"created new stream","id":"g4tqjsej"}
+{"time":"2025-06-20T13:18:34.644671227+02:00","level":"INFO","msg":"stream: started","id":"g4tqjsej"}
+{"time":"2025-06-20T13:18:34.644693113+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"g4tqjsej"}
+{"time":"2025-06-20T13:18:34.644704862+02:00","level":"INFO","msg":"sender: started","stream_id":"g4tqjsej"}
+{"time":"2025-06-20T13:18:34.64473084+02:00","level":"INFO","msg":"handler: started","stream_id":"g4tqjsej"}
+{"time":"2025-06-20T13:18:34.822450478+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-20T13:22:47.745245924+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-20T13:22:47.745926314+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-20T13:22:48.708026844+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.59924425,"progress":"1.1KB/1.1KB"},{"desc":"uploading config.yaml","runtime_seconds":0.436066381,"progress":"814B/814B"},{"desc":"uploading Checkpoints/neu Reduzierung-Tu + Balance/trainpercent_0.6/run_2/best_model.pt","runtime_seconds":0.436055551,"progress":"706.5KB/706.5KB"}],"total_operations":3}}
+{"time":"2025-06-20T13:22:49.464809335+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-20T13:22:49.688277291+02:00","level":"INFO","msg":"stream: closing","id":"g4tqjsej"}
+{"time":"2025-06-20T13:22:49.688530552+02:00","level":"INFO","msg":"handler: closed","stream_id":"g4tqjsej"}
+{"time":"2025-06-20T13:22:49.688547594+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"g4tqjsej"}
+{"time":"2025-06-20T13:22:49.688562442+02:00","level":"INFO","msg":"sender: closed","stream_id":"g4tqjsej"}
+{"time":"2025-06-20T13:22:49.689281502+02:00","level":"INFO","msg":"stream: closed","id":"g4tqjsej"}
