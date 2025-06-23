@@ -67,14 +67,19 @@ Der Gradient in z-Richtung wird für die Einstellung der Schichtdicke verwendet.
 Zur Frequenzcodierung wird der Gradient $G_x$ geschaltet, wodurch sich die Lamorfrequenzen entlang des Gradienten verschieben.
 Mittels des Gradienten $G_y$ werden die Spins in ihrer Phase verschoben.
 Durch die Verschiebung der Frequenz und Phase ist die Ortscodierung möglich und die Aufnahme eines Bildes im k-Raum.
-Durch die Fouriertransformation werden die Informationen in den Ortsraum transformiert.~\cite{pabst2013}
+Durch die Fouriertransformation werden die Informationen in den Ortsraum transformiert.
+Dadurch liefert die MRT Bilder in Schichten, die anschließend zu einem 3D-Bild zusammengesetzt und analysiert werden.~\cite{pabst2013}
 
 
 \section{Maschinelles Lernen}
-Künstliche Intelligenz (KI) simuliert das Verhalten einer Menschlichen Intelligenz durch eine Maschine. 
-Das Maschinelle Lernen (ML) gehört zu einem Teilbereich der Künstlichen Intelligenz und Deep Learning stellt 
-wiederum einen Teilbereich des Maschinellem Lernen da.
 
+Künstliche Intelligenz (KI) simuliert das Verhalten einer Menschlichen Intelligenz durch eine Maschine. 
+Das Maschinelle Lernen (ML) gehört zu einem Teilbereich der Künstlichen Intelligenz. Deep Learning stellt 
+wiederum einen Teilbereich des Maschinellem Lernen da. Das Deep learning beinhaltet das trainieren mehrschichtigen Neuronaler Netzwerke mit großen Datensätze.
+Durch die Verwendung von Daten ist es den Algorithmen beim 
+Maschinellem Lernen möglich aus diesen zu lernen und sich zu verbessern, ohne das die Algorithmen dem Problem entsprechend programmiert werden müssen.~\cite{kleesiek2020}
+Somit findet das Maschinelle Lernen Anwendung in der Identifizierung und Klassifikation von Objekten, Analyse, Vorhersagen, 
+Sprachverarbeitung und Informationsbeschaffung.~\cite{shinde2018}
 
 \begin{figure}[htbp]
   \centering
@@ -83,13 +88,48 @@ wiederum einen Teilbereich des Maschinellem Lernen da.
   \label{fig:KI}
 \end{figure}
 
+Das Lernen lässt sich unterscheiden in überwachtes Lernen (Supervised Learning) und unüberwachtes Lernen (Unsupervised Learning).
+Beim überwachten Lernen, sind die Eingabedaten gelabelt, sodass das Netzwerk anhand dessen lernt, indem es den Ausgabewert mit dem bekannten Zielwert 
+vergleicht und das Netzwerk dementsprechend.
+Beim unüberwachten Lernen erkennt der Algorithmus Muster und Strukturen in den Eingabedaten, ohne das Eingabedaten gelabelt sind.~\cite{kleesiek2020}
+
+
 \subsection{Neuronales Netzwerk}
 
-Aufbau
-    weights 
-training: loss fkt reduzieren
-Hyperparameter
-Aktivierungsfunktion 
+Das Neurale Netzwerk ist aufgebaut aus drei Schichten: 
+Die Eingabeschicht (Input Layer), Versteckten Schichten (Hidden Layers) und die Ausgabe Schicht (Output Layer).
+Der Aufbau eines Neuronalen Netzwerkes wird in der Abbildung \ref{fig:NN} dargestellt
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[scale=0.5]{/nfs/homes/sdreyer/Digit-Classification-Pytorch/tudothesis-main/content/abbildungen/Aufbau NN.png}
+  \caption{Aufbau eines Neuronalen Netzwerkes.~\cite{lecun2015deep}}
+  \label{fig:NN}
+\end{figure}
+Jedes Neuron ist dabei mit jedem aus der Vorherigen Schicht verbunden durch eine Gewichtung $w_{ij}$.
+Die Aktivierung eines Neurons wird mittels einer Aktivierungsfunktion $f_\text{act}$ berechnet. In dieser fließt unter anderem die Gewichtung mit 
+ein, der Eingabe Wert $x_i$ sowie ein Bias-Wert $b_i$.
+\begin{equation}
+    y_i = f_\text{act}\left(\sum_{i}^{n} w_{ij}x_i + b_j\right)
+\end{equation}
+Dieser Ausgabewert $y_i$ wird an die Neuronen in der nächsten Schicht weitergegeben.
+Die meist verwendetet Aktivierungsfunktionen sind die Sigmoidfunktion, Rectifier-Funktion (ReLU-Funktion) und der hyperbolische Tangens.
+Wird der Schwellenwert bei diesen Funktionen nicht erreicht, wird der Wert des Neurons nicht an die nächste Schicht weitergegeben.
+Das Neuron wird inaktiv.~\cite{datascience}
+
 \subsection{Convolutional Neural Network}
 
-Aufbau
+Für die Verarbeitung von Bildern eignet sich das Neuronale Netzwerk nicht, da jedes Pixel ein Eingabewert darstellt.
+Aufgrund der Verbindung jedes Neurons aus der vorherigen Schicht, kommt es zu einer großen Anzahl an Verbindungen.
+Durch die große Rechenkomplexität ist das Training des Netzwerkes ineffizient.
+Aus diesem Grund wird gerade für die Verarbeitung von Bildern das Convolutional Neural Network (CNN) verwendet.
+Bei diesem sind die Neuronen in drei Dimensionen angeordnet.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[scale=0.4]{/nfs/homes/sdreyer/Digit-Classification-Pytorch/tudothesis-main/content/abbildungen/CNN.png}
+  \caption{Aufbau eines Convolutional Neural Network.~\cite{Mohammed2024}}
+  \label{fig:CNN}
+\end{figure}
+
+\subsection{Training der Netzwerke}
