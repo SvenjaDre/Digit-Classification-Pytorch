@@ -124,6 +124,10 @@ Aufgrund der Verbindung jedes Neurons aus der vorherigen Schicht, kommt es zu ei
 Durch die große Rechenkomplexität ist das Training des Netzwerkes ineffizient.
 Aus diesem Grund wird gerade für die Verarbeitung von Bildern das Convolutional Neural Network (CNN) verwendet.
 Bei diesem sind die Neuronen in drei Dimensionen angeordnet.
+Diese sind die zwei räumlichen Dimensionen Breite und Höhe und die dritte Dimension bildet die Anzahl an Kanälen.
+Das Netzwerk ist aufgebaut aus Faltungschichten (Convolutional Layers), Pooling Layers und einer Fully-Connected Layer(FC-Layer).
+Zwischen den Schichten wird, wie bei den Neuronalen Netzwerken eine Aktivierungfunktion verwendet.~\cite{OShea} 
+Der Aufbau eine CNN wird in der Abbildung \ref{fig:CNN} dargestellt.
 
 \begin{figure}[htbp]
   \centering
@@ -132,4 +136,24 @@ Bei diesem sind die Neuronen in drei Dimensionen angeordnet.
   \label{fig:CNN}
 \end{figure}
 
+
+Bei der Covolutional Layer, wird ein Filter (Kernel) verwendet, welcher schrittweise über das gesamte Input Bild gelegt wird.
+Dieser besitzt meist eine typische Größe von $3 \times 3$, $5 \times 5$ oder $ 7 \times 7$.  
+Aus dem Kernel und dem Neuron wird das Skalarprodukt berechnet, woraus eine Featur-Map erstellt wird. 
+Diese Featur-Map beinhaltet die wichtigsten Strukturen.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[scale=0.4]{/nfs/homes/sdreyer/Digit-Classification-Pytorch/tudothesis-main/content/abbildungen/Kernel.png}
+  \caption{~\cite{Yamashita2018}}
+  \label{fig:kernel}
+\end{figure}
+
+Die Pooling-Layer reduziert die räumliche Dimension. Infolge dessen kommt es auch zur Reduktion der Parameter der Aktivierung.~\cite{datascience}
+Dafür wird das sogenannte Max-Pooling verwendet. Dabei wirf ein Filter der Größe $2 \times 2$ verwendet, der wie der Kernel, schrittweise über die Featur-Map gelegt wird.
+Für jeden Ausschnitt wird der größte Wert verwendet. Der Rest der Werte wird nicht weiter verwendet.~\cite{Yamashita2018}\\
+
+Die FC-Layer berechnet am Ende die Aktivierung und bestimmt einen Ausgangswert für die Klassifizierung.
+
 \subsection{Training der Netzwerke}
+
