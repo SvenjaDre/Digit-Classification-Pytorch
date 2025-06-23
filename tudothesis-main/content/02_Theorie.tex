@@ -141,7 +141,10 @@ Bei der Convolutional Layer, wird ein Filter (Kernel) verwendet, welcher schritt
 Dieser besitzt meist eine typische Größe von $3 \times 3$, $5 \times 5$ oder $ 7 \times 7$.  
 Aus dem Kernel und dem Neuron wird das Skalarprodukt berechnet, woraus eine Feature-Map erstellt wird. 
 Diese Feature-Map beinhaltet die wichtigsten Strukturen.
-
+Damit der Filter auch den Rand des Bildes mit dem Zentrum überlappen kann, wird das sogenannte Padding angewendet.
+Beim Zero-padding, wird am Rand des Bildes Nullen hinzugefügt. Dadurch bleibt die räumliche Dimension erhalten.
+Als Stride wird der Abstand zwischen zwei Positionen des Kernels beschrieben. Am häufigsten wird ein stride von 1 gewählt. 
+Das bedeutet, dass nach jeder Berechnung des Skalarproduktes der Kernel um eine Position verschiebt.
 \begin{figure}[htbp]
   \centering
   \begin{subfigure}[b]{0.3\textwidth}

@@ -4,37 +4,68 @@
 Für diese Arbeit wurde Datensatz "Brain Tumor MRI Dataset", welcher auf Kaggle veröffentlicht wurde, verwendet.~\cite{msoud_nickparvar_2021}
 Dieser beinhaltet die vier Klassen: no Tumor, Glioma, Meningioma und Pituitary.
 In dieser Arbeit wird die Klasse Pituitary nicht betrachtet.
-Aufgeteilt ist der Datensatz in Trainigsdaten und Testdaten.
+Aufgeteilt ist der Datensatz in Trainingsdaten und Testdaten.
 Die Anzahl der verwendet samples sind in der Tabelle \ref{tab:daten} dargestellt. 
-\begin{table}[H]
+\begin{table}[htbp]
     \centering
     \begin{tabular}{l c r}
         \hline
-        Klasse      & Trainingssamples & Testsamples \\
+        Klasse      & Training samples & Test samples \\
         \hline
-        no Tumor    &    1595              & 405 \\
-        Glioma      &    1321              & 300 \\
-        Meningioma  &    1339              & 306 \\
+        no Tumor    &    1595          & 405 \\
+        Glioma      &    1321          & 300 \\
+        Meningioma  &    1339          & 306 \\
         \hline
   \end{tabular}
-  \caption{Anzahl der verwendeten Trainigssamples und Testsamples.}
+  \caption{Anzahl der verwendeten Training sample und Test samples.}
   \label{tab:daten}
 \end{table}
 Im Folgenden wurde zwei unterschiedliche Klassifikationen durchgeführt.
 Zu nächst wurde das CNN trainiert, dass es zwischen der Klasse no Tumor und Tumor unterscheidet. Für die Klasse Tumor
 wurde die samples der Glioma und Meningioma Klasse zusammengefasst.
 Die zweite Klassifikation besteht darin zwischen, dass das CNN unterscheidet, um welche Tumorart es sich handelt.
-Dementsprechend wurde die Klasse Glioma und Meningioma betrachtet.\\
+Dementsprechend wurde ausschließlich die Klasse Glioma und Meningioma betrachtet.
+Dabei wird die Meningioma Klasse als Positiv  und die Glioma Klasse als negativ definiert.\\
+
 
 Die verwendeten MRT Bilder werden zu beginn auf die Größe $224 \times 224$ Pixel skaliert, aufgrund dessen, dass die Bilder nicht alle die 
 gleiche Größe besitzen.
-Zudem wurden die Bilder in ein Array umgewandelt und Normiert auf die Werte [0,1].
+Zudem wurden die Bilder in ein Array umgewandelt und Normiert auf die Werte [0,1].\\
+
+Für das Training des Netzwerkes werden die Training samples aufgeteilt. $\qty{80}{\%}$ der Daten, werden zum trainieren des Netzwerkes 
+verwendet und $\qty{20}{\%}$ zur Validierung.
+Die Aufteilung der Bilder bleibt für jeden Durchgang des Trainierens gleich.
 
 \section{CNN + Metriken}
+
 Das verwendete CNN besteht aus vier Convolutional Layers. Als Aktivierungsfunktion wurde die ReLU-Funktion verwendet.
 Zudem wird ein $3 \times 3$ Kernel und Max-Pooling einer Größe von $2 \times 2$ eingesetzt. 
+Jede Convolutional Schicht beinhalt Stride und Padding mit dem Wert 1.
+Da die MRT Graustufenbilder sind, besitzt das Input Bild einen Kanal von eins. 
+In der ersten Schicht werden 32 Filter verwendet.
+Die Anzahl erhöht sich in jeder Schicht um den Faktor zwei.
+Somit werden in der letzten Convolutional Schicht 128 Filter verwendet.
+In der FC-Layer wurde ein Dropout implementiert.\\
+
+Zur Beurteilung der Leistungsfähigkeit, wird für jede Klassifikation die Accuracy, Sensitivity und Specificity berechnet.
+Die Accuracy wird über
+\begin{equation}
+  Accuracy = \frac{TP + TN}{TP + TN + FP + FN}
+\end{equation}
+berechnet.
+Die Sensitivity beschreibt wie viele Krankheitsfälle korrekt erkannt wurden. Dies lässt sich über
+\begin{equation}
+  Sensitivity = \frac{TP}{TP + FN}
+\end{equation}
+berechnen.
+Die Specificity wird über die Formel
+\begin{equation}
+  Specificity = \frac{TN}{TN + FP}
+\end{equation}
+ermittelt und gibt die Richtig Fälle an, bei dem sich um keine Krankheit handelt.%~\cite{west2020sensitivity}
 
 \section{Hyperparameter}
+
 
 
 \section{Trainingssamples reduzieren}
