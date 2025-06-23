@@ -137,23 +137,38 @@ Der Aufbau eine CNN wird in der Abbildung \ref{fig:CNN} dargestellt.
 \end{figure}
 
 
-Bei der Covolutional Layer, wird ein Filter (Kernel) verwendet, welcher schrittweise über das gesamte Input Bild gelegt wird.
+Bei der Convolutional Layer, wird ein Filter (Kernel) verwendet, welcher schrittweise über das gesamte Input Bild gelegt wird.
 Dieser besitzt meist eine typische Größe von $3 \times 3$, $5 \times 5$ oder $ 7 \times 7$.  
-Aus dem Kernel und dem Neuron wird das Skalarprodukt berechnet, woraus eine Featur-Map erstellt wird. 
-Diese Featur-Map beinhaltet die wichtigsten Strukturen.
+Aus dem Kernel und dem Neuron wird das Skalarprodukt berechnet, woraus eine Feature-Map erstellt wird. 
+Diese Feature-Map beinhaltet die wichtigsten Strukturen.
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[scale=0.4]{/nfs/homes/sdreyer/Digit-Classification-Pytorch/tudothesis-main/content/abbildungen/Kernel.png}
-  \caption{~\cite{Yamashita2018}}
+  \begin{subfigure}[b]{0.3\textwidth}
+    \includegraphics[width=\textwidth]{/nfs/homes/sdreyer/Digit-Classification-Pytorch/tudothesis-main/content/abbildungen/kernel a.png}
+    %\caption{}
+    \label{}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.3\textwidth}
+    \includegraphics[width=\textwidth]{/nfs/homes/sdreyer/Digit-Classification-Pytorch/tudothesis-main/content/abbildungen/kernel b.png}
+    %\caption{}
+    \label{}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.3\textwidth}
+    \includegraphics[width=\textwidth]{/nfs/homes/sdreyer/Digit-Classification-Pytorch/tudothesis-main/content/abbildungen/kernel c.png}
+    %\caption{}
+    \label{}
+  \end{subfigure}
+  \caption{Ein Beispiel der Convolutional layer mit der Verwendung eines Kernels der Größe $3 \times 3$.~\cite{Yamashita2018}}
   \label{fig:kernel}
 \end{figure}
 
 Die Pooling-Layer reduziert die räumliche Dimension. Infolge dessen kommt es auch zur Reduktion der Parameter der Aktivierung.~\cite{datascience}
-Dafür wird das sogenannte Max-Pooling verwendet. Dabei wirf ein Filter der Größe $2 \times 2$ verwendet, der wie der Kernel, schrittweise über die Featur-Map gelegt wird.
+Dafür wird das sogenannte Max-Pooling verwendet. Dabei wirf ein Filter der Größe $2 \times 2$ verwendet, der wie der Kernel, schrittweise über die Feature-Map gelegt wird.
 Für jeden Ausschnitt wird der größte Wert verwendet. Der Rest der Werte wird nicht weiter verwendet.~\cite{Yamashita2018}\\
 
 Die FC-Layer berechnet am Ende die Aktivierung und bestimmt einen Ausgangswert für die Klassifizierung.
 
-\subsection{Training der Netzwerke}
 

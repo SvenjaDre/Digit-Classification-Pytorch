@@ -1,11 +1,46 @@
 \chapter{Methodik}
 
+\section{Datensatz}
+Für diese Arbeit wurde Datensatz "Brain Tumor MRI Dataset", welcher auf Kaggle veröffentlicht wurde, verwendet.~\cite{msoud_nickparvar_2021}
+Dieser beinhaltet die vier Klassen: no Tumor, Glioma, Meningioma und Pituitary.
+In dieser Arbeit wird die Klasse Pituitary nicht betrachtet.
+Aufgeteilt ist der Datensatz in Trainigsdaten und Testdaten.
+Die Anzahl der verwendet samples sind in der Tabelle \ref{tab:daten} dargestellt. 
+\begin{table}[H]
+    \centering
+    \begin{tabular}{l c r}
+        \hline
+        Klasse      & Trainingssamples & Testsamples \\
+        \hline
+        no Tumor    &    1595              & 405 \\
+        Glioma      &    1321              & 300 \\
+        Meningioma  &    1339              & 306 \\
+        \hline
+  \end{tabular}
+  \caption{Anzahl der verwendeten Trainigssamples und Testsamples.}
+  \label{tab:daten}
+\end{table}
+Im Folgenden wurde zwei unterschiedliche Klassifikationen durchgeführt.
+Zu nächst wurde das CNN trainiert, dass es zwischen der Klasse no Tumor und Tumor unterscheidet. Für die Klasse Tumor
+wurde die samples der Glioma und Meningioma Klasse zusammengefasst.
+Die zweite Klassifikation besteht darin zwischen, dass das CNN unterscheidet, um welche Tumorart es sich handelt.
+Dementsprechend wurde die Klasse Glioma und Meningioma betrachtet.\\
+
+Die verwendeten MRT Bilder werden zu beginn auf die Größe $224 \times 224$ Pixel skaliert, aufgrund dessen, dass die Bilder nicht alle die 
+gleiche Größe besitzen.
+Zudem wurden die Bilder in ein Array umgewandelt und Normiert auf die Werte [0,1].
+
 \section{CNN + Metriken}
+Das verwendete CNN besteht aus vier Convolutional Layers. Als Aktivierungsfunktion wurde die ReLU-Funktion verwendet.
+Zudem wird ein $3 \times 3$ Kernel und Max-Pooling einer Größe von $2 \times 2$ eingesetzt. 
 
 \section{Hyperparameter}
 
+
 \section{Trainingssamples reduzieren}
 
+
 \section{Augmentierung}
+
 
 \section{Reduzierung einer Sample Klasse}
