@@ -175,3 +175,19 @@ Für jeden Ausschnitt wird der größte Wert verwendet. Der Rest der Werte wird 
 Die FC-Layer berechnet am Ende die Aktivierung und bestimmt einen Ausgangswert für die Klassifizierung.
 
 
+\subsection{Training eines Netzwerkes}
+
+Beim Training der Netzwerke, werden die Gewichtungen zwischen den Neuronen schrittweise angepasst. 
+Zu Beginn wird den Gewichten ein Zufälliger Wert zu geschrieben.
+Im überwachten Lernen, wird zur Anpassung der Gewichtungen der Backpropagation-Algorithmus verwendet.
+Dabei wird die sogenannte Verlustfunktion (Loss Function) angewendet, welche den Fehler zwischen dem Ausgabewert des Netzwerkes und den bekannten Zielwert berechnet.
+Ziel des Training ist es das Minimum der Loss-Funktion zu ermitteln, indem die Parameter angepasst werden.~\cite{datascience}
+Häufige Verlustfunktionen sind beispielsweise der Mean Squared Error (MSE)
+\begin{equation}
+  MSE  =  \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}i)^2
+\end{equation}
+oder die Cross-Entropie  
+\begin{equation}
+  
+\end{equation}
+verwendet werden.
