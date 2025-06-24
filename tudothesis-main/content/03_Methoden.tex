@@ -25,12 +25,11 @@ Zu nächst wurde das CNN trainiert, dass es zwischen der Klasse no Tumor und Tum
 wurde die samples der Glioma und Meningioma Klasse zusammengefasst.
 Die zweite Klassifikation besteht darin zwischen, dass das CNN unterscheidet, um welche Tumorart es sich handelt.
 Dementsprechend wurde ausschließlich die Klasse Glioma und Meningioma betrachtet.
-Dabei wird die Meningioma Klasse als Positiv  und die Glioma Klasse als negativ definiert.\\
-
+Dabei wird die Meningioma Klasse als Positiv  und die Glioma Klasse als negativ definiert.
 
 Die verwendeten MRT Bilder werden zu beginn auf die Größe $224 \times 224$ Pixel skaliert, aufgrund dessen, dass die Bilder nicht alle die 
 gleiche Größe besitzen.
-Zudem wurden die Bilder in ein Array umgewandelt und Normiert auf die Werte [0,1].\\
+Zudem wurden die Bilder in ein Array umgewandelt und Normiert auf die Werte [0,1].
 
 Für das Training des Netzwerkes werden die Training samples aufgeteilt. $\qty{80}{\%}$ der Daten, werden zum trainieren des Netzwerkes 
 verwendet und $\qty{20}{\%}$ zur Validierung.
@@ -38,22 +37,30 @@ Die Aufteilung der Bilder bleibt für jeden Durchgang des Trainierens gleich.
 
 \section{CNN + Metriken}
 
-Das verwendete CNN besteht aus vier Convolutional Layers. Als Aktivierungsfunktion wurde die ReLU-Funktion verwendet.
-Zudem wird ein $3 \times 3$ Kernel und Max-Pooling einer Größe von $2 \times 2$ eingesetzt. 
-Jede Convolutional Schicht beinhalt Stride und Padding mit dem Wert 1.
-Da die MRT Graustufenbilder sind, besitzt das Input Bild einen Kanal von eins. 
+Das verwendete Convolutional Neural Network besteht aus vier Convolutional Layers. Als Aktivierungsfunktion wird die ReLU-Funktion verwendet.
+Zudem wird ein $3 \times 3$ Kernel mit jeweils ein Max-Pooling von der Größe $2 \times 2$ eingesetzt. 
+In jeder Convolutional Schicht beträgt der Stride und das Padding den Wert 1.
+Da es sich bei den MRT-Bildern um Graustufenbilder handelt, besitzt das EIngabebild einen Kanal. 
 In der ersten Schicht werden 32 Filter verwendet.
 Die Anzahl erhöht sich in jeder Schicht um den Faktor zwei.
 Somit werden in der letzten Convolutional Schicht 128 Filter verwendet.
-In der FC-Layer wurde ein Dropout implementiert.\\
+In der FC-Layer wurde ein Dropout implementiert, um Overfitting zu vermeiden.
 
-Zur Beurteilung der Leistungsfähigkeit, wird für jede Klassifikation die Accuracy, Sensitivity und Specificity berechnet.
+Beim Training des Netzwerkes, wird der Adam optimizer verwendet. 
+Als Loss-Funktion wird die Cross-Entropy-Loss genutzt.~\cite{pytorchCrossEntropy}
+Zudem wird alle zehn Epochen Checkpoints gesetzt und das Modell gespeichert.
+Um Overfitting zu vermeiden, wird ein Early Stop implementiert. Wenn der Validation Loss sich über zehn Epochen nicht um $10^{-4}$
+verbessert, wird das Training gestoppt und das Modell mit den niedrigsten Validation Loss wird gespeichert.
+Mit diesem Modell werden die Daten getestet.
+
+Zur Beurteilung der Leistungsfähigkeit des Klassifizierungsalgorithmus, wird für jede Klassifikation die Accuracy, 
+Sensitivity und Specificity, für die Validierung und Test Daten, berechnet.
 Die Accuracy wird über
 \begin{equation}
   Accuracy = \frac{TP + TN}{TP + TN + FP + FN}
 \end{equation}
-berechnet.
-Die Sensitivity beschreibt wie viele Krankheitsfälle korrekt erkannt wurden. Dies lässt sich über
+berechnet und gibt den Anteil an korrekt vorhergesagten Fällen an. 
+Die Sensitivity beschreibt, wie viele Krankheitsfälle korrekt erkannt wurden. Dies lässt sich über
 \begin{equation}
   Sensitivity = \frac{TP}{TP + FN}
 \end{equation}
@@ -62,16 +69,67 @@ Die Specificity wird über die Formel
 \begin{equation}
   Specificity = \frac{TN}{TN + FP}
 \end{equation}
-ermittelt und gibt die Richtig Fälle an, bei dem sich um keine Krankheit handelt.%~\cite{west2020sensitivity}
+ermittelt und gibt den Anteil korrekten Fälle an, bei dem sich um keine Krankheit handelt.%~\cite{west2020sensitivity}
 
-\section{Hyperparameter}
+\section{Hyperparameter}\label{sec:Hyperparameter}
+
+Um die Hyperparameter für beide Klassifikationen zu bestimmen, werden verschieden Wert für die
+Lernrate, Batch-Größe und Dropout getestet.
+Mittels Rastersuche werden die verschiedene Kombinationen der Parameter für das Training des Netzwerkes verwendet. 
+Das Training wird jeweils maximal über 1000 Epochen ausgeführt.
+Die getesteten Werte, werden in der Tabelle \ref{tab:Hypp} gezeigt.
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{l c }
+        \hline
+        Hyperparameter     & Werte \\
+        \hline
+        Batch Größe    & 16, 32, 64, 128   \\
+        Dropout        & 0.2, 0.3, 0.4, 0.5 0.55   \\
+        Lernrate       & 0.0001, 0.0005, 0.001, 0.005, 0.1   \\
+        \hline
+  \end{tabular}
+  \caption{Die verschiedenen Hyperparameter mit ihren getesteten Werte.}
+  \label{tab:Hypp}
+\end{table}
 
 
+Anschließend werden die fünf besten Hyperparameter-Kombinationen ausgewählt, die den niedrigsten Validation Loss besitzen.
+Dabei werden die Accuracy, Sensitivity und Specificity der Validierungs Daten verglichen und die beste Kombination der Hyperparameter, 
+für die jeweilige Klassifizierung ausgewählt.  
 
-\section{Trainingssamples reduzieren}
+\section{Reduktion der Trainingsdaten}\label{sec:Red1}
+Um den Einfluss der Datensatzgröße auf den Klassifizierungsalgorithmus zu untersuchen, wird die Anzahl der verwendeten Trainingsdaten reduziert.
+Mit den bestimmten Hyperparameter aus \ref{sec:Hyperparameter} wird im nächsten Schritt die Anzahl an Trainingsdaten reduziert.
+Dabei bleibt die Anzahl an Validierung Daten konstant.
+Die Trainings Daten werden in $\qty{10}{\%}$ Schritten reduziert. 
+Das Netzwerk wird mit jeder Datensatzgröße separat trainiert und mit den Testdaten evaluiert. 
+Aufgenommen wird Accuracy, Sensitivity und Specificity.
+Dies wird für jede Trainingsgröße zehn mal Wiederholt.
+Aus den gesamten Durchläufen wird der Mittelwert und Standardabweichung der jeweiligen Metrik berechnet.
 
+\section{Augmentation}
 
-\section{Augmentierung}
+Um den Klassifizierungsalgorithmus robuster gegenüber variierender Trainingsdaten zu machen, wird eine Datenaugmentation eingesetzt.
+Dabei könne die Trainingsbilder transformiert werden, indem diese beispielsweise zufällig gesiegelt, gedreht oder zugeschnitten werden. 
+Dadurch werden beim training immer leicht unterschiedliche Varianten der Bilder verwendet, was Overfitting entgegenwirkt.~\cite{Yamashita2018}
 
+In diesem Abschnitt wird zur Augmentation eine Spiegelung der Bilder um ihre horizontal oder vertikale Achse hinzugefügt.
+Beim Training wird zufällig gewählt, ob das Bild gespiegelt wurde oder im Original verwendet wird.
+Das Verfahren zur Untersuchung der Netzwerkleistung erfolgt analog zu Abschnitt \ref{sec:Red1}.    
 
 \section{Reduzierung einer Sample Klasse}
+
+Da bei seltenen Tumorarten die Datenmenge ist, wird der Einfluss auf die Leistung des Netzwerkes untersucht, 
+bei der Reduktion der Daten einer Klasse.
+Bei der Klassifikation zwischen Tumor und no Tumor, wird die Anzahl an Tumor-Bildern schrittweise reduziert, 
+während die Anzahl an Bildern der no Tumor Klasse konstant bleibt.
+Für die Klassifizierung zwischen Glioma und Meningioma wird analog die Anzahl an Glioma-Bildern reduziert, während die Anzahl an Meningioma-Bilder konstant bleibt.
+Die Reduktion der Date erfolgt in $\qty{10}{\%}$ Schritten. 
+
+Aufgrund der Reduktion einer Klasse, entsteht ein unausgeglichener Datensatz.
+Um dies auszugleichen, wird eine Gewichtung in die Loss-Funktion hinzugefügt.
+Somit werden die Klassen gewichtet und die reduzierte Klasse wird stärker in der Loss-Funktion berücksichtigt.~\cite{pytorchCrossEntropy}
+Das trainieren und testen des Modells wird jeweils zehn mal durchgeführt und anschließend der Mittelwert und die Standardabweichung der
+Metriken berechnet.
