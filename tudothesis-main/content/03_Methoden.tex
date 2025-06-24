@@ -17,7 +17,7 @@ Die Anzahl der verwendet samples sind in der Tabelle \ref{tab:daten} dargestellt
         Meningioma  &    1339          & 306 \\
         \hline
   \end{tabular}
-  \caption{Anzahl der verwendeten Training sample und Test samples.}
+  \caption{Anzahl der verwendeten Trainings Bilder und Test Bilder.}
   \label{tab:daten}
 \end{table}
 Im Folgenden wurde zwei unterschiedliche Klassifikationen durchgeführt.
@@ -45,9 +45,11 @@ In der ersten Schicht werden 32 Filter verwendet.
 Die Anzahl erhöht sich in jeder Schicht um den Faktor zwei.
 Somit werden in der letzten Convolutional Schicht 128 Filter verwendet.
 In der FC-Layer wurde ein Dropout implementiert, um Overfitting zu vermeiden.
+Der Dropout schaltet während des Trainings zufällige Neuronen aus.
+Dadurch stützt sich das Netzwerk nicht auf Spezifische Neuronen und das Netzwerk wird robuster ~\cite{Yamashita2018}.
 
 Beim Training des Netzwerkes, wird der Adam optimizer verwendet. 
-Als Loss-Funktion wird die Cross-Entropy-Loss genutzt.~\cite{pytorchCrossEntropy}
+Als Verlustfunktion wird die Cross-Entropy-Loss genutzt.~\cite{pytorchCrossEntropy}
 Zudem wird alle zehn Epochen Checkpoints gesetzt und das Modell gespeichert.
 Um Overfitting zu vermeiden, wird ein Early Stop implementiert. Wenn der Validation Loss sich über zehn Epochen nicht um $10^{-4}$
 verbessert, wird das Training gestoppt und das Modell mit den niedrigsten Validation Loss wird gespeichert.
@@ -90,7 +92,7 @@ Die getesteten Werte, werden in der Tabelle \ref{tab:Hypp} gezeigt.
         Lernrate       & 0.0001, 0.0005, 0.001, 0.005, 0.1   \\
         \hline
   \end{tabular}
-  \caption{Die verschiedenen Hyperparameter mit ihren getesteten Werte.}
+  \caption{Die verschiedenen Hyperparameter mit ihren verwendeten Werte.}
   \label{tab:Hypp}
 \end{table}
 
@@ -117,7 +119,7 @@ Dadurch werden beim training immer leicht unterschiedliche Varianten der Bilder 
 
 In diesem Abschnitt wird zur Augmentation eine Spiegelung der Bilder um ihre horizontal oder vertikale Achse hinzugefügt.
 Beim Training wird zufällig gewählt, ob das Bild gespiegelt wurde oder im Original verwendet wird.
-Das Verfahren zur Untersuchung der Netzwerkleistung erfolgt analog zu Abschnitt \ref{sec:Red1}.    
+Das Verfahren zur Untersuchung der Netzwerkleistung erfolgt analog zu Abschnitt \ref{sec:Red1}.    
 
 \section{Reduzierung einer Sample Klasse}
 
@@ -129,7 +131,7 @@ Für die Klassifizierung zwischen Glioma und Meningioma wird analog die Anzahl a
 Die Reduktion der Date erfolgt in $\qty{10}{\%}$ Schritten. 
 
 Aufgrund der Reduktion einer Klasse, entsteht ein unausgeglichener Datensatz.
-Um dies auszugleichen, wird eine Gewichtung in die Loss-Funktion hinzugefügt.
+Um dies auszugleichen, wird eine Gewichtung in die Verlustfunktion hinzugefügt.
 Somit werden die Klassen gewichtet und die reduzierte Klasse wird stärker in der Loss-Funktion berücksichtigt.~\cite{pytorchCrossEntropy}
 Das trainieren und testen des Modells wird jeweils zehn mal durchgeführt und anschließend der Mittelwert und die Standardabweichung der
 Metriken berechnet.

@@ -125,10 +125,9 @@ Durch die große Rechenkomplexität ist das Training des Netzwerkes ineffizient.
 Aus diesem Grund wird gerade für die Verarbeitung von Bildern das Convolutional Neural Network (CNN) verwendet.
 Bei diesem sind die Neuronen in drei Dimensionen angeordnet.
 Diese sind die zwei räumlichen Dimensionen Breite und Höhe und die dritte Dimension bildet die Anzahl an Kanälen.
-Das Netzwerk ist aufgebaut aus Faltungschichten (Convolutional Layers), Pooling Layers und einer Fully-Connected Layer(FC-Layer).
+Das Netzwerk ist aufgebaut aus Faltungschichten (Convolutional Layers), Pooling Layers und einer Fully-Connected Layer (FC-Layer).
 Zwischen den Schichten wird, wie bei den Neuronalen Netzwerken eine Aktivierungfunktion verwendet.~\cite{OShea} 
 Der Aufbau eine CNN wird in der Abbildung \ref{fig:CNN} dargestellt.
-
 \begin{figure}[htbp]
   \centering
   \includegraphics[scale=0.4]{/nfs/homes/sdreyer/Digit-Classification-Pytorch/tudothesis-main/content/abbildungen/CNN.png}
@@ -136,11 +135,10 @@ Der Aufbau eine CNN wird in der Abbildung \ref{fig:CNN} dargestellt.
   \label{fig:CNN}
 \end{figure}
 
-
 Bei der Convolutional Layer, wird ein Filter (Kernel) verwendet, welcher schrittweise über das gesamte Input Bild gelegt wird.
 Dieser besitzt meist eine typische Größe von $3 \times 3$, $5 \times 5$ oder $ 7 \times 7$.  
-Aus dem Kernel und dem Neuron wird das Skalarprodukt berechnet, woraus eine Feature-Map erstellt wird. 
-Diese Feature-Map beinhaltet die wichtigsten Strukturen.
+Aus dem Kernel und dem Neuron wird das Skalarprodukt berechnet, aus dem eine Feature-Map erstellt wird. 
+Diese Feature-Map beinhaltet die wichtigsten Strukturen und Merkmale.
 Damit der Filter auch den Rand des Bildes mit dem Zentrum überlappen kann, wird das sogenannte Padding angewendet.
 Beim Zero-padding, wird am Rand des Bildes Nullen hinzugefügt. Dadurch bleibt die räumliche Dimension erhalten.
 Als Stride wird der Abstand zwischen zwei Positionen des Kernels beschrieben. Am häufigsten wird ein stride von 1 gewählt. 
@@ -178,16 +176,43 @@ Die FC-Layer berechnet am Ende die Aktivierung und bestimmt einen Ausgangswert f
 \subsection{Training eines Netzwerkes}
 
 Beim Training der Netzwerke, werden die Gewichtungen zwischen den Neuronen schrittweise angepasst. 
-Zu Beginn wird den Gewichten ein Zufälliger Wert zu geschrieben.
-Im überwachten Lernen, wird zur Anpassung der Gewichtungen der Backpropagation-Algorithmus verwendet.
+Zu Beginn wird den Gewichtungen ein Zufälliger Wert zu geschrieben.
+Beim überwachten Lernen, wird zur Anpassung der Gewichtungen der Backpropagation-Algorithmus verwendet.
 Dabei wird die sogenannte Verlustfunktion (Loss Function) angewendet, welche den Fehler zwischen dem Ausgabewert des Netzwerkes und den bekannten Zielwert berechnet.
-Ziel des Training ist es das Minimum der Loss-Funktion zu ermitteln, indem die Parameter angepasst werden.~\cite{datascience}
+Ziel des Training ist es das Minimum der Verlustfunktion zu ermitteln, indem die Parameter angepasst werden.~\cite{datascience}
 Häufige Verlustfunktionen sind beispielsweise der Mean Squared Error (MSE)
 \begin{equation}
-  MSE  =  \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}i)^2
+  \text{MSE}  =  \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}i)^2
 \end{equation}
 oder die Cross-Entropie  
 \begin{equation}
-  
+\text{CE} = -\frac{1}{n} \sum_{i=1}^{n} \left( y_i \cdot \log(\hat{y}_i) + (1 - y_i) \cdot \log(1 - \hat{y}_i) \right).
 \end{equation}
-verwendet werden.
+Dabei beschreibt $y_i$ den Zielwert und $\hat{y}_i$ den berechneten Ausgabewert.
+Durch den Backpropagation-Algorithmus wird die partielle Ableitung der Verlustfunktion mittels der Kettenregel berechnet.
+Wenn die partielle Ableitung positiv wird, werden die Gewichtungen verringert. 
+Wird die partiellen Ableitung negativ, werden die Gewichtungen erhöht.~\cite{neuralnet}
+Der Optimizer passt auf Grundlage des Gradienten die Parameter an und sorgt dafür, dass diese im Netzwerk aktualisiert werden.
+Zu den häufigsten verwendeten Optimizer sind der SGD, RMSprop und Adam.
+Zusätzlich wird beim Training eine Validierung durchgeführt um die Hyperparameter zu optimieren. 
+Hierzu wird der Datensatz aufgeteilt, in Training- und Validierungsdaten, wobei die Validierungsdaten nicht zur Aktualisierung 
+der Gewichtungen verwendet wird.~\cite{Yamashita2018}
+Als Hyperparameter werden die Parameter bezeichnet, die zu Beginn des Trainings manuell festgelegt werden.
+Zu diesen gehört unter anderem die Lernrate, die Batch-Größe, die Anzahl an Schichten und Neuronen, die Anzahl an Trainingsdurchläufen (Epochen)
+und die Verlustfunktion.
+Die Batch-Größe gibt an, wie viele Trainingsdaten pro Trainingsschritt verwendet wird.~\cite{datascience} 
+
+Wenn das Modell nur statistische Regelmäßigkeiten lernt, anstatt das eigentlichen Muster, wird dies als Overfitting bezeichnet.
+Bei der Anwendung des Netzwerkes auf einen unabhängigen Datensatz, verschlechtert sich die Leistung deutlich. 
+Um zu überprüfen, ob das Modell überangepasst ist, wird der Validierungsverlust während des Trainings mitbeobachtet.
+Wenn der Validierungs Verlust ansteigt, der Trainings Verlust jedoch kontinuierlich sinkt, ist dies ein Zeichen, dass das Netzwerk überangepasst wird.~\cite{Yamashita2018}
+Dies wird in der Abbildung \ref{fig:overfitting} graphisch dargestellt.
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[scale=0.3]{/nfs/homes/sdreyer/Digit-Classification-Pytorch/tudothesis-main/content/abbildungen/Overfitting.png}
+  \caption{Überprüfung auf Overfitting dur das Kontrollieren des Trainings und Validierungs Verlust.~\cite{Yamashita2018}}
+  \label{fig:overfitting}
+\end{figure}
+%Möglichkeiten um Overfitting zu vermeiden sind zum einen, das mehr Daten verwendet werden. 
+%Zudem kann ein Dropout implementiert werden. Der Dropout schaltet während des Trainings zufällige Neuronen aus.
+%Dadurch stützt sich das Netzwerk nicht auf Spezifische Neuronen 
