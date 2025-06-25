@@ -72,13 +72,14 @@ Dadurch liefert die MRT Bilder in Schichten, die anschließend zu einem 3D-Bild 
 
 \section{Maschinelles Lernen}
 
-Künstliche Intelligenz (KI) simuliert das Verhalten einer Menschlichen Intelligenz durch eine Maschine. 
-Das Maschinelle Lernen (ML) gehört zu einem Teilbereich der Künstlichen Intelligenz. Deep Learning stellt 
-wiederum einen Teilbereich des Maschinellem Lernen da. Das Deep learning beinhaltet das trainieren mehrschichtigen Neuronaler Netzwerke mit großen Datensätze.
+Künstliche Intelligenz (KI) bezeichnet die Modellierung menschlicher Intelligenz durch Maschinen. 
+Das Maschinelle Lernen (ML) ist ein Teilbereich der Künstlichen Intelligenz. Deep Learning stellt 
+wiederum einen Teilbereich des maschinellen Lernens da. Das Deep learning beinhaltet das trainieren mehrschichtiger Neuronaler Netzwerke mit großen Datensätzen.
+Die verschieden Teilbereiche der Künstliche Intelligenz werden in der Abbildung \ref{fig:KI} dargestellt.
 Durch die Verwendung von Daten ist es den Algorithmen beim 
 Maschinellem Lernen möglich aus diesen zu lernen und sich zu verbessern, ohne das die Algorithmen dem Problem entsprechend programmiert werden müssen.~\cite{kleesiek2020}
 Somit findet das Maschinelle Lernen Anwendung in der Identifizierung und Klassifikation von Objekten, Analyse, Vorhersagen, 
-Sprachverarbeitung und Informationsbeschaffung.~\cite{shinde2018}
+Sprachverarbeitung, Informationsbeschaffung und in weiteren Bereiche.~\cite{shinde2018}
 
 \begin{figure}[htbp]
   \centering
@@ -89,32 +90,64 @@ Sprachverarbeitung und Informationsbeschaffung.~\cite{shinde2018}
 
 Das Lernen lässt sich unterscheiden in überwachtes Lernen (Supervised Learning) und unüberwachtes Lernen (Unsupervised Learning).
 Beim überwachten Lernen, sind die Eingabedaten gelabelt, sodass das Netzwerk anhand dessen lernt, indem es den Ausgabewert mit dem bekannten Zielwert 
-vergleicht und das Netzwerk dementsprechend.
+vergleicht und das Netzwerk dementsprechend anpasst.
 Beim unüberwachten Lernen erkennt der Algorithmus Muster und Strukturen in den Eingabedaten, ohne das Eingabedaten gelabelt sind.~\cite{kleesiek2020}
 
 
 \subsection{Neuronales Netzwerk}
 
 Das Neurale Netzwerk ist aufgebaut aus drei Schichten: 
-Die Eingabeschicht (Input Layer), Versteckten Schichten (Hidden Layers) und die Ausgabe Schicht (Output Layer).
+Die Eingabeschicht (Input Layer), versteckten Schichten (Hidden Layers) und die Ausgabe Schicht (Output Layer).
+Die Input Layer nimmt die Daten auf und den Neuronen wird ein Wert zugeordnet.
+Bei den Hidden Layers handelt es sich um mehrere Schichten, die sich zwischen der Eingabe- und Ausgabeschicht befinden.
+In diesen werden die Eingabedaten verarbeitet und die Ergebnisse an die Ausgabeschicht weitergegeben.
+Die Neuronen der versteckten Schichten erhalten dabei keine Daten von Außerhalb und geben keine raus. 
 Der Aufbau eines Neuronalen Netzwerkes wird in der Abbildung \ref{fig:NN} dargestellt
 
 \begin{figure}[htbp]
   \centering
   \includegraphics[scale=0.5]{/nfs/homes/sdreyer/Digit-Classification-Pytorch/tudothesis-main/content/abbildungen/Aufbau NN.png}
-  \caption{Aufbau eines Neuronalen Netzwerkes.~\cite{lecun2015deep}}
+  \caption{Aufbau eines Fully Connected Neural Network.~\cite{lecun2015deep}}
   \label{fig:NN}
 \end{figure}
+Die nachfolgende Beschreibung bezieht sich auf den Aufbau dieses Netzwerkes.
 Jedes Neuron ist dabei mit jedem aus der Vorherigen Schicht verbunden durch eine Gewichtung $w_{ij}$.
-Die Aktivierung eines Neurons wird mittels einer Aktivierungsfunktion $f_\text{act}$ berechnet. In dieser fließt unter anderem die Gewichtung mit 
-ein, der Eingabe Wert $x_i$ sowie ein Bias-Wert $b_i$.
+Die Aktivierung eines Neurons wird mittels einer Aktivierungsfunktion $f_\text{act}$ berechnet. In dieser fließt unter anderem die Gewichtung, 
+der Eingabe Wert $x_i$ sowie ein Bias-Wert $b_j$ mit ein.
+Der Output des Neurons j lässt sich somit über 
 \begin{equation}
-    y_i = f_\text{act}\left(\sum_{i}^{n} w_{ij}x_i + b_j\right)
+    y_j = f_\text{act}\left(\sum_{i}^{n} w_{ij}x_i + b_j\right)
 \end{equation}
-Dieser Ausgabewert $y_i$ wird an die Neuronen in der nächsten Schicht weitergegeben.
+berechnen.
+Dieser Ausgabewert $y_j$ wird an die Neuronen in der nächsten Schicht weitergegeben.
 Die meist verwendetet Aktivierungsfunktionen sind die Sigmoidfunktion, Rectifier-Funktion (ReLU-Funktion) und der hyperbolische Tangens.
 Wird der Schwellenwert bei diesen Funktionen nicht erreicht, wird der Wert des Neurons nicht an die nächste Schicht weitergegeben.
-Das Neuron wird inaktiv.~\cite{datascience}
+Das Neuron wird inaktiv.
+Bei der ReLU-Funktion beträgt der Schwellenwert  0, sodass die Ausgangswerte nur im positiven Bereich liegen.
+Die Sigmoidfunktion gibt einen Ausgabewert zwischen 0 und 1, da diese Funktion auf diesen Wertebereich normalisiert ist.
+Beim verwenden des hyperbolischen Tangens, befindet sich der Wertebereich zwischen -1 und +1.~\cite{datascience}
+%\begin{figure}[htbp]
+%  \centering
+%  \begin{subfigure}[b]{0.3\textwidth}
+%    \includegraphics[width=\textwidth]{/nfs/homes/sdreyer/Digit-Classification-Pytorch/tudothesis-main/content/abbildungen/ReLU.png}
+%    \caption{ReLU-Funktion}
+%    \label{fig:ReLU}
+%  \end{subfigure}
+%  \hfill
+%  \begin{subfigure}[b]{0.3\textwidth}
+%    \includegraphics[width=\textwidth]{/nfs/homes/sdreyer/Digit-Classification-Pytorch/tudothesis-main/content/abbildungen/sigmoid.png}
+%    \caption{Sigmoidfunktion}
+%    \label{fig:sigmoid}
+%  \end{subfigure}
+%  \hfill
+%  \begin{subfigure}[b]{0.3\textwidth}
+%    \includegraphics[width=\textwidth]{/nfs/homes/sdreyer/Digit-Classification-Pytorch/tudothesis-main/content/abbildungen/tanh.png}
+%    \caption{hyperbolische Tangens}
+%    \label{fig:tanh}
+%  \end{subfigure}
+%  \caption{Verlauf der verschiedenen Aktivierungsfunktionen.~\cite{datascience}}
+%  \label{fig:kernel}
+%\end{figure}
 
 \subsection{Convolutional Neural Network}
 
