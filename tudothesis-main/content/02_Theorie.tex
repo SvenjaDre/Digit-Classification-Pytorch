@@ -1,17 +1,17 @@
 \chapter{Theorie}
 
 \section{Grundlagen MRT}
-Die Magnetresonanztomographie (MRT) ist ein Bildgebendes Verfahren, bei der keine ionisierender Strahlung eingesetzt wird.
-Dadurch gibt es keine Strahlenbelastung für Patientinnen und Patienten und die Untersuchung kann beliebig oft wiederholt werden.
+Die Magnetresonanztomographie (MRT) ist ein Bildgebendes Verfahren, bei der keine ionisierende Strahlung eingesetzt wird.
+Dadurch gibt es keine Strahlenbelastung für Patientinnen und Patienten.
 Die MRT wird zur Darstellung von morphologischen Strukturen und zur Abbildung funktioneller Prozesse verwendet.
 Das MRT-Gerät besteht aus einem zylinderförmigen, supraleitenden Magneten, der ein homogenes Hauptmagnetfeld $B_0$ erzeugt. %Shimming optional
 In der klinischen Anwendung liegt die Magnetfeldstärke bei $\qty{1.5}{T}$ - $\qty{3}{T}$.~\cite{Schlegel}
-Die Kernteilchen besitzen einen magnetischen Moment $\vec{m}$, aufgrund dessen das sie um ihre eigene Achse, mit der Lamorfrequenz 
+Die Kernteilchen besitzen ein magnetisches Moment $\vec{m}$, aufgrund dessen das sie um die Achse des Magnetfeldes $B_0$, mit der Lamorfrequenz 
 \begin{equation}
     \omega_0 = \gamma \cdot B_0
 \end{equation}
-präzedieren. $\gamma$ beschriebt dabei das Gyromagnetische Verhältnis, welches Materialabhängig ist.
-Die magnetischen Momente des Kerns summieren sich und es entsteht eine gesamt Magnetisierung $\vec{M}$ des Atoms. Befinden sich diese Atome im Magnetfeld,
+präzedieren. Dabei beschreibt $\gamma$ das Gyromagnetische Verhältnis, welches Materialabhängig ist.
+Befinden sich diese Atome im Magnetfeld,
 richten sich die Spins der Kernteilchen parallel und antiparallel nach dem Magnetfeld aus. Sie befinden sich im thermischen Gleichgewicht.
 Bei Atomen mit einer geraden Anzahl an Kernteilchen heben sich beim aufsummieren die magnetischen Momente auf und besitzen somit keine
 Magnetisierung. 
@@ -22,13 +22,13 @@ Mittels eines Hochfrequenzsignals (HF) werden die Spins um einen Winkel
     \alpha = \gamma \cdot B_1 \cdot T 
 \end{equation}
 gekippt. Dabei entspricht $B_1$ dem Anregungsimpuls und $T$ die Zeit des HF-Impulses.
-Die Frequenz des HF-Signals entspricht der Lamorfrequenz des Atoms, damit es zur Resonanz kommt. 
-Beim Ausschalten des Signals, relaxieren die Kernteilchen zurück in ihre Gleichgewichtsmagnetisierung. 
+Die Frequenz des HF-Signals entspricht der Lamorfrequenz des Kernspins, damit es zur Resonanz kommt. 
+Beim Ausschalten des Signals, relaxieren die Spins zurück in ihre Gleichgewichtsmagnetisierung. 
 Dabei wird zwischen T1-Relaxation und T2-Relaxation unterschieden. Mittels dieser Unterscheidung und der Einstellung der Echozeit $T_E$ und 
 Repetitionszeit $T_R$, sind die Bilder unterschiedlich Gewichtet.
 Die Repetitionszeit beschreibt die Zeit zwischen der Verwendung zweier HF-Impulse und die Echozeit der zeitliche Abstand zwischen dem Anregungsimpuls und der Auslesung des Signals. 
 Anhand der Gewichtungen entstehen unterschiedliche Kontraste.
-Durch die veränderten Magnetisierung kommt es zur Induktion einer Spannung, die mittels einer Spule gemessen wird.
+Durch die veränderten Magnetisierung kommt es zur Induktion einer Spannung, die mittels einer Spule gemessen wird.~\cite{Pollmann}
 
 
 Bei der T1- Relaxation wird die Längsmagnetisierung betrachtet, welche mit der Zeit zunimmt.
@@ -36,22 +36,21 @@ Diese lässt sich durch
 \begin{equation}
     M_z(t) = M_z(0) (1 - e^{-\frac{t}{T_1}})
 \end{equation}
-% Bild 
-Zur Messung des Signals, wird der Zeitpunkt $T_1$, nach der Anregung bestimmt, bei dem $\qty{63}{\%}$ der Magnetisierung wiederhergestellt wurde.~\cite{Pollmann}\\
+Der Zeitpunkt $T_1$ wird nach der Anregung bestimmt, bei dem $\qty{63}{\%}$ der Magnetisierung wiederhergestellt wurde.~\cite{Pollmann}\\
 Bei der T1 Gewichtung, sind $T_R$ und $T_E$ kurz eingestellt und zusätzlich gilt das $T_E \ll T_2$.
 Fett und Muskeln werden bei dieser Gewichtung hell dargestellt und Liquor dunkel.~\cite{Schlegel}
 
-Die T2-Relaxation beschreibt die Quermagnetisierung, welche mit der Zeit abnimmt, da die Spins dephasieren und somit das Signal zerfällt.
-Dieser Signalzerfall wird als "Free Induction Decay" (FID) bezeichnet.~\cite{Dössel}
+Die T2-Relaxation beschreibt die Quermagnetisierung, welche mit der Zeit abnimmt, da die Spins dephasieren und somit das Signal zerfällt.~\cite{Dössel}
 Die Magnetisierung wird durch die Formel
 \begin{equation}
     M_{xy}(t) = M_{xy}(0) e^{-\frac{t}{T_2}} 
 \end{equation}
 beschrieben.
-Zum Zeitpunkt $T_2$, wenn die transversale Magnetisierung auf $\qty{37}{\%}$ abgefallen ist, wird das Signal aufgenommen.~\cite{Pollmann}
+Wenn die transversale Magnetisierung auf $\qty{37}{\%}$ abgefallen ist, wird der zeitpunkt $T_2$ bestimmt.~\cite{Pollmann}
 Für T2-Gewichtete Bilder gilt, dass $T_R \gg T_1$ und sowohl $T_R$ als auch $T_E$  lang eingestellt werden. 
 Bei dieser Gewichtung wird Liquor hell dargestellt und Fett und Muskeln dunkel.~\cite{Schlegel} 
-Aufgrund von Inhomogenitäten im Hauptmagnetfeld, kommt es zu einem schnelleren Signalzerfall. Dies wird bezeichnet als T2* Relaxation.~\cite{Dössel}\\
+Aufgrund von Inhomogenitäten im Hauptmagnetfeld, kommt es zu einem schnelleren Signalzerfall. Dies wird bezeichnet als T2* Relaxation.
+Dieser Signalzerfall wird als "Free Induction Decay" (FID) bezeichnet.~\cite{Dössel}\\
 
 
 Für die Erstellung des Bildes, benötigt es die drei Gradientenspulen $G_z$, $G_y$ und $G_x$. Die Anordnung der drei Spulen 
