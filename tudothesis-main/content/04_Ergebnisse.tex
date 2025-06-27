@@ -7,7 +7,7 @@ Die fünf Trainingsdurchläufen (Runs) mit den niedrigsten Validation Loss wird 
 \begin{figure}[H]
   \centering
   \includegraphics[scale=0.4]{plots/Val_loss_noTu_Tu.pdf}
-  \caption{Verlauf des Validation Loss bei der Verwendung verschiedener Hyperparameter.}
+  \caption{Verlauf des validation loss bei der Verwendung verschiedener Hyperparameter.}
   \label{fig:val_loss notu-tu}
 \end{figure}
 %\vspace{-1.5em}
@@ -17,7 +17,7 @@ In der Tabelle \ref{tab:hyperp notu-tu} sind die dabei verwendeten Hyperparamete
     \resizebox{\textwidth}{!}{%
         \begin{tabular}{cccccccc}
             \toprule
-            Runs & Batch Größe & Lernrate & Dropout & Validation Loss & Accuracy/$\%$ & Sensitivity & Specificity \\
+            Runs & Batch Größe & Lernrate & Dropout & validation loss & Accuracy/$\%$ & Sensitivity & Specificity \\
             \midrule
             1 & 128 & 0.005  & 0.55 & 0.072539 & 97.53231 & 0.97967 & 0.96774 \\
             2 & 128 & 0.0005 & 0.5  & 0.073672 & 98.00235 & 0.98706 & 0.96774 \\
@@ -27,7 +27,7 @@ In der Tabelle \ref{tab:hyperp notu-tu} sind die dabei verwendeten Hyperparamete
             \bottomrule
         \end{tabular}
     }
-  \caption{Die fünf Runs mit dem niedrigsten Validation Loss sowie deren verwendete Hyperparameter und aufgezeichnete Metriken.}
+  \caption{Die fünf Runs mit dem niedrigsten validation loss sowie deren verwendete Hyperparameter und aufgezeichnete Metriken.}
   \label{tab:hyperp notu-tu}
 \end{table}
 %\vspace{-1em}
@@ -35,6 +35,7 @@ Die Werte der Accuracy, Sensitivity und Specificity liegen dicht bei einander un
 Aufgrund dessen werden die Hyperparameter des ersten Runs für die weiteren Trainingsdurchläufen verwendet.
 
 \subsection{Reduzierung der Trainingsdaten}
+
 Die aufgenommen Metriken werden gegen die verwendeten Anzahl an Trainingsdaten aufgetragen. 
 Dies wird in der Abbildung \ref{fig:reduzierung_trainingsdaten} gezeigt.
 \begin{figure}[htbp]
@@ -54,9 +55,10 @@ Dies wird in der Abbildung \ref{fig:reduzierung_trainingsdaten} gezeigt.
     \caption{Specificity}
     \label{fig:reduzierung_specificity}
   \end{subfigure}
-  \caption{Aufgenomme Metriken in Abhängigkeit der Verwendeten Trainingsdaten.}
+  \caption{Aufgenommene Metriken in Abhängigkeit der Verwendeten Trainingsdaten.}
   \label{fig:reduzierung_trainingsdaten}
 \end{figure}
+
 Die dazugehörigen Werte sind in der Tabelle \ref{tab:reduzierung_trainingsdaten} aufgelistet.
 \begin{table}[htbp]
     \centering
@@ -88,23 +90,25 @@ Die aufgenommen Metriken besitzen ihren maximal wert, bei 3404 und somit $\qty{1
 Am geringsten sind die Werte bei 340 Bildern.
 Mit zunehmender Datenmenge steigen die Werte der Metriken.
 Ab einer verwendet Menge von 2042 Daten nähren sich die Werte einem Plateau.
+Für die Accuracy liegt das Plateau bei ungefähr $\qty{95}{\%}$, bei der Sensitivity ca. $0.93$ und bei der Specificity liegt die Sättigung bei ungefähr $0.98$. 
 Es treten noch geringfügige Schwankungen auf.
+
 \subsection{Augmentation}
 
-\begin{figure}[htbp]
+\begin{figure}[H]
   \centering
   \begin{subfigure}[b]{0.48\textwidth}
-    \includegraphics[width=\textwidth]{plots/2-Messungen-noTu-Tu_Accuracy_mean.pdf}
+    \includegraphics[width=\textwidth]{plots/Augm-Messungen-noTu-Tu_Accuracy_mean.pdf}
     \caption{Accuracy}
     \label{fig:augmentation_accuracy}
   \end{subfigure}
   \begin{subfigure}[b]{0.48\textwidth}
-    \includegraphics[width=\textwidth]{plots/2-Messungen-noTu-Tu_Sensitivity_mean.pdf}
+    \includegraphics[width=\textwidth]{plots/Augm-Messungen-noTu-Tu_Sensitivity_mean.pdf}
     \caption{Sensitivity}
     \label{fig:augmentation_sensitivity}
   \end{subfigure}
   \begin{subfigure}[b]{0.48\textwidth}
-    \includegraphics[width=\textwidth]{plots/2-Messungen-noTu-Tu_Specificity_mean.pdf}
+    \includegraphics[width=\textwidth]{plots/Augm-Messungen-noTu-Tu_Specificity_mean.pdf}
     \caption{Specificity}
     \label{fig:augmentation_specificity}
   \end{subfigure}
@@ -112,7 +116,7 @@ Es treten noch geringfügige Schwankungen auf.
   \label{fig:augmentation}
 \end{figure}
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
         \begin{tabular}{cccc}
             \toprule
@@ -133,10 +137,14 @@ Es treten noch geringfügige Schwankungen auf.
   \caption{Mittelwert und Standardabweichung der Metriken bei der Augmentation.}
   \label{tab:}
 \end{table}
+Die Specificity steigt mit zunehmender Anzahl an Training samples an und erreicht ab 1702 Bildern ein Plateau.
+Bei der Sensitivity und Accuracy wird ein Plateau ab 2042 Trainingssamples erreicht.
+Die Accuracy steigt dabei konstant an. 
+Die Sensitivity steigt bis 1021 samples an und bleibt anschließend relativ konstant und erreicht anschließend das Plateau.
 
 \subsection{Reduzierung der Tumorsamples}
 
-\begin{figure}[htbp]
+\begin{figure}[H]
   \centering
   \begin{subfigure}[b]{0.48\textwidth}
     \includegraphics[width=\textwidth]{plots/neu Reduzierung-Tu + Balance_Accuracy_mean.pdf}
@@ -157,7 +165,7 @@ Es treten noch geringfügige Schwankungen auf.
   \label{fig:reduzierung_tumorsamples}
 \end{figure}
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
         \begin{tabular}{cccc}
             \toprule

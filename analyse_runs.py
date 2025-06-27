@@ -9,9 +9,9 @@ wandb.login()
 # Projektinfos
 entity = "svenja-dreyer-tu-dortmund"
 #project = "3-Messungen-Gli-Men"
-#project = "2-Messungen-noTu-Tu"
+project = "2-Messungen-noTu-Tu"
 #project = "Augm-Gli-Men"
-project  = "Augm-Messungen-noTu-Tu"
+#project  = "Augm-Messungen-noTu-Tu"
 
 # Basisverzeichnisse setzen
 base_dir = "tudothesis-main"
@@ -70,23 +70,25 @@ print(f"✅ Aggregierte Daten gespeichert nach: {agg_csv_filename}")
 def plot_metric(metric, ylabel, suffix):
     grouped = agg_df[["train_samples", f"{metric}_mean", f"{metric}_std"]]
 
-    plt.figure(figsize=(10, 6))
+    plt.figure(figsize=(12, 7.2), constrained_layout=True)
     plt.errorbar(grouped["train_samples"], grouped[f"{metric}_mean"],
                  yerr=grouped[f"{metric}_std"], fmt='none', ecolor='cornflowerblue',
-                 capsize=5, label="Fehlerbalken")
+                 capsize=5, elinewidth=3, label="Fehlerbalken")
 
     plt.scatter(grouped["train_samples"], grouped[f"{metric}_mean"],
-                color='red', marker='x', label="Mittelwert")
+                color='red', marker='x', s=250, linewidth=3, label="Mittelwert")
 
-    plt.xlabel("Trainingssamples")
-    plt.ylabel(ylabel)
-    plt.title(f"{ylabel} in Abhängigkeit der Trainingssamples")
-    plt.xticks(grouped["train_samples"])
+    plt.xlabel("Training samples", fontsize=24)
+    plt.ylabel(ylabel, fontsize=24)
+    plt.title(f"{ylabel} in Abhängigkeit der Trainingssamples", fontsize=24)
+    #plt.xticks(grouped["train_samples"])
+    plt.xticks(grouped["train_samples"], rotation=-45)  # Ticks um 45 Grad drehen
     plt.grid(True)
     plt.minorticks_on()
-    plt.legend()
-    plt.tight_layout()
-
+    plt.legend(fontsize=20)
+    #plt.tight_layout()
+    plt.xticks(fontsize=22)
+    plt.yticks(fontsize=22)
     plot_path = os.path.join(plots_dir, f"{project}_{suffix}.pdf")
     plt.savefig(plot_path)
     plt.show()
