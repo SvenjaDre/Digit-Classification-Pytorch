@@ -36,9 +36,9 @@ Aufgrund dessen werden die Hyperparameter des ersten Runs für die weiteren Trai
 
 \subsection{Reduzierung der Trainingsdaten}
 
-Die aufgenommen Metriken werden gegen die verwendeten Anzahl an Trainingsdaten aufgetragen. 
+Die aufgenommen Metriken werden gegen die verwendeten Anzahl an Training samples aufgetragen. 
 Dies wird in der Abbildung \ref{fig:reduzierung_trainingsdaten} gezeigt.
-\begin{figure}[htbp]
+\begin{figure}[H]
   \centering
   \begin{subfigure}[b]{0.48\textwidth}
     \includegraphics[width=\textwidth]{plots/2-Messungen-noTu-Tu_Accuracy_mean.pdf}
@@ -58,9 +58,8 @@ Dies wird in der Abbildung \ref{fig:reduzierung_trainingsdaten} gezeigt.
   \caption{Aufgenommene Metriken in Abhängigkeit der Verwendeten Trainingsdaten.}
   \label{fig:reduzierung_trainingsdaten}
 \end{figure}
-
 Die dazugehörigen Werte sind in der Tabelle \ref{tab:reduzierung_trainingsdaten} aufgelistet.
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
         \begin{tabular}{cccc}
             \toprule
@@ -81,20 +80,21 @@ Die dazugehörigen Werte sind in der Tabelle \ref{tab:reduzierung_trainingsdaten
             3404 & $96.2611 \pm 1.3948$ & $0.9462 \pm 0.0167 $ & $0.9872 \pm 0.0128$\\ 
             \bottomrule
         \end{tabular}
-  \caption{Mittelwert und Standardabweichung der Metriken beim Reduzieren der Trainingsgröße.}
+  \caption{Mittelwert und Standardabweichung der Metriken bei der Reduzierung der Training samples.}
   \label{tab:reduzierung_trainingsdaten}
 \end{table}
 Da die Accuracy bei einer Datengröße von 2723 Bildern sinkt, wurde zusätzlich das Training bei 
 2553, 2893 und 3234 Bildern durchgeführt, um den Verlauf genauer zu untersuchen.
-Die aufgenommen Metriken besitzen ihren maximal wert, bei 3404 und somit $\qty{100}{\%}$ des verwendete Datensatzes.
+Die aufgenommen Metriken besitzen ihren maximalen Wert, bei 3404 samples und somit $\qty{100}{\%}$ des verwendete Datensatzes.
 Am geringsten sind die Werte bei 340 Bildern.
 Mit zunehmender Datenmenge steigen die Werte der Metriken.
-Ab einer verwendet Menge von 2042 Daten nähren sich die Werte einem Plateau.
-Für die Accuracy liegt das Plateau bei ungefähr $\qty{95}{\%}$, bei der Sensitivity ca. $0.93$ und bei der Specificity liegt die Sättigung bei ungefähr $0.98$. 
+Ab einer verwendet Menge von 2042 Daten nähren sich die Werte einer Sättigung.
+Für die Accuracy liegt diese bei ungefähr $\qty{95}{\%}$, bei der Sensitivity bei ca. 0.93 und bei der Specificity liegt die Sättigung bei ungefähr 0.98. 
 Es treten noch geringfügige Schwankungen auf.
 
 \subsection{Augmentation}
 
+Die Abbildung \ref{fig:augmentation_tu} zeigt den Verlauf der Metriken in Abhängigkeit der verwendeten Training samples.
 \begin{figure}[H]
   \centering
   \begin{subfigure}[b]{0.48\textwidth}
@@ -113,14 +113,14 @@ Es treten noch geringfügige Schwankungen auf.
     \label{fig:augmentation_specificity}
   \end{subfigure}
   \caption{Metriken bei Verwendung von Augmentation.}
-  \label{fig:augmentation}
+  \label{fig:augmentation_tu}
 \end{figure}
-
+Die jeweiligen Mittelwerte und Standardabweichungen sind in der Tabelle \ref{tab:augm-tunotu} dargestellt.
 \begin{table}[H]
     \centering
         \begin{tabular}{cccc}
             \toprule
-            Trainig sample & Accuracy & Sensitivity & Specificity\\
+            Training sample & Accuracy & Sensitivity & Specificity\\
             \midrule
             340  & $86.0435 \pm 0.6923$ & $0.8597 \pm 0.0127$ & $0.8615 \pm 0.0257$\\
             680  & $88.4273 \pm 0.7041$ & $0.8738 \pm 0.0150$ & $0.9000 \pm 0.0284$\\
@@ -134,16 +134,19 @@ Es treten noch geringfügige Schwankungen auf.
             3404 & $96.4293 \pm 1.4880$ & $0.9475 \pm 0.0195$ & $0.9894 \pm 0.0103$\\
             \bottomrule
         \end{tabular}
-  \caption{Mittelwert und Standardabweichung der Metriken bei der Augmentation.}
-  \label{tab:}
+  \caption{Mittelwert und Standardabweichung der Metriken bei Reduzierung der Training samples unter Verwendung von Augmentation.}
+  \label{tab:augm-tunotu}
 \end{table}
 Die Specificity steigt mit zunehmender Anzahl an Training samples an und erreicht ab 1702 Bildern ein Plateau.
 Bei der Sensitivity und Accuracy wird ein Plateau ab 2042 Trainingssamples erreicht.
-Die Accuracy steigt dabei konstant an. 
-Die Sensitivity steigt bis 1021 samples an und bleibt anschließend relativ konstant und erreicht anschließend das Plateau.
+Die Accuracy steigt mit der Anzahl der Samples dabei konstant an. 
+Die Sensitivity steigt bis 1021 samples an und bleibt anschließend relativ konstant und erreicht anschließend das Plateau bei ungefähr 0.94.
+Die Sättigung der Accuracy liegt bei $\qty{95}{\%}$ und die der Specificity bei 0.97.
+Alle drei Metriken erreichen ihren niedrigsten Wert bei der Verwendung von 340 samples.
 
-\subsection{Reduzierung der Tumorsamples}
+\subsection{Reduzierung der Tumor samples}
 
+In der Abbildung \ref{fig:reduzierung_tu} wird die Accuracy, Sensitivity und Specificity in Abhängigkeit der Tumor samples abgebildet.
 \begin{figure}[H]
   \centering
   \begin{subfigure}[b]{0.48\textwidth}
@@ -164,7 +167,7 @@ Die Sensitivity steigt bis 1021 samples an und bleibt anschließend relativ kons
   \caption{Metriken bei Reduktion der Tumor-Trainingsbeispiele mit Ausbalancierung}
   \label{fig:reduzierung_tumorsamples}
 \end{figure}
-
+In der Tabelle \ref{tab:red_tu} werden die Ergebnisse der Mittelwerte und Standardabweichung dargestellt.
 \begin{table}[H]
     \centering
         \begin{tabular}{cccc}
@@ -184,7 +187,7 @@ Die Sensitivity steigt bis 1021 samples an und bleibt anschließend relativ kons
             \bottomrule
         \end{tabular}
   \caption{Mittelwert und Standardabweichung der Metriken bei der Reduzierung von Tumor Klasse.}
-  \label{tab:}
+  \label{tab:red_tu}
 \end{table}
 
 \section{Klassifizierung zwischen Glioma und Meningioma}
