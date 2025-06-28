@@ -3,7 +3,8 @@
 \section{Klassifizierung zwischen Tumor und no Tumor}
 
 \subsection{Hyperparameter}
-Die fünf Trainingsdurchläufen (Runs) mit den niedrigsten Validation Loss wird in der Abbildung \ref{fig:val_loss notu-tu} dargestellt.
+Um die Hyperparameter zu ermitteln, werden die fünf Trainingsdurchläufen (Runs) mit den niedrigsten Validation Loss betrachtet.
+In der Abbildung \ref{fig:val_loss notu-tu} wird der Verlauf des validation loss dargestellt.
 \begin{figure}[H]
   \centering
   \includegraphics[scale=0.4]{plots/Val_loss_noTu_Tu.pdf}
@@ -11,7 +12,8 @@ Die fünf Trainingsdurchläufen (Runs) mit den niedrigsten Validation Loss wird 
   \label{fig:val_loss notu-tu}
 \end{figure}
 %\vspace{-1.5em}
-In der Tabelle \ref{tab:hyperp notu-tu} sind die dabei verwendeten Hyperparameter, sowie die aufgenommen Metriken zu finden. 
+Die verwendeten Werte der Hyperparameter für diese fünf Runs, sowie die aufgenommene Accuracy, Sensitivity und Specificity der Validierungsdaten,
+werden in der Tabelle \ref{tab:hyperp notu-tu} aufgezeigt.
 \begin{table}[H]
     \centering
     \resizebox{\textwidth}{!}{%
@@ -30,14 +32,17 @@ In der Tabelle \ref{tab:hyperp notu-tu} sind die dabei verwendeten Hyperparamete
   \caption{Die fünf Runs mit dem niedrigsten validation loss sowie deren verwendete Hyperparameter und aufgezeichnete Metriken.}
   \label{tab:hyperp notu-tu}
 \end{table}
-%\vspace{-1em}
+%\vspace{-1.5em}
 Die Werte der Accuracy, Sensitivity und Specificity liegen dicht bei einander und schwanken nur geringfügig.
-Aufgrund dessen werden die Hyperparameter des ersten Runs für die weiteren Trainingsdurchläufen verwendet.
+Da die Ergebnisse der Validierung konstant sind, werden für die weiteren Trainingsdurchläufen die Hyperparameter des Runs 1 verwendet. 
+%Aufgrund dessen werden die Hyperparameter des ersten Runs für die weiteren Trainingsdurchläufen verwendet.
 
 \subsection{Reduzierung der Trainingsdaten}
-
-Die aufgenommen Metriken werden gegen die verwendeten Anzahl an Training samples aufgetragen. 
-Dies wird in der Abbildung \ref{fig:reduzierung_trainingsdaten} gezeigt.
+Das Netzwerk wurde mit unterschiedlichen Datensatzgrößen trainiert die Accuracy, Sensitivity und Specificity des Testdatensatzes berechnet.
+Da beobachtet wurde, dass die Metrikwerte bei 2723 gesunken sind, wurde zusätzlich das Netzwerk mit 2553, 2893 und 3234 
+Trainingssamples trainiert und das Netzwerk an schließend auf den Testdatensatz angewendet.
+Die Mittelwerte und Standardabweichung der Metriken wurden in Abhängigkeit von den Training samples dargestellt.
+Diese Ergebnisse sind in Abbildung \ref{fig:reduzierung_trainingsdaten} sowie Tabelle \ref{tab:reduzierung_trainingsdaten} zusammengefasst.
 \begin{figure}[H]
   \centering
   \begin{subfigure}[b]{0.48\textwidth}
@@ -58,12 +63,12 @@ Dies wird in der Abbildung \ref{fig:reduzierung_trainingsdaten} gezeigt.
   \caption{Aufgenommene Metriken in Abhängigkeit der Verwendeten Trainingsdaten.}
   \label{fig:reduzierung_trainingsdaten}
 \end{figure}
-Die dazugehörigen Werte sind in der Tabelle \ref{tab:reduzierung_trainingsdaten} aufgelistet.
 \begin{table}[H]
     \centering
+    {\small
         \begin{tabular}{cccc}
             \toprule
-            Training sample & Accuracy & Sensitivity & Specificity\\
+            Training sample & Accuracy/\% & Sensitivity & Specificity\\
             \midrule
             340  & $86.2117 \pm 0.4428$ & $0.8606 \pm 0.0137 $ & $0.8644 \pm 0.0249$\\
             681  & $87.9921 \pm 1.3057$ & $0.8754 \pm 0.0229 $ & $0.8867 \pm 0.0329$\\
@@ -80,18 +85,31 @@ Die dazugehörigen Werte sind in der Tabelle \ref{tab:reduzierung_trainingsdaten
             3404 & $96.2611 \pm 1.3948$ & $0.9462 \pm 0.0167 $ & $0.9872 \pm 0.0128$\\ 
             \bottomrule
         \end{tabular}
+    }
   \caption{Mittelwert und Standardabweichung der Metriken bei der Reduzierung der Training samples.}
   \label{tab:reduzierung_trainingsdaten}
 \end{table}
-Da die Accuracy bei einer Datengröße von 2723 Bildern sinkt, wurde zusätzlich das Training bei 
-2553, 2893 und 3234 Bildern durchgeführt, um den Verlauf genauer zu untersuchen.
-Die aufgenommen Metriken besitzen ihren maximalen Wert, bei 3404 samples und somit $\qty{100}{\%}$ des verwendete Datensatzes.
-Am geringsten sind die Werte bei 340 Bildern.
-Mit zunehmender Datenmenge steigen die Werte der Metriken.
-Ab einer verwendet Menge von 2042 Daten nähren sich die Werte einer Sättigung.
-Für die Accuracy liegt diese bei ungefähr $\qty{95}{\%}$, bei der Sensitivity bei ca. 0.93 und bei der Specificity liegt die Sättigung bei ungefähr 0.98. 
-Es treten noch geringfügige Schwankungen auf.
-
+Es ist zu erkennen, dass die drei Metriken einen ähnlichen Verlauf aufweisen.
+Die niedrigsten Werte treten bei der geringsten Anzahl an Training samples auf und steigt mit der Datensatzgröße kontinuierlich an.
+Ab etwa 2042 Samples erreichen Accuracy, Sensitivity und Specificity ein Plateau, wobei weiterhin Schwankungen auftreten.
+Dabei sind die Schwankungen bei der Accuracy und Sensitivity stärker, als die der Specificity. 
+Die Accuracy wird bei 340 Training samples der niedrigste Wert von $\qty{86.2117}{\%}$  und ein höchst Wert von $\qty{96.2611}{\%}$ bei der Verwendung des kompletten Trainingsdatensatzes.
+Somit liegt eine Differenz von ungefähr $\qty{10}{\%}$ vor.
+Der Anstieg verläuft bis etwa 1362 samples relativ konstant. Bei 1702 Training samples singt die Accuracy auf $\qty{93.1157}{\%}$ und steigt darauf hin wieder an und geht in Plateau über.
+Die Standardabweichungen der Accuracy liegen im allgemeinem im $\qty{1}{\%}$ Bereich.
+Ausgenommen sind dabei die Wert bei einer Verwendeten Sample Anzahl von 340, 1021 und 2383.
+Die Sensitivity zeigt wie die Accuracy einen kontinuierlichen anstieg von 340 bis 1362. 
+Darauf hin sinkt sie auf 0.9147 ab, bei 1702 Training samples. Dabei wurde auch die geringste Standardabweichung von 0.0078 berechnet.
+steigt jedoch wieder auf 0.9314 bei 2723 Training samples.
+Die geringste Sensitivity liegt bei 0.8606, welche bei 340 Bildern auftritt. Bei der Verwendung aller Training samples wird der höchste Wert mit 0.9462 aufgenommen.
+Der Unterschied zwischen dem Minimalwert und Maximalwert der Sensitivity 0.0856.
+Die Standardabweichung im Plateau liegen zwischen 0.0134 und 0.0230.
+Die Specificity steigt zwischen 340 und 2042 kontinuierlich von 0.8644 auf 0.9741 an und geht anschließend ins Plateau.
+Die höchste Specificity wird dabei bei 3403 Training samples mit 0.9872 ermittelt. 
+Das Plateau schwangt somit zwischen 0.9741 und 0.9872. 
+Zwischen dem maximalen Specificity und der geringsten liegt eine Differenz von 0.1228.
+Die größte Standardabweichung von 0.0329 wurde bei der Verwendung von 681 Training samples detektiert.
+Im Plateau schwangt die Standardabweichung zwischen 0.0080 und 0.0237 
 \subsection{Augmentation}
 
 Die Abbildung \ref{fig:augmentation_tu} zeigt den Verlauf der Metriken in Abhängigkeit der verwendeten Training samples.
@@ -164,7 +182,7 @@ In der Abbildung \ref{fig:reduzierung_tu} wird die Accuracy, Sensitivity und Spe
     \caption{Specificity}
     \label{fig:reduzierung_tu_specificity}
   \end{subfigure}
-  \caption{Metriken bei Reduktion der Tumor-Trainingsbeispiele mit Ausbalancierung}
+  \caption{Metriken bei Reduktion der Tumor-Trainingsbeispiele}
   \label{fig:reduzierung_tumorsamples}
 \end{figure}
 In der Tabelle \ref{tab:red_tu} werden die Ergebnisse der Mittelwerte und Standardabweichung dargestellt.
@@ -172,7 +190,7 @@ In der Tabelle \ref{tab:red_tu} werden die Ergebnisse der Mittelwerte und Standa
     \centering
         \begin{tabular}{cccc}
             \toprule
-            Trainig sample & Accuracy & Sensitivity & Specificity\\
+            Training sample & Accuracy & Sensitivity & Specificity\\
             \midrule
             212  & $81.8694 \pm 8.1081$ & $0.8979 \pm 0.0389$ & $0.7002 \pm 0.2544$\\
             425  & $89.8022 \pm 1.2611$ & $0.8916 \pm 0.0179$ & $0.9077 \pm 0.0285$\\
@@ -196,7 +214,7 @@ In der Tabelle \ref{tab:red_tu} werden die Ergebnisse der Mittelwerte und Standa
 \begin{figure}[htbp]
   \centering
   \includegraphics[scale=0.4]{plots/Val_loss_Gli_Men.pdf}
-  \caption{Darstellung des Validierungs Loss bei der Verwendung verschiedener Hyperparameter.}
+  \caption{Darstellung des validation loss bei der Verwendung verschiedener Hyperparameter.}
   \label{fig:val_loss gli-men}
 \end{figure}
 
@@ -238,7 +256,7 @@ In der Tabelle \ref{tab:red_tu} werden die Ergebnisse der Mittelwerte und Standa
   \begin{subfigure}[b]{0.48\textwidth}
     \centering
     \includegraphics[width=\textwidth]{plots/3-Messungen-Gli-Men_Specificity_mean.pdf}
-    \caption{Spezifität}
+    \caption{Specificity}
     \label{fig:gli-men-spec}
   \end{subfigure}
   \caption{}
@@ -264,7 +282,7 @@ In der Tabelle \ref{tab:red_tu} werden die Ergebnisse der Mittelwerte und Standa
   \begin{subfigure}[b]{0.48\textwidth}
     \centering
     \includegraphics[width=\textwidth]{plots/Augm-Gli-Men_Specificity_mean.pdf}
-    \caption{Spezifität}
+    \caption{Specificity}
     \label{fig:augm-spec}
   \end{subfigure}
   \caption{.}
@@ -272,7 +290,7 @@ In der Tabelle \ref{tab:red_tu} werden die Ergebnisse der Mittelwerte und Standa
 \end{figure}
 
 
-\subsection{Reduzierung der Gliom-Proben}
+\subsection{Reduzierung der Glioma sample}
 \begin{figure}[htbp]
   \centering
   \begin{subfigure}[b]{0.48\textwidth}
@@ -290,7 +308,7 @@ In der Tabelle \ref{tab:red_tu} werden die Ergebnisse der Mittelwerte und Standa
   \begin{subfigure}[b]{0.48\textwidth}
     \centering
     \includegraphics[width=\textwidth]{plots/Reduzierung-Gli + Balnce_Specificity_mean.pdf}
-    \caption{Spezifität}
+    \caption{Specificity}
     \label{fig:gli-red-spec}
   \end{subfigure}
   \caption{.}
