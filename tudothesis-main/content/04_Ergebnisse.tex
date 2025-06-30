@@ -36,9 +36,9 @@ Die Werte der Accuracy, Sensitivity und Specificity liegen dicht bei einander un
 Da die Ergebnisse der Validierung konstant sind, werden für die weiteren Trainingsdurchläufen die Hyperparameter des Runs 1 verwendet. 
 
 \subsection{Reduzierung der Trainingsdaten}
-Das Netzwerk wurde mit unterschiedlichen Datensatzgrößen trainiert die Accuracy, Sensitivity und Specificity des Testdatensatzes berechnet.
+Das Netzwerk wurde mit unterschiedlichen Datensatzgrößen trainiert und auf einen Testdatensatz angewendet, bei dem die Accuracy, Sensitivity und Specificity berechnet wurde.
 Da beobachtet wurde, dass die Werte der Metriken bei 2723 gesunken sind, wurde zusätzlich das Netzwerk mit 2553, 2893 und 3234 
-Trainingssamples trainiert und das Netzwerk an schließend auf den Testdatensatz angewendet.
+Training samples trainiert.
 Die Mittelwerte und Standardabweichung der Metriken wurden in Abhängigkeit von den Training samples dargestellt.
 Diese Ergebnisse sind in Abbildung \ref{fig:reduzierung_trainingsdaten} sowie Tabelle \ref{tab:reduzierung_trainingsdaten} zusammengefasst.
 \begin{figure}[H]
@@ -93,21 +93,20 @@ Ab etwa 2042 Samples erreichen Accuracy, Sensitivity und Specificity ein Plateau
 Dabei sind die Schwankungen bei der Accuracy und Sensitivity stärker, als die der Specificity. 
 Die Accuracy wird bei 340 Training samples der niedrigste Wert von $\qty{86.2117}{\%}$  und ein höchst Wert von $\qty{96.2611}{\%}$ bei der Verwendung des kompletten Trainingsdatensatzes.
 Somit liegt eine Differenz von ungefähr $\qty{10}{\%}$ vor.
-Der Anstieg verläuft bis etwa 1362 samples relativ konstant. Bei 1702 Training samples singt die Accuracy auf $\qty{93.1157}{\%}$ und steigt darauf hin wieder an und geht in Plateau über.
-Die Standardabweichungen der Accuracy liegen im allgemeinem im $\qty{1}{\%}$ Bereich.
-Ausgenommen sind dabei die Wert bei einer Verwendeten Sample Anzahl von 340, 1021 und 2383.
-Die Sensitivity zeigt wie die Accuracy einen kontinuierlichen anstieg von 340 bis 1362. 
-Darauf hin sinkt sie auf 0.9147 ab, bei 1702 Training samples. Dabei wurde auch die geringste Standardabweichung von 0.0078 berechnet.
-steigt jedoch wieder auf 0.9314 bei 2723 Training samples.
-Die geringste Sensitivity liegt bei 0.8606, welche bei 340 Bildern auftritt. Bei der Verwendung aller Training samples wird der höchste Wert mit 0.9462 aufgenommen.
-Der Unterschied zwischen dem Minimalwert und Maximalwert der Sensitivity 0.0856.
+Der Anstieg verläuft bis etwa 1362 samples relativ konstant. 
+Bei 1702 Training samples singt die Accuracy minimal und steigt darauf hin wieder an und geht in ein Plateau über.
+Die Accuracy schwangt innerhalb zwischen $\qty{93.1157}{\%}$ und $\qty{96.2611}{\%}$. 
+Die Standardabweichungen liegen dabei allgemein um die $\qty{1}{\%}$.
+Die Sensitivity zeigt wie die Accuracy einen kontinuierlichen anstieg von 340 bis 1362 Samples und sinkt daraufhin etwas ab.  
+Die geringste Sensitivity liegt bei 0.8606, welche bei 340 Bildern auftritt. 
+Bei der Verwendung aller Training samples wird der höchste Wert mit 0.9462 aufgenommen.
+Der Unterschied zwischen dem Minimalwert und Maximalwert beträgt somit 0.0856.
+In Bereich in der die Sensitivity konstant ist kommt es zu Schwankungen, welche zwischen 0.9147 und 0.9462 liegt.
 Die Standardabweichung im Plateau liegen zwischen 0.0134 und 0.0230.
-Die Specificity steigt zwischen 340 und 2042 kontinuierlich von 0.8644 auf 0.9741 an und geht anschließend ins Plateau.
+Die Specificity steigt zwischen 340 und 2042 kontinuierlich an und geht anschließend ins Plateau.
 Die höchste Specificity wird dabei bei 3403 Training samples mit 0.9872 ermittelt. 
 Das Plateau schwangt somit zwischen 0.9741 und 0.9872. 
-Zwischen dem maximalen Specificity und der geringsten liegt eine Differenz von 0.1228.
-Die größte Standardabweichung von 0.0329 wurde bei der Verwendung von 681 Training samples detektiert.
-Im Plateau schwangt die Standardabweichung zwischen 0.0080 und 0.0237 
+Zwischen dem maximalen Specificity, bei 3404 samples, und der geringsten , bei 340 samples liegt eine Differenz von 0.1228.
 
 \subsection{Augmentation}
 Das Netzwerk wurde für verschiedene Datensatzgrößen trainiert, wobei beim Training Augmentation angewendet wurde.
@@ -155,25 +154,26 @@ Die dargestellten Werte werden in der Tabelle \ref{tab:augm-tunotu} aufgezeigt.
   \label{tab:augm-tunotu}
 \end{table}
 Die Accuracy besitzt bei 340 genutzten samplen den geringste Wert mit $\qty{86.0435}{\%}$.
-Mit steigender Anzahl an Training samples steigt die Accuracy konstant an, bis zu $\qty{95.1039}{\%}$, bei 2042 verwendeten Samples. 
+Mit steigender Anzahl an Training samples steigt die Accuracy konstant an, bis zu $\qty{95.1039}{\%}$ bei 2042 verwendeten Samples. 
 Darauf hin bleiben die Werte, unter geringen Schwankungen, weitgehend konstant zwischen $\qty{94.2532}{\%}$ und $\qty{96.4293}{\%}$. 
 Bei der Benutzung des ganzen Trainingsdatensatzes erzielt die Accuracy den höchsten Wert von $\qty{96.4293}{\%}$.
 Somit liegt zwischen diesen Wert und dem bei 340 sample eine Differenz von ungefähr $\qty{10}{\%}$. 
 Die Standardabweichung im Bereich das Plateau befindet sich bei ungefähr bei $\qty{1}{\%}$.
-Die Sensitivity steigt von 340 bis 1021 Training samples konstant von 0.8597 auf 0.8949 an. 
+Die Sensitivity steigt von 340 bis 1021 Training samples konstant an. 
 Ab dann befinden sich die Werte bis zu 1702 Samples konstant bei ungefähr 0.89. 
-Dann steigt sie nochmals an und bildet von 2042 bis 3404 Samples ein Plateau, bei den kleiner Schwankungen auftreten.
-Die Sensitivity befindet sich im Plateau zwischen 0.9234 und 0.9475.
+Dann steigt sie nochmals an und bildet von 2042 bis 3404 Samples ein Plateau, bei den kleiner Schwankungen auftreten, 
+welche zwischen 0.9234 und 0.9475.
 Dabei ist 0.9475 der größte Wert, welcher bei der Verwendung aller Trainingsdaten auftritt. 
 Die Differenz zwischen diesem Wert und dem bei der Verwendung von $\qty{10}{\%}$ der Samples beträgt 0.0878. 
-Die Standardabweichung liegt im gesamten verlauf bei ungefähr 0.01.
-
-Die Specificity
-
+Die Standardabweichung liegt im gesamten Verlauf bei ungefähr 0.01.
+Die Specificity steigt kontinuierlich von 340 bis 1702 samples an und wird dann konstant.
+Das Plateau schwangt zwischen einer Specificity von 0.9617 und 0.9894, wobei 0.9894 bei der Verwendung des ganzen Trainingsdatensatzes auftritt.
+Zwischen den Größten und niedrigsten Wert, welcher bei 340 samples auftritt, liegt somit eine Differenz von ungefähr 0.1279.
 
 \subsection{Reduzierung der Tumor samples}
-
-In der Abbildung \ref{fig:reduzierung_tu} wird die Accuracy, Sensitivity und Specificity in Abhängigkeit der Tumor samples abgebildet.
+Für die Untersuchung der Netzwerkleistung bei Reduzierung einer Klasse, wurde die Anzahl an Tumor samples reduziert.
+Der Verlauf der drei Metriken, sowie die Werte werden in der Abbildung \ref{fig:reduzierung_tumorsamples} und in der Tabelle \ref{tab:red_tu} dargestellt.
+Die Accuracy und Specificity zeigen einen ähnlichen Verlauf. 
 \begin{figure}[H]
   \centering
   \begin{subfigure}[b]{0.48\textwidth}
