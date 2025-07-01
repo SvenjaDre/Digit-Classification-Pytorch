@@ -62,7 +62,7 @@ Die Werte der Sensitivity variieren in diesem Bereich zwischen 0,9147 und 0,9462
     \caption{Specificity}
     \label{fig:reduzierung_specificity}
   \end{subfigure}
-  \caption{Aufgenommene Metriken in Abhängigkeit der Verwendeten Trainingsdaten.}
+  \caption{Aufgenommene Metriken in Abhängigkeit der Verwendeten Trainingsdaten für die Klassifikation zwischen no Tumor und Tumor.}
   \label{fig:reduzierung_trainingsdaten}
 \end{figure}
 \begin{table}[H]
@@ -118,11 +118,12 @@ Danach steigt sie wieder an und schwankt, von 2042 bis 3404 Training samples, zw
     \caption{Specificity}
     \label{fig:augmentation_specificity}
   \end{subfigure}
-  \caption{verlauf der Metriken bei unterschiedlichen Anzahl an Training samples, unter Verwendung von Augmentation.}
+  \caption{Verlauf der Metriken bei unterschiedlichen Anzahl an Training samples, unter Verwendung von Augmentation, für die Klassifikation zwischen no Tumor und Tumor.}
   \label{fig:augmentation_tu}
 \end{figure}
 \begin{table}[H]
     \centering
+    {\small
         \begin{tabular}{cccc}
             \toprule
             Training sample & Accuracy/\% & Sensitivity & Specificity\\
@@ -138,7 +139,7 @@ Danach steigt sie wieder an und schwankt, von 2042 bis 3404 Training samples, zw
             3063 & $95.7270 \pm 1.4340$ & $0.9465 \pm 0.0178$ & $0.9733 \pm 0.0166$\\
             3404 & $96.4293 \pm 1.4880$ & $0.9475 \pm 0.0195$ & $0.9894 \pm 0.0103$\\
             \bottomrule
-        \end{tabular}
+        \end{tabular}}
   \caption{Mittelwert und Standardabweichung der Metriken bei Reduzierung der Training samples unter Verwendung von Augmentation.}
   \label{tab:augm-tunotu}
 \end{table}
@@ -157,7 +158,6 @@ Zusätzlich kommt es auch bei 2128, für die Accuracy und für die Sensitivity, 
 Bei den Klassengrößen 
 In Runs bei denen 212 und 1276 Tumor samples verwendet wurden, lag die Specificity, 
 sowie bei 2128 Tumor samples die Sensitivity bei 0.
-
 \begin{figure}[H]
   \centering
   \begin{subfigure}[b]{0.48\textwidth}
@@ -180,6 +180,7 @@ sowie bei 2128 Tumor samples die Sensitivity bei 0.
 \end{figure}
 \begin{table}[H]
     \centering
+     {\small
         \begin{tabular}{cccc}
             \toprule
             Training sample & Accuracy/\% & Sensitivity & Specificity\\
@@ -195,11 +196,11 @@ sowie bei 2128 Tumor samples die Sensitivity bei 0.
             1915 & $96.6469 \pm 1.1234$ & $0.9515 \pm 0.0124$ & $0.9889 \pm 0.0111$\\
             2128 & $92.0376 \pm 18.269$ & $0.8701 \pm 0.3058$ & $0.9956 \pm 0.0036$\\
             \bottomrule
-        \end{tabular}
+        \end{tabular}}
   \caption{Mittelwert und Standardabweichung der Metriken bei der Reduzierung von Tumor Klasse.}
   \label{tab:red_tu}
 \end{table}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Klassifizierung zwischen Glioma und Meningioma}
 \subsection{Hyperparameter}
 Für die Ermittlung der Hyperparameter werden die fünf Runs mit den niedrigsten Validation loss betrachtet.
@@ -232,7 +233,17 @@ Die dazugehörigen Parameter und die Accuracy, Sensitivity und Specificity des V
 Der erste Run besitzt zwar den niedrigsten validation loss, jedoch auch die niedrigste Accuracy und Specificity.
 Der höchste Wert der Accuracy und Specificity tritt bei Run 3 auf
 Aufgrund dessen werden in den folgenden Trainingsdurchläufen die Hyperparameter von Run 3 verwendet.
+
 \subsection{Reduzierung der Trainingsdaten}
+In Abbildung \ref{fig:gli-men-reduktion} ist der Verlauf der Accuracy, Sensitivity und Specificity bei der Reduktion der Training samples dargestellt.
+Die dazu gehörigen Werte werden in der Tabelle \ref{tab:Red-gli-men} dargestellt.
+Die drei Metriken steigen, mit zunehmender Anzahl an samples. 
+Bei 851 Training samples sinken die Werte etwas, bevor sie anschließend wieder ansteigen.
+Die Accuracy erhöht sich von \SI{76.4191}{\percent}, bei 231 Training samples auf \SI{92.3102}{\percent} bei 2128 Training samples.
+Die Sensitivity steigt bis 1702 Training samples auf \SI{0.9186}{} an und bleibt anschließend weitgehend konstant zwischen \SI{0.9114}{} und \SI{0.9255}{}.
+Die Specificity nimmt bis 1064 Training samples zu und bleibt bis 1277 konstant. 
+Danach sinkt diese kurzzeitig etwas und steigt anschließend wieder an. 
+Ab 1915 Training samples bleibt die Specificity stabil bei ungefähr \SI{0.92}{}.
 \begin{figure}[H]
   \centering
   \begin{subfigure}[b]{0.48\textwidth}
@@ -253,12 +264,12 @@ Aufgrund dessen werden in den folgenden Trainingsdurchläufen die Hyperparameter
     \caption{Specificity}
     \label{fig:gli-men-spec}
   \end{subfigure}
-  \caption{}
+  \caption{Verlauf der Metriken bei der Reduzierung der Training samples für die Klassifikation zwischen Glioma und Meningioma.}
   \label{fig:gli-men-reduktion}
 \end{figure}
-
 \begin{table}[H]
     \centering
+    {\small
         \begin{tabular}{cccc}
             \toprule
             Training sample & Accuracy/$\%$ & Sensitivity & Specificity\\
@@ -274,12 +285,15 @@ Aufgrund dessen werden in den folgenden Trainingsdurchläufen die Hyperparameter
             1915 & $91.6667 \pm 0.9212$ & $0.9114 \pm 0.0214$ & $0.9220 \pm 0.0076$\\
             2128 & $92.3102 \pm 0.8313$ & $0.9255 \pm 0.0165$ & $0.9207 \pm 0.0143$\\            
             \bottomrule
-        \end{tabular}
+        \end{tabular}}
   \caption{Mittelwert und Standardabweichung für die Reduzierung der Training samples.}
-  \label{tab:}
+  \label{tab:Red-gli-men}
 \end{table}
 
 \subsection{Augmentation}
+Unter Verwendung von Augmentation werden die Training samples reduziert.
+Der Verlauf der Metriken wird in der Abbildung \ref{fig:gli-men-augm} dargestellt.
+Die dazu gehörigen Werte sind in der Tabelle \ref{tab:gli-men-augm} zu finden.
 
 \begin{figure}[H]
   \centering
@@ -301,11 +315,12 @@ Aufgrund dessen werden in den folgenden Trainingsdurchläufen die Hyperparameter
     \caption{Specificity}
     \label{fig:augm-spec}
   \end{subfigure}
-  \caption{.}
+  \caption{Verlauf der Metriken bei Reduzierung der Training samples unter Verwendung von Augmentation für die Klassifikation zwischen Glioma und Meningioma.}
   \label{fig:gli-men-augm}
 \end{figure}
 \begin{table}[H]
     \centering
+    {\small
         \begin{tabular}{cccc}
             \toprule
             Training sample & Accuracy/$\%$ & Sensitivity & Specificity\\
@@ -321,11 +336,10 @@ Aufgrund dessen werden in den folgenden Trainingsdurchläufen die Hyperparameter
             1915 & $91.2706 \pm 1.2037$ & $0.9101 \pm 0.0182$ & $0.9153 \pm 0.0121$ \\
             2128 & $92.1947 \pm 0.8837$ & $0.9261 \pm 0.0139$ & $0.9177 \pm 0.0123$ \\         
             \bottomrule
-        \end{tabular}
+        \end{tabular}}
   \caption{augm glimen}
-  \label{tab:}
+  \label{tab:gli-men-augm}
 \end{table}
-
 
 \subsection{Reduzierung der Glioma sample}
 \begin{figure}[H]
@@ -354,6 +368,7 @@ Aufgrund dessen werden in den folgenden Trainingsdurchläufen die Hyperparameter
 
 \begin{table}[H]
     \centering
+    {\small
         \begin{tabular}{cccc}
             \toprule
             Training sample & Accuracy/$\%$ & Sensitivity & Specificity\\
@@ -369,7 +384,7 @@ Aufgrund dessen werden in den folgenden Trainingsdurchläufen die Hyperparameter
             1915 & $96.6469 \pm 1.1234$ & $0.9515 \pm 0.0124$ & $0.9889 \pm 0.0111$ \\
             2128 & $92.0376 \pm 18.269$ & $0.8701 \pm 0.3058$ & $0.9956 \pm 0.0036$ \\
             \bottomrule
-        \end{tabular}
+        \end{tabular}}
   \caption{Red Gli}
   \label{tab:}
 \end{table}
