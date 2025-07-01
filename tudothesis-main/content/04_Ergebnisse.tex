@@ -1,7 +1,5 @@
 \chapter{Ergebnisse}
-
 \section{Klassifizierung zwischen Tumor und no Tumor}
-
 \subsection{Hyperparameter}
 Um die Hyperparameter zu ermitteln, werden die fünf Trainingsdurchläufen (Runs) mit den niedrigsten Validation Loss betrachtet.
 In der Abbildung \ref{fig:val_loss notu-tu} wird der Verlauf des validation loss dargestellt.
@@ -36,11 +34,17 @@ Die Werte der Accuracy, Sensitivity und Specificity liegen dicht bei einander un
 Da die Ergebnisse der Validierung konstant sind, werden für die weiteren Trainingsdurchläufen die Hyperparameter des Runs 1 verwendet. 
 
 \subsection{Reduzierung der Trainingsdaten}
+
 Das Netzwerk wurde mit unterschiedlichen Datensatzgrößen trainiert und auf einen Testdatensatz angewendet, bei dem die Accuracy, Sensitivity und Specificity berechnet wurde.
 Da beobachtet wurde, dass die Werte der Metriken bei 2723 gesunken sind, wurde zusätzlich das Netzwerk mit 2553, 2893 und 3234 
 Training samples trainiert.
 Die Mittelwerte und Standardabweichung der Metriken wurden in Abhängigkeit von den Training samples dargestellt.
-Diese Ergebnisse sind in Abbildung \ref{fig:reduzierung_trainingsdaten} sowie Tabelle \ref{tab:reduzierung_trainingsdaten} zusammengefasst.
+Diese Ergebnisse sind in Abbildung \ref{fig:reduzierung_trainingsdaten} sowie Tabelle \ref{tab:reduzierung_trainingsdaten} zusammengefasst.
+Es ist zu erkennen, dass die drei Metriken einen ähnlichen Verlauf aufweisen.
+Die niedrigsten Werte werden bei 340 Training samples aufgenommen und steigen dann kontinuierlich mit der sample Anzahl an.
+Ab 2042 verwendete samples zeigen die Werte der Accuracy, Sensitivity und Specificity nur noch geringe Änderungen  .
+Dabei schwankt die Accuracy im Bereich zwischen 2042 und 3404 Training samples zwischen $\qty{93.1157}{\%}$ und $\qty{96.2611}{\%}$. 
+Die Werte der Sensitivity variieren in diesem Bereich zwischen 0,9147 und 0,9462 und die der Specificity um \SI{0,9741}{} und \SI{0,9872}{}.
 \begin{figure}[H]
   \centering
   \begin{subfigure}[b]{0.48\textwidth}
@@ -87,31 +91,16 @@ Diese Ergebnisse sind in Abbildung \ref{fig:reduzierung_trainingsdaten} sowie 
   \caption{Mittelwert und Standardabweichung der Metriken bei der Reduzierung der Training samples.}
   \label{tab:reduzierung_trainingsdaten}
 \end{table}
-Es ist zu erkennen, dass die drei Metriken einen ähnlichen Verlauf aufweisen.
-Die niedrigsten Werte treten bei der geringsten Anzahl an Training samples auf und steigt mit der Datensatzgröße kontinuierlich an.
-Ab etwa 2042 Samples erreichen Accuracy, Sensitivity und Specificity ein Plateau, wobei weiterhin Schwankungen auftreten.
-Dabei sind die Schwankungen bei der Accuracy und Sensitivity stärker, als die der Specificity. 
-Die Accuracy wird bei 340 Training samples der niedrigste Wert von $\qty{86.2117}{\%}$  und ein höchst Wert von $\qty{96.2611}{\%}$ bei der Verwendung des kompletten Trainingsdatensatzes.
-Somit liegt eine Differenz von ungefähr $\qty{10}{\%}$ vor.
-Der Anstieg verläuft bis etwa 1362 samples relativ konstant. 
-Bei 1702 Training samples singt die Accuracy minimal und steigt darauf hin wieder an und geht in ein Plateau über.
-Die Accuracy schwangt innerhalb zwischen $\qty{93.1157}{\%}$ und $\qty{96.2611}{\%}$. 
-Die Standardabweichungen liegen dabei allgemein um die $\qty{1}{\%}$.
-Die Sensitivity zeigt wie die Accuracy einen kontinuierlichen anstieg von 340 bis 1362 Samples und sinkt daraufhin etwas ab.  
-Die geringste Sensitivity liegt bei 0.8606, welche bei 340 Bildern auftritt. 
-Bei der Verwendung aller Training samples wird der höchste Wert mit 0.9462 aufgenommen.
-Der Unterschied zwischen dem Minimalwert und Maximalwert beträgt somit 0.0856.
-In Bereich in der die Sensitivity konstant ist kommt es zu Schwankungen, welche zwischen 0.9147 und 0.9462 liegt.
-Die Standardabweichung im Plateau liegen zwischen 0.0134 und 0.0230.
-Die Specificity steigt zwischen 340 und 2042 kontinuierlich an und geht anschließend ins Plateau.
-Die höchste Specificity wird dabei bei 3403 Training samples mit 0.9872 ermittelt. 
-Das Plateau schwangt somit zwischen 0.9741 und 0.9872. 
-Zwischen dem maximalen Specificity, bei 3404 samples, und der geringsten , bei 340 samples liegt eine Differenz von 0.1228.
 
 \subsection{Augmentation}
 Das Netzwerk wurde für verschiedene Datensatzgrößen trainiert, wobei beim Training Augmentation angewendet wurde.
-Die Accuracy, Sensitivity und Specificity werden in Abhängigkeit der Training samples in Abbildung \ref{fig:augmentation_tu} abgebildet.
-Die dargestellten Werte werden in der Tabelle \ref{tab:augm-tunotu} aufgezeigt.
+Die Accuracy, Sensitivity und Specificity werden in Abhängigkeit der Training samples in Abbildung \ref{fig:augmentation_tu} abgebildet und
+die dargestellten Werte werden in der Tabelle \ref{tab:augm-tunotu} aufgezeigt.
+Von 340 bis 2042 Samples, steigt die Accuracy und die Specificity konstant an und geht anschließend in Plateau über.
+Die Accuracy variieren innerhalb des Plateaus zwischen \SI{94.2532}{\percent} und \SI{96.4293}{\percent}. 
+Die Specificity schwankt ab 2042 Training samples zwischen \SI{0.9234}{} und \SI{0.9475}{}.
+Die Sensitivity steigt nur bis zu 1021 samples kontinuierlich an und bleibt bis zu 1702 Samples konstant bei ungefähr \SI{0,89}{}.
+Danach steigt sie wieder an und schwankt, von 2042 bis 3404 Training samples, zwischen \SI{0.9234}{} und \SI{0.9475}{}. 
 \begin{figure}[H]
   \centering
   \begin{subfigure}[b]{0.48\textwidth}
@@ -129,14 +118,14 @@ Die dargestellten Werte werden in der Tabelle \ref{tab:augm-tunotu} aufgezeigt.
     \caption{Specificity}
     \label{fig:augmentation_specificity}
   \end{subfigure}
-  \caption{Metriken bei Verwendung von Augmentation.}
+  \caption{verlauf der Metriken bei unterschiedlichen Anzahl an Training samples, unter Verwendung von Augmentation.}
   \label{fig:augmentation_tu}
 \end{figure}
 \begin{table}[H]
     \centering
         \begin{tabular}{cccc}
             \toprule
-            Training sample & Accuracy & Sensitivity & Specificity\\
+            Training sample & Accuracy/\% & Sensitivity & Specificity\\
             \midrule
             340  & $86.0435 \pm 0.6923$ & $0.8597 \pm 0.0127$ & $0.8615 \pm 0.0257$\\
             680  & $88.4273 \pm 0.7041$ & $0.8738 \pm 0.0150$ & $0.9000 \pm 0.0284$\\
@@ -153,27 +142,22 @@ Die dargestellten Werte werden in der Tabelle \ref{tab:augm-tunotu} aufgezeigt.
   \caption{Mittelwert und Standardabweichung der Metriken bei Reduzierung der Training samples unter Verwendung von Augmentation.}
   \label{tab:augm-tunotu}
 \end{table}
-Die Accuracy besitzt bei 340 genutzten samplen den geringste Wert mit $\qty{86.0435}{\%}$.
-Mit steigender Anzahl an Training samples steigt die Accuracy konstant an, bis zu $\qty{95.1039}{\%}$ bei 2042 verwendeten Samples. 
-Darauf hin bleiben die Werte, unter geringen Schwankungen, weitgehend konstant zwischen $\qty{94.2532}{\%}$ und $\qty{96.4293}{\%}$. 
-Bei der Benutzung des ganzen Trainingsdatensatzes erzielt die Accuracy den höchsten Wert von $\qty{96.4293}{\%}$.
-Somit liegt zwischen diesen Wert und dem bei 340 sample eine Differenz von ungefähr $\qty{10}{\%}$. 
-Die Standardabweichung im Bereich das Plateau befindet sich bei ungefähr bei $\qty{1}{\%}$.
-Die Sensitivity steigt von 340 bis 1021 Training samples konstant an. 
-Ab dann befinden sich die Werte bis zu 1702 Samples konstant bei ungefähr 0.89. 
-Dann steigt sie nochmals an und bildet von 2042 bis 3404 Samples ein Plateau, bei den kleiner Schwankungen auftreten, 
-welche zwischen 0.9234 und 0.9475.
-Dabei ist 0.9475 der größte Wert, welcher bei der Verwendung aller Trainingsdaten auftritt. 
-Die Differenz zwischen diesem Wert und dem bei der Verwendung von $\qty{10}{\%}$ der Samples beträgt 0.0878. 
-Die Standardabweichung liegt im gesamten Verlauf bei ungefähr 0.01.
-Die Specificity steigt kontinuierlich von 340 bis 1702 samples an und wird dann konstant.
-Das Plateau schwangt zwischen einer Specificity von 0.9617 und 0.9894, wobei 0.9894 bei der Verwendung des ganzen Trainingsdatensatzes auftritt.
-Zwischen den Größten und niedrigsten Wert, welcher bei 340 samples auftritt, liegt somit eine Differenz von ungefähr 0.1279.
 
 \subsection{Reduzierung der Tumor samples}
 Für die Untersuchung der Netzwerkleistung bei Reduzierung einer Klasse, wurde die Anzahl an Tumor samples reduziert.
 Der Verlauf der drei Metriken, sowie die Werte werden in der Abbildung \ref{fig:reduzierung_tumorsamples} und in der Tabelle \ref{tab:red_tu} dargestellt.
-Die Accuracy und Specificity zeigen einen ähnlichen Verlauf. 
+Die Accuracy steigt mit zunehmender Anzahl an samples bis zu maximal \SI{96.7458}{\percent} für 1702 Training samples.
+Bei 1276 und 2128 samples sinkt sie auf ungefähr \SI{92}{\percent} ab. 
+Die Sensitivity bleibt von 212 bis 851 Tumor samples konstant bei ca. \SI{0.9}{}.
+Danach steigt sie leicht an und erreicht bei 1915 verwendeten Bildern einen Wert von \SI{0.9515}{}.
+Auch hier sinkt bei der Verwendung aller Tumor Bilder die Sensitivity wieder ab.
+Die Specificity steigt mit höherer sample Anzahl und konvergiert gegen \SI{1.0}.
+Bei 212 und 1276 Tumor samples tritt eine hohe Standardabweichung für die Specificity und Accuracy auf.
+Zusätzlich kommt es auch bei 2128, für die Accuracy und für die Sensitivity, zu einer große Abweichung
+Bei den Klassengrößen 
+In Runs bei denen 212 und 1276 Tumor samples verwendet wurden, lag die Specificity, 
+sowie bei 2128 Tumor samples die Sensitivity bei 0.
+
 \begin{figure}[H]
   \centering
   \begin{subfigure}[b]{0.48\textwidth}
@@ -191,15 +175,14 @@ Die Accuracy und Specificity zeigen einen ähnlichen Verlauf.
     \caption{Specificity}
     \label{fig:reduzierung_tu_specificity}
   \end{subfigure}
-  \caption{Metriken bei Reduktion der Tumor-Trainingsbeispiele}
+  \caption{Metriken bei Reduktion der Tumor samples.}
   \label{fig:reduzierung_tumorsamples}
 \end{figure}
-In der Tabelle \ref{tab:red_tu} werden die Ergebnisse der Mittelwerte und Standardabweichung dargestellt.
 \begin{table}[H]
     \centering
         \begin{tabular}{cccc}
             \toprule
-            Training sample & Accuracy & Sensitivity & Specificity\\
+            Training sample & Accuracy/\% & Sensitivity & Specificity\\
             \midrule
             212  & $81.8694 \pm 8.1081$ & $0.8979 \pm 0.0389$ & $0.7002 \pm 0.2544$\\
             425  & $89.8022 \pm 1.2611$ & $0.8916 \pm 0.0179$ & $0.9077 \pm 0.0285$\\
@@ -218,16 +201,17 @@ In der Tabelle \ref{tab:red_tu} werden die Ergebnisse der Mittelwerte und Standa
 \end{table}
 
 \section{Klassifizierung zwischen Glioma und Meningioma}
-
 \subsection{Hyperparameter}
-\begin{figure}[htbp]
+Für die Ermittlung der Hyperparameter werden die fünf Runs mit den niedrigsten Validation loss betrachtet.
+Der Verlauf wird in der Abbildung \ref{fig:val_loss gli-men} dargestellt.
+Die dazugehörigen Parameter und die Accuracy, Sensitivity und Specificity des Validierung Datensatzes werden in der Tabelle \ref{tab:hyperp-gli men} aufgelistet.
+\begin{figure}[H]
   \centering
   \includegraphics[scale=0.4]{plots/Val_loss_Gli_Men.pdf}
   \caption{Darstellung des validation loss bei der Verwendung verschiedener Hyperparameter.}
   \label{fig:val_loss gli-men}
 \end{figure}
-
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \resizebox{\textwidth}{!}{%
         \begin{tabular}{cccccccc}
@@ -236,19 +220,20 @@ In der Tabelle \ref{tab:red_tu} werden die Ergebnisse der Mittelwerte und Standa
             \midrule
             1 & 128 & 0.01  & 0.55 & 0.18943 & 92.29323 & 0.95402 & 0.89299 \\
             2 & 64  & 0.005 & 0.3  & 0.22499 & 93.23308 & 0.96935 & 0.89668 \\
-            3 & 16  & 0.0005& 0.55 & 0.23146 & 93.98496 & 0.9272  & 0.95203 \\
+            3 & 16  & 0.0005& 0.55 & 0.23146 & 93.98496 & 0.92720 & 0.95203 \\
             4 & 16  & 0.005 & 0.5  & 0.23453 & 92.66917 & 0.95402 & 0.90037 \\
-            5 & 16  & 0.0005& 0.5  & 0.23829 & 93.42105 & 0.94253 & 0.9262 \\
+            5 & 16  & 0.0005& 0.5  & 0.23829 & 93.42105 & 0.94253 & 0.92620 \\
             \bottomrule
         \end{tabular}
     }
-  \caption{.}
-  \label{tab:hyperp gli men }
+  \caption{Die fünf Runs mit dem niedrigsten validation loss sowie deren verwendete Hyperparameter und aufgezeichnete Metriken.}
+  \label{tab:hyperp-gli men}
 \end{table}
-
+Der erste Run besitzt zwar den niedrigsten validation loss, jedoch auch die niedrigste Accuracy und Specificity.
+Der höchste Wert der Accuracy und Specificity tritt bei Run 3 auf
+Aufgrund dessen werden in den folgenden Trainingsdurchläufen die Hyperparameter von Run 3 verwendet.
 \subsection{Reduzierung der Trainingsdaten}
-
-\begin{figure}[htbp]
+\begin{figure}[H]
   \centering
   \begin{subfigure}[b]{0.48\textwidth}
     \centering
@@ -272,9 +257,31 @@ In der Tabelle \ref{tab:red_tu} werden die Ergebnisse der Mittelwerte und Standa
   \label{fig:gli-men-reduktion}
 \end{figure}
 
+\begin{table}[H]
+    \centering
+        \begin{tabular}{cccc}
+            \toprule
+            Training sample & Accuracy/$\%$ & Sensitivity & Specificity\\
+            \midrule
+            231  & $76.4191 \pm 0.5068$ & $0.7846 \pm 0.0383$ & $0.7433 \pm 0.0349$\\
+            426  & $78.6634 \pm 0.7046$ & $0.8020 \pm 0.0414$ & $0.7710 \pm 0.0298$\\
+            683  & $83.5314 \pm 1.2658$ & $0.8317 \pm 0.0383$ & $0.8390 \pm 0.0249$\\
+            851  & $81.8317 \pm 1.2934$ & $0.8209 \pm 0.0238$ & $0.8157 \pm 0.0233$\\
+            1064 & $87.1122 \pm 1.2506$ & $0.8667 \pm 0.0378$ & $0.8757 \pm 0.0260$\\
+            1277 & $87.7228 \pm 0.6518$ & $0.8817 \pm 0.0270$ & $0.8727 \pm 0.0250$\\
+            1490 & $88.1188 \pm 0.8903$ & $0.9016 \pm 0.0158$ & $0.8603 \pm 0.0278$\\
+            1702 & $90.6601 \pm 0.5934$ & $0.9186 \pm 0.0117$ & $0.8943 \pm 0.0140$\\
+            1915 & $91.6667 \pm 0.9212$ & $0.9114 \pm 0.0214$ & $0.9220 \pm 0.0076$\\
+            2128 & $92.3102 \pm 0.8313$ & $0.9255 \pm 0.0165$ & $0.9207 \pm 0.0143$\\            
+            \bottomrule
+        \end{tabular}
+  \caption{Mittelwert und Standardabweichung für die Reduzierung der Training samples.}
+  \label{tab:}
+\end{table}
+
 \subsection{Augmentation}
 
-\begin{figure}[htbp]
+\begin{figure}[H]
   \centering
   \begin{subfigure}[b]{0.48\textwidth}
     \centering
@@ -297,10 +304,31 @@ In der Tabelle \ref{tab:red_tu} werden die Ergebnisse der Mittelwerte und Standa
   \caption{.}
   \label{fig:gli-men-augm}
 \end{figure}
+\begin{table}[H]
+    \centering
+        \begin{tabular}{cccc}
+            \toprule
+            Training sample & Accuracy/$\%$ & Sensitivity & Specificity\\
+            \midrule
+            212  & $75.8746 \pm 0.6115$ & $0.7801 \pm 0.0564$ & $0.7370 \pm 0.0656$ \\
+            425  & $79.7195 \pm 0.4362$ & $0.8199 \pm 0.0147$ & $0.7740 \pm 0.0162$ \\
+            638  & $80.6931 \pm 0.5663$ & $0.7958 \pm 0.0170$ & $0.8183 \pm 0.0085$ \\
+            851  & $81.5512 \pm 0.9834$ & $0.8170 \pm 0.0228$ & $0.8140 \pm 0.0134$ \\
+            1064 & $86.4521 \pm 0.8212$ & $0.8526 \pm 0.0239$ & $0.8767 \pm 0.0191$ \\
+            1276 & $87.9868 \pm 0.8479$ & $0.8768 \pm 0.0180$ & $0.8830 \pm 0.0202$ \\
+            1489 & $89.0099 \pm 1.1930$ & $0.8886 \pm 0.0221$ & $0.8917 \pm 0.0196$ \\
+            1702 & $90.7096 \pm 0.5612$ & $0.9101 \pm 0.0209$ & $0.9040 \pm 0.0175$ \\
+            1915 & $91.2706 \pm 1.2037$ & $0.9101 \pm 0.0182$ & $0.9153 \pm 0.0121$ \\
+            2128 & $92.1947 \pm 0.8837$ & $0.9261 \pm 0.0139$ & $0.9177 \pm 0.0123$ \\         
+            \bottomrule
+        \end{tabular}
+  \caption{augm glimen}
+  \label{tab:}
+\end{table}
 
 
 \subsection{Reduzierung der Glioma sample}
-\begin{figure}[htbp]
+\begin{figure}[H]
   \centering
   \begin{subfigure}[b]{0.48\textwidth}
     \centering
@@ -324,4 +352,25 @@ In der Tabelle \ref{tab:red_tu} werden die Ergebnisse der Mittelwerte und Standa
   \label{fig:gli-men-gliored}
 \end{figure}
 
+\begin{table}[H]
+    \centering
+        \begin{tabular}{cccc}
+            \toprule
+            Training sample & Accuracy/$\%$ & Sensitivity & Specificity\\
+            \midrule
+            212  & $81.8694 \pm 8.1081$ & $0.8979 \pm 0.0389$ & $0.7002 \pm 0.2544$ \\
+            425  & $89.8022 \pm 1.2611$ & $0.8916 \pm 0.0179$ & $0.9077 \pm 0.0285$ \\
+            638  & $90.3363 \pm 2.3230$ & $0.8959 \pm 0.0170$ & $0.9146 \pm 0.0622$ \\
+            851  & $93.6696 \pm 1.1535$ & $0.9183 \pm 0.0151$ & $0.9642 \pm 0.0203$ \\
+            1064 & $94.2038 \pm 0.8486$ & $0.9271 \pm 0.0156$ & $0.9644 \pm 0.0135$ \\
+            1276 & $91.9189 \pm 11.273$ & $0.9441 \pm 0.0258$ & $0.8820 \pm 0.3100$ \\
+            1489 & $96.1029 \pm 0.6919$ & $0.9469 \pm 0.0095$ & $0.9822 \pm 0.0118$ \\
+            1702 & $96.7458 \pm 1.0820$ & $0.9512 \pm 0.0150$ & $0.9919 \pm 0.0069$ \\
+            1915 & $96.6469 \pm 1.1234$ & $0.9515 \pm 0.0124$ & $0.9889 \pm 0.0111$ \\
+            2128 & $92.0376 \pm 18.269$ & $0.8701 \pm 0.3058$ & $0.9956 \pm 0.0036$ \\
+            \bottomrule
+        \end{tabular}
+  \caption{Red Gli}
+  \label{tab:}
+\end{table}
 
