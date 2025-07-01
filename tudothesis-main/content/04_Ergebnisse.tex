@@ -197,7 +197,7 @@ sowie bei 2128 Tumor samples die Sensitivity bei 0.
             2128 & $92.0376 \pm 18.269$ & $0.8701 \pm 0.3058$ & $0.9956 \pm 0.0036$\\
             \bottomrule
         \end{tabular}}
-  \caption{Mittelwert und Standardabweichung der Metriken bei der Reduzierung von Tumor Klasse.}
+  \caption{Mittelwert und Standardabweichung der Metriken bei der Reduzierung der Tumor Klasse.}
   \label{tab:red_tu}
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -233,7 +233,6 @@ Die dazugehörigen Parameter und die Accuracy, Sensitivity und Specificity des V
 Der erste Run besitzt zwar den niedrigsten validation loss, jedoch auch die niedrigste Accuracy und Specificity.
 Der höchste Wert der Accuracy und Specificity tritt bei Run 3 auf
 Aufgrund dessen werden in den folgenden Trainingsdurchläufen die Hyperparameter von Run 3 verwendet.
-
 \subsection{Reduzierung der Trainingsdaten}
 In Abbildung \ref{fig:gli-men-reduktion} ist der Verlauf der Accuracy, Sensitivity und Specificity bei der Reduktion der Training samples dargestellt.
 Die dazu gehörigen Werte werden in der Tabelle \ref{tab:Red-gli-men} dargestellt.
@@ -289,12 +288,41 @@ Ab 1915 Training samples bleibt die Specificity stabil bei ungefähr \SI{0.92}{}
   \caption{Mittelwert und Standardabweichung für die Reduzierung der Training samples.}
   \label{tab:Red-gli-men}
 \end{table}
-
+\vspace{-3.5em}
 \subsection{Augmentation}
-Unter Verwendung von Augmentation werden die Training samples reduziert.
-Der Verlauf der Metriken wird in der Abbildung \ref{fig:gli-men-augm} dargestellt.
-Die dazu gehörigen Werte sind in der Tabelle \ref{tab:gli-men-augm} zu finden.
-
+%\vspace{-0.5em}
+Unter Verwendung von Augmentation wurden die Training samples reduziert.
+Der Verlauf der Metriken ist in der Abbildung \ref{fig:gli-men-augm} dargestellt,
+die entsprechenden Werte sind in der Tabelle \ref{tab:gli-men-augm} zu finden.
+Die Accuracy steigt kontinuierlich mit der verwendeten Sample Anzahl.
+Zu beginn liegt sie bei \SI{75.8746}{\percent} für 212 samples. 
+Bei der Nutzung aller verfügbaren Trainingsdaten erreicht \SI{92.1947}{\percent}.
+Die Sensitivity steigt zunächst bis zu 425 Bildern an, sinkt anschließend etwas bei 638 Samples, nimmt danach jedoch wieder zu.
+Ab 1702 samples bleibt sie konstant bei \SI{0.9101}{}, bevor sie bei 2128 Training samples auf \SI{0.9261} ansteigt. 
+Der Anstieg der Specificity erfolgt konstant bis 1064 Training sample und flacht anschließend ab.
+Bei 2128 Samples wird eine Specificity von \SI{0.9177}{} erreicht.
+\begin{table}[H]
+    \centering
+    {\small
+        \begin{tabular}{cccc}
+            \toprule
+            Training sample & Accuracy/$\%$ & Sensitivity & Specificity\\
+            \midrule
+            212  & $75.8746 \pm 0.6115$ & $0.7801 \pm 0.0564$ & $0.7370 \pm 0.0656$ \\
+            425  & $79.7195 \pm 0.4362$ & $0.8199 \pm 0.0147$ & $0.7740 \pm 0.0162$ \\
+            638  & $80.6931 \pm 0.5663$ & $0.7958 \pm 0.0170$ & $0.8183 \pm 0.0085$ \\
+            851  & $81.5512 \pm 0.9834$ & $0.8170 \pm 0.0228$ & $0.8140 \pm 0.0134$ \\
+            1064 & $86.4521 \pm 0.8212$ & $0.8526 \pm 0.0239$ & $0.8767 \pm 0.0191$ \\
+            1276 & $87.9868 \pm 0.8479$ & $0.8768 \pm 0.0180$ & $0.8830 \pm 0.0202$ \\
+            1489 & $89.0099 \pm 1.1930$ & $0.8886 \pm 0.0221$ & $0.8917 \pm 0.0196$ \\
+            1702 & $90.7096 \pm 0.5612$ & $0.9101 \pm 0.0209$ & $0.9040 \pm 0.0175$ \\
+            1915 & $91.2706 \pm 1.2037$ & $0.9101 \pm 0.0182$ & $0.9153 \pm 0.0121$ \\
+            2128 & $92.1947 \pm 0.8837$ & $0.9261 \pm 0.0139$ & $0.9177 \pm 0.0123$ \\         
+            \bottomrule
+        \end{tabular}}
+  \caption{Mittelwert und Standardabweichung der drei Metriken bei Reduzierung der Training samples unter Verwendung von Augmentation für die Klassifikation zwischen Glioma und Meningioma.}
+  \label{tab:gli-men-augm}
+\end{table}
 \begin{figure}[H]
   \centering
   \begin{subfigure}[b]{0.48\textwidth}
@@ -318,30 +346,18 @@ Die dazu gehörigen Werte sind in der Tabelle \ref{tab:gli-men-augm} zu finden.
   \caption{Verlauf der Metriken bei Reduzierung der Training samples unter Verwendung von Augmentation für die Klassifikation zwischen Glioma und Meningioma.}
   \label{fig:gli-men-augm}
 \end{figure}
-\begin{table}[H]
-    \centering
-    {\small
-        \begin{tabular}{cccc}
-            \toprule
-            Training sample & Accuracy/$\%$ & Sensitivity & Specificity\\
-            \midrule
-            212  & $75.8746 \pm 0.6115$ & $0.7801 \pm 0.0564$ & $0.7370 \pm 0.0656$ \\
-            425  & $79.7195 \pm 0.4362$ & $0.8199 \pm 0.0147$ & $0.7740 \pm 0.0162$ \\
-            638  & $80.6931 \pm 0.5663$ & $0.7958 \pm 0.0170$ & $0.8183 \pm 0.0085$ \\
-            851  & $81.5512 \pm 0.9834$ & $0.8170 \pm 0.0228$ & $0.8140 \pm 0.0134$ \\
-            1064 & $86.4521 \pm 0.8212$ & $0.8526 \pm 0.0239$ & $0.8767 \pm 0.0191$ \\
-            1276 & $87.9868 \pm 0.8479$ & $0.8768 \pm 0.0180$ & $0.8830 \pm 0.0202$ \\
-            1489 & $89.0099 \pm 1.1930$ & $0.8886 \pm 0.0221$ & $0.8917 \pm 0.0196$ \\
-            1702 & $90.7096 \pm 0.5612$ & $0.9101 \pm 0.0209$ & $0.9040 \pm 0.0175$ \\
-            1915 & $91.2706 \pm 1.2037$ & $0.9101 \pm 0.0182$ & $0.9153 \pm 0.0121$ \\
-            2128 & $92.1947 \pm 0.8837$ & $0.9261 \pm 0.0139$ & $0.9177 \pm 0.0123$ \\         
-            \bottomrule
-        \end{tabular}}
-  \caption{augm glimen}
-  \label{tab:gli-men-augm}
-\end{table}
-
 \subsection{Reduzierung der Glioma sample}
+Das Netzwerk wurde mit einer variierenden Anzahl an Glioma und konstanten Anzahl an Meningioma samples trainiert.
+Der Verlauf der Metriken ist in der Abbildung \ref{fig:gli-men-gliored} dargestellt.
+In der Tabelle \ref{tab:red-gli} sind die dargestellten Mittelwerte und Standardabweichungen aufgeführt. 
+Es ist zu erkennen, dass die Accuracy und die Specificity zunächst bis zu 317 Glioma sample ansteigen und anschließend etwas absteigen.
+Danach nehmen beide Werte erneut zu.
+Die Accuracy wird ab 739 Glioma samples nahezu konstant bei etwa \SI{91}{\percent} und steigt bei 1057 Sample auf \SI{93.7459}{\percent} an.
+Die Specificity schwankt im Bereich zwischen 739 und 951 Glioma samples zwischen \SI{0.8967}{} \SI{0.9177}{}.
+Bei Verwendung aller verfügbaren Glioma samples erreicht sie einen Wert von \SI{0.9307}{}.
+Die Sensitivity beträgt bei nur 105 verwendeten Glioma samples einen Wert von \SI{0.8056}{}.
+Anschließende steigt sie deutlich an und schwankt im Bereich zwischen 211 und 951 Glioma samples zwischen \SI{0.8912}{} und \SI{0.9193}{}. 
+Zum Schluss steigt sie bei 1057 Beispielen weiter auf \SI{0.9441}{}.
 \begin{figure}[H]
   \centering
   \begin{subfigure}[b]{0.48\textwidth}
@@ -362,10 +378,9 @@ Die dazu gehörigen Werte sind in der Tabelle \ref{tab:gli-men-augm} zu finden.
     \caption{Specificity}
     \label{fig:gli-red-spec}
   \end{subfigure}
-  \caption{.}
+  \caption{Verlauf der drei Metriken für die Reduzierung der Glioma Klasse.}
   \label{fig:gli-men-gliored}
 \end{figure}
-
 \begin{table}[H]
     \centering
     {\small
@@ -373,19 +388,19 @@ Die dazu gehörigen Werte sind in der Tabelle \ref{tab:gli-men-augm} zu finden.
             \toprule
             Training sample & Accuracy/$\%$ & Sensitivity & Specificity\\
             \midrule
-            212  & $81.8694 \pm 8.1081$ & $0.8979 \pm 0.0389$ & $0.7002 \pm 0.2544$ \\
-            425  & $89.8022 \pm 1.2611$ & $0.8916 \pm 0.0179$ & $0.9077 \pm 0.0285$ \\
-            638  & $90.3363 \pm 2.3230$ & $0.8959 \pm 0.0170$ & $0.9146 \pm 0.0622$ \\
-            851  & $93.6696 \pm 1.1535$ & $0.9183 \pm 0.0151$ & $0.9642 \pm 0.0203$ \\
-            1064 & $94.2038 \pm 0.8486$ & $0.9271 \pm 0.0156$ & $0.9644 \pm 0.0135$ \\
-            1276 & $91.9189 \pm 11.273$ & $0.9441 \pm 0.0258$ & $0.8820 \pm 0.3100$ \\
-            1489 & $96.1029 \pm 0.6919$ & $0.9469 \pm 0.0095$ & $0.9822 \pm 0.0118$ \\
-            1702 & $96.7458 \pm 1.0820$ & $0.9512 \pm 0.0150$ & $0.9919 \pm 0.0069$ \\
-            1915 & $96.6469 \pm 1.1234$ & $0.9515 \pm 0.0124$ & $0.9889 \pm 0.0111$ \\
-            2128 & $92.0376 \pm 18.269$ & $0.8701 \pm 0.3058$ & $0.9956 \pm 0.0036$ \\
+            105  & $78.9439 \pm 1.5108$ & $0.8056 \pm 0.0481$ & $0.7730 \pm 0.0320$ \\
+            211  & $84.8020 \pm 1.2840$ & $0.8912 \pm 0.0388$ & $0.8040 \pm 0.0452$ \\
+            317  & $86.6172 \pm 1.7541$ & $0.9052 \pm 0.0278$ & $0.8263 \pm 0.0404$ \\
+            422  & $85.6766 \pm 1.3933$ & $0.8941 \pm 0.0409$ & $0.8187 \pm 0.0372$ \\
+            528  & $87.0957 \pm 1.8552$ & $0.9023 \pm 0.0266$ & $0.8390 \pm 0.0352$ \\
+            634  & $89.3399 \pm 2.3183$ & $0.9134 \pm 0.0235$ & $0.8730 \pm 0.0367$ \\
+            739  & $90.4620 \pm 1.1996$ & $0.9124 \pm 0.0253$ & $0.8967 \pm 0.0301$ \\
+            845  & $91.0891 \pm 1.4902$ & $0.9042 \pm 0.0230$ & $0.9177 \pm 0.0228$ \\
+            951  & $91.0396 \pm 1.8261$ & $0.9193 \pm 0.0157$ & $0.9013 \pm 0.0395$ \\
+            1057 & $93.7459 \pm 1.6944$ & $0.9441 \pm 0.0170$ & $0.9307 \pm 0.0235$ \\
             \bottomrule
         \end{tabular}}
-  \caption{Red Gli}
-  \label{tab:}
+  \caption{Mittelwert und Standardabweichung der Metriken für die Reduzierung der Glioma samples.}
+  \label{tab:red-gli}
 \end{table}
 

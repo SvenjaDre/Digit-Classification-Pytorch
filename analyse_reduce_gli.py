@@ -77,7 +77,7 @@ def plot_metric(metric, ylabel, suffix):
 
 
     plt.xlabel("Glioma samples", fontsize=24)
-    plt.ylabel(ylabel)
+    plt.ylabel(ylabel, fontsize=24)
     plt.title(f"{ylabel} in Abhängigkeit der Trainingssamples", fontsize=24)
     plt.xticks(grouped["glioma_samples"])
     plt.grid(True)
