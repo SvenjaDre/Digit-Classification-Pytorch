@@ -193,6 +193,7 @@ Häufige Verlustfunktionen sind beispielsweise der Mean Squared Error (MSE)
 oder die Binary Cross-Entropie für die Klassifikation zwischen zwei Klassen  
 \begin{equation}
 \text{CE} = -\frac{1}{n} \sum_{i=1}^{n} \left( y_i \cdot \log(\hat{y}_i) + (1 - y_i) \cdot \log(1 - \hat{y}_i) \right).
+\label{eq:BCE}
 \end{equation}
 Dabei beschreibt $n$ die Anzahl an Training samples, $y_i$ den Zielwert und $\hat{y}_i$ den berechneten Ausgabewert.
 Durch den Backpropagation-Algorithmus wird die partielle Ableitung der Verlustfunktion mittels der Kettenregel berechnet.
