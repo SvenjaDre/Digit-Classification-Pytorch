@@ -44,8 +44,6 @@ In der ersten Schicht werden 32 Filter verwendet.
 Die Anzahl erhöht sich in jeder Schicht um den Faktor zwei.
 Somit werden in der letzten Convolutional Schicht 128 Filter verwendet.
 In der FC-Layer wird ein Dropout implementiert, um Overfitting zu vermeiden.
-Der Dropout schaltet während des Trainings zufällige Neuronen aus.
-Dadurch stützt sich das Netzwerk nicht auf Spezifische Neuronen und das Netzwerk wird robuster ~\cite{Yamashita2018}.
 
 Beim Training des Netzwerkes, wird der Adam Optimizer verwendet. 
 Als Verlustfunktion wird die Cross-Entropy-Loss genutzt.~\cite{pytorchCrossEntropy}
