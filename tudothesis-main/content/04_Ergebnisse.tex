@@ -9,8 +9,10 @@ Die Auswahl erfolgt auf Basis der Leistung auf dem Validierungsdatensatz.
 Die besten Konfigurationen werden anschließend für die weiteren Trainingsdurchläufe verwendet.
 
 \subsection{Hyperparameter}
-Um die Hyperparameter zu ermitteln, werden die fünf Trainingsdurchläufe (Runs) mit dem niedrigsten Validation Loss betrachtet.
-In der Abbildung \ref{fig:val_loss notu-tu} wird der Verlauf des validation loss dargestellt.
+Um die optimalen Hyperparameter zu bestimmen, wurde anhand der in Tabelle \ref{tab:Hypp} angegebenen Wertebereiche eine Rastersuche durchgeführt.
+Dadurch wurden alle möglichen Kombinationen getestet.
+Anschließend wurden die fünf Trainingsdurchläufe (Runs) mit dem niedrigsten Validation Loss betrachtet.
+Der Verlauf des Validation Loss dieser fünf besten Runs ist in Abbildung \ref{fig:val_loss notu-tu} dargestellt.
 \begin{figure}[H]
   \centering
   \includegraphics[scale=0.3]{plots/Val_loss_noTu_Tu.pdf}
@@ -18,8 +20,8 @@ In der Abbildung \ref{fig:val_loss notu-tu} wird der Verlauf des validation loss
   \label{fig:val_loss notu-tu}
 \end{figure}
 \vspace{-2em}
-Die verwendeten Werte der Hyperparameter für diese fünf Runs, sowie die aufgenommene Accuracy, Sensitivity und Specificity der Validierungsdaten,
-werden in der Tabelle \ref{tab:hyperp notu-tu} aufgezeigt.
+Die für die fünf Runs verwendeten Hyperparameter, sowie die ermittelten Werte für Accuracy, Sensitivity und Specificity auf den Validierungsdaten,
+sind in der Tabelle \ref{tab:hyperp notu-tu} dargestellt.
 \begin{table}[H]
     \centering
     \resizebox{\textwidth}{!}{%
@@ -38,11 +40,11 @@ werden in der Tabelle \ref{tab:hyperp notu-tu} aufgezeigt.
   \caption{Die fünf Runs mit dem niedrigsten validation loss sowie deren verwendete Hyperparameter und aufgezeichnete Metriken.}
   \label{tab:hyperp notu-tu}
 \end{table}
-Die Werte der Accuracy, Sensitivity und Specificity liegen dicht bei einander und schwanken nur geringfügig.
-Da die Ergebnisse der Validierung konstant sind, werden für die weiteren Trainingsdurchläufen die Hyperparameter des Runs 1 verwendet. 
+Die Werte für Accuracy, Sensitivity und Specificity liegen eng bei einander und schwanken nur geringfügig.
+Auf Grund dessen, das die Validierungsergebnisse vergleichbar sind, werden für die weiteren Trainingsdurchläufen die Hyperparameter des Runs 1 verwendet. 
 
 \subsection{Reduzierung der Trainingsdaten}
-Das Netzwerk wurde mit unterschiedlichen Datensatzgrößen trainiert und auf einen Testdatensatz angewendet, bei dem die Accuracy, Sensitivity und Specificity berechnet wurde.
+Das Netzwerk wird mit unterschiedlichen Datensatzgrößen trainiert und auf einen Testdatensatz angewendet, bei dem die Accuracy, Sensitivity und Specificity berechnet wird.
 Da beobachtet wurde, dass die Werte der Metriken bei 2723 gesunken sind, wurde zusätzlich das Netzwerk mit 2553, 2893 und 3234 
 Training samples trainiert.
 Die Mittelwerte und Standardabweichung der Metriken wurden in Abhängigkeit von den Training samples dargestellt.
