@@ -1,4 +1,8 @@
-\chapter{Methodik}
+\chapter{Methodik}\label{sec:methodik}
+Um die Leistung des Modells bei unterschiedlichen Datensatzgrößen zu untersuchen, wird in dieser Arbeit ein Convolutional Neural Network (CNN) eingesetzt.
+Im Folgenden werden zunächst der verwendete Datensatz beschrieben. 
+Anschließend wird der Aufbau des Netzwerks erläutert, welches die Grundlage für die nachfolgenden Untersuchungen bildet.
+
 \section{Datensatz}
 Für diese Arbeit wird der Datensatz "Brain Tumor MRI Dataset", welcher auf Kaggle veröffentlicht wurde, verwendet.~\cite{msoud_nickparvar_2021}
 Dieser beinhaltet die vier Klassen: no Tumor, Glioma, Meningioma und Pituitary.
@@ -46,7 +50,7 @@ Somit werden in der letzten Convolutional Schicht 128 Filter verwendet.
 In der FC-Layer wird ein Dropout implementiert, um Overfitting zu vermeiden.
 
 Beim Training des Netzwerkes, wird der Adam Optimizer verwendet. 
-Als Verlustfunktion wird die Binary Cross-Entropy-Loss, gemäß der Formel\ref{eq:BCE}, genutzt.
+Als Verlustfunktion wird die Binary Cross-Entropy-Loss, gemäß der Formel \ref{eq:BCE}, genutzt.
 Zudem werden alle zehn Epochen Checkpoints gesetzt und das Modell gespeichert.
 Um Overfitting zu vermeiden, wird ein Early Stop implementiert. Wenn der Validation Loss sich über zehn Epochen nicht um $10^{-4}$
 verbessert, wird das Training gestoppt und das Modell mit den niedrigsten Validation Loss wird gespeichert.
@@ -72,7 +76,7 @@ Die Specificity wird über die Formel
 \begin{equation}
   Specificity = \frac{TN}{TN + FP}
 \end{equation}
-ermittelt und gibt den Anteil der korrekten Fälle an, bei dem keine Krankheit vorliegt.%~\cite{west2020sensitivity}
+ermittelt und gibt den Anteil der korrekten Fälle an, bei dem keine Krankheit vorliegt. 
 Für die Klassifikation zwischen Glioma und Meningioma wird wird die Meningioma Klasse als positiv und die Glioma Klasse als negativ definiert.
 
 \section{Hyperparameter}\label{sec:Hyperparameter}

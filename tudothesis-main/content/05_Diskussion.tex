@@ -1,1 +1,27 @@
 \chapter{Diskussion}
+
+In dieser Arbeit wurde die Leistung eines Convolutional Neural Network, unter Verwendung unterschiedlich großer Trainingsdatensätze untersucht.
+Dafür wurde Schrittweise die Anzahl an Training samples reduziert. 
+Die Leistung wird anhand der Accuracy, Sensitivity und Specificity beurteilt.
+
+Die Ergebnisse zeigten, dass alle Metriken mit zunehmender Sample Anzahl ansteigt. 
+Daraus lässt sich schließen, dass die Leistungsfähigkeit des Netzwerks zunimmt, da anhand eines größeren Datensatzes mehr Merkmale und Muster erlernt werden.
+Bei der Klassifikation zwischen no Tumor und Tumor ist ab 2042 Training samples eine Sättigung zu beobachten.
+Somit lässt sich daraus schließen, dass es mindestens 2042 Samples braucht, damit das Netzwerk eine konstante Leistung zeigt.
+
+Im Vergleich zeigt die Klassifikation zwischen den zwei Tumorarten Glioma und Meningioma keine Eindeutige Sättigung. 
+Die Accuracy steigt auf ungefähr \SI{92}{\percent} an.
+Die Sensitivity zeigt den Ansatz einer Sättigung, da sie ab 1702 Training samples relativ konstante Werte zeigt.
+Und auch die Specificity stabilisiert sich ab 1915 Samples bei ca. \SI{0,92}{}.
+Daraus lässt sich schließen, dass das Netzwerk eine zuverlässige Leistung ab 1702 Training samples zeigt.
+Jedoch wäre eine größere Datenmenge notwendig, damit die Sättigung der Accuracy deutlich zeigt und sich die Stabilität der Sensitivity und Specificity weiter verbessert. 
+
+Um die Modell Leistung zu verbessern wurde die Augmentation angewendet, welche eingesetz wird um overfitting zu vermeiden.
+Für die Klassifikation ist zu sehen, dass die Accuracy und Specificity auch mit Verwendung von Augmentation ihre Sättigung ab 2042 Training samples erreichen.
+Die Accuracy beträgt dabei \SI{95.1039}{\percent} und ist somit ca. \SI{1}{\percent} höher, als die Reduzierung der Samples ohne Augmentation.
+Die Specificity erreicht die Sättigung schon bei 1702 Training samples.
+Die Sensitivity bleibt relativ konstant zwischen 1021 und 1702 Training samples, während bei 1702 Samples, ohne Verwendung von Augmentation, abfällt.
+Somit lässt sich sagen, dass die Augmentation einen Leistungsabfall verhindert und im Bereich von niedrigeren Datensatzgrößen die Leistung des Modells konstant bei ungefähr 
+\SI{0,89}{} hält.  
+
+Bei der Klassifikation zwischen Glioma und Meningioma 

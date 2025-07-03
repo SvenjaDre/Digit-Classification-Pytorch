@@ -1,11 +1,19 @@
 \chapter{Ergebnisse}
+In diesem Kapitel werden die Ergebnisse der verschiedenen Untersuchungen dargestellt, die in Kapitel \ref{sec:methodik} beschrieben wurden.
+Zunächst wird die Leistung des Modells bei unterschiedlichen Datensatzgrößen für die Klassifikation zwischen Tumor und no Tumor untersucht.
+Anschließend folgen die Ergebnisse zur Klassifikation zwischen Glioma und Meningioma
+
 \section{Klassifizierung zwischen Tumor und no Tumor}
+Zu Beginn wird das Modell mit verschiedenen Kombinationen von Hyperparametern trainiert, um geeignete Einstellungen für das weitere Vorgehen zu identifizieren.
+Die Auswahl erfolgt auf Basis der Leistung auf dem Validierungsdatensatz.
+Die besten Konfigurationen werden anschließend für die weiteren Trainingsdurchläufe verwendet.
+
 \subsection{Hyperparameter}
-Um die Hyperparameter zu ermitteln, werden die fünf Trainingsdurchläufen (Runs) mit den niedrigsten Validation Loss betrachtet.
+Um die Hyperparameter zu ermitteln, werden die fünf Trainingsdurchläufe (Runs) mit dem niedrigsten Validation Loss betrachtet.
 In der Abbildung \ref{fig:val_loss notu-tu} wird der Verlauf des validation loss dargestellt.
 \begin{figure}[H]
   \centering
-  \includegraphics[scale=0.4]{plots/Val_loss_noTu_Tu.pdf}
+  \includegraphics[scale=0.3]{plots/Val_loss_noTu_Tu.pdf}
   \caption{Verlauf des validation loss bei der Verwendung verschiedener Hyperparameter.}
   \label{fig:val_loss notu-tu}
 \end{figure}
@@ -17,13 +25,13 @@ werden in der Tabelle \ref{tab:hyperp notu-tu} aufgezeigt.
     \resizebox{\textwidth}{!}{%
         \begin{tabular}{cccccccc}
             \toprule
-            Runs & Batch Größe & Lernrate & Dropout & validation loss & Accuracy/$\%$ & Sensitivity & Specificity \\
+            Runs & Batch Größe & Lernrate & Dropout & validation loss & Accuracy/$\%$ & Sensitivity/$\%$ & Specificity/$\%$ \\
             \midrule
-            1 & 128 & 0.005  & 0.55 & 0.072539 & 97.53231 & 0.97967 & 0.96774 \\
-            2 & 128 & 0.0005 & 0.5  & 0.073672 & 98.00235 & 0.98706 & 0.96774 \\
-            3 & 16  & 0.0001 & 0.5  & 0.076007 & 97.88484 & 0.97597 & 0.98387 \\
-            4 & 128 & 0.0005 & 0.4  & 0.080399 & 97.76733 & 0.97782 & 0.97742 \\
-            5 & 128 & 0.0005 & 0.5  & 0.080853 & 97.64982 & 0.98706 & 0.95806 \\
+            1 & 128 & 0.005  & 0.55 & 0.072539 & 97.532 & 97.967 & 96.774 \\
+            2 & 128 & 0.0005 & 0.5  & 0.073672 & 98.002 & 98.706 & 96.774 \\
+            3 & 16  & 0.0001 & 0.5  & 0.076007 & 97.885 & 97.597 & 98.387 \\
+            4 & 128 & 0.0005 & 0.4  & 0.080399 & 97.767 & 97.782 & 97.742 \\
+            5 & 128 & 0.0005 & 0.5  & 0.080853 & 97.650 & 98.706 & 95.806 \\
             \bottomrule
         \end{tabular}
     }
@@ -34,7 +42,6 @@ Die Werte der Accuracy, Sensitivity und Specificity liegen dicht bei einander un
 Da die Ergebnisse der Validierung konstant sind, werden für die weiteren Trainingsdurchläufen die Hyperparameter des Runs 1 verwendet. 
 
 \subsection{Reduzierung der Trainingsdaten}
-
 Das Netzwerk wurde mit unterschiedlichen Datensatzgrößen trainiert und auf einen Testdatensatz angewendet, bei dem die Accuracy, Sensitivity und Specificity berechnet wurde.
 Da beobachtet wurde, dass die Werte der Metriken bei 2723 gesunken sind, wurde zusätzlich das Netzwerk mit 2553, 2893 und 3234 
 Training samples trainiert.
@@ -42,7 +49,7 @@ Die Mittelwerte und Standardabweichung der Metriken wurden in Abhängigkeit von 
 Diese Ergebnisse sind in Abbildung \ref{fig:reduzierung_trainingsdaten} sowie Tabelle \ref{tab:reduzierung_trainingsdaten} zusammengefasst.
 Es ist zu erkennen, dass die drei Metriken einen ähnlichen Verlauf aufweisen.
 Die niedrigsten Werte werden bei 340 Training samples aufgenommen und steigen dann kontinuierlich mit der sample Anzahl an.
-Ab 2042 verwendete samples zeigen die Werte der Accuracy, Sensitivity und Specificity nur noch geringe Änderungen  .
+Ab 2042 verwendete samples zeigen die Werte der Accuracy, Sensitivity und Specificity nur noch geringe Änderungen.
 Dabei schwankt die Accuracy im Bereich zwischen 2042 und 3404 Training samples zwischen $\qty{93.1157}{\%}$ und $\qty{96.2611}{\%}$. 
 Die Werte der Sensitivity variieren in diesem Bereich zwischen 0,9147 und 0,9462 und die der Specificity um \SI{0,9741}{} und \SI{0,9872}{}.
 \begin{figure}[H]
@@ -70,21 +77,21 @@ Die Werte der Sensitivity variieren in diesem Bereich zwischen 0,9147 und 0,9462
     {\small
         \begin{tabular}{cccc}
             \toprule
-            Training sample & Accuracy/\% & Sensitivity & Specificity\\
+            Training sample & Accuracy/$\%$ & Sensitivity/$\%$ & Specificity/$\%$\\
             \midrule
-            340  & $86.2117 \pm 0.4428$ & $0.8606 \pm 0.0137 $ & $0.8644 \pm 0.0249$\\
-            681  & $87.9921 \pm 1.3057$ & $0.8754 \pm 0.0229 $ & $0.8867 \pm 0.0329$\\
-            1021 & $90.2176 \pm 0.5832$ & $0.8860 \pm 0.0101 $ & $0.9264 \pm 0.0180$\\
-            1362 & $92.7102 \pm 1.3106$ & $0.9114 \pm 0.0183 $ & $0.9506 \pm 0.0186$\\
-            1702 & $92.7003 \pm 0.3452$ & $0.9028 \pm 0.0078 $ & $0.9632 \pm 0.0068$\\
-            2042 & $94.8467 \pm 1.0316$ & $0.9314 \pm 0.0134 $ & $0.9741 \pm 0.0140$\\
-            2383 & $94.4510 \pm 0.8502$ & $0.9294 \pm 0.0166 $ & $0.9672 \pm 0.0056$\\
-            2553 & $94.8764 \pm 1.6231$ & $0.9380 \pm 0.0175 $ & $0.9649 \pm 0.0196$\\
-            2723 & $93.1157 \pm 1.1163$ & $0.9147 \pm 0.0181 $ & $0.9558 \pm 0.0237$\\
-            2893 & $95.4204 \pm 1.5352$ & $0.9403 \pm 0.0230 $ & $0.9751 \pm 0.0080$\\
-            3064 & $94.7478 \pm 1.5545$ & $0.9327 \pm 0.0208 $ & $0.9696 \pm 0.0102$\\
-            3234 & $94.6093 \pm 1.1125$ & $0.9223 \pm 0.0190 $ & $0.9817 \pm 0.0108$\\
-            3404 & $96.2611 \pm 1.3948$ & $0.9462 \pm 0.0167 $ & $0.9872 \pm 0.0128$\\ 
+            340  & $86.21 \pm 0.44$ & $86.06 \pm 1.37 $ & $86.44 \pm 2.49$\\
+            681  & $87.99 \pm 1.31$ & $87.54 \pm 2.29 $ & $88.67 \pm 3.29$\\
+            1021 & $90.22 \pm 0.58$ & $88.60 \pm 1.01 $ & $92.64 \pm 1.80$\\
+            1362 & $92.71 \pm 1.31$ & $91.14 \pm 1.83 $ & $95.06 \pm 1.86$\\
+            1702 & $92.70 \pm 0.35$ & $90.28 \pm 0.78 $ & $96.32 \pm 0.68$\\
+            2042 & $94.85 \pm 1.03$ & $93.14 \pm 1.34 $ & $97.41 \pm 1.40$\\
+            2383 & $94.45 \pm 0.85$ & $92.94 \pm 1.66 $ & $96.72 \pm 0.56$\\
+            2553 & $94.88 \pm 1.62$ & $93.80 \pm 1.75 $ & $96.49 \pm 1.96$\\
+            2723 & $93.12 \pm 1.12$ & $91.47 \pm 1.81 $ & $95.58 \pm 2.37$\\
+            2893 & $95.42 \pm 1.54$ & $94.03 \pm 2.30 $ & $97.51 \pm 0.80$\\
+            3064 & $94.75 \pm 1.55$ & $93.27 \pm 2.08 $ & $96.96 \pm 1.02$\\
+            3234 & $94.61 \pm 1.11$ & $92.23 \pm 1.90 $ & $98.17 \pm 1.08$\\
+            3404 & $96.26 \pm 1.39$ & $94.62 \pm 1.67 $ & $98.72 \pm 1.28$\\ 
             \bottomrule
         \end{tabular}
     }
@@ -126,18 +133,18 @@ Danach steigt sie wieder an und schwankt, von 2042 bis 3404 Training samples, zw
     {\small
         \begin{tabular}{cccc}
             \toprule
-            Training sample & Accuracy/\% & Sensitivity & Specificity\\
+            Training sample & Accuracy/$\%$ & Sensitivity/$\%$ & Specificity/$\%$\\
             \midrule
-            340  & $86.0435 \pm 0.6923$ & $0.8597 \pm 0.0127$ & $0.8615 \pm 0.0257$\\
-            680  & $88.4273 \pm 0.7041$ & $0.8738 \pm 0.0150$ & $0.9000 \pm 0.0284$\\
-            1021 & $90.0099 \pm 0.6376$ & $0.8949 \pm 0.0093$ & $0.9079 \pm 0.0110$\\
-            1361 & $91.5925 \pm 0.9418$ & $0.8949 \pm 0.0143$ & $0.9474 \pm 0.0204$\\
-            1702 & $92.4332 \pm 0.8357$ & $0.8970 \pm 0.0147$ & $0.9652 \pm 0.0062$\\
-            2042 & $95.1039 \pm 1.0250$ & $0.9381 \pm 0.0195$ & $0.9704 \pm 0.0115$\\
-            2382 & $94.5697 \pm 0.9296$ & $0.9350 \pm 0.0171$ & $0.9617 \pm 0.0119$\\
-            2723 & $94.2532 \pm 1.1726$ & $0.9234 \pm 0.0155$ & $0.9711 \pm 0.0125$\\
-            3063 & $95.7270 \pm 1.4340$ & $0.9465 \pm 0.0178$ & $0.9733 \pm 0.0166$\\
-            3404 & $96.4293 \pm 1.4880$ & $0.9475 \pm 0.0195$ & $0.9894 \pm 0.0103$\\
+            340  & $86.04 \pm 0.69$ & $85.97 \pm 1.27$ & $86.15 \pm 2.57$\\
+            680  & $88.43 \pm 0.70$ & $87.38 \pm 1.50$ & $90.00 \pm 2.84$\\
+            1021 & $90.01 \pm 0.64$ & $89.49 \pm 0.93$ & $90.79 \pm 1.10$\\
+            1361 & $91.59 \pm 0.94$ & $89.49 \pm 1.43$ & $94.74 \pm 2.04$\\
+            1702 & $92.43 \pm 0.84$ & $89.70 \pm 1.47$ & $96.52 \pm 0.62$\\
+            2042 & $95.10 \pm 1.03$ & $93.81 \pm 1.95$ & $97.04 \pm 1.15$\\
+            2382 & $94.57 \pm 0.93$ & $93.50 \pm 1.71$ & $96.17 \pm 1.19$\\
+            2723 & $94.25 \pm 1.17$ & $92.34 \pm 1.55$ & $97.11 \pm 1.25$\\
+            3063 & $95.73 \pm 1.44$ & $94.65 \pm 1.78$ & $97.33 \pm 1.66$\\
+            3404 & $96.43 \pm 1.49$ & $94.75 \pm 1.95$ & $98.94 \pm 1.03$\\
             \bottomrule
         \end{tabular}}
   \caption{Mittelwert und Standardabweichung der Metriken bei Reduzierung der Training samples unter Verwendung von Augmentation.}
@@ -183,18 +190,18 @@ sowie bei 2128 Tumor samples die Sensitivity bei 0.
      {\small
         \begin{tabular}{cccc}
             \toprule
-            Training sample & Accuracy/\% & Sensitivity & Specificity\\
+            Training sample & Accuracy/$\%$ & Sensitivity/$\%$ & Specificity/$\%$\\
             \midrule
-            212  & $81.8694 \pm 8.1081$ & $0.8979 \pm 0.0389$ & $0.7002 \pm 0.2544$\\
-            425  & $89.8022 \pm 1.2611$ & $0.8916 \pm 0.0179$ & $0.9077 \pm 0.0285$\\
-            638  & $90.3363 \pm 2.3230$ & $0.8959 \pm 0.0170$ & $0.9146 \pm 0.0622$\\
-            851  & $93.6696 \pm 1.1535$ & $0.9183 \pm 0.0151$ & $0.9642 \pm 0.0203$\\
-            1064 & $94.2038 \pm 0.8486$ & $0.9271 \pm 0.0156$ & $0.9644 \pm 0.0135$\\
-            1276 & $91.9189 \pm 11.273$ & $0.9441 \pm 0.0258$ & $0.8820 \pm 0.3100$\\
-            1489 & $96.1029 \pm 0.6919$ & $0.9469 \pm 0.0095$ & $0.9822 \pm 0.0118$\\
-            1702 & $96.7458 \pm 1.0820$ & $0.9512 \pm 0.0150$ & $0.9919 \pm 0.0069$\\
-            1915 & $96.6469 \pm 1.1234$ & $0.9515 \pm 0.0124$ & $0.9889 \pm 0.0111$\\
-            2128 & $92.0376 \pm 18.269$ & $0.8701 \pm 0.3058$ & $0.9956 \pm 0.0036$\\
+            212  & $81.87 \pm 8.11$ & $89.79 \pm 3.89$ & $ 70.02 \pm 25.44$\\
+            425  & $89.80 \pm 1.26$ & $89.16 \pm 1.79$ & $ 90.77 \pm 2.85$\\
+            638  & $90.34 \pm 2.32$ & $89.59 \pm 1.70$ & $ 91.46 \pm 6.22$\\
+            851  & $93.67 \pm 1.15$ & $91.83 \pm 1.51$ & $ 96.42 \pm 2.03$\\
+            1064 & $94.20 \pm 0.85$ & $92.71 \pm 1.56$ & $ 96.44 \pm 1.35$\\
+            1276 & $91.92 \pm 11.27$& $94.41 \pm 2.58$ & $ 88.20 \pm 31.00$\\
+            1489 & $96.10 \pm 0.69$ & $94.69 \pm 0.95$ & $ 98.22 \pm 1.18$\\
+            1702 & $96.75 \pm 1.08$ & $95.12 \pm 1.50$ & $ 99.19 \pm 0.69$\\
+            1915 & $96.65 \pm 1.12$ & $95.15 \pm 1.24$ & $ 98.89 \pm 1.11$\\
+            2128 & $92.04 \pm 18.27$& $87.01 \pm 30.58$ &$ 99.56 \pm 0.36$\\
             \bottomrule
         \end{tabular}}
   \caption{Mittelwert und Standardabweichung der Metriken bei der Reduzierung der Tumor Klasse.}
@@ -202,13 +209,16 @@ sowie bei 2128 Tumor samples die Sensitivity bei 0.
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Klassifizierung zwischen Glioma und Meningioma}
+Für die Klassifizierung zwischen Glioma und Meningioma werden zu begin die Hyperparameter ermittelt, mit denen die nachfolgenden
+Trainingsdurchläufe verwendet werden. 
+Die Erfolg analog zur Ermittlung der Hyperparameter der vorherigen Klassifikation.
 \subsection{Hyperparameter}
 Für die Ermittlung der Hyperparameter werden die fünf Runs mit den niedrigsten Validation loss betrachtet.
 Der Verlauf wird in der Abbildung \ref{fig:val_loss gli-men} dargestellt.
 Die dazugehörigen Parameter und die Accuracy, Sensitivity und Specificity des Validierung Datensatzes werden in der Tabelle \ref{tab:hyperp-gli men} aufgelistet.
 \begin{figure}[H]
   \centering
-  \includegraphics[scale=0.4]{plots/Val_loss_Gli_Men.pdf}
+  \includegraphics[scale=0.3]{plots/Val_loss_Gli_Men.pdf}
   \caption{Darstellung des validation loss bei der Verwendung verschiedener Hyperparameter.}
   \label{fig:val_loss gli-men}
 \end{figure}
@@ -217,13 +227,13 @@ Die dazugehörigen Parameter und die Accuracy, Sensitivity und Specificity des V
     \resizebox{\textwidth}{!}{%
         \begin{tabular}{cccccccc}
             \toprule
-            Runs & Batch Größe & Lernrate & Dropout & Validation Loss & Accuracy/$\%$ & Sensitivity & Specificity \\
+            Runs & Batch Größe & Lernrate & Dropout & Validation Loss & Accuracy/$\%$ & Sensitivity/$\%$ & Specificity/$\%$ \\
             \midrule
-            1 & 128 & 0.01  & 0.55 & 0.18943 & 92.29323 & 0.95402 & 0.89299 \\
-            2 & 64  & 0.005 & 0.3  & 0.22499 & 93.23308 & 0.96935 & 0.89668 \\
-            3 & 16  & 0.0005& 0.55 & 0.23146 & 93.98496 & 0.92720 & 0.95203 \\
-            4 & 16  & 0.005 & 0.5  & 0.23453 & 92.66917 & 0.95402 & 0.90037 \\
-            5 & 16  & 0.0005& 0.5  & 0.23829 & 93.42105 & 0.94253 & 0.92620 \\
+            1 & 128 & 0.01  & 0.55 & 0.18943 & 92.293 & 95.402 & 89.299 \\
+            2 & 64  & 0.005 & 0.3  & 0.22499 & 93.233 & 96.935 & 89.668 \\
+            3 & 16  & 0.0005& 0.55 & 0.23146 & 93.985 & 92.720 & 95.203 \\
+            4 & 16  & 0.005 & 0.5  & 0.23453 & 92.669 & 95.402 & 90.037 \\
+            5 & 16  & 0.0005& 0.5  & 0.23829 & 93.421 & 94.253 & 92.620 \\
             \bottomrule
         \end{tabular}
     }
@@ -271,18 +281,18 @@ Ab 1915 Training samples bleibt die Specificity stabil bei ungefähr \SI{0.92}{}
     {\small
         \begin{tabular}{cccc}
             \toprule
-            Training sample & Accuracy/$\%$ & Sensitivity & Specificity\\
+            Training sample & Accuracy/$\%$ & Sensitivity/$\%$ & Specificity/$\%$\\
             \midrule
-            231  & $76.4191 \pm 0.5068$ & $0.7846 \pm 0.0383$ & $0.7433 \pm 0.0349$\\
-            426  & $78.6634 \pm 0.7046$ & $0.8020 \pm 0.0414$ & $0.7710 \pm 0.0298$\\
-            683  & $83.5314 \pm 1.2658$ & $0.8317 \pm 0.0383$ & $0.8390 \pm 0.0249$\\
-            851  & $81.8317 \pm 1.2934$ & $0.8209 \pm 0.0238$ & $0.8157 \pm 0.0233$\\
-            1064 & $87.1122 \pm 1.2506$ & $0.8667 \pm 0.0378$ & $0.8757 \pm 0.0260$\\
-            1277 & $87.7228 \pm 0.6518$ & $0.8817 \pm 0.0270$ & $0.8727 \pm 0.0250$\\
-            1490 & $88.1188 \pm 0.8903$ & $0.9016 \pm 0.0158$ & $0.8603 \pm 0.0278$\\
-            1702 & $90.6601 \pm 0.5934$ & $0.9186 \pm 0.0117$ & $0.8943 \pm 0.0140$\\
-            1915 & $91.6667 \pm 0.9212$ & $0.9114 \pm 0.0214$ & $0.9220 \pm 0.0076$\\
-            2128 & $92.3102 \pm 0.8313$ & $0.9255 \pm 0.0165$ & $0.9207 \pm 0.0143$\\            
+            231  & $76.42 \pm 0.51 $ & $78.46 \pm 3.83$ & $74.33 \pm 3.49$\\
+            426  & $78.66 \pm 0.70 $ & $80.20 \pm 4.14$ & $77.10 \pm 2.98$\\
+            683  & $83.53 \pm 1.27 $ & $83.17 \pm 3.83$ & $83.90 \pm 2.49$\\
+            851  & $81.83 \pm 1.29 $ & $82.09 \pm 2.38$ & $81.57 \pm 2.33$\\
+            1064 & $87.11 \pm 1.25 $ & $86.67 \pm 3.78$ & $87.57 \pm 2.60$\\
+            1277 & $87.72 \pm 0.65 $ & $88.17 \pm 2.70$ & $87.27 \pm 2.50$\\
+            1490 & $88.12 \pm 0.89 $ & $90.16 \pm 1.58$ & $86.03 \pm 2.78$\\
+            1702 & $90.66 \pm 0.59 $ & $91.86 \pm 1.17$ & $89.43 \pm 1.40$\\
+            1915 & $91.67 \pm 0.92 $ & $91.14 \pm 2.14$ & $92.20 \pm 0.76$\\
+            2128 & $92.31 \pm 0.83 $ & $92.55 \pm 1.65$ & $92.07 \pm 1.43$\\            
             \bottomrule
         \end{tabular}}
   \caption{Mittelwert und Standardabweichung für die Reduzierung der Training samples.}
@@ -306,18 +316,18 @@ Bei 2128 Samples wird eine Specificity von \SI{0.9177}{} erreicht.
     {\small
         \begin{tabular}{cccc}
             \toprule
-            Training sample & Accuracy/$\%$ & Sensitivity & Specificity\\
+            Training sample & Accuracy/$\%$ & Sensitivity/$\%$ & Specificity/$\%$\\
             \midrule
-            212  & $75.8746 \pm 0.6115$ & $0.7801 \pm 0.0564$ & $0.7370 \pm 0.0656$ \\
-            425  & $79.7195 \pm 0.4362$ & $0.8199 \pm 0.0147$ & $0.7740 \pm 0.0162$ \\
-            638  & $80.6931 \pm 0.5663$ & $0.7958 \pm 0.0170$ & $0.8183 \pm 0.0085$ \\
-            851  & $81.5512 \pm 0.9834$ & $0.8170 \pm 0.0228$ & $0.8140 \pm 0.0134$ \\
-            1064 & $86.4521 \pm 0.8212$ & $0.8526 \pm 0.0239$ & $0.8767 \pm 0.0191$ \\
-            1276 & $87.9868 \pm 0.8479$ & $0.8768 \pm 0.0180$ & $0.8830 \pm 0.0202$ \\
-            1489 & $89.0099 \pm 1.1930$ & $0.8886 \pm 0.0221$ & $0.8917 \pm 0.0196$ \\
-            1702 & $90.7096 \pm 0.5612$ & $0.9101 \pm 0.0209$ & $0.9040 \pm 0.0175$ \\
-            1915 & $91.2706 \pm 1.2037$ & $0.9101 \pm 0.0182$ & $0.9153 \pm 0.0121$ \\
-            2128 & $92.1947 \pm 0.8837$ & $0.9261 \pm 0.0139$ & $0.9177 \pm 0.0123$ \\         
+            212  & $75.87 \pm 0.61$ & $78.01 \pm 5.64$ & $ 73.70 \pm 6.56$ \\
+            425  & $79.72 \pm 0.44$ & $81.99 \pm 1.47$ & $ 77.40 \pm 1.62$ \\
+            638  & $80.69 \pm 0.57$ & $79.58 \pm 1.70$ & $ 81.83 \pm 0.85$ \\
+            851  & $81.55 \pm 0.98$ & $81.70 \pm 2.28$ & $ 81.40 \pm 1.34$ \\
+            1064 & $86.45 \pm 0.82$ & $85.26 \pm 2.39$ & $ 87.67 \pm 1.91$ \\
+            1276 & $87.99 \pm 0.85$ & $87.68 \pm 1.80$ & $ 88.30 \pm 2.02$ \\
+            1489 & $89.01 \pm 1.19$ & $88.86 \pm 2.21$ & $ 89.17 \pm 1.96$ \\
+            1702 & $90.71 \pm 0.56$ & $91.01 \pm 2.09$ & $ 90.40 \pm 1.75$ \\
+            1915 & $91.27 \pm 1.20$ & $91.01 \pm 1.82$ & $ 91.53 \pm 1.21$ \\
+            2128 & $92.19 \pm 0.88$ & $92.61 \pm 1.39$ & $ 91.77 \pm 1.23$ \\         
             \bottomrule
         \end{tabular}}
   \caption{Mittelwert und Standardabweichung der drei Metriken bei Reduzierung der Training samples unter Verwendung von Augmentation für die Klassifikation zwischen Glioma und Meningioma.}
@@ -386,18 +396,18 @@ Zum Schluss steigt sie bei 1057 Beispielen weiter auf \SI{0.9441}{}.
     {\small
         \begin{tabular}{cccc}
             \toprule
-            Training sample & Accuracy/$\%$ & Sensitivity & Specificity\\
+            Training sample & Accuracy/$\%$ & Sensitivity/$\%$ & Specificity/$\%$\\
             \midrule
-            105  & $78.9439 \pm 1.5108$ & $0.8056 \pm 0.0481$ & $0.7730 \pm 0.0320$ \\
-            211  & $84.8020 \pm 1.2840$ & $0.8912 \pm 0.0388$ & $0.8040 \pm 0.0452$ \\
-            317  & $86.6172 \pm 1.7541$ & $0.9052 \pm 0.0278$ & $0.8263 \pm 0.0404$ \\
-            422  & $85.6766 \pm 1.3933$ & $0.8941 \pm 0.0409$ & $0.8187 \pm 0.0372$ \\
-            528  & $87.0957 \pm 1.8552$ & $0.9023 \pm 0.0266$ & $0.8390 \pm 0.0352$ \\
-            634  & $89.3399 \pm 2.3183$ & $0.9134 \pm 0.0235$ & $0.8730 \pm 0.0367$ \\
-            739  & $90.4620 \pm 1.1996$ & $0.9124 \pm 0.0253$ & $0.8967 \pm 0.0301$ \\
-            845  & $91.0891 \pm 1.4902$ & $0.9042 \pm 0.0230$ & $0.9177 \pm 0.0228$ \\
-            951  & $91.0396 \pm 1.8261$ & $0.9193 \pm 0.0157$ & $0.9013 \pm 0.0395$ \\
-            1057 & $93.7459 \pm 1.6944$ & $0.9441 \pm 0.0170$ & $0.9307 \pm 0.0235$ \\
+            105  & $78.94 \pm 1.51$ & $80.56 \pm 4.81$ & $ 77.30 \pm 3.20$ \\
+            211  & $84.80 \pm 1.28$ & $89.12 \pm 3.88$ & $ 80.40 \pm 4.52$ \\
+            317  & $86.62 \pm 1.75$ & $90.52 \pm 2.78$ & $ 82.63 \pm 4.04$ \\
+            422  & $85.68 \pm 1.39$ & $89.41 \pm 4.09$ & $ 81.87 \pm 3.72$ \\
+            528  & $87.10 \pm 1.86$ & $90.23 \pm 2.66$ & $ 83.90 \pm 3.52$ \\
+            634  & $89.34 \pm 2.32$ & $91.34 \pm 2.35$ & $ 87.30 \pm 3.67$ \\
+            739  & $90.46 \pm 1.20$ & $91.24 \pm 2.53$ & $ 89.67 \pm 3.01$ \\
+            845  & $91.09 \pm 1.49$ & $90.42 \pm 2.30$ & $ 91.77 \pm 2.28$ \\
+            951  & $91.04 \pm 1.83$ & $91.93 \pm 1.57$ & $ 90.13 \pm 3.95$ \\
+            1057 & $93.75 \pm 1.69$ & $94.41 \pm 1.70$ & $ 93.07 \pm 2.35$ \\
             \bottomrule
         \end{tabular}}
   \caption{Mittelwert und Standardabweichung der Metriken für die Reduzierung der Glioma samples.}

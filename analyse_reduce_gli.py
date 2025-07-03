@@ -8,7 +8,6 @@ wandb.login()
 
 # Projektinfos
 entity = "svenja-dreyer-tu-dortmund"
-
 project = "Reduzierung-Gli + Balnce"
 
 # Basisverzeichnisse setzen
@@ -41,8 +40,14 @@ for run in runs:
     }
     data.append(row)
 
-# DataFrame erzeugen & CSV speichern
+# DataFrame erzeugen
 df = pd.DataFrame(data)
+
+# Metriken in Prozent umrechnen (test_accuracy ist bereits in %)
+df["test_sensitivity"] *= 100
+df["test_specificity"] *= 100
+
+# CSV speichern
 csv_filename = os.path.join(csv_dir, f"{project}_raw_runs.csv")
 df.to_csv(csv_filename, index=False)
 print(f"✅ {len(df)} Runs exportiert nach: {csv_filename}")
@@ -75,17 +80,15 @@ def plot_metric(metric, ylabel, suffix):
     plt.scatter(grouped["glioma_samples"], grouped[f"{metric}_mean"],
                 color='red', marker='x', s=250, linewidth=3, label="Mittelwert")
 
-
-    plt.xlabel("Glioma samples", fontsize=24)
-    plt.ylabel(ylabel, fontsize=24)
-    plt.title(f"{ylabel} in Abhängigkeit der Trainingssamples", fontsize=24)
-    plt.xticks(grouped["glioma_samples"])
+    plt.xlabel("Glioma samples", fontsize=28)
+    plt.ylabel(ylabel, fontsize=28)
+    #plt.title(f"{ylabel} in Abhängigkeit der Trainingssamples", fontsize=28)
+    plt.xticks(grouped["glioma_samples"], rotation=-45)  # X-Ticks drehen
     plt.grid(True)
     plt.minorticks_on()
-    plt.legend(fontsize=20)
-    #plt.tight_layout()
-    plt.xticks(fontsize=22)
-    plt.yticks(fontsize=22)
+    plt.legend(fontsize=26)
+    plt.xticks(fontsize=28)
+    plt.yticks(fontsize=28)
     plot_path = os.path.join(plots_dir, f"{project}_{suffix}.pdf")
     plt.savefig(plot_path)
     plt.show()
@@ -93,5 +96,5 @@ def plot_metric(metric, ylabel, suffix):
 
 # Plots erstellen
 plot_metric("test_accuracy", "Test Accuracy / %", "Accuracy_mean")
-plot_metric("test_sensitivity", "Test Sensitivity", "Sensitivity_mean")
-plot_metric("test_specificity", "Test Specificity", "Specificity_mean")
+plot_metric("test_sensitivity", "Test Sensitivity / %", "Sensitivity_mean")
+plot_metric("test_specificity", "Test Specificity / %", "Specificity_mean")

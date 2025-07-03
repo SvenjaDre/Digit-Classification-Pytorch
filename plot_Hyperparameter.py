@@ -26,17 +26,19 @@ custom_labels = [
 ]
 
 # Plot
-plt.figure(figsize=(10, 6))
+plt.figure(figsize=(10, 6), constrained_layout=True)
 for spalte, label in zip(val_loss_spalten_1, custom_labels):
     plt.plot(df1["epoch"], df1[spalte], label=label)
 
-plt.xlabel("Epoch")
-plt.ylabel("Validation Loss")
-plt.title("Validation Loss bei der Verwendung verschiedener Hyperparameter")
-plt.legend()
+plt.xlabel("Epoch", fontsize=18)
+plt.ylabel("Validation Loss",fontsize=18)
+#plt.title("Validation Loss bei der Verwendung verschiedener Hyperparameter",fontsize=18)
+plt.legend(fontsize=18)
 plt.grid(True)
-plt.tight_layout()
-plt.savefig("Val_loss_noTu_Tu.pdf")
+plt.xticks(fontsize=18)
+plt.yticks(fontsize=18)
+#plt.tight_layout()
+plt.savefig("tudothesis-main/plots/Val_loss_noTu_Tu.pdf")
 plt.show()
 
 #---- Klassifikation Glioma und Meningioma
@@ -63,15 +65,17 @@ val_loss_spalten_2 = [
 
 
 # Plot
-plt.figure(figsize=(10, 6))
-for spalte, label in zip(val_loss_spalten_2, custom_labels):
-    plt.plot(df2["epoch"], df2[spalte], label=label)
+plt.figure(figsize=(10, 6), constrained_layout=True)
+for spalte, label in zip(val_loss_spalten_1, custom_labels):
+    plt.plot(df1["epoch"], df1[spalte], label=label)
 
-plt.xlabel("Epoch")
-plt.ylabel("Validation Loss")
-plt.title("Validation Loss bei der Verwendung verschiedener Hyperparameter")
-plt.legend()
+plt.xlabel("Epoch", fontsize=18)
+plt.ylabel("Validation Loss",fontsize=18)
+plt.title("Validation Loss bei der Verwendung verschiedener Hyperparameter",fontsize=18)
+plt.legend(fontsize=18)
 plt.grid(True)
-plt.tight_layout()
-plt.savefig("Val_loss_Gli_Men.pdf")
+plt.xticks(fontsize=18)
+plt.yticks(fontsize=18)
+#plt.tight_layout()
+plt.savefig("tudothesis-main/plots/Val_loss_Gli_Men.pdf")
 plt.show()
