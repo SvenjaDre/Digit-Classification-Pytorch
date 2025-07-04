@@ -68,7 +68,6 @@ Mittels des Gradienten $G_y$ werden die Spins in ihrer Phase verschoben.
 Durch die Verschiebung der Frequenz und Phase ist die Ortscodierung möglich und die Aufnahme eines Bildes im k-Raum.
 Durch die Fouriertransformation werden die Informationen in den Ortsraum transformiert.
 Dadurch liefert die MRT Bilder in Schichten, die anschließend zu einem 3D-Bild zusammengesetzt und analysiert werden.~\cite{pabst2013}
-
 \section{Maschinelles Lernen}
 Künstliche Intelligenz (KI) bezeichnet die Modellierung menschlicher Intelligenz durch Maschinen. 
 Das Maschinelle Lernen (ML) ist ein Teilbereich der Künstlichen Intelligenz. Deep Learning stellt 
@@ -131,7 +130,7 @@ Dabei ist das Netzwerk aufgebaut aus Faltungschichten (Convolutional Layers), Po
 Zwischen den Schichten wird, wie bei den Neuronalen Netzwerken eine Aktivierungfunktion verwendet.~\cite{OShea} 
 \begin{figure}[H]
   \centering
-  \includegraphics[scale=0.3]{/nfs/homes/sdreyer/Digit-Classification-Pytorch/tudothesis-main/content/abbildungen/CNN.png}
+  \includegraphics[scale=0.25]{/nfs/homes/sdreyer/Digit-Classification-Pytorch/tudothesis-main/content/abbildungen/CNN.png}
   \caption{Aufbau eines Convolutional Neural Network.~\cite{Mohammed2024}}
   \label{fig:CNN}
 \end{figure}
@@ -173,13 +172,7 @@ Das bedeutet, dass sich nach jeder Berechnung des Skalarproduktes der Kernel um 
 Die Pooling-Layer reduziert die räumliche Dimension. Infolge dessen kommt es auch zur Reduktion der Parameter.~\cite{datascience}
 Dafür wird das sogenannte Max-Pooling verwendet. Dabei wird ein Filter der Größe $2 \times 2$ verwendet, der wie der Kernel, schrittweise über die Feature-Map gelegt wird.
 Für jeden Ausschnitt wird der größte Wert verwendet. Der Rest der Werte wird nicht weiter verwendet.~\cite{Yamashita2018}\\
-%Dies wird in der Abbildung 
-%\begin{figure}[H]
-%  \centering
-%  \includegraphics[scale=0.4]{/nfs/homes/sdreyer/Digit-Classification-Pytorch/tudothesis-main/content/abbildungen/max_pooling.png}
-%  \caption{Eine Beispielhafte Anwendung von Max-Pooling mit einem $2 \times 2$ Filter.~\cite{Yamashita2018}}
-%  \label{fig:CNN}
-%\end{figure}
+
 Die FC-Layer berechnet am Ende die Aktivierung und bestimmt einen Ausgangswert für die Klassifizierung.
 Sie entspricht damit der Art von Output-Layer, die in Kapitel \ref{sec:NN} beschrieben wurde.
 
@@ -228,6 +221,4 @@ Dies wird in der Abbildung \ref{fig:overfitting} graphisch dargestellt.
   \caption{Überprüfung auf Overfitting durch das Kontrollieren des Trainings und validation loss.~\cite{Yamashita2018}}
   \label{fig:overfitting}
 \end{figure}
-%Möglichkeiten um Overfitting zu vermeiden sind zum einen, das mehr Daten verwendet werden. 
-%Zudem kann ein Dropout implementiert werden. Der Dropout schaltet während des Trainings zufällige Neuronen aus.
-%Dadurch stützt sich das Netzwerk nicht auf Spezifische Neuronen 
+

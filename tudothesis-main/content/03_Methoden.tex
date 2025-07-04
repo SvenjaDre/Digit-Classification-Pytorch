@@ -85,9 +85,9 @@ Lernrate, Batch-Größe und den Dropout getestet.
 Mittels Rastersuche werden die verschiedene Kombinationen der Parameter für das Training des Netzwerkes verwendet. 
 Das Training wird jeweils maximal über 1000 Epochen ausgeführt.
 Die getesteten Werte, werden in der Tabelle \ref{tab:Hypp} gezeigt.
-
 \begin{table}[htbp]
     \centering
+    {\small
     \begin{tabular}{c c}
         \toprule
         Hyperparameter     & Werte \\
@@ -96,7 +96,7 @@ Die getesteten Werte, werden in der Tabelle \ref{tab:Hypp} gezeigt.
         Dropout        & 0.2, 0.3, 0.4, 0.5 0.55   \\
         Lernrate       & 0.0001, 0.0005, 0.001, 0.005, 0.1   \\
         \bottomrule
-  \end{tabular}
+  \end{tabular}}
   \caption{Die verschiedenen Hyperparameter mit ihren verwendeten Werten.}
   \label{tab:Hypp}
 \end{table}
@@ -133,7 +133,13 @@ Die Reduktion der Daten erfolgt in $\qty{10}{\%}$ Schritten.
 
 Aufgrund der Reduktion einer Klasse, entsteht ein unausgeglichener Datensatz.
 Um dies auszugleichen, wird eine Gewichtung in die Verlustfunktion hinzugefügt.
+Die Gewichtung der einzelnen Klassen $w_c$ über 
+\begin{equation}
+  w_c = \frac{1/n_c}{\sum_{k=1}^{c} 1/n_k}
+\end{equation}
+berechnet. Dabei beschreibt $n_c$ die Anzahl an Training samples der Klasse $c$.
 Somit werden die Klassen gewichtet und die reduzierte Klasse wird stärker in der Loss-Funktion berücksichtigt.~\cite{pytorchCrossEntropy}
+
 Das Trainieren und Testen des Modells wird jeweils zehnmal durchgeführt und anschließend der Mittelwert und die Standardabweichung der
 Metriken berechnet.
 

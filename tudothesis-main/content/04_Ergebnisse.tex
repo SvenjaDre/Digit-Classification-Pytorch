@@ -44,16 +44,19 @@ Die Werte für Accuracy, Sensitivity und Specificity liegen eng bei einander und
 Auf Grund dessen, das die Validierungsergebnisse vergleichbar sind, werden für die weiteren Trainingsdurchläufen die Hyperparameter des Runs 1 verwendet. 
 
 \subsection{Reduzierung der Trainingsdaten}
-Das Netzwerk wird mit unterschiedlichen Datensatzgrößen trainiert und auf einen Testdatensatz angewendet, bei dem die Accuracy, Sensitivity und Specificity berechnet wird.
-Da beobachtet wurde, dass die Werte der Metriken bei 2723 gesunken sind, wurde zusätzlich das Netzwerk mit 2553, 2893 und 3234 
+Das Netzwerk wird in diesem Abschnitt mit unterschiedlichen Datensatzgrößen trainiert und anschließend auf einen Testdatensatz angewendet.
+Dabei wird die Accuracy, Sensitivity und Specificity zur Leistungsbeurteilung des Modells berechnet.
+Diese Ergebnisse sind in Abbildung \ref{fig:reduzierung_trainingsdaten} sowie in Tabelle \ref{tab:reduzierung_trainingsdaten} dargestellt.
+Da beobachtet wird, dass die Werte der Metriken bei 2723 gesunken sind, wurde zusätzlich das Netzwerk mit 2553, 2893 und 3234 
 Training samples trainiert.
-Die Mittelwerte und Standardabweichung der Metriken wurden in Abhängigkeit von den Training samples dargestellt.
-Diese Ergebnisse sind in Abbildung \ref{fig:reduzierung_trainingsdaten} sowie Tabelle \ref{tab:reduzierung_trainingsdaten} zusammengefasst.
-Es ist zu erkennen, dass die drei Metriken einen ähnlichen Verlauf aufweisen.
+Es zeigt sich, dass die drei Metriken einen ähnlichen Verlauf aufweisen.
 Die niedrigsten Werte werden bei 340 Training samples aufgenommen und steigen dann kontinuierlich mit der sample Anzahl an.
 Ab 2042 verwendete samples zeigen die Werte der Accuracy, Sensitivity und Specificity nur noch geringe Änderungen.
-Dabei schwankt die Accuracy im Bereich zwischen 2042 und 3404 Training samples zwischen $\qty{93.1157}{\%}$ und $\qty{96.2611}{\%}$. 
-Die Werte der Sensitivity variieren in diesem Bereich zwischen 0,9147 und 0,9462 und die der Specificity um \SI{0,9741}{} und \SI{0,9872}{}.
+Dabei schwankt die Accuracy im Bereich zwischen 2042 und 3404 Training samples zwischen \SI{93.12}{\%} und \qty{96.26}{\%}. 
+Die Werte der Sensitivity variieren in diesem Bereich zwischen \SI{91.47}{\%} und \SI{94,62}{\%} und die der Specificity um \SI{97.41}{\%} und \SI{98.72}{\%}.
+Es lässt sich somit feststellen, dass sich ab einer Trainingsdatengröße von 2042 samples eine Sättigung einstellt und dem Netzwerk genügend Daten zu Verfügung steht um zuverlässige Voraussagen zu treffen. 
+Die Ergebnisse belegen, dass mit steigender Datensatzgröße eine Leistungssteigerung einhergeht.
+Da jedoch die verfügbare Datenmenge in der Praxis begrenzt ist, wird im folgenden Abschnitt untersucht, inwiefern sich die Leistung des Modells durch die Verwendung von Augmentation verbessern lässt. 
 \begin{figure}[H]
   \centering
   \begin{subfigure}[b]{0.48\textwidth}
@@ -102,14 +105,23 @@ Die Werte der Sensitivity variieren in diesem Bereich zwischen 0,9147 und 0,9462
 \end{table}
 
 \subsection{Augmentation}
-Das Netzwerk wurde für verschiedene Datensatzgrößen trainiert, wobei beim Training Augmentation angewendet wurde.
-Die Accuracy, Sensitivity und Specificity werden in Abhängigkeit der Training samples in Abbildung \ref{fig:augmentation_tu} abgebildet und
-die dargestellten Werte werden in der Tabelle \ref{tab:augm-tunotu} aufgezeigt.
-Von 340 bis 2042 Samples, steigt die Accuracy und die Specificity konstant an und geht anschließend in Plateau über.
-Die Accuracy variieren innerhalb des Plateaus zwischen \SI{94.2532}{\percent} und \SI{96.4293}{\percent}. 
-Die Specificity schwankt ab 2042 Training samples zwischen \SI{0.9234}{} und \SI{0.9475}{}.
-Die Sensitivity steigt nur bis zu 1021 samples kontinuierlich an und bleibt bis zu 1702 Samples konstant bei ungefähr \SI{0,89}{}.
-Danach steigt sie wieder an und schwankt, von 2042 bis 3404 Training samples, zwischen \SI{0.9234}{} und \SI{0.9475}{}. 
+Um den Einfluss der Augmentation auf die Leistung des Netzwerkes zu untersuchen, wird das Netzwerk für verschiedene Datensatzgrößen trainiert.
+Dabei wird zufällig das Originalbild oder ein Bild verwendet, welches um seine horizontale oder vertikale Achse gespiegelt wird. 
+Die Ergebnisse der Accuracy, Sensitivity und Specificity werden in Abhängigkeit der Training samples in Abbildung \ref{fig:augmentation_tu} dargestellt.
+Die dargestellten Werte werden in der Tabelle \ref{tab:augm-tunotu} aufgeführt.
+Zwischen 340 bis 2042 Samples, steigen die Accuracy und die Specificity konstant an und gehen anschließend in ein Plateau über.
+Innerhalb des Plateaus schwankt die Accuracy zwischen \SI{94.25}{\percent} und \SI{96.43}{\percent}, während die Specificity Werte zwischen \SI{92.34}{\percent} und \SI{94.75}{\percent} annimmt.
+Der Verlauf der Sensitivity unterscheidet sich leicht.
+Sie steigt zunächst bis zu 1021 samples an und bleibt anschließend bis 1702 Samples konstant bei rund \SI{89}{\%}.
+Danach steigt sie erneut an und variiert, von 2042 bis 3404 Training samples, zwischen \SI{92.34}{\%} und \SI{94.75}{\%}.
+
+Diese Ergebnisse zeigen, dass die Augmentation bei kleineren und mittleren Datensatzgrößen nur einen geringen Einfluss auf die Modellleistung hat.
+Bei der Verwendung von mittleren Datensatzgrößen bleibt die Sensitivity nahezu unverändert und die Accuracy und Specificity verbessern sich nur gering.
+Erst bei größeren Datenmengen ist eine Verbesserung der Metriken zu erkennen. 
+Die Ergebnisse zeigen, dass die Augmentation ab einer Anzahl von 2042 Training samples einen Einfluss auf die Leistung besitzt.
+Somit hilft die Variation der Bilder das Modell etwas robuster gegenüber Veränderungen zu machen und zuverlässige Vorhersagen zu treffen.
+Bei kleineren Datenmenge hat dies kaum einen Einfluss um die Leistung zu erhöhen. 
+
 \begin{figure}[H]
   \centering
   \begin{subfigure}[b]{0.48\textwidth}
@@ -158,35 +170,22 @@ Für die Untersuchung der Netzwerkleistung bei Reduzierung einer Klasse, wurde d
 Der Verlauf der drei Metriken, sowie die Werte werden in der Abbildung \ref{fig:reduzierung_tumorsamples} und in der Tabelle \ref{tab:red_tu} dargestellt.
 Die Accuracy steigt mit zunehmender Anzahl an samples bis zu maximal \SI{96.7458}{\percent} für 1702 Training samples.
 Bei 1276 und 2128 samples sinkt sie auf ungefähr \SI{92}{\percent} ab. 
-Die Sensitivity bleibt von 212 bis 851 Tumor samples konstant bei ca. \SI{0.9}{}.
-Danach steigt sie leicht an und erreicht bei 1915 verwendeten Bildern einen Wert von \SI{0.9515}{}.
+Die Sensitivity bleibt von 212 bis 851 Tumor samples konstant bei rund \SI{90}{\%}.
+Danach steigt sie leicht an und erreicht bei 1915 verwendeten Bildern einen Wert von \SI{95.15}{\%}.
 Auch hier sinkt bei der Verwendung aller Tumor Bilder die Sensitivity wieder ab.
-Die Specificity steigt mit höherer sample Anzahl und konvergiert gegen \SI{1.0}.
+Die Specificity steigt mit höherer sample Anzahl und konvergiert gegen rund \SI{100}{\%}.
 Bei 212 und 1276 Tumor samples tritt eine hohe Standardabweichung für die Specificity und Accuracy auf.
-Zusätzlich kommt es auch bei 2128, für die Accuracy und für die Sensitivity, zu einer große Abweichung
-Bei den Klassengrößen 
+Zusätzlich kommt es auch bei 2128, für die Accuracy und für die Sensitivity, zu einer große Abweichung. 
 In Runs bei denen 212 und 1276 Tumor samples verwendet wurden, lag die Specificity, 
 sowie bei 2128 Tumor samples die Sensitivity bei 0.
-\begin{figure}[H]
-  \centering
-  \begin{subfigure}[b]{0.48\textwidth}
-    \includegraphics[width=\textwidth]{plots/neu Reduzierung-Tu + Balance_Accuracy_mean.pdf}
-    \caption{Accuracy}
-    \label{fig:reduzierung_tu_accuracy}
-  \end{subfigure}
-  \begin{subfigure}[b]{0.48\textwidth}
-    \includegraphics[width=\textwidth]{plots/neu Reduzierung-Tu + Balance_Sensitivity_mean.pdf}
-    \caption{Sensitivity}
-    \label{fig:reduzierung_tu_sensitivity}
-  \end{subfigure}
-  \begin{subfigure}[b]{0.48\textwidth}
-    \includegraphics[width=\textwidth]{plots/neu Reduzierung-Tu + Balance_Specificity_mean.pdf}
-    \caption{Specificity}
-    \label{fig:reduzierung_tu_specificity}
-  \end{subfigure}
-  \caption{Metriken bei Reduktion der Tumor samples.}
-  \label{fig:reduzierung_tumorsamples}
-\end{figure}
+Dies kommt dadurch, dass anstelle des Globalen Minimum ein Lokales Minimum der Verlustfunktion ermittelt wurde.
+In diesem Lokalen Minimum wurde, bei 212 und 1276 Training samples, alle Testdaten als Tumor Bilder Vorhergesagt, wodurch die Specificity \SI{0}{\%} beträgt.
+Bei 2128 Training samples beträgt die Sensitivity \SI{0}{\%}, da aufgrund des Lokalen Minimums alle Daten als no Tumor klassifiziert werden.
+Damit kommt es zu einer geringeren Accuracy und im Mittel ergibt sich dann die großen Standardabweichungen.
+Die Untersuchung zeigt, dass durch das Reduzieren der Tumor Klasse es zu einem Leistungsabfall führen kann.
+Ab einer Anzahl von 1489 Tumor samples erreicht das Modell eine stabile und zuverlässige Leistung.
+Die Anzahl an verwendeten no Tumor Samples im Vergleich beträgt im Training 1595. 
+Daraus lässt sich schließen, dass eine möglichst ausgeglichene Klassenverteilung notwendig ist, um eine hohe Leistung zu erreichen.
 \begin{table}[H]
     \centering
      {\small
@@ -209,13 +208,36 @@ sowie bei 2128 Tumor samples die Sensitivity bei 0.
   \caption{Mittelwert und Standardabweichung der Metriken bei der Reduzierung der Tumor Klasse.}
   \label{tab:red_tu}
 \end{table}
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}[b]{0.48\textwidth}
+    \includegraphics[width=\textwidth]{plots/neu Reduzierung-Tu + Balance_Accuracy_mean.pdf}
+    \caption{Accuracy}
+    \label{fig:reduzierung_tu_accuracy}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.48\textwidth}
+    \includegraphics[width=\textwidth]{plots/neu Reduzierung-Tu + Balance_Sensitivity_mean.pdf}
+    \caption{Sensitivity}
+    \label{fig:reduzierung_tu_sensitivity}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.48\textwidth}
+    \includegraphics[width=\textwidth]{plots/neu Reduzierung-Tu + Balance_Specificity_mean.pdf}
+    \caption{Specificity}
+    \label{fig:reduzierung_tu_specificity}
+  \end{subfigure}
+  \caption{Metriken bei Reduktion der Tumor samples.}
+  \label{fig:reduzierung_tumorsamples}
+\end{figure}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Klassifizierung zwischen Glioma und Meningioma}
+Für die Untersuchung der Leistung des Netzwerkes für eine Klassifikation zwischen zwei Tumorarten werden die Untersuchungen analog zur Untersuchung 
+zwischen Tumor und no Tumor durchgeführt
 Für die Klassifizierung zwischen Glioma und Meningioma werden zu begin die Hyperparameter ermittelt, mit denen die nachfolgenden
 Trainingsdurchläufe verwendet werden. 
 Die Erfolg analog zur Ermittlung der Hyperparameter der vorherigen Klassifikation.
 \subsection{Hyperparameter}
-Für die Ermittlung der Hyperparameter werden die fünf Runs mit den niedrigsten Validation loss betrachtet.
+Für die Ermittlung der Hyperparameter werden die fünf Runs mit den niedrigsten Validation loss, aus allen möglichen Kombination der Wertebereiche der Hyperparameter, betrachtet.
 Der Verlauf wird in der Abbildung \ref{fig:val_loss gli-men} dargestellt.
 Die dazugehörigen Parameter und die Accuracy, Sensitivity und Specificity des Validierung Datensatzes werden in der Tabelle \ref{tab:hyperp-gli men} aufgelistet.
 \begin{figure}[H]
@@ -239,22 +261,32 @@ Die dazugehörigen Parameter und die Accuracy, Sensitivity und Specificity des V
             \bottomrule
         \end{tabular}
     }
-  \caption{Die fünf Runs mit dem niedrigsten validation loss sowie deren verwendete Hyperparameter und aufgezeichnete Metriken.}
+  \caption{Die fünf Runs mit dem niedrigsten validation loss sowie deren verwendete Hyperparameter und aufgezeichneten Metriken.}
   \label{tab:hyperp-gli men}
 \end{table}
+Die Accuracy beträgt in allen fünf Runs zwischen \SI{92}{\%} und \SI{93}{\%}. Die Schwankungen zwischen ihnen ist somit nur geringfügig.
+Die Werte der Sensitivity schwanken zwischen ungefähr \SI{92}{\%} und rund \SI{97}{\%}.
+Und auch die Specificity zeigt eine große Schwankung, welche zwischen \SI{89}{\%} und \SI{95}{\%} liegt.
 Der erste Run besitzt zwar den niedrigsten validation loss, jedoch auch die niedrigste Accuracy und Specificity.
 Der höchste Wert der Accuracy und Specificity tritt bei Run 3 auf
 Aufgrund dessen werden in den folgenden Trainingsdurchläufen die Hyperparameter von Run 3 verwendet.
+
 \subsection{Reduzierung der Trainingsdaten}
+Zur Untersuchung des Einflusses der Datensatzgröße auf die Modellleistung wurde das Netzwerk mit unterschiedlich großen Trainingsmengen trainiert. 
+Bewertet wurde die Leistung anhand der Metriken Accuracy, Sensitivity und Specificity.
 In Abbildung \ref{fig:gli-men-reduktion} ist der Verlauf der Accuracy, Sensitivity und Specificity bei der Reduktion der Training samples dargestellt.
-Die dazu gehörigen Werte werden in der Tabelle \ref{tab:Red-gli-men} dargestellt.
-Die drei Metriken steigen, mit zunehmender Anzahl an samples. 
+Die dazu gehörigen Werte werden in der Tabelle \ref{tab:Red-gli-men} aufgelistet.
+Alle drei Metriken zeigen, dass sie mit zunehmender Anzahl an Training samples steigt. 
 Bei 851 Training samples sinken die Werte etwas, bevor sie anschließend wieder ansteigen.
-Die Accuracy erhöht sich von \SI{76.4191}{\percent}, bei 231 Training samples auf \SI{92.3102}{\percent} bei 2128 Training samples.
-Die Sensitivity steigt bis 1702 Training samples auf \SI{0.9186}{} an und bleibt anschließend weitgehend konstant zwischen \SI{0.9114}{} und \SI{0.9255}{}.
+Die Accuracy erhöht sich von \SI{76.42}{\percent}, bei 231 Training samples auf \SI{92.31}{\percent} bei 2128 Training samples.
+Die Sensitivity steigt bis 1702 Training samples auf \SI{91.86}{\%} an und bleibt anschließend weitgehend konstant zwischen \SI{91.14}{\%} und \SI{92.55}{\%}.
 Die Specificity nimmt bis 1064 Training samples zu und bleibt bis 1277 konstant. 
 Danach sinkt diese kurzzeitig etwas und steigt anschließend wieder an. 
-Ab 1915 Training samples bleibt die Specificity stabil bei ungefähr \SI{0.92}{}.
+Ab 1915 Training samples bleibt die Specificity stabil bei ungefähr \SI{92}{\%}.
+Für die Sensitivity deutet sich ab 1702 und bei der Specificity ab 1915 Training samples der Anfang einer Sättigung an.
+Die Ergebnisse zeigen, dass mit zunehmender Anzahl an Training samples die Leistung zu nimmt.
+Eine eindeutige Sättigung stellt sich nicht ein, womit nicht genau gesagt werden kann ob die Datenmenge ausreicht für die optimale Leistung. 
+Da die Datenmenge begrenzt ist, wird im folgenden Abschnitt untersucht, inwiefern die Verwendung von Augmentation einen Einfluss auf die Modellleistung besitzt. 
 \begin{figure}[H]
   \centering
   \begin{subfigure}[b]{0.48\textwidth}
@@ -300,19 +332,24 @@ Ab 1915 Training samples bleibt die Specificity stabil bei ungefähr \SI{0.92}{}
   \caption{Mittelwert und Standardabweichung für die Reduzierung der Training samples.}
   \label{tab:Red-gli-men}
 \end{table}
-\vspace{-3.5em}
+%\vspace{-3.5em}
 \subsection{Augmentation}
 %\vspace{-0.5em}
 Unter Verwendung von Augmentation wurden die Training samples reduziert.
 Der Verlauf der Metriken ist in der Abbildung \ref{fig:gli-men-augm} dargestellt,
 die entsprechenden Werte sind in der Tabelle \ref{tab:gli-men-augm} zu finden.
-Die Accuracy steigt kontinuierlich mit der verwendeten Sample Anzahl.
-Zu beginn liegt sie bei \SI{75.8746}{\percent} für 212 samples. 
-Bei der Nutzung aller verfügbaren Trainingsdaten erreicht \SI{92.1947}{\percent}.
-Die Sensitivity steigt zunächst bis zu 425 Bildern an, sinkt anschließend etwas bei 638 Samples, nimmt danach jedoch wieder zu.
-Ab 1702 samples bleibt sie konstant bei \SI{0.9101}{}, bevor sie bei 2128 Training samples auf \SI{0.9261} ansteigt. 
+Die Accuracy steigt mit zunehmender Anzahl an Training samples an.
+Zu beginn liegt sie bei \SI{75.87}{\percent} für 212 samples. 
+Bei der Nutzung aller verfügbaren Trainingsdaten erreicht sie einen Wert von \SI{92.19}{\percent}.
+Die Sensitivity nimmt zunächst bis 425 Bildern zu, sinkt anschließend etwas bei 638 Samples, steigt danach jedoch wieder an.
+Ab 1702 samples bleibt sie weitgehend konstant bei \SI{91.01}{\%}, bevor sie bei 2128 Training samples auf \SI{92.61} ansteigt. 
 Der Anstieg der Specificity erfolgt konstant bis 1064 Training sample und flacht anschließend ab.
-Bei 2128 Samples wird eine Specificity von \SI{0.9177}{} erreicht.
+Bei 2128 Samples wird eine Specificity von \SI{91.77}{\%} erreicht.
+
+Die Verwendung von Augmentation hat für die Accuracy und Sensitivity kaum einen Einfluss, da die Werte kaum eine Verbesserung zeigen.
+Für die Specificity kommt es in Bereich zwischen 1064 und 1702 Training samples ene leichten Verbesserung, sowie stabileren Verlauf zu erkennen.
+Es lässt sich somit feststellen, dass die hier eingesetzte Augmentation bei kleineren Trainingsdatensätzen keine signifikante Leistungsverbesserung bewirkt. 
+Der Effekt ist nur in einem mittleren Bereich der Datensatzgröße erkennbar und betrifft die Stabilität der Specificity.
 \begin{table}[H]
     \centering
     {\small
@@ -358,18 +395,25 @@ Bei 2128 Samples wird eine Specificity von \SI{0.9177}{} erreicht.
   \caption{Verlauf der Metriken bei Reduzierung der Training samples unter Verwendung von Augmentation für die Klassifikation zwischen Glioma und Meningioma.}
   \label{fig:gli-men-augm}
 \end{figure}
+
 \subsection{Reduzierung der Glioma sample}
-Das Netzwerk wurde mit einer variierenden Anzahl an Glioma und konstanten Anzahl an Meningioma samples trainiert.
+Um den Einfluss der Modellleistung bei Reduzierung einer Klasse zu untersuchen, wurde die Anzahl an Glioma samples schrittweise reduziert, während die Meningioma samples konstant gehalten werden.
+Für die Klassifizierung wurde die Meningioma Klasse als positiv und die Glioma Klasse als negativ definiert. 
+Zur Beurteilung werden die Accuracy, Sensitivity und die Specificity berechnet.
 Der Verlauf der Metriken ist in der Abbildung \ref{fig:gli-men-gliored} dargestellt.
 In der Tabelle \ref{tab:red-gli} sind die dargestellten Mittelwerte und Standardabweichungen aufgeführt. 
-Es ist zu erkennen, dass die Accuracy und die Specificity zunächst bis zu 317 Glioma sample ansteigen und anschließend etwas absteigen.
-Danach nehmen beide Werte erneut zu.
-Die Accuracy wird ab 739 Glioma samples nahezu konstant bei etwa \SI{91}{\percent} und steigt bei 1057 Sample auf \SI{93.7459}{\percent} an.
-Die Specificity schwankt im Bereich zwischen 739 und 951 Glioma samples zwischen \SI{0.8967}{} \SI{0.9177}{}.
-Bei Verwendung aller verfügbaren Glioma samples erreicht sie einen Wert von \SI{0.9307}{}.
-Die Sensitivity beträgt bei nur 105 verwendeten Glioma samples einen Wert von \SI{0.8056}{}.
-Anschließende steigt sie deutlich an und schwankt im Bereich zwischen 211 und 951 Glioma samples zwischen \SI{0.8912}{} und \SI{0.9193}{}. 
-Zum Schluss steigt sie bei 1057 Beispielen weiter auf \SI{0.9441}{}.
+Es ist zu erkennen, dass die Accuracy und die Specificity zunächst bis zu 317 Glioma sample ansteigen und anschließend etwas leicht abfallen,
+bevor sie mit zunehmender Anzahl erneut zunehmen. 
+Die Accuracy wird ab 739 Glioma samples nahezu konstant bei etwa \SI{91}{\percent} und steigt bei 1057 Sample auf \SI{93.75}{\percent} an.
+Die Specificity schwankt im Bereich zwischen 739 und 951 Glioma samples zwischen \SI{89.67}{\%} \SI{91.77}{\%}.
+Bei Verwendung aller verfügbaren Glioma samples erreicht sie einen Wert von \SI{93.07}{\%}.
+Die Sensitivity beträgt bei nur 105 verwendeten Glioma samples einen Wert von \SI{80.56}{\%}.
+Anschließende steigt sie deutlich an und schwankt im Bereich zwischen 211 und 951 Glioma samples zwischen \SI{89.12}{\%} und \SI{91.93}{\%}. 
+Zum Schluss steigt sie bei 1057 Beispielen weiter auf \SI{94.41}{\%}.
+Die Ergebnisse zeigen, dass mit geringerer Anzahl an Glioma sample zu einem Leistungsabfall kommt.
+Die Sensitivity gibt die Fähigkeit des Modells an die Positive Klasse, in diesem Fall die Meningioma Klasse, zu erkenne.
+Da diese in der Untersuchung konstant gehalten werden, kann das Modell zwischen 211 und 951 Glioma samples eine relative konstante Leistung erbringen diese zu erkennen.
+Mit einer höheren Anzahl an Glioma sample steigt diese jedoch weiter an und auch die Specificity, also die Fähigkeit die Glioma Fälle zu erkennen, steigt an. 
 \begin{figure}[H]
   \centering
   \begin{subfigure}[b]{0.48\textwidth}
@@ -381,7 +425,7 @@ Zum Schluss steigt sie bei 1057 Beispielen weiter auf \SI{0.9441}{}.
   \begin{subfigure}[b]{0.48\textwidth}
     \centering
     \includegraphics[width=\textwidth]{plots/Reduzierung-Gli + Balnce_Sensitivity_mean.pdf}
-    \caption{Sensitivität}
+    \caption{Sensitivity}
     \label{fig:gli-red-sens}
   \end{subfigure}
   \begin{subfigure}[b]{0.48\textwidth}
