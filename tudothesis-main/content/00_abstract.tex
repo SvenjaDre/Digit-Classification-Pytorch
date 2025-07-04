@@ -1,11 +1,28 @@
 \thispagestyle{plain}
 
 \section*{Kurzfassung}
-Hier steht eine Kurzfassung der Arbeit in deutscher Sprache inklusive der Zusammenfassung der
-Ergebnisse.
-Zusammen mit der englischen Zusammenfassung muss sie auf diese Seite passen.
+In dieser Arbeit wird die Leistungsfähigkeit von Klassifizierungsalgorithmen bei der Erkennung von Hirntumoren bei unterschiedlicher Datensatzgrößen untersucht.
+Zunächst werden geeignete Hyperparameter für ein Convolutional Neural Networks ermittelt, indem verschiedene Wertebereiche getestet werden.
+Anschließend wird die Anzahl der Trainingsdaten schrittweise reduziert, wobei die Modellleistung anhand von Accuracy, Sensitivity und Specificity bewertet wird.
+Die Untersuchung erfolgt für zwei Klassifikationen. 
+Einmal die Unterscheidung zwischen Tumor und no Tumor und einmal zwischen Glioma und Meningioma.
+Die Ergebnisse zeigen, dass für die Klassifikation von Tumor und no Tumor mindestens 2042 Training samples für eine stabile Leistung.
+Für die Unterscheidung Glioma und Meningioma konnte keine eindeutige Sättigung festgestellt werden, jedoch deutet sich eine stabile Leistung bei 1915 Training samples an.
+Der Einfluss von Datenaugmentation wird untersucht und zeigt eine geringe Leistungssteigerung für sie Tumor und no Tumor Unterscheidung.
+Für die Differenzierung zwischen den zwei Tumorarten wurde keine signifikante Leistungsverbesserung festgestellt.
+Zudem wurde der Einfluss auf die Leistung untersucht bei der Reduzierung einer Klasse.
+Die Reduktion einer Klasse zeigt eine verschlechterte Leistung, wodurch sich sagen lässt das eine relative ausgeglichener Datensatz für eine stabile Leistung ist. 
 
 \section*{Abstract}
 \begin{foreignlanguage}{english}
-The abstract is a short summary of the thesis in English, together with the German summary it has to fit on this page.
+This thesis investigates the performance of classification algorithms for brain tumor detection with varying dataset sizes.
+First, suitable hyperparameters for a Convolutional neural network (CNN) are determined by testing different parameter ranges.
+Then, the number of training samples is gradually reduced and the performance is evaluated by calculating the accuracy, sensitivity, and specificity.
+The study covers two classification tasks. The first is distinguishing between tumor and no tumor, and the second between glioma and meningioma.
+The results show that at least 2042 training samples are needed for stable performance in the tumor and no tumor classification.
+For the differentiation between glioma and meningioma,was no clear saturation observed, but stable performance appears to start around 1915 training samples.
+The effect of data augmentation was also examined and its showing a slight improvement in performance for the tumor ans no tumor classification.
+No significant performance gain was found for the differentiation between the two tumor types.
+Furthermore, the impact of class imbalance due to reduction of one class was examined.
+Reducing one class led to decreased model performance, indicating that a relatively balanced dataset is important for reliable performance.
 \end{foreignlanguage}

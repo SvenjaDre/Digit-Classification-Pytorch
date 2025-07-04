@@ -13,15 +13,15 @@ Um die optimalen Hyperparameter zu bestimmen, wurde anhand der in Tabelle \ref{t
 Dadurch wurden alle möglichen Kombinationen getestet.
 Anschließend wurden die fünf Trainingsdurchläufe (Runs) mit dem niedrigsten Validation Loss betrachtet.
 Der Verlauf des Validation Loss dieser fünf besten Runs ist in Abbildung \ref{fig:val_loss notu-tu} dargestellt.
+%\vspace{-2em}
+Die für die fünf Runs verwendeten Hyperparameter, sowie die ermittelten Werte für Accuracy, Sensitivity und Specificity auf den Validierungsdaten,
+sind in der Tabelle \ref{tab:hyperp notu-tu} dargestellt.
 \begin{figure}[H]
   \centering
   \includegraphics[scale=0.3]{plots/Val_loss_noTu_Tu.pdf}
   \caption{Verlauf des validation loss bei der Verwendung verschiedener Hyperparameter.}
   \label{fig:val_loss notu-tu}
 \end{figure}
-\vspace{-2em}
-Die für die fünf Runs verwendeten Hyperparameter, sowie die ermittelten Werte für Accuracy, Sensitivity und Specificity auf den Validierungsdaten,
-sind in der Tabelle \ref{tab:hyperp notu-tu} dargestellt.
 \begin{table}[H]
     \centering
     \resizebox{\textwidth}{!}{%
@@ -79,31 +79,24 @@ Da jedoch die verfügbare Datenmenge in der Praxis begrenzt ist, wird im folgend
 \end{figure}
 \begin{table}[H]
     \centering
-    {\small
-        \begin{tabular}{cccc}
+    \resizebox{\textwidth}{!}{%
+        \begin{tabular}{cccc|cccc}
             \toprule
-            Training sample & Accuracy/$\%$ & Sensitivity/$\%$ & Specificity/$\%$\\
+            Training sample & Accuracy/$\%$ & Sensitivity/$\%$ & Specificity/$\%$ & Training sample & Accuracy/$\%$ & Sensitivity/$\%$ & Specificity/$\%$\\
             \midrule
-            340  & $86.21 \pm 0.44$ & $86.06 \pm 1.37 $ & $86.44 \pm 2.49$\\
-            681  & $87.99 \pm 1.31$ & $87.54 \pm 2.29 $ & $88.67 \pm 3.29$\\
-            1021 & $90.22 \pm 0.58$ & $88.60 \pm 1.01 $ & $92.64 \pm 1.80$\\
-            1362 & $92.71 \pm 1.31$ & $91.14 \pm 1.83 $ & $95.06 \pm 1.86$\\
-            1702 & $92.70 \pm 0.35$ & $90.28 \pm 0.78 $ & $96.32 \pm 0.68$\\
-            2042 & $94.85 \pm 1.03$ & $93.14 \pm 1.34 $ & $97.41 \pm 1.40$\\
-            2383 & $94.45 \pm 0.85$ & $92.94 \pm 1.66 $ & $96.72 \pm 0.56$\\
-            2553 & $94.88 \pm 1.62$ & $93.80 \pm 1.75 $ & $96.49 \pm 1.96$\\
-            2723 & $93.12 \pm 1.12$ & $91.47 \pm 1.81 $ & $95.58 \pm 2.37$\\
-            2893 & $95.42 \pm 1.54$ & $94.03 \pm 2.30 $ & $97.51 \pm 0.80$\\
-            3064 & $94.75 \pm 1.55$ & $93.27 \pm 2.08 $ & $96.96 \pm 1.02$\\
-            3234 & $94.61 \pm 1.11$ & $92.23 \pm 1.90 $ & $98.17 \pm 1.08$\\
-            3404 & $96.26 \pm 1.39$ & $94.62 \pm 1.67 $ & $98.72 \pm 1.28$\\ 
+            340  & $86.21 \pm 0.44$ & $86.06 \pm 1.37 $ & $86.44 \pm 2.49$ & 2553 & $94.88 \pm 1.62$ & $93.80 \pm 1.75 $ & $96.49 \pm 1.96$ \\
+            681  & $87.99 \pm 1.31$ & $87.54 \pm 2.29 $ & $88.67 \pm 3.29$ & 2723 & $93.12 \pm 1.12$ & $91.47 \pm 1.81 $ & $95.58 \pm 2.37$ \\ 
+            1021 & $90.22 \pm 0.58$ & $88.60 \pm 1.01 $ & $92.64 \pm 1.80$ & 2893 & $95.42 \pm 1.54$ & $94.03 \pm 2.30 $ & $97.51 \pm 0.80$ \\
+            1362 & $92.71 \pm 1.31$ & $91.14 \pm 1.83 $ & $95.06 \pm 1.86$ & 3064 & $94.75 \pm 1.55$ & $93.27 \pm 2.08 $ & $96.96 \pm 1.02$ \\ 
+            1702 & $92.70 \pm 0.35$ & $90.28 \pm 0.78 $ & $96.32 \pm 0.68$ & 3234 & $94.61 \pm 1.11$ & $92.23 \pm 1.90 $ & $98.17 \pm 1.08$ \\
+            2042 & $94.85 \pm 1.03$ & $93.14 \pm 1.34 $ & $97.41 \pm 1.40$ & 3404 & $96.26 \pm 1.39$ & $94.62 \pm 1.67 $ & $98.72 \pm 1.28$ \\ 
+            2383 & $94.45 \pm 0.85$ & $92.94 \pm 1.66 $ & $96.72 \pm 0.56$ &      &                  &                   &                  \\
             \bottomrule
         \end{tabular}
     }
   \caption{Mittelwert und Standardabweichung der Metriken bei der Reduzierung der Training samples.}
   \label{tab:reduzierung_trainingsdaten}
 \end{table}
-
 \subsection{Augmentation}
 Um den Einfluss der Augmentation auf die Leistung des Netzwerkes zu untersuchen, wird das Netzwerk für verschiedene Datensatzgrößen trainiert.
 Dabei wird zufällig das Originalbild oder ein Bild verwendet, welches um seine horizontale oder vertikale Achse gespiegelt wird. 
@@ -113,15 +106,32 @@ Zwischen 340 bis 2042 Samples, steigen die Accuracy und die Specificity konstant
 Innerhalb des Plateaus schwankt die Accuracy zwischen \SI{94.25}{\percent} und \SI{96.43}{\percent}, während die Specificity Werte zwischen \SI{92.34}{\percent} und \SI{94.75}{\percent} annimmt.
 Der Verlauf der Sensitivity unterscheidet sich leicht.
 Sie steigt zunächst bis zu 1021 samples an und bleibt anschließend bis 1702 Samples konstant bei rund \SI{89}{\%}.
-Danach steigt sie erneut an und variiert, von 2042 bis 3404 Training samples, zwischen \SI{92.34}{\%} und \SI{94.75}{\%}.
-
+Danach steigt sie erneut an und variiert, von 2042 bis 3404 Training samples, zwischen \SI{92.34}{\%} und \SI{94.75}{\%}.\\
 Diese Ergebnisse zeigen, dass die Augmentation bei kleineren und mittleren Datensatzgrößen nur einen geringen Einfluss auf die Modellleistung hat.
 Bei der Verwendung von mittleren Datensatzgrößen bleibt die Sensitivity nahezu unverändert und die Accuracy und Specificity verbessern sich nur gering.
 Erst bei größeren Datenmengen ist eine Verbesserung der Metriken zu erkennen. 
-Die Ergebnisse zeigen, dass die Augmentation ab einer Anzahl von 2042 Training samples einen Einfluss auf die Leistung besitzt.
-Somit hilft die Variation der Bilder das Modell etwas robuster gegenüber Veränderungen zu machen und zuverlässige Vorhersagen zu treffen.
-Bei kleineren Datenmenge hat dies kaum einen Einfluss um die Leistung zu erhöhen. 
-
+%Die Ergebnisse zeigen, dass die Augmentation ab einer Anzahl von 2042 Training samples einen Einfluss auf die Leistung besitzt.
+%Somit hilft die Variation der Bilder das Modell etwas robuster gegenüber Veränderungen zu machen und zuverlässige Vorhersagen zu treffen.
+%Bei kleineren Datenmenge hat dies kaum einen Einfluss um die Leistung zu erhöhen. 
+\begin{table}[H]
+    \centering
+    \resizebox{\textwidth}{!}{%
+        \begin{tabular}{cccc|cccc}
+            \toprule
+            Training sample & Accuracy/$\%$ & Sensitivity/$\%$ & Specificity/$\%$ &
+            Training sample & Accuracy/$\%$ & Sensitivity/$\%$ & Specificity/$\%$ \\
+            \midrule
+            340  & $86.04 \pm 0.69$ & $85.97 \pm 1.27$ & $86.15 \pm 2.57$ & 2042 & $95.10 \pm 1.03$ & $93.81 \pm 1.95$ & $97.04 \pm 1.15$ \\
+            680  & $88.43 \pm 0.70$ & $87.38 \pm 1.50$ & $90.00 \pm 2.84$ & 2382 & $94.57 \pm 0.93$ & $93.50 \pm 1.71$ & $96.17 \pm 1.19$ \\
+            1021 & $90.01 \pm 0.64$ & $89.49 \pm 0.93$ & $90.79 \pm 1.10$ & 2723 & $94.25 \pm 1.17$ & $92.34 \pm 1.55$ & $97.11 \pm 1.25$ \\
+            1361 & $91.59 \pm 0.94$ & $89.49 \pm 1.43$ & $94.74 \pm 2.04$ & 3063 & $95.73 \pm 1.44$ & $94.65 \pm 1.78$ & $97.33 \pm 1.66$ \\
+            1702 & $92.43 \pm 0.84$ & $89.70 \pm 1.47$ & $96.52 \pm 0.62$ & 3404 & $96.43 \pm 1.49$ & $94.75 \pm 1.95$ & $98.94 \pm 1.03$ \\
+            \bottomrule
+        \end{tabular}
+    }
+    \caption{Mittelwert und Standardabweichung der Metriken bei Reduzierung der Training samples unter Verwendung von Augmentation.}
+    \label{tab:augm-tunotu}
+\end{table}
 \begin{figure}[H]
   \centering
   \begin{subfigure}[b]{0.48\textwidth}
@@ -142,28 +152,6 @@ Bei kleineren Datenmenge hat dies kaum einen Einfluss um die Leistung zu erhöhe
   \caption{Verlauf der Metriken bei unterschiedlichen Anzahl an Training samples, unter Verwendung von Augmentation, für die Klassifikation zwischen no Tumor und Tumor.}
   \label{fig:augmentation_tu}
 \end{figure}
-\begin{table}[H]
-    \centering
-    {\small
-        \begin{tabular}{cccc}
-            \toprule
-            Training sample & Accuracy/$\%$ & Sensitivity/$\%$ & Specificity/$\%$\\
-            \midrule
-            340  & $86.04 \pm 0.69$ & $85.97 \pm 1.27$ & $86.15 \pm 2.57$\\
-            680  & $88.43 \pm 0.70$ & $87.38 \pm 1.50$ & $90.00 \pm 2.84$\\
-            1021 & $90.01 \pm 0.64$ & $89.49 \pm 0.93$ & $90.79 \pm 1.10$\\
-            1361 & $91.59 \pm 0.94$ & $89.49 \pm 1.43$ & $94.74 \pm 2.04$\\
-            1702 & $92.43 \pm 0.84$ & $89.70 \pm 1.47$ & $96.52 \pm 0.62$\\
-            2042 & $95.10 \pm 1.03$ & $93.81 \pm 1.95$ & $97.04 \pm 1.15$\\
-            2382 & $94.57 \pm 0.93$ & $93.50 \pm 1.71$ & $96.17 \pm 1.19$\\
-            2723 & $94.25 \pm 1.17$ & $92.34 \pm 1.55$ & $97.11 \pm 1.25$\\
-            3063 & $95.73 \pm 1.44$ & $94.65 \pm 1.78$ & $97.33 \pm 1.66$\\
-            3404 & $96.43 \pm 1.49$ & $94.75 \pm 1.95$ & $98.94 \pm 1.03$\\
-            \bottomrule
-        \end{tabular}}
-  \caption{Mittelwert und Standardabweichung der Metriken bei Reduzierung der Training samples unter Verwendung von Augmentation.}
-  \label{tab:augm-tunotu}
-\end{table}
 
 \subsection{Reduzierung der Tumor samples}
 Für die Untersuchung der Netzwerkleistung bei Reduzierung einer Klasse, wurde die Anzahl an Tumor samples reduziert.
@@ -184,30 +172,8 @@ Bei 2128 Training samples beträgt die Sensitivity \SI{0}{\%}, da aufgrund des L
 Damit kommt es zu einer geringeren Accuracy und im Mittel ergibt sich dann die großen Standardabweichungen.
 Die Untersuchung zeigt, dass durch das Reduzieren der Tumor Klasse es zu einem Leistungsabfall führen kann.
 Ab einer Anzahl von 1489 Tumor samples erreicht das Modell eine stabile und zuverlässige Leistung.
-Die Anzahl an verwendeten no Tumor Samples im Vergleich beträgt im Training 1595. 
+Die Anzahl an verwendeten no Tumor Samples im Vergleich beträgt im Training 1279. 
 Daraus lässt sich schließen, dass eine möglichst ausgeglichene Klassenverteilung notwendig ist, um eine hohe Leistung zu erreichen.
-\begin{table}[H]
-    \centering
-     {\small
-        \begin{tabular}{cccc}
-            \toprule
-            Training sample & Accuracy/$\%$ & Sensitivity/$\%$ & Specificity/$\%$\\
-            \midrule
-            212  & $81.87 \pm 8.11$ & $89.79 \pm 3.89$ & $ 70.02 \pm 25.44$\\
-            425  & $89.80 \pm 1.26$ & $89.16 \pm 1.79$ & $ 90.77 \pm 2.85$\\
-            638  & $90.34 \pm 2.32$ & $89.59 \pm 1.70$ & $ 91.46 \pm 6.22$\\
-            851  & $93.67 \pm 1.15$ & $91.83 \pm 1.51$ & $ 96.42 \pm 2.03$\\
-            1064 & $94.20 \pm 0.85$ & $92.71 \pm 1.56$ & $ 96.44 \pm 1.35$\\
-            1276 & $91.92 \pm 11.27$& $94.41 \pm 2.58$ & $ 88.20 \pm 31.00$\\
-            1489 & $96.10 \pm 0.69$ & $94.69 \pm 0.95$ & $ 98.22 \pm 1.18$\\
-            1702 & $96.75 \pm 1.08$ & $95.12 \pm 1.50$ & $ 99.19 \pm 0.69$\\
-            1915 & $96.65 \pm 1.12$ & $95.15 \pm 1.24$ & $ 98.89 \pm 1.11$\\
-            2128 & $92.04 \pm 18.27$& $87.01 \pm 30.58$ &$ 99.56 \pm 0.36$\\
-            \bottomrule
-        \end{tabular}}
-  \caption{Mittelwert und Standardabweichung der Metriken bei der Reduzierung der Tumor Klasse.}
-  \label{tab:red_tu}
-\end{table}
 \begin{figure}[H]
   \centering
   \begin{subfigure}[b]{0.48\textwidth}
@@ -228,6 +194,25 @@ Daraus lässt sich schließen, dass eine möglichst ausgeglichene Klassenverteil
   \caption{Metriken bei Reduktion der Tumor samples.}
   \label{fig:reduzierung_tumorsamples}
 \end{figure}
+\begin{table}[H]
+    \centering
+    \resizebox{\textwidth}{!}{%
+        \begin{tabular}{cccc|cccc}
+            \toprule
+            Training sample & Accuracy/$\%$ & Sensitivity/$\%$ & Specificity/$\%$ &
+            Training sample & Accuracy/$\%$ & Sensitivity/$\%$ & Specificity/$\%$ \\
+            \midrule
+            212  & $81.87 \pm 8.11$  & $89.79 \pm 3.89$  & $70.02 \pm 25.44$ & 1276 & $91.92 \pm 11.27$ & $94.41 \pm 2.58$  & $88.20 \pm 31.00$ \\
+            425  & $89.80 \pm 1.26$  & $89.16 \pm 1.79$  & $90.77 \pm 2.85$  & 1489 & $96.10 \pm 0.69$  & $94.69 \pm 0.95$  & $98.22 \pm 1.18$  \\
+            638  & $90.34 \pm 2.32$  & $89.59 \pm 1.70$  & $91.46 \pm 6.22$  & 1702 & $96.75 \pm 1.08$  & $95.12 \pm 1.50$  & $99.19 \pm 0.69$  \\
+            851  & $93.67 \pm 1.15$  & $91.83 \pm 1.51$  & $96.42 \pm 2.03$  & 1915 & $96.65 \pm 1.12$  & $95.15 \pm 1.24$  & $98.89 \pm 1.11$  \\
+            1064 & $94.20 \pm 0.85$  & $92.71 \pm 1.56$  & $96.44 \pm 1.35$  & 2128 & $92.04 \pm 18.27$ & $87.01 \pm 30.58$ & $99.56 \pm 0.36$  \\
+            \bottomrule
+        \end{tabular}
+    }
+    \caption{Mittelwert und Standardabweichung der Metriken bei der Reduzierung der Tumor Klasse.}
+    \label{tab:red_tu}
+\end{table}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Klassifizierung zwischen Glioma und Meningioma}
@@ -270,7 +255,6 @@ Und auch die Specificity zeigt eine große Schwankung, welche zwischen \SI{89}{\
 Der erste Run besitzt zwar den niedrigsten validation loss, jedoch auch die niedrigste Accuracy und Specificity.
 Der höchste Wert der Accuracy und Specificity tritt bei Run 3 auf
 Aufgrund dessen werden in den folgenden Trainingsdurchläufen die Hyperparameter von Run 3 verwendet.
-
 \subsection{Reduzierung der Trainingsdaten}
 Zur Untersuchung des Einflusses der Datensatzgröße auf die Modellleistung wurde das Netzwerk mit unterschiedlich großen Trainingsmengen trainiert. 
 Bewertet wurde die Leistung anhand der Metriken Accuracy, Sensitivity und Specificity.
@@ -287,6 +271,25 @@ Für die Sensitivity deutet sich ab 1702 und bei der Specificity ab 1915 Trainin
 Die Ergebnisse zeigen, dass mit zunehmender Anzahl an Training samples die Leistung zu nimmt.
 Eine eindeutige Sättigung stellt sich nicht ein, womit nicht genau gesagt werden kann ob die Datenmenge ausreicht für die optimale Leistung. 
 Da die Datenmenge begrenzt ist, wird im folgenden Abschnitt untersucht, inwiefern die Verwendung von Augmentation einen Einfluss auf die Modellleistung besitzt. 
+\begin{table}[H]
+    \centering
+    \resizebox{\textwidth}{!}{%
+        \begin{tabular}{cccc|cccc}
+            \toprule
+            Training sample & Accuracy/$\%$ & Sensitivity/$\%$ & Specificity/$\%$ &
+            Training sample & Accuracy/$\%$ & Sensitivity/$\%$ & Specificity/$\%$ \\
+            \midrule
+            231  & $76.42 \pm 0.51$ & $78.46 \pm 3.83$ & $74.33 \pm 3.49$ & 1277 & $87.72 \pm 0.65$ & $88.17 \pm 2.70$ & $87.27 \pm 2.50$ \\
+            426  & $78.66 \pm 0.70$ & $80.20 \pm 4.14$ & $77.10 \pm 2.98$ & 1490 & $88.12 \pm 0.89$ & $90.16 \pm 1.58$ & $86.03 \pm 2.78$ \\
+            683  & $83.53 \pm 1.27$ & $83.17 \pm 3.83$ & $83.90 \pm 2.49$ & 1702 & $90.66 \pm 0.59$ & $91.86 \pm 1.17$ & $89.43 \pm 1.40$ \\
+            851  & $81.83 \pm 1.29$ & $82.09 \pm 2.38$ & $81.57 \pm 2.33$ & 1915 & $91.67 \pm 0.92$ & $91.14 \pm 2.14$ & $92.20 \pm 0.76$ \\
+            1064 & $87.11 \pm 1.25$ & $86.67 \pm 3.78$ & $87.57 \pm 2.60$ & 2128 & $92.31 \pm 0.83$ & $92.55 \pm 1.65$ & $92.07 \pm 1.43$ \\
+            \bottomrule
+        \end{tabular}
+    }
+    \caption{Mittelwert und Standardabweichung für die Reduzierung der Training samples.}
+    \label{tab:Red-gli-men}
+\end{table}
 \begin{figure}[H]
   \centering
   \begin{subfigure}[b]{0.48\textwidth}
@@ -310,28 +313,6 @@ Da die Datenmenge begrenzt ist, wird im folgenden Abschnitt untersucht, inwiefer
   \caption{Verlauf der Metriken bei der Reduzierung der Training samples für die Klassifikation zwischen Glioma und Meningioma.}
   \label{fig:gli-men-reduktion}
 \end{figure}
-\begin{table}[H]
-    \centering
-    {\small
-        \begin{tabular}{cccc}
-            \toprule
-            Training sample & Accuracy/$\%$ & Sensitivity/$\%$ & Specificity/$\%$\\
-            \midrule
-            231  & $76.42 \pm 0.51 $ & $78.46 \pm 3.83$ & $74.33 \pm 3.49$\\
-            426  & $78.66 \pm 0.70 $ & $80.20 \pm 4.14$ & $77.10 \pm 2.98$\\
-            683  & $83.53 \pm 1.27 $ & $83.17 \pm 3.83$ & $83.90 \pm 2.49$\\
-            851  & $81.83 \pm 1.29 $ & $82.09 \pm 2.38$ & $81.57 \pm 2.33$\\
-            1064 & $87.11 \pm 1.25 $ & $86.67 \pm 3.78$ & $87.57 \pm 2.60$\\
-            1277 & $87.72 \pm 0.65 $ & $88.17 \pm 2.70$ & $87.27 \pm 2.50$\\
-            1490 & $88.12 \pm 0.89 $ & $90.16 \pm 1.58$ & $86.03 \pm 2.78$\\
-            1702 & $90.66 \pm 0.59 $ & $91.86 \pm 1.17$ & $89.43 \pm 1.40$\\
-            1915 & $91.67 \pm 0.92 $ & $91.14 \pm 2.14$ & $92.20 \pm 0.76$\\
-            2128 & $92.31 \pm 0.83 $ & $92.55 \pm 1.65$ & $92.07 \pm 1.43$\\            
-            \bottomrule
-        \end{tabular}}
-  \caption{Mittelwert und Standardabweichung für die Reduzierung der Training samples.}
-  \label{tab:Red-gli-men}
-\end{table}
 %\vspace{-3.5em}
 \subsection{Augmentation}
 %\vspace{-0.5em}
@@ -344,33 +325,29 @@ Bei der Nutzung aller verfügbaren Trainingsdaten erreicht sie einen Wert von \S
 Die Sensitivity nimmt zunächst bis 425 Bildern zu, sinkt anschließend etwas bei 638 Samples, steigt danach jedoch wieder an.
 Ab 1702 samples bleibt sie weitgehend konstant bei \SI{91.01}{\%}, bevor sie bei 2128 Training samples auf \SI{92.61} ansteigt. 
 Der Anstieg der Specificity erfolgt konstant bis 1064 Training sample und flacht anschließend ab.
-Bei 2128 Samples wird eine Specificity von \SI{91.77}{\%} erreicht.
-
+Bei 2128 Samples wird eine Specificity von \SI{91.77}{\%} erreicht.\\
 Die Verwendung von Augmentation hat für die Accuracy und Sensitivity kaum einen Einfluss, da die Werte kaum eine Verbesserung zeigen.
 Für die Specificity kommt es in Bereich zwischen 1064 und 1702 Training samples ene leichten Verbesserung, sowie stabileren Verlauf zu erkennen.
-Es lässt sich somit feststellen, dass die hier eingesetzte Augmentation bei kleineren Trainingsdatensätzen keine signifikante Leistungsverbesserung bewirkt. 
-Der Effekt ist nur in einem mittleren Bereich der Datensatzgröße erkennbar und betrifft die Stabilität der Specificity.
+%Es lässt sich somit feststellen, dass die hier eingesetzte Augmentation bei kleineren Trainingsdatensätzen keine signifikante Leistungsverbesserung bewirkt. 
+%Der Effekt ist nur in einem mittleren Bereich der Datensatzgröße erkennbar und betrifft die Stabilität der Specificity.
 \begin{table}[H]
     \centering
-    {\small
-        \begin{tabular}{cccc}
+    \resizebox{\textwidth}{!}{%
+        \begin{tabular}{cccc|cccc}
             \toprule
-            Training sample & Accuracy/$\%$ & Sensitivity/$\%$ & Specificity/$\%$\\
+            Training sample & Accuracy/$\%$ & Sensitivity/$\%$ & Specificity/$\%$ &
+            Training sample & Accuracy/$\%$ & Sensitivity/$\%$ & Specificity/$\%$ \\
             \midrule
-            212  & $75.87 \pm 0.61$ & $78.01 \pm 5.64$ & $ 73.70 \pm 6.56$ \\
-            425  & $79.72 \pm 0.44$ & $81.99 \pm 1.47$ & $ 77.40 \pm 1.62$ \\
-            638  & $80.69 \pm 0.57$ & $79.58 \pm 1.70$ & $ 81.83 \pm 0.85$ \\
-            851  & $81.55 \pm 0.98$ & $81.70 \pm 2.28$ & $ 81.40 \pm 1.34$ \\
-            1064 & $86.45 \pm 0.82$ & $85.26 \pm 2.39$ & $ 87.67 \pm 1.91$ \\
-            1276 & $87.99 \pm 0.85$ & $87.68 \pm 1.80$ & $ 88.30 \pm 2.02$ \\
-            1489 & $89.01 \pm 1.19$ & $88.86 \pm 2.21$ & $ 89.17 \pm 1.96$ \\
-            1702 & $90.71 \pm 0.56$ & $91.01 \pm 2.09$ & $ 90.40 \pm 1.75$ \\
-            1915 & $91.27 \pm 1.20$ & $91.01 \pm 1.82$ & $ 91.53 \pm 1.21$ \\
-            2128 & $92.19 \pm 0.88$ & $92.61 \pm 1.39$ & $ 91.77 \pm 1.23$ \\         
+            212  & $75.87 \pm 0.61$ & $78.01 \pm 5.64$ & $ 73.70 \pm 6.56$ & 1276 & $87.99 \pm 0.85$ & $87.68 \pm 1.80$ & $ 88.30 \pm 2.02$ \\
+            425  & $79.72 \pm 0.44$ & $81.99 \pm 1.47$ & $ 77.40 \pm 1.62$ & 1489 & $89.01 \pm 1.19$ & $88.86 \pm 2.21$ & $ 89.17 \pm 1.96$ \\
+            638  & $80.69 \pm 0.57$ & $79.58 \pm 1.70$ & $ 81.83 \pm 0.85$ & 1702 & $90.71 \pm 0.56$ & $91.01 \pm 2.09$ & $ 90.40 \pm 1.75$ \\
+            851  & $81.55 \pm 0.98$ & $81.70 \pm 2.28$ & $ 81.40 \pm 1.34$ & 1915 & $91.27 \pm 1.20$ & $91.01 \pm 1.82$ & $ 91.53 \pm 1.21$ \\
+            1064 & $86.45 \pm 0.82$ & $85.26 \pm 2.39$ & $ 87.67 \pm 1.91$ & 2128 & $92.19 \pm 0.88$ & $92.61 \pm 1.39$ & $ 91.77 \pm 1.23$ \\
             \bottomrule
-        \end{tabular}}
-  \caption{Mittelwert und Standardabweichung der drei Metriken bei Reduzierung der Training samples unter Verwendung von Augmentation für die Klassifikation zwischen Glioma und Meningioma.}
-  \label{tab:gli-men-augm}
+        \end{tabular}
+    }
+    \caption{Mittelwert und Standardabweichung der drei Metriken bei Reduzierung der Training samples unter Verwendung von Augmentation für die Klassifikation zwischen Glioma und Meningioma.}
+    \label{tab:gli-men-augm}
 \end{table}
 \begin{figure}[H]
   \centering
@@ -395,9 +372,9 @@ Der Effekt ist nur in einem mittleren Bereich der Datensatzgröße erkennbar und
   \caption{Verlauf der Metriken bei Reduzierung der Training samples unter Verwendung von Augmentation für die Klassifikation zwischen Glioma und Meningioma.}
   \label{fig:gli-men-augm}
 \end{figure}
-
 \subsection{Reduzierung der Glioma sample}
-Um den Einfluss der Modellleistung bei Reduzierung einer Klasse zu untersuchen, wurde die Anzahl an Glioma samples schrittweise reduziert, während die Meningioma samples konstant gehalten werden.
+Um den Einfluss der Modellleistung bei Reduzierung einer Klasse zu untersuchen, wurde die Anzahl an Glioma samples schrittweise reduziert.
+Die Meningioma samples konstant gehalten bei 1072.
 Für die Klassifizierung wurde die Meningioma Klasse als positiv und die Glioma Klasse als negativ definiert. 
 Zur Beurteilung werden die Accuracy, Sensitivity und die Specificity berechnet.
 Der Verlauf der Metriken ist in der Abbildung \ref{fig:gli-men-gliored} dargestellt.
@@ -412,9 +389,10 @@ Anschließende steigt sie deutlich an und schwankt im Bereich zwischen 211 und 9
 Zum Schluss steigt sie bei 1057 Beispielen weiter auf \SI{94.41}{\%}.
 Die Ergebnisse zeigen, dass mit geringerer Anzahl an Glioma sample zu einem Leistungsabfall kommt.
 Die Sensitivity gibt die Fähigkeit des Modells an die Positive Klasse, in diesem Fall die Meningioma Klasse, zu erkenne.
-Da diese in der Untersuchung konstant gehalten werden, kann das Modell zwischen 211 und 951 Glioma samples eine relative konstante Leistung erbringen diese zu erkennen.
-Mit einer höheren Anzahl an Glioma sample steigt diese jedoch weiter an und auch die Specificity, also die Fähigkeit die Glioma Fälle zu erkennen, steigt an. 
-\begin{figure}[H]
+Da diese in der Untersuchung konstant gehalten werden, kann das Modell zwischen 211 und 951 Glioma samples eine relative konstante Leistung erbringen, diese zu erkennen.
+Mit einer höheren Anzahl an Glioma sample steigt diese jedoch weiter an und auch die Specificity, also die Fähigkeit die Glioma Fälle zu erkennen.
+Für die Accuracy und Specificity lässt sich ab 845 Glioma samples der Ansatz einer Sättigung erkennen. 
+\begin{figure}[htbp]
   \centering
   \begin{subfigure}[b]{0.48\textwidth}
     \centering
@@ -437,26 +415,28 @@ Mit einer höheren Anzahl an Glioma sample steigt diese jedoch weiter an und auc
   \caption{Verlauf der drei Metriken für die Reduzierung der Glioma Klasse.}
   \label{fig:gli-men-gliored}
 \end{figure}
-\begin{table}[H]
+\begin{table}[htbp]
     \centering
-    {\small
-        \begin{tabular}{cccc}
+    \resizebox{\textwidth}{!}{%
+        \begin{tabular}{cccc|cccc}
             \toprule
-            Training sample & Accuracy/$\%$ & Sensitivity/$\%$ & Specificity/$\%$\\
+            Training sample & Accuracy/$\%$ & Sensitivity/$\%$ & Specificity/$\%$ &
+            Training sample & Accuracy/$\%$ & Sensitivity/$\%$ & Specificity/$\%$ \\
             \midrule
-            105  & $78.94 \pm 1.51$ & $80.56 \pm 4.81$ & $ 77.30 \pm 3.20$ \\
-            211  & $84.80 \pm 1.28$ & $89.12 \pm 3.88$ & $ 80.40 \pm 4.52$ \\
-            317  & $86.62 \pm 1.75$ & $90.52 \pm 2.78$ & $ 82.63 \pm 4.04$ \\
-            422  & $85.68 \pm 1.39$ & $89.41 \pm 4.09$ & $ 81.87 \pm 3.72$ \\
-            528  & $87.10 \pm 1.86$ & $90.23 \pm 2.66$ & $ 83.90 \pm 3.52$ \\
-            634  & $89.34 \pm 2.32$ & $91.34 \pm 2.35$ & $ 87.30 \pm 3.67$ \\
-            739  & $90.46 \pm 1.20$ & $91.24 \pm 2.53$ & $ 89.67 \pm 3.01$ \\
-            845  & $91.09 \pm 1.49$ & $90.42 \pm 2.30$ & $ 91.77 \pm 2.28$ \\
-            951  & $91.04 \pm 1.83$ & $91.93 \pm 1.57$ & $ 90.13 \pm 3.95$ \\
-            1057 & $93.75 \pm 1.69$ & $94.41 \pm 1.70$ & $ 93.07 \pm 2.35$ \\
+            105  & $78.94 \pm 1.51$ & $80.56 \pm 4.81$ & $ 77.30 \pm 3.20$ & 634  & $89.34 \pm 2.32$ & $91.34 \pm 2.35$ & $ 87.30 \pm 3.67$ \\
+            211  & $84.80 \pm 1.28$ & $89.12 \pm 3.88$ & $ 80.40 \pm 4.52$ & 739  & $90.46 \pm 1.20$ & $91.24 \pm 2.53$ & $ 89.67 \pm 3.01$ \\
+            317  & $86.62 \pm 1.75$ & $90.52 \pm 2.78$ & $ 82.63 \pm 4.04$ & 845  & $91.09 \pm 1.49$ & $90.42 \pm 2.30$ & $ 91.77 \pm 2.28$ \\
+            422  & $85.68 \pm 1.39$ & $89.41 \pm 4.09$ & $ 81.87 \pm 3.72$ & 951  & $91.04 \pm 1.83$ & $91.93 \pm 1.57$ & $ 90.13 \pm 3.95$ \\
+            528  & $87.10 \pm 1.86$ & $90.23 \pm 2.66$ & $ 83.90 \pm 3.52$ & 1057 & $93.75 \pm 1.69$ & $94.41 \pm 1.70$ & $ 93.07 \pm 2.35$ \\
             \bottomrule
-        \end{tabular}}
-  \caption{Mittelwert und Standardabweichung der Metriken für die Reduzierung der Glioma samples.}
-  \label{tab:red-gli}
+        \end{tabular}
+    }
+    \caption{Mittelwert und Standardabweichung der Metriken für die Reduzierung der Glioma samples.}
+    \label{tab:red-gli}
 \end{table}
+
+
+
+
+
 

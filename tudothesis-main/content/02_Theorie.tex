@@ -172,7 +172,6 @@ Das bedeutet, dass sich nach jeder Berechnung des Skalarproduktes der Kernel um 
 Die Pooling-Layer reduziert die räumliche Dimension. Infolge dessen kommt es auch zur Reduktion der Parameter.~\cite{datascience}
 Dafür wird das sogenannte Max-Pooling verwendet. Dabei wird ein Filter der Größe $2 \times 2$ verwendet, der wie der Kernel, schrittweise über die Feature-Map gelegt wird.
 Für jeden Ausschnitt wird der größte Wert verwendet. Der Rest der Werte wird nicht weiter verwendet.~\cite{Yamashita2018}\\
-
 Die FC-Layer berechnet am Ende die Aktivierung und bestimmt einen Ausgangswert für die Klassifizierung.
 Sie entspricht damit der Art von Output-Layer, die in Kapitel \ref{sec:NN} beschrieben wurde.
 
@@ -205,19 +204,21 @@ Zu diesen gehört unter anderem die Lernrate, die Batch-Größe, die Anzahl an S
 und die Verlustfunktion.
 Die Batch-Größe gibt an, wie viele Trainingsdaten pro Trainingsschritt verwendet werden.~\cite{datascience} 
 Die Lernrate legt fest, wie stark die Gewichte bei jedem Trainingsschritt angepasst werden.~\cite{Mohammed2024} 
-Um Overfitting zu vermeiden, wird der sogenannte Dropout als weiterer Hyperparameter eingebaut.
-Der Dropout schaltet während des Trainings zufällige Neuronen aus.
-Dadurch stützt sich das Netzwerk nicht auf Spezifische Neuronen und das Netzwerk wird robuster. ~\cite{Yamashita2018}.
-
-Wenn ein Modell neben den relevanten Mustern auch die irrelevante Störungen lernt, die nur in den Trainingsdaten enthalten sind, gilt es als zu stark an den Trainingsdaten angepasst.
-Bei der Anwendung des Netzwerkes auf einen unabhängigen Datensatz, verschlechtert sich die Leistung deutlich. 
-Dieses Verhalten wird dann als Overfitting bezeichnet.
-Um zu überprüfen, ob das Modell überangepasst ist, wird der Validierungsverlust (Validation Loss) während des Trainings mitbeobachtet.
-Wenn der validation loss ansteigt, der Trainings Verlust jedoch kontinuierlich sinkt, ist dies ein Zeichen, dass das Netzwerk überangepasst wird.~\cite{Yamashita2018}
-Dies wird in der Abbildung \ref{fig:overfitting} graphisch dargestellt.
-\begin{figure}[H]
+Um Overfitting zu vermeiden, wird der sogenannte Dropout als weiterer Hyperparameter eingebaut.  
+Dabei werden während des Trainings zufällige Neuronen deaktiviert, wodurch sich das Netzwerk nicht auf einzelne spezialisieren kann und robuster wird. %~\cite{Yamashita2018}
+Ein Modell gilt als überangepasst (Overfitting), wenn es neben relevanten Mustern auch irrelevante Störungen aus den Trainingsdaten lernt und auf neuen Daten schlechtere Ergebnisse liefert.  
+Zur Überprüfung wird der Validierungsverlust (Validation Loss) während des Trainings beobachtet.  
+Steigt dieser an, während der Trainingsverlust weiterhin sinkt, deutet dies auf Overfitting hin.~\cite{Yamashita2018}  
+Eine grafische Darstellung zeigt Abbildung~\ref{fig:overfitting}.
+%Wenn ein Modell neben den relevanten Mustern auch die irrelevante Störungen lernt, die nur in den Trainingsdaten enthalten sind, gilt es als zu stark an den Trainingsdaten angepasst.
+%Bei der Anwendung des Netzwerkes auf einen unabhängigen Datensatz, verschlechtert sich die Leistung deutlich. 
+%Dieses Verhalten wird dann als Overfitting bezeichnet.
+%Um zu überprüfen, ob das Modell überangepasst ist, wird der Validierungsverlust (Validation Loss) während des Trainings mitbeobachtet.
+%Wenn der validation loss ansteigt, der Trainings Verlust jedoch kontinuierlich sinkt, ist dies ein Zeichen, dass das Netzwerk überangepasst wird.~\cite{Yamashita2018}
+%Dies wird in der Abbildung \ref{fig:overfitting} graphisch dargestellt.
+\begin{figure}[htbp]
   \centering
-  \includegraphics[scale=0.23]{/nfs/homes/sdreyer/Digit-Classification-Pytorch/tudothesis-main/content/abbildungen/Overfitting.png}
+  \includegraphics[scale=0.18]{/nfs/homes/sdreyer/Digit-Classification-Pytorch/tudothesis-main/content/abbildungen/Overfitting.png}
   \caption{Überprüfung auf Overfitting durch das Kontrollieren des Trainings und validation loss.~\cite{Yamashita2018}}
   \label{fig:overfitting}
 \end{figure}
