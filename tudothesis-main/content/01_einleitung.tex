@@ -2,22 +2,27 @@
 
 Die Anwendung von Künstlichen Intelligenzen und Maschinellem Lernen findet in der heutigen Zeit immer mehr Anwendung.
 So auch in der Medizin für unter anderen die Erkennung von Krankheiten.
-In dieser Arbeit wird sich auf das erkennen von Hirntumoren mittels eine Klassifizierungsalgorithmus Konzentriert.
-Für die Diagnostik eines Hirntumors, wird als erster Schritt ein MRT veranlasst und im zweiten Schritt eine Biopsie 
-durchgeführt, um die spezifische Tumorart zu bestimmen.
-Da es sich jedoch bei der Biopsie um einen Operativen Eingriff handelt, birgt diese auch ein gewisses Risiko.
+In dieser Arbeit wird sich auf das erkennen von Hirntumoren mittels eine Klassifizierungsalgorithmus konzentriert.
+Für die Diagnostik eines Hirntumors, wird als erster Schritt ein MRT veranlasst.
+Um die spezifische Tumorart zu bestimmen, wird eine Biopsie durchgeführt.
+Da es sich jedoch bei der Biopsie um einen Operativen Eingriff handelt, birgt dieser, wie andere Operative Eingriffe auch, ein gewisses Risiko.
 Mithilfe von Klassifizierungsalgorithmen soll es möglich sein, dass der Schritt der Biopsie nicht notwendig ist 
 und somit das Risiko eines Eingriffs zu verringern.
-Für die Verwendung solcher Algorithmen, werden ausreichend Daten benötigt, um diese genügend zu trainieren, damit die 
-Voraussage zuverlässig sind. 
-Aus Datenschutzrechtlichen Gründen, sind diese Datenmengen jedoch nicht ausreichend vorhanden. Zudem ist es bei seltenen
-Tumoren noch mal schwieriger genügend Daten zu sammeln.
-Diese Arbeit beschäftigt sich damit, wie viele Daten es braucht, damit ein Klassifizierungsalgorithmus gut trainiert werden
-kann und Zuverlässige aussagen Betrifft. 
-Zu Beginn wird in der Theorie einen Überblick über die Entstehung der MRT-Bilder und die Grundlagen des Maschinellen Lernen gegeben.
-Zudem wird der Aufbau und das trainieren eines Neuronalen Netzwerkes erläutert.
-Nach dem theoretischen Teil, wird der Aufbau des, in dieser Arbeit verwendete, Convolutional Neural Netzwerk erklärt und der Aufbau des Datensatzes.
-Es wird das Netzwerk für 
-Für die Bewertung der Leistungsfähigkeit wird ein Convolutional Neural Network trainiert und anschließend getestet.
-Dabei wird zur Bewertung die Accuracy, Sensitivity und Specificity betrachtet.
+Für die Verwendung solcher Algorithmen, werden Daten benötigt, um diese zu trainieren, damit sie ein zuverlässige Aussage über die Art des Tumors treffen können. 
+Aus Datenschutzrechtlichen Gründen, sind Datenmengen jedoch nicht ausreichend vorhanden. 
+Zudem ist es bei seltenen Tumorarten noch mal schwieriger genügend Daten zu sammeln.
+Diese Arbeit beschäftigt sich damit wie unterschiedliche Datenmengen sich auf die Leistung des Klassifizierungsalgorithmus auswirken.
+Und wie groß die Datensätze mindestens sein müssen, damit eine zuverlässige Aussage treffen können.
+
+Zu Beginn wird in der Theorie einen Überblick über die Entstehung der MRT-Bilder gegeben die für die Untersuchungen verwendet werde.
+Darauf hin folgen die Grundlagen des Maschinellen Lernen, welche in dieser Arbeit verwendet werden.
+Diese beinhalten den Aufbau von neuronalen Netzwerken und der eines Convolutional Neural Network, welches verwendet wird.
+Zudem wird erläutert, wie ein Netzwerk trainiert wird.
+Nach dem theoretischen Teil, wird der Aufbau des, in dieser Arbeit verwendete, Convolutional Neural Netzwerk erklärt und der Aufbau des Datensatzes. 
+Es wird zwischen zwei Klassifikationen unterschieden. 
+Der Einfluss der Datensatzgröße wird dadurch untersucht, indem die Datenmenge schrittweise Reduziert werden und zur Beurteilung die 
+Accuracy, Sensitivity und Specificity berechnet wird. 
+Darauf hin wird untersucht, ob Augmentation die Leistung verbessert.
+Zudem wird die Leistung betrachtet, wenn nur eine der Klasse nur reduziert wird. 
+Diese Untersuchungen werden zum einen 
 
