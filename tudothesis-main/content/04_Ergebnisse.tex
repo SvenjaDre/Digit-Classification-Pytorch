@@ -5,7 +5,7 @@ Anschließend folgen die Ergebnisse zur Klassifikation zwischen Glioma und Menin
 
 \section{Klassifizierung zwischen Tumor und no Tumor}
 Zu Beginn wird das Modell mit verschiedenen Kombinationen von Hyperparametern trainiert, um geeignete Einstellungen für das weitere Vorgehen zu identifizieren.
-Die Auswahl erfolgt auf Basis der Leistung auf dem Validierungsdatensatz.
+Die Auswahl erfolgt auf Basis der Leistung des Validierungsdatensatz.
 Die besten Konfigurationen werden anschließend für die weiteren Trainingsdurchläufe verwendet.
 
 \subsection{Hyperparameter}
@@ -13,8 +13,7 @@ Um die optimalen Hyperparameter zu bestimmen, wurde anhand der in Tabelle \ref{t
 Dadurch wurden alle möglichen Kombinationen getestet.
 Anschließend wurden die fünf Trainingsdurchläufe (Runs) mit dem niedrigsten Validation Loss betrachtet.
 Der Verlauf des Validation Loss dieser fünf besten Runs ist in Abbildung \ref{fig:val_loss notu-tu} dargestellt.
-%\vspace{-2em}
-Die für die fünf Runs verwendeten Hyperparameter, sowie die ermittelten Werte für Accuracy, Sensitivity und Specificity auf den Validierungsdaten,
+Die für die fünf Runs verwendeten Hyperparameter, sowie die ermittelten Werte für die Accuracy, Sensitivity und Specificity auf den Validierungsdaten,
 sind in der Tabelle \ref{tab:hyperp notu-tu} dargestellt.
 \begin{figure}[H]
   \centering
@@ -40,7 +39,7 @@ sind in der Tabelle \ref{tab:hyperp notu-tu} dargestellt.
   \caption{Die fünf Runs mit dem niedrigsten validation loss sowie deren verwendete Hyperparameter und aufgezeichnete Metriken.}
   \label{tab:hyperp notu-tu}
 \end{table}
-Die Werte für Accuracy, Sensitivity und Specificity liegen eng bei einander und schwanken nur geringfügig.
+Die Werte für die Accuracy, Sensitivity und Specificity liegen eng beieinander und schwanken nur geringfügig.
 Auf Grund dessen, das die Validierungsergebnisse vergleichbar sind, werden für die weiteren Trainingsdurchläufen die Hyperparameter des Runs 1 verwendet. 
 
 \subsection{Reduzierung der Trainingsdaten}
@@ -74,7 +73,7 @@ Da jedoch die verfügbare Datenmenge in der Praxis begrenzt ist, wird im folgend
     \caption{Specificity}
     \label{fig:reduzierung_specificity}
   \end{subfigure}
-  \caption{Aufgenommene Metriken in Abhängigkeit der Verwendeten Trainingsdaten für die Klassifikation zwischen no Tumor und Tumor.}
+  \caption{Aufgenommene Metriken in Abhängigkeit der verwendeten Trainingsdaten für die Klassifikation zwischen no Tumor und Tumor.}
   \label{fig:reduzierung_trainingsdaten}
 \end{figure}
 \begin{table}[H]
@@ -149,7 +148,7 @@ Erst bei größeren Datenmengen ist eine Verbesserung der Metriken zu erkennen.
     \caption{Specificity}
     \label{fig:augmentation_specificity}
   \end{subfigure}
-  \caption{Verlauf der Metriken bei unterschiedlichen Anzahl an Training samples, unter Verwendung von Augmentation, für die Klassifikation zwischen no Tumor und Tumor.}
+  \caption{Der Verlauf der Metriken bei unterschiedlichen Anzahl an Training samples, unter Verwendung von Augmentation, für die Klassifikation zwischen no Tumor und Tumor.}
   \label{fig:augmentation_tu}
 \end{figure}
 
@@ -170,9 +169,9 @@ Dies kommt dadurch, dass anstelle des Globalen Minimum ein Lokales Minimum der V
 In diesem Lokalen Minimum wurde, bei 212 und 1276 Training samples, alle Testdaten als Tumor Bilder Vorhergesagt, wodurch die Specificity \SI{0}{\%} beträgt.
 Bei 2128 Training samples beträgt die Sensitivity \SI{0}{\%}, da aufgrund des Lokalen Minimums alle Daten als no Tumor klassifiziert werden.
 Damit kommt es zu einer geringeren Accuracy und im Mittel ergibt sich dann die großen Standardabweichungen.
-Die Untersuchung zeigt, dass durch das Reduzieren der Tumor Klasse es zu einem Leistungsabfall führen kann.
+Die Untersuchung zeigt, dass das Reduzieren der Tumor Klasse zu einem Leistungsabfall führen kann.
 Ab einer Anzahl von 1489 Tumor samples erreicht das Modell eine stabile und zuverlässige Leistung.
-Die Anzahl an verwendeten no Tumor Samples im Vergleich beträgt im Training 1279. 
+Die Anzahl an verwendeten no Tumor Samples beträgt im Vergleich im Training konstant 1279. 
 Daraus lässt sich schließen, dass eine möglichst ausgeglichene Klassenverteilung notwendig ist, um eine hohe Leistung zu erreichen.
 \begin{figure}[H]
   \centering
@@ -216,11 +215,11 @@ Daraus lässt sich schließen, dass eine möglichst ausgeglichene Klassenverteil
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Klassifizierung zwischen Glioma und Meningioma}
-Für die Untersuchung der Leistung des Netzwerkes für eine Klassifikation zwischen zwei Tumorarten werden die Untersuchungen analog zur Untersuchung 
-zwischen Tumor und no Tumor durchgeführt
-Für die Klassifizierung zwischen Glioma und Meningioma werden zu begin die Hyperparameter ermittelt, mit denen die nachfolgenden
-Trainingsdurchläufe verwendet werden. 
-Die Erfolg analog zur Ermittlung der Hyperparameter der vorherigen Klassifikation.
+Für die Untersuchung der Leistung des Netzwerkes bei einer Klassifikation zwischen zwei Tumorarten werden die Untersuchungen analog zur Untersuchung 
+zwischen Tumor und no Tumor durchgeführt.
+Für die Klassifizierung zwischen Glioma und Meningioma werden zu Begin die Hyperparameter ermittelt, mit denen die nachfolgenden
+Trainingsdurchläufe durchgeführt werden. 
+Dies erfolgt analog zur Ermittlung der Hyperparameter der vorherigen Klassifikation.
 \subsection{Hyperparameter}
 Für die Ermittlung der Hyperparameter werden die fünf Runs mit den niedrigsten Validation loss, aus allen möglichen Kombination der Wertebereiche der Hyperparameter, betrachtet.
 Der Verlauf wird in der Abbildung \ref{fig:val_loss gli-men} dargestellt.
@@ -249,7 +248,8 @@ Die dazugehörigen Parameter und die Accuracy, Sensitivity und Specificity des V
   \caption{Die fünf Runs mit dem niedrigsten validation loss sowie deren verwendete Hyperparameter und aufgezeichneten Metriken.}
   \label{tab:hyperp-gli men}
 \end{table}
-Die Accuracy beträgt in allen fünf Runs zwischen \SI{92}{\%} und \SI{93}{\%}. Die Schwankungen zwischen ihnen ist somit nur geringfügig.
+Die Accuracy befindet sich in allen fünf Runs zwischen \SI{92}{\%} und \SI{93}{\%}. 
+Die Schwankungen zwischen ihnen ist somit nur geringfügig.
 Die Werte der Sensitivity schwanken zwischen ungefähr \SI{92}{\%} und rund \SI{97}{\%}.
 Und auch die Specificity zeigt eine große Schwankung, welche zwischen \SI{89}{\%} und \SI{95}{\%} liegt.
 Der erste Run besitzt zwar den niedrigsten validation loss, jedoch auch die niedrigste Accuracy und Specificity.
@@ -260,7 +260,7 @@ Zur Untersuchung des Einflusses der Datensatzgröße auf die Modellleistung wurd
 Bewertet wurde die Leistung anhand der Metriken Accuracy, Sensitivity und Specificity.
 In Abbildung \ref{fig:gli-men-reduktion} ist der Verlauf der Accuracy, Sensitivity und Specificity bei der Reduktion der Training samples dargestellt.
 Die dazu gehörigen Werte werden in der Tabelle \ref{tab:Red-gli-men} aufgelistet.
-Alle drei Metriken zeigen, dass sie mit zunehmender Anzahl an Training samples steigt. 
+Alle drei Metriken zeigen, dass sie mit zunehmender Anzahl an Training samples steigen. 
 Bei 851 Training samples sinken die Werte etwas, bevor sie anschließend wieder ansteigen.
 Die Accuracy erhöht sich von \SI{76.42}{\percent}, bei 231 Training samples auf \SI{92.31}{\percent} bei 2128 Training samples.
 Die Sensitivity steigt bis 1702 Training samples auf \SI{91.86}{\%} an und bleibt anschließend weitgehend konstant zwischen \SI{91.14}{\%} und \SI{92.55}{\%}.
@@ -310,7 +310,7 @@ Da die Datenmenge begrenzt ist, wird im folgenden Abschnitt untersucht, inwiefer
     \caption{Specificity}
     \label{fig:gli-men-spec}
   \end{subfigure}
-  \caption{Verlauf der Metriken bei der Reduzierung der Training samples für die Klassifikation zwischen Glioma und Meningioma.}
+  \caption{Der Verlauf der Metriken bei der Reduzierung der Training samples für die Klassifikation zwischen Glioma und Meningioma.}
   \label{fig:gli-men-reduktion}
 \end{figure}
 %\vspace{-3.5em}
@@ -323,11 +323,11 @@ Die Accuracy steigt mit zunehmender Anzahl an Training samples an.
 Zu beginn liegt sie bei \SI{75.87}{\percent} für 212 samples. 
 Bei der Nutzung aller verfügbaren Trainingsdaten erreicht sie einen Wert von \SI{92.19}{\percent}.
 Die Sensitivity nimmt zunächst bis 425 Bildern zu, sinkt anschließend etwas bei 638 Samples, steigt danach jedoch wieder an.
-Ab 1702 samples bleibt sie weitgehend konstant bei \SI{91.01}{\%}, bevor sie bei 2128 Training samples auf \SI{92.61} ansteigt. 
+Ab 1702 samples bleibt sie weitgehend konstant bei \SI{91.01}{\%}, bevor sie bei 2128 Training samples auf \SI{92.61}{\%} ansteigt. 
 Der Anstieg der Specificity erfolgt konstant bis 1064 Training sample und flacht anschließend ab.
 Bei 2128 Samples wird eine Specificity von \SI{91.77}{\%} erreicht.\\
 Die Verwendung von Augmentation hat für die Accuracy und Sensitivity kaum einen Einfluss, da die Werte kaum eine Verbesserung zeigen.
-Für die Specificity kommt es in Bereich zwischen 1064 und 1702 Training samples ene leichten Verbesserung, sowie stabileren Verlauf zu erkennen.
+Für die Specificity kommt es in Bereich zwischen 1064 und 1702 Training samples zu einer leichten Verbesserung, sowie stabileren Verlauf zu erkennen.
 %Es lässt sich somit feststellen, dass die hier eingesetzte Augmentation bei kleineren Trainingsdatensätzen keine signifikante Leistungsverbesserung bewirkt. 
 %Der Effekt ist nur in einem mittleren Bereich der Datensatzgröße erkennbar und betrifft die Stabilität der Specificity.
 \begin{table}[H]
@@ -384,11 +384,11 @@ bevor sie mit zunehmender Anzahl erneut zunehmen.
 Die Accuracy wird ab 739 Glioma samples nahezu konstant bei etwa \SI{91}{\percent} und steigt bei 1057 Sample auf \SI{93.75}{\percent} an.
 Die Specificity schwankt im Bereich zwischen 739 und 951 Glioma samples zwischen \SI{89.67}{\%} \SI{91.77}{\%}.
 Bei Verwendung aller verfügbaren Glioma samples erreicht sie einen Wert von \SI{93.07}{\%}.
-Die Sensitivity beträgt bei nur 105 verwendeten Glioma samples einen Wert von \SI{80.56}{\%}.
+Die Sensitivity beträgt bei nur 1057 verwendeten Glioma samples einen Wert von \SI{80.56}{\%}.
 Anschließende steigt sie deutlich an und schwankt im Bereich zwischen 211 und 951 Glioma samples zwischen \SI{89.12}{\%} und \SI{91.93}{\%}. 
-Zum Schluss steigt sie bei 1057 Beispielen weiter auf \SI{94.41}{\%}.
+Zum Schluss steigt sie bei 1057 samples weiter auf \SI{94.41}{\%}.
 Die Ergebnisse zeigen, dass mit geringerer Anzahl an Glioma sample zu einem Leistungsabfall kommt.
-Die Sensitivity gibt die Fähigkeit des Modells an die Positive Klasse, in diesem Fall die Meningioma Klasse, zu erkenne.
+Die Sensitivity gibt die Fähigkeit des Modells an die als Positiv definierte Klasse, in diesem Fall die Meningioma Klasse, zu erkenne.
 Da diese in der Untersuchung konstant gehalten werden, kann das Modell zwischen 211 und 951 Glioma samples eine relative konstante Leistung erbringen, diese zu erkennen.
 Mit einer höheren Anzahl an Glioma sample steigt diese jedoch weiter an und auch die Specificity, also die Fähigkeit die Glioma Fälle zu erkennen.
 Für die Accuracy und Specificity lässt sich ab 845 Glioma samples der Ansatz einer Sättigung erkennen. 

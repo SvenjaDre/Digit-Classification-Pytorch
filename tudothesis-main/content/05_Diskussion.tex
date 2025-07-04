@@ -1,37 +1,37 @@
 \chapter{Diskussion}
-Ziel dieser Arbeit war es, den Einfluss der Datensatzgröße auf die Leistungsfähigkeit eines Klassifizierungslgorithmus zur Erkennung von Hirntumoren zu untersuchen.
-Hierzu wurde die Anzahl an Training samples schrittweise reduziert während Accuracy, Sensitivity und Specificity auf den Testdaten erfasst wurden.
+Ziel dieser Arbeit war es, den Einfluss der Datensatzgröße auf die Leistungsfähigkeit eines Klassifizierungsalgorithmus zur Erkennung von Hirntumoren zu untersuchen.
+Hierzu wurde die Anzahl an Training samples schrittweise reduziert während die Accuracy, Sensitivity und Specificity der Testdaten ermittelt wurden.
 
 Für die Klassifikation zwischen Tumor und no Tumor zeigt sich eine stetige Leistungssteigerung mit wachsender Datenmenge.
 Mit zunehmender Datengröße stehen dem Netzwerk mehr Bilder zur Verfügung, um relevanten Muster zu lernen. 
 Ab 2042 Trainingsbildern flacht dieser Anstieg ab, was auf eine Sättigung der Modellleistung hindeutet.
-Das bedeutet, dass dem Netzwerk ab dieser Menge ausreichen Informationen vorliegen, um eine zuverlässige Vorhersagen treffen zu können.
+Das bedeutet, dass dem Netzwerk ab dieser Menge ausreichend Informationen vorliegen, um zuverlässige Vorhersagen treffen zu können.
 Auch bei der Verwendung der Augmentation ist dies erkennbar.
-Allerdings zeigt sich, dass bei kleineren Datenmengen dieser Ansatz kaum einen Einfluss auf die Leistungssteigerung hat, da es trotz der Variation nicht 
-genügend Unterschiede sieht um relevante Merkmale zu lernen. 
+Allerdings zeigt sich, dass bei kleineren Datenmengen dieser Ansatz kaum einen Einfluss auf die Leistungssteigerung hat, da trotz der Variationen nicht 
+genügend Unterschiede vorhanden sind, um relevante Merkmale zu lernen. 
 
 Zusammenfassend lässt sich sagen, dass für eine zuverlässige Klassifikation, ob ein Tumor vorliegt oder nicht, mindestens 2042 Trainingsbilder erforderlich sind.
-Es ist hier zu erwähnen, dass die Glioma und Meningioma als Tumor Klasse zusammengefasst wurden,
-ies führt zu einem unausgeglichenen Datensatz, was sich negativ auf die Modellleistung auswirken kann.
-Dies hätte beispielsweise auch in der Verlustfunktion berücksichtigt werden können.
+Es ist hier zu erwähnen, dass die Glioma und Meningioma samples als eine Klasse zusammengefasst wurden.
+Dies führt zu einem unausgeglichenen Datensatz, was sich negativ auf die Modellleistung auswirken kann.
+Beispielsweise hätte dies auch in der Verlustfunktion berücksichtigt werden können.
 
 Für die Klassifikation zwischen Glioma und Meningioma zeigt sich keine so eindeutige Sättigung, wie bei der anderen Klassifikation.
-Es deutet sich nei der Sensitivity und Specificity ein Plateau bie ungefähr 1915 Training samples an. 
+Es deutet sich bei der Sensitivity und Specificity ein Plateau bei ungefähr 1915 Training samples an. 
 Um eine eindeutige Sättigung betrachten zu können werden mehr Daten benötigt, um die Unterschiede zwischen den beiden Tumorarten zuverlässig zu lernen.
-Bei Verwendung von Augmentation wird festgestellen, dass bei kleineren Trainingsdatensätzen keine signifikante Leistungsverbesserung bewirkt. 
+Bei Verwendung von Augmentation wird festgestellt, dass bei kleineren Trainingsdatensätzen keine signifikante Leistungsverbesserung erreicht wird. 
 Der Effekt ist nur in einem mittleren Bereich der Datensatzgröße erkennbar und betrifft die Stabilität der Specificity. 
 % Begründung?
-Die Angabe der Trainingsmenge wurde für die Untersuchungen bei dem die Trainingsdaten reduziert wurden jeweils als absolut Zahlen angegeben.
+Die Angabe der Trainingsmenge wurde für die Untersuchungen, bei denen die Trainingsdaten reduziert wurden, jeweils als absolut Zahlen angegeben.
 Bei der Augmentation und der Reduzierung einer Klasse wurde die Datenmenge Prozentual angegeben und anschließend die exakte Zahl automatisch berechnet.
 Dadurch kommt es zu leichten Abweichungen der Sample-Größe zwischen der Augmentations Untersuchung und dem reduzieren der Trainingsdaten. 
 
 Um den Einfluss auf die Leistung eines Netzwerkes zu beurteilen, bei dem eine Klasse reduziert wird,
 werden für die eine Klassifikation die Tumor und bei der anderen die Glioma samples reduziert.
 Für eine niedrige Anzahl der einen Klasse, ist bei beiden eine schlechtere Leistung zu erkennen.
-Das lässt sich dadurch Begründen, dass das netzwerk nicht genügend Daten hat um die Merkmale der einen Klasse zu lernen.
-Mit steigender Anzahl an Bilder der Klasse, nimmt auch die Leistung zu.
+Das lässt sich dadurch begründen, dass das Netzwerk nicht genügend Daten hat, um die Merkmale der einen Klasse zu lernen.
+Mit steigender Anzahl an Bildern der Klasse, nimmt auch die Leistung zu.
 Bei der Klassifizierung zwischen Tumor und no Tumor wird ab 1489 Tumor samples eine stabile Leistung erreicht.
-Die Anzahl an no Tumor liegt konstant bei 1279, womit der Datensatz nahezu ausgeglichen ist
+Die Anzahl an no Tumor liegt konstant bei 1279, womit der Datensatz nahezu ausgeglichen ist.
 Für die Glioma und Meningioma Klassifikation wird eine stabile Leistung ab 845 Glioma samples erreicht.
-Der Datensatz insgesamt dabei ist leicht unausgeglichen mit 1072 Meningioma samples, die konstant gehalten wurden.
-Allgemein lässt sich sagen, dass für eine stabile Leistung, der Datensatz relativ ausgeglichen sein sollte, damit die Merkmale gleichermaßen gelernt werden können. 
+Der Datensatz ist insgesamt leicht unausgeglichen mit 1072 Meningioma samples, die konstant gehalten wurden.
+Es zeigt sich, dass für eine stabile Leistung der Datensatz relativ ausgeglichen sein sollte, damit die Merkmale beider Klassen gleichermaßen gelernt werden können. 
