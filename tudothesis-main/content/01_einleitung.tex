@@ -1,28 +1,28 @@
 \chapter{Einleitung}
 
-Die Anwendung von Künstlichen Intelligenzen und Maschinellem Lernen findet in der heutigen Zeit immer mehr Anwendung.
-So auch in der Medizin für unter anderen die Erkennung von Krankheiten.
-In dieser Arbeit wird sich auf das erkennen von Hirntumoren mittels eine Klassifizierungsalgorithmus konzentriert.
-Für die Diagnostik eines Hirntumors, wird als erster Schritt ein MRT veranlasst.
-Um die spezifische Tumorart zu bestimmen, wird eine Biopsie durchgeführt.
-Da es sich jedoch bei der Biopsie um einen Operativen Eingriff handelt, birgt dieser, wie andere Operative Eingriffe auch, ein gewisses Risiko.
-Mithilfe von Klassifizierungsalgorithmen soll es möglich sein, dass der Schritt der Biopsie nicht notwendig ist 
-und somit das Risiko eines Eingriffs zu verringern.
-Für die Verwendung solcher Algorithmen, werden Daten benötigt, um diese zu trainieren, damit sie ein zuverlässige Aussage über die Art des Tumors treffen können. 
-Aus Datenschutzrechtlichen Gründen, sind Datenmengen jedoch nicht ausreichend vorhanden. 
+Die Anwendung von Künstlichen Intelligenzen (KI) und Maschinellem Lernen (ML) findet in der heutigen Zeit immer mehr Anwendung.
+So auch im Medizinischen Bereich beispielsweise zur Erkennung von Krankheiten.
+In dieser Arbeit liegt der Fokus auf das erkennen von Hirntumoren mithilfe eine Klassifizierungsalgorithmus.
+
+Für die Diagnostik eines Hirntumors, wird zuerst eine Magnetresonanztomographie (MRT) durchgeführt.
+Zur spezifischen Bestimmung wird in der Regel eine Biopsie veranlasst.
+Da es sich hierbei um einen Operativen Eingriff handelt, birgt dieser, wie alle Operative Eingriffe auch, gewisses Risiken
+Klassifizierungsalgorithmen könnten dabei helfen, die Notwendigkeit einer Biopsie zu reduzieren und somit das Risiko für die Patient:innen zu verringern.
+Für die Entwicklung solcher Algorithmen, werden ausreichend Daten benötigt, damit sie ein zuverlässige Aussage über die Art des Tumors treffen können. 
+Aus Datenschutzrechtlichen Gründen, sind diese Datenmengen jedoch nicht ausreichend vorhanden. 
 Zudem ist es bei seltenen Tumorarten noch mal schwieriger genügend Daten zu sammeln.
-Diese Arbeit beschäftigt sich damit wie unterschiedliche Datenmengen sich auf die Leistung des Klassifizierungsalgorithmus auswirken.
-Und wie groß die Datensätze mindestens sein müssen, damit eine zuverlässige Aussage treffen können.
+Ziel dieser Arbeit ist es daher zu untersuchen, welchen Einfluss die Größe des Datensatzes auf die Leistungsfähigkeit eines Klassifikationsalgorithmus hat. 
+Zudem wird ermittelt, wie groß ein Datensatz mindestens sein muss um zuverlässige Vorhersagen zu treffen.
 
-Zu Beginn wird in der Theorie einen Überblick über die Entstehung der MRT-Bilder gegeben die für die Untersuchungen verwendet werde.
-Darauf hin folgen die Grundlagen des Maschinellen Lernen, welche in dieser Arbeit verwendet werden.
-Diese beinhalten den Aufbau von neuronalen Netzwerken und der eines Convolutional Neural Network, welches verwendet wird.
-Zudem wird erläutert, wie ein Netzwerk trainiert wird.
-Nach dem theoretischen Teil, wird der Aufbau des, in dieser Arbeit verwendete, Convolutional Neural Netzwerk erklärt und der Aufbau des Datensatzes. 
-Es wird zwischen zwei Klassifikationen unterschieden. 
-Der Einfluss der Datensatzgröße wird dadurch untersucht, indem die Datenmenge schrittweise Reduziert werden und zur Beurteilung die 
-Accuracy, Sensitivity und Specificity berechnet wird. 
-Darauf hin wird untersucht, ob Augmentation die Leistung verbessert.
-Zudem wird die Leistung betrachtet, wenn nur eine der Klasse nur reduziert wird. 
-Diese Untersuchungen werden zum einen 
+Zu Beginn wird in der Theorie einen Überblick über die Entstehung der verwendeten MRT-Bilder gegeben. 
+Anschließend werden die Grundlagen des Maschinellen Lernen behandelt.
+Diese beinhalten den Aufbau und das Training von Neuronalen Netzwerken, Convolutional Neural Network, das in der Arbeit verwendet wird.
+Im Anschluss wird der Aufbau des in dieser Arbeit verwendete Convolutional Neural Netzwerk erklärt und der Aufbau des Datensatzes. 
+Es wird in der Arbeit zwischen zwei Klassifikationen unterschieden. 
+Zum einen werde die folgenden Untersuchungen für die Klassifikation zwischen no Tumor und Tumor, sowie zwischen Glioma und Meningioma durchgeführt.
 
+Der Einfluss der Datensatzgröße wird untersucht, indem die Anzahl an Trainingsdaten schrittweise reduziert wird.
+Zur Beurteilung der Leistung wird die Accuracy, Sensitivity und Specificity berechnet wird. 
+Darüber hinaus wird überprüft, ob Datenaugmentation die Leistung verbessern kann.
+Zusätzlich wird die Leistung betrachtet, wenn nur eine der beiden Klasse reduziert wird. 
+Zum Abschluss werden die Ergebnisse der verschiedenen Untersuchungen diskutiert.
